@@ -1,0 +1,55 @@
+@font-face{   font-family:'GillSansStdLightRegular';     src:url('../fonts/gillsansstd-light-webfont.eot');     src:url('../fonts/gillsansstd-light-webfont.eot?#iefix') format('embedded-opentype'),        url('../fonts/gillsansstd-light-webfont.woff') format('woff'),        url('../fonts/gillsansstd-light-webfont.ttf') format('truetype'),        url('../fonts/gillsansstd-light-webfont.svg#GillSansStdLightRegular') format('svg');     font-weight:normal;     font-style:normal}
+@font-face{   font-family:'GillSansMT';     src:url('../fonts/gil_____.eot');     src:url('../fonts/gil_____.eot?#iefix') format('embedded-opentype'),        url('../fonts/gil_____.woff') format('woff'),        url('../fonts/gil_____.ttf') format('truetype'),        url('../fonts/gil_____.svg#gil_____') format('svg');     font-weight:normal;     font-style:normal}
+body{background:#000 url(../imagens/bg.jpg) center top no-repeat; height:100%}
+*{font-family:'GillSansStdLightRegular'; font-weight:normal; margin:0px; padding:0px; border:none; background-repeat:no-repeat; font-size:14px; line-height:1.2em}
+a{color:#FFF; text-decoration:none}
+a:hover{text-decoration:underline}
+img{display:block; border:none}
+#container{width:960px; position:absolute; left:50%; top:0px; right:50%; margin-left:-480px; z-index:2; min-height:100%}
+#topo{height:601px}
+
+.titulo{left:0px; top:30px}
+.relative{position:relative}
+.absolute{position:absolute}
+.logo-philips{top:30px; right:0px}
+.txt-vendedor{width:310px; left:332px; top:70px}
+.branco{color:#FFF}
+.verde{color:#9c0}
+.verde2{color:#accc00}
+
+.block{display:block}
+h2, h3{margin-bottom:10px}
+.size1{font-size:30px}
+.size2{font-size:45px}
+.size3{font-size:32px}
+.size4{font-size:20px}
+.size5{font-size:28px}
+.size6{font-size:18px}
+.size7{font-size:10px}
+.font{font-family:'GillSansMT'}
+.conexao-bg{left:0px; top:0px; z-index:10}
+
+.bluetooth{left:385px; top:22px; z-index:11}
+.android{z-index:1; top:120px; right:-45px}
+.flexidock-txt{left:281px; top:57px}
+.uppercase{text-transform:uppercase}
+.float-left{float:left}
+.clear{clear:both}
+
+.as111-txt{left:288px; top:77px; width:165px}
+.ptop{padding-top:20px}
+.ptop2{padding-top:35px}
+.ptop3{padding-top:10px}
+
+.as111-txt h3, .as111-txt p, .as351-txt h3, .as351-txt p{font-family:'GillSansMT'}
+.width1{width:120px}
+.as351-txt{left:10px; top:77px; width:195px}
+.saiba-mais{background:url(../imagens/bg-saiba-mais.jpg); height:100px}
+.saiba-as111{left:154px; top:44px}
+.saiba-as351{top:44px; right:140px}
+.left{margin-left:200px}
+.left2{margin-left:40px}
+
+.footer-bg{background:url(../imagens/bg-footer.jpg) repeat-x; height:328px; position:absolute; bottom:0; width:100%; z-index:1}
+.height.relative{height:1490px}
+.height2{height:225px}

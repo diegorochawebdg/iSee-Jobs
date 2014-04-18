@@ -1,0 +1,11 @@
+#header .search, #header .download, #header #main-menu, #footer{display:none;}
+#header{margin-bottom:75px;}
+.content-center{height:100%}
+
+.login-box{padding:30px; background-color:#FFF; display:table; margin:0 auto; box-shadow:#CCC 0 0 15px;}
+.login-box h1{font-size:24px; color:#764777; text-transform:uppercase; text-align:center; font-weight:normal; margin-bottom:40px;}
+.login-box input{ font: italic bold 14px Arial, Helvetica, sans-serif; text-transform:uppercase; display:block; padding:10px 10px 10px 60px; width:390px; margin-bottom:21px; background-color:#f4f2f1; box-shadow:inset #666 2px 2px 4px; border-radius:10px; color:#333; background-image:url(../images/login/login-icons.png); background-repeat:no-repeat; }
+.login-box input#nome{background-position:15px 7px;}
+.login-box input#email{background-position:15px -22px;}
+.login-box button{background:url(../images/login/acessar.png); width:126px; height:30px; margin-top:20px; float:right; cursor:pointer;}
+small{font-size:10px; text-transform:uppercase; text-align:center; color:#626059; margin-top:50px; display:block;}

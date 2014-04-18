@@ -1,0 +1,110 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px; 
+	padding: 0; 
+	position: relative;
+	overflow:hidden;
+	background:url(caracteristicas/background.jpg) 50% 50% no-repeat; 
+}
+	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna #background{ background:url(caracteristicas/page2/background.png) 50% 50% no-repeat; width:100%; height:165px; position:absolute; left:0; bottom:0;}
+
+.container_interna .notebook{ margin-left:-365px; bottom:0px;}
+.container_interna .box{ margin-left:-26px; top:0px;}
+.container_interna .linha1{ margin-left:-378px; top:70px;}
+.container_interna .titulo1{ margin-left:-368px; top:86px;}
+.container_interna .paragrafo1{ margin-left:-368px; top:106px;}
+.container_interna .linha2{ margin-left:54px; top:222px;}
+.container_interna .titulo2{ margin-left:98px; top:238px;}
+.container_interna .paragrafo2{ margin-left:98px; top:258px;}
+
+.container_interna #call-to-action2{ margin-left:145px; bottom:20px; cursor:pointer;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	
+	TweenMax.from($("#background"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.2});	
+	
+	TweenMax.from($(".notebook"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".box"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".linha1"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".titulo1"), .5, {css:{left: "-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".paragrafo1"), .5, {css:{left: "-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".linha2"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".titulo2"), .5, {css:{left: "+=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($(".paragrafo2"), .5, {css:{left: "+=80px", alpha:0}, ease:Back.easeOut, delay:1.2});
+		
+	
+	TweenMax.from( $("#call-to-action2") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action2").hover(function(e) {
+            TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+		
+	}} );
+
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	
+        <div id="background"></div>
+        
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/notebook.jpg" width="542px" height="395px" alt="" title="" class="absoluto notebook" />
+                
+                <img src="caracteristicas/page2/tela-com-bordas-sensiveis-incrivel-experiencia-de-navegacao-no-windows-8.png" width="374px" height="134px" alt="Tela com bordas sensíveis: incrível experiência de navegação no Windows 8" title="Tela com bordas sensíveis: incrível experiência de navegação no Windows 8" class="absoluto box" />
+                
+                <img src="caracteristicas/page2/linha-tela.png" width="320px" height="102px" alt="" title="" class="absoluto linha1" />
+                <img src="caracteristicas/page2/titulo-tela-led.png" width="250px" height="17px" alt="Tela LED HD de alta definição" title="Tela LED HD de alta definição" class="absoluto titulo1" />
+                <img src="caracteristicas/page2/ideal-para-assistir-videos-e-filmes-com-imagem-nitida-e-em-alta-resolucao.png" width="298px" height="34px" alt="Ideal para assistir vídeos e filmescom imagem nítida e em alta resolução." title="Ideal para assistir vídeos e filmescom imagem nítida e em alta resolução." class="absoluto paragrafo1" />
+                
+                <img src="caracteristicas/page2/linha-display.png" width="323px" height="80px" alt="" title="" class="absoluto linha2" />
+                <img src="caracteristicas/page2/titulo-display-multitouch.png" width="270px" height="17px" alt="Display multitouch de 10 pontos" title="Display multitouch de 10 pontos" class="absoluto titulo2" />
+                <img src="caracteristicas/page2/reconhece-10-toques-simultaneos-na-tela-crie-jogue-e-interaja-de-maneira-dinamica-e-intuitiva.png" width="256px" height="50px" alt="Reconhece 10 toques simultâneos na tela. Crie, jogue e interaja de maneira dinâmica e intuitiva!" title="Reconhece 10 toques simultâneos na tela. Crie, jogue e interaja de maneira dinâmica e intuitiva!" class="absoluto paragrafo2" />
+                
+                <img src="caracteristicas/page2/btn-alta-performance.png" width="239px" height="64px" alt="Alta performance" title="Alta performance" class="absoluto" id="call-to-action2" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

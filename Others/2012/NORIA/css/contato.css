@@ -1,0 +1,9 @@
+#contato{background-color:#125A9C !important}
+#conteudo .contato-img{float:left}
+#conteudo .contato-txt{float:right; width:375px; margin-right:40px}
+#conteudo .contato-txt span, #conteudo .contato-txt p{color:#999; display:block; font-size:16px; line-height:20px}
+#conteudo .contato-txt address{padding:0px; margin-bottom:30px}
+#conteudo #formulario{width:690px !important}
+body{background:#0a345c url(../images/bg-body.png) repeat-x center top !important}
+#conteudo h3{margin-bottom:0;}
+#conteudo .no-margin{margin-bottom:0 !important;}

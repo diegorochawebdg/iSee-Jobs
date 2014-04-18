@@ -1,0 +1,112 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/page3/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container #titulo{ margin-left:-360px; top:55px; font-family: "GillSansStd";}
+.connect-container #titulo h2{ font-size:22px; color:#00aeef; text-transform:uppercase; margin-bottom:28px;}
+.connect-container #titulo p{ font-size:18px; color:#FFF;}
+
+.connect-container #circulo{ margin-left:-350px; top:224px; text-align:center; background:url(caracteristicas/page3/circulo.png) no-repeat; width:159px; height:114px; padding-top:45px;}
+.connect-container #circulo h3{ font-family: "GillSansStd"; font-size:22px; color:#FFF;}
+.connect-container #circulo p{ font-family: "GillSansStd-Light"; font-size:17px; color:#FFF;}
+
+.connect-container #features{ margin-left:0px; top:290px;}
+.connect-container #features ul#lista{}
+.connect-container #features ul#lista li{ width:375px; height:37px; background-position:top right; background-repeat:no-repeat; line-height:45px; padding-left:25px; font-family: "GillSansStd"; font-size:18px; color:#FFF;}
+.connect-container #features ul#lista li.item1{ background-image:url(caracteristicas/page3/bg-lista1.png);}
+.connect-container #features ul#lista li.item2{ background-image:url(caracteristicas/page3/bg-lista2.png);}
+.connect-container #features ul#lista li.item3{ background-image:url(caracteristicas/page3/bg-lista3.png);}
+
+.connect-container #call-to-action3{ margin-left:50px; bottom:10px; background:url(caracteristicas/page3/bg-call-to-action.png) no-repeat; width:306px; height:19px; font-family: "GillSansStd"; font-size:20px; color:#FFF; text-decoration:none; padding:12px 15px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action3"), "fadeInRight", "s10", "caracteristicas4.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="titulo" class="absoluto animated fadeInLeft s05">
+                	<h2>Tecnologia Ambisound</h2>
+                    <p>
+                    	Com o Home Cinema Philips SoundBar,<br />
+                        você poderá desfrutar de um som surround<br />
+                        multicanais com qualidade surpreendente!<br />
+                        O Ambisound proporciona um som incrível<br />
+                        com menos alto-falantes. 
+                    </p>
+                </div>
+                
+                <div id="circulo" class="absoluto animated fadeInDown s06">
+                	<h3>400W RMS<br />
+                    de potência </h3>
+                    <p>
+                    	para curtir filmes<br />
+                        e músicas!
+                    </p>
+                </div>
+                
+                <div id="features" class="absoluto">
+                	<ul id="lista">
+                    	<li class="item1 animated fadeInLeft s07">Experiência de som surround similar a de um 5.1</li>
+                        <li class="item2 animated fadeInLeft s08">Som com qualidade de cinema e sem fio!</li>
+                        <li class="item3 animated fadeInLeft s09">Mais som, menos alto-falantes!</li>
+                    </ul>
+                </div>
+                
+                <a href="#" id="call-to-action3" class="absoluto animated fadeInRight s10">Experiência de cinema na sua casa</a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

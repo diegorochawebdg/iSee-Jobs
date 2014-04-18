@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Sobre | iSee - agência especializada em melhorar vendas no varejo.</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- JQuery UI sheets 
+<link rel="stylesheet" type="text/css" href="http://www.iseeconnect.com/src/js/shadowbox/shadowbox.css" /> -->
+
+<!-- Import necessary style sheets -->
+<style type="text/css">
+	
+	/*Plugins*/	
+	@import url("js/shadowbox/shadowbox.css");
+	 /*end plugins*/ 
+	
+	/*Site structure*/ 
+	@import url("css/reset.css");
+	@import url("css/fontes.css");
+	@import url("css/estrutura.css");
+	/*End site structure*/
+</style>
+<!-- InstanceBeginEditable name="css" -->
+<style>
+	@import url("css/sobre.css");
+</style>
+<!-- InstanceEndEditable -->
+<!-- End importing style sheets -->
+
+<!-- Importing scripts 
+<script type="text/javascript">
+
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	
+	
+</script> -->
+
+<script src="js/jquery/jquery-latest.js"></script>
+<script src="js/isee/iSeeMain.js"></script>
+<!-- InstanceBeginEditable name="Script" -->
+<script type="text/javascript" src="js/cycle/jquery.cycle.lite.js"></script>
+<script>
+	// When the document is ready to receive its code
+$(document).ready( function( event ) { 
+	
+	var loader = new iSeeLoader("sobre");
+	loader.init();
+	loader.onLoadComplete( onComplete );
+	
+	function onComplete(){ 
+		
+		var site = new iSeeSite();
+		site.init();
+		
+		var siteSobre = new iSeeSobre();
+		siteSobre.init();
+		
+	};
+	
+});
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+	<!-- logo, language and menu navigation -->
+    <header>
+    	<section class="content" data-start="height:100px; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930);" data-1="height:60px; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930);">
+        	
+           <!-- <nav class="languageNav">
+           		<ul>
+                	<li>EN</li>
+                    <li>PT</li>
+                </ul>    
+           </nav> -->
+           <nav class="menuNav" data-start="margin-top:44px; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930);" data-1="margin-top:24px; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); ">
+           		<ul>
+                	<li><a href="sobre.html" id="button_sobre">sobre</a></li>
+                    <li><a href="solucoes.html" id="button_solucoes">soluções</a></li>
+                    <!--<li><a href="resultados.html" id="button_resultados">resultados</a></li>-->
+                    <li><a href="update.html" id="button_update">update</a></li>
+                    <li><a href="#/contato" id="button_contato">contato</a></li>
+                    <li><a href="http://2go.isee.com.br" target="_blank" id="isee_2_go">iSee2go</a></li>
+                </ul>    
+           </nav>
+           <div class="logo">
+           		<a href="index.html"><figure><img src="images/estrutura/logo-isee.png" width="102" height="68" alt="iSee - Comunicação em Varejo" title="iSee - Comunicação em Varejo" data-start="width:102px; height:68px; margin-top:0; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930);" data-1="width:71px; height:47px; margin-top:-32px; transition:all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930);" /></figure></a>
+           </div>
+           
+           <section id="box_contato">
+           		<!--Botões que antecedem o formulário-->
+           		<div class="atendimento">
+                	<a href="#">Atendimento</a>
+                </div>
+                <div class="oportunidades">
+                	<a href="#">Oportunidades</a>
+                </div>
+                <a href="#" class="fechar">Fechar</a>
+                <!--Formulário-->
+                <form>
+                    <div class="form-left">
+                        <input name="nome" type="text" placeholder="Nome*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <div class="pais">
+                            <select name="pais">
+                                <option value="África do Sul">África do Sul</option>
+                                <option value="Albânia">Albânia</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antigua">Antigua</option>
+                                <option value="Arábia Saudita">Arábia Saudita</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armênia">Armênia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Áustria">Áustria</option>
+                                <option value="Azerbaijão">Azerbaijão</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrein">Bahrein</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermudas">Bermudas</option>
+                                <option value="Botsuana">Botsuana</option>
+                                <option value="Brasil" selected>Brasil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgária">Bulgária</option>
+                                <option value="Burkina Fasso">Burkina Fasso</option>
+                                <option value="botão">botão</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Camarões">Camarões</option>
+                                <option value="Camboja">Camboja</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Cazaquistão">Cazaquistão</option>
+                                <option value="Chade">Chade</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                                <option value="Colômbia">Colômbia</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Coréia do Sul">Coréia do Sul</option>
+                                <option value="Costa do Marfim">Costa do Marfim</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croácia">Croácia</option>
+                                <option value="Dinamarca">Dinamarca</option>
+                                <option value="Djibuti">Djibuti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="EUA">EUA</option>
+                                <option value="Egito">Egito</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Emirados Árabes">Emirados Árabes</option>
+                                <option value="Equador">Equador</option>
+                                <option value="Eritréia">Eritréia</option>
+                                <option value="Escócia">Escócia</option>
+                                <option value="Eslováquia">Eslováquia</option>
+                                <option value="Eslovênia">Eslovênia</option>
+                                <option value="Espanha">Espanha</option>
+                                <option value="Estônia">Estônia</option>
+                                <option value="Etiópia">Etiópia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Filipinas">Filipinas</option>
+                                <option value="Finlândia">Finlândia</option>
+                                <option value="França">França</option>
+                                <option value="Gabão">Gabão</option>
+                                <option value="Gâmbia">Gâmbia</option>
+                                <option value="Gana">Gana</option>
+                                <option value="Geórgia">Geórgia</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Grécia">Grécia</option>
+                                <option value="Guadalupe">Guadalupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guiana">Guiana</option>
+                                <option value="Guiana Francesa">Guiana Francesa</option>
+                                <option value="Guiné-bissau">Guiné-bissau</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Holanda">Holanda</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungria">Hungria</option>
+                                <option value="Iêmen">Iêmen</option>
+                                <option value="Ilhas Cayman">Ilhas Cayman</option>
+                                <option value="Ilhas Cook">Ilhas Cook</option>
+                                <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                                <option value="Ilhas Marshall">Ilhas Marshall</option>
+                                <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                                <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                                <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                                <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                                <option value="Índia">Índia</option>
+                                <option value="Indonésia">Indonésia</option>
+                                <option value="Inglaterra">Inglaterra</option>
+                                <option value="Irlanda">Irlanda</option>
+                                <option value="Islândia">Islândia</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Itália">Itália</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japão">Japão</option>
+                                <option value="Jordânia">Jordânia</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Líbano">Líbano</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lituânia">Lituânia</option>
+                                <option value="Luxemburgo">Luxemburgo</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Macedônia">Macedônia</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malásia">Malásia</option>
+                                <option value="Malaui">Malaui</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marrocos">Marrocos</option>
+                                <option value="Martinica">Martinica</option>
+                                <option value="Mauritânia">Mauritânia</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="México">México</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Mônaco">Mônaco</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Nicarágua">Nicarágua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigéria">Nigéria</option>
+                                <option value="Noruega">Noruega</option>
+                                <option value="Nova Caledônia">Nova Caledônia</option>
+                                <option value="Nova Zelândia">Nova Zelândia</option>
+                                <option value="Omã">Omã</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                                <option value="Paquistão">Paquistão</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Polinésia Francesa">Polinésia Francesa</option>
+                                <option value="Polônia">Polônia</option>
+                                <option value="Porto Rico">Porto Rico</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Quênia">Quênia</option>
+                                <option value="Rep. Dominicana">Rep. Dominicana</option>
+                                <option value="Rep. Tcheca">Rep. Tcheca</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romênia">Romênia</option>
+                                <option value="Ruanda">Ruanda</option>
+                                <option value="Rússia">Rússia</option>
+                                <option value="Saipan">Saipan</option>
+                                <option value="Samoa Americana">Samoa Americana</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serra Leone">Serra Leone</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="Síria">Síria</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                                <option value="St. Lúcia">St. Lúcia</option>
+                                <option value="St. Vincent">St. Vincent</option>
+                                <option value="Sudão">Sudão</option>
+                                <option value="Suécia">Suécia</option>
+                                <option value="Suiça">Suiça</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Tailândia">Tailândia</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Tanzânia">Tanzânia</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                <option value="Tunísia">Tunísia</option>
+                                <option value="Turquia">Turquia</option>
+                                <option value="Ucrânia">Ucrânia</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Uruguai">Uruguai</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnã">Vietnã</option>
+                                <option value="Zaire">Zaire</option>
+                                <option value="Zâmbia">Zâmbia</option>
+                                <option value="Zimbábue">Zimbábue</option>
+                            </select>
+                        </div>
+                        <input type="tel" name="tel" placeholder="DDD + Telefone" class="tel">
+                        <div class="clearboth"></div> 
+                    </div>
+                    <div class="form-right">
+                    	<textarea name="mensagem" required placeholder="Mensagem*"></textarea>
+                        <span class="obs">*Campos obrigatórios</span>
+                        <input type="submit" value="Enviar" class="enviar">
+                    </div>
+                    <div class="clearboth"></div>
+                </form>
+                <div class="linha"></div>
+                
+                <section id="enderecos">
+                    <!--iSee Alphaville-->
+                    <div class="contact_address">
+                    	<figure><a rel="shadowbox;width=650;height=400" href="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=iSee%2Binteractive.group+-+Cal%C3%A7ada+das+Papoulas,+154+-+Alphaville+Comercial,+Barueri+-+S%C3%A3o+Paulo&amp;aq=0&amp;oq=iSee&amp;sll=-23.496822,-46.849469&amp;sspn=0.008452,0.016512&amp;g=Cal%C3%A7ada+das+Papoulas,+154,+Barueri+-+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=iSee%2Binteractive.group+-&amp;hnear=Cal%C3%A7ada+das+Papoulas,+154+-+Alphaville+Comercial,+Barueri+-+S%C3%A3o+Paulo,+06453-040&amp;ll=-23.496778,-46.850982&amp;spn=0.008452,0.016512&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=7601305835213182853&amp;output=embed" id="alphaville"><img src="images/estrutura/mapa-isee-alphaville.jpg" width="220" height="207" alt="Localização da iSee | Alphaville" title="iSee | Alphaville"></a></figure>
+                        <div class="contact_txt">
+                        	<address>
+                            	<span>Alphaville</span>
+                                <a href="tel:1141950497">+55 11 4195-0497</a>
+                                <p>Calçada das Papoulas, 154</p>
+                                <p>Alphaville, Barueri, SP</p>
+                                <p>CEP: 06453-025</p>
+                            </address>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                    <!--iSee São Paulo-->
+                    <div class="contact_address">
+                    	<figure><a rel="shadowbox;width=650;height=400" href="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=iSee+Comunica%C3%A7%C3%A3o+-+Avenida+Rouxinol,+S%C3%A3o+Paulo&amp;aq=1&amp;oq=iSee&amp;sll=-23.496783,-46.850982&amp;sspn=0.008452,0.016512&amp;ie=UTF8&amp;hq=iSee+Comunica%C3%A7%C3%A3o+-&amp;hnear=Av.+Rouxinol+-+Moema,+S%C3%A3o+Paulo&amp;t=m&amp;ll=-23.601185,-46.673458&amp;spn=0.006295,0.008381&amp;output=embed" id="sao-paulo"><img src="images/estrutura/mapa-isee-sao-paulo.jpg" width="220" height="207" alt="Localização da iSee | São Paulo" title="iSee | São Paulo"></a></figure>
+                    	<div class="contact_txt">
+                        	<address>
+                            	<span>São Paulo</span>
+                                <a href="tel:1126157837">+55 11 2615-7837</a>
+                                <p>Avenida Rouxinol, 84 cj. 117</p>
+                                <p>Moema, São Paulo, SP</p>
+                                <p>CEP: 04516-000</p>
+                            </address>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                    <div class="clearboth"></div>
+                    
+                </section>
+           </section>
+       </section>
+    </header>
+    <!-- end header -->
+	
+    <!-- Container That holds everything -->
+    <section id="content-container">
+        <!-- InstanceBeginEditable name="All the Content of page" -->
+        <!-- Box Home -->
+        <section id="box_somos_isee" class="bg-pattern-fundoclaro">
+            <div class="content">
+                    
+                    <article class="holder">
+                    	
+                        <!--<figure><img src="images/sobre/funcionarios/flavio.jpg" width="265" height="265" alt="Somos a iSee" title="Somos a iSee" /></figure>-->
+                        <!--Images Cycle-->
+                        <div id="cycle">
+                                <figure><img src="images/sobre/funcionarios/flavio.jpg" alt="Flavio Salomão" title="Flavio Salomão" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/melissa.jpg" alt="Melissa Matta" title="Melissa Matta" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/gustavo.jpg" alt="Gustavo Teider" title="Gustavo Teider" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/diego.jpg" alt="Diego Rocha" title="Diego Rocha" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/leornardo.jpg" alt="Leonardo Soares" title="Leonardo Soares" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/thomas.jpg" alt="Thomas Piedade" title="Thomas Piedade" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/gabi.jpg" alt="Gabriela Spilari" title="Gabriela Spilari" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/jessie.jpg" alt="Jessie Beu" title="Jessie Beu" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/fabricio.jpg" alt="Fabrício Miriuk" title="Fabrício Miriuk" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/fernanda.jpg" alt="Fernanda Prestes" title="Fernanda Prestes" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/camila_diniz.jpg" alt="Camila Diniz" title="Camila Diniz" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/camila_emidio.jpg" alt="Camila Emidio" title="Camila Emidio" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/rafaela.jpg" alt="Rafaela Carvalho" title="Rafaela Carvalho" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/helena.jpg" alt="Helena Buniowski" title="Helena Buniowski" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/marcio.jpg" alt="Márcio Conde" title="Márcio Conde" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/ettienete.jpg" alt="Etiennette Jospin" title="Etiennette Jospin" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/mauricio.jpg" alt="Maurício Demutti" title="Maurício Demutti" width="265" height="265"></figure>
+                                <figure><img src="images/sobre/funcionarios/wilton.jpg" alt="Wilton Santana" title="Wilton Santana" width="265" height="265"></figure>
+                                <figure><img src="" alt="Patrícia Evangelista" title="Patrícia Evangelista" width="265" height="265"></figure>
+                                <figure><img src="" alt="Natany Gomes" title="Natany Gomes" width="265" height="265"></figure>
+                                <figure><img src="" alt="Maria Claudia" title="Maria Claudia" width="265" height="265"></figure>
+                                <figure><img src="" alt="Ivan Lucentini" title="Ivan Lucentini" width="265" height="265"></figure>
+                            </div>
+                        <div>
+                        	<h1>Essa é a iSee!</h1>
+                            <p>Nossos profissionais estão sempre com a mente aberta para escutar, estudar e estruturar as suas necessidades para transformá-las em ideias incríveis e resultados de venda maravilhosos!</p>
+                            
+                            <a href="#" title="Conheça nossa equipe" id="conheca">Conheça nossa equipe</a>
+                            <a href="#" title="fechar" id="fechar-conheca"></a>
+                            <figure class="madeInBR"><img src="images/sobre/made-in-brazil.png" width="171" height="78" alt="Made in Brazil" title="Made in Brazil" /></figure>
+                        </div>
+                        <div class="clearboth"></div>
+                    </article>
+            		
+                    
+                    <!--Início das imagens dos integrantes-->
+                    <section id="people">
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/flavio.jpg" alt="Flavio Salomão" title="Flavio Salomão" width="164" height="164"></figure>
+                            <figcaption>Flavio Salomão <span>SM | Diretor de Estratégia e Negócios</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/melissa.jpg" alt="Melissa Mattar" title="Melissa Mattar" width="164" height="164"></figure>
+                            <figcaption>Melissa Mattar <span>Diretora de Contas On-line</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="" alt="Patrícia Evangelista" title="Patrícia Evangelista" width="164" height="164"></figure>
+                            <figcaption>Patrícia Evangelista <span>Diretora de Criação Off-line</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="" alt="Maria Claudia" title="Maria Claudia" width="164" height="164"></figure>
+                            <figcaption>Maria Claudia <span>Diretora de Tráfego Off-line</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="" alt="Natany Gomes" title="Natany Gomes" width="164" height="164"></figure>
+                            <figcaption>Natany Gomes <span>Ilustradora</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/gustavo.jpg" alt="Gustavo Teider" title="Gustavo Teider" width="164" height="164"></figure>
+                            <figcaption>Gustavo Teider <span>Diretor de TI</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/diego.jpg" alt="Diego Rocha" title="Diego Rocha" width="164" height="164"></figure>
+                            <figcaption>Diego Rocha <span>Desenvolvimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div no-margin">
+                            <figure><img src="images/sobre/funcionarios/leornardo.jpg" alt="Leonardo Soares" title="Leonardo Soares" width="164" height="164"></figure>
+                            <figcaption>Leonardo Soares <span>Desenvolvimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/thomas.jpg" alt="Thomas Piedade" title="Thomas Piedade" width="164" height="164"></figure>
+                            <figcaption>Thomas Piedade <span>Desenvolvimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/gabi.jpg" alt="Gabriela Spilari" title="Gabriela Spilari" width="164" height="164"></figure>
+                            <figcaption>Gabriela Spilari <span>Chefe de Redação</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/jessie.jpg" alt="Jessie Beu" title="Jessie Beu" width="164" height="164"></figure>
+                            <figcaption>Jessie Beu <span>Redação</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/fabricio.jpg" alt="Fabrício Miriuk" title="Fabrício Miriuk" width="164" height="164"></figure>
+                            <figcaption>Fabrício Miriuk <span>Diretor de Arte On-line</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/fernanda.jpg" alt="Fernanda Prestes" title="Fernanda Prestes" width="164" height="164"></figure>
+                            <figcaption>Fernanda Prestes <span>Criação</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/camila_diniz.jpg" alt="Camila Diniz" title="Camila Diniz" width="164" height="164"></figure>
+                            <figcaption>Camila Diniz <span>Criação</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/camila_emidio.jpg" alt="Camila Emidio" title="Camila Emidio" width="164" height="164"></figure>
+                            <figcaption>Camila Emidio <span>Diretora de Arte On-line</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div no-margin">
+                            <figure><img src="images/sobre/funcionarios/rafaela.jpg" alt="Rafaela Carvalho" title="Rafaela Carvalho" width="164" height="164"></figure>
+                            <figcaption>Rafaela Carvalho <span>Recepção</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="" alt="Ivan Lucentini" title="Ivan Lucentini" width="164" height="164"></figure>
+                            <figcaption>Ivan Lucentini <span>Atendimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/helena.jpg" alt="Helena Buniowski" title="Helena Buniowski" width="164" height="164"></figure>
+                            <figcaption>Helena Buniowski <span>Atendimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/marcio.jpg" alt="Márcio Conde" title="Márcio Conde" width="164" height="164"></figure>
+                            <figcaption>Márcio Conde <span>Coordenador de Atendimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/ettienete.jpg" alt="Etiennette Jospin" title="Etiennette Jospin" width="164" height="164"></figure>
+                            <figcaption>Etiennette Jospin <span>Atendimento</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div">
+                            <figure><img src="images/sobre/funcionarios/mauricio.jpg" alt="Maurício Demutti" title="Maurício Demutti" width="164" height="164"></figure>
+                            <figcaption>Maurício Demutti <span>Fotografia</span></figcaption>
+                        </div>
+                        
+                        <div class="people-div no-margin">
+                            <figure><img src="images/sobre/funcionarios/wilton.jpg" alt="Wilton Santana" title="Wilton Santana" width="164" height="164"></figure>
+                            <figcaption>Wilton Santana <span>Estúdio</span></figcaption>
+                        </div>
+                        <div class="clearboth"></div>
+                        
+                        <a href="#" title="fechar" id="fechar2"></a>
+                    </section>
+            </div>
+        </section>
+        <!-- End Box Quem Somos -->
+        
+        <!-- Box Clientes -->
+        <section id="box_clientes" class="bg-pattern-fundoescuro">
+            
+            <div class="dotted-bg"></div>
+            <div class="content">
+                    <div class="holder">
+                    	
+                        <h2>Nossos parceiros</h2>
+                        
+                        <!-- OBS: É necessário que todas as UL's dentro de li.item tenham a mesma quantidade de LI's, mesmo que vazias -->
+                        <div id="carousel-clients">
+                        	<ul>
+                            	<li class="item">
+                                	<ul>
+                                    	<li><figure><img src="images/sobre/clientes/cliente-philips.png" width="100" height="19" alt="Philips" title="Philips" /></figure></li>
+                                    	<li><figure><img src="images/sobre/clientes/cliente-gradiente.png" width="89" height="88" alt="Gradiente" title="Gradiente" /></li>
+                                        <li><figure><img src="images/sobre/clientes/cliente-epson.png" width="103" height="34" alt="Epson" title="Epson" /></figure></li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <li class="item">
+                                	<ul>
+                                    	<li><figure><img src="images/sobre/clientes/cliente-electrolux.png" width="105" height="15" alt="Electrolux" title="Electrolux" /></figure></li>
+                                        <li><figure><img src="images/sobre/clientes/cliente-brastemp.png" width="121" height="66" alt="Brastemp" title="Brastemp" /></figure></li>
+                                        <li><figure><img src="images/sobre/clientes/cliente-compra-certa.png" width="129" height="66" alt="Compra Certa" title="Compra Certa" /></figure></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="item">
+                                	<ul>
+                                		<li><figure><img src="images/sobre/clientes/cliente-mattar.png" width="139" height="40" alt="Mattar" title="Mattar" /></figure></li>
+                                        <li><figure><img src="images/sobre/clientes/cliente-philips-satinelle.png" width="120" height="45" alt="Philips Satinelle" title="Philips Satinelle" /></figure></li>
+                                        <li><figure><img src="images/sobre/clientes/cliente-philips-walita.png" width="101" height="48" alt="Philips Walita" title="Philips Walita" /></figure></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="item">
+                                	<ul>
+                                       <li>
+                                         <figure><img src="images/sobre/clientes/consul.png" width="117" height="30" alt="Consul" title="Consul" /></figure></li>
+                                       <li>
+                                         <figure><img src="images/sobre/clientes/kitchenaid.png" width="136" height="15" alt="Kitchenaid" title="Kitchenaid" /></figure></li>
+                                      <li><figure><img src="images/sobre/clientes/lenovo.png" width="123" height="42" alt="Lenovo" title="Lenovo" /></figure></li>
+                                	</ul>
+                                </li>
+                                
+                                <li class="item">
+                                	<ul>
+                                        <li><figure><img src="images/sobre/clientes/mynd.png" width="82" height="57" alt="Mynd" title="Mynd" /></figure></li>
+                                        <li><figure><img src="images/sobre/clientes/senseo.png" width="136" height="39" alt="Philips Senseo" title="Philips Senseo" /></figure></li>
+                                        <li></li>
+                                	</ul>
+                                </li>
+                            </ul>    
+                        </div>
+                        
+                    </div>
+            </div>
+        </section>
+        <!-- End Clientes -->
+        
+        
+        <!-- Box We Love iSee -->
+        <section id="box_isee">
+            
+             <div class="content">
+                    <div class="holder">
+                    	
+                        <div class="yellowBG"><p>Aqui, trabalho e diversão caminham lado a lado! Confira os momentos marcantes de nosso dia a dia na agência!</p></div>
+                        
+                        <div class="textContent">
+                        
+                        	<div class="jobs">
+                            	
+                                <h2>Quer trabalhar na <strong>iSee</strong>?</h2>
+                                <p>Ambiente descolado, gente bacana e oportunidade de carreira. Aqui nós valorizamos seu talento!</p>
+                                <p>Envie o seu currículo e faça parte<br />do nosso time.</p>
+                            	<a href="http://www.linkedin.com/company/isee-comunica-o" target="_blank" title="Acesse nossa página no LinkedIN"><figure><img src="images/sobre/box-jobs-linkedin.png" width="141" height="36" title="LinkedIN" alt="LinkedIN" /></figure></a>
+                                
+                                <div class="vagas">
+                                	
+                                    <p class="lightYellow">Vagas abertas</p>
+                                    <p class="darkYellow"><a href="#" title="Desenvolvedor de Lorem Ipsum">Desenvolvedor de Lorem Ipsum</a></p>
+                                    <p class="lightYellow"><a href="#" title="Designer de Sit it amet">Designer de Sit it amet</a></p>
+                                    <p class="darkYellow"><a href="#" title="Profissional especializado em nonono">Profissional especializado em nonono</a></p>
+                                
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                        	<div class="whatsgoingon">
+                            	<h1>O que tá rolando</h1>
+                                
+                                <!-- post item -->
+                                <div>
+                                	<figure><img src="images/sobre/box-whatsgoingon-photo1.jpg" width="222" height="172" alt="Blog post 1" title="Blog post 1" /></figure>
+                                    <div>
+                                    	<h3><a href="#" title="Blog Post">Donec nec nulla ac risus consectetur viverra. Suspendisse vulputate purus nec lorem vehicula ut accumsan libero volutpat. Phasellus dictum</a></h3>
+                                        <a href="#" title="Saiba mais" class="saibamais">Saiba mais</a>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                                
+                                <div class="clearboth"></div>
+                                
+                                <!-- post item -->
+                                <div>
+                                	<figure><img src="images/sobre/box-whatsgoingon-photo2.jpg" width="222" height="172" alt="Blog post 2" title="Blog post2" /></figure>
+                                    <div>
+                                    	<h3><a href="#" title="Blog Post">Donec nec nulla ac risus consectetur viverra. Suspendisse vulputate purus nec lorem vehicula ut accumsan libero volutpat. Phasellus dictum</a></h3>
+                                        <a href="#" title="Saiba mais" class="saibamais">Saiba mais</a>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                                
+                                <div class="clearboth"></div>
+                                <p class="saibamais"><a href="#">Mais sobre nossos bastidores</a></p>
+                                
+                            </div>
+                            
+                           
+                        	
+                            
+                        </div>
+                        
+                    </div>
+            </div>
+        </section>
+        <!-- End box isee -->
+        <!-- InstanceEndEditable -->
+    </section>
+    <!-- End Container Holder -->
+     
+     
+    <!-- Rodapé da página -->
+    <footer>
+    	<div class="content">
+        		
+                <small>iSee - Todos os direitos reservados &copy;</small>
+        		<div>
+                	<ul>
+                        <li><a href="https://www.plus.google.com/112779103708756893884/" target="_blank" title="Nossa conta no Google Plus"><figure><img src="images/estrutura/footer-channels-googleplus.png" width="74" height="74" alt="Google Plus" title="Google Plus" /></figure>google<br />plus</a></li>
+                        <li><a href="https://www.twitter.com/iseecomunicacao" target="_blank" title="Nos siga no Twitter"><figure><img src="images/estrutura/footer-channels-twitter.png" width="75" height="75" alt="Twitter" title="Twitter " /></figure>twitter</a></li>
+                        <li><a href="https://www.facebook.com/iseecomunicacao" target="_blank" title="Curta nossa fan page"><figure><img src="images/estrutura/footer-channels-facebook.png" width="75" height="75" alt="Facebook" title="Facebook " /></figure>facebook</a></li>
+                        <li><a href="#" title="Receba notícias da iSee no seu leitor de preferência"><figure><img src="images/estrutura/footer-channels-rssfeed.png" width="75" height="75" alt="RSS Feed" title="RSS Feed " /></figure>rss feed</a></li>
+                        <li><a href="http://www.linkedin.com/company/isee-comunica-o" target="_blank" title="Nosso canal no LinkedIN"><figure><img src="images/estrutura/footer-channels-linkedin.png" width="75" height="75" alt="LinkedIN" title="LinkedIN " /></figure>linkedIn</a></li>
+                        <li><a href="http://www.youtube.com/user/iSeecomunicacao" target="_blank" title="Nosso canal do youtube"><figure><img src="images/estrutura/footer-channels-youtube.png" width="74" height="75" alt="Youtube" title="Youtube " /></figure>
+                        youtube</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="address">
+                	
+                    <address>
+                    	<p><strong>Interactive Group</strong><br />+55 11 4195-0497<br />Calçada das Papoulas, 154<br />Alphaville, Barueri, SP<br />CEP: 06453-040<br /><a rel="shadowbox;width=650;height=400" href="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=iSee%2Binteractive.group+-+Cal%C3%A7ada+das+Papoulas,+154+-+Alphaville+Comercial,+Barueri+-+S%C3%A3o+Paulo&amp;aq=0&amp;oq=iSee&amp;sll=-23.496822,-46.849469&amp;sspn=0.008452,0.016512&amp;g=Cal%C3%A7ada+das+Papoulas,+154,+Barueri+-+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=iSee%2Binteractive.group+-&amp;hnear=Cal%C3%A7ada+das+Papoulas,+154+-+Alphaville+Comercial,+Barueri+-+S%C3%A3o+Paulo,+06453-040&amp;ll=-23.496778,-46.850982&amp;spn=0.008452,0.016512&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=7601305835213182853&amp;output=embed" title="iSee - Alphaville">Ver mapa de localização</a></p>
+                    </address>
+                    
+                    <address>
+                    	<p><strong>Comunicação Integrada</strong><br />+55 11 2615-7837<br />Avenida Rouxinol, 84 cj. 117<br />Moema, São Paulo, SP<br />CEP: 04516-000<br /><a rel="shadowbox;width=650;height=400" href="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=iSee+Comunica%C3%A7%C3%A3o+-+Avenida+Rouxinol,+S%C3%A3o+Paulo&amp;aq=1&amp;oq=iSee&amp;sll=-23.496783,-46.850982&amp;sspn=0.008452,0.016512&amp;ie=UTF8&amp;hq=iSee+Comunica%C3%A7%C3%A3o+-&amp;hnear=Av.+Rouxinol+-+Moema,+S%C3%A3o+Paulo&amp;t=m&amp;ll=-23.601185,-46.673458&amp;spn=0.006295,0.008381&amp;output=embed" title="iSee - São Paulo">Ver mapa de localização</a></p>
+                    </address>
+                	
+                </div>
+                
+                
+        </div>
+    </footer>
+     <!-- Rodapé da página -->
+
+
+</body>
+<!-- InstanceEnd --></html>

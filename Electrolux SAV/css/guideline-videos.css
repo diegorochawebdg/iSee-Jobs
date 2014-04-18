@@ -1,0 +1,41 @@
+/*Title*/
+h1{color:#626059; font-size:36px; margin:15px 0 !important; font-weight:normal;}
+.icon{background-image:url(../images/guideline-videos/icons.png); background-repeat:no-repeat;}
+
+/*Add Arquivos*/
+.add-arquivos{width:317px; padding-top:27px; float:right;}
+/*End of Add Arquivos*/
+
+/*Main Box*/
+.main-box{ background-color:#FFF; padding:20px 20px 0 20px;}
+.main-box .item{float:left; margin-right:61px;}
+.main-box .item:nth-child(4n){margin-right:0; float:right;}
+.main-box .item .preview{position:relative;}
+.main-box .item .preview .hover{background:url(../images/guideline-videos/hover.png) no-repeat center; width:100%; height:100%; position:absolute; left:0; top:0; opacity:0.2;
+-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+.main-box .item .preview .hover:hover{opacity:1;}
+.main-box .item .title{font-size:14px; font-size:14px; text-transform:uppercase; color:#000; margin-bottom:5px;}
+.main-box .item .kind{position:absolute; right:0; top:0; width:34px; height:34px; pointer-events:none;}
+.main-box .item .download{position:absolute; right:1px; bottom:1px; width:57px; padding-top:47px; background-position:0 -31px;}
+.main-box .item img{border: #d1d1d1 solid 1px;}
+.main-box .item img:hover{box-shadow:#0084e7 0 0 15px;
+-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+.main-box .specs .dimensions{float:left; border-bottom:solid 1px #e0dfde; width:85px; background-position:0 -125px; height:21px; padding-left:27px;}
+.main-box .specs span{font-size:11px; color:#626059; display:block; padding-top:4px;}
+.main-box .specs .size{float:right; border-bottom:solid 1px #e0dfde; width:48px; background-position:0 -84px; height:21px; padding-left:27px;}
+.main-box .clear{margin-bottom:25px;}
+/*End of Main Box*/
+
+/*Files Extension*/
+.main-box .item .zip{background-position:0 -159px;}
+.main-box .item .pdf{background-position:0 -201px;}
+.main-box .item .eps{background-position:0 -240px;}
+.main-box .item .jpg{background-position:0 -281px;}
+.main-box .item .tiff, .main-box .item .tif{background-position:0 -322px;}
+/*End of Files Extension*/

@@ -1,0 +1,1 @@
+<div id="Connect-Insert" data-connect="http://www.tvsphilips.com.br/design_line_55/index.html"><script type="text/javascript" src="http://www.iseeconnect.com.br/v.3.0/connect-insert.js"></script></div>

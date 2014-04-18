@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/form-in-company.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/form-in-company.js"></script>
+<script type="text/javascript">
+	//alert('teste');
+</script>
+</head>
+<body>
+<div id="form-company">
+    <div class="titulo">
+        <div class="avatar"></div>
+        <h2>Cursos in Company</h2>
+        <h3>Preencha os dados abaixo e solicite um orçamento sem compromisso.</h3>
+    </div>
+    <div class="form-body">
+        <form>
+            
+                <div class="coluna-esquerda">
+                    <fieldset>
+                        <input type="text" name="nome-in-company" id="nome-in-company" value="NOME:"  onfocus="if (this.value == 'NOME:') {this.value='';}" onblur="if (this.value == '') {this.value='NOME:';}" tabindex="1" />
+                        <input type="text" name="cargo-in-company" id="cargo-in-company" value="CARGO:"  onfocus="if (this.value == 'CARGO:') {this.value='';}" onblur="if (this.value == '') {this.value='CARGO:';}" tabindex="3" />
+                        <span>NÚMERO DE DIAS PARA O CURSO <strong>(mínimo 2):</strong></span>
+                        <input type="text" name="dias-in-company" id="dias-in-company" maxlength="10" tabindex="5" />
+                        <span>TIPOS DE EQUIPAMENTOS DA PLANTA:</span>
+                        <input type="text" name="tipo-in-company" id="tipo-in-company" tabindex="8" />
+                        <input type="text" name="participantes-in-company" id="participantes-in-company" value="QUANTIDADE DE PARTICIPANTES:"  onfocus="if (this.value == 'QUANTIDADE DE PARTICIPANTES:') {this.value='';}" onblur="if (this.value == '') {this.value='QUANTIDADE DE PARTICIPANTES:';}" tabindex="10" />
+                        <div class="local">
+                            <span>LOCAL:</span>
+                        </div>
+                        <input type="text" name="cidade-in-company" id="cidade-in-company" value="CIDADE:"  onfocus="if (this.value == 'CIDADE:') {this.value='';}" onblur="if (this.value == '') {this.value='CIDADE:';}" tabindex="11" />
+                         <input type="text" name="estado-in-company" id="estado-in-company" value="ESTADO:"  onfocus="if (this.value == 'ESTADO:') {this.value='';}" onblur="if (this.value == '') {this.value='ESTADO:';}" tabindex="12" />
+                    </fieldset>
+                </div>
+                <div class="coluna-direita">
+                    <fieldset>
+                        <input type="email" name="email-in-company" id="email-in-company" value="E-MAIL:"  onfocus="if (this.value == 'E-MAIL:') {this.value='';}" onblur="if (this.value == '') {this.value='E-MAIL:';}" tabindex="2" class="mtop" />
+                        <input type="text" name="empresa-in-company" id="empresa-in-company" value="EMPRESA:"  onfocus="if (this.value == 'EMPRESA:') {this.value='';}" onblur="if (this.value == '') {this.value='EMPRESA:';}" tabindex="4" />
+                        <span>TELEFONE:</span>
+                        <div class="tel">
+                            <input type="text" class="ddd-size" name="ddd-in-company" id="ddd-in-company" maxlength="2" tabindex="6" />
+                        </div>
+                        <div class="traco"></div>
+                        <div class="tel">
+                            <input type="text" name="telefone-in-company" id="telefone-in-company" maxlength="9" class="tel-size mtop"  tabindex="7" />
+                        </div>
+                        <div class="clear"></div>
+                        <input type="text" name="publico-in-company" id="publico-in-company" value="PÚBLICO ALVO:" onfocus="if(this.value =='PÚBLICO ALVO:'){this.value = '';}" onblur="if(this.value == ''){this.value = 'PÚBLICO ALVO:';}" tabindex="9" />
+                        <textarea id="mensagem-in-company" name="mensagem-in-company" cols="1" rows="" onfocus="if(this.value == 'MENSAGEM:'){this.value = '';}" onblur="if(this.value == ''){this.value = 'MENSAGEM:';}" tabindex="13" style="overflow:auto; resize:none;">MENSAGEM:</textarea>
+                    </fieldset>
+                    <div class="enviar">
+                        <label> <a href="#" id="envia-in-company" title="Enviar">Enviar</a> </label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+        </form>
+    </div>
+</div>
+</body>

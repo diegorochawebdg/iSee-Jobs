@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Philips Avent - Produtos</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<link href="css/produtos.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript">
+
+function getParameterByName(name)
+{
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regexS = "[\\?&]" + name + "=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.search);
+  if(results == null)
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+$(document).ready(function(e) {
+	//img hover
+    $(".compre1 img, .compre2 img, .compre3 img, .conteudo-topo img").hover(function(e) {
+        $(this).animate({opacity:0.7}, 200);
+    }, function(){
+		$(this).animate({opacity:1}, 200);
+	});
+	
+	//hover do menu
+	$(".menu-divisao a").hover(function(e) {
+        
+		$(this).parent().addClass("menu-hover");
+    
+	}, function(){
+		
+		// alert("id objeto: " + $(this).attr('id') + " id clicado: " + item_clicado);
+		
+		// Se a ID do objeto atual for diferente do item clicado, entao remove a classe.
+		if( $(this).attr('id') != item_clicado) $(this).parent().removeClass("menu-hover");
+	
+	});
+	
+	
+	//coletar id enviado pela index
+	var clickedItem = "";
+	// variaveis a serem usadas
+	var item_clicado		= "";
+	var objeto_clicado	  = "";
+	
+	function openPage() 
+	{
+		if(getParameterByName("page"))
+		{
+			
+			var page = getParameterByName("page");
+			// alert( getParameterByName("page"));
+			
+			 //$("#container-produtos").fadeOut(400, function(){
+				$("#container-produtos div").hide();
+				// $("#container-produtos").fadeIn();
+				$("#" + page ).fadeIn();
+				$("#" + page + " div").fadeIn();
+				// remove o mouse hover do objeto atual
+				removeHover();
+				// adiciona classe hover quando clicado apos 10 milisegundos
+				setTimeout( function() { $("#" + page + "-menu").parent().addClass("menu-hover"); }, 100);
+				// seta o item clicado para acessorios-menu
+				item_clicado = page + "-menu";
+				// seta o objeto ( div ) clicado
+				objeto_clicado = $("#" + page + "-menu");
+				
+			//});
+		}
+		 	
+	}
+	openPage();
+	
+	// funcao responsavel por remover o mouse hover do objeto atual
+	function removeHover()
+	{
+		// se objeto clicado for diferente de vazio ( que eh o valor inicial da variavel ), entao remove a classe
+		if( objeto_clicado != "") objeto_clicado.parent().removeClass("menu-hover");
+	}
+	
+	
+	//ações do menu
+	$("#acessorios-menu, #acessorios-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#acessorios, #acessorios div").fadeIn();
+			// remove o mouse hover do objeto atual
+			removeHover();
+			// adiciona classe hover quando clicado apos 10 milisegundos
+			setTimeout( function() { $("#acessorios-menu").parent().addClass("menu-hover"); }, 10);
+			// seta o item clicado para acessorios-menu
+			item_clicado = "acessorios-menu";
+			// seta o objeto ( div ) clicado
+			objeto_clicado = $("#acessorios-menu");
+			
+			
+		});
+    });
+	$("#alimentacao-menu, #alimentacao-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#alimentacao, #alimentacao div").fadeIn();
+			
+			removeHover();
+			setTimeout( function() { $("#alimentacao-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "alimentacao-menu";
+			objeto_clicado = $("#alimentacao-menu");
+			
+		});
+    });
+	$("#babas-menu, #babas-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#babas, #babas div").fadeIn();
+			
+			removeHover();
+			setTimeout( function() { $("#babas-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "babas-menu";
+			objeto_clicado = $("#babas-menu");
+			
+		});
+    });
+	$("#bolsa-menu, #bolsa-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#bolsa, #bolsa div").fadeIn();
+			removeHover();
+			setTimeout( function() { $("#bolsa-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "bolsa-menu";
+			objeto_clicado = $("#bolsa-menu");
+		});
+    });
+	$("#copos-menu, #copos-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#copos, #copos div").fadeIn();
+			removeHover();
+			setTimeout( function() { $("#copos-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "copos-menu";
+			objeto_clicado = $("#copos-menu");
+		});
+    });
+	$("#cuidados-menu, #cuidados-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#cuidados, #cuidados div").fadeIn();
+			removeHover();
+			setTimeout( function() { $("#cuidados-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "cuidados-menu";
+			objeto_clicado = $("#cuidados-menu");
+		});
+    });
+	$("#esterilizador-menu, #esterilizador-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#esterilizador, #esterilizador div").fadeIn();
+			removeHover();
+			setTimeout( function() { $("#esterilizador-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "esterilizador-menu";
+			objeto_clicado = $("#esterilizador-menu");
+		});
+    });
+	$("#extratores-menu, #extratores-img").click(function(e) {
+        $("#container-produtos").fadeOut(400, function(){
+			$("#container-produtos div").hide();
+			$("#container-produtos").fadeIn();
+			$("#extratores, #extratores div").fadeIn();
+			removeHover();
+			setTimeout( function() { $("#extratores-menu").parent().addClass("menu-hover"); }, 10);
+			item_clicado = "extratores-menu";
+			objeto_clicado = $("#extratores-menu");
+		});
+    });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32737410-31']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="header">
+    	<div class="logo float-left"> <a href="index.html" title="Retorne para a página inicial"><img src="images/philips-avent-logo.png" alt="Logotipo Philips Avent" width="117" height="54" title="Philips Avent" /></a>
+        </div>
+        <div class="float-right mright">
+        	<img src="images/n1-recomendada-maes.png" alt="Marca nº1 recomendada pelas mães" width="83" height="82" title="Marca nº1 recomendada pelas mães" />
+        </div>
+        <div class="titulo float-right right">
+        	<h1>Philips Avent.</h1>
+            <h2>A marca número 1 recomendada pelas mães*</h2>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="conteudo">
+    	<div class="conteudo-topo">
+        	<div class="float-left"> <a href="#" id="acessorios-img"><img src="images/acessorios.jpg" alt="acessórios" width="85" height="84" title="acessórios" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="alimentacao-img"><img src="images/alimentacao-infantil.jpg" alt="Alimentação infantil" width="84" height="84" title="Alimentação infantil" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="babas-img"><img src="images/baba-eletronica.jpg" alt="babá eletrônica" width="85" height="84" title="babá eletrônica" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="bolsa-img"><img src="images/bolsa-termica.jpg" alt="bolsa térmica" width="84" height="84" title="bolsa térmica" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="copos-img"><img src="images/copos.jpg" alt="copos" width="85" height="84" title="copos" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="cuidados-img"><img src="images/cuidados-seios.jpg" alt="cuidados com os seios" width="86" height="84" title="cuidados com os seios" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="esterilizador-img"><img src="images/esterilizador.jpg" alt="esterilizador" width="84" height="84" title="esterilizador" /></a>
+            </div>
+            <div class="float-left"> <a href="#" id="extratores-img"><img src="images/extratores.jpg" alt="extratores" width="89" height="84" title="extratores" /></a>
+            </div>
+            <div class="float-left conheca center">
+            	<div class="ptop width1">
+                    <a href="#" class="font2 size1 width1">CLIQUE AQUI E CONHEÇA <strong class="block">A LINHA COMPLETA</strong></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+            <div class="menu">
+            	<ul>
+                	<li><div class="menu-divisao mtop"><a href="#" id="acessorios-menu">ACESSÓRIOS</a></div></li>
+                    <li><div class="menu-divisao"><a href="#" id="alimentacao-menu">ALIMENTAÇÃO INFANTIL</a></div></li>
+                    <li><div class="menu-divisao"><a href="#" id="babas-menu">BABÁ ELETRÔNICA</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="#" id="bolsa-menu">BOLSA TÉRMICA</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="#" id="copos-menu">COPOS</a></div></li>
+                    <li><div class="menu-divisao"><a href="#" id="cuidados-menu">CUIDADOS COM OS SEIOS</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="#" id="esterilizador-menu">ESTERILIZADOR</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="#" id="extratores-menu">EXTRATORES</a></div></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="container-produtos" class="relative width-conteudo">
+        	<div id="acessorios" style="display:block;">
+                <div class="box-conteudo" style="display:block;">
+                    <div class="box-titulo" style="display:block;">
+                        <h3>Acessórios</h3>
+                    </div>
+                    <div class="box-txt" style="display:block;">
+                        <p>Cuidar do seu bebê é uma tarefa prazerosa e que fica ainda mais gostosa com os acessórios que  Philips AVENT oferece para você. Facilita o seu dia a dia e ajuda você a ficar mais tempo com seu bebê.</p>
+                    </div>
+                </div>
+                
+                <div class="compre1" style="display:block;"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a>
+                </div>
+            </div>
+            
+            <div id="alimentacao">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Alimentação infantil</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>A linha de Alimentação Infantil Philips AVENT propicia para as mães o suporte necessário para estabelecer um padrão de alimentação saudável na vida do bebê, trazendo engajamento da criança nas refeições através de estímulos e aprendizado interativo. 
+São pratos, colheres, tigelas, kits e talheres em formato ergonômico, cores vibrantes e fáceis de limpar. Para comer brincando!</p>
+                    </div>
+                </div>
+                
+                <div class="compre1"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a>
+                </div>
+            </div>
+            
+            <div id="babas">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Babás Eletrônicas</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Segurança para seu filho/a e tranquilidade para você. As babás eletrônicas são indispensáveis para garantir que você esteja sempre perto do seu bebê. Seja para escutar cada som emitido pelo seu pequeno/a ou para monitorar os movimentos durante o dia e à noite, Philips AVENT ajuda você a garantir a segurança de quem tanto ama.</p>
+                    </div>
+                </div>
+                <div class="compre1"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a> </div>
+            </div>
+            
+            <div id="bolsa">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Bolsa térmica</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Leve sempre com você. Uma bolsa térmica é essencial para carregar o alimento do seu bebê e mantê-lo na temperatura ideal; quente ou frio. Com dupla camada de isolamento térmico, mantém a temperatura por até 4 horas.</p>
+                    </div>
+                </div>
+                <div class="compre1"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a> </div>
+            </div>
+            <div id="copos">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Copos</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Fazer a transição para os copos ficou fácil com a linha Philips AVENT. Com uma ampla variedade de cores e acessórios, os bicos e tamanhos acompanham cada fase de desenvolvimento da criança. As tampas acopladas mantêm o bico sempre protegido e a válvula anti-vazamento facilita o transporte e o aprendizado da criança sem preocupações para a mamãe. Afinal, higiene e praticidade são grandes aliados dos pais nesse importante momento em que o bebê começa a virar “gente grande”.</p>
+                    </div>
+                </div>
+                <div class="compre2"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a> </div>
+            </div>
+            
+            <div id="cuidados">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Cuidados com os seios</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Sinta-se bem e transmita essa sensação para seu bebê. Philips AVENT oferece uma linha que proporciona todo o apoio e cuidado para que o período de amamentação seja confortável e proveitoso para mamãe e bebê.</p>
+                    </div>
+                </div>
+                <div class="compre1"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a>
+                </div>
+            </div>
+        
+            <div id="esterilizador">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Esterilizador</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Máxima higiene e proteção com o esterilizador de micro-ondas Philips AVENT. Prático e eficaz, ele é espaçoso e mantém os itens em seu interior estéreis por até 24hs - se a tampa permanecer fechada.  É um item que não pode faltar no dia a dia da mamãe que busca o melhor para seu bebê.</p>
+                    </div>
+                </div>
+                <div class="compre1"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a> </div>
+            </div>
+        
+            <div id="extratores">
+                <div class="box-conteudo">
+                    <div class="box-titulo">
+                        <h3>Extratores de leite</h3>
+                    </div>
+                    <div class="box-txt">
+                        <p>Sentir-se confortável e relaxada é muito importante para que o leite seja extraído com mais facilidade. A linha de extratores Philips AVENT alia tecnologia às necessidades das mães, para que a extração seja rápida, eficaz e indolor. Seja pela pétala massageadora para seios, que alivia dores e estimula a descida do leite, ou pela exclusiva função que memoriza e repete seu ritmo de sucção pessoal, cada detalhe foi feito para facilitar a vida da mamãe e trazer mais qualidade à alimentação do bebê.</p>
+                    </div>
+                </div>
+                <div class="compre3"> <a href="#"><img src="images/compre-agora.gif" alt="compre agora" width="119" height="27" title="Compre agora" /></a> </div>
+            </div>
+        
+        </div>
+        
+        <div id="footer">
+            <div class="observacoes">
+                <p class="font">*Baseada em pesquisa de satisfação online conduzida pela TNS em dezembro/2011 com 36.000 mulheres/usuárias de produtos da categoria  mamãe e bebê nos EUA, Inglaterra, França, Alemanha, Holanda, Polônia, Espanha, Rússia e China.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

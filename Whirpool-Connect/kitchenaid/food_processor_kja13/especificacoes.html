@@ -1,0 +1,85 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(cliente/background.jpg) 50% 50% no-repeat; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container h2{ font-family: 'Humanist521BT-Bold'; font-size:28px; color:#a71420;}
+.connect-container .dimensoes{ margin-left:-368px; top:65px;}
+.connect-container .conteudo{ margin-left:0px; top:65px;}
+
+.connect-container ul.lista{ width:400px;}
+.connect-container ul.lista li{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#4b4a4a; list-style:inside; margin-bottom:10px;}
+.connect-container ul#lista1{ margin-left:12px; top:300px;}
+.connect-container ul#lista2{ margin-left:184px; top:300px;}
+
+.connect-container .img-dimensoes{ margin-left:-368px; top:112px;}
+.connect-container .img-conteudo{ margin-left:28px; top:138px;}
+.connect-container #btn-manual{ margin-left:40px; bottom:30px;}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	$(".connect-container  #btn-manual").hover(
+		function(e){ $(this).removeClass("fadeIn").fadeTo("fast", .8); },
+		function(e){ $(this).fadeTo("fast", 1); }
+	).on("click", function(e){
+		Connect.trackPageView(  $NOME_FOLDER + Connect.currentPage + "/manual.pdf" );
+	});
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                  <h2 class="absoluto dimensoes animated fadeIn">Dimensões e peso:</h2>
+                  <h2 class="absoluto conteudo animated fadeIn">Conteúdo da embalagem:</h2>
+                  
+                  <ul id="lista1" class="absoluto lista animated fadeIn">
+                  		<li>1 tigela de 3,25L</li>
+                        <li>1 tigela de 1L</li>
+                        <li>Disco para fatiar</li>
+                        <li>Disco para picar</li>
+                  </ul>
+                  
+                  <ul id="lista2" class="absoluto lista animated fadeIn">
+                  		<li>Lâmina para massas</li>
+                        <li>Lâmina Multiuso</li>
+                        <li>Estojo para acessórios</li>
+                  </ul>
+                  
+                  <img src="cliente/dimensoes-e-peso.png" width="338px" height="330px" alt="" title="" class="absoluto img-dimensoes animated fadeIn" />
+                  <img src="cliente/conteudo-da-embalagem.png" width="272px" height="142px" alt="" title="" class="absoluto img-conteudo animated fadeIn" />
+                  <a href="cliente/manual.pdf" target="_blank"><img src="cliente/btn-manual-do-produto.png" width="301px" height="76px" alt="Manual do produto" title="Manual do produto" class="absoluto animated fadeIn" id="btn-manual" /></a>  
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

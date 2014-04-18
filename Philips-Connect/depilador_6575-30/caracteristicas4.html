@@ -1,0 +1,108 @@
+<style type="text/css">
+
+.container_interna {
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background: #801e57;
+}	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.bg-azul{ background: #83c2c5; height: 228px; width: 100% }
+.capa-txt { margin-left: -400px; top: 51px; }
+.necessaire { margin-left: -50px; top: 0px; }
+.ajustes { margin-left: -395px; top: 248px; }
+.velocidade-txt { margin-left: -395px; bottom: 36px; }
+.conforto { z-index: 2; top: 261px; }
+.conforto-txt { z-index: 2; top: 379px; }
+
+#call-to-action4 { margin-left: 220px; bottom: 30px; z-index: 5 !important; }
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+   	  <div class="bg-azul"></div>
+      <div class="content-center">
+            <div class="div-content">
+				
+              <img src="caracteristicas/page4/capa-exlcusiva.png" width="334" height="141" class="capa-txt" alt="Capa exclusiva para as áreas mais sensíveis" title="Capa exclusiva para as áreas mais sensíveis" />
+              
+              <img src="caracteristicas/page4/acompanha-uma-necessaire.jpg" width="499" height="279" class="necessaire" alt="Necessaire" title="Acompanha uma linda necessaire para você levar seu depilador em suas viagens!" />
+              
+              <img src="caracteristicas/page4/2-ajustes-de-velocidade.png" width="360" height="126" class="ajustes" alt="2 ajustes de velocidade" title="2 ajustes de velocidade" />
+              
+              <img src="caracteristicas/page4/velocidades-txt.png" width="291" height="101" class="velocidade-txt" alt="Duas velocidades" title="2 velocidades" />
+              
+              <img src="caracteristicas/page4/conforto-e-exclusividade.png" width="346" height="91" class="conforto" alt="Conforto e exclusividade" title="Conforto e exclusividade" />
+              
+              <img src="caracteristicas/page4/conforto-txt.png" width="364" height="36" class="conforto-txt" alt="Por meio de um sistema eficiente, os depiladores Philips Satinelle removem os pelos a partir de 0,5mm pela raiz." title="Por meio de um sistema eficiente, os depiladores Philips Satinelle removem os pelos a partir de 0,5mm pela raiz." />  
+                
+              <a href="#"><img src="caracteristicas/page4/tabela-comparativa.jpg" width="218" height="45" alt="Tabela comparativa" title="Tabela comparativa" id="call-to-action4" /></a>
+
+            
+            </div>
+        </div>
+    
+    </div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	//faixa-roxa
+	TweenMax.from( $(".bg-azul") , 1, { css: { width: 0 } , ease: Circ.easeInOut, delay:0.5});
+	
+	//titulo
+	TweenMax.from( $(".capa-txt") , 1, { css: { left:"-=100px", alpha:0 } , ease: Strong.easeInOut, delay:1.5});
+	
+	//img
+	TweenMax.from( $(".necessaire") , 1, { css: { left:"+=150px", alpha:0 } , ease: Strong.easeInOut, delay:1.9});
+	
+	//2 ajustes
+	TweenMax.from( $(".ajustes") , 1, { css: { top:"+=100px", alpha:0 } , ease: Strong.easeInOut, delay:2.2});
+	
+	//2 ajustes txt
+	TweenMax.from( $(".velocidade-txt") , 1, { css: { bottom:"-=100px", alpha:0 } , ease: Strong.easeInOut, delay:2.5});
+	
+	//conforto
+	TweenMax.from( $(".conforto") , 1, { css: { top:"-=50px", alpha:0 } , ease: Strong.easeInOut, delay:2.8});
+	
+	//conforto-txt
+	TweenMax.from( $(".conforto-txt") , 1, { css: { top:"-=50px", alpha:0 } , ease: Strong.easeInOut, delay:3.1});
+	
+	
+	//call to action
+	TweenMax.from( $("#call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:4.3, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action4").hover(function(e) {
+            TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action4" , "caracteristicas5.html", true );
+	
+		
+});
+</script>-

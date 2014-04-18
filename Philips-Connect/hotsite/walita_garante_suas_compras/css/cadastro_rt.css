@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#content{ background-color: #f1eeee; }
+
+.container *{ color: #565757; font-size: 17px; }
+.container{ left: 50%; margin-left: -456px; padding: 86px 0 15px 0; width: 925px; }
+.container .dados-cliente { float: left; }
+.container .size { text-align: right; float: left; width: 119px; margin-right: 5px; padding-top: 4px; }
+.ptop { padding-top: 4px; }
+.float-left{float:left;}
+input , select{ padding: 0 10px; height: 31px; border: none; box-shadow: #e7d1b5 3px 3px 0; margin-bottom: 15px; }
+.linha{ width: 100%; height: 1px; background-color: #cb9192; margin: 10px 0; }
+#nome , #endereco{ width: 780px; }
+#cpf , #rg, #cep{ width: 202px; margin-right: 30px; }
+.checkbox-container.selected { background: url(../cadastro/images/completar-checked.png); display: block; height: 21px; width: 20px; cursor: pointer; margin: 2px 5px; }
+.checkbox-container { background: url(../cadastro/images/completar-unchecked.png); display: block; height: 21px; width: 20px; cursor: pointer; margin: 2px 5px; }
+input[type='checkbox'] { display: none; }
+#cep { margin-right: 5px; }
+#nr_endereco { width: 110px; margin-right: 25px; }
+#complemento { width: 516px; }
+#cidade , #telefone{ margin-right: 20px; }
+#nr_nf { width: 347px; }
+#uf, #qtd_produtos { -webkit-appearance: none; appearance: none; border-radius: 0; width: 76px; cursor: pointer; background: #FFF url(../cadastro/images/seta-select.png) no-repeat 59px center; outline:none; text-align:center; }
+#email { width: 472px; }
+.regulamento { background: #b4e1e6; text-align: center; padding: 5px; }
+.regulamento span { font-size: 14px; color: #565757; }
+.regulamento a { font-size: 14px; color: #ed1c24; text-decoration: none; }
+.checkbox-container2 { background: url(../cadastro/images/completar-unchecked.png); display: block; height: 21px; width: 20px; cursor: pointer; margin: 2px 5px 2px 230px; }
+.checkbox-container2.selected { background: url(../cadastro/images/completar-checked.png); display: block; height: 21px; width: 20px; cursor: pointer; margin: 2px 5px 2px 230px; }
+#bt_enviar { background: url(../cadastro/images/finalizar-cadastro.png); width: 282px; padding-top: 44px; box-shadow: none; outline: none; cursor: pointer; margin: 15px 0 0 643px; }
+
+.success-msg { background: #FEEBD5 url(../images/sucesso.png) 25px center no-repeat; height:280px; }
+.success-msg h3 { background: url(../images/cadastro-efetuado-com-sucesso.png); width: 319px; padding-top: 30px; top: 130px; left: 148px; }
+#contpopup { background: #FEEBD5 url(../images/erro.png) 25px center no-repeat; /*padding: 25px 0 5px 0;*/}
+.erro-msg{margin-left:155px;}
+.erro-msg h3 { background: url(../images/problemas-no-cadastro.png); width: 231px; margin-top: 10px; padding-top: 31px; margin-bottom: 10px; }
+.erro-msg li {color:#e21616; font-size:18px;} 
+.erro-msg li:before{content:"x ";}
+.erro-msg span{margin-top:15px; color:#313030; display:block;}

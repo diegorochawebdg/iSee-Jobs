@@ -1,0 +1,50 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page1/bg.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.absolute { position: absolute; left: 50%; }
+.container_interna h2 { margin-left: -4px; top: 35px; background: url(caracteristicas/page1/kitchenaid-culinaria-e-arte.png); height: 26px; width: 371px; text-indent: -9999px; }
+.txt { width: 296px; margin-left: 53px; top: 145px; }
+.txt h3 { background: url(caracteristicas/page1/um-toque-de-sofisticacao-e-design-para-a-sua-cozinha.png); text-indent: -9999px; height: 43px; width: 258px; margin-bottom: 18px; }
+.txt p { color: #eed4d5; font-size: 14px; line-height: 19px; }
+.call-to-action1 { background: url(caracteristicas/page1/potencia-e-elegancia.png); text-indent: -9999px; height: 37px; width: 347px; margin-left: 20px; bottom: 20px; }
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s13{ -webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<h2 class="absolute animated fadeInDown s05">KitchenAid. Culinária é arte.</h2>
+                
+                <div class="txt absolute animated fadeInUp s09">
+                	<h3>Um toque desofisticação e design para a sua cozinha.</h3>
+                    <p>Sabemos que, muito mais que cozinhar, é na cozinha que você se expressa, cria e transforma o cotidiano em algo especial. Com o Liquidificador KitchenAid, você terá as ferramentas necessárias para se expressar da melhor maneira. Sua versatilidade, design e performance aguçam a sua criatividade, permitindo que suas receitas fiquem ainda mais deliciosas e diversificadas.</p>
+                </div>
+            	
+                <a href="#" class="call-to-action1 absolute animated fadeInRightBig s13">Potência e elegiancia</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	connect_callToAction( $(".connect-container .call-to-action1"), "fadeInRightBig", "s13", "caracteristicas2.html", true );
+ 
+ function connect_callToAction( button, animation, delay, page, boolean ){
+  var connect_pageStart = setInterval( function(e){
+   button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+   .hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 ); } );
+   Connect.addCallToAction( button , page, boolean );
+   clearInterval( connect_pageStart );
+  }, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+ }
+});
+</script>

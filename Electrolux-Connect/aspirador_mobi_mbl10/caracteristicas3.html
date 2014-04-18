@@ -1,0 +1,96 @@
+
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(caracteristicas/bg-body.jpg) repeat !important; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; }
+.bg-magenta { background: #b2123c; height: 311px; width: 100%; bottom: 0px; position: absolute; z-index: 0; }
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.divisao { background: url(caracteristicas/page3/divisao.png); height: 187px; width: 2px; margin-left: -98px; position: absolute; left: 50%; top: 12px; }
+.faixa { background: url(caracteristicas/page3/faixa.png); height: 54px; width: 389px; margin-left: -225px; position: absolute; left: 50%; bottom: 32px; }
+.dispensa { bottom: 47px; margin-left: -159px; }
+.leve-compacto { margin-left: -371px; top: 71px; }
+.enrolador { margin-left: -64px; top: 38px; }
+.enrolador-img { margin-left: 224px; top: 8px; }
+.aspirador-img { margin-left: -503px; bottom: -12px; }
+.alca, .pedal, .filtro { top: 233px; }
+.alca { margin-left: -161px; }
+.pedal { margin-left: 31px; }
+.filtro { margin-left: 216px; }
+#call-to-action3 { margin-left: 195px; bottom: 7px; z-index: 2 !important; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/leve-e-compacto.png" width="239" height="88" alt="Leve e compacto" title="Leve e compacto" class="leve-compacto" />
+                
+                <div class="divisao"></div>
+                
+                <img src="caracteristicas/page3/enrolador-do-cabo-eletrico.png" width="277" height="138" alt="Enrolador do cabo elétrico" title="Enrolador do cabo elétrico" class="enrolador" />
+                
+                <img src="caracteristicas/page3/enrolador-cabo.png" width="191" height="191" alt="Enrolador de cabo" title="Enrolador de cabo" class="enrolador-img" />
+                
+                <img src="caracteristicas/page3/frente-aspirador.png" width="368" height="347" alt="frente do aspirador de pó" title="Frente do aspirador de pó" class="aspirador-img" />
+                
+              <div class="faixa"></div>
+                
+                <img src="caracteristicas/page3/dispensa-o-uso-de-saco-para-po.png" width="327" height="20" alt="Dispensa o uso de saco para pó" title="Dispensa o uso de saco para pó" class="dispensa" />
+                
+                <img src="caracteristicas/page3/alca-ergonomica.jpg" width="177" height="171" alt="Alça ergonômica para facilitar o transporte!" title="Alça ergonômica para facilitar o transporte!" class="alca" />
+                
+                <img src="caracteristicas/page3/pedal-liga-desliga.jpg" width="171" height="171" alt="Pedal liga/desliga" title="Pedal liga/desliga" class="pedal" />
+                
+                <img src="caracteristicas/page3/filtro-removivel-e-lavavel.jpg" width="171" height="171" alt="Filtro removível e lavável" title="Filtro removível e lavável" class="filtro" />
+                
+                <a href="#"><img src="caracteristicas/page3/acessorios.png" width="186" height="76" alt="Acessórios" id="call-to-action3" title="Acessórios" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".leve-compacto") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.3});
+	
+	TweenMax.from( $(".divisao") , 1, { css: { alpha: 0 } , ease: Strong.easeOut, delay:.4});
+	
+	TweenMax.from( $(".enrolador") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.6});
+	
+	TweenMax.from( $(".enrolador-img") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.9});
+	
+	TweenMax.from( $(".aspirador-img") , 1, { css: { alpha: 0, left: "-=100px" } , ease: Strong.easeOut, delay:1.2});
+	
+	TweenMax.from( $(".alca") , 1, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:1.5});
+	
+	TweenMax.from( $(".pedal") , 1, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:1.7});
+	
+	TweenMax.from( $(".filtro") , 1, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:1.9});
+	
+	TweenMax.from( $(".faixa") , 1, { css: { width:0 } , ease: Strong.easeOut, delay:2.2});
+	
+	TweenMax.from( $(".dispensa") , 1, { css: { alpha: 0, left: "+=50px" } , ease: Strong.easeOut, delay:2.2});
+	
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2.7, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $(this) , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+});
+</script>

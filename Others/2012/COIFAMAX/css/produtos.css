@@ -1,0 +1,53 @@
+@charset "utf-8"; 
+a{text-decoration:none}
+a:hover{text-decoration:underline; cursor:pointer}
+#conteudo .float-left{float:left}
+#conteudo .sombra{background:url(../images/sombra.png); height:32px; width:1160px; position:absolute; margin-left:-580px; left:50%; top:0px; z-index:10}
+#conteudo .artefatos{
+	position: relative;
+	background: #eae3db url(../images/bg-radial4.jpg) repeat-y center 0px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/*Continuação*/
+#conteudo .subtitulo{
+	padding-top: 40px;
+	padding-left: 50px
+}
+#conteudo .fade{background:url(../images/fade.png); height:69px; width:345px; position:absolute; bottom:0px; z-index:10; right:110px}
+
+#conteudo .slider{width:330px; margin-left:40px; padding-top:25px; position:absolute; z-index:5; right:115px}
+#conteudo .slider p{margin-bottom:25px; line-height:1.2em}
+#conteudo .slider-botao-baixo{
+	background: url(../images/seta-baixo.gif);
+	height: 60px;
+	width: 60px;
+	float: right;
+	margin-top: 47px;
+	cursor: pointer;
+}
+#conteudo .slider-botao-cima{
+	background: url(../images/seta-cima.gif);
+	height: 60px;
+	width: 60px;
+	float: right;
+	margin-top: 47px;
+	cursor: pointer;
+}
+#conteudo .submenu2{background:url(../images/bg-sub2.jpg) repeat-x; padding:19px 0 0 0; height:36px}
+#conteudo .submenu2 li{display:inline; text-transform:uppercase; margin-right:30px}
+#conteudo .submenu2 li a{padding:8px; color:#FFF; font-size:15px}
+#conteudo .bg-branco{background:#F4F1ED; color:#549ABE !important; text-decoration:none !important; cursor:text}
+#conteudo .sub{float:left; margin-right:25px}
+#conteudo .left{float:left}
+
+#conteudo .texto-mais{background:url(../images/texto-mais.gif); height:44px; width:44px; margin-top:10px}
+#conteudo .texto-menos{background:url(../images/texto-menos.gif); height:44px; width:44px; margin-top:10px}
+#conteudo .right{margin:25px 0 0 0; float:right}
+
+#conteudo .sub a{text-transform:uppercase; color:#5399BE; font-size:15px}
+#conteudo .txt{width:455px; margin:40px 0; float:left}
+#conteudo .txt h3{font-size:35px; color:#468CB1; margin-bottom:15px}
+#conteudo .txt p{font-size:18px; line-height:1.2em}
+#conteudo .divisao{background:url(../images/divisao.jpg); height:1px; width:450px; margin:25px 0}

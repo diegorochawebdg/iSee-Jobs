@@ -1,0 +1,193 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container #box-barbeador{ background:#000; width:340px; height:270px; margin-left:-400px; top:124px;}
+.connect-container #box-barbeador .barbeador{ position:absolute; left:30px; bottom:0;}
+.connect-container #box-barbeador .linhas{ position:absolute; right:0; bottom:0;}
+
+.connect-container .box{ background:#32afcd; width:470px; height:80px; padding:15px; margin-left:-148px;}
+.connect-container .box h2{ font-family: "Museo-700"; font-size:22px; color:#FFF; text-transform:uppercase; margin-bottom:10px;}
+.connect-container .box p{ font-family: "Museo-300"; font-size:16px; color:#FFF;}
+.connect-container .box img{ position:absolute; left:360px;}
+
+.connect-container #box-conteudo1{ top:124px;}
+.connect-container #box-conteudo1 img{ bottom:-10px;}
+.connect-container #box-conteudo2{ top:258px;}
+.connect-container #box-conteudo2 img{ margin-left:20px; top:-10px;}
+
+.connect-container #box-compromisso{ background:#000; height:70px; margin-left:-400px; bottom:10px;}
+.connect-container #box-compromisso .thumb{ float:left; margin:10px;}
+.connect-container #box-compromisso p{ float:left; font-family: "Museo-300"; font-size:14px; color:#FFF; line-height:18px; margin-top:10px; margin-right:10px;}
+.connect-container #box-compromisso p strong{ font-family: "Museo-700";}
+.connect-container #box-compromisso #call-to-action-tooltip{ margin-left:-70px; bottom:0;}
+
+.connect-container #box-tooltip{ background:url(caracteristicas/page2/bg-tooltip.png) 50% 50% no-repeat; width:800px; height:204px; margin-left:-490px; bottom:0px; z-index:10; padding:56px 75px 52px 90px; display:none;}
+.connect-container #box-tooltip img{ float:left; margin:40px 20px;}
+.connect-container #box-tooltip p{ float:left; margin-top:40px; font-family: "Museo-300"; font-size:14px; color:#FFF; line-height:16px;}
+.connect-container #box-tooltip p strong{ font-family: "Museo-700";}
+.connect-container #box-tooltip ul.lista{ float:left; margin-top:40px; margin-left:20px;}
+.connect-container #box-tooltip ul.lista li{ margin-bottom:10px;}
+.connect-container #box-tooltip ul.lista li img{ float:none; margin:0 10px 0 0; position:absolute;}
+.connect-container #box-tooltip ul.lista li img.meio{ margin-top:8px;}
+.connect-container #box-tooltip ul.lista li p{ float:none; line-height:16px; margin:0 0 0 45px;}
+.connect-container #box-tooltip ul.lista li p span{ color:#112e47;}
+.connect-container #box-tooltip #call-to-action-close{ margin-left:352px; top:22px;}
+
+.connect-container #call-to-action2{ margin-left:100px; bottom:25px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action2"), "fadeInRight", "s10", "caracteristicas3.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+	var connect_tooltip = $( ".connect-container #box-tooltip" );
+		
+	$( ".connect-container #call-to-action-tooltip" ).on( "click",
+		function(e){
+			connect_tooltip.stop(true, true).fadeIn();
+			Connect.trackPageView( "caracteristicas2/compromisso_philips" );
+		}
+	 ).hover(
+	 	function(){ $(this).fadeTo("fast", .7);},
+		function(){ $(this).fadeTo("fast", 1);}
+	 );
+	 
+	 $( ".connect-container #call-to-action-close" ).on( "click",
+	 	function(e){
+			connect_tooltip.stop(true, true).fadeOut();	
+		}
+	  ).hover(
+	 	function(){ $(this).removeClass("fadeInRight").fadeTo("fast", .7);},
+		function(){ $(this).fadeTo("fast", 1);}
+	 );
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="box-barbeador" class="absoluto animated fadeInLeft s05">
+                	<img src="caracteristicas/page2/barbeador.png" width="203px" height="341px" alt="" title="" class="absoluto barbeador" />
+                    <img src="caracteristicas/page2/linhas.png" width="337px" height="163px" alt="" title="" class="linhas" />
+                </div>
+                
+                <div id="box-conteudo1" class="absoluto box animated fadeInRight s06">
+                	<h2>Sistema GyroFlex 2D</h2>
+                    <p>
+                    	Com esse sistema, você ajusta o aparelho de<br />
+                        um jeito mais fácil aos contornos do rosto,<br />
+                        tornando o barbear mais confortável.
+                    </p>
+                    <img src="caracteristicas/page2/feature1.png" width="202px" height="202px" alt="" title="" />
+                </div>
+                
+                <div id="box-conteudo2" class="absoluto box animated fadeInRight s07">
+                	<h2>DUALPRECISION</h2>
+                    <p>
+                    	Barbear prático e seguro com as cabeças<br />
+                        DualPrecision que cortam pelos normais e<br />
+                        curtos de uma só vez. 
+                    </p>
+                    <img src="caracteristicas/page2/feature2.png" width="174px" height="173px" alt="" title="" />
+                </div>
+                
+                <div id="box-compromisso" class="absoluto animated fadeInUp s08">
+                	<img src="caracteristicas/page2/selo-90-dias-thumb.png" width="51px" height="51px" alt="Experimente por 90 dias ou seu dinheiro de volta" title="Experimente por 90 dias ou seu dinheiro de volta" class="thumb" />
+                	<p>
+                    	Compromisso Philips:<br />
+                        <strong>SATISFAÇÃO TOTAL OU SEU DINHEIRO DE VOLTA</strong>
+                    </p>
+                    <a href="#" onclick="return false" id="call-to-action-tooltip" class="absoluto"><img src="caracteristicas/page2/btn-conheca.png" width="135px" height="20px" alt="Conheça" title="Conheça" /></a>
+                </div>
+                
+                <div id="box-tooltip" class="absoluto">
+                	<img src="caracteristicas/page2/selo-90-dias.png" width="127px" height="126px" alt="Experimente por 90 dias ou seu dinheiro de volta" title="Experimente por 90 dias ou seu dinheiro de volta" class="animated fadeInLeft s05" />
+                    <p class="animated fadeInLeft s06">
+                    	Compromisso Philips:<br />
+                        <strong>SATISFAÇÃO TOTAL OU SEU DINHEIRO<br />
+                        DE VOLTA:</strong> os barbeadores Philips podem ser<br />
+                        testados por até 90 dias.<br />
+                        Caso você não se adapte ao produto, a Philips<br />
+                        devolve o seu dinheiro.<br />
+                        Consulte o regulamento no site:<br />
+                        <strong>www.philips.com.br</strong>
+                    </p>
+                    <ul class="lista">
+                        <li class="animated fadeInDown s07">
+                        	<img src="caracteristicas/page2/lista-1.png" width="35px" height="37px" alt="" title="" />
+                        	<p>
+                            	<span>Uso sem fio:</span> todos os barbeadores<br />
+                                Philips possuem bateria recarregável.
+                            </p>
+                        </li>
+                        <li class="animated fadeInDown s08">
+                        	<img src="caracteristicas/page2/lista-2.png" width="35px" height="37px" alt="" title="" class="meio" />
+                        	<p>
+                            	<span>Garantia Mundial:</span> todos os produtos<br />
+                                Philips possuem garantia mundial<br />
+                                válida por 2 anos.
+                            </p>
+                        </li>
+                        <li class="animated fadeInDown s09">
+                        	<img src="caracteristicas/page2/lista-3.png" width="35px" height="37px" alt="" title="" />
+                        	<p>
+                            	<span>Praticidade:</span> todos os produtos<br />
+                                Philips são bivolt automático.
+                            </p>
+                        </li>                        
+                    </ul>
+                    <a href="#" onclick="return false" id="call-to-action-close" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page2/btn-fechar.png" width="29px" height="30px" alt="Fechar" title="Fechar" /></a>
+                </div>
+                
+                <a href="#" id="call-to-action2" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page2/btn-barba-modelada.png" width="198px" height="43px" alt="Barba modelada" title="Barba modelada" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

@@ -1,0 +1,1 @@
+﻿package  {		public class Tela1 extends Tela {		public function Tela1(name:String="") {			// constructor code			super();		}	}	}

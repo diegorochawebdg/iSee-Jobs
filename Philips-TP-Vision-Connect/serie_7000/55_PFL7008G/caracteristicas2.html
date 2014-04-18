@@ -1,0 +1,74 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	/*position: relative;*/
+	
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.ambilight { margin-left: -84px; top: 0px; }
+.bg { z-index: 0 !important; position:static !important; }
+.bg-div{ margin-left: -588px; top: 0px; height: 500px; position: absolute; left: 50%; background: url(caracteristicas/page2/bg-transparente.png) repeat; width: 1188px; }
+.ambilight-txt { margin-left: -196px; top: 56px; }
+#call-to-action2 { margin-left: 276px; bottom: 46px; }
+iframe{ position:absolute; left:50%; width:100%; height:520px; top:0; margin-left:-50%; overflow:hidden;}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/ambilight.png" alt="Ambilight" width="183" height="59" class="ambilight" title="Ambilight" />
+            	
+                <a href="#"><img src="caracteristicas/page2/o-maximo-em-tecnologia.png" width="256" height="66" alt="smartTV" id="call-to-action2" title="smartTV" /></a>
+                
+              <iframe src="http://www.tvsphilips.com.br/ambiplayer_connect/ambiplayer.html?serietv=s7000" scrolling="no"></iframe>
+          </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//ambiplayer
+	TweenMax.from( $("iframe") , 1, { css: { alpha: 0 } , ease: Strong.easeOut, delay:.8 } );
+	
+	//ambilight
+	TweenMax.from( $(".ambilight") , 1, { css: { top: "-=59px" } , ease: Strong.easeOut, delay:2.5});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:3.2, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action2, .google-play-qr-code, .app-store-qr-code").hover(function(e) {
+            TweenMax.to( $(this) , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+		
+});
+</script>

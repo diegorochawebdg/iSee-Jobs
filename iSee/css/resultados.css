@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#button_resultados{color: #f26532 !important;  font-family:'oxygenbold' !important;}
+#content-container { background: url(../images/resultados/bg-body.jpg) repeat; padding-top: 130px; }
+#content-container .content{ position: relative; width: 920px; }
+.seta-area-site { left: 710px; top: -68px !important; }
+h1{ font: 78px 'Conv_TheMix-9-Black'; color: #FFF; background: url(../images/resultados/title-bg.png) no-repeat left 11px; padding-left: 50px; margin:0 0 36px 0; line-height:1; }
+#main .label { background: url(../images/resultados/label.png); display: table; height: 236px; width: 231px; position: absolute; top: 0px; right: -10px; text-align: center; -moz-transform:rotate(-10deg); -webkit-transform:rotate(-10deg); -o-transform:rotate(-10deg); }
+#main .label span { vertical-align: middle; display: table-cell; font: 21px/2em 'Conv_TheMix-8-XBold'; }
+#main .label strong { font: 32px 'Conv_TheMix-9-Black'; vertical-align: middle; display: block; }
+#content-container figure{margin:30px 0;}
+#main .main-text { margin: 0 auto; width: 722px; }
+#content-container h2, #content-container h3 { font: 24px 'Conv_TheMix-8-XBold'; color: #fffc29; line-height: 1.1em; margin-bottom: 15px; }
+#content-container p{color:#FFF; font:16px 'oxygenregular'; margin-bottom:25px; line-height:1.1em;}
+#results p, #results h3{max-width:420px;}
+#first-row { position: relative; }
+#first-row .double-colors { position: absolute; z-index: 0; height: 100%; width: 100%; }
+#first-row .content { position: relative; z-index: 1; }
+.double-colors .color-left, .content .left { float: left; }
+.double-colors .color-right, .content .right { float: right; }
+.color-left { background: url(../images/resultados/preto1.png) repeat; height: 100%; width: 50%; }
+.color-right { background: url(../images/estrutura/bg-footer.jpg) repeat; height: 100%; width: 50%; }
+.content .left , .content .right{ width: 439px; }
+#third-row { background: url(../images/resultados/preto1.png) repeat; }
+#second-row h3, #third-row h3 { padding-top: 45px; }
+footer { background: url(../images/estrutura/bg-footer.jpg) repeat !important; }

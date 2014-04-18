@@ -1,0 +1,19 @@
+/*FORMULARIO*/
+#formulario{border:1px solid #125A9C; position:relative; background:#F5F6F8; margin-top:40px;}
+#formulario .form-header{background:#125A9C; padding:10px 0 14px 40px}
+#formulario .form-header h3{color:#FFF; font-size:25px !important; padding-left:40px; margin-bottom:0 !important; font-weight:normal !important;}
+#formulario .envelope{background:url(../images/envelope.png); display:block; height:61px; width:62px; position:absolute; z-index:3; left:11px; top:-16px}
+#formulario .form-body{padding:30px 25px 18px 25px; position:relative}
+#formulario .form-left{float:left; width:273px}
+#formulario .form-right{float:right; width:323px}
+#formulario input, #formulario textarea{background:url(../images/bg-fields.jpg) no-repeat; border:1px solid #CCC; width:251px; padding:0 10px; color:#12599B; font:16px Calibri}
+#formulario .form-right textarea{height:157px; padding-top:10px !important; width:307px !important}
+#formulario .form-left input{height:46px}
+#formulario .form-left .mtop{margin-top:12px}
+#formulario .ddd-size{width:48px !important}
+#formulario .traco{background:url(../images/traco.jpg); height:2px; width:7px; margin:34px 11px 0 11px}
+#formulario .tel, #formulario .traco{float:left}
+#formulario #ddd{width:152px}
+#formulario #telefone{width:152px}
+#formulario .enviar{position:absolute; right:0px; bottom:0px; background:#0096DA; text-align:center; display:block; width:95px; padding:10px 0}
+#formulario .enviar a{color:#FFF; text-decoration:none; font-size:20px}

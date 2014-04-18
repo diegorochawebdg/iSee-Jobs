@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* Reset CSS */
+*{padding:0; border:none; -webkit-font-smoothing:antialiased; font-family:Arial, Helvetica, sans-serif;}
+img{display:block; margin:0; border:none;}
+a{display:block; text-decoration:none; cursor:pointer;}
+a:hover{text-decoration:underline;}
+
+/*Main CSS*/
+body{width:100%; height:100%; background:url(../images/body-bg.png) repeat; margin:0;}
+body, html{height:100%; min-height:100%;}
+#container{background:url(../images/faixa_02.png) no-repeat center 10px; width:100%; height:100%; min-width:1033px;}
+#container .content-center{width:1033px; margin:0 auto; background-color:#f4f2f1; position:relative; padding-top:20px;}
+
+/*Utility CSS*/
+.link-padding{position:relative; overflow:hidden; height:0; display:block;}
+.page-margin{margin:0 20px;}
+.clear{clear:both;}
+.relative{position:relative;}
+h1, h2, h3, h4, p{margin:0; line-height:1;}
+.opacity:hover{
+	opacity:0.7;
+	-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+	   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+		 -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+			transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+}
+
+/*Header*/
+#header{margin-bottom:35px;}
+#header .logo{width:234px; padding-top:142px; background-image:url(../images/electrolux-logo.png); position:absolute; left:0; top:0; z-index:3;}
+#header .search-download{background-color:#626059; width:1060px; height:48px; margin-left:-15px; padding:5px 0; position:relative;}
+
+/*Header - DOWNLOAD*/
+#header .download{margin-right:31px; position:relative; float:right; z-index:2001;}
+#header .download span{position:absolute; right:0; top:-6px; font-weight:bold; font-size:11.5px; color:#FFF; background-color:#764777; padding:2px 12px; border-radius:30px; display:block; z-index:3;}
+#header .download .main-button{background:url(../images/download-button-menu.png); width:89px; padding-top:48px;}
+#header .download .downloads-list{position:absolute; right:0; top:35px; z-index:2001; background-color:#054779; width:360px; padding:12px 10px; border-radius:10px; overflow:hidden; display:none;}
+#header .download .downloads-list .the-list{overflow-y:scroll; position:relative; height:130px; width:100%; padding-right:25px;}
+#header .download .downloads-list td{border-bottom:solid 1px #005b9f;}
+#header .download .downloads-list td .remover{background-image:url(../images/remover-produto-carrinho.png); width:18px; padding-top:15px; margin:0;}
+#header .download .downloads-list td .item-name{font-size:10px; text-transform:uppercase; color:#FFF;}
+#header .download .downloads-list td:first-child{padding:4px 13px 4px 5px; width:38px;}
+#header .download .downloads-list td:first-child a{width:34px; height:34px; display:table-cell; vertical-align:middle; text-align:center;}
+#header .download .downloads-list td:first-child img{display:inline; max-height:34px; max-width:34px;}
+#header .download .downloads-list td:last-child{width:18px;}
+#header .download .downloads-list .ver-todos{background:url(../images/ver-todos.png) 0 center no-repeat; padding:0 0 0 30px; display:table; margin:10px auto 0 auto; text-transform:uppercase; color:#41aaf7; font-size:12px;}
+#header .download .downloads-list-vazio{ display:none; }
+
+/*Header - SEARCH*/
+#header .search{position:absolute; overflow:hidden; left:271px; z-index:2000; width:580px; height:27px; background-color:#FFF; border-radius:10px;margin-right:77px; padding:5px 3px 3px 10px; margin-top:7px; -moz-box-shadow:    inset 2px 2px 5px #666; -webkit-box-shadow: inset 2px 2px 5px #666; box-shadow: inset 2px 2px 5px #666;
+-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+#header .search.active{height:220px;}
+#header .search .clear{margin-bottom:5px;}
+
+#header .search input{float:left; outline:none; height:26px; font-size:14px; color:#333; width:482px; text-transform:uppercase;}
+#header .search .search-button{background:url(../images/buscar-btn.png); width:95px; padding-top:26px; float:left;}
+#header .search .autocomplete{position:relative; overflow-y:scroll; height:186px;}
+#header .search .autocomplete table{width:98%}
+#header .search .autocomplete tr td{border-top:solid 1px #ececec; height:45px;}
+#header .search .autocomplete tr td a{font-size:11px; text-transform:uppercase; color:#54534e;}
+#header .search .autocomplete tr td a span{color:#0084e7; font-weight:bold;}
+#header .search .autocomplete tr td:first-child{width:55px; padding:10px 10px 5px 5px}
+#header .search .autocomplete tr:last-child td{border-bottom:solid 1px #ececec;}
+#header .search .autocomplete tr td img{border:solid 1px #1a91e9; max-height:40px; max-width:40px;}
+
+/*Header - MENU*/
+#header #main-menu{float:right; background-color:#0084E7; width:757px;}
+#header #main-menu ul{margin:0;}
+#header #main-menu li.first{width:20%; display:block; float:left; text-align:center; padding:14px 0; position:relative; cursor:pointer;}
+#header #main-menu li .indicator{background:url(../images/selected-menu.png); width:19px; height:9px; position:absolute; bottom:-9px; left:45%; display:none; z-index:9999;}
+#header #main-menu li.selected, #header #main-menu li.selected2{background-color:#764777;}
+#header #main-menu li a{color:#FFF; text-transform:uppercase; font-size:12px; text-decoration:none; display:block;}
+
+/*Header - SUBMENUS*/
+#header #main-menu ul.inner{border: #764777 solid 2px; position:absolute; background:#FFF; width:100%; top:45px; left:-2px; display:none; z-index:9998;}
+#header #main-menu ul.inner li{list-style-type:none; color:#3e3e3e; font-size:12px; border-top:solid 1px #a3a3a3; text-align:left; padding:9px 0 4px 10px; }
+#header #main-menu ul.inner li:first-child{border:none;}
+#header #main-menu ul.inner li a{color:inherit; font-size:inherit; text-decoration:none; text-transform:none;}
+#header #main-menu ul.inner li a:hover{text-decoration:underline;}
+
+/*Header - PRODUTOS MENU*/
+#header .produtos-menu{border:solid 2px #764777; background-color:#FFF; position:absolute; left:0; top:45px; width:689px; padding:45px 20px 20px 45px; display:none; z-index:9998;}
+#header .produtos-menu *{text-align:left;}
+#header .produtos-menu .menu-produtos-item{float:left; width:28%; margin:0 25px 30px 11px;}
+#header .produtos-menu .menu-produtos-item h2{font-size:12px; font-weight:bold; text-transform:uppercase; background-image:url(../images/produtos-icones.png); padding:3px 0 0 22px; background-repeat:no-repeat; height:17px; margin-left:-22px;}
+#header .produtos-menu .menu-produtos-item a{color:#3e3e3e !important; font-size:12px !important; text-decoration:none; display:block !important; margin-bottom:2px !important; text-transform:capitalize !important;}
+#header .produtos-menu .menu-produtos-item a:hover{color:#0081EA !important;}
+#header .produtos-menu .menu-produtos-item li{list-style-type:none; border-bottom:solid #3e3e3e 1px !important; margin-bottom:3px !important;}
+
+#header .produtos-menu .menu-produtos-item .refrigeracao{color:#00798f;}
+#header .produtos-menu .menu-produtos-item .lavanderia{color:#006bab; background-position:0 -20px;}
+#header .produtos-menu .menu-produtos-item .cuidados-com-o-ar{color:#a19569; background-position:0 -40px;}
+#header .produtos-menu .menu-produtos-item .cuidados-com-a-agua{color:#00755c; background-position:0 -60px;}
+#header .produtos-menu .menu-produtos-item .limpeza{color:#7a4776; background-position:0 -80px;}
+#header .produtos-menu .menu-produtos-item .linhas-especiais{color:#5771aa; background-position:0 -100px;}
+#header .produtos-menu .menu-produtos-item .cozinha{color:#5f7d4e; background-position:0 -120px;}
+#header .produtos-menu .menu-produtos-item .eletroportateis{color:#825744; background-position:0 -140px;}
+#header .produtos-menu .menu-produtos-item .acessorios{color:#336699; background-position:0 -160px;}
+#header .produtos-menu .menu-produtos-item .cozinhas-e-lavanderias-profissionais{ background-position:0 -180px; padding-top:0px; min-height:40px;}
+#header .produtos-menu .menu-produtos-item .cozinhas-e-lavanderias-profissionais a, #header .produtos-menu .menu-produtos-item .cozinhas-e-lavanderias-profissionais{text-transform:uppercase; color:#00669c !important;}
+#header .produtos-menu .menu-produtos-item h2 a:hover{text-decoration:underline;}
+
+/*Content*/
+#content{min-height:700px;}
+
+
+/*Footer*/
+#footer{ padding:12px 0 26px 0; border-top:solid 2px #626059;}
+#footer .copyright-links, #footer .como-usar-site{float:left;}
+#footer .copyright-links small{color:#626059; font-size:10px; text-transform:uppercase; display:block;}
+#footer .copyright-links a, #footer .copyright-links span{color:#0084e7; font-size:10px; display:inline;}
+
+#footer .como-usar-site{background-image:url(../images/como-usar-o-site.png); width:139px; padding-top:24px; margin-left:16px;}
+
+#footer .receba-atualizacoes{float:right; width:480px;}
+#footer .receba-atualizacoes span, #footer .receba-atualizacoes input{font-size:12px; color:#626059; display:block; float:left;}
+#footer .receba-atualizacoes span{padding-top:6px;}
+#footer .receba-atualizacoes input{ border-radius:8px; margin:0 5px; padding:0 10px; -moz-box-shadow:    inset 1px 1px 2px #999; -webkit-box-shadow: inset 1px 1px 2px #999; box-shadow: inset 1px 1px 2px #999; height:26px; width:165px; outline:none;}
+#footer .receba-atualizacoes button{display:block; float:left; background:url(../images/ok-btn-footer.png); width:36px; height:26px; cursor:pointer;}
+
+/*Navigation*/
+.navigation *{color:#0084e7; font-size:10px; text-transform:uppercase; display:block; float:left; text-decoration:none;}
+.navigation span.separator{margin:0 5px;}
+.navigation a:hover{text-decoration:underline;}
+.navigation .clear{float:none !important;}

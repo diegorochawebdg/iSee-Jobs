@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*Selected Menu*/
+#main-menu #menu_promocao{background-color:#FFF;}
+#main-menu #menu_promocao a{color:#ed1c24;}
+/*End of Selected Menu*/
+
+#content{background:url(../promocao/images/bg-promocao.jpg) no-repeat center top;}
+.titles{top:75px; left:270px; text-align:center;}
+.titles h1{font-size:74px; text-transform:uppercase; color:#00b7be; line-height: 57px;}
+.titles h1 strong{font-size:20px; display:block;}
+.titles h2{font:36px Amarelinha, Arial, sans-serif; color:#ed1c24;}
+.titles h2 strong{font-size:40px; color:#930608; font-family:inherit;}
+
+.main-txt{top:327px; right:50px; width:330px;}
+.main-txt p{color:#444; font-size:16.5px;}
+.main-txt p.premios{color:#ed1c24; font-size:19.5px; margin-bottom:10px;}
+.main-txt .nao-esqueca{font:30px Amarelinha, Arial, sans-serif; color:#444; display:block; margin-bottom:15px;}
+.main-txt a{background-color: #00b7be; color: #FFF; padding: 7px 15px; box-shadow: #017372 3px 3px 0; text-decoration: none; text-transform: uppercase; font-size: 18.5px;}
+
+.veja-seus-numeros{top:644px; padding:23px; left:0; background:#FFF url(../promocao/images/bg-numeros.jpg) repeat; border-radius:10px; width:100%; z-index:2;}
+.veja-seus-numeros .numeros-container{display:table; margin:0 auto; width:500px} 
+.veja-seus-numeros h3{text-transform:uppercase; color:#00b7be; font-size:15px; margin-bottom:5px}
+.veja-seus-numeros label {color:#58595b; font-size:14px; margin-right:5px;}
+.veja-seus-numeros input{border:#ebd4b7 solid 1px; background-color:#feecd5; height:22px; padding:0 10px; color:#58595b; margin-right:5px; width:130px; font-size:14px;}
+.veja-seus-numeros button{background:url(../images/entrar-home.png) no-repeat; width:69px; height:27px; border:none; cursor:pointer; float:right;}  
+.links{margin:2px 0 0 33px;}
+.links a{color:#00b7be; font-size:14px; margin-right:58px; text-decoration:none;}
+.links a:hover{text-decoration:underline;}
+.numeros-extend{background-color:#FFF; height:120px; top:653px; right:0; width:27%;}
+
+@media screen and (max-width:710px){
+.numeros-extend{width:15%;}
+}
+
+.success-msg { background: #FEEBD5 url(../images/sucesso.png) 25px center no-repeat; height:280px; }
+.success-msg h3 { background: url(../participe/images/sua-senha-foi-enviada-para-seu-email.png); width: 319px; padding-top: 25px; top: 130px; left: 148px; }
+#contpopup { background: #FEEBD5 url(../images/erro.png) 25px center no-repeat; /*padding: 25px 0 5px 0;*/}
+.erro-msg{margin-left:155px;}
+.erro-msg h3 { background: url(../images/problemas-no-cadastro.png); width: 231px; margin-top: 10px; padding-top: 31px; margin-bottom: 10px; }
+.erro-msg li {color:#e21616; font-size:18px;} 
+.erro-msg li:before{content:"x ";}
+.erro-msg span{margin-top:15px; color:#313030; display:block;}
+
+.erro-msg-login{margin-left:155px;}
+.erro-msg-login h3 { width: 231px; margin-top: 10px; padding-top: 31px; margin-bottom: 10px; }
+.erro-msg-login li {color:#e21616; font-size:18px;} 
+.erro-msg-login li:before{content:"x ";}
+.erro-msg-login span{margin-top:15px; color:#313030; display:block;}
+
+
+.div-senha{margin: 55px 0 0 140px;}
+.div-senha h3{background:url(../participe/images/esqueci-minha-senha.png) no-repeat; width:206px; padding-top:29px; margin-bottom:13px;}
+.div-senha p{font:16px GillSans; color:#5a5a5a; text-transform:uppercase; margin-bottom:13px;}
+.div-senha input{ width:155px; padding:0 10px; height:36px; box-shadow:#939598 3px 3px 0; border:none; float:left; margin-right:15px; outline:none;}
+.div-senha input#bt-esqueci{background:url(../participe/images/botao-ok.png) no-repeat; width:77px; height:37px; box-shadow:none; margin-top:2px; cursor:pointer;}

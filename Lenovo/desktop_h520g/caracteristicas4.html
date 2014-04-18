@@ -1,0 +1,101 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/page4/background.jpg) 50% 50% no-repeat;
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna .pc-desktop{ margin-left:-46px; top:158px;}
+.container_interna .pc-monitor{ margin-left:-372px; top:196px;}
+.container_interna .pc-tela{ margin-left:-362px; top:206px;}
+
+.container_interna .titulo{ margin-left:-374px; top:56px;}
+.container_interna .paragrafo1{ margin-left:-370px; top:102px;}
+.container_interna .observacao{ margin-left:-375px; top:470px;}
+.container_interna .lenovo{ margin-left:125px; top:142px;}
+.container_interna .paragrafo2{ margin-left:125px; top:284px;}
+
+.container_interna #call-to-action4{ margin-left:160px; bottom:30px; cursor:pointer;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	TweenMax.from($(".pc-desktop"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".pc-monitor"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".pc-tela"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".paragrafo1"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".observacao"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".lenovo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".paragrafo2"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+		
+	TweenMax.from( $("#call-to-action4") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.2, onComplete: function() {
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action4").hover(function(e) {
+            TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action4" , "caracteristicas5.html", true );
+	}} );
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page4/pc-desktop.png" width="137px" height="333px" alt="" title="" class="absoluto pc-desktop" />
+                <img src="caracteristicas/page4/pc-monitor.png" width="304px" height="296px" alt="" title="" class="absoluto pc-monitor" />
+                <img src="caracteristicas/page4/telas.gif" width="285px" height="162px" alt="" title="" class="absoluto pc-tela" />
+                
+                <img src="caracteristicas/page4/titulo-windows-8-apps.png" width="266px" height="21px" alt="Windows 8 apps" title="Windows 8 apps" class="absoluto titulo" />
+                <img src="caracteristicas/page4/paragrafo-o-seu.png" width="293px" height="64px" alt="O seu Desktop H520G vem com Windows 8 e uma loja Lenovo exclusiva de aplicativos. Entretenimento e utilitários que tornam sua usabilidade ainda mais fácil e prática." title="O seu Desktop H520G vem com Windows 8 e uma loja Lenovo exclusiva de aplicativos. Entretenimento e utilitários que tornam sua usabilidade ainda mais fácil e prática." class="absoluto paragrafo1" />
+                <img src="caracteristicas/page4/observacao.png" width="318px" height="24px" alt="*O produto precisa estar dentro da garantia. O monitor que ilustra essa página não acompanha o produto." title="*O produto precisa estar dentro da garantia. O monitor que ilustra essa página não acompanha o produto." class="absoluto observacao" />
+                
+                <img src="caracteristicas/page4/voce-sempre-conectado-lenovo-em-casa-nao-perca-nenhum-momento.png" width="259px" height="122px" alt="Você sempre conectado. Lenovo em casa. Não perca nenhum momento." title="Você sempre conectado. Lenovo em casa. Não perca nenhum momento." class="absoluto lenovo" />
+                <img src="caracteristicas/page4/paragrafo-na-lenovo.png" width="234px" height="81px" alt="Na Lenovo você pode confiar! Se o seu Desktop apresentar algum problema, basta contatar a Lenovo, que enviará uma equipe técnica responsável na sua casa.*" title="Na Lenovo você pode confiar! Se o seu Desktop apresentar algum problema, basta contatar a Lenovo, que enviará uma equipe técnica responsável na sua casa.*" class="absoluto paragrafo2" />
+                
+                <img src="caracteristicas/page4/btn-visual-robusto-e-elegante.png" width="233px" height="64px" alt="Visual robusto e elegante" title="Visual robusto e elegante" class="absoluto" id="call-to-action4" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

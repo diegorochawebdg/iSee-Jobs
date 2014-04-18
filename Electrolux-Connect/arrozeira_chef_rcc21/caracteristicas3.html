@@ -1,0 +1,120 @@
+
+<style type="text/css">
+
+.container_interna {  	height: 520px; 	padding: 0; 	position: relative; 	overflow:hidden; 	background: url(caracteristicas/page3/bg.jpg) 50% 50% no-repeat; }
+.holder_interna {  	width: 100%; 	height: 520px; 	position: absolute; }
+.content-center { 	margin: 0 auto; 	width: 956px; 	height: 520px; }
+.content-center .div-content {  	margin: 0 auto; 	width: 820px; 	height: 520px; 	position: relative; }
+
+
+.connect-container .container_interna .absolute{ position:absolute; left:50%;}
+.connect-container .link-padding{height:0; position: relative; overflow: hidden; display: block;}
+.facilidade{background-color: #b00f3a; padding: 7px 15px; width: 1000px; top: 20px; margin-right:58px; right: 50%; position: absolute;}
+.facilidade .txt, .facilidade img{float: right;}
+.facilidade img{margin-right: 10px;}
+.facilidade h2{font: bold 15px Helvetica; color: #e5e5e8; margin: 3px 0;}
+.facilidade p{font: 12px Helvetica; color: #e5e5e8;}
+.versatil{top: 50px; margin-left: 83px; width:330px;}
+.versatil h3{font: bold 30px Helvetica; color: #b00f3a;}
+.versatil p{font: lighter 14px Helvetica; color: #40454c;}
+.hotspots a{background: url(caracteristicas/page3/hotspots.png) no-repeat; width: 27px; height: 27px; position: absolute; left: 50%; z-index: 3;}
+.hotspots .item1{top: 151px; margin-left: -222px;}
+.hotspots .item2{top: 430px; margin-left: -6px;}
+.hotspots .item3{top: 292px; margin-left: 254px;}
+.hotspots .item4{top: 420px; margin-left: 286px;}
+.hotspots-content img{display: none;}
+.hotspots-content .item1{top: 170px; margin-left: -210px;}
+.hotspots-content .item2{top: 379px; margin-left: -373px;}
+.hotspots-content .item3{top: 271px; margin-left: -115px;}
+.hotspots-content .item4{top: 370px; margin-left: 130px;}
+
+.call-to-action{background: url(caracteristicas/page3/saiba-mais.png) no-repeat; width: 147px; padding-top: 58px; bottom: 32px; margin-left: -375px;}
+
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s13{ -webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div class="facilidade animated s05 fadeInLeft">
+                	<div class="txt">
+                		<h2>Facilidade na hora da limpeza</h2>
+                		<p>Tampa de vidro refratária removível.</p>
+                		<p>Pode ser levada direto para torneira para lavar.</p>
+                	</div>
+                	<img src="caracteristicas/page3/facilidade-limpeza.png" width="55" height="54" alt="Facilidade na hora da limpeza" title="Facilidade na hora da limpeza">
+                	<div class="clear"></div>
+                </div>
+                
+                <div class="versatil absolute animated s07 fadeInRight">
+                	<h3>Versátil</h3>
+                	<p>A Arrozeira Chef é a companheira ideal para cozinhar sem complicação! Acompanha suporte para cozimento a vapor, copo medidor e espátula, para preparar seu arroz com facilidade e praticidade.</p>
+                </div>
+                
+                <div class="hotspots">
+                	<a href="#" class="item1"></a>
+                	<a href="#" class="item2"></a>
+                	<a href="#" class="item3"></a>
+                	<a href="#" class="item4"></a>
+                </div>
+                
+                <div class="hotspots-content animated s09 fadeIn">
+                	<img src="caracteristicas/page3/panela-antiaderente-removivel.png" width="412" height="139" alt="Panela antiaderente removível" title="Panela antiaderente removível" class="item1 absolute">
+                	<img src="caracteristicas/page3/espatula-nao-risca-revestimento.png" width="379" height="65" alt="Espátula que não risca o revestimento" title="Espátula que não risca o revestimento" class="item2 absolute">
+                	<img src="caracteristicas/page3/suporte-cozimento-vapor.png" width="374" height="134" alt="Suporte para cozimento a vapor" title="Suporte para cozimento a vapor" class="item3 absolute">
+                	<img src="caracteristicas/page3/copo-medidor.png" width="168" height="65" alt="Copo medidor" title="Copo medidor" class="item4 absolute">
+                </div>
+                
+                <a href="#" class="call-to-action link-padding absolute animated s13 fadeInLeft">Saiba Mais</a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	var _arr = [{ button: ".hotspots .item1", content: ".hotspots-content .item1"},
+				{ button: ".hotspots .item2", content: ".hotspots-content .item2"}, 
+				{ button: ".hotspots .item3", content: ".hotspots-content .item3"}, 
+				{ button: ".hotspots .item4", content: ".hotspots-content .item4"}];
+				
+	$.each( _arr, function(index, element){
+		$(element.button).hover(function(e) {
+            $(element.content).fadeIn(200);
+			$(".call-to-action").fadeOut(100);
+			$(".hotspots a").css("opacity","0.7");
+			$(this).css("opacity","1");
+        }, function(e){
+        	$(element.content).fadeOut(200);
+			$(".call-to-action").fadeIn(100);
+			$(".hotspots a").css("opacity","1");
+        });
+	});
+
+	
+	connect_callToAction( $(".connect-container .call-to-action"), "fadeInLeft", "s13", "caracteristicas4.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+		
+});
+
+</script>

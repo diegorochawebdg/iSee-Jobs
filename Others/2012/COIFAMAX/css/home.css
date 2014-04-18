@@ -1,0 +1,22 @@
+@charset "utf-8"; 
+a{text-decoration:none}
+a:hover{text-decoration:underline; cursor:pointer}
+
+#conteudo .imagem-central{background:#f1eedf url(../images/bg-radial.jpg) no-repeat center top; text-align:center}
+#conteudo .imagem-central img{display:inline}
+
+/*texto vendedor*/
+.txt-vendedor{float:right; width:560px; padding:30px 0 50px 0}
+.txt-vendedor h2{font-size:35px; color:#468CB1; margin-bottom:15px}
+.txt-vendedor p{font-size:18px; color:#7E7E7E}
+/*box*/
+.box-margem{width:370px; height:285px; position:absolute; float:left; left:-15px; top:-100px; padding:15px; background:url(../images/bg-branco.png) repeat}
+.box{background:url(../images/bg-box.jpg) repeat-x; height:276px; width:100%; text-align:center}
+.box img{display:inline}
+.box .mtop{margin-top:20px}
+
+.box-margem .box p, .box-margem .box h2, .box-margem .box strong{color:#FFF}
+.box .padding{padding:30px 0}
+.box p{font-size:16px; text-transform:uppercase}
+.box a{color:#DDDFC5; font-size:43px}
+.box sup{color:#A4C7D9; font-size:14px}

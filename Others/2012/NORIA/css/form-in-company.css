@@ -1,0 +1,100 @@
+#form-company *{outline:none; font-family: 'Calibri';}
+#form-company {
+	width: 670px;
+	background: #F5F6F8;
+	margin:0 auto;
+}
+#form-company form {
+	margin: 0;
+}
+
+#form-company .titulo {
+	background: url(../images/bg-titulo.gif) repeat-x;
+	position: relative;
+	height:75px;
+}
+#form-company .titulo .avatar {
+	background: url(../images/avatar-cursos-in-.jpg);
+	height: 65px;
+	width: 70px;
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+
+#form-company .titulo h2, #form-company .titulo h3 {
+	color: #FFF;
+	line-height: 20px;
+	padding-left: 90px;
+}
+#form-company .titulo h2{
+	font-size:25px;
+	font-weight:bold;
+	padding-top:30px;
+}
+#form-company .titulo h3{
+	text-transform:uppercase;
+	font-size:14px;
+}
+#form-company .form-body *{
+	color: #12599B;
+}
+#form-company .form-body {
+	padding: 40px 45px 20px 45px;
+	border: 1px solid #125A9C;
+}
+#form-company .form-body .coluna-direita, #form-company .form-body .coluna-esquerda {
+	width: 270px;
+}
+#form-company .form-body .coluna-esquerda {
+	float: left;
+}
+#form-company .form-body span strong{
+	font-size:12px;
+	font-weight:normal;
+}
+#form-company .form-body .local {
+	border-bottom: 1px solid #125A9C;
+	margin: 5px 0 20px 0;
+	padding: 5px 0;
+}
+
+#form-company .form-body .coluna-direita {
+	float: right;
+}
+#form-company .form-body span{
+	font-size:15px;
+	margin-bottom:7px;
+	display:block;
+}
+#form-company #telefone-in-company{*width:145px !important; width:128px !important;}
+#form-company .ddd-size{*width:30px !important; width:48px !important}
+#form-company .form-body input, #form-company .form-body textarea{
+	border: 1px solid #CCC;
+	background: url(../images/bg-input.jpg) left top;
+	width:237px;
+	font-size:16px;
+}
+#form-company .form-body input{
+	height:45px;
+	line-height:45px;
+	margin-bottom:10px;
+	padding: 0 15px;
+}
+#form-company .form-body textarea {
+	height: 209px;
+	padding:15px;
+}
+
+
+#form-company .traco{
+	background:url(../images/traco.jpg);
+	height:2px;
+	width:7px;
+	margin:23px 11px 0
+}
+#form-company .tel, #form-company .traco{float:left}
+
+
+#form-company .enviar{float:right; background:#0096DA; text-align:center; display:block; width:95px; padding:10px 0; margin-top:10px;}
+#form-company .enviar a{color:#FFF; text-decoration:none; font-size:20px}

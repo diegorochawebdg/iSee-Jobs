@@ -1,0 +1,75 @@
+<style type="text/css">
+#obj_container.connect-container .div-content h2, #obj_container.connect-container .div-content h3, #obj_container.connect-container .div-content .call-to-action2{font-family: 'Museo-500';}
+#obj_container.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+#obj_container.connect-container .container_interna .holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/bg-default.jpg) repeat-x; }
+#obj_container.connect-container .container_interna .content-center {margin: 0 auto; width: 956px; height: 520px;}
+#obj_container.connect-container .container_interna .content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+#obj_container.connect-container .div-content .absolute{ position: absolute; left: 50%; }
+#obj_container.connect-container .div-content .container_interna img{display:block; position:absolute; left:50%;}
+#obj_container.connect-container .div-content .vendedor { margin-left: -323px; top: 32px; width: 447px; }
+#obj_container.connect-container .div-content h2, #obj_container.connect-container p, #obj_container.connect-container .div-content a { color: #FFF; }
+#obj_container.connect-container .div-content h3{ color: #e65f2a; font-size: 18px; text-transform: uppercase; margin-bottom: 15px; }
+#obj_container.connect-container .div-content .vendedor h2 { margin-bottom: 10px; font-size: 36px; text-transform: uppercase; padding-top: 10px; }
+#obj_container.connect-container .detalhe-img { margin-left: 121px; z-index: 2; top: 30px; }
+#obj_container.connect-container .img { margin-left: -418px; bottom: 0px; z-index: 2; }
+#obj_container.connect-container .div-content .protecao, #obj_container.connect-container .suporte { width: 527px; margin-left: -178px; padding: 25px; }
+#obj_container.connect-container .div-content .protecao { margin-left: -178px; top: 177px; background: url(caracteristicas/page2/bg-preto1.png) repeat; height: 75px; }
+#obj_container.connect-container .div-content .suporte { margin-left: -178px; top: 302px; background: url(caracteristicas/page2/bg-preto2.png) repeat; height: 90px; }
+#obj_container.connect-container .div-content .suporte h3, #obj_container.connect-container .div-content .suporte p { margin-left: 185px; }
+#obj_container.connect-container .div-content .suporte p{ width: 320px; }
+#obj_container.connect-container .div-content p { line-height: 1.2em; }
+#obj_container.connect-container .div-content .call-to-action2 { background: url(caracteristicas/page2/call-to-action.png); height: 43px; width: 123px; text-decoration: none; text-transform: uppercase; padding: 13px 26px; margin-left: 216px; bottom: 0px; }
+</style>
+
+<div class="container_interna">
+  <div class="holder_interna">
+    <div class="content-center">
+            <div class="div-content">
+                <div class="vendedor absolute">
+                    <h2>Precisão e qualidade</h2>
+                    <p>As lâminas que compõem o kit Multigroom QG3340 são feitas em aço, garantindo mais precisão e segurança na hora de aparar os pelos das sobrancelhas, barba, nariz ou orelhas.</p>
+                </div>
+                <img src="caracteristicas/page2/detalhe-aparador-precisao.png" width="356" height="276" alt="Detalhe do barbeador multigroom" title="Detalhe do barbeador multigroom" class="detalhe-img absolute" />
+                <img src="caracteristicas/page2/img.png" width="432" height="365" alt="barbeador Philips em sua embalagem com seus 6 acessórios" title="barbeador Philips em sua embalagem com seus 6 acessórios" class="img absolute" />
+                <div class="protecao absolute">
+                    <h3>Proteção arredondada</h3>
+                    <p>Conforto e segurança para seu <br />rosto. Evita arranhões na pele.</p>
+                </div>
+                <div class="suporte absolute">
+                    <h3>Suporte para todos os acessórios</h3>
+                    <p>O kit Multigroom tem um suporte especial para todos os acessórios, que garante muito mais praticidade na hora de organizar.</p>
+                </div>
+                <a href="#" class="call-to-action2 absolute">Conheça os acessórios</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $("#obj_container.connect-container .vendedor") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Back.easeOut, delay:.5});
+	TweenMax.from( $("#obj_container.connect-container .detalhe-img") , .5, { css: { alpha: 0, left: "+=50px" } , ease: Back.easeOut, delay:.7});
+	TweenMax.from( $("#obj_container.connect-container .img") , .5, { css: { alpha: 0, left: "-=50px" } , ease: Back.easeOut, delay:.9});
+	TweenMax.from( $("#obj_container.connect-container .protecao") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Back.easeOut, delay:1.1});
+	TweenMax.from( $("#obj_container.connect-container .suporte") , .5, { css: { alpha: 0, top: "+=50px" } , ease: Back.easeOut, delay:1.3});
+	
+	TweenMax.from( $("#obj_container.connect-container .call-to-action2") , 1, { css: { left: "+=400px" , alpha: 0 } , ease: Strong.easeOut, delay:1.7, onComplete: function() {
+			
+		TweenMax.to( $("#obj_container.connect-container .call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true});
+		
+		$("#obj_container.connect-container .call-to-action2").hover(function(e) {
+				TweenMax.to( $(this) , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+	}} );
+	
+	
+	Connect.addCallToAction( "#obj_container.connect-container .call-to-action2" , "caracteristicas3.html", true );
+	
+		
+});
+</script>

@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* Connect Custom */
+
+/**
+	CSS para o projeto específico
+**/
+
+#Connect-Container *{
+	font-family: 'GillSans';
+    -webkit-font-smoothing:antialiased;
+    color:#FFF;
+}
+
+#Connect-Container .video-lightbox, #Connect-Container .controle-lightbox{position:absolute; left:0; top:0; width:100%; height:100%; background:url(../images/bg-txt-section1.png) repeat; z-index:999; display:none;}
+#Connect-Container .video-lightbox .player{position:fixed; left:50%; top:50%; margin-left:-370px; margin-top:-270px;}
+#Connect-Container .video-lightbox .player .fechar{position:absolute; /*left:50%; top:50%;*/ right:-20px; top:-20px; background:url(../images/fechar-lightbox.png) no-repeat; width:35px; height:35px;}
+
+#Connect-Container .controle-lightbox .controle-img{position:fixed; left:50%; top:50%; margin-left:-140px; margin-top:-300px; max-height:100%; width:auto}
+#Connect-Container .controle-lightbox .fechar{position:absolute; /*left:50%; top:50%;*/ right:-20px; top:-20px; background:url(../images/fechar-lightbox.png) no-repeat; width:35px; height:35px;}
+
+#Connect-Container .absolute{
+	position:absolute;
+}
+
+#Connect-Container p{color:#FFF; font-size:12px;}
+
+#Connect-Container .left{
+	left:50%;
+}
+
+#Connect-Container #Connect-Navigate{left:20px; right:auto !important;}
+
+#Connect-Container #Connect-Navigate ul li{ float:none !important; margin:0 0 1px 0; background-color:#000; position:relative; overflow:hidden; width:32px;
+-webkit-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -ms-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+#Connect-Container #Connect-Navigate ul li:hover{width:140px;}
+
+#Connect-Container #Connect-Navigate ul li a.first{background:url(../images/icon-menu-section1.png) no-repeat 9px center !important;}
+#Connect-Container #Connect-Navigate ul li a{
+	background:url(../images/icon-menu-section2.png) no-repeat 9px center;
+    padding:9px 15px 9px 38px;;
+    color:#FFF;
+    font-size:12px;
+    height:13px;
+    
+}
+#Connect-Container .box{background:url(../images/bg-txt-section1.png) repeat; padding:22px;}
+#Connect-Container #Connect-Navigate ul li a.nav:hover,
+#Connect-Container #Connect-Navigate ul li a.nav.active
+{
+	width:100px;
+    background-color:#000;
+}
+
+#Connect-Container .Connect-Section{
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+
+
+
+
+#Connect-Container #Connect-Section1{
+	background-image:url(../images/bg-section1.jpg);
+	height:600px;
+}
+
+#Connect-Container #Connect-Section1 .logo{left:-77px; top:25px;}
+#Connect-Container #Connect-Section1 .titles{top:75px; left:48px; text-align:center; width:660px;}
+#Connect-Container #Connect-Section1 .titles h2{background:url(../images/tv-philips-designline.png) no-repeat; height:0; position:relative; overflow:hidden; padding-top:34px; width:279px; display: inline-block; margin: 0 auto; margin-bottom:25px;}
+#Connect-Container #Connect-Section1 .titles h3{color:#FFF; font-size:34px;}
+#Connect-Container #Connect-Section1 .vendedor-txt{right:-105px; top:252px; width:240px;}
+#Connect-Container #Connect-Section1 .vendedor-txt p{font-size:18px; color:#FFF;}
+
+#Connect-Container #Connect-Section2{
+	background-image:url(../images/bg-section2.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section2 .txts{ left:15px; top:186px; width:270px;}
+#Connect-Container #Connect-Section2 .txts h3{font-size:30px; margin-bottom:20px;}
+#Connect-Container #Connect-Section2 .txts p{font-size:18px;}
+#Connect-Container .linha{width:100%; border-top:1px solid #FFF; margin:10px 0;}
+#Connect-Container #Connect-Section2 .txts small{font-size:14px; width:75%; display:block;}
+
+#Connect-Container #Connect-Section3 .img1, #Connect-Container #Connect-Section3 .img2, #Connect-Container #Connect-Section3 .img3{position:absolute; width:100%; height:600px; left:0; top:0;}
+#Connect-Container #Connect-Section3{
+	height:600px;
+}
+#Connect-Container #Connect-Section3 .img1{ background:url(../images/bg-section3-01.jpg) center;}
+#Connect-Container #Connect-Section3 .img2{ background:url(../images/bg-section3-02.jpg) center; display:none;}
+#Connect-Container #Connect-Section3 .img3{ background:url(../images/bg-section3-03.jpg) center; display:none;}
+
+#Connect-Container #Connect-Section3 .box{top:77px; left:250px; width:330px; z-index:2;}
+#Connect-Container #Connect-Section3 h3{font-size:30px; margin-bottom:20px;}
+#Connect-Container #Connect-Section3 p.main{font-size:18px;}
+#Connect-Container #Connect-Section3 p.main strong{font-weight:bold; font-style:italic;}
+#Connect-Container #Connect-Section3 p.main strong span{font-weight:normal !important;}
+#Connect-Container #Connect-Section3 .clique{display:block; background:url(../images/setas.png) no-repeat center; margin-bottom:15px; text-align:center; font-size:13px; font-style:italic;}
+#Connect-Container #Connect-Section3 li{width:26%; border:solid 1px #FFF; display:block;float:left; height:85px; padding: 21px 8px 8px 8px; cursor:pointer;}
+#Connect-Container #Connect-Section3 li.selected{background-color:#006c80;}
+#Connect-Container #Connect-Section3 li.item1{padding:11px 8px 18px 8px;}
+#Connect-Container #Connect-Section3 li.item2{margin:0 8px;}
+#Connect-Container #Connect-Section3 li h4.font{font-size:30px;}
+#Connect-Container #Connect-Section3 li h4{font-size:20px; margin-bottom:20px; text-align:center;}
+#Connect-Container .clear{clear:both;}
+#Connect-Container #Connect-Section3 h4.smart{margin:15px 0; font-size:20px;}
+#Connect-Container #Connect-Section3 p.txt{font-size:14px; width:300px;}
+
+
+#Connect-Container #Connect-Section4{
+	background-image:url(../images/bg-section4.jpg);
+	height:600px;
+}
+
+#Connect-Container #Connect-Section4 .box{width:315px; top:165px; left:13px; height: 195px;}
+#Connect-Container #Connect-Section4 h3{font-size:24px; margin-bottom:25px;}
+#Connect-Container #Connect-Section4 .box a{width:25%;float:left; text-align:center; opacity:0.6;}
+#Connect-Container #Connect-Section4 .box a.selected{opacity:1;}
+#Connect-Container #Connect-Section4 .clear{margin-bottom:15px;}
+#Connect-Container #Connect-Section4 p{font-size:20px;}
+#Connect-Container #Connect-Section4 .content .item2, #Connect-Container #Connect-Section4 .content .item3, #Connect-Container #Connect-Section4 .content .item4{display:none;}
+#Connect-Container #Connect-Section4 .link-video{background:url(../images/bg-txt-section1.png) repeat; padding:10px 25px; top:492px; left:275px; }
+#Connect-Container #Connect-Section4 .link-video a{background:url(../images/assista-video.png) no-repeat left center; padding-left:45px; display:block; font-size:24px; text-decoration:none;}
+#Connect-Container #Connect-Section4 .link-video a:hover{text-decoration:underline;}
+
+#Connect-Container #Connect-Section5{
+	background-image:url(../images/bg-section5.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section5 .box{top:60px; left:-12px; width:365px;}
+#Connect-Container #Connect-Section5 h3{font-size:30px; margin-bottom:25px;}
+#Connect-Container #Connect-Section5 .features{ margin-bottom:35px;}
+#Connect-Container #Connect-Section5 .features li{list-style-type:disc; line-height:1.4em; list-style-position:inside;}
+#Connect-Container #Connect-Section5 .border{border-left:solid 1px #FFF; border-right:solid 1px #FFF;}
+#Connect-Container #Connect-Section5 .features2 li{display:block; float:left; padding:8px; text-align:center;}
+#Connect-Container #Connect-Section5 .features2 li.selected{background:url(../images/bg-list-5.png) repeat;}
+#Connect-Container #Connect-Section5 .features2 li a{text-transform:uppercase; font-size:14px; text-decoration:none;}
+#Connect-Container #Connect-Section5 .content{background:url(../images/bg-list-5.png) repeat; padding:20px 15px; min-height:120px;}
+#Connect-Container #Connect-Section5 .content p{font-size:16px;}
+#Connect-Container #Connect-Section5 .content .content2, #Connect-Container #Connect-Section5 .content .content3{display:none;}
+#Connect-Container #Connect-Section5 .content .content2 img, #Connect-Container #Connect-Section5 .content .content3 img{float:left;}
+#Connect-Container #Connect-Section5 .content .content2 img, #Connect-Container #Connect-Section5 .content .content3 img{cursor:pointer;}
+#Connect-Container #Connect-Section5 .content .content2 p{margin:10px 0 0 10px; float:left; width:210px;}
+#Connect-Container #Connect-Section5 .content .content3 img{position:relative; bottom:-23px; left:-15px;}
+#Connect-Container #Connect-Section5 .content .content3 .txt{float:left; width:180px;}
+#Connect-Container #Connect-Section5 .content .content3 .txt p{font-size:14px; margin-bottom:7px;}
+#Connect-Container #Connect-Section5 .content .content3 .txt span{color:#28caff; display:block; text-transform:uppercase; font-size:10px;}
+#Connect-Container #Connect-Section5 .content .content3 .qr-codes{bottom:-91px; left:155px; position:absolute !important;}
+
+#Connect-Container #Connect-Section6{
+	background-image:url(../images/bg-section6.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section6 .box{top:150px; left:416px; width:335px; min-height: 280px;
+-webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -ms-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+#Connect-Container #Connect-Section6 .box small{font-size:10px; text-align:center; display:block; margin-bottom:10px;}
+#Connect-Container #Connect-Section6 .box li{float:left; width:33%; text-align:center; display:table; height:68px; opacity:0.6;}
+#Connect-Container #Connect-Section6 .box li.selected{opacity:1;}
+#Connect-Container #Connect-Section6 .box a{display:table-cell; vertical-align:middle;}
+#Connect-Container #Connect-Section6 .box .content img{margin:20px auto; display:block;}
+#Connect-Container #Connect-Section6 .box .content h4{font-size:20px; font-weight:bold;}
+#Connect-Container #Connect-Section6 .box .content p{font-size:20px;}
+#Connect-Container #Connect-Section6 .box .content .item3, #Connect-Container #Connect-Section6 .box .content .item4, #Connect-Container #Connect-Section6 .box .content .item5{display:none;}
+
+
+#Connect-Container #Connect-Section7{
+	background-image:url(../images/bg-section7.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section7 .box{top:128px; left:-26px;}
+#Connect-Container #Connect-Section7 h3{font-size:30px; margin-bottom:20px;}
+#Connect-Container #Connect-Section7 li{font-size:16px; list-style-type:disc; line-height:2.5em; list-style-position:inside;}
+#Connect-Container #Connect-Section7 img{top:128px; right:-33px;}
+
+/**
+	Font-Face Connect
+**/
+@font-face {
+	font-family: 'GillSans';
+	src: url('../fonts/gill_sans_light-webfont.eot');
+	src: url('../fonts/gill_sans_light-webfont?#GillSans') format('embedded-opentype'), 
+		 url('../fonts/gill_sans_light-webfont.woff') format('woff'), 
+	     url('../fonts/gill_sans_light-webfont.ttf') format('truetype'), 
+	     url('../fonts/gill_sans_light-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

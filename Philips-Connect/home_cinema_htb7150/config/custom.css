@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "GillSansStd";
+	src: url('../fonts/GillSansStd.eot');
+	src: local('☺'), url('../fonts/GillSansStd.woff') format('woff'), url('../fonts/GillSansStd.ttf') format('truetype'), url('../fonts/GillSansStd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GillSansStd-Light";
+	src: url('../fonts/GillSansStd-Light.eot');
+	src: local('☺'), url('../fonts/GillSansStd-Light.woff') format('woff'), url('../fonts/GillSansStd-Light.ttf') format('truetype'), url('../fonts/GillSansStd-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	@font-face{ font-family:'GillSansStd';     src:url('../fonts/GillSansStd.svg#GillSansStd') format('svg');}
+	@font-face{ font-family:'GillSansStd-Light';     src:url('../fonts/GillSansStd-Light.svg#GillSansStd-Light') format('svg');}
+}
+
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p { 
+	font-size: 18px;
+	font-family: "GillSansStd";
+	color: #FFFFFF;
+	padding: 360px 0 0 40px;
+	width: 400px;
+	height: 112px;
+	line-height: 22px;
+}
+.connect-container .connect-seo-index p strong{ font-weight:bold;}
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 

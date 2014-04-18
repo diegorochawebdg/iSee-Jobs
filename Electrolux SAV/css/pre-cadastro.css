@@ -1,0 +1,90 @@
+#header .search, #header .download, #header #main-menu{display:none;}
+#header{margin-bottom:75px;}
+
+/*Title*/
+h1{color:#626059; font-size:36px; margin:15px 0; font-weight:normal;}
+
+/*Search bar*/
+.cadastro-search{background-color:#FFF; border-radius:10px;margin-bottom:30px; padding:7px 3px 5px 10px; -moz-box-shadow: inset 2px 2px 5px #666; -webkit-box-shadow: inset 2px 2px 5px #666; box-shadow: inset 2px 2px 5px #666; display:table; width:580px;}
+.cadastro-search input{float:left; outline:none; height:26px; font-size:14px; color:#333; width:482px;}
+.cadastro-search a{background:url(../images/buscar-btn.png); width:95px; padding-top:26px; float:left;}
+
+/*Lists Overflow*/
+#content ul{overflow:auto; max-height: 349px; min-height:80px;}
+
+/*Total Produtos*/
+.gradient{
+background: #1a91e9;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhOTFlOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwODRlNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDg0ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #1a91e9 0%, #2989d8 59%, #0084e7 60%, #0084e7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a91e9), color-stop(59%,#2989d8), color-stop(60%,#0084e7), color-stop(100%,#0084e7));
+background: -webkit-linear-gradient(top,  #1a91e9 0%,#2989d8 59%,#0084e7 60%,#0084e7 100%);
+background: -o-linear-gradient(top,  #1a91e9 0%,#2989d8 59%,#0084e7 60%,#0084e7 100%);
+background: -ms-linear-gradient(top,  #1a91e9 0%,#2989d8 59%,#0084e7 60%,#0084e7 100%);
+background: linear-gradient(to bottom,  #1a91e9 0%,#2989d8 59%,#0084e7 60%,#0084e7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a91e9', endColorstr='#0084e7',GradientType=0 );
+}
+.total-produtos .produtos-quantidade, .campanhas .campanhas-title,  .itens-relacionados .itens-title{background-color:#764677; display:table; position:relative;}
+.total-produtos .produtos-quantidade h2, .campanhas .campanhas-title h2,  .itens-relacionados .itens-title h2{color:#FFF; text-transform:uppercase; font-size:18px; font-weight:normal;}
+.total-produtos .produtos-quantidade h2 strong, .itens-relacionados .itens-title h2 strong{display:block; font-weight:bold !important;}
+.total-produtos .produtos-quantidade, .campanhas .campanhas-title{background-image:url(../images/pre-cadastro/icones.png); background-repeat:no-repeat;}
+.indicator-pre-cadastro{background:url(../images/selected-menu.png); width:19px; height:9px; position:absolute; bottom:-9px; left:45%; z-index:2;}
+
+.total-produtos .produtos-quantidade{padding:12px 15px 10px 70px; background-position:12px 6px;}
+.total-produtos .produtos-quantidade span{position:absolute; color:#764777; background-color:#FFF; border-radius:4px; padding:2px 6px 0px 6px; font: bold  18px Arial, Helvetica, sans-serif; bottom:2px; left:26px;}
+#content ul{margin-top:5px;}
+#content li{background-color:#FFF; padding:18px 20px; margin-bottom:4px; list-style-type:none;}
+.description, .description *{float:left; font-size:14px; text-transform:uppercase; color:#898789; padding-top:4px;}
+.description span{margin: 0 10px;}
+.description a:last-child{font-weight:bold; color:#764777;}
+.buttons{float:right;}
+.buttons a{color:#FFF; text-transform:uppercase; font-size:10.5px; font-weight:bold; float:left; margin-left:5px; line-height:1em; padding:10px 15px; border-radius:10px;}
+
+/*Campanhas*/
+.campanhas .campanhas-title{padding: 21px 15px 18px 70px;background-position: 12px -55px;}
+
+/*Itens Relacionados*/
+.itens-relacionados .itens-title{padding: 21px 27px 18px 27px;;background-position: 12px -55px;}
+.itens-relacionados .buttons a{
+background: #da3939;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2RhMzkzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iI2RhMzkzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iI2Q2MjMyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNjIzMjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #da3939 1%, #da3939 61%, #d62323 61%, #d62323 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#da3939), color-stop(61%,#da3939), color-stop(61%,#d62323), color-stop(100%,#d62323));
+background: -webkit-linear-gradient(top,  #da3939 1%,#da3939 61%,#d62323 61%,#d62323 100%);
+background: -o-linear-gradient(top,  #da3939 1%,#da3939 61%,#d62323 61%,#d62323 100%);
+background: -ms-linear-gradient(top,  #da3939 1%,#da3939 61%,#d62323 61%,#d62323 100%);
+background: linear-gradient(to bottom,  #da3939 1%,#da3939 61%,#d62323 61%,#d62323 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da3939', endColorstr='#d62323',GradientType=0 );
+}
+
+/*Arquivos para Upload*/
+.arquivos-upload{margin-bottom:65px; padding:0 25px;}
+.arquivos-upload h2{font-size:16px; color:#764777; text-transform:uppercase; margin:50px 0 33px 0;}
+.arquivos-upload .procurar{background-image:url(../images/pre-cadastro/procurar-arquivo.png); width:197px; padding-top:31px; float:left; margin-right:10px;}
+.arquivos-upload .enviar{background-image:url(../images/pre-cadastro/enviar.png); width:117px; padding-top:31px; float:left;}
+.arquivos-upload #lista-arquivos *{cursor:pointer;}
+
+.arquivos-upload #lista-arquivos{background-color:#FFF; padding:10px 45px; margin-bottom:25px; display:none;}
+.arquivos-upload #lista-arquivos p{margin-bottom:17px;}
+.arquivos-upload #lista-arquivos p.filename{float:left; font-size:18px;}
+.arquivos-upload #lista-arquivos p.filename span{font-weight:bold;}
+.arquivos-upload #lista-arquivos .remover_file{background-image:url(../images/pre-cadastro/remover-arquivos.png); width:35px; padding-top:26px; float:right;}
+.arquivos-upload #lista-arquivos .default-size{width:85px; padding-right:10px; text-align:right; display:inline-block; }
+.arquivos-upload #lista-arquivos .default-size, .arquivos-upload #lista-arquivos{text-transform:uppercase; font-size:10px; color:#764777; font-weight:bold;}
+.arquivos-upload #lista-arquivos input[type="text"]{background-color:#f4f2f1; box-shadow:inset #999 3px 3px 5px; height:26px; padding:0 10px; width:560px;}
+.arquivos-upload #lista-arquivos strong{text-transform:none !important; font-size:12px; color:#4e4e4e;}
+.banner-selo-tabloide{padding-left:97px}
+.banner-selo-tabloide input{margin-left:20px;}
+.banner-selo-tabloide input:first-child{margin-left:0;}
+
+/*Lightbox Files Download*/
+#loaded{margin-top:15px;}
+#loaded #bar_title{color:#626059; font-size:16px; margin-bottom:15px; text-transform:uppercase;}
+#loaded{border:solid 1px #ececec; box-shadow:inset #CCC 5px 5px 5px; background:url(../images/downloads/bg-no-fill.png) repeat; position:relative; height:38px;}
+#loaded .numeric{font:bold 24px Arial, Helvetica, sans-serif; color:#FFF; text-align:center; margin:5px auto; z-index:2; position:relative; display:table}
+#loaded .barra-loading{width: 140px; height: 38px; background:url(../images/downloads/bg-filled.png) repeat; position: absolute; top: 0; left: 0;
+-webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+#loaded #nome_file{text-align: center; padding-top: 20px; font-size: 15px; color: #626059;}

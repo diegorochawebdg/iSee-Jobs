@@ -1,0 +1,66 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #979797 url(cliente/bg-conteudo-embalagem.jpg) no-repeat; }	
+.holder_interna { width: 100%; height: 520px; }
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.content-center .div-content div { position: absolute; left: 50%; }
+.content-center .div-content .conteudo { margin-left: -367px; top: 72px; width: 350px; }
+.content-center .div-content .conteudo img { margin-bottom: 35px; }
+.content-center .div-content .conteudo * { padding: 0; }
+.content-center .div-content .conteudo li { font: 16px Arial, Helvetica, sans-serif; color: #FFF; list-style: disc inside; margin-bottom: 10px; }
+.div-content .dimensoes { top: 72px; }
+.div-content .dimensoes img { display: block; }
+.div-content .dimensoes .titulo { margin-bottom: 40px; }
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <div class="conteudo">
+                	<img src="cliente/conteudo-da-embalagem.png" width="234" height="64" alt="Conteúdo da embalagem" title="Conteúdo da embalagem" />
+                    
+                    <ul>
+                    	<li>Aspirador de Pó Mobi MBL10</li>
+                        <li>Bocal para pisos</li>
+                        <li>Bocal 2 em 1</li>
+                        <li>Bocal para estofados</li>
+                        <li>2 tubos prolongadores</li>
+                        <li>Mangueira</li>
+                        <li>Manual de instruções</li>
+                        <li>Certificado de garantia</li>
+                        <li>Guia de assistências técnicas autorizadas</li>
+                    </ul>
+                </div>
+                
+                <div class="dimensoes">
+                	<img src="cliente/dimensoes-e-peso.png" width="170" height="63" alt="Dimensões e peso:" title="Dimensões e peso:" class="titulo" />
+                    <img src="cliente/dimensoes-peso-img.png" width="360" height="254" alt="Dimensões do aspirador de pó Mobi MBL10" title="Dimensões do aspirador de pó Mobi MBL10" />
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

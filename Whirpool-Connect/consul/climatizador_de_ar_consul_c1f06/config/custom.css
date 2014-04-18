@@ -1,0 +1,52 @@
+@font-face {
+ font-family: "ConsulCoHeadline_Std_Rg";
+ src: url('../fonts/ConsulCoHeadline_Std_Rg.eot');
+ src: local('☺'), 
+ url('../fonts/ConsulCoHeadline_Std_Rg.woff') format('woff'), 
+ url('../fonts/ConsulCoHeadline_Std_Rg.ttf') format('truetype'), 
+ url('../fonts/ConsulCoHeadline_Std_Rg.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: "ConsulCoHeadline_Std_Lt";
+ src: url('../fonts/ConsulCoHeadline_Std_Lt.eot');
+ src: local('☺'), 
+ url('../fonts/ConsulCoHeadline_Std_Lt.woff') format('woff'), 
+ url('../fonts/ConsulCoHeadline_Std_Lt.ttf') format('truetype'), 
+ url('../fonts/ConsulCoHeadline_Std_Lt.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: "ConsulCoHeadline_Std_Bd";
+ src: url('../fonts/ConsulCoHeadline_Std_Bd.eot');
+ src: local('☺'), 
+ url('../fonts/ConsulCoHeadline_Std_Bd.woff') format('woff'), 
+ url('../fonts/ConsulCoHeadline_Std_Bd.ttf') format('truetype'), 
+ url('../fonts/ConsulCoHeadline_Std_Bd.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+ @font-face{ font-family:'ConsulCoHeadline_Std_Rg';     src:url('../fonts/ConsulCoHeadline_Std_Rg.svg#ConsulCoHeadline_Std_Rg') format('svg');}
+ @font-face{ font-family:'ConsulCoHeadline_Std_Lt';     src:url('../fonts/ConsulCoHeadline_Std_Lt.svg#ConsulCoHeadline_Std_Lt') format('svg');}
+ @font-face{ font-family:'ConsulCoHeadline_Std_Bd';     src:url('../fonts/ConsulCoHeadline_Std_Bd.svg#ConsulCoHeadline_Std_Bd') format('svg');}
+}
+
+
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p { 
+	font-size: 20px;
+	font-family: "Arial";
+	font-weight:bold;
+	color: #86b328;
+	padding: 344px 0 0 95px;
+	width: 350px;
+	height: 112px;
+	line-height: 35px;
+	opacity:.8;
+}
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 

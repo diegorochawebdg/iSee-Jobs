@@ -1,0 +1,8 @@
+#lube{background-color:#125A9C !important}
+.lube-txt{float:left; width:410px}
+.lube-txt h2{color:#0C4A83; margin-bottom:20px; text-transform:uppercase}
+.lube-txt p{line-height:21px; margin-bottom:20px}
+.lube-txt a{color:#1366B7; text-decoration:underline}
+.lube-img{float:right; margin-right:60px}
+body{background:#0a345c url(../images/bg-body.png) repeat-x center top !important}
+#conteudo h2 {font-size: 50px; color: #0C4A83; margin-bottom: 20px}

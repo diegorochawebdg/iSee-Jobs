@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/Default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cadastro - Não passe sem esse banho de loja | Philips Walita</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../css/main.css">
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="../css/cadastro.css">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+    <div class="faixa"></div>
+    <a href="/" id="logo" class="link-padding absolute">Philips Walita</a>
+    <div id="main-menu" class="absolute">
+        <img src="../images/bg-main-menu.png" width="32" height="33">
+        <ul>
+            <li id="menu_participe"><a href="/participe/">Participe</a></li>
+            <li id="menu_produtos"><a href="/produtos/">Produtos</a></li>
+            <li id="menu_comprar"><a href="/onde_comprar/">Onde Comprar</a></li>
+            <li id="menu_regulamento"><a href="#">Regulamento</a></li>
+            <li id="menu_fale_conosco"><a href="/fale_conosco/">Fale Conosco</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--End of Header-->
+
+<!--Content-->
+<div id="content">
+	<img src="../images/promocao-nao-passe-sem-esse-banho-de-loja.png" width="280" height="174" alt="Promoção - Não passe sem esse banho de loja" title="Promoção - Não passe sem esse banho de loja" class="titulo-promocao">
+	<!-- InstanceBeginEditable name="content" -->
+    
+    <!--Navigation-->
+    <div class="navigation">
+        <h1>Cadastro</h1>
+        <span><a href="/" class="home">Home</a> > <a href="#" class="produtos-navigation">Cadastro</a></span>
+    </div>
+    <!--End of Navigation-->
+    
+    <!--Container-->
+    <div class="container relative">
+    	<!--Form-->
+        <form id="cad_cliente" name="cad_cliente" method="post">
+            <div class="size">Nome completo:</div> <input type="text" name="nome" id="nome" size="30" /><br />
+            <div class="clear"></div>
+            <div class="size">CPF:</div> <input type="text" name="cpf" id="cpf" size="30" class="float-left" />
+          <div class="float-left">RG: <input type="text" name="rg" id="rg" size="30" /></div><br />
+            <div class="clear"></div>
+            
+            <div class="linha"></div>
+            
+            <div class="size">CEP:</div> <input type="text" name="cep" id="cep" size="30" class="float-left" /><span class="checkbox-container float-left selected"><input type="checkbox" name="completar" checked class="float-left" id="completar"> </span><span class="auto-completar float-left ptop">Auto completar</span><br />
+            <div class="clear"></div>
+            <div class="size">Endereço:</div> <input type="text" name="endereco" id="endereco" size="30" /><br />
+            <div class="size">Número:</div><input type="text" name="nr_endereco" id="nr_endereco" size="30" class="float-left" />
+            <div class="float-left">Complemento: <input type="text" name="complemento" id="complemento" size="30" /></div><br />
+            <div class="clear"></div>
+            <div class="size">Cidade:</div> <input type="text" name="cidade" id="cidade" size="30" class="float-left" />
+            <div class="float-left">
+            Estado: 
+            <select name="uf" id="uf">  
+            <?php
+            foreach ($arr_uf as $uf => $uf_nome){
+            echo '<option id="'.$uf.'" value="'.$uf.'">'.$uf.'</option>';
+            }
+            ?>
+            </select>
+          </div> <br />
+            <div class="clear"></div>
+            <div class="size">Telefone:</div> <input type="text" name="telefone" id="telefone" size="30" class="float-left" />
+            <div class="float-left">Email: <input type="text" name="email" id="email" size="30" /></div><br />
+            <div class="clear"></div>
+            
+            <div class="linha"></div>
+            
+            Número da nota fiscal: <input type="text" name="nr_nf" id="nr_nf" size="30" /> <a href="#" class="duvida"></a><br />
+            <div class="clear"></div>
+            
+            Quantidade de produtos adquiridos: 
+            <select name="qtd_produtos" id="qtd_produtos">    
+            <?php
+            $i 	 = 1;
+            $max = 10 ;
+            while ($i <= $max ){
+            echo '<option value="'.$i.'">'.$i.'</option>';	
+            ++$i;
+            }
+            ?>
+            </select> <br />
+            <div class="clear"></div>
+            
+            <div class="linha"></div>
+            
+            <!--Regulamento-->
+            <div class="regulamento">
+            	<span class="checkbox-container2 float-left">
+                    <input type="checkbox">
+                </span>
+                <span class="float-left ptop">Li o <a href="#" class="regulamento2">regulamento da promoção</a> e concordo com os termos e condições</span>
+                <div class="clear"></div>
+            </div>
+            <!--End of Regulamento-->
+            
+            <input type="submit" name="bt_enviar" id="bt_enviar" value="Finalizar o cadastro" class="link-padding" /><br />
+        </form>
+        <!--End of Form-->
+    </div>
+    <!--End of Container-->
+    
+	<!-- InstanceEndEditable -->
+</div>
+<!--End of Content-->
+
+<!--Footer-->
+<div id="footer">
+	<div class="faixa"></div>
+    <small>Certificado de Autorização Caixa nº. 1-1649/2013 - &copy; Koninklijke Philips N.V., 2013. Todos os direitos reservados.</small>
+</div>
+<!--End of Footer-->
+
+<!--Scripts - Yes, on the end-->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/shadowbox.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<!-- InstanceBeginEditable name="scripts" -->
+<script type="text/javascript" src="../js/cadastro.js"></script>
+<!-- InstanceEndEditable -->
+<!--End of Scripts - Yes, on the end-->
+
+</body>
+<!-- InstanceEnd --></html>

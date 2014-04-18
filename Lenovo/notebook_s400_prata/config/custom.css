@@ -1,0 +1,64 @@
+@font-face {
+ font-family: 'FoundryGridnikRegular';
+ src: url('../fonts/FoundryGridnikRegular.eot');
+ src: local('☺'), 
+ url('../fonts/FoundryGridnikRegular.woff') format('woff'), 
+ url('../fonts/FoundryGridnikRegular.ttf') format('truetype'), 
+ url('../fonts/FoundryGridnikRegular.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'FoundryGridnikLight';
+ src: url('../fonts/FoundryGridnikLight.eot');
+ src: local('☺'), 
+ url('../fonts/FoundryGridnikLight.woff') format('woff'), 
+ url('../fonts/FoundryGridnikLight.ttf') format('truetype'), 
+ url('../fonts/FoundryGridnikLight.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'FoundryGridnikMedium';
+ src: url('../fonts/FoundryGridnikMedium.eot');
+ src: local('☺'), 
+ url('../fonts/FoundryGridnikMedium.woff') format('woff'), 
+ url('../fonts/FoundryGridnikMedium.ttf') format('truetype'), 
+ url('../fonts/FoundryGridnikMedium.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'FoundryGridnikBold';
+ src: url('../fonts/FoundryGridnikBold.eot');
+ src: local('☺'), 
+ url('../fonts/FoundryGridnikBold.woff') format('woff'), 
+ url('../fonts/FoundryGridnikBold.ttf') format('truetype'), 
+ url('../fonts/FoundryGridnikBold.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+ @font-face{ font-family:'FoundryGridnikRegular';     src:url('../fonts/FoundryGridnikRegular.svg#FoundryGridnikRegular') format('svg');}
+ @font-face{ font-family:'FoundryGridnikLight';     src:url('../fonts/FoundryGridnikLight.svg#FoundryGridnikLight') format('svg');}
+ @font-face{ font-family:'FoundryGridnikMedium';     src:url('../fonts/FoundryGridnikMedium.svg#FoundryGridnikMedium') format('svg');}
+ @font-face{ font-family:'FoundryGridnikBold';     src:url('../fonts/FoundryGridnikBold.svg#FoundryGridnikBold') format('svg');}
+}
+
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p { 
+	font-size: 15px;
+	font-family: "Arial";
+	color: #373738;
+	padding: 298px 0 0 20px;
+	width: 270px;
+	height: 140px;
+	line-height: normal;
+	opacity:.8;
+}
+.connect-container .connect-seo-index p strong {
+	font-weight:bold;
+}
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 

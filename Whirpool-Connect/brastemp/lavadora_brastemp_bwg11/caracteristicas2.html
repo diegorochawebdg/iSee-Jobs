@@ -1,0 +1,187 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	
+}	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: relative;
+	position: absolute;
+	background: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page2/bg-caracteristicas-2.jpg) no-repeat center;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	width: 820px;
+	height: 520px;
+	position: relative;
+	
+}
+.div-content div { 
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+/* OBJETOS NA TELA */
+.titulo {
+	top: 33px;
+	left: 0px;
+}
+.bwg11 {
+	right: -213px;
+	bottom: -2px;
+}
+.fast-fill {
+	left: 0px;
+	top: 104px;
+}
+.compare {
+	left: 0px;
+	top: 188px;
+}
+.compare img {
+	position: relative;
+	z-index: 2;
+}
+.compare .liquidos {
+	position: relative;
+}
+.compare .liquidos div { position: absolute; bottom: 96px; background: #87a7ca; }
+.compare .liquidos .liquido-01 {
+	height: 0px;
+	width: 96px;
+	left: 54px;
+}
+.compare .liquidos .liquido-02 { height: 0px; width: 96px; left: 199px; }
+.fast-cycle {
+	left: 104px;
+	bottom: 51px;
+}
+.fast-cycle-img {
+	left: 0px;
+	bottom: 30px;
+}
+.botao-resultados {
+	right: 20px;
+	bottom: 35px;
+}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <div class="titulo">
+                	<img src="caracteristicas/page2/titulo.png" alt="Lave mais roupas em menos tempo" width="282" height="60" title="Lave mais roupas em menos tempo" />
+                </div>
+                
+                <div class="fast-fill">
+                	<img src="caracteristicas/page2/fast-fill.png" alt="O sistema Fast Fill enche sua Lavadora Ative! BWG11 de água até 3 vezes mais rápido que as outras lavadoras.**" width="371" height="76" title="O sistema Fast Fill enche sua Lavadora Ative! BWG11 de água até 3 vezes mais rápido que as outras lavadoras.**" />
+                </div>
+                
+                <div class="compare">
+                	<img src="caracteristicas/page2/compare.png" alt="Compare: FastFill | Outras" width="360" height="180" border="0" usemap="#Map" title="Compare: FastFill | Outras" />
+                    <map name="Map" id="Map">
+                      <area shape="rect" coords="114,122,235,154" href="#" id="compare" />
+                    </map>
+                  <div class="liquidos">
+                   	<div class="liquido-01"></div>
+                        <div class="liquido-02"></div>
+                    </div>
+                </div>
+                
+                <div class="fast-cycle-img">
+                	<img src="caracteristicas/page2/fast-cycle-img.png" alt="" width="80" height="80" title="" />
+                </div>
+                
+                <div class="fast-cycle">
+                	<img src="caracteristicas/page2/fast-cycle.png" alt="Fast Cycle: o ciclo de lavagem mais rápido do mercado!" width="208" height="35" title="Fast Cycle: o ciclo de lavagem mais rápido do mercado!" />
+                </div>
+                
+                <div class="bwg11">
+                	<img src="caracteristicas/page2/frente-lavadora.png" alt="Frente da Lavadora BWG11" width="592" height="437" title="Frente da Lavadora BWG11" />
+                </div>
+                
+                <div class="botao-resultados" id="call-to-action"> <a href="#"><img src="caracteristicas/page2/resultados-perfeitos.png" alt="Resultados perfeitos!" width="189" height="47" title="Resultados perfeitos!" /></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	//título
+	TweenMax.from( $(".titulo") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	//img da máquina de lavar
+	TweenMax.from( $(".bwg11") , 1, { css: { right: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	//fast fill
+	TweenMax.from( $(".fast-fill") , 1, { css: { left: "-=400px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	//deixa os líquidos em 0
+	TweenMax.to( $(".liquido-01, .liquido-02"), { css: { height: "0px" } });
+	
+	//anima os líquidos
+	TweenMax.from( $(".compare") , .5, { css: { left: "-=200px" , alpha: 0 } , ease: Strong.easeOut, delay:.5, onComplete: function() {
+	
+		TweenMax.to( $(".liquido-01"), 2, { css: { height: "+=73px" }, delay:0.2 });
+		TweenMax.to( $(".liquido-02"), 9, { css: { height: "+=73px" }, delay:0.2 });
+	
+	}} );
+	
+	//animação dos líquidos quando o botão "compare" é clicado
+	$("#compare").click(function(e) {
+		TweenMax.to( $(".liquido-01"), 0, { css: { height: "0" } });
+		TweenMax.to( $(".liquido-02"), 0, { css: { height: "0" }, onComplete:function(){
+			TweenMax.to( $(".liquido-01"), 2, { css: { height: "73px" }, delay:0.2 });
+			TweenMax.to( $(".liquido-02"), 9, { css: { height: "73px" }, delay:0.2 });
+		}});
+		
+    });
+	
+	//fast cycle
+	TweenMax.from( $(".fast-cycle-img, .fast-cycle") , .8, { css: { left: "-=200px" , alpha: 0 } , ease: Strong.easeOut} );
+	
+	//botão resultados
+	TweenMax.from( $(".botao-resultados") , .5, { css: { right: "-=200px" , alpha: 0 } , ease: Strong.easeOut, onComplete: function() {
+
+		TweenMax.to( $(".botao-resultados"), .3, { css: { right: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+	}} );
+	
+	$(".botao-resultados").hover(function(e) {
+		TweenMax.to( $(".botao-resultados") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+	}, function(){
+		TweenMax.to( $(".botao-resultados") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	
+	$("#call-to-action").on('click' , function( e ) { 
+			$(this).die();
+			TweenMax.killAll();
+			Connect.changePageFromCallToAction("caracteristicas3.html" , true );
+		
+		});
+		
+	$("#compare").mousedown( function( event ) { 
+		pageTracker._trackEvent( 'Interaction', 'Compare', $NOME_FOLDER + "caracteristicas2.html" , 0, true);
+	});	
+		
+});
+</script>

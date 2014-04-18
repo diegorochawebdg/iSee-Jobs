@@ -1,0 +1,115 @@
+ <style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	background-color: #7d1442;
+	padding: 0;
+	position: relative;
+	
+}	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+	overflow: hidden;
+}
+
+.content-center .div-content { 
+
+	margin: 0 auto;
+	width: 830px;
+	height: 520px;
+	position: relative;
+	
+}
+
+
+/* OBJETOS NA TELA */
+
+.title { 
+	position: absolute;
+	top: 43px;
+	left: 260px;
+}
+
+.mini-barbeador { 
+	position: absolute;
+	top: 137px;
+	left: 160px;
+}
+
+.aparador-de-precisao { 
+	position: absolute;
+	top: 137px;
+	right: 44px;
+}
+
+.aparador-de-barba { 
+	position: absolute;
+	top: 256px;
+	left: 185px;
+}
+
+.cortador-de-cabelos { 
+	position: absolute;
+	top: 256px;
+	right: 5px;
+}
+
+.pente-para-barba-e-bigode { 
+	position: absolute;
+	top: 390px;
+	left: 135px;
+}
+
+.elimine-pelos-indesejados { 
+	position: absolute;
+	top: 390px;
+	right: -34px;
+}
+
+.anderson-silva { 
+	position: absolute;
+	bottom: -21px;
+	left: -33px;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	// cria a tween TimelineLite
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });
+	
+	$("#especificacoes").hover(function(e) {
+            TweenMax.to( $("#especificacoes") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#especificacoes") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	$(".div-content").mousedown(function(event) {
+        pageTracker._trackPageview( $NOME_FOLDER + "manual.pdf" );
+    });
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content"><a href="cliente/manual.pdf" target="_blank"><img src="cliente/botao-especificacoes.png" id="especificacoes" width="175" height="57" style="position:absolute; top:233px; left:161px;" alt="Especificações de instalação" title="Especificações de instalação" /></a>
+            <img src="cliente/especificacoes-frame.jpg" alt="Dimensões e peso" width="772" height="415" border="0" class="" title="Dimensões e peso" style="margin-top:50px;" />
+            </div>
+        </div>
+        
+    </div>
+</div>

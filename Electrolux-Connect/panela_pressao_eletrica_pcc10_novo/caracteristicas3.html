@@ -1,0 +1,177 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/page3/background.jpg) 50% 50% no-repeat;
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+#background-magenta{ background:#b00f3a; width:100%; height:93px; position:absolute; top:0;}
+
+.absoluto{ position:absolute; left:50%;}
+.botao{ cursor:pointer;}
+
+.titulo{ margin-left:-238px; top:38px;}
+#call-to-action3{ margin-left:200px; top:10px;}
+
+
+#container-accordion{ width:800px; height:427px; margin-left:-400px; bottom:0;}
+#container-accordion .left{ float:left;}
+#container-accordion .abLeft{ position:absolute; left:44px;}
+#container-accordion .accordion{ position:relative; overflow:hidden; width:44px;}
+#container-accordion .btn-ativo{ display:none;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	TweenMax.from($("#background-magenta"), .25, {css:{top:"-=40px", alpha:0}, ease:Linear.easeOut, delay:.2});
+	
+	TweenMax.from($(".titulo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	
+	TweenMax.from($("#container-accordion"), .2, {css:{bottom:"-=40px", alpha:0}, ease:Linear.easeOut, delay:.5});
+	
+		
+	TweenMax.from( $("#call-to-action3") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:.8, onComplete: function() {
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+	}} );
+	
+	
+	var _itens = {"#accordion-01": "pressao", "#accordion-02": "aquecer", "#accordion-03": "funcao_molho", "#accordion-04": "refogar", "#accordion-05": "cozinhar", "#accordion-06": "fritar"};
+	var itemAtivo, tempoClick;
+	
+	$.each(_itens, function(ind, val){
+		
+		if(itemAtivo == null){
+			$(ind + " .btn-ativo").show();
+			$(ind + " .btn").hide();
+			$(ind).delay(800).animate({"width": "580px"}, 1000);
+			itemAtivo = ind;
+			Connect.trackPageView( "caracteristicas3/" + val + ".html" );
+		}
+		
+		$(ind + " .btn").on("mouseenter", function(e){
+			for(key in _itens){
+				if(key != ind && key != itemAtivo) $(key + " .btn").show();
+				if(key != ind && key != itemAtivo) $(key + " .btn-ativo").hide();
+			}
+			$(ind + " .btn-ativo").show();
+			$(ind + " .btn").hide();
+		});
+		$(ind + " .btn-ativo").on("mouseleave", function(e){
+			if(ind != itemAtivo){
+				$(ind + " .btn").show();
+				$(ind + " .btn-ativo").hide();
+			}
+		}).on("click", function(e){
+			if(ind != itemAtivo){
+				if((tempoClick == null) || ((e.timeStamp - tempoClick) >= 1200)){
+					for(key in _itens){
+						if(key != ind) $(key + " .btn").show();
+						if(key != ind) $(key + " .btn-ativo").hide();
+					}
+					
+					$(itemAtivo + " .btn").show();
+					$(itemAtivo + " .btn-ativo").hide();
+					$(itemAtivo).animate({"width": "44px"}, 1000);
+					
+					$(ind + " .btn-ativo").show();
+					$(ind + " .btn").hide();
+					$(ind).animate({"width": "580px"}, 1000);
+					
+					itemAtivo = ind;
+					tempoClick = e.timeStamp;
+					
+					Connect.trackPageView( "caracteristicas3/" + val + ".html" );
+				}
+			}
+		});
+		
+	});	
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+    	<div id="background-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/title-6-funcoes-de-cozimento.png" width="330px" height="29px" alt="6 funções de cozimento" title="6 funções de cozimento" class="absoluto titulo" />
+                <img src="caracteristicas/page3/btn-design-especial.png" width="201px" height="84px" alt="Design Especial" title="Design Especial" class="absoluto botao" id="call-to-action3" />
+                
+                <div id="container-accordion" class="absoluto">
+                	<div id="accordion-01" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-01.png" width="43px" height="427px" alt="Pressão" title="Pressão" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-01-ativo.png" width="43" height="427px" alt="Pressão" title="Pressão" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-01.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+                    <div id="accordion-02" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-02.png" width="43px" height="427px" alt="Aquecer" title="Aquecer" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-02-ativo.png" width="43" height="427px" alt="Aquecer" title="Aquecer" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-02.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+                    <div id="accordion-03" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-03.png" width="43px" height="427px" alt="Função Molho" title="Função Molho" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-03-ativo.png" width="43" height="427px" alt="Função Molho" title="Função Molho" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-03.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+                    <div id="accordion-04" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-04.png" width="43px" height="427px" alt="Refogar" title="Refogar" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-04-ativo.png" width="43" height="427px" alt="Refogar" title="Refogar" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-04.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+                    <div id="accordion-05" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-05.png" width="43px" height="427px" alt="Cozinhar" title="Cozinhar" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-05-ativo.png" width="43" height="427px" alt="Cozinhar" title="Cozinhar" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-05.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+                    <div id="accordion-06" class="left accordion">
+                    	<img src="caracteristicas/page3/btn-06.png" width="43px" height="427px" alt="Fritar" title="Fritar" class="left botao btn" />
+                        <img src="caracteristicas/page3/btn-06-ativo.png" width="43" height="427px" alt="Fritar" title="Fritar" class="left botao btn-ativo" />
+                        <img src="caracteristicas/page3/conteudo-06.jpg" width="536px" height="427px" alt="" title="" class="abLeft conteudo" />
+                    </div>
+               	</div>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

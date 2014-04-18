@@ -1,0 +1,113 @@
+@charset "utf-8"; 
+#container-geral{
+	margin: 30px 0 0;
+	color: #7E7E7E;
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+body{height:100%}
+h1{height:85px; width:223px}
+h1 a{text-indent:-9999px; background:url(../images/logotipo-coifamax.gif); overflow:hidden; display:block; width:223px; height:85px}
+
+h2, h3{font-weight:normal}
+#container-geral *{font-family:'FranklinGothic-Book'}
+
+/*@font-face*/
+@font-face{   font-family:'FranklinGothic-Book';     src:url('../fonts/franklingothicbook.eot');     src:url('../fonts/franklingothicbook.eot?#iefix') format('embedded-opentype'),        url('../fonts/franklingothicbook.woff') format('woff'),        url('../fonts/franklingothicbook.ttf') format('truetype'),url('../fonts/franklingothicbook.svg#franklingothicbook') format('svg');  font-weight:normal;  font-style:normal}
+
+/*topo*/
+.margem-geral{width:970px; margin:0 auto; height:100%}
+
+.clear{clear:both}
+.block{display:block}
+.sem-underline{text-decoration:none !important}
+.formulario .sem-underline:hover, #rodape .sem-underline:hover{cursor:text}
+.selecionado{color:#45648C}
+
+#topo{position:relative}
+
+#topo .titulo{float:left}
+#topo .telefone{float:right; background:url(../images/icones.gif) no-repeat 0px -39px; display:block; height:22px}
+#topo .telefone a{font-size:20px; padding-left:45px; color:#7E7E7E}
+#topo .height{height:105px}
+
+/* Menu*/
+#topo .menu{background:#5197BB; position:absolute; top:58px; height:48px; left:53.5%; width:3000px}
+#topo .menu-item{float:left; height:31px; padding:17px 10px 0; text-align:center; width:108px}
+#topo .menu-item a, #topo .menu-item span{color:#FFF; text-transform:uppercase; font-size:15px; padding:7px}
+#topo .sem-link{color:#FFF; text-transform:uppercase; text-decoration:underline; font-size:15px}
+
+#topo .sem-margem{padding:0px !important; margin:0px !important; width:78px}
+#topo .bg-produto{background:url(../images/bg-produto-menu.jpg) repeat-x 0px 1px}
+#topo .bg-produto2{background:#7C8EA6}
+.bg-preto{background:url(../images/bg-preto.png) repeat !important}
+
+/*Barra azul*/
+#topo .produtos-itens{background:#e2f0f9 url(../images/bg-produtos-itens-topo.jpg) repeat-y center top; border-top:1px ridge #5197BB; height:68px}
+.produtos-itens .submenu{
+	height: 44px;
+	padding: 24px 3px 0 3px;
+	position: relative;
+}
+.produtos-itens .submenu span{color:#45648C}
+
+.produtos-itens .selecionado{background-color:white}
+
+#topo .produtos-itens li{display:inline; text-transform:uppercase; font-size:15px; margin-right:26px; float:left}
+#topo .produtos-itens a{color:#45648C; text-decoration:none}
+#topo .produtos-itens .lista-sem-margem{margin-right:0; float:right}
+
+/* Dropdown*/
+.sub_menu{display:none; position:absolute; top:68px; left:0; z-index:20;*zoom:1;}
+
+.sub_menu li{
+	background-color: #FFF;
+	margin: 0 !important;
+	padding: 7px 10px !important;
+	display: block !important;
+	float: none !important;
+	z-index: 200;
+	position: relative;
+	vertical-align:bottom;
+	min-height:1px;
+}
+
+.sub_menu li a{color:#549ABE !important; text-decoration:none; display:block}
+.sub_menu li a:hover{text-decoration:underline !important}
+
+.relative{position:relative}
+#rodape{background:#7C8EA6 url(../images/bg-rodape.gif) repeat-x; height:100%}
+#rodape .ptop{padding-top:20px; padding-bottom:20px}
+
+#rodape .branco{color:#FFF}
+#rodape .azul{color:#CBD2DB}
+#rodape #endereco{background:url(../images/icones.gif) no-repeat 0px -80px; height:33px}
+#rodape #contato{background:url(../images/icones.gif) no-repeat 0px 3px; height:33px}
+
+#rodape .size1{font-size:20px; text-transform:uppercase; display:block; padding:5px 0 0 35px}
+
+#rodape .size2{font-size:16px}
+#rodape .size3{font-size:20px; text-transform:uppercase; display:block; padding:5px 0 0 45px}
+
+#rodape .rodape-item{float:left; padding-top:20px}
+
+#rodape .rodape-divisao{background:url(../images/divisao-rodape.jpg); height:131px; width:2px; float:left; margin:0 48px}
+#rodape .font{font:16px FranklinGothic-Book; color:#CBD2DB}
+#rodape .email{color:#DDDFC5}
+
+#rodape a{color:#CBD2DB}
+#rodape #redes{font-size:20px; height:30px; text-transform:uppercase}
+#rodape .isee{float:right; width:128px; padding-top:45px}
+#rodape .isee span{font-size:11px; padding-top:10px; color:#CBD2DB}
+#rodape .float-left{float:left; margin-right:10px}
+#conteudo .slider-botao-cima, #conteudo .slider-botao-baixo{
+	position: absolute;
+	top: 8px;
+	right: 0;
+	z-index: 20;
+}
+#conteudo .margem-geral .txt p{
+	margin-bottom:7px;
+}
+p strong, strong{font-weight:bold}

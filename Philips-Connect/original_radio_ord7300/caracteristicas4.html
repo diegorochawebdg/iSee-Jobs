@@ -1,0 +1,61 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: #FFF url(caracteristicas/page4/bg-caracteristicas4.jpg) repeat-x center 0px; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.selo { margin-left: -345px; top: 67px; }
+.glow { background: url(caracteristicas/page4/brilho.png); height: 385px; width: 204px; position: absolute; left: 50%; top: 67px; margin-left: -214px; }
+.dock-img { margin-left: -141px; top: 36px; z-index: 3; }
+.gaveta-txt { background: url(caracteristicas/page4/o-dock-fica-em-uma-gaveta-que-pode-aparecer-ou-ficar-ocultado.png); height: 116px; width: 390px; margin-left: 68px; position: absolute; left: 50%; top: 135px; }
+.call-to-action4 { margin-left: 144px; bottom: 23px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+            	<img src="caracteristicas/page4/radio-fm-que-tambem-sintoniza-radio-digital.png" width="163" height="163" alt="Rádio FM, que também sintoniza rádio digital" title="Rádio FM, que também sintoniza rádio digital" class="selo" />
+            	
+            	<div class="glow"></div>
+            	
+            	<img src="caracteristicas/page4/detalhe-gaveta-dock.png" width="365" height="456" alt="Detalhe da gaveta do dock" title="Detalhe da gaveta do dock" class="dock-img" />
+            	
+            	<div class="gaveta-txt"></div>
+                <a href="#"><img src="caracteristicas/page4/musica-do-seu-jeito.png" width="230" height="57" alt="Música do seu jeito" title="Música do seu jeito" class="call-to-action4" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".glow") , 1, { css: { width:0 } , ease: Strong.easeOut, delay:.3});
+	TweenMax.from( $(".dock-img") , 1, { css: { alpha:0 } , ease: Strong.easeOut, delay:.6});
+	TweenMax.from( $(".gaveta-txt") , 1, { css: { alpha:0 } , ease: Strong.easeOut, delay:.8});
+	TweenMax.from( $(".selo") , 1, { css: { alpha:0, top:"-=50px" } , ease: Strong.easeOut, delay:1.1});
+	
+	//call to action
+	TweenMax.from( $(".call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+			
+		TweenMax.to( $(".call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".call-to-action4").hover(function(e) {
+            TweenMax.to( $(".call-to-action4") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".call-to-action4" , "caracteristicas5.html", true );
+	
+		
+});
+</script>

@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{ border: 0; padding: 0; margin: 0; text-decoration:none; }
+h1, h2, h3{ font-weight: normal; }
+ul{ list-style: none; }
+
+@font-face { font-family: 'Museo300'; src: url('../fonts/museo300-regular-webfont.eot'); src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo300-regular-webfont.woff') format('woff'), url('../fonts/museo300-regular-webfont.ttf') format('truetype'), url('../fonts/museo300-regular-webfont.svg#Museo300') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Museo500'; src: url('../fonts/museo-500-webfont.eot'); src: url('../fonts/museo-500-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-500-webfont.woff') format('woff'), url('../fonts/museo-500-webfont.ttf') format('truetype'), url('../fonts/museo-500-webfont.svg#Museo500') format('svg'); font-weight: normal; font-style: normal;
+
+}
+
+@font-face { font-family: 'Museo700'; src: url('../fonts/museo700-regular-webfont.eot'); src: url('../fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo700-regular-webfont.woff') format('woff'), url('../fonts/museo700-regular-webfont.ttf') format('truetype'), url('../fonts/museo700-regular-webfont.svg#Museo700') format('svg'); font-weight: normal; font-style: normal; }
+
+#container-geral{ width: 100%; height: 768px; position: relative; overflow-x:hidden; }
+
+.relative-menu{position:relative; overflow:hidden; width:1024px; height:768px; margin:0 auto;}
+
+#container-menu{ width: 1024px; position: absolute; margin-left: -512px; left: 50%; z-index: 6; height: 87px; bottom: 0px; }
+
+.conteudo{ width: 1024px; position: relative; } .conteudo-float { height: 768px; margin-left: -512px; position: absolute; left: 50%; top: 0px; }
+
+.detalhe-bg{ position: absolute; bottom: -5px; z-index: 7; margin-left: -512px; left: 50%; pointer-events:none; }
+
+
+/*Botão Menu*/ .btn_menu{ position: absolute; bottom: 22px; z-index: 2; right: 53px; opacity:0; } 
+.btn_fechar_menu{ display: block; position: absolute; right: 40px; top: 7px; padding-top: 10px; height: 20px; }
+
+/*Menu*/ 
+#menu{ position: absolute; right: 39px; bottom: 0px; z-index: 1; opacity:0; height:0; }
+#menu .box-menu{ width: 241px; height: 369px; background:url(../images/bg-menu.png) repeat;}
+#menu .box-menu ul{ position: absolute; top: 44px; left: 15px; }
+#menu .box-menu li{ float: left; width: 50px; height:71px; margin: 10px 10px; }
+#menu .box-menu li:hover{cursor:pointer;}
+#menu #btn_conceito{background: url(../images/btn-conceito.png) no-repeat;}
+#menu #btn_perfil{background: url(../images/btn-perfil-medico.png) no-repeat;}
+#menu #btn_dados{background: url(../images/btn-dados-farmacos.png) no-repeat;}
+#menu #btn_sertralina{background: url(../images/btn-sertralina.png) no-repeat;}
+#menu #btn_interacao{background: url(../images/btn-interacao.png) no-repeat;}
+#menu #btn_blister{background: url(../images/btn-blister.png) no-repeat;}
+#menu #btn_preco{background: url(../images/btn-preco.png) no-repeat;}
+#menu #btn_anuncio{background: url(../images/btn-anuncio.png) no-repeat;}
+#menu #btn_bula{background: url(../images/btn-bula.png) no-repeat;}
+
+/*Slider pages internas*/
+.slider-telas{ position: absolute; top: 40px; right: 30px; z-index: 2; }
+.slider-telas ul{ list-style: none; }
+.slider-telas li{ float: left; width: 15px; height: 15px; margin-right: 20px; }
+.slider-telas li a{ background: url(../images/bullet-slider.png) no-repeat; display: block; width: 15px; height: 15px; text-indent: -9999px; }
+
+/*Slide Conceito*/
+#slide-conceito{ background: url(../images/bg-conceito.jpg) no-repeat; height: 768px; position: relative; z-index:2;  }
+#slide-conceito h1{ position: absolute; top: 20px; left: 20px; }
+#slide-conceito h2{ position: absolute; right: 50px; top: 80px; opacity:0; }
+#slide-conceito h3{ font-family: 'Museo700'; font-size: 37px; position: absolute; right: 50px; top: 275px; color: #6d6e71; opacity:0; }
+#slide-conceito .bonecos{ position: absolute; bottom: 51px; left: -80px; opacity:0; }
+
+/*Slide Quizz*/
+#slide-quizz{ background: url(../images/bg-quizz.jpg) no-repeat; height: 768px; position: relative; }
+#slide-quizz h1{ position: absolute; top: 20px; left: 20px; }
+#slide-quizz .box-opcoes{ width: 860px; margin: 0 0 0 95px; padding-top: 330px; }
+#slide-quizz .box-opcoes li{ float: left; margin-right: 49px; }
+#slide-quizz .box-opcoes li a{ display: block; text-indent: -99999px; height: 108px;}
+
+li.nao-trata{ background: url(../images/opcoes-ativas.png) no-repeat 0 0; width: 252px; height: 126px; }
+li.nao-sabe{ background: url(../images/opcoes-ativas.png) no-repeat -302px 0; width: 252px; height: 126px; }
+li.nao-usa{ background: url(../images/opcoes-ativas.png) no-repeat -602px 0; width: 252px; height: 126px; }
+
+li.sertralina{ background: url(../images/opcoes-em-breve.png) no-repeat; width: 252px; height: 132px; margin-left: 6px; margin-top: 20px; }
+li.fluoxetina{ background: url(../images/opcoes-em-breve.png) no-repeat -300px 0; width: 252px; height: 132px; margin-top: 20px; }
+li.paroxetina{ background: url(../images/opcoes-em-breve.png) no-repeat -600px 0; width: 252px; height: 132px; margin-top: 20px; }
+
+.last-item{ margin-right: 0 !important; }
+
+/*Slide Não trata*/
+.slide-nao-trata{ background: url(../images/bg-ibirapuera.jpg) no-repeat; height: 768px; position: relative; }
+.slide-nao-trata h1{ position: absolute; top: 20px; left: 20px; }
+.slide-nao-trata h2{ font-family: 'Museo700'; font-size: 28px; color: #f99d1c; padding: 155px 0 0 104px; }
+.slide-nao-trata h2 span{ position: absolute; top: 186px; left: 728px; font-size: 18px; }
+.slide-nao-trata .grafico{ width: 646px; height: 321px; padding: 15px 0 0 104px; position: relative; }
+.slide-nao-trata .grafico img{ position: absolute; }
+.slide-nao-trata .grafico .efeito{ width: 570px; height: 251px; position: relative; overflow: hidden; top: 28px; left: 54px; }
+.slide-nao-trata .detalhes{ position: absolute; right: 69px; bottom: 74px; opacity:0; }
+.slide-nao-trata span{ position: absolute; bottom: 84px; left: 102px; }
+
+/*Slide Explosão - Não trata*/
+.explosao-nao-trata{ background: url(../images/fundo-explosao.jpg) no-repeat; width: 1024px; height: 768px; }
+.explosao-nao-trata h1{ color: #fff; font-family: 'Museo700'; font-size: 28px; text-align: center; padding-top: 65px; }
+.explosao-nao-trata .box-explosao h1 span{ position: absolute; top: 96px; left: 901px; font-size: 18px; }
+.explosao-nao-trata .box-explosao img{ margin: 40px 0 30px 77px; }
+.explosao-nao-trata .box-explosao h2{ font-family: 'Museo500'; font-size: 27px; color: #6e6f71; text-align: center; }
+.explosao-nao-trata .box-explosao span{ display: block; }
+.explosao-nao-trata .box-explosao span img{ margin: 50px auto; display: block; }
+
+/*Slide Não trata - 2*/
+#slide-nao-trata-2 h2 span.dois{ position: absolute; top: 156px; left: 840px; font-size: 18px; }
+#slide-nao-trata-2 .grafico-2{ width: 757px; height: 381px; padding: 15px 0 0 104px; position: relative; }
+
+/*Slide Explosão - Não trata 2*/
+#explosao-nao-trata-2{z-index:9995; position:relative;}
+#explosao-nao-trata-2 .box-explosao h1 span{ top: 65px; left: 881px; }
+
+/*Slide Não trata - 3*/
+#slide-nao-trata-3 h2 span.dois{ position: absolute; top: 156px; left: 751px; font-size: 18px; }
+#slide-nao-trata-3 .grafico-3{ width: 757px; height: 381px; padding: 15px 0 0 104px; position: relative; }
+#slide-nao-trata-3 .detalhes{ position: absolute; right: 52px; bottom: 93px; }
+
+/*Slide Explosão - Não trata 3*/
+#explosao-nao-trata-3{position:relative; z-index:9995;}
+#explosao-nao-trata-3 .box-explosao h1 span{ top: 65px; left: 836px; z-index:9995; }
+#explosao-nao-trata-3 .box-explosao img{ margin: 40px 0 30px 92px; }
+#explosao-nao-trata-3 .box-explosao span img{ margin: 0 auto; display: block; }
+
+/*Slide Não trata - 4*/
+#slide-nao-trata-4 h2 span.dois{ position: absolute; top: 156px; left: 952px; font-size: 18px; }
+#slide-nao-trata-4 .grafico-4{ width: 757px; height: 381px; padding: 15px 0 0 104px; position: relative; }
+#slide-nao-trata-4 .detalhes{ position: absolute; right: 78px; bottom: 84px; }
+
+/*Slide Explosão - Não trata 4*/
+#explosao-nao-trata-4{z-index:9995; position:relative;}
+#explosao-nao-trata-4 .box-explosao h1 span{ top: 65px; left: 936px; }
+#explosao-nao-trata-4 .box-explosao img{ margin: 40px 0 30px 96px; }
+#explosao-nao-trata-4 .box-explosao span img{ margin: 0 auto; display: block; }
+
+/*Slide Não trata - 5*/
+#slide-nao-trata-5 h2 span.dois{ position: absolute; top: 152px; left: 836px; font-size: 18px; }
+#slide-nao-trata-5 h3{ font-family: 'Museo700'; font-size: 23px; color: #fff; padding: 0 0 0 104px; }
+#slide-nao-trata-5 h3 span.tres{ position: absolute; top: 182px; left: 871px; font-size: 18px; }
+#slide-nao-trata-5 .grafico-5{ width: 757px; height: 381px; padding: 15px 0 0 104px; position: relative; }
+#slide-nao-trata-5 .detalhes{ position: absolute; right: 78px; bottom: 84px; }
+
+/*Slide Explosão - Não trata 5*/
+#explosao-nao-trata-5{z-index:9995; position:relative;}
+#explosao-nao-trata-5 .box-explosao h1 span{ top: 61px; left: 880px; }
+#explosao-nao-trata-5 .box-explosao h2{ color: #fff; font-family: 'Museo700'; }
+#explosao-nao-trata-5 .box-explosao h2 span{ top: 90px; left: 964px; position: absolute; font-size: 18px;}
+#explosao-nao-trata-5 .box-explosao img{ margin: 40px 0 30px 96px; }
+#explosao-nao-trata-5 .box-explosao span img{ margin: 0 auto; display: block; }
+#explosao-nao-trata-5 img.tabela{ margin: 0 0 0 96px; position: absolute; bottom: 33px; left: 0; }
+#explosao-nao-trata-5 .texto-fonte-explosao-5{ position: absolute; right: 235px; bottom: 27px; }
+
+/*Slide Não trata - 6*/
+#slide-nao-trata-6 h2{ font-size: 24px; }
+#slide-nao-trata-6 h2 span.dois{ position: absolute; top: 152px; left: 965px; font-size: 18px; }
+#slide-nao-trata-6 h3{ font-family: 'Museo700'; font-size: 24px; color: #fff; padding: 0 0 0 104px; }
+#slide-nao-trata-6 .grafico-6{ width: 757px; height: 328px; padding: 40px 0 0 104px; position: relative; }
+#slide-nao-trata-6 .detalhes{ position: absolute; right: 155px; bottom: 84px; }
+
+/*Slide Explosão - Não trata 6*/
+#explosao-nao-trata-6{z-index:9995; position:relative;}
+#explosao-nao-trata-6 .box-explosao h1 span{ top: 90px; left: 858px; }
+#explosao-nao-trata-6 .box-explosao h2{ color: #fff; font-size: 24px; font-family: 'Museo700'; padding-top: 10px; }
+#explosao-nao-trata-6 .box-explosao img{ margin: 60px 0 30px 140px; }
+#explosao-nao-trata-6 .box-explosao span img{ margin: 30px auto 0; display: block; }
+
+
+/* Slide Não sabe */
+#slide-nao-sabe{ background: url(../images/bg-nao-sabe.jpg) no-repeat; height: 768px; position: relative; }
+#slide-nao-sabe h1{ position: absolute; top: 20px; left: 20px; }
+#slide-nao-sabe h2{ color: #f99d1c; font-family: 'Museo700'; font-size: 28px; padding: 158px 0 0 104px; }
+#slide-nao-sabe h2 span{ position: absolute; right: 247px; font-size: 18px; top: 155px; }
+#slide-nao-sabe .box1{ background: url(../images/bg-tabela-nao-sabe.png) no-repeat; width: 512px; height: 87px; margin: 10px 0 0 104px; padding: 12px 20px;}
+#slide-nao-sabe .box1 h3, #slide-nao-sabe .box2 h3{ font-family: 'Museo700'; font-size: 19px; color: #fff; margin-bottom: 10px; }
+#slide-nao-sabe .box1 li, #slide-nao-sabe .box2 li{ color: #fff; font-family: 'Museo300'; font-size: 19px; position: relative; padding-left: 15px; margin-bottom: 2px; }
+#slide-nao-sabe .box2{ background: url(../images/bg-tabela-grande-nao-sabe.png) no-repeat; width: 532px; height: 219px; margin: 5px 0 0 104px; padding: 12px 20px; }
+#slide-nao-sabe .box1 li span, #slide-nao-sabe .box2 li span{ position: absolute; top: -3px; left: 0;}
+
+/* Slide Não sabe 2 */
+#slide-nao-sabe-2{ background: url(../images/bg-nao-sabe.jpg) no-repeat; height: 768px; position: relative; }
+#slide-nao-sabe-2 h1{ position: absolute; top: 20px; left: 20px; }
+#slide-nao-sabe-2 h2{ color: #f99d1c; font-family: 'Museo700'; font-size: 28px; padding: 158px 0 0 104px; }
+#slide-nao-sabe-2 h2 span{ position: absolute; right: 247px; font-size: 18px; top: 155px; }
+#slide-nao-sabe-2 .box1{ background: url(../images/bg-tabela-medio-nao-sabe.png) no-repeat; width: 451px; height: 121px; margin: 10px 0 0 104px; padding: 12px 20px;}
+#slide-nao-sabe-2 .box1 h3, #slide-nao-sabe-2 .box2 h3{ font-family: 'Museo700'; font-size: 19px; color: #fff; margin-bottom: 14px; }
+#slide-nao-sabe-2 .box2{ background: url(../images/bg-tabela-medio-nao-sabe.png) no-repeat; width: 451px; height: 121px; margin: 5px 0 0 104px; padding: 12px 20px; }
+#slide-nao-sabe-2 p{ color: #fff; font-family: 'Museo300'; font-size: 19px; } 
+#slide-nao-sabe-2 .box-nao-sabe .slider-telas{ position: absolute; }
+
+/*Slide Não usa*/
+.slide-nao-usa{ background: url(../images/bg-ibirapuera.jpg) no-repeat; height: 768px; position: relative; }
+.slide-nao-usa h1{ position: absolute; top: 20px; left: 20px; }
+.slide-nao-usa h2{ font-family: 'Museo700'; font-size: 28px; color: #f99d1c; padding: 155px 0 0 104px; }
+.slide-nao-usa h2 span{ position: absolute; top: 186px; left: 477px; font-size: 18px; }
+.slide-nao-usa .detalhes{ position: absolute; right: 109px; bottom: 74px; }
+.slide-nao-usa span{ position: absolute; bottom: 84px; left: 102px; }
+
+/*Slide Explosão - Não usa*/
+.explosao-nao-usa{ background: url(../images/fundo-explosao.jpg) no-repeat; width: 1024px; height: 768px; }
+.explosao-nao-usa h1{ color: #fff; font-family: 'Museo700'; font-size: 28px; text-align: center; padding-top: 65px; }
+.explosao-nao-usa .box-explosao h1 span{ position: absolute; top: 96px; left: 901px; font-size: 18px; }
+.explosao-nao-usa .box-explosao img{ margin: 40px 0 30px 77px; }
+.explosao-nao-usa .box-explosao span{ display: block; }
+.explosao-nao-usa .box-explosao span img{ margin: 50px auto; display: block; }
+
+/*Slide Não usa 1*/
+#slide-nao-usa h2{ font-size: 24px; }
+#slide-nao-usa h2 span.dois{ position: absolute; top: 152px; left: 531px; font-size: 18px; }
+#slide-nao-usa .grafico-1{ width: 757px; height: 381px; padding: 25px 0 0 104px; position: relative; }
+#slide-nao-usa .detalhes{ position: absolute; right: 26px; bottom: 64px; }
+
+/*Slide Explosão - Não usa 1*/
+#explosao-nao-usa{position:relative; z-index:9995}
+#explosao-nao-usa .box-explosao h1 span{ top: 63px; left: 763px; }
+#explosao-nao-usa .box-explosao img{ margin: 60px 0 30px 140px; }
+#explosao-nao-usa .box-explosao span img{ margin: 30px auto 0; display: block; }
+
+/*Slide Não usa 2*/
+#slide-nao-usa-2 h2{ font-size: 24px; }
+#slide-nao-usa-2 h2 span.dois{ position: absolute; top: 152px; left: 653px; font-size: 18px; }
+#slide-nao-usa-2 .grafico-1{ width: 757px; height: 381px; padding: 25px 0 0 104px; position: relative; }
+#slide-nao-usa-2 .detalhes{ position: absolute; right: 68px; bottom: 78px; }
+
+/*Slide Explosão - Não usa 2*/
+#explosao-nao-usa-2{position:relative; z-index:9995; background: url("../images/explosao-nao-usa-2.jpg") no-repeat; cursor:pointer;}
+
+/*Slide Não usa 3*/
+#slide-nao-usa-3 h2{ font-size: 24px; }
+#slide-nao-usa-3 h2 span.dois{ position: absolute; top: 152px; left: 282px; font-size: 18px; }
+#slide-nao-usa-3 .grafico-1{ width: 757px; height: 381px; padding: 25px 0 0 104px; position: relative; }
+#slide-nao-usa-3 .detalhes{ position: absolute; right: 98px; bottom: 61px; }
+
+/*Slide Explosão - Não usa 3*/
+#explosao-nao-usa-3{background: url("../images/explosao-nao-usa-3.jpg") no-repeat; cursor:pointer; position:relative; z-index:9995;}
+
+/*Slide Não usa 4*/
+#slide-nao-usa-4 h2{ font-size: 24px; }
+#slide-nao-usa-4 h2{ font-size: 28px;}
+#slide-nao-usa-4 h2 span.dois{ position: absolute; top: 154px; left: 887px; font-size: 18px; }
+#slide-nao-usa-4 .grafico-1{ width: 757px; height: 381px; padding: 25px 0 0 104px; position: relative; }
+#slide-nao-usa-4 .detalhes{ position: absolute; right: 60px; bottom: 82px; }
+
+/*Slide Explosão - Não usa 4*/
+#explosao-nao-usa-4{position:relative; z-index:9995; background: url("../images/explosao-nao-usa-4.jpg") no-repeat; cursor:pointer;}
+
+/*Slide Não usa 5*/
+#slide-nao-usa-5 h2{ font-size: 28px; padding: 155px 0 0 50px;}
+#slide-nao-usa-5 .grafico-1{ width: 757px; height: 381px; padding: 15px 0 0 57px; position: relative; }
+#slide-nao-usa-5 .detalhes{ position: absolute; right: 110px; bottom: 86px; }
+
+/*Slide Explosão - Não usa 5*/
+#explosao-nao-usa-5{position:relative; z-index:9995; background: url("../images/explosao-nao-usa-5.jpg") no-repeat; cursor:pointer;}
+
+/*SERTRALINA*/
+#sertralina1{background:url(../images/bg-ibirapuera.jpg); height:768px;}
+#sertralina1 img{position:absolute;}
+#sertralina1 .txt{top:145px; left:102px; opacity:0;}
+#sertralina1 .quadro { left: 110px; top: 277px; opacity:0; }
+#sertralina1 .faixa-procimax { left: 50px; top: 361px; opacity:0; }
+#sertralina1 .fonte { left: 120px; top: 670px; }
+#sertralina1 .boneco { left: 680px; top: 333px; opacity:0; }
+
+/*SERTRALINA EXPLOSÃO*/
+#sertralina1-explosao{z-index: 9999; position: relative;}
+
+/*SERTRALINA2*/
+#sertralina2{background:url(../images/bg-ibirapuera.jpg); height:768px;}
+#sertralina2 img{position:absolute;}
+#sertralina2 .txt{top:190px; left:102px; opacity:0;}
+#sertralina2 .quadro { left: 110px; top: 297px; opacity:0;}
+#sertralina2 .faixa-procimax { left: 70px; top: 332px; opacity:0;}
+#sertralina2 .fonte { left: 120px; top: 670px; }
+#sertralina2 .boneco { left: 873px; top: 186px; opacity:0;}
+
+/*SERTRALINA3*/
+#sertralina3{background:url(../images/bg-ibirapuera.jpg); height:768px;}
+#sertralina3 img{position:absolute;}
+#sertralina3 .txt{top:125px; left:110px; opacity:0;}
+#sertralina3 .quadro { left: 110px; top: 190px; opacity:0;}
+#sertralina3 .fonte { left: 120px; top: 670px; }
+
+/*DADOS FÁRMACOS*/
+#slide-dados-farmacos, #slide-dados-farmacos2{ background: url(../images/bg-ibirapuera.jpg); height: 768px; position:relative; }
+#slide-dados-farmacos h1, #slide-dados-farmacos2 h1{ position: absolute; top: 20px; left: 20px; }
+#slide-dados-farmacos .img-senhora, #slide-dados-farmacos2 .img-senhora, #slide-dados-farmacos .dados-lista, #slide-dados-farmacos2 .dados-lista {
+	position: absolute;
+}
+#slide-dados-farmacos .img-senhora, #slide-dados-farmacos2 .img-senhora { left: -10px; bottom: 40px; z-index: 1; opacity:0; } .margin-botton-15{ margin-bottom: 15px; }
+#slide-dados-farmacos .dados-lista1 li, #slide-dados-farmacos2 .dados-lista li, #slide-dados-farmacos2 .dados-lista1 li, #slide-dados-farmacos2 .dados-lista li { margin-bottom: 5px; opacity:0; } 
+#slide-dados-farmacos2 .dados-lista li{ opacity:1; } 
+.width-lista{ width:640px !important; opacity:1; }
+/*DADOS FÁRMACOS 1*/
+#slide-dados-farmacos .dados-farmacos-1 .dados-lista { left: 358px; top: 125px; } #slide-dados-farmacos .dados-farmacos-1 .dados-lista li{ opacity:0; } #slide-dados-farmacos .dados-farmacos-1 .boneco { top: 114px; right: -25px; opacity:0; position: absolute; }
+#slide-dados-farmacos .dados-farmacos-1 .slider-telas, #slide-dados-farmacos2 .dados-farmacos-1 .slider-telas, #slide-dados-farmacos .dados-farmacos-2 .slider-telas, #slide-dados-farmacos2 .dados-farmacos-2 .slider-telas{ opacity:0; }
+#slide-dados-farmacos .dados-farmacos-2 .slider-telas{display:none;}
+/*DADOS FÁRMACOS 2*/
+#slide-dados-farmacos2 .dados-farmacos-2 .dados-lista { right: 45px; top: 125px; } #slide-dados-farmacos2 .dados-farmacos-2 .dados-lista li{ opacity:0; } #slide-dados-farmacos2 .dados-farmacos-2 .boneco { top: 10px; opacity:0; right: 24px; position: absolute; }
+
+/*INTERAÇÕES MEDICAMENTOSAS*/
+.slide-interacoes-medicamentosas{ background: url(../images/bg-ibirapuera.jpg); height: 768px; position: relative;} 
+.slide-interacoes-medicamentosas .explosao{ position:relative; z-index:9999; } .slide-interacoes-medicamentosas h1{ position: absolute; top: 20px; left: 20px; } /*INTERAÇÕES MEDICAMENTOSAS - SLIDE 1*/ 
+.slide-interacoes-medicamentosas .slide1 .tabela { position: absolute; left: 105px; top: 162px; z-index:3; overflow:hidden; } 
+.slide-interacoes-medicamentosas .slide1 .tabela h3 { margin-bottom: 10px; } .slide-interacoes-medicamentosas .slide1 .tabela .faixa { left: -647px; top: 93px; position: absolute; } 
+.slide-interacoes-medicamentosas .slide1 .txt { position: absolute; top: 200px; right: 45px; opacity:0; } 
+.slide-interacoes-medicamentosas .slide1 .boneco { right: -30px; opacity:0; bottom: 70px; position: absolute; } 
+.slide-interacoes-medicamentosas .slide1 .fonte { position: absolute; left: 105px; bottom: 90px; } 
+.slide-interacoes-medicamentosas .slider-telas{
+
+} /*INTERAÇÕES MEDICAMENTOSAS - SLIDE 1 DETALHE*/ 
+.slide-interacoes-medicamentosas .slide1-detalhe { background: url(../images/bg-interacoes-medicamentosas-detalhe.jpg); height: 768px; width:1024px; position:absolute; top:0; left:0; z-index:9995; display:none; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .slide1-click{ position:absolute; top:0; left:0; width:1024px; height:768px; cursor:pointer; z-index:7; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .relative{ position:relative; } 
+.slide-interacoes-medicamentosas .slide1-detalhe h3{ position:absolute; left:240px; right:0px; top: 105px; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .tabela{ position:absolute; left:50px; right:0px; top: 195px; overflow:hidden; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .tabela .relative{ position:relative; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .tabela .procimax{ position:absolute; left:0; top:80px; } 
+.slide-interacoes-medicamentosas .slide1-detalhe .fonte{ position:absolute; left:420px; right:0px; bottom: 95px; }
+
+/*INTERAÇÕES MEDICAMENTOSAS - SLIDE 2*/ 
+.slide-interacoes-medicamentosas2{ position:relative; background-image:url(../images/bg-ibirapuera.jpg); height:768px; } 
+.slide-interacoes-medicamentosas2 .slide2 .senhor { position: absolute; left: -10px; bottom: 58px; opacity:0; } 
+.slide-interacoes-medicamentosas .senhor-fundo{ background: url(images/bg-ibirapuera.jpg); } 
+.slide-interacoes-medicamentosas2 h1{ position: absolute; top: 20px; left: 20px; } 
+.slide-interacoes-medicamentosas2 .slide2 .senhor h3 { margin-bottom: 20px; }
+.slide-interacoes-medicamentosas2 .slide2 .boxes img { position: absolute; } 
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-1 { left: 510px; top: 205px; opacity:0; } 
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-2 { left: 300px; top: 240px; opacity:0; } 
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-3 { left: 548px; top: 67px; opacity:0; } 
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-4 { left: 797px; top: 240px; opacity:0; } 
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-5 { left: 549px; top: 413px; opacity:0; } 
+.slide-interacoes-medicamentosas2 .slide2 .fonte { position: absolute; left: 310px; bottom: 90px; } 
+.slide-interacoes-medicamentosas2 .slider-telas{
+
+} /*ANÚNCIOS*/ 
+#slide-anuncios{ background: url(../images/bg-anuncios.jpg); height: 768px; position: relative; } 
+#slide-anuncios h1{ position: absolute; top: 20px; left: 20px; } 
+#slide-anuncios .content img { position: absolute; } 
+#slide-anuncios .content .titulo { left: 78px; top: 184px; opacity:0; } 
+#slide-anuncios .content .txt { left: 648px; top: 223px; opacity: 0; } 
+#slide-anuncios .content .seta1{ top:212px; opacity:0; left:600px; } 
+#slide-anuncios .content .embalagem-remedio { left: -50px; top: 365px; z-index: 2; opacity:0; } 
+#slide-anuncios .content .bonecos { left: 600px; top: 358px; opacity:0; }
+
+
+/*Blister Calendário*/
+#blister-calendario{ background: url(../images/bg-blister.jpg) no-repeat; height: 768px; position: relative; }
+#blister-calendario h1{ position: absolute; top: 20px; left: 20px; }
+#blister-calendario h2{ color: #f99d1c; font-family: 'Museo700'; font-size: 29px; padding: 148px 0 0 0; text-align: center; }
+#blister-calendario .cartela{ position: relative; width: 405px; height: 506px; padding: 30px 0 0 110px; float: left;}
+#pastilha-1, #pastilha-2, #pastilha-3, #pastilha-4, #pastilha-5, #pastilha-6, #pastilha-7, #pastilha-8, #pastilha-9, #pastilha-10, #pastilha-11, #pastilha-12, #pastilha-13, #pastilha-14{ position: absolute; width: 80px; height: 80px; }
+#pastilha-1{ top: 289px; left: 136px; }
+#pastilha-2{ top: 193px; left: 136px; } 
+#pastilha-3{ top: 95px; left: 136px; } 
+#pastilha-4{ top: 49px; left: 222px; } 
+#pastilha-5{ top: 144px; left: 222px; } 
+#pastilha-6{ top: 242px; left: 222px; } 
+#pastilha-7{ top: 337px; left: 222px; }
+#pastilha-8{ top: 337px; left: 311px; } 
+#pastilha-9{ top: 242px; left: 311px; }
+#pastilha-10{ top: 144px; left: 311px; }
+#pastilha-11{ top: 49px; left: 311px; }
+#pastilha-12{ top: 95px; left: 397px; }
+#pastilha-13{ top: 193px; left: 397px; }
+#pastilha-14{ top: 289px; left: 397px; }
+#blister-calendario .bandeja{ float: left; width: 464px; height: 430px; position: relative; padding-top: 97px; }
+#pastilha-cai-1, #pastilha-cai-2, #pastilha-cai-3, #pastilha-cai-4, #pastilha-cai-5, #pastilha-cai-6, #pastilha-cai-7, #pastilha-cai-8, #pastilha-cai-9, #pastilha-cai-10, #pastilha-cai-11, #pastilha-cai-12, #pastilha-cai-13, #pastilha-cai-14{ position: absolute; top: 0; }
+
+/*posições pastillhas*/
+#pastilha-cai-1{ top: 161px; left: 187px; z-index: 2; }
+#pastilha-cai-2{ top: 168px; left: 130px; z-index: 7; }
+#pastilha-cai-3{ top: 161px; left: 78px; z-index: 6; }
+#pastilha-cai-4{ top: 161px; left: 23px; z-index: 5; }
+#pastilha-cai-5{ top: 132px; left: 179px; z-index: 1; }
+#pastilha-cai-6{ top: 121px; left: 150px; z-index: 4; }
+#pastilha-cai-7{ top: 113px; left: 102px; z-index: 4; }
+#pastilha-cai-8{ top: 111px; left: 51px; z-index: 4; }
+#pastilha-cai-9{ top: 132px; left: 18px; z-index: 1; }
+#pastilha-cai-10{ top: 74px; left: 160px; z-index: 1; }
+#pastilha-cai-11{ top: 80px; left: 132px; z-index: 3; }
+#pastilha-cai-12{ top: 57px; left: 79px; z-index: 3; }
+#pastilha-cai-13{ top: 86px; left: 63px; z-index: 1; }
+#pastilha-cai-14{ top: 40px; left: 119px; z-index: 2; }
+
+/*Slide blister calendário 2 */
+#blister-calendario-2{ background: url(../images/bg-blister-2.jpg) no-repeat; height: 768px; position: relative; }
+#blister-calendario-2 h1{ position: absolute; top: 20px; left: 20px; }
+#blister-calendario-2 h2{ color: #f99d1c; font-family: 'Museo700'; font-size: 29px; padding: 166px 0 0 50px; }
+#blister-calendario-2 .bonecos{ width: 465px; height: 412px; position: relative; }
+#blister-calendario-2 .bonecos .boneco-laranja{ position: absolute; left: 50px; top: 30px; z-index: 2; }
+#blister-calendario-2 .bonecos .cabeca-prata{ position: absolute; left: 275px; top: 70px; z-index: 3; }
+#blister-calendario-2 .bonecos .boneco-prata{ position: absolute; left: 167px; top: 155px; z-index: 1; }
+#blister-calendario-2 .features{ position: absolute; right: 35px; top: 100px; }
+#blister-calendario-2 .cartelas{ position: absolute; bottom: 84px; right: 35px; } 
+
+/*Slide Preços*/
+.slide-preco{ background: url(../images/bg-ibirapuera.jpg) no-repeat; height: 768px; position: relative; }
+.slide-preco h1{ position: absolute; top: 20px; left: 20px; }
+.slide-preco h2{ font-family: 'Museo700'; font-size: 28px; color: #f99d1c; padding: 155px 0 0 104px; }
+.slide-preco h2 span{ position: absolute; top: 186px; left: 728px; font-size: 18px; }
+.slide-preco .grafico{ width: 646px; height: 321px; padding: 15px 0 0 104px; }
+.slide-preco .grafico img{ position: absolute; }
+.slide-preco .grafico .efeito{ width: 570px; height: 251px; position: relative; overflow: hidden; top: 28px; left: 54px; }
+.slide-preco .detalhes{ position: absolute; right: 109px; bottom: 74px; }
+.slide-preco span{ position: absolute; bottom: 84px; left: 102px; }
+
+/*Explosão Preço*/
+.explosao-preco{ background: url(../images/fundo-explosao.jpg) no-repeat; width: 1024px; height: 768px; position:relative; z-index:9995;  }
+.explosao-preco h1{ color: #fff; font-family: 'Museo700'; font-size: 28px; text-align: center; padding-top: 65px; }
+.explosao-preco .box-explosao h1 span{ position: absolute; top: 96px; left: 901px; font-size: 18px; }
+.explosao-preco .box-explosao img{ margin: 40px 0 30px 77px; }
+.explosao-preco .box-explosao h2{ font-family: 'Museo500'; font-size: 27px; color: #6e6f71; text-align: center; }
+.explosao-preco .box-explosao span{ display: block; }
+.explosao-preco .box-explosao span img{ margin: 50px auto; display: block; }
+
+/*Slide Preços - Outras Marcas*/
+#slide-preco-outras-marcas{ background: url(../images/bg-outras-marcas.jpg) no-repeat; height: 768px; position: relative; }
+#slide-preco-outras-marcas h2{ font-family: 'Museo700'; font-size: 33px; color: #f99d1c; padding: 155px 0 0 104px; }
+#slide-preco-outras-marcas h2 span{ position: absolute; top: 157px; left: 781px; font-size: 18px; }
+#slide-preco-outras-marcas .grafico-1 {padding: 15px 0 0 104px; width: 583px; height: 233px; position: relative; }
+#slide-preco-outras-marcas .grafico-1 .grafico-estatico{ position: absolute; left: 104px; top: 181px; }
+#slide-preco-outras-marcas .grafico-1 .tarja-laranja{ position: absolute; left: -20px; top: 257px; opacity:0; }
+#slide-preco-outras-marcas .detalhes{ position: absolute; right: -20px; bottom: 65px; opacity:0; }
+#slide-preco-outras-marcas span{ position: absolute; bottom: 106px; left: 102px; }
+#slide-preco-outras-marcas .slider-telas{}
+
+/*Slide Explosão Preço*/
+#explosao-preco{ background: url(../images/bg-explosao-preco.jpg) no-repeat; height: 768px; }
+#explosao-preco .box-explosao{ position: relative; }
+#explosao-preco .box-explosao h1{ color: #f99d1c; font-size: 33px; padding-top: 105px; }
+#explosao-preco .box-explosao h1 span{ top: 106px; left: 851px; }
+#explosao-preco .box-explosao .tarja-explosao{ position: absolute; top: 244px; left: 0; }
+#explosao-preco .box-explosao h2{ color: #6e6f71; font-size: 16px; font-family: 'Museo700'; padding-top: 30px; }
+#explosao-preco .box-explosao img{ margin: 40px 0 30px 61px; }
+#explosao-preco .box-explosao span img{ margin: 30px auto 0; display: block; }
+
+/*Slide Preços - Genéricos*/
+#slide-preco-genericos{ background: url(../images/bg-genericos.jpg) no-repeat; height: 768px; position: relative; }
+#slide-preco-genericos h2{ font-family: 'Museo700'; font-size: 31px; color: #f99d1c; padding: 155px 0 0 104px; }
+#slide-preco-genericos h2 span{ position: absolute; top: 157px; left: 910px; font-size: 18px; }
+#slide-preco-genericos .grafico-1 {position: absolute; top:165px; left:83px; }
+#slide-preco-genericos .tarja-laranja{ position: absolute; left: 67px; top: 237px; opacity:0; }
+#slide-preco-genericos .detalhes{ position: absolute; right: -20px; bottom: 65px; opacity:0; }
+#slide-preco-genericos span{ position: absolute; bottom: 106px; left: 102px; }
+#slide-preco-genericos .slider-telas{}
+
+/*Slide Explosão Genéricos*/
+#explosao-genericos{ background: url(../images/bg-explosao-genericos.jpg) no-repeat; height: 768px; }
+#explosao-genericos .box-explosao{ position: relative; }
+#explosao-genericos .box-explosao h1{ color: #f99d1c; font-size: 32px; padding-top: 120px; }
+#explosao-genericos .box-explosao h1 span{ top: 121px; left: 930px; }
+#explosao-genericos .box-explosao .tarja-explosao{ position: absolute; top: 253px; left: 0; }
+#explosao-genericos .box-explosao h2{ color: #6e6f71; font-size: 16px; font-family: 'Museo700'; padding-top: 0px; }
+#explosao-genericos .box-explosao img{ margin: 25px 0 30px 61px; }
+#explosao-genericos .box-explosao span img{ margin: 20px auto 0; display: block; }
+
+/*Slide Bulas*/
+.slide-bulas h1{ position: absolute; top: 20px; left: 20px; }
+#slide-bulas{ background: url(../images/bg-bulas.jpg) no-repeat; height: 768px; position:relative }
+#slide-bulas .box-bulas{ position: relative; z-index: 1; }
+#slide-bulas .box-bulas img{ margin: 158px 0 30px 44px; }
+#slide-bulas .slider-telas{ position: absolute; z-index: 2;}
+
+/*Slide Referências*/
+.slide-referencias h1{ position: absolute; top: 20px; left: 20px; }
+#slide-referencias{ background: url(../images/bg-bulas.jpg) no-repeat; height: 768px; position: relative; }
+#slide-referencias .box-bulas{ position: relative; z-index: 1; }
+#slide-referencias .box-bulas img{ margin: 158px 0 30px 50px; }
+#slide-referencias .slider-telas{ position: absolute; z-index: 2; }
+
+/*IDS*/
+#explosao-nao-trata-1{  position: relative; z-index:9995; }
+.active { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.fade-out { opacity:0 !important; } .fade-in{ opacity:1 !important; }
+.jogar-novamente { font-family: "Museo500"; font-size: 27px; color: white; position: absolute; bottom: 450px; left: 530px; }
+.selecionado{ background: url(../images/bullet-selecionado.png) no-repeat !important; width: 15px; height: 15px; display: block; }
+.navigation-menu { margin-left: -512px; position: absolute; left: 50%; }
+#libbs_content section { position: absolute; top: 0; left: 50%; margin-left: -512px; } #libbs_content section div:first-child { width: 1024px; opacity: 0; }

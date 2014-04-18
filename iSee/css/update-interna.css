@@ -1,0 +1,47 @@
+@charset "UTF-8";
+#button_update{color:#f26532;  font-family:'oxygenbold' !important;}
+body {overflow-x:hidden; }
+#content-container { background: url(../images/updates/bg.jpg) repeat; padding: 140px 0 35px 0; overflow-x: hidden; }
+.bar { background: #7298b3; height: 47px; width: 9999px; position: relative; left: 234px; }
+.bar h2, .bar  select, .bar input, .bar figure { float: left; }
+.bar h2{ background: url(../images/updates/update.png); height: 86px; width: 246px; text-indent: -9999px; position: absolute; left: -234px; top: -20px; }
+.bar .categorias { height: 47px; width: 170px; float: left; margin-left: 65px; position: relative; }
+.bar .categorias a { background: url(../images/updates/seta-categorias.png) no-repeat 140px #A3CCE4; height: 47px; font: 20px 'oxygenregular'; color: #355c7c; width: 210px; padding-left: 26px; vertical-align: middle; display: table-cell; }
+.bar .categorias .categorias-select{ position: absolute; top: 47px; left: 0; z-index: 3; display:none; }
+.bar .categorias .categorias-select li{ height:47px; width:310px; display:table;}
+.bar .categorias .categorias-select li a{ display:table-cell; vertical-align:middle; font: 20px 'oxygenregular'; color: #355c7c !important; background-image:none !important; background-color:#92b7cd !important;}
+.bar .categorias .categorias-select li a:hover{text-decoration:underline;}
+.bar .categorias .categorias-select .color{background-color:#A2CCE5 !important;}
+.bar input { appearance: none; -webkit-appearance: none; -moz-appearance: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; height: 47px; border: none; background: #A3CCE4 url(../images/updates/bg-input.jpg) repeat; font: 20px 'oxygenregular'; color: #355c7c; width: 410px; padding: 0 0 0 26px; }
+h3{display:block; margin:25px 0 50px 0; font:20px 'Conv_TheMix-8-XBold'; color:#a3cce4;}
+#single #single-menu { background: url(../images/updates/bg-title.jpg) repeat; padding: 15px; text-align: center; position: relative; }
+#single #single-menu a { height: 23px; width: 15px; position: absolute; top: 13px; font: 18px "oxygenregular"; color: #355c7c; }
+#single #single-menu .anterior { left: 22px; background: url(../images/updates/seta-left.png) no-repeat; padding-left: 23px; }
+#single #single-menu .proximo { left: 826px; background: url(../images/updates/seta-right.png) no-repeat 100px 0; width:116px; }
+#single #single-menu .post-date , #single #single-menu .post-date strong{ font-size: 18px; color: #355c7c; }
+#single #single-menu .post-date{font-family:'oxygenregular';}
+#single #single-menu .post-date strong{font-family:'oxygenbold' !important;}
+#single #the-post{ background: url(../images/updates/bg-single.jpg) repeat; padding: 20px 25px; margin-bottom: 50px; }
+#single #the-post .post-txt h1 {font:42px 'Conv_TheMix-9-Black'; color:#355c7c; letter-spacing:-2px;}
+#single #the-post .post-txt figure { text-align: center; margin:30px 0; }
+#single #the-post .post-txt p{ color: #355c7c; font: 18px oxygenregular; margin-bottom: 20px; }
+/* Share */
+#share{float:right;}
+#share #compartilhe{padding-top:10px;}
+#share #compartilhe, #share a{float:left; display:block; margin-right:8px; background-repeat:no-repeat;}
+#share a{width:38px; height:37px;}
+#share #google{background-image:url(../wordpress/wp-content/themes/isee-comunicacao/images/updates/google.png); 
+/* End Share */
+#single #author { border-top: 1px solid #6990ab; border-bottom: 1px solid #6990ab; border-right-width: 1px; border-left-width: 1px; border-right-color: #6990ab; border-left-color: #6990ab; padding: 23px 0; }
+#single #author figure{float:left; margin-right:20px;}
+#single #author h4, #single #author p{color:#355c7c;}
+#single #author h4{font:18px 'oxygenbold';}
+#single #author p{font:16px 'oxygenregular';}#single #the-post #comment { padding-top: 27px; }
+#single #the-post #comment h3 { font:30px 'Conv_TheMix-9-Black'; color: #355c7c; }
+#single #the-post #comment .write-comment { background: #FFF url(../images/updates/lapis.png) no-repeat 28px center; padding: 25px 95px; }
+#single #the-post #comment .write-comment a { color: #666; font: 18px oxygenregular; }
+#single #the-post #comment .the-comment { padding: 35px 28px; margin-top: 2px; background: url(../images/updates/bg-the-comment.png) repeat; }
+#single #the-post #comment .the-comment figure{margin-right:18px; float:left}
+#single #the-post #comment .the-comment .comment-txt{ width: 730px; float: left; }
+#the-post #comment .the-comment .comment-txt p, #the-post #comment .the-comment .comment-txt span{ font: 16px oxygenregular; color: #355c7c; }
+#the-post #comment .the-comment .comment-txt p{margin-bottom:10px;}

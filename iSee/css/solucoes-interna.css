@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.content { position: relative; }
+#main-image { background: url(../images/hotsite/bg-main-image.jpg) repeat; height:160px; padding-top: 90px; }
+#main-image a { background: url(../images/hotsite/voltar.png); height: 22px; width: 93px; text-indent: -9999px; display: block; position: absolute; left: 8px; top: -75px; }
+#main-image h1{ width: 415px; padding: 98px 0 0 0; height: 0; background: url(../images/hotsite/hotsite-comunicacao-diferenciada.png); overflow: hidden; }
+#posts { background: url(../images/hotsite/bg-posts.jpg) repeat; padding: 30px 0 75px 0; }
+#posts * { color: #FFF; }
+#posts .content { width: 920px; }
+#posts .content .left-post { float: left; width: 410px; }
+#posts .content .left-post h1 { font:60px 'Conv_TheMix-9-Black'; margin-bottom:20px; }
+#posts .content p { font: 16px 'oxygenregular'; line-height: 1.2em; }
+#posts .content p strong { font: 16px 'oxygenbold'; color:#f5f5c5; line-height: 1.2em; }
+.first-post  { margin-bottom: 70px; }
+.first-post .img-content { float: right; margin-top: -190px; position: relative; z-index: 3; }
+.second-post{margin-bottom:75px;}
+.second-post figure { float: left; }
+.second-post .right-post { float: right; width: 415px; padding-top: 45px; }
+.second-post .right-post h2 { font: 36px 'Conv_TheMix-9-Black'; margin-bottom: 30px; }
+.img-content { position: relative; }
+.img-content .img-slider { position: absolute; }
+.img-content .img-slider.mac1{left: 18px; top: 22px;}
+.img-content .img-slider.mac2 { left: 81px; top: 18px; }
+.img-content .img-slider.mac3 { left: 31px; top: 41px; }

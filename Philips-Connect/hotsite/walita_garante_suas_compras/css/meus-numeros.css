@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#content{ background-color: #f1eeee; }
+
+.container{ left: 50%; margin-left: -456px; padding: 310px 0 15px 0; width: 925px; }.container .dados-cliente { float: left; }
+.container .dados-cliente h2 { font-size: 18px; color: #474343; margin-bottom: 15px; }
+.container .dados-cliente li { font-size: 14px; color: #474343; margin-bottom: 5px; }
+.container .dados-cliente a { background: url(../meus_numeros/images/alterar.png); width: 92px; padding-top: 25px; }
+.container .numeros { float: right; border-left: 1px solid #ca8e8f; width: 626px; padding-left: 27px; }
+.container .numeros #meus-numeros span { font-size: 25px; color: #FFF; background: #ed1c24; text-align: center; height: 38px; width: 165px; box-shadow: #9d1c1e 3px 3px 0; margin: 0 25px 25px 0; float: left; padding-top: 7px; display: block; }
+.container .numeros .cadastrar-mais { margin-top: 300px; width:630px; border-top: #cb9192 solid 1px; padding-top: 10px; }
+.container .numeros .cadastrar-mais label { font-size: 16px; color: #565757; margin-top:5px; float: left; }
+.container .numeros .cadastrar-mais .duvida { background: url(../meus_numeros/images/duvida.png) center no-repeat; width: 15px; padding-top: 23px; }
+.container .numeros .cadastrar-mais input { padding: 0 10px; width: 385px; border: none; height: 31px; box-shadow: #e7d1b5 3px 3px 0; font-size: 16px; color: #565757; float: left; margin-bottom:10px; }
+.titulo-promocao{position:absolute; left:50%; margin-left:-120px; top:100px;}
+.container .numeros .cadastrar-mais button{ float: right; background: url(../meus_numeros/images/cadastrar-mais-notas-fiscais.png) no-repeat; display: block; height: 32px; width: 268px; border:none; cursor:pointer; }
+.container .numeros .cadastrar-mais .input-size{width:223px; display:block; float:left;}
+.container .numeros .cadastrar-mais #qtd_produtos{float:left;}
+.container .numeros .cadastrar-mais select{-webkit-appearance: none; appearance: none; border-radius: 0; width: 61px; cursor: pointer; background: #FFF url(../participe/images/seta-select.png) no-repeat 45px center; outline:none; text-align:center; border:none; box-shadow: #e7d1b5 3px 3px 0; font-size: 16px; color: #565757; text-align:center; padding:0 0 0 15px}
+
+
+.container .size2 {
+text-align: right;
+float: left;
+width: 166px;
+margin-right: 56px;
+padding-top: 4px;
+font-size: 16px;
+color: #565757;
+line-height:1.5em;
+}
+
+#qtd_produtos {
+-webkit-appearance: none;
+appearance: none;
+border-radius: 0;
+width: 76px;
+cursor: pointer;
+background: #FFF url(../participe/images/seta-select.png) no-repeat 59px center;
+outline: none;
+text-align: center;
+height: 35px;
+}
+
+
+.success-msg { background: #FEEBD5 url(../images/sucesso.png) 25px center no-repeat; height:280px; }
+.success-msg h3 { background: url(../images/cadastro-efetuado-com-sucesso.png); width: 319px; padding-top: 30px; top: 130px; left: 148px; }
+#contpopup { background: #FEEBD5 url(../images/erro.png) 25px center no-repeat; /*padding: 25px 0 5px 0;*/}
+.erro-msg{margin-left:155px;}
+.erro-msg h3 { background: url(../images/problemas-no-cadastro.png); width: 231px; margin-top: 10px; padding-top: 31px; margin-bottom: 10px; }
+.erro-msg li {color:#e21616; font-size:18px;} 
+.erro-msg li:before{content:"x ";}
+.erro-msg span{margin-top:15px; color:#313030; display:block;}

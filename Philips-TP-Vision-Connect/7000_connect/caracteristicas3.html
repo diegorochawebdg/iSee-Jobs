@@ -1,0 +1,71 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #020517 url(caracteristicas/bg-principal.jpg) no-repeat center top; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.smarttv-txt { margin-left: -400px; top: 83px; }
+.tv { margin-left: -237px; top: 65px; }
+#call-to-action3 { margin-left: 105px; bottom: 62px; }
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	//txt
+	TweenMax.from( $(".smarttv-txt") , 1, { css: { left: "-=100px" , alpha: 0 } , ease: Strong.easeOut, delay:0.2});
+	
+	//tv
+	TweenMax.from( $(".tv") , 1, { css: { left: "+=100px" , alpha: 0 } , ease: Strong.easeOut, delay:0.8});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.5, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/smarttv-txt.png" alt="SmartTV" width="258" height="235" class="smarttv-txt" title="SmartTV" />
+                
+                <img src="caracteristicas/page3/tv-features.png" alt="frente da SmartTV Philips e alguns de seus aplicativos" width="761" height="400" class="tv" title="frente da SmartTV Philips e alguns de seus aplicativos" />
+                
+                <a href="#" ><img src="caracteristicas/page3/mais-interacao-no-seu-jogo.png" id="call-to-action3" alt="Mais interação no seu jogo" width="294" height="66" title="Mais interação no seu jogo" /></a>
+                
+            
+            </div>
+        </div>
+    
+    </div>
+</div>

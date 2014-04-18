@@ -1,0 +1,100 @@
+<style type="text/css">
+body{margin:0; padding:0;}
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page2/bg-pagina2.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{ display: block; position: absolute; left: 50%; }
+.cooktop-main { top: 47px; margin-left: -356px; }
+#fechar { margin-left: -231px; top: 127px; position:absolute; left:50% }
+.hotspots img{z-index:3; cursor:pointer;}
+.sub img { display: none; z-index:5; pointer-events:none; }
+#btn-capacidade{margin-left:-246px; top: 305px;}
+#btn-grill{margin-left:-170px; top: 200px;}
+#btn-tabela{margin-left:-170px; top: 446px;}
+#btn-prateleira { margin-left: -41px; top: 260px; }
+#tabela { margin-left: -156px; top: 195px; }
+#capacidade { margin-left: -216px; top: 261px; }
+#grill { margin-left: -150px; top: 131px; }
+#prateleira { margin-left: -11px; top: 273px; }
+#fechar img{position:static;}
+</style>
+
+<script type="text/javascript" src="http://www.iseeconnect.com/src/js/jquery/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	<!--var _arr = {"#btn-capacidade": [  "#capacidade", "spot1.html" ], "#btn-grill": ["#grill", "spot2.html"], "#btn-tabela": ["#tabela", "spot3.html"], "#btn-prateleira": ["#prateleira", "spot4.html"]};-->
+	
+	$("#btn-capacidade").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#capacidade, #capacidade *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#capacidade, #capacidade *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-grill").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#grill, #grill *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#grill, #grill *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-tabela").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#tabela, #tabela *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#tabela, #tabela *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-prateleira").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#prateleira, #prateleira *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#prateleira, #prateleira *, .botao2").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+                <a href="caracteristicas1.html" id="fechar"><img src="caracteristicas/page2/fechar.png" width="134" height="48" alt="Fechar" title="Fechar" /></a>
+                                
+           	    <!--Hotspots-->
+            	<div class="hotspots">
+            		<img src="caracteristicas/page2/hotspot.png" width="30" height="30" alt="60 litros de capacidade" title="60 litros de capacidade" id="btn-capacidade" />
+            		<img src="caracteristicas/page2/hotspot.png" width="30" height="30" alt="Grill" title="Grill" id="btn-grill" />
+            		<img src="caracteristicas/page2/hotspot.png" width="30" height="30" alt="Tabela indicativa" title="Tabela indicativa" id="btn-tabela" />
+            		<img src="caracteristicas/page2/hotspot.png" width="30" height="30" alt="Prateleira com 4 níveis de regulagem" title="Prateleira com 4 níveis de regulagem" id="btn-prateleira" />
+            	</div>
+            	
+            	<!--Imgs Grandes-->
+            	<div class="sub">
+                	
+                	<img src="caracteristicas/page2/60-litros-capacidade.png" width="551" height="160" alt="60 litros de capacidade" title="60 litros de capacidade" id="capacidade" />
+           		  <img src="caracteristicas/page2/grill.png" height="163" width="485" alt="Grill" title="Grill" id="grill" />
+           		  <img src="caracteristicas/page2/tabela-indicativa.png" width="545" height="251" alt="Tabela indicativa" title="Tabela indicativa" id="tabela" />
+           		  <img src="caracteristicas/page2/prateleira.png" width="440" height="207" alt="Prateleira com 4 níveis de regulagem" title="Prateleira com 4 níveis de regulagem" id="prateleira" />
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

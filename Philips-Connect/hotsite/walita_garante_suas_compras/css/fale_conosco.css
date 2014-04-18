@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*Selected Menu*/
+#main-menu #menu_fale_conosco{background-color:#FFF;}
+#main-menu #menu_fale_conosco a{color:#ed1c24;}
+/*End of Selected Menu*/
+
+#content{ 
+background: #f3f8f9;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmM2Y4ZjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTFmM2Y0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);}
+.selo{left:0; top:308px;}
+
+.linha{border-top:1px solid #efb3a3; width:896px; padding:0 40px; margin:10px 0 10px -220px;}
+.lists-form{width:680px; position:relative; left:200px; padding-top: 40px;}
+.container .lists {  margin-top: 14px; }
+.container .lists li { margin-bottom: 3px; }
+.container .lists li .link { padding:5px 25px; background:url(../fale_conosco/images/list-down.png) no-repeat 635px center #cff1f0; }
+.container .lists li .link.selected { padding:5px 25px; background:url(../fale_conosco/images/list-up.png) no-repeat 635px center #cff1f0; }
+.container .lists li .link a { font-size: 19px; color: #00b2b1; text-decoration: none; display: block; }
+.container .lists li .txt { padding: 10px 25px;  display:none; }
+.container .lists li .txt p { color:#595959; font-size:15px; max-width:500px; }
+.container .lists li .txt p strong{color:#00b7be; font: bold 18px GillSans;}
+.container .form { }
+.container .form p { font-size: 14px; color: #5c5c5c; margin-bottom: 38px; }
+.container .form label { font-size: 16px; color: #565757; display: block; margin-bottom: 3px; }
+.container .form input { font-size: 16px; display: block; padding: 0 5px; width: 100%; height: 31px; border: none; margin-bottom: 20px; box-shadow: #e7d1b5 3px 3px 0; color: #5c5c5c; }
+.container .form textarea { font-size: 16px; display: block; padding: 5px; width: 100%; height: 80px; border: none; box-shadow: #e7d1b5 3px 3px 0; color: #5c5c5c; outline: none; resize: none; overflow: auto; margin-bottom:20px; }
+.container .form button { background: url(../fale_conosco/images/enviar.png); display: block; float: right; height: 90px; width: 113px; cursor:pointer; margin:27px -13px 0 0; border:none; }
+.container .form small{color:#00b2b1; font-size:14px;}
+.container .form small strong{font-weight:bold;}
+
+.division{float:left; width:46%;}
+.division2{float:right; width:46%;}
+.division3{float:left; width:505px;}

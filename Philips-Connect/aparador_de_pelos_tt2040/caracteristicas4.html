@@ -1,0 +1,124 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .produto{ margin-left:-400px; bottom:5px;}
+.connect-container .anderson{ margin-left:95px; bottom:0;}
+
+.connect-container .container_interna h2{ font-family: "Museo-700"; font-size:20px; color:#00d8ff; text-transform:uppercase;}
+.connect-container .container_interna h2 span{ font-family: "Museo-300";}
+.connect-container .container_interna p{ font-family: "Museo-500"; font-size:15px; color:#FFF; margin-top:10px;}
+
+.connect-container #bateria{ margin-left:-290px; top:48px;}
+.connect-container #bateria img{ position:absolute; left:-95px; top:-24px;}
+.connect-container #bateria h2{ font-size:16px; color:#FFF; line-height:18px;}
+
+.connect-container #box1{ margin-left:208px; top:38px;}
+.connect-container #box1 img{ position:absolute; left:-200px; top:-15px;}
+
+.connect-container #box2{ margin-left:-178px; top:258px;}
+
+.connect-container #call-to-action4{ margin-left:220px; bottom:0;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action4"), "fadeInRight", "s10", "fotos.html", false );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page4/produto.png" width="302" height="396" alt="" title="" class="absoluto produto animated fadeInLeft s05" />
+                <img src="caracteristicas/page4/anderson.png" width="285" height="305" alt="" title="" class="absoluto anderson animated fadeInRight s06" />
+                
+                <div id="bateria" class="absoluto animated fadeInLeft s07">
+                	<img src="caracteristicas/page4/selo-bateria.png" width="85" height="85" alt="" title="" />
+                    <h2>
+                    	1 hora de carga = 50 minutos<br />
+                        <span>de uso contínuo!</span>
+                    </h2>
+                </div>
+                
+                <div id="box1" class="absoluto animated fadeInLeft s08">
+                	<img src="caracteristicas/page4/circulo.png" width="182" height="182" alt="" title="" />
+                    <h2>
+                    	<span>Indicador de</span><br />
+                        nível de bateria
+                    </h2>
+                    <p>
+                    	A luz indicadora de seu<br />
+                        Bodygroom fica verde<br />
+                        quando a bateria está cheia<br />
+                        e pisca na cor laranja<br />
+                        quando restam apenas 10<br />
+                        minutos de uso.
+                    </p>
+                </div>
+                
+                <div id="box2" class="absoluto animated fadeInLeft s09">
+                	<h2>
+                    	<span>Leve seu Bodygroom</span><br />
+                        com você!
+                    </h2>
+                    <p>
+                    	O Aparador de Pelos BG2024 possui um<br />
+                        suporte para armazenamento e<br />
+                        carregamento que cabe em qualquer lugar!<br />
+                        Você pode carregá-lo quando quiser ou<br />
+                        levá-lo com você durante suas viagens.
+                    </p>
+                </div>
+                
+                <a href="#" id="call-to-action4" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page4/btn-fotos.png" width="129" height="58" alt="Fotos" title="Fotos" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

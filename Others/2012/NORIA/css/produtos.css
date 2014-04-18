@@ -1,0 +1,12 @@
+#produtos{background-color:#125A9C !important}
+#conteudo h2{color:#0C4A83; text-transform:uppercase; margin-bottom:20px}
+#conteudo p{margin-bottom:20px}
+#conteudo .produto{float:left; width:25%; display:table; margin-bottom:20px}
+#conteudo .produto img{margin-bottom:10px}
+#conteudo .produto .produto-txt{width:186px; text-align:center}
+#conteudo .produto .produto-txt h3{font-weight:bold; color:#666; font-size:16px !important; margin-bottom:0 !important;}
+#conteudo .produto .dvds{width:175px; display:block; padding-top:76px}
+#conteudo .informacoes span{font-size:30px; color:#1367B7}
+#conteudo .informacoes a{color:#1367B7; text-decoration:underline}
+#conteudo img{max-width: 186px; height:auto;}
+#conteudo #formulario{width:690px}

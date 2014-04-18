@@ -1,0 +1,187 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+.botao{ cursor:pointer;}
+
+#lavadora-branca, #lavadora-preta{ margin-left:-180px; top:0px;}
+#lavadora-preta{ display:none;}
+#call-to-action2{ margin-left:276px; top:326px;}
+
+.titulo{ margin-left:-350px; top:38px;}
+
+.subtitulo{ margin-left:-350px; top:78px;}
+.shape-amarelo{ margin-left:-388px; top:170px;}
+.paragrafo{ margin-left:-350px; top:210px;}
+
+.shape-laranja{ margin-left:-378px; bottom:0px;}
+.mais-cores{ margin-left:-364px; top:470px;}
+#mini-preta{ margin-left:-248px; top:453px; opacity:0.5;}
+#mini-branca{ margin-left:-182px; top:453px;}
+
+#conteudo-01{ margin-left:-346px; top:126px; display:none;}
+#spot-01{ margin-left:72px; top:106px;}
+#conteudo-02{ margin-left:-408px; top:116px; display:none;}
+#spot-02{ margin-left:48px; top:200px;}
+#conteudo-03{ margin-left:-396px; top:114px; display:none;}
+#spot-03{ margin-left:140px; top:356px;}
+
+.moderno{ margin-left:174px; top:26px;}
+#btn-moderno{ margin-left:130px; top:42px;}
+.capacidade{ margin-left:172px; top:216px;}
+#call-to-action1{ margin-left:150px; top:170px;}
+
+#video{ background:url(caracteristicas/page1/bg-video.png); width:100%; height:520px; position:absolute; z-index:10px; display:none;}
+#player{ width:820px; height:461px; margin-left:-410px; top:40px;}
+#btn-fechar{ margin-left:310px; top:12px;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#lavadora-branca"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".subtitulo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".shape-amarelo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".shape-laranja"), .4, {css:{bottom:"-=40px", alpha:0}, ease:Linear.easeOut, delay:.9});
+	TweenMax.from($(".mais-cores"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($("#mini-preta"), .5, {css:{top:"+=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($("#mini-branca"), .5, {css:{top:"+=80px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($("#btn-moderno"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".moderno"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($("#call-to-action1"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".capacidade"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($("#call-to-action2"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($("#spot-01"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.3});	
+	TweenMax.from($("#spot-02"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	TweenMax.from($("#spot-03"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	
+	var _cores = {"#mini-preta": "#lavadora-preta", "#mini-branca": "#lavadora-branca"};
+	var _imgPadrao = "#mini-branca";
+	
+	$.each(_cores, function(ind, val){
+		if(ind != _imgPadrao) $(ind).stop(true, true).fadeTo(200, .5);
+		$(ind).on("mouseenter", function(e){
+			for(key in _cores){
+				if(key != ind){
+					$(key).stop(true, true).fadeTo(200, .5);
+					$(_cores[key]).stop(true, true).fadeOut(200);
+				}else{
+					$(ind).stop(true, true).fadeTo(200, 1);
+					$(val).stop(true, true).fadeIn(200);
+				}
+			}
+		});
+	});
+	
+	var _spots = {"#spot-01": ["#conteudo-01", "spot1"], "#spot-02": ["#conteudo-02", "spot2"], "#spot-03": ["#conteudo-03", "spot3"]};
+	var _divPrincipal = "#principal";
+	var tempo = 1000;
+	var tempoInicial = 0;
+	var tempoFinal = 0;
+	
+	$.each(_spots, function(ind, val){
+		$(ind).on("mouseenter", function(e){
+			for(key in _spots) if(ind != key) $(key).stop(true, true).fadeTo(400, .5);
+			$(val[0]).stop(true, true).fadeIn();
+			$(_divPrincipal).stop(true, true).fadeOut();
+			tempoInicial = e.timeStamp;
+		})
+		.on("mouseleave", function(e){
+			for(key in _spots) if(ind != key) $(key).stop(true, true).fadeTo(400, 1);
+			$(val[0]).stop(true, true).fadeOut();
+			$(_divPrincipal).stop(true, true).fadeIn();
+			tempoFinal = e.timeStamp;
+			if((tempoFinal - tempoInicial) >= tempo) Connect.trackPageView( "caracteristicas1/" + val[1] + ".html" );
+		});
+	});
+	
+	var _video = "<object width=\"820\" height=\"461\">	<param name=\"movie\" value=\"http://www.youtube.com/v/7WjPB4hripo?hl=pt_BR&amp;version=3&autoplay=1&rel=0\"></param>	<param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param> <embed src=\"http://www.youtube.com/v/7WjPB4hripo?hl=pt_BR&amp;version=3&autoplay=1&rel=0\" type=\"application/x-shockwave-flash\" width=\"820\" height=\"461\" allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed> </object>";
+		
+	$("#btn-moderno").on("click", function(e){
+		$("#video").fadeIn();
+		$("#player").html(_video);
+		Connect.trackPageView( "caracteristicas1/video-painel-touch.html" );
+	});
+	
+	$("#btn-fechar").on("click", function(e){
+		$("#player").html("");
+		$("#video").fadeOut();
+		Connect.trackEvent("Fechar", "video-painel-touch.html", $NOME_FOLDER + "caracteristicas1.html" );
+	});
+	
+	Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+	Connect.addCallToAction( "#call-to-action2" , "videos.html", false );
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/lavadora-branca.png" width="620px" height="520px" alt="Lavadora branca" title="" class="absoluto" id="lavadora-branca" />
+                <img src="caracteristicas/page1/lavadora-preta.png" width="620px" height="520px" alt="Lavadora preta" title="" class="absoluto" id="lavadora-preta" />
+                <img src="caracteristicas/page1/btn-assista-ao-video.png" width="130px" height="114px" alt="Assista ao Vídeo" title="Assista ao Vídeo" class="absoluto botao" id="call-to-action2" />
+                
+            	<img src="caracteristicas/page1/title-lavadora-ative.png" width="255px" height="26px" alt="Lavadora Ative!" title="Lavadora Ative!" class="absoluto titulo" />
+                
+                <div id="principal">
+                	<img src="caracteristicas/page1/com-sistema-smart-e-fast.png" width="281px" height="17px" alt="Com sistema Smart&Fast." title="Com sistema Smart&Fast." class="absoluto subtitulo" />
+                    <img src="caracteristicas/page1/shape-amarelo.png" width="361px" height="219px" alt="" title="" class="absoluto shape-amarelo" />
+                    <img src="caracteristicas/page1/paragrafo.png" width="294px" height="104px" alt="A única com exclusivo Smart Sensor, um sensor inteligente que calcula automaticamente água, sabão e amaciante de acordo com o peso das roupas." title="A única com exclusivo Smart Sensor, um sensor inteligente que calcula automaticamente água, sabão e amaciante de acordo com o peso das roupas." class="absoluto paragrafo" />
+                </div>
+                
+                <img src="caracteristicas/page1/shape-laranja.png" width="254px" height="76px" alt="" title="" class="absoluto shape-laranja" />
+                <img src="caracteristicas/page1/mais-cores.png" width="106px" height="27px" alt="+ cores" title="+ cores" class="absoluto mais-cores" />
+                <img src="caracteristicas/page1/mini-preta.png" width="48px" height="61px" alt="Preta" title="Preta" class="absoluto botao" id="mini-preta" /> 
+                <img src="caracteristicas/page1/mini-branca.png" width="44px" height="57px" alt="Branca" title="Branca" class="absoluto botao" id="mini-branca" />
+                
+                <img src="caracteristicas/page1/armazenamento-inteligente.png" width="445px" height="147px" alt="Armazenamento inteligente | O Smart Container armazena sabão líquido e amaciante para diversas lavagens." title="Armazenamento inteligente | O Smart Container armazena sabão líquido e amaciante para diversas lavagens." class="absoluto" id="conteudo-01" />
+                <img src="caracteristicas/page1/spot.png" width="42px" height="42px" alt="" title="" class="absoluto botao" id="spot-01" />
+                <img src="caracteristicas/page1/ciclo-de-lavagem-mais-rapido-do-mercado.png" width="469px" height="199px" alt="Ciclo de lavagem mais rápido do mercado!* | Função Fast Cycle. | *Lavadoras acima de 10Kg de acordo com a Tabela Inmetro (Lavadoras de Roupa Automáticas – Edição 91)." title="Ciclo de lavagem mais rápido do mercado!* | Função Fast Cycle. | *Lavadoras acima de 10Kg de acordo com a Tabela Inmetro (Lavadoras de Roupa Automáticas – Edição 91)." class="absoluto" id="conteudo-02" />
+                <img src="caracteristicas/page1/spot.png" width="42px" height="42px" alt="" title="" class="absoluto botao" id="spot-02" />
+                <img src="caracteristicas/page1/enche-a-lavadora-3x-mais-rapido.png" width="559px" height="273px" alt="Enche a lavadora 3x mais rápido!* | Função Fast Fill. | *Para residências com baixa pressão (0,2 bar) comparado com BWL11." title="Enche a lavadora 3x mais rápido!* | Função Fast Fill. | *Para residências com baixa pressão (0,2 bar) comparado com BWL11." class="absoluto" id="conteudo-03" />
+                <img src="caracteristicas/page1/spot.png" width="42px" height="42px" alt="" title="" class="absoluto botao" id="spot-03" />
+                
+                <img src="caracteristicas/page1/moderno-intuitivo-e-resistente-painel-touch.png" width="226px" height="55px" alt="Moderno, intuitivo e resistente | Painel Touch" title="Moderno, intuitivo e resistente | Painel Touch" class="absoluto moderno" />
+                <img src="caracteristicas/page1/btn-touch.png" width="47px" height="47px" alt="" title="" class="absoluto botao" id="btn-moderno" />
+                
+                <img src="caracteristicas/page1/capacidade-para-11kg-por-dentro-da-ative-bwu11.png" width="214px" height="96px" alt="Capacidade para 11Kg | Por dentro da Ative BWU11" title="Capacidade para 11Kg | Por dentro da Ative BWU11" class="absoluto capacidade" />
+                <img src="caracteristicas/page1/btn-mao.png" width="47px" height="47px" alt="" title="" class="absoluto botao" id="call-to-action1" />
+                
+                
+                <div id="video">
+                	<img src="caracteristicas/page1/btn-fechar.png" width="81px" height="20px" alt="Fechar" title="Fechar" class="absoluto botao" id="btn-fechar" />
+                	<div id="player" class="absoluto"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

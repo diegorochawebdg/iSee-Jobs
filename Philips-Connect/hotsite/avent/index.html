@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Philips Avent</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".conteudo-topo img").hover(function(e) {
+        $(this).animate({opacity:0.7}, 200);
+    }, function(){
+		$(this).animate({opacity:1}, 200);
+	});
+	$(".menu-divisao a").hover(function(e) 
+	{
+		$(this).parent().addClass("menu-hover");
+	}, function(){
+		$(this).parent().removeClass("menu-hover");
+	});
+	$("#slider").easySlider({
+		auto: true, 
+		continuous: true,
+		numeric: true
+	});
+	
+	$("#botao-um").click(function(e) {
+        $("#primeira").hide(function(){
+			$("#segunda").fadeIn(500);
+			$("#botao-um, #botao-dois").hide();
+			$("#botao-tres, #botao-quatro").show();
+		});
+    });
+	$("#botao-dois").click(function(e) {
+        $("#primeira").hide(function(){
+			$("#quarta").fadeIn(500);
+			$("#botao-um, #botao-dois").hide();
+			$("#botao-sete, #botao-oito").show();
+		});
+    });
+	$("#botao-tres").click(function(e) {
+        $("#segunda").hide(function(){
+			$("#terceira").fadeIn(500);
+			$("#botao-tres, #botao-quatro").hide();
+			$("#botao-cinco, #botao-seis").show();
+		});
+    });
+	$("#botao-quatro").click(function(e) {
+        $("#segunda").hide(function(){
+			$("#primeira").fadeIn(500);
+			$("#botao-tres, #botao-quatro").hide();
+			$("#botao-um, #botao-dois").show();
+		});
+    });
+	$("#botao-cinco").click(function(e) {
+        $("#terceira").hide(function(){
+			$("#quarta").fadeIn(500);
+			$("#botao-cinco, #botao-seis").hide();
+			$("#botao-sete, #botao-oito").show();
+		});
+    });
+	$("#botao-seis").click(function(e) {
+        $("#terceira").hide(function(){
+			$("#segunda").fadeIn(500);
+			$("#botao-cinco, #botao-seis").hide();
+			$("#botao-tres, #botao-quatro").show();
+		});
+    });
+	$("#botao-sete").click(function(e) {
+        $("#quarta").hide(function(){
+			$("#primeira").fadeIn(500);
+			$("#botao-sete, #botao-oito").hide();
+			$("#botao-um, #botao-dois").show();
+		});
+    });
+	$("#botao-oito").click(function(e) {
+        $("#quarta").hide(function(){
+			$("#terceira").fadeIn(500);
+			$("#botao-sete, #botao-oito").hide();
+			$("#botao-cinco, #botao-seis").show();
+		});
+    });
+	
+	$(".botao-down, .botao-up").click(function(event) {
+        event.preventDefault();
+    });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32737410-31']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="header">
+    	<div class="logo float-left"> <a href="index.html" title="Retorne para a página inicial"><img src="images/philips-avent-logo.png" alt="Logotipo Philips Avent" width="117" height="54" title="Philips Avent" /></a>
+        </div>
+        <div class="float-right mright">
+        	<img src="images/n1-recomendada-maes.png" alt="Marca nº1 recomendada pelas mães" width="83" height="82" title="Marca nº1 recomendada pelas mães" />
+        </div>
+        <div class="titulo float-right right">
+        	<h1>Philips Avent.</h1>
+            <h2>A marca número 1 recomendada pelas mães*</h2>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="conteudo">
+    	<div class="conteudo-topo">
+        	<div class="float-left"> <a href="produtos.html?page=acessorios"><img src="images/acessorios.jpg" alt="acessórios" width="85" height="84" title="acessórios" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=alimentacao"><img src="images/alimentacao-infantil.jpg" alt="Alimentação infantil" width="84" height="84" title="Alimentação infantil" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=babas"><img src="images/baba-eletronica.jpg" alt="babá eletrônica" width="85" height="84" title="babá eletrônica" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=bolsa"><img src="images/bolsa-termica.jpg" alt="bolsa térmica" width="84" height="84" title="bolsa térmica" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=copos"><img src="images/copos.jpg" alt="copos" width="85" height="84" title="copos" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=cuidados"><img src="images/cuidados-seios.jpg" alt="cuidados com os seios" width="86" height="84" title="cuidados com os seios" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=esterilizador"><img src="images/esterilizador.jpg" alt="esterilizador" width="84" height="84" title="esterilizador" /></a>
+            </div>
+            <div class="float-left"> <a href="produtos.html?page=extratores"><img src="images/extratores.jpg" alt="extratores" width="89" height="84" title="extratores" /></a>
+            </div>
+            <div class="float-left conheca center">
+            	<div class="ptop width1">
+                    <a href="#" class="font2 size1 width1">CLIQUE AQUI E CONHEÇA <strong class="block">A LINHA COMPLETA</strong></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+            <div class="menu">
+            	<ul>
+                	<li><div class="menu-divisao mtop"><a href="produtos.html?page=acessorios">ACESSÓRIOS</a></div></li>
+                    <li><div class="menu-divisao"><a href="produtos.html?page=alimentacao">ALIMENTAÇÃO INFANTIL</a></div></li>
+                    <li><div class="menu-divisao"><a href="produtos.html?page=babas">BABÁ ELETRÔNICA</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="produtos.html?page=bolsa">BOLSA TÉRMICA</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="produtos.html?page=copos">COPOS</a></div></li>
+                    <li><div class="menu-divisao"><a href="produtos.html?page=cuidados">CUIDADOS COM OS SEIOS</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="produtos.html?page=esterilizador">ESTERILIZADOR</a></div></li>
+                    <li><div class="menu-divisao mtop"><a href="produtos.html?page=extratores">EXTRATORES</a></div></li>
+                </ul>
+            </div>
+        </div>
+    	<div class="barra-lateral float-left relative">
+        	<img src="images/dicas-mamae.jpg" alt="Dicas para a mamãe" width="216" height="62" title="Dicas para a mamãe" />
+            <div class="relative">
+            	<a href="#" class="botao-down" id="botao-um" style="display:block"></a>
+            	<a href="#" class="botao-up" id="botao-dois" style="display:block"></a>
+                <a href="#" class="botao-down" id="botao-tres"></a>
+                <a href="#" class="botao-up" id="botao-quatro"></a>
+                <a href="#" class="botao-down" id="botao-cinco"></a>
+                <a href="#" class="botao-up" id="botao-seis"></a>
+                <a href="#" class="botao-down" id="botao-sete"></a>
+                <a href="#" class="botao-up" id="botao-oito"></a>
+                <ul id="dicas">
+                	<div id="primeira" style="display:block">
+                        <li class="um padding1 relative">
+                            <p>A hora do banho é um momento especial para você e para seu bebê. Procure um cômodo quente e sem corrente de ar para banhá-lo. Quando o banho terminar, seque-o rapidamente.</p>
+                        </li>
+                        <li class="dois padding1 relative">
+                            <p>Seu bebê precisa de muitas horas de sono. Você pode estimular seu sono fazendo um passeio ao ar livre ou uma massagem relaxante com uma loção suave.</p>
+                        </li>
+                        <li class="tres padding1 relative">
+                            <p>Não se esqueça de fazer o Teste do Pezinho. É um exame simples que pode detectar precocemente doenças como Rubéola, Anemia Falciforme, Hipotireoidismo congênito, entre outras.</p>
+                        </li>
+                    </div>
+                    <div id="segunda">
+                    <li class="quatro padding1 relative">
+                        <p>Cante, converse e brinque com seu filho. Nos primeiros meses de vida, é essencial que a criança tenha um contato próximo para estabelecer vínculos  e relacione as figuras paterna e materna.</p>
+                    </li>
+                    <li class="cinco padding1 relative">
+                        <p>Nos primeiros meses de vida, algumas sensibilidades e alergias podem aparecer. É importante ficar atento a alimentos ou produtos de higiene que podem causar reações alérgicas no bebê.</p>
+                    </li>
+                    <li class="seis padding1 relative">
+                        <p>Doenças respiratórias também são comuns em bebês de até 2 anos de idade. Nas temporadas de outono e inverno, visite o médico com mais frequência e deixe a casa arejada e sem poeira.</p>
+                    </li>
+                    </div>
+                    <div id="terceira">
+                    <li class="sete padding1 relative">
+                        <p>Escolha bem o carrinho. Ele deve ter o selo do Inmetro para que seu bebê possa  passear em segurança.</p>
+                    </li>
+                    <li class="oito padding1 relative">
+                        <p>Não se desespere quando seu bebê começar a chorar e não houver motivo aparente. Com o passar do tempo, você vai conseguir distinguir a causa de cada choro.</p>
+                    </li>
+                    <li class="nove padding1 relative">
+                        <p>Ofereça estímulos visuais à criança. Passear em lugares diferentes, ver cores, alimentos e brinquedos diferentes são atitudes que ajudam a criança a desenvolver rápido reconhecimento e noção de espaço.</p>
+                    </li>
+                    </div>
+                    <div id="quarta">
+                    <li class="dez padding1 relative">
+                        <p>Quando se tem gêmeos, é normal que os pais confundam a dupla no início. Por isso, é importante anotar em um caderno o horário em que cada um se alimentou e o próximo horário de cada uma das refeições.</p>
+                    </li>
+                    <li class="onze padding1 relative">
+                        <p>Se você usa talco em seu bebê, espalhe nas mãos antes e longe do rosto da criança, para evitar que o pó seja inalado e vá para os pulmões.</p>
+                    </li>
+                    <li class="doze padding1 relative">
+                        <p>Durante as refeições, converse com seu bebê e procure mantê-lo engajado e interessado neste momento. Isto facilitará a introdução de novos alimentos e poderá garantir uma dieta mais saudável na vida de seu pequeno/a.</p>
+                    </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="bloco2 float-right relative">
+        	<div id="slider" style="margin-bottom:20px;">
+                <ul>				
+                    <li><img src="images/slider/01_extratores.jpg" alt="extratores de leite Philips Avent" usemap="#Map" border="0" />
+                        <map name="Map" id="Map">
+                            <area shape="rect" coords="500,259,681,302" href="#" target="_blank" alt="Compre já o seu" />
+                        </map>
+                    </li>
+                    <li><img src="images/slider/02_copo.jpg" alt="Copos sem bico, sem canudo e sem sujeira" usemap="#Map2" border="0" />
+                        <map name="Map2" id="Map2">
+                            <area shape="rect" coords="334,257,515,299" href="#" target="_blank" alt="Compre já o seu" />
+                        </map>
+                    </li>
+                    <li><img src="images/slider/03_orgulho.jpg" alt="orgulho por ser a marca mais recomendad pelas mães" /></li>
+                    <li><img src="images/slider/04_bebe.jpg" alt="o seu bebê merece o melhor" /></li>
+                </ul>
+            </div>
+            <div class="copos float-left relative width50">
+            	<img src="images/copos-avent.jpg" alt="copos Avent" width="350" height="240" title="copos Avent" />
+                <div class="copos-txt absolute">
+                	<h3 class="font2 uppercase"><span class="bg-amarelo block size2 uppercase verde">Copos infantis</span> <span class="block bg-azul branco font2">Philips Avent</span></h3>
+                    <div class="padding2">
+                        <p>Higiene e praticidade na alimentação do seu bebê. Clique e veja opções de cores e tamanhos.</p>
+                    </div>
+                    <div class="saiba1 center">
+                        <a href="#" class="branco font2 size2">saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="seguranca float-left relative width50 right">
+            	<img src="images/baba-eletronica-avent.jpg" alt="babá eletrônic Philips Avent" width="350" height="240" title="babá eletrônic Philips Avent" />
+                <div class="seguranca-txt absolute">
+                    <h3><span class="bg-rosa branco uppercase font2 block width2">Segurança</span> <span class="block bg-verde branco uppercase font2">para seu bebê</span></h3>
+                    <div class="clear"></div>
+                    <div class="padding2 width3">
+                        <p class="branco">Segurança para o bebê e tranquilidade para a mamãe. Clique e conheça a linha completa.</p>
+                    </div>
+                    <div class="saiba2 center">
+                        <a href="#" class="azul font2 size2">saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        
+        <div class="float-left mtop">
+            <img src="images/pais-bebe.jpg" width="217" height="237" alt="pai, mãe e bebê dormindo em uma cama" />
+        </div>
+        <div class="float-left mtop left">
+            <iframe width="393" height="221" src="http://www.youtube.com/embed/Y1OtOPytkLU?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="float-right width4">
+            <a href="linha_alimentacao_infantil.pdf" target="_blank" class="block branco font2"><span class="block bg-rosa size2">SAIBA MAIS SOBRE A LINHA DE</span> <span class="block mtop2 bg-rosa width5 size2">ALIMENTAÇÃO INFANTIL</span> <span class="block mtop2 bg-rosa width6 size2">PHILIPS AVENT</span></a>
+        </div>
+        <div class="clear"></div>
+        
+        <div id="footer">
+            <div class="barra center">
+                <span class="branco font"><strong class="branco font2" style="font-weight:bold; font-size:17px;">Philips Avent.</strong> A marca número 1 recomendada pelas mães*</span>
+            </div>
+            <div class="observacoes">
+                <p class="font">*Baseada em pesquisa de satisfação online conduzida pela TNS em dezembro/2011 com 36.000 mulheres/usuárias de produtos da categoria  mamãe e bebê nos EUA, Inglaterra, França, Alemanha, Holanda, Polônia, Espanha, Rússia e China.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

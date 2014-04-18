@@ -1,0 +1,119 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	background-image: url(caracteristicas/content-bg.jpg);
+	padding: 0;
+	position: relative;
+	
+}	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+	margin-left:-60px;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+	overflow: hidden;
+}
+
+.content-center .div-content { 
+
+	margin: 0 auto;
+	width: 830px;
+	height: 520px;
+	position: relative;
+	
+}
+.title { 
+	position: absolute;
+	top: 43px;
+	left: 260px;
+}
+
+.mini-barbeador { 
+	position: absolute;
+	top: 137px;
+	left: 160px;
+}
+
+.aparador-de-precisao { 
+	position: absolute;
+	top: 137px;
+	right: 44px;
+}
+
+.aparador-de-barba { 
+	position: absolute;
+	top: 256px;
+	left: 185px;
+}
+
+.cortador-de-cabelos { 
+	position: absolute;
+	top: 256px;
+	right: 5px;
+}
+
+.pente-para-barba-e-bigode { 
+	position: absolute;
+	top: 390px;
+	left: 135px;
+}
+
+.elimine-pelos-indesejados { 
+	position: absolute;
+	top: 390px;
+	right: -34px;
+}
+
+.anderson-silva { 
+	position: absolute;
+	bottom: -21px;
+	left: -33px;
+}
+
+.call-to-action4 { 
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	cursor: pointer;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+	
+	TweenMax.from( $(".call-to-action4") , .5, { css: { width: "0px", alpha: 0 } , ease: Strong.easeOut, delay: 1,  onComplete: function() {
+		TweenMax.to( $(".call-to-action4"), .3, { css: { right: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	}} );
+	
+	Connect.addCallToAction( ".call-to-action4" , "videos.html", true );
+	
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <img src="caracteristicas/page4/page4.png" width="956" height="520" alt="Uso sem fio" title="Uso sem fio" class="" />
+                <img src="caracteristicas/page4/botao-assista-o-video.png" width="183" height="48" alt="Assista o vídeo" title="Assista o vídeo" class="call-to-action4" />
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

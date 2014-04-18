@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#button_update{color:#f26532;  font-family:'oxygenbold' !important;}
+body {overflow-x:hidden; }
+#content-container { background: url(../images/updates/bg.jpg) repeat; padding: 140px 0 75px 0; overflow-x: hidden; }
+.bar { background: #7298b3; height: 47px; width: 9999px; position: relative; left: 234px; }
+.bar h1, .bar  select, .bar input, .bar figure { float: left; }
+.bar h1{ background: url(../images/updates/update.png); height: 86px; width: 246px; text-indent: -9999px; position: absolute; left: -234px; top: -20px; }
+.bar .categorias { height: 47px; width: 170px; float: left; margin-left: 65px; position: relative; }
+.bar .categorias a { background: url(../images/updates/seta-categorias.png) no-repeat 140px #A3CCE4; height: 47px; font: 20px 'oxygenregular'; color: #355c7c; width: 210px; padding-left: 26px; vertical-align: middle; display: table-cell; }
+.bar .categorias .categorias-select{ position: absolute; top: 47px; left: 0; z-index: 3; display:none; }
+.bar .categorias .categorias-select li{ height:47px; width:310px; display:table;}
+.bar .categorias .categorias-select li a{ display:table-cell; vertical-align:middle; font: 20px 'oxygenregular'; color: #355c7c !important; background-image:none !important; background-color:#92b7cd !important;}
+.bar .categorias .categorias-select li a:hover{text-decoration:underline;}
+.bar .categorias .categorias-select .color{background-color:#A2CCE5 !important;}
+.bar input { appearance: none; -webkit-appearance: none; -moz-appearance: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; height: 47px; border: none; background: #A3CCE4 url(../images/updates/bg-input.jpg) repeat; font: 20px 'oxygenregular'; color: #355c7c; width: 410px; padding: 0 0 0 26px; }
+h2{display:block; margin:25px 0 50px 0; font:20px 'Conv_TheMix-8-XBold'; color:#a3cce4;}
+#the-posts .post { position: relative; float: left; width: 297px; margin:0 17px 50px 0; }
+#the-posts .post span { background: #a3cce4; text-align: center; font: 30px 'Conv_TheMix-8-XBold'; color: #355c7c; padding: 10px; position: absolute; z-index: 2; top: 0px; right: 0px; }
+#the-posts .post figure{margin-bottom:20px; max-width:297px; height:auto;}
+#the-posts .post h3{font:23px 'Conv_TheMix-9-Black'; color:#a3cce4; line-height:1.1em;}
+#the-posts .updates { background: url(../images/updates/refresh-updates.png); text-indent: -9999px; display: block; height: 56px; width: 239px; margin-left: -117px; position: absolute; left: 50%; bottom: -40px; }

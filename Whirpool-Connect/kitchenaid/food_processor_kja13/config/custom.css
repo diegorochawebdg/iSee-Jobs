@@ -1,0 +1,49 @@
+@font-face {
+ font-family: 'Humanist521BT-Roman';
+ src: url('../fonts/Humanist521BT.eot');
+ src: local('☺'), 
+ url('../fonts/Humanist521BT.woff') format('woff'), 
+ url('../fonts/Humanist521BT.ttf') format('truetype'), 
+ url('../fonts/Humanist521BT.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Humanist521BT-Bold';
+ src: url('../fonts/Humanist521BoldBT.eot');
+ src: local('☺'), 
+ url('../fonts/Humanist521BoldBT.woff') format('woff'), 
+ url('../fonts/Humanist521BoldBT.ttf') format('truetype'), 
+ url('../fonts/Humanist521BoldBT.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Humanist521BT-Light';
+ src: url('../fonts/Humanist521LightBT.eot');
+ src: local('☺'), 
+ url('../fonts/Humanist521LightBT.woff') format('woff'), 
+ url('../fonts/Humanist521LightBT.ttf') format('truetype'), 
+ url('../fonts/Humanist521LightBT.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+ @font-face{ font-family:'Humanist521BT-Roman';     src:url('../fonts/Humanist521BT.svg#Humanist521BT-Roman') format('svg');}
+ @font-face{ font-family:'Humanist521BT-Bold';     src:url('../fonts/Humanist521BoldBT.svg#Humanist521BT-Bold') format('svg');}
+ @font-face{ font-family:'Humanist521BT-Light';     src:url('../fonts/Humanist521LightBT.svg#Humanist521BT-Light') format('svg');}
+}
+
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p { 
+	font-size: 16px;
+	font-family: "Arial";
+	color: #FFFFFF;
+	padding: 235px 0 0 190px;
+	width: 350px;
+	height: 112px;
+	line-height: 28px;
+}
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 

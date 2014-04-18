@@ -1,0 +1,132 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #020416 url(caracteristicas/page3/bg-caracteristicas3.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.absoluto{ position:absolute; left:50%;}
+#background-circulo{ background:url(caracteristicas/page3/background-circulo.png) no-repeat !important; width:280px !important; height:190px !important; margin-left:0 !important; top:0 !important;}
+.tv-frontal{ margin-left: -642px; top: 68px; }
+#hdmi { top: 110px; display: none; }
+#usb { top: 103px; }
+#perfect-motion { top: 110px; display: none; }
+.mouse{ margin-left: 85px; top: 300px; }
+#menu{ width: 404px; height: 68px; margin-left: 18px; top: 331px; z-index: 2; }
+.divisao-menu { background: url(caracteristicas/page3/bg-thumb.png); height: 79px; width: 73px; float: left; }
+#menu img{ margin:0; padding:0; border:none; float:left; cursor:pointer; opacity:.5;}
+.features{ margin-left: 30px; }
+#call-to-action3{ margin-left: 249px; bottom: 26px; position: absolute; left: 50%; }
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/tv-frontal.png" width="663" height="396" alt="SmartTV" title="SmartTV" class="absoluto tv-frontal" />
+                
+                <img src="caracteristicas/page3/passe-o-mouse-e-conheca-as-outras-tecnologias.png" width="270" height="14" alt="Passe o mouse e conheça as outras tecnologias" title="Passe o mouse e conheça as outras tecnologias" class="absoluto mouse" />
+                <div id="menu" class="absoluto">
+                	<div class="divisao-menu"></div>
+                    <img src="caracteristicas/page3/usb-btn.png" width="76" height="79" alt="USB" title="USB" id="btn-usb" />
+                    <img src="caracteristicas/page3/perfect-motion-btn.png" width="74" height="79" alt="Perfect Motion Rate" title="Perfect Motion Rate" id="btn-perfect-motion" />
+                    <img src="caracteristicas/page3/hdmi-btn.png" width="76" height="79" alt="HDMI x3" title="HDMI x3" id="btn-hdmi" />
+                    <div class="divisao-menu"></div>
+                </div>
+                
+                <div id="usb" class="absoluto features">
+                	<img src="caracteristicas/page3/usb-img.png" width="290" height="78" alt="USB" title="USB" />
+                </div>
+                
+                <div id="perfect-motion" class="absoluto features">
+                	<img src="caracteristicas/page3/perfect-motion-img.png" width="320" height="116" alt="Perfect Motion Rate" title="Perfect Motion Rate" />
+                </div>
+                
+                <div id="hdmi" class="absoluto features">
+                	<img src="caracteristicas/page3/hdmi-img.png" width="352" height="106" alt="HDMI x3" title="HDMI x3" />
+                </div>
+                
+				<a href="#"><img src="caracteristicas/page3/fotos.png" alt="Fotos" width="131" height="66" id="call-to-action3" title="Fotos" /></a>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".tv-frontal"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($("#menu"), .5, {css:{left:"-=20px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".mouse"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	
+	// Função Hover
+	var _arr = {"#btn-usb": "#usb", "#btn-perfect-motion": "#perfect-motion", "#btn-hdmi": "#hdmi"};
+	var _divAnt = null;
+	
+	$.each(_arr, function(ind, val){
+		var _posIni = null;
+		if(_posIni == null){
+			_posIni = $(val).css("top");
+		}
+		if(_divAnt == null){
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block"});
+			TweenMax.from($(val), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});
+			_divAnt = [ind, val];
+		}
+		$(ind).on("mouseenter", function(e){
+			_esconde(_divAnt);
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block",
+						"opacity": 1});
+			TweenMax.from($(val), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});	
+		});
+		$(ind).on("mouseleave", function(e){
+			_divAnt = [ind, val];
+		});
+	});
+	
+	function _esconde(div){
+		$(div[0]).css({"opacity": 0.5});
+		$(div[1]).css({"opacity": 0});
+		TweenMax.from($(div[1]), .5, {css:{alpha:1}, ease:Back.easeOut, onComplete: function(e){
+			$(div[1]).css("display", "none");
+		}});		
+	}
+	// Fim Função Hover
+		
+	//call to action
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	}} );
+	$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action3" , "fotos.html", false );
+});
+
+</script>

@@ -1,0 +1,151 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #020416 url(caracteristicas/page2/bg-caracteristicas2.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.absoluto{ position:absolute; left:50%;}
+#background-circulo{ background:url(caracteristicas/page2/background-circulo.png) no-repeat !important; width:280px !important; height:190px !important; margin-left:0 !important; top:0 !important;}
+.tv-frontal{ margin-left: -658px; top: 68px; }
+.mouse{ margin-left: 5px; top: 300px; }
+#skype { margin-left: -30px; top: 118px; }
+#hdmi { margin-left: -30px; top: 95px; display:none; }
+#miracast { margin-left: -30px; top: 95px; display:none; }
+#perfect-motion { margin-left: -30px; top: 112px; display: none; }
+#incredible-surround { margin-left: -30px; top: 120px; display: none; }
+#clear-sound { margin-left: -30px; top: 119px; display: none; }
+#menu{ width: 460px; height: 68px; margin-left: -58px; top: 331px; z-index: 2; }
+.divisao-menu { background: url(caracteristicas/page2/bg-thumb.png); height: 79px; width: 73px; float: left; }
+#menu img{ margin:0; padding:0; border:none; float:left; cursor:pointer; opacity:.5;}
+.features{ margin-left: 30px; }
+#call-to-action2{ margin-left: 249px; bottom: 26px; position: absolute; left: 50%; }
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/frente-smarttv.png" width="601" height="412" alt="SmartTV" title="SmartTV" class="absoluto tv-frontal" />
+                
+                <img src="caracteristicas/page2/passe-o-mouse.png" width="318" height="16" alt="Passe o mouse e conheça as outras tecnologias" title="Passe o mouse e conheça as outras tecnologias" class="absoluto mouse" />
+                
+                <!--miniaturas-->
+                <div id="menu" class="absoluto">
+                    <img src="caracteristicas/page2/skype-btn.png" width="76" height="79" alt="Skype" title="Skype" id="skype-btn">
+                    <img src="caracteristicas/page2/hdmi-btn.png" width="79" height="79" alt="HDMI" title="HDMI" id="hdmi-btn">
+                    <img src="caracteristicas/page2/miracast-btn.png" width="76" height="79" alt="Miracast" title="Miracast" id="miracast-btn">
+                    <img src="caracteristicas/page2/perfect-motion-btn.png" width="73" height="79" alt="Perfect Motion Rate" title="Perfect Motion Rate" id="perfect-motion-btn">
+                    <img src="caracteristicas/page2/incredible-surround-btn.png" width="76" height="79" alt="Incredible Surround" title="Incredible Surround" id="incredible-surround-btn">
+                    <img src="caracteristicas/page2/clear-sound-btn.png" width="76" height="79" alt="Clear Sound" title="Clear Sound" id="clear-sound-btn">
+                </div>
+                
+                <!--img grandes-->
+                <div id="skype" class="absoluto features">
+                	<img src="caracteristicas/page2/skype.png" width="355" height="102" alt="Skype" title="Skype">
+                </div>
+                
+              <div id="hdmi" class="absoluto features">
+                	<img src="caracteristicas/page2/hdmi.png" width="345" height="109" alt="HDMI" title="HDMI">
+                </div>
+                
+              <div id="miracast" class="absoluto features">
+                	<img src="caracteristicas/page2/miracast.png" width="362" height="187" alt="Miracast" title="Miracast" />
+              </div>
+                
+              <div id="perfect-motion" class="absoluto features">
+                	<img src="caracteristicas/page2/perfect-motion.png" width="295" height="77" alt="Perfect Motion Rate" title="Perfect Motion Rate">
+                </div>
+                
+              <div id="incredible-surround" class="absoluto features">
+                	<img src="caracteristicas/page2/incredible-sorround.png" width="361" height="105" alt="Incredible Surround" title="Incredible Surround">
+                </div>
+                
+              <div id="clear-sound" class="absoluto features">
+                	<img src="caracteristicas/page2/clear-sound.png" width="288" height="80" alt="Clear Sound" title="Clear Sound">
+                </div>
+                
+				<a href="#"><img src="caracteristicas/page2/voce-no-comando.png" width="247" alt="Você no comando" title="Você no comando" id="call-to-action2" /></a>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".tv-frontal"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($("#menu"), .5, {css:{left:"-=20px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".mouse"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	
+	// Função Hover
+	var _arr = {"#skype-btn": "#skype", "#hdmi-btn": "#hdmi", "#miracast-btn": "#miracast", "#perfect-motion-btn": "#perfect-motion", "#incredible-surround-btn": "#incredible-surround", "#clear-sound-btn": "#clear-sound"};
+	var _divAnt = null;
+	
+	$.each(_arr, function(ind, val){
+		var _posIni = null;
+		if(_posIni == null){
+			_posIni = $(val).css("top");
+		}
+		if(_divAnt == null){
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block"});
+			TweenMax.from($(val), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});
+			_divAnt = [ind, val];
+		}
+		$(ind).on("mouseenter", function(e){
+			_esconde(_divAnt);
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block",
+						"opacity": 1});
+			TweenMax.from($(val), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});	
+		});
+		$(ind).on("mouseleave", function(e){
+			_divAnt = [ind, val];
+		});
+	});
+	
+	function _esconde(div){
+		$(div[0]).css({"opacity": 0.5});
+		$(div[1]).css({"opacity": 0});
+		TweenMax.from($(div[1]), .5, {css:{alpha:1}, ease:Back.easeOut, onComplete: function(e){
+			$(div[1]).css("display", "none");
+		}});		
+	}
+	// Fim Função Hover
+		
+	//call to action
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	}} );
+	$("#call-to-action2").hover(function(e) {
+            TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+});
+
+</script>

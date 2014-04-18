@@ -1,0 +1,36 @@
+#treinamentos{background-color:#125A9C !important}
+
+/*MENU LATERAL*/
+.menu-lateral{width:242px; float:left}
+.menu-lateral .titulo{background:#125A9C; text-align:center; padding:5px}
+.menu-lateral .titulo h3{text-transform:uppercase; font-size:30px; color:#FFF}
+.menu-lateral .lista-treinamentos{background:url(../images/bg-menu-treinamentos.jpg) repeat-x; height:684px}
+.menu-lateral .lista-treinamentos li{background:url(../images/seta-menu-servicos.png) no-repeat 10px 30px; padding-left:25px; width:217px}
+.menu-lateral .height1{height:150px}
+.menu-lateral .height2{height:76px}
+.menu-lateral .height3{height:81px}
+.menu-lateral .height4{height:63px}
+.menu-lateral .height5{height:112px}
+.menu-lateral .height6{height:91px}
+.menu-lateral .height7{height:111px}
+.menu-lateral .hover{background-color:#E0F0F7 !important}
+.menu-lateral .hover a{color:#1368B7 !important}
+.menu-lateral .lista-treinamentos li div{max-width:180px; padding-top:26px}
+.menu-lateral .lista-treinamentos a{font-size:18px; color:#A5B0BF}
+.menu-lateral .lista-treinamentos .padding{padding-top:25px}
+.menu-lateral .lista-treinamentos .seta{background:url(../images/seta-menu-servicos.png) no-repeat 10px 15px}
+
+/*BLOCOS DE TEXTO*/
+.treinamentos-txt{float:right; width:685px}
+.treinamentos-txt h2{font-size:50px; color:#0C4A83; margin-bottom:20px}
+.treinamentos-txt p, .treinamentos-txt ul{margin-bottom:20px}
+.treinamentos-txt li{background:url(../images/bg-li-home.gif) no-repeat 0px 4px; margin-bottom:20px; padding-left:15px}
+.treinamentos-txt a{color:#1366B7; text-decoration:underline}
+.treinamentos-txt span{font-size:30px; color:#1366B7}
+.treinamentos-txt .mtop2{margin-top:50px}
+.folder-img{float:left; width:220px}
+.folder-img img{margin-bottom:10px}
+.folder-img img, .folder-img a{float:left}
+.folder-img a{width:120px; padding-top:12px; margin-left:15px}
+.treinamentos-txt .sub-txt{float:right; width:417px; margin-bottom:50px}
+.treinamentos-txt .sub-txt p{line-height:20px}

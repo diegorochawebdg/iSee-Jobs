@@ -1,0 +1,25 @@
+.connect-container .content .area , .content .area  { background-image: url(../cliente/page-noscript.jpg); }
+@font-face {
+	font-family: 'Humanist521BT-Roman';
+	src: url('../fonts/Humanist521BT.eot');
+	src: local('☺'), 
+	url('../fonts/Humanist521BT.woff') format('woff'), 
+	url('../fonts/Humanist521BT.ttf') format('truetype'), 
+	url('../fonts/Humanist521BT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Humanist521BT-Bold';
+	src: url('../fonts/Humanist521BoldBT.eot');
+	src: local('☺'), 
+	url('../fonts/Humanist521BoldBT.woff') format('woff'), 
+	url('../fonts/Humanist521BoldBT.ttf') format('truetype'), 
+	url('../fonts/Humanist521BoldBT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	@font-face{ font-family:'Humanist521BT-Roman';     src:url('../fonts/Humanist521BT.svg#Humanist521BT-Roman') format('svg');}
+	@font-face{ font-family:'Humanist521BT-Bold';     src:url('../fonts/Humanist521BoldBT.svg#Humanist521BT-Bold') format('svg');}
+}

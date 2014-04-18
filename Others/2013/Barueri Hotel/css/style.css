@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* Reset */
+* { vertical-align: baseline; border: none; outline: 0; padding: 0; margin: 0; font-family: "UniSans"; -webkit-font-smoothing: antialiased; color:#423316; }
+body{font-size: 62.5%;}
+p, label, input, address, a, textarea, li, h4, span{font-size:2em}
+
+/* @font-face */
+@font-face{    font-family:'UniSans';     
+	src:url('../fonts/uni_sans_book.eot');
+	src:url('../fonts/uni_sans_book.eot?#iefix') format('embedded-opentype'),        url('../fonts/uni_sans_book.woff') format('woff'),         
+		url('../fonts/uni_sans_book.ttf') format('truetype'),         
+		url('../fonts/uni_sans_book.svg#UniSans') format('svg');     
+		font-weight:normal;     
+		font-style:normal
+}
+@font-face{    font-family:'UniSans';     
+	src:url('../fonts/uni_sans_bold.eot');
+	src:url('../fonts/uni_sans_bold.eot?#iefix') format('embedded-opentype'),        url('../fonts/uni_sans_bold.woff') format('woff'),         
+		url('../fonts/uni_sans_bold.ttf') format('truetype'),         
+		url('../fonts/uni_sans_bold.svg#UniSans') format('svg');     
+		font-weight:bold;     
+		font-style:normal
+}
+
+/*General Style's*/
+.content-center{ margin: 0 auto; width: 90%; max-width: 960px; padding: 0 40px; }
+.link-padding{ height: 0; position: relative; overflow: hidden; display: block; }
+.clear{clear:both;}
+.animate{
+-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -ms-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+h2{ font-size: 33px; font-weight: bold; text-transform: uppercase; padding: 0 15px; margin: 0 0 33px -15px; display: inline-block; }
+
+/*Header*/
+#header{ position: fixed; top: 0; background-color: #423316; width: 100%; padding: 15px 0; z-index:2; box-shadow: #000 0px 2px 3px; }
+#header.size{padding:3px 0;}
+#header h1 { float: left; }
+#header h1.size {-webkit-transform:scale(0.6,0.6); margin-left: -15px;}
+#header h1 a{ background: url(../images/barueri-residence.png) no-repeat; width: 127px; padding-top: 54px; }
+
+#header #menu { float: right; }
+#header #menu li { display: table; float: left; list-style: none; }
+#header #menu li:before{content:"|"; color: #CCC; display: table-cell; vertical-align: middle;}
+#header #menu li.no-before:before{content:"" !important;}
+#header #menu li a { font-size: 20px; color: #CCC; text-decoration: none; display: table-cell; vertical-align: middle; padding: 0 7px; }
+#header #menu li a.active{color:#fecd04;}
+#header #menu li a:hover{text-decoration:underline;}
+#header #menu, #header #menu ul, #header #menu li { height: 54px; }
+
+/*Content*/
+#content{padding-top:75px;}
+
+#slider { background: #413316; }
+
+#sobre { background: #FFF url(../images/sobre-bg.png) repeat-x 0px 43px; padding: 30px 0; }
+#sobre h2 { background: #FFF; }
+#sobre p { margin-bottom: 25px; }
+#sobre .imgs { text-align: center; }
+#sobre .imgs img { margin-bottom: 5px; max-width:100%; height:auto; }
+#sobre .imgs img.no-margin { margin-bottom: 5px; }
+
+
+#apartamentos { background: #423316 url(../images/bg-apartamentos.png) repeat-x 0px 43px; padding: 30px 0; }
+#apartamentos h2{ background: #423316; color: #ffcd05; margin-bottom: 62px; }
+#apartamentos .studio-basic-txt, #apartamentos .studio-confort-txt{ float: left; width: 50%; margin-bottom: 35px; min-width:340px; }
+#apartamentos .studio-basic-txt *, #apartamentos .studio-confort-txt *{ color: #FFF; /*font-size: 2em;*/ }
+#apartamentos h3{ color: #CCC !important; height: 42px; background-position: left center; background-repeat: no-repeat; font-size: 26px !important; font-weight: bold; text-transform: uppercase; }
+#apartamentos li{ list-style-position: inside; line-height: 1.2em; }
+#apartamentos h4 { font-weight: bold; margin-top: 30px; }
+#apartamentos .studio-basic-txt h3{background-image:url(../images/studio-basic.png); padding: 16px 0 0 52px;}
+#apartamentos .studio-confort-txt h3{background-image:url(../images/studio-confort.png); padding: 16px 0 0 65px;}
+#apartamentos .studio-confort-txt img{margin:20px 0;}
+#apartamentos small { font-size: 1.4em; color: #FFF; }
+#apartamentos .cartoes img{margin-right:3px;}
+
+#gallery { background: #33260D; padding: 20px; }
+#gallery h2 { font-size: 20px; color: #ffcd05; text-transform: none; }
+#gallery li { list-style: none; display: inline; margin-right: 17px; }
+#gallery .photos { text-align: center; }
+#gallery li.no-margin { margin: 0px; }
+#gallery li img { border: 7px solid #FFF; }
+
+#servicos, #contato{background:#FFCC05 url(../images/bg-servicos.png) repeat-x 0 43px; padding: 30px 0;} 
+#servicos h2, #contato h2 { background: #FFCC05; }
+#servicos h3    { font-weight: bold; font-size: 20px; margin-bottom: 5px; }
+#servicos p{margin-bottom:20px;}
+#servicos .proprio *, #servicos .rede-conveniada *{color:#423316;}
+#servicos .item{ float: left; text-align: center; min-width: 245px; width: 33%; margin-bottom: 20px; }
+#servicos .item span{ color: #423316; font-weight: bold; text-transform: uppercase; display: block; margin-top: 20px; }
+
+#localizacao{background:#bebebe url(../images/bg-localizacao.png) repeat-x 0 43px; padding: 30px 0;} 
+#localizacao h2 { background: #bebebe; }
+#localizacao *{color:#423316;}
+#localizacao p{margin-bottom:20px;}
+#localizacao address{font-style:normal; margin-bottom:20px;}
+#localizacao iframe{min-width:100%; height:auto; min-height:534px;}
+
+#contato .form label{color:#423316; font-weight:bold; display:block;}
+#contato .form input{background-color:#FFF; width:100%; height:40px; padding: 0 10px; margin-bottom:15px;}
+#contato .form .division { float: left; width: 45%; }
+#contato .form .division.right { float: right; }
+#contato .form textarea{width: 100%; height: 178px; border: none; outline: none; resize: none; overflow: auto; padding:10px; background-color:#FFF; margin-bottom:20px;}
+#contato .form .obrigatorios{font-size:1.4em; color:#423316; float:left; font-weight:normal !important;}
+#contato .form button{ float: right; background-color: #423316; display: block; text-transform: uppercase; color: #ffcd05; font-weight: bold; padding: 7px 20px 3px 20px; font-size: 1.8em; cursor:pointer; }
+#contato .form .form-left, #contato .form .form-right{width:47%;}
+#contato .form .form-left{float:left;}
+#contato .form .form-right{float:right;}
+
+#footer{ background-color: #423316; box-shadow: #1A1501 0 -2px 1px; position: fixed; bottom: -70px; width: 100%; }
+#footer .relative{position:relative; padding: 15px 0;}
+#footer .expandir { background: url(../images/expandir-rodape.png); padding-top: 23px; height: 0px; width: 56px; margin-left: -27px; overflow: hidden; position: absolute; left: 50%; top: -21px; display:block; z-index:2; }
+#footer .tels { float: left; padding-top:15px; }
+#footer .tels a{ color: #ffcd05; display: block; text-decoration: none; }
+#footer small{ position: absolute; left: 50%; margin-left: -157px; top: 42%; font-size: 14px; color: #7c6943; }
+#footer .address-email{float:right; text-align:right;}
+#footer .address-email *{font-style:normal; color:#FFF; text-decoration:none;}
+#footer .address-email a:hover{text-decoration:underline;}
+
+/*Collorbox*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+#cboxOverlay{background:url(../images/colorbox/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(../images/colorbox/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(../images/colorbox/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../images/colorbox/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../images/colorbox/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(../images/colorbox/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../images/colorbox/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../images/colorbox/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../images/colorbox/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; /*overflow:hidden;*/}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494; display:none !important;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494; display:none !important;}
+        #cboxLoadingOverlay{background:url(../images/colorbox/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../images/colorbox/loading.gif) no-repeat center center;}
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; display:none !important; }
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/colorbox/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/colorbox/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; top: -15px; right: -15px; background:url(../images/colorbox/close.png) no-repeat; width:28px; height:28px; text-indent:-9999px; display:block !important;}
+
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*Camera Slideshow*/
+.camera_wrap a, .camera_wrap img, 
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li, 
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img, 
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li, 
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td{background:none; border:0; font:inherit; font-size:100%; margin:0; padding:0; vertical-align:baseline; list-style:none}
+.camera_wrap{display:none; float:left; position:relative; z-index:0}
+.camera_wrap img{max-width:none!important}
+.camera_fakehover{height:100%; min-height:60px; position:relative; width:100%; z-index:1}
+.camera_wrap{width:100%}
+.camera_src{display:none}
+.cameraCont, .cameraContents{height:100%; position:relative; width:100%; z-index:1}
+.cameraSlide{bottom:0; left:0; position:absolute; right:0; top:0; width:100%}
+.cameraContent{bottom:0; display:none; left:0; position:absolute; right:0; top:0; width:100%}
+.camera_target{bottom:0; height:100%; left:0; overflow:hidden; position:absolute; right:0; text-align:left; top:0; width:100%; z-index:0}
+.camera_overlayer{bottom:0; height:100%; left:0; overflow:hidden; position:absolute; right:0; top:0; width:100%; z-index:0}
+.camera_target_content{bottom:0; left:0; overflow:hidden; position:absolute; right:0; top:0; z-index:2}
+.camera_target_content .camera_link{    background:url(../images/camera/blank.gif); display:block; height:100%; text-decoration:none}
+.camera_loader{    background:#fff url(../images/camera/camera-loader.gif) no-repeat center; background:rgba(255,255,255,0.9) url(../images/camera/camera-loader.gif) no-repeat center; border:1px solid #fff; -webkit-border-radius:18px; -moz-border-radius:18px; border-radius:18px; height:36px; left:50%; overflow:hidden; position:absolute; margin:-18px 0 0 -18px; top:50%; width:36px; z-index:3}
+.camera_bar{bottom:0; left:0; overflow:hidden; position:absolute; right:0; top:0; z-index:3}
+.camera_thumbs_wrap.camera_left .camera_bar, .camera_thumbs_wrap.camera_right .camera_bar{height:100%; position:absolute; width:auto}
+.camera_thumbs_wrap.camera_bottom .camera_bar, .camera_thumbs_wrap.camera_top .camera_bar{height:auto; position:absolute; width:100%}
+.camera_nav_cont{height:65px; overflow:hidden; position:absolute; right:9px; top:15px; width:120px; z-index:4}
+.camera_caption{bottom:0; display:block; position:absolute; width:100%}
+.camerarelative{overflow:hidden; position:relative}
+.imgFake{cursor:pointer}
+.camera_prevThumbs{bottom:4px; cursor:pointer; left:0; position:absolute; top:4px; visibility:hidden; width:30px; z-index:10}
+.camera_prevThumbs div{background:url(../images/camera_skins.png) no-repeat -160px 0; display:block; height:40px; margin-top:-20px; position:absolute; top:50%; width:30px}
+.camera_nextThumbs{bottom:4px; cursor:pointer; position:absolute; right:0; top:4px; visibility:hidden; width:30px; z-index:10}
+.camera_nextThumbs div{background:url(../images/camera_skins.png) no-repeat -190px 0; display:block; height:40px; margin-top:-20px; position:absolute; top:50%; width:30px}
+.camera_command_wrap .hideNav{display:none}
+.camera_command_wrap{left:0; position:relative; right:0; z-index:4}
+.camera_wrap .camera_pag{position:absolute; left:50%; margin-left:20%; bottom:5%}
+.camera_wrap .camera_pag .camera_pag_ul{list-style:none; margin:0; padding:0; text-align:right}
+.camera_wrap .camera_pag .camera_pag_ul li{-webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px; cursor:pointer; display:inline-block; height:16px; margin:20px 5px; position:relative; text-align:left; text-indent:-9999px; width:16px}
+.camera_commands_emboss .camera_pag .camera_pag_ul li{-moz-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); -webkit-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2)}
+.camera_wrap .camera_pag .camera_pag_ul li >span{-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; height:12px; left:2px; overflow:hidden; position:absolute; top:2px; width:12px}
+.camera_commands_emboss .camera_pag .camera_pag_ul li:hover >span{-moz-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); -webkit-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2)}
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent >span{-moz-box-shadow:0; -webkit-box-shadow:0; box-shadow:0}
+.camera_pag_ul li img{display:none; position:absolute}
+.camera_pag_ul .thumb_arrow{    border-left:4px solid transparent;     border-right:4px solid transparent;     border-top:4px solid; top:0; left:50%; margin-left:-4px; position:absolute}
+.camera_prev, .camera_next, .camera_commands{cursor:pointer; height:40px; margin-top:-20px; position:absolute; top:50%; width:40px; z-index:2}
+.camera_prev{left:0}
+.camera_prev >span{background:url(../images/camera/camera_skins.png) no-repeat 0 0; display:block; height:40px; width:40px}
+.camera_next{right:0}
+.camera_next >span{background:url(../images/camera/camera_skins.png) no-repeat -40px 0; display:block; height:40px; width:40px}
+.camera_commands{right:41px}
+.camera_commands >.camera_play{background:url(../images/camera/camera_skins.png) no-repeat -80px 0; height:40px; width:40px}
+.camera_commands >.camera_stop{background:url(../images/camera/camera_skins.png) no-repeat -120px 0; display:block; height:40px; width:40px}
+.camera_wrap .camera_pag .camera_pag_ul li{-webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px; cursor:pointer; display:inline-block; height:16px; margin:20px 5px; position:relative; text-indent:-9999px; width:16px}
+.camera_thumbs_cont{-webkit-border-bottom-right-radius:4px; -webkit-border-bottom-left-radius:4px; -moz-border-radius-bottomright:4px; -moz-border-radius-bottomleft:4px; border-bottom-right-radius:4px; border-bottom-left-radius:4px; overflow:hidden; position:relative; width:100%}
+.camera_commands_emboss .camera_thumbs_cont{-moz-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); -webkit-box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2); box-shadow:0px 1px 0px rgba(255,255,255,1),inset 0px 1px 1px rgba(0,0,0,0.2)}
+.camera_thumbs_cont >div{float:left; width:100%}
+.camera_thumbs_cont ul{overflow:hidden; padding:3px 4px 8px; position:relative; text-align:center}
+.camera_thumbs_cont ul li{display:inline; padding:0 4px}
+.camera_thumbs_cont ul li >img{border:1px solid; cursor:pointer; margin-top:5px; vertical-align:bottom}
+.camera_clear{display:block; clear:both}
+.showIt{display:none}
+.camera_clear{clear:both; display:block; height:1px; margin:-1px 0 25px; position:relative}
+.pattern_1 .camera_overlayer{background:url(../images/camera/patterns/overlay1.png) repeat}
+.pattern_2 .camera_overlayer{background:url(../images/camera/patterns/overlay2.png) repeat}
+.pattern_3 .camera_overlayer{background:url(../images/camera/patterns/overlay3.png) repeat}
+.pattern_4 .camera_overlayer{background:url(../images/camera/patterns/overlay4.png) repeat}
+.pattern_5 .camera_overlayer{background:url(../images/camera/patterns/overlay5.png) repeat}
+.pattern_6 .camera_overlayer{background:url(../images/camera/patterns/overlay6.png) repeat}
+.pattern_7 .camera_overlayer{background:url(../images/camera/patterns/overlay7.png) repeat}
+.pattern_8 .camera_overlayer{background:url(../images/camera/patterns/overlay8.png) repeat}
+.pattern_9 .camera_overlayer{background:url(../images/camera/patterns/overlay9.png) repeat}
+.pattern_10 .camera_overlayer{background:url(../images/camera/patterns/overlay10.png) repeat}
+.camera_caption{color:#fff}
+.camera_caption >div{background:#423316; color:#CCC; font-size:2em; width:440px; bottom:30px; padding:20px 30px; position:absolute; left:50%; margin-left:-450px}
+.camera_caption .caption-bg{background:url(../images/caption-bg.png) no-repeat; width:86px; height:84px; position:absolute; left:-27px; top:-32px}
+.camera_wrap .camera_pag .camera_pag_ul li{background:#423316}
+.camera_wrap .camera_pag .camera_pag_ul li:hover >span{background:#423316}
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent >span{background:#ffcd06}
+.camera_pag_ul li img{border:4px solid #e6e6e6; -moz-box-shadow:0px 3px 6px rgba(0,0,0,.5); -webkit-box-shadow:0px 3px 6px rgba(0,0,0,.5); box-shadow:0px 3px 6px rgba(0,0,0,.5)}
+.camera_pag_ul .thumb_arrow{ border-top-color:#e6e6e6}
+.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont{background:#d8d8d8; background:rgba(216,216,216,0.85)}
+.camera_wrap .camera_pag .camera_pag_ul li{background:#423316}
+.camera_thumbs_cont ul li >img{border-color:1px solid #000}
+
+/*Responsible*/
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width : 760px) {
+	body{font-size: 150%;}
+	#header #menu li a{font-size:60%;}
+	#header #menu li #btn-sobre{padding-top:13px;}
+	p, label, input, address, a, textarea, li, h4, #gallery h2, #apartamentos .studio-basic-txt h3, small, button{font-size:200%;}
+	#servicos span, #servicos h3{font-size:150%;}
+	#apartamentos .studio-basic-txt, #apartamentos .studio-confort-txt{float:none; width:100%; padding-left: 0 15%;}	
+	#gallery img{width: 33%; height:auto;}
+	#contato .form input{height:200%}
+	#contato .form .division {float: none; width: 100%;}
+	#contato .form .form-left, #contato .form .form-right{float:none; width:100%;}
+	#footer *{font-size:100%;}
+}
+
+/*End of Reponsible*/

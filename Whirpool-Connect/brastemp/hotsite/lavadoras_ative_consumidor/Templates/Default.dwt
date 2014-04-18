@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/main.css">
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<link rel="stylesheet" href="css/.css">
+<!-- TemplateEndEditable -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-39635206-1', 'brastemp.com.br');
+ ga('send', 'pageview');
+
+</script>
+<script>
+var _gaq = _gaq || [];                                                           
+
+_gaq.push(['_setAccount', 'UA-11624991-8']);                                     
+
+_gaq.push(['_setDomainName', '.brastemp.com.br']);                               
+
+_gaq.push(['_trackPageview']);                                                   
+
+
+
+(function() {                                                                    
+
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async 
+	= true;                                                                          
+	
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') 
+	+ '.google-analytics.com/ga.js';                                                 
+	
+	var s = document.getElementsByTagName('script')[0];                              
+	s.parentNode.insertBefore(ga, s);                                                
+
+})();     
+</script>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<!-- TemplateBeginEditable name="scripts" -->
+
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<!--Header-->
+<div id="header">
+	<div class="content-center">
+    	<!-- TemplateBeginEditable name="logo" -->
+    	<a href="../" id="main-logo"><img src="../images/logo-brastemp.png" width="188" height="113" alt="Logotipo Brastemp" title="Brastemp"></a>
+        <!-- TemplateEndEditable -->
+        
+        <a id="site-brastemp" href="http://www.brastemp.com.br/" target="_blank" title="Visite o site da Brastemp">Ir para o site da Brastemp</a>
+        <a id="receba-novidades" href="#">Receba novidades <span>|</span></a>
+        <div class="clear"></div>
+        
+        <!--News-->
+        <div id="novidades" class="absolute">
+        	<a href="#" title="fechar" class="fechar link-padding absolute">Fechar</a>
+            <form>
+            	<div class="inputs">
+                    <input type="text" name="nome" value="nome" onfocus="if (this.value==this.defaultValue) this.value = ''"
+onblur="if (this.value=='') this.value = this.defaultValue">
+                    <input type="email" name="email" value="email" onfocus="if (this.value==this.defaultValue) this.value = ''"
+onblur="if (this.value=='') this.value = this.defaultValue">
+                    <input type="text" class="cpf" maxlength="14" name="cpf" value="cfp" onfocus="if (this.value==this.defaultValue) this.value = ''"
+onblur="if (this.value=='') this.value = this.defaultValue">
+                </div>
+                <input type="submit" class="enviar" title="Enviar">
+            </form>
+        </div>
+        <!--End of News-->
+        
+    </div>
+</div>
+<!--End of Header-->
+
+<!--Content-->
+<div id="content">
+	<div class="content-center">
+		<!-- TemplateBeginEditable name="content" -->
+        <!-- TemplateEndEditable -->
+    </div>
+</div>
+<!--End of Content-->
+
+<!-- TemplateBeginEditable name="LightBoxes" -->
+<!-- TemplateEndEditable -->
+
+<!--Footer-->
+<div id="footer">
+	<div class="content-center">
+        <!--Facebook Brastemp-->
+        <a id="brastemp-facebook" href="https://www.facebook.com/assimumabrastemp" target="_blank" title="Curta nossa página no Facebook!"><strong>Brastemp</strong> no Facebook</a>
+        <!--End of Facebook Brastemp-->
+        
+        <!--Share-->
+        <div class="share">
+            <span>Compartilhe:</span>
+            <!--Facebook Share-->
+            <a href="#" id="facebook" title="Compartilhe no Facebook" class="link-padding" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+      'facebook-share-dialog', 
+      'width=626,height=436'); 
+    return false;">Facebook</a>
+    		<!-- End of Facebook Share-->
+            
+            <!--Twitter Share-->
+            <a href="#" id="twitter" title="Compartilhe no Twitter" class="link-padding">Twitter</a>
+            <!--End of Twitter Share-->
+            
+            <!--Google+ Share-->
+            <a href="https://plus.google.com/share?url=" onclick="javascript:window.open(this.href + window.location,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"  id="google" title="Compartilhe no Google+" class="link-padding">Google+</a>
+  			<!--End of Google+ Share-->
+            
+            <div class="clear"></div>
+        </div>
+        <!--End of Share-->
+        
+        <div class="clear"></div>
+    </div>
+</div>
+<!--End of Footer-->
+
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		
+		/*Show/Hide News tab*/
+		$("#receba-novidades, #novidades .fechar").click(function(e) {
+            $("#novidades").toggleClass("visible");
+			if($("#novidades").hasClass("visible")){
+				$("#novidades").fadeIn(200);
+			} else{
+				$("#novidades").fadeOut(200);
+			}
+        });
+		/*End of Show/Hide News tab*/
+		
+		/*Twitter Share button*/
+		$('#footer #twitter').click(function(e){
+			e.preventDefault();
+			var loc = $(this).attr('href');
+			var title  = escape($(this).attr('title'));
+			window.open('http://twitter.com/share?url=' + loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+		});
+		/*End of Twitter Share button*/
+		
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<style type="text/css">
+body{margin:0; padding:0;}
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page1/bg-pagina1.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.cooktop-main { top: 47px; margin-left: -356px; }
+#call-to-action1 { margin-left: 194px; bottom: 0px; display:block; position:absolute; left:50%; }
+#call-to-action1 img { position:static; }
+.hotspots img{z-index:3; cursor:pointer;}
+.sub img { display: none; z-index:5; pointer-events:none; }
+.informacoes { margin-left: -398px; bottom: 10px; }
+#btn-trempes { margin-left: -360px; bottom: 94px; }
+#btn-indicador { margin-left: -295px; bottom: 47px; }
+#btn-chamas { margin-left: -134px; bottom: 105px; }
+#btn-botao { margin-left: -91px; bottom: 41px; }
+#trempes { margin-left: -346px; top: 124px; }
+#indicador { margin-left: -279px; top: 37px; }
+#chamas { margin-left: -105px; top: 90px; }
+#botao { margin-left: -100px; top: 16px; }
+.botao2 { margin-left: 123px; top: 88px; z-index: 6; }
+.acendimento { margin-left: -435px; bottom: 73px; }
+</style>
+
+<script type="text/javascript" src="http://www.iseeconnect.com/src/js/jquery/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	/*var _arr = {"#btn-trempes": [  "#trempes", "spot1.html" ], "#btn-indicador": ["#indicador", "spot2.html"], "#btn-chamas": ["#chamas", "spot3.html"], "#btn-botao": ["#botao", "spot4.html"]};*/
+	
+	
+	$("#btn-trempes").hover(function(e) {
+        $("#trempes, #trempes *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#trempes, #trempes *").css("display","none");
+		$(".main").css("display","block");
+	});
+	
+	$("#btn-indicador").hover(function(e) {
+        $("#indicador, #indicador *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#indicador, #indicador *").css("display","none");
+		$(".main").css("display","block");
+	});
+	
+	$("#btn-chamas").hover(function(e) {
+        $("#chamas, #chamas *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#chamas, #chamas *").css("display","none");
+		$(".main").css("display","block");
+	});
+	
+	$("#btn-botao").hover(function(e) {
+        $("#botao, #botao *, .botao2").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#botao, #botao *, .botao2").css("display","none");
+		$(".main").css("display","block");
+	});
+		
+	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<!--Hotspots-->
+            	<div class="hotspots">
+            		<img src="caracteristicas/page1/hotspot.png" width="30" height="31" id="btn-trempes" />
+            		
+            		<img src="caracteristicas/page1/hotspot.png" width="30" height="31" id="btn-indicador" />
+            		
+            		<img src="caracteristicas/page1/hotspot.png" width="30" height="31" id="btn-chamas" />
+            		
+            		<img src="caracteristicas/page1/hotspot.png" width="30" height="31" id="btn-botao" />
+            	</div>
+            	
+            	<!--estáticos-->
+            	<div class="main">
+            		<img src="caracteristicas/page1/cooktop-consul-facilite-cdo075.png" width="666" height="198" alt="Cooktop Consul Facilite CDO75" title="Cooktop Consul Facilite CDO75" class="cooktop-main" />
+            		
+            		<a href="caracteristicas2.html" id="call-to-action1"><img src="caracteristicas/page1/deixe-sua-cozinha-mais-completa.png" width="207" height="69" alt="Deixe sua cozinha mais completa" title="Deixe sua cozinha mais completa" /></a>
+            		
+            		<img src="caracteristicas/page1/mais-informacoes-sobre-instalacao-no-manual.png" width="235" height="10" alt="Mais informações" title="" class="informacoes" />
+            	</div>
+            	
+            	<!--Imgs Grandes-->
+            	<div class="sub">
+                
+                  <img src="caracteristicas/page1/trempes-individuais.png" width="672" height="273" alt="Trempes individuais" title="Trempes individuais" id="trempes" />
+                    
+                  <img src="caracteristicas/page1/indicador-de-tamanho-da-panela-ideal.png" width="586" height="469" alt="Indicador de tamanho da panela ideal" title="Indicador de tamanho da panela ideal" id="indicador" />
+                    
+                  <img src="caracteristicas/page1/chamas.png" width="528" height="398" alt="3 chamas semirrápidas e 1 rápida" title="3 chamas semirrápidas e 1 rápida" id="chamas" />
+                    
+                  <img src="caracteristicas/page1/botao-controle-facil.png" width="439" height="426" alt="Botão controle fácil" title="Botão controle fácil" id="botao" />
+                  
+                  <img src="caracteristicas/page1/acendimento-super-automatico.png" width="331" height="68" alt="acendimento super automatico" title="acendimento super automatico" class="acendimento" />
+                  
+                  <img src="caracteristicas/page1/botao-controle-facil2.png" width="145" height="145" alt="botao" title="" class="botao2" />
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

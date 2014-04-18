@@ -1,0 +1,148 @@
+@charset "utf-8";
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+@font-face {
+    font-family: 'GillSansStdLightRegular';
+    src: url('../fonts/gillsansstd-light-webfont.eot');
+    src: url('../fonts/gillsansstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/gillsansstd-light-webfont.woff') format('woff'),
+         url('../fonts/gillsansstd-light-webfont.ttf') format('truetype'),
+		 url('../fonts/gillsansstd-light-webfont.svg#GillSansStdLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GillSansMT';
+    src: url('../fonts/gil_____.eot');
+    src: url('../fonts/gil_____.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/gil_____.woff') format('woff'),
+         url('../fonts/gil_____.ttf') format('truetype'),
+		 url('../fonts/gil_____.svg#gil_____') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.font{font-family: 'GillSansStdLightRegular';}
+.font2{font-family: 'GillSansMT';}
+body {
+	background: url(../images/bg.jpg) no-repeat center top;
+}
+.container {
+	width: 966px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.right {
+	text-align: right;
+}
+h1, h2, h3 {
+	font-family: 'GillSansStdLightRegular';
+}
+h1 {
+	font-size: 33px;
+	color: #7c7c7c;
+	margin-bottom: 3px;
+}
+h2{
+	font-size: 20px;
+	color: #f6a0a5;
+}
+.titulo {
+	margin: 12px 20px 0 0;
+}
+.logo {
+	padding: 15px 0 0 17px;
+}
+.mright {
+	margin-right: 17px;
+}
+
+#conteudo {
+	background: #FFF;
+	padding: 20px 20px 10px 20px;
+	margin-top: 5px;
+}
+.conheca {
+	background: url(../images/bg-clique-conheca.jpg);
+	height: 84px;
+	width: 244px;
+}
+.conheca a , menu a{
+	color: #FFF;
+}
+
+.center {
+	text-align: center;
+}
+.ptop {
+	padding-top: 30px;
+}
+.size1 {
+	font-size: 13px;
+}
+.block {
+	display: block;
+}
+.menu {
+	background: url(../images/bg-menu.jpg);
+	height: 40px;
+	margin-bottom: 20px;
+}
+.menu li {
+	text-align: center;
+	font-size: 10px;
+	color: #FFF;
+	padding: 5px;
+	display: inline;
+	width: 84px;
+}
+.menu a {
+	color: #FFF;
+	font-family: 'GillSansMT';
+}
+.menu-divisao {
+	width: 85px;
+	float: left;
+	padding: 5px 0;
+	margin-top: 6px;
+}
+.mtop {
+	margin-top: 10px;
+}
+.relative{position:relative}
+.absolute{position:absolute}
+#footer {
+	margin-top: 20px;
+}
+.observacoes {
+	margin: 10px 0 0 0;
+}
+
+.observacoes p {
+	font-size: 12px;
+	color: #f49fa5;
+	text-align: center;
+	margin: 10px 112px 0 112px;
+	line-height: 16px;
+}
+.branco {
+	color: #FFFFFF !important;
+}
+.menu-hover {
+	background: #fbfdfe;
+}
+.menu-hover a {
+	color: #f59fa5;
+}
+.menu-hover a:hover {
+	text-decoration: none;
+}

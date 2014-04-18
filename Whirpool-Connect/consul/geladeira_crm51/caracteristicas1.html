@@ -1,0 +1,110 @@
+<style type="text/css">
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.connect-container .container_interna *{font-family:'ConsulCoHeadline_Std_Lt';}
+.connect-container .holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page1/bg-page1.jpg) no-repeat center 0; }
+.connect-container .content-center {margin: 0 auto; width: 956px; height: 520px;}
+.connect-container .content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.connect-container .absolute { position: absolute; left: 50%; }
+.connect-container .box { margin-left: -264px; top: 90px; width: 234px; }
+.connect-container .box h2 { background: url(caracteristicas/page1/geladeira-consul-bem-estar-crm51.png); height: 0px; padding-top: 98px; overflow: hidden; position: relative; }
+.connect-container .box h3 { background: url(caracteristicas/page1/bg-maca.png); height: 0px; padding-top: 202px; overflow: hidden; position: relative; }
+.connect-container #conheca { background: url(caracteristicas/page1/conheca-a-geladeira-por-dentro.png); height: 0px; width: 105px; padding-top: 106px; overflow: hidden; display: block; bottom: 26px; margin-left: -382px; }
+.connect-container #abrir { background: url(caracteristicas/page1/abrir-geladeira.png); height: 0px; width: 47px; padding-top: 47px; overflow: hidden; display: block; margin-left: 88px; top: 227px; z-index: 5; }
+.connect-container #abrir:hover{opacity:0.7;}
+.connect-container #branca , .connect-container #evox{ margin-left: 6px; top: 0px; }
+.connect-container #evox { opacity:0;}
+.connect-container #evox-button  { display: block; z-index: 3; margin-left: -127px; top: 371px; cursor:pointer; }
+.connect-container .cores .txt { font-size: 16px; font-family: 'ConsulCoHeadline_Std_Rg'; color: #6f2c90; margin-left: -233px; top: 400px; }
+.connect-container .cores .branco { background: url(caracteristicas/page1/branco-hover.png); height: 36px; width: 81px; display: block; margin-left: -233px; top: 416px; cursor: pointer; }
+.connect-container .cores .prata { background: url(caracteristicas/page1/evox-button.png); height: 36px; width: 118px; display: block; margin-left: -145px; top: 416px; cursor: pointer; }
+.connect-container #lightbox { background: url(caracteristicas/page1/bg-lightbox.png) repeat; height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; z-index: -1; opacity: 0; }
+.connect-container #lightbox .conteudo { margin-left: -371px; top: 37px; }
+.connect-container #lightbox .fechar { margin-left: 274px; top: 12px; }
+.connect-container .repeat{-webkit-animation-iteration-count:infinite;  -moz-animation-iteration-count:infinite;  -o-animation-iteration-count:infinite; animation-iteration-count:infinite;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s11{ -webkit-animation-delay:1.1s; -moz-animation-delay:1.1s; -o-animation-delay:1.1s; animation-delay:1.1s;}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+          <div class="div-content">
+            	
+            <div class="box absolute animated fadeInUp s05">
+              <h2>Geladeira Consul Bem Estar CRM51</h2>
+              <h3>Ser saudável nunca foi tão fácil</h3>
+            </div>
+                
+            <div class="cores animated fadeInUp s11">
+                <span class="txt absolute">Cores</span>
+                <span class="branco absolute"></span>
+                <span class="prata absolute"></span>
+            </div>
+            
+            <div id="evox" class="absolute animated">
+                <img src="caracteristicas/page1/geladeira-evox.png" width="212" height="520" alt="geladeira Evox" title="Evox" />
+                <a id="evox-button" class="absolute" title="Evox"><img src="caracteristicas/page1/evox.png" width="122" height="49" alt="evox" /></a>
+            </div>
+            
+            <a href="#" title="Branca" id="branca" class="absolute animated"><img src="caracteristicas/page1/geladeira-branca.png" width="212" height="520" alt="geladeira Branca" /></a>
+            
+            <a href="#" id="conheca" class="absolute animated fadeInUp s07" title="Conheça a Geladeira por dentro">Conheça a Geladeira por dentro</a>
+                
+            <a href="#" id="abrir" class="absolute animated fadeInUp s09" title="Conheça a Geladeira por dentro">Abrir</a>
+            
+        </div>
+        <div id="lightbox" class="animated">
+       	    <a href="#" class="fechar absolute"><img src="caracteristicas/page1/fechar.png" width="92" height="25" alt="fechar" /></a>
+            <img class="absolute conteudo" src="caracteristicas/page1/acabamento-evox-evolucao-inox.jpg" width="737" height="464" alt="Acabamento em Evox, a evolução do Inox" title="Acabamento em Evox, a evolução do Inox" />
+        </div>    	
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	$(".caracteristica-seta-esquerda, .caracteristica-seta-direita").stop(true, true).fadeOut(0);
+	
+	connect_callToAction( $(".connect-container #conheca"), "fadeInUp", "s07", "caracteristicas2.html", true );
+ 
+	 function connect_callToAction( button, animation, delay, page, boolean ){
+	  var connect_pageStart = setInterval( function(e){
+	   button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+	   .hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 ); } );
+	   Connect.addCallToAction( button , page, boolean );
+	   clearInterval( connect_pageStart );
+	  }, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	 }
+	 
+	
+	$(".cores .prata").hover(function(e) {
+        $(".cores .branco").css("background","url(caracteristicas/page1/branco-button.png)");
+		$(this).css("background","url(caracteristicas/page1/evox-hover.png)");
+		$("#branca").removeClass("fadeIn").addClass("fadeOut").css("z-index","1");
+		$("#evox").removeClass("fadeOut").addClass("fadeIn").css("z-index","2");
+    });
+	
+	$(".cores .branco").hover(function(e) {
+        $(".cores .prata").css("background","url(caracteristicas/page1/evox-button.png)");
+		$(this).css("background","url(caracteristicas/page1/branco-hover.png)");
+		$("#branca").removeClass("fadeOut").addClass("fadeIn").css("z-index","2");
+		$("#evox").removeClass("fadeIn").addClass("fadeOut").css("z-index","1");
+    });
+	
+	$("#evox-button, #evox-button img").click(function(e) {
+        $("#lightbox").css("z-index","5").removeClass("fadeOut").addClass("fadeIn");
+    });
+	
+	$("#lightbox .fechar, #lightbox").click(function(e) {
+        $("#lightbox").removeClass("fadeIn").addClass("fadeOut");
+		$("#lightbox").delay(1000).css("z-index","-1");
+    });
+	
+	Connect.addCallToAction( "#conheca, #abrir" , "caracteristicas2.html", true );
+			
+});
+</script>

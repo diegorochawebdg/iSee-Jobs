@@ -1,0 +1,243 @@
+/* TRANSITIONS PADRÃO
+
+	transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+
+*/
+.btn_menu, #menu{
+	transition: all ease-out 0.4s;
+    -o-transition: all ease-out 0.4s;
+    -moz-transition: all ease-out 0.4s;
+    -webkit-transition: all ease-out 0.4s;
+}
+.transition{
+	opacity:1 !important;
+	transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+}
+
+/*MENU PRINCIPAL*/
+#menu.transition{
+	bottom:0;
+	height:369px;
+	display:block
+}
+
+.box-menu.transition{
+	bottom:20px;
+}
+
+/*SLIDE CONCEITO*/
+#slide-conceito .bonecos.transition{
+	left:33px;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+}
+#slide-conceito h2.transition{
+	top:110px;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+#slide-conceito h3.transition{
+	transition-delay: 1.5s;
+	-moz-transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
+	-o-transition-delay: 1.5s;
+}
+/*DADOS FARMACOS 1*/
+#slide-dados-farmacos .img-senhora.transition, #slide-dados-farmacos2 .img-senhora.transition{
+	left:20px;
+}
+
+#slide-dados-farmacos .dados-farmacos-1 .boneco.transition, #slide-dados-farmacos2 .dados-farmacos-1 .boneco.transition{
+	right:24px;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+}
+/*DADOS FÁRMACOS 2*/
+#slide-dados-farmacos .dados-farmacos-2 .boneco.transition, #slide-dados-farmacos2 .dados-farmacos-2 .boneco.transition{
+	top: 70px;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+}
+
+/*INTERAÇÕES MEDICAMENTOSAS*/
+.slide-interacoes-medicamentosas .slide1 .tabela .faixa.transition{
+	opacity:1;
+	left:0px;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+}
+.slide-interacoes-medicamentosas .slide1 .boneco.transition{
+	right:60px;
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+.slide-interacoes-medicamentosas .slide1 .txt.transition{
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+
+/*INTERAÇÕES MEDICAMENTOSAS 2*/
+.slide-interacoes-medicamentosas2 .slide2 .senhor.transition{
+	left:35px;
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+
+
+/*PREÇOS - OUTRAS MARCAS*/
+#slide-preco-outras-marcas .detalhes.transition{
+	right:32px;
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+#slide-preco-outras-marcas .grafico-1 .tarja-laranja.transition{
+	left:104px;
+	transition-delay: 0.7s;
+	-moz-transition-delay: 0.7s;
+	-webkit-transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+}
+/*PREÇOS - GENÉRICOS*/
+#slide-preco-genericos .detalhes.transition{
+	right:33px;
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+#slide-preco-genericos .tarja-laranja.transition{
+	left:97px;
+	transition-delay: 0.7s;
+	-moz-transition-delay: 0.7s;
+	-webkit-transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+}
+/*INTERAÇÕES MEDICAMENTOSAS 2*/
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-1.transition{
+	transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-webkit-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+}
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-2.transition{
+	transition-delay: 0.9s;
+	-moz-transition-delay: 0.9s;
+	-webkit-transition-delay: 0.9s;
+	-o-transition-delay: 0.9s;
+}
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-3.transition{
+	transition-delay: 1.2s;
+	-moz-transition-delay: 1.2s;
+	-webkit-transition-delay: 1.2s;
+	-o-transition-delay: 1.2s;
+}
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-4.transition{
+	transition-delay: 1.5s;
+	-moz-transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
+	-o-transition-delay: 1.5s;
+}
+.slide-interacoes-medicamentosas2 .slide2 .boxes .inibidores-5.transition{
+	transition-delay: 1.8s;
+	-moz-transition-delay: 1.8s;
+	-webkit-transition-delay: 1.8s;
+	-o-transition-delay: 1.8s;
+}
+
+/*ANÚNCIOS*/
+#slide-anuncios .content .titulo.transition{
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+#slide-anuncios .content .txt.transition{opacity:1; transition-delay: 0.6s;	-moz-transition-delay: 0.6s; -webkit-transition-delay: 0.6s; -o-transition-delay: 0.6s; }
+#slide-anuncios .content .embalagem-remedio.transition{
+	left:20px;
+	transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-webkit-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+}
+#slide-anuncios .content .bonecos.transition{
+	left:544px;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+#slide-anuncios .content .seta1.transition{
+	top:242px;
+	transition-delay: 1.3s;
+	-moz-transition-delay: 1.3s;
+	-webkit-transition-delay: 1.3s;
+	-o-transition-delay: 1.3s;
+}
+
+/*NÃO TRATA*/
+.slide-nao-trata .detalhes.transition{
+	right:109px;
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+#slide-nao-trata-3 .detalhes.transition {
+	right:82px;
+}
+#slide-nao-trata-4 .detalhes.transition {
+	right:118px;
+}
+#slide-nao-trata-5 .detalhes.transition{
+	right:32px;
+}
+#slide-nao-trata-6 .detalhes.transition{
+	right:130px;
+}
+#slide-nao-sabe .box1.transition{
+	transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s
+}
+#slide-nao-sabe .box2.transition{transition-delay: 0.7s; -moz-transition-delay: 0.7s; -webkit-transition-delay: 0.7s; -o-transition-delay: 0.7s}
+
+/*SERTRALINA*/
+#sertralina1 .txt.transition{top:175px; transition-delay: 0.5s; -moz-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; -o-transition-delay: 0.5s}
+#sertralina1 .quadro.transition {top: 307px; transition-delay: 0.8s; -moz-transition-delay: 0.8s; -webkit-transition-delay: 0.8s; -o-transition-delay: 0.8s }
+#sertralina1 .faixa-procimax.transition { left: 110px; transition-delay: 1.2s; -moz-transition-delay: 1.2s; -webkit-transition-delay: 1.2s; -o-transition-delay: 1.2s }
+#sertralina1.transition .boneco.transition { left: 630px; top: 333px; transition-delay: 1.5s; -moz-transition-delay: 1.5s; -webkit-transition-delay: 1.5s; -o-transition-delay: 1.5s }
+
+/*SERTRALINA2*/
+#sertralina2 .txt.transition{top:212px; left:102px; transition-delay: 0.5s; -moz-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; -o-transition-delay: 0.5s}
+#sertralina2 .quadro.transition { left: 110px; top: 264px; transition-delay: 0.8s; -moz-transition-delay: 0.8s; -webkit-transition-delay: 0.8s; -o-transition-delay: 0.8s }
+#sertralina2 .faixa-procimax.transition { left: 110px; top: 332px; transition-delay: 1.2s; -moz-transition-delay: 1.2s; -webkit-transition-delay: 1.2s; -o-transition-delay: 1.2s }
+#sertralina2 .boneco.transition { left: 823px; top: 186px; transition-delay: 1.5s; -moz-transition-delay: 1.5s; -webkit-transition-delay: 1.5s; -o-transition-delay: 1.5s }
+
+/*SERTRALINA3*/
+#sertralina3 .txt.transition{top:165px; transition-delay: 0.5s; -moz-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; -o-transition-delay: 0.5s}
+#sertralina3 .quadro.transition {top: 223px; transition-delay: 0.8s; -moz-transition-delay: 0.8s; -webkit-transition-delay: 0.8s; -o-transition-delay: 0.8s}

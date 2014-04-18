@@ -1,0 +1,106 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#020416 url(caracteristicas/background.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+#background-circulos{ background:url(caracteristicas/page4/background-circulos.png) no-repeat; width:640px; height:520px; margin-left:-640px; top:0;}
+
+.tv-frontal{ margin-left:-135px; top:0;}
+.titulo{ margin-left:-345px; top:50px;}
+.subtitulo{ margin-left:-390px; top:195px;}
+.paragrafo{ margin-left:-390px; top:230px;}
+.skype{ margin-left:-318px; top:345px;}
+.aproveite{ margin-left:-250px; top:440px;}
+.zoom{ margin-left:152px; top:318px;}
+.camera{ margin-left:220px; top:390px;}
+.texto-oculos{  margin-left:-90px; bottom:20px;}
+.oculos{ margin-left:-82px; bottom:32px;}
+
+#call-to-action4{ margin-left:120px; bottom:20px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#background-circulos"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.2});
+	
+	TweenMax.from($(".tv-frontal"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+		
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".subtitulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	
+	TweenMax.from($(".skype"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".aproveite"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	TweenMax.from($(".zoom"), .5, {css:{width:0, height:0, alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".camera"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".texto-oculos"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".oculos"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action4").hover(function(e) {
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action4" , "caracteristicas5.html", true );
+	}});
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="background-circulos" class="absoluto"></div>
+                
+                <img src="caracteristicas/page4/tv-frontal.png" width="526px" height="384px" alt="2D para 3D" title="2D para 3D" class="absoluto tv-frontal" />
+                
+                <img src="caracteristicas/page4/title-2d3d.png" width="161px" height="107px" alt="2D para 3D" title="2D para 3D" class="absoluto titulo" />
+                <img src="caracteristicas/page4/subtitle-conversao-2d-para-3d.png" width="232px" height="19px" alt="Conversão 2D para 3D" title="Conversão 2D para 3D" class="absoluto subtitulo" />
+                <img src="caracteristicas/page4/paragrafo-conversao.png" width="244px" height="70px" alt="Transforme qualquer imagem 2D em 3D. Tecnologia Easy 3D passivo, com 4 óculos leves e confortáveis que não usam bateria." title="Transforme qualquer imagem 2D em 3D. Tecnologia Easy 3D passivo, com 4 óculos leves e confortáveis que não usam bateria." class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page4/skype.png" width="166px" height="80px" alt="Skype" title="Skype" class="absoluto skype" />
+                <img src="caracteristicas/page4/aproveite-o-skype-integrado-na-sua-tv.png" width="134px" height="36px" alt="Aproveite o Skype&reg; integrado na sua TV." title="Aproveite o Skype&reg; integrado na sua TV." class="absoluto aproveite" />
+                
+                <img src="caracteristicas/page4/zoom-camera.png" width="234px" height="116px" alt="2D para 3D" title="2D para 3D" class="absoluto zoom" />
+                <img src="caracteristicas/page4/camera-integrada.png" width="55px" height="19px" alt="Câmera integrada" title="Câmera integrada" class="absoluto camera" />
+                <img src="caracteristicas/page4/4-oculos.png" width="77px" height="77px" alt="4 óculos inclusos" title="4 óculos inclusos" class="absoluto texto-oculos" />
+                <img src="caracteristicas/page4/oculos-3d.png" width="201px" height="93px" alt="4 óculos inclusos" title="4 óculos inclusos" class="absoluto oculos" />
+                
+                <a href="#"><img src="caracteristicas/page4/btn-o-maximo-em-tecnologia.png" width="256px" height="66px" alt="O máximo em tecnologia" title="O máximo em tecnologia" class="absoluto" id="call-to-action4" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

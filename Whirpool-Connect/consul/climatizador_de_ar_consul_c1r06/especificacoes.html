@@ -1,0 +1,85 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+.connect-container .img-dimensoes{ margin-left:28px; top:100px;}
+.connect-container .img-premio{ margin-left:-60px; top:325px;}
+.connect-container .img-voltagem{ margin-left:-326px; top:314px;}
+
+.connect-container h2.titulos{ top:56px; font-family: "ConsulCoHeadline_Std_Rg"; font-size:24px; color:#746c69;}
+.connect-container ul.lista{ margin-left:-320px; top:135px; width:400px;}
+.connect-container ul.lista li{ font-family: "ConsulCoHeadline_Std_Lt"; font-size:17px; color:#746c69; list-style:inside; margin-bottom:15px;}
+
+.connect-container .titulo1{ margin-left:-375px;}
+.connect-container .titulo2{ margin-left:68px;}
+
+.connect-container #btn-saiba{ margin-left:-320px; top:254px;}
+.connect-container #btn-saiba:hover{ opacity:.5;}
+
+/* Shadowbox */
+#sb-player.html{ overflow:auto;}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+    
+	Shadowbox.init();
+	$(".connect-container #btn-saiba").click( function( event ) {
+		Shadowbox.open({content:'saiba-mais.html', player:"iframe",	width:800, height:550});
+		Connect.trackPageView(  $NOME_FOLDER + Connect.currentPage + "/saiba-mais.html" );
+	});
+	
+});
+
+</script>
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            
+            	<img src="cliente/dimensoes-e-peso.png" width="330" height="391" alt="" title="" class="absoluto img-dimensoes" />
+                <img src="cliente/premio.png" width="79" height="163" alt="" title="" class="absoluto img-premio" />
+                <img src="cliente/voltagem.png" width="87" height="87" alt="" title="" class="absoluto img-voltagem" />
+                            	
+            	<h2 class="absoluto titulos titulo1">
+                	Conteúdo da embalagem
+                </h2>
+                <h2 class="absoluto titulos titulo2">
+                	Dimensões e peso
+                </h2>
+                
+                <ul class="absoluto lista">
+                	<li>Climatizador de ar C1R06</li>
+                    <li>Controle remoto</li>
+                    <li>Manual de instruções</li>
+                </ul>
+                
+                <a href="#" id="btn-saiba" class="absoluto"><img src="cliente/btn-saiba-mais.png" width="171" height="47" alt="Saiba mais" title="Saiba mais" /></a>
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

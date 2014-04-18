@@ -1,0 +1,135 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .anderson{ margin-left:-550px; bottom:0;}
+
+.connect-container .features{ background:url(caracteristicas/page2/bg-transparente.png); width:172px; height:350px;}
+.connect-container .features img{ margin-left:-14px; margin-top:-96px;}
+.connect-container .features h2{ font-family: "Museo-700"; font-size:16px; color:#FFF; text-transform:uppercase; text-align:center; margin:-10px 0 10px 0;}
+.connect-container .features p{ font-family: "Museo-300"; font-size:16px; color:#a7a6a6; line-height:18px; position:absolute; left:5px; top:155px;}
+
+.connect-container #feature1{ margin-left:-140px; top:105px;}
+.connect-container #feature2{ margin-left:40px; top:105px;}
+.connect-container #feature3{ margin-left:220px; top:105px;}
+
+.connect-container #call-to-action2{ margin-left:136px; bottom:10px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action2"), "fadeInRight", "s09", "caracteristicas3.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="feature1" class="absoluto features animated fadeInLeft s06">
+                	<img src="caracteristicas/page2/feature1.png" width="201px" height="201px" alt="" title="" />
+                    <h2>
+                    	Sistema Aquatec:<br />
+                        com ou sem<br />
+                        espuma
+                    </h2>
+                    <p>
+                    	Conforto durante o<br />
+                        barbear a seco ou<br />
+                        com a pele úmida.<br />
+                        Pode ser usado com<br />
+                        espuma ou gel de<br />
+                        barbear. Proporciona<br />
+                        suavidade até mesmo<br />
+                        durante o banho.
+                    </p>
+                </div>
+                
+                <div id="feature2" class="absoluto features animated fadeInLeft s07">
+                	<img src="caracteristicas/page2/feature2.png" width="201px" height="201px" alt="" title="" />
+                    <h2>
+                    	Pele mais<br />
+                        protegida
+                    </h2>
+                    <p>
+                    	As lâminas<br />
+                        arredondadas de baixa<br />
+                        fricção proporcionam<br />
+                        mais comodidade ao<br />
+                        barbear, pois<br />
+                        ajustam-se<br />
+                        automaticamente às<br />
+                        curvas do rosto com<br />
+                        menos atrito, evitando<br />
+                        irritações à pele.
+                    </p>
+                </div>
+                
+                <div id="feature3" class="absoluto features animated fadeInLeft s08">
+                	<img src="caracteristicas/page2/feature3.png" width="201px" height="201px" alt="" title="" />
+                    <h2>
+                    	Sistema levanta<br />
+                        e corta
+                    </h2>
+                    <p>
+                    	Barbear mais rente.<br />
+                        Sistema com duas<br />
+                        lâminas integradas ao<br />
+                        barbeador elétrico.<br />
+                        Levanta os pelos para<br />
+                        cortá-los de maneira<br />
+                        rente e confortável.
+                    </p>
+                </div>
+            	
+                <img src="caracteristicas/page2/anderson.png" width="439px" height="389px" alt="" title="" class="absoluto anderson animated fadeInLeft s05" />
+               
+                <a href="#" id="call-to-action2" class="absoluto animated fadeInRight s09"><img src="caracteristicas/page2/btn-dual-precision.png" width="254px" height="45px" alt="Dual precision" title="Dual precision" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

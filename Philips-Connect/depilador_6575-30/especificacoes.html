@@ -1,0 +1,60 @@
+<style type="text/css">
+
+.container_interna {
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background-image: url(caracteristicas/bg-body.jpg);
+	background-repeat: repeat;
+}	
+.holder_interna { width: 100%; height: 520px; }
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.bg-branco{ background: #fff; height: 520px; }
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.conteudo { top: 66px; margin-left: -372px; }
+
+.txt-conteudo-embalagem{ top: 43px; margin-left: -370px;}
+.list-conteudo-embalagem{ top: 183px; margin-left: -370px; }
+.depilador{ top: 22px; margin-left: -91px; z-index: 0 !important; }
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-branco"></div>    
+        
+        <div class="content-center">
+        	<div class="div-content">
+          
+          	  	<img src="cliente/txt-conteudo-embalagem.png" width="291" height="88" class="txt-conteudo-embalagem" alt="" title="" />
+                
+                <img src="cliente/lista-conteudo-embalagem.png" width="204" height="197" class="list-conteudo-embalagem" alt="" title="" />
+                
+                <img src="cliente/depilador-agua.jpg" width="537"h height="491" class="depilador" alt="" title="" />
+               
+          </div>
+        </div>
+        
+    </div>
+</div>

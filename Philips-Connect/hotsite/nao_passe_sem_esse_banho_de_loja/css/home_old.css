@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#content{background:url(../images/bg-home.jpg) no-repeat center top;}
+.info { margin-left: -461px; left: 50%; top: 310px; width:550px; }
+.info img , .info .info-txt{ float: left; }
+.info img { margin-right: 5px; }
+.info .info-txt  { padding-top: 15px; }
+.info .info-txt p { font-size: 18px; color: #fefefe; width: 370px; }
+.info .info-txt p strong { font-weight: bold; }
+.participar { margin-left: -445px; left: 50%; top: 485px; width: 380px; }
+.participar * { color: #FFF; text-transform: uppercase; }
+.participar h2 { font: 48px PeachMilk; margin-bottom: 5px; }
+.participar p { margin-bottom: 5px; font-size: 14px; }
+.participar p.guardar { color: #f8bbbc; margin-bottom: 15px; }
+.participar #cadastrar { background: url(../images/cadastrar-nota.png); width: 253px; padding-top: 50px; }

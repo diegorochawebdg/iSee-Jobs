@@ -1,0 +1,1 @@
+<div id="Connect-Insert" data-connect="http://www.iseeconnect.com.br/clientes/tramontina/panelas_solar/index.html"><script type="text/javascript" src="http://www.iseeconnect.com.br/v.3.0/connect-insert.js"></script></div>

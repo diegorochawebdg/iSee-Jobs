@@ -1,0 +1,121 @@
+<style type="text/css">
+body{margin:0; padding:0;}
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page1/bg-pagina1.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{ display: block; position: absolute; left: 50%; }
+.cooktop-main { top: 47px; margin-left: -356px; }
+#call-to-action1 { margin-left: 194px; bottom: 0px; }
+.hotspots img{z-index:3; cursor:pointer;}
+.sub img { display: none; z-index:5; pointer-events:none; }
+#btn-um, #btn-dois, #btn-tres{top:40px;}
+#btn-um{margin-left:-60px}
+#btn-dois{margin-left:-269px}
+#btn-tres{margin-left:-166px}
+#btn-vidro { margin-left: -39px; top: 330px; }
+.menu-controle { top: 51px; margin-left: -314px; }
+.txt { margin-left: 70px; top: 38px; }
+#call-to-action1 { top: 284px; margin-left: -216px; position:absolute; left:50%; }
+#call-to-action2 { margin-left: 195px; bottom: 0px; position:absolute; left:50%;  }
+#call-to-action1 img, #call-to-action2 img{position:static;}
+#forno { top: 66px; margin-left: -460px; }
+#timer { top: 59px; margin-left: -393px; }
+#funcao { margin-left: -401px; top: 124px; }
+#vidro { top: 301px; margin-left: -8px; }
+</style>
+
+<script type="text/javascript" src="http://www.iseeconnect.com/src/js/jquery/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	/*var _arr = {"#btn-um": [  "#forno", "spot1.html" ], "#btn-dois": ["#funcao", "spot2.html"], "#btn-tres": ["#timer", "spot3.html"], "#btn-vidro": ["#vidro", "spot4.html"]};*/
+	
+	
+	$("#btn-um").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#forno, #forno *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#forno, #forno *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-dois").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#funcao, #funcao *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#funcao, #funcao *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-tres").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#timer, #timer *").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#timer, #timer *").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+	
+	$("#btn-vidro").hover(function(e) {
+		$(this).css("z-index","10");
+        $("#vidro, #vidro *, .botao2").css("display","block");
+		$(".main").css("display","none");
+    }, function(){
+		$("#vidro, #vidro *, .botao2").css("display","none");
+		$(".main").css("display","block");
+		$(this).css("z-index","");
+	});
+		
+	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<!--Hotspots-->
+            	<div class="hotspots">
+            		<img src="caracteristicas/page1/um.png" width="28" height="28" alt="Um" title="" id="btn-um" />
+            		<img src="caracteristicas/page1/dois.png" width="28" height="28" alt="Dois" title="" id="btn-dois" />
+            		<img src="caracteristicas/page1/tres.png" width="28" height="28" alt="Três" title="" id="btn-tres" />
+            		<img src="caracteristicas/page1/hotspot.png" width="30" height="30" alt="Vidro Duplo" title="Vidro Duplo" id="btn-vidro" />
+            	</div>
+            	
+            	<!--estáticos-->
+            	<div class="main"> 
+                	
+                    <a href="caracteristicas2.html" id="call-to-action1"><img src="caracteristicas/page1/abrir.png" width="116" height="47" alt="Abrir" title="Abrir" /></a>
+            		
+            		<img src="caracteristicas/page1/menu-controle-facil.png" width="328" height="192" alt="Menu controle fácil - é fácil cozinhar assim" title="Menu controle fácil - é fácil cozinhar assim" class="menu-controle" />
+            		
+            		<img src="caracteristicas/page1/txt-vendedor.png" width="330" height="233" alt="Texto Vendedor" title="Forno de embutir Consul Facilite CO060" class="txt" />
+            		
+            		<a href="caracteristicas3.html" id="call-to-action2"><img src="caracteristicas/page1/deixe-sua-cozinha-mais-completa.png" width="207" height="69" alt="Deixe sua cozinha mais completa" title="Deixe sua cozinha mais completa" /></a>
+            		
+            	</div>
+            	
+            	<!--Imgs Grandes-->
+            	<div class="sub">
+                	
+                	<img src="caracteristicas/page1/forno.png" width="801" height="433" alt="Selecione a receita no botão de temperatura." title="Selecione a receita no botão de temperatura." id="forno" />
+                	
+                	<img src="caracteristicas/page1/funcao.png" width="537" height="396" alt="Agora, selecione a função ideal para o tipo de receita escolhida no passo 1." title="Agora, selecione a função ideal para o tipo de receita escolhida no passo 1." id="funcao" />
+                	
+                	<img src="caracteristicas/page1/timer.png" width="510" height="459" alt="Programe o Timer para o tempo de preparo." title="Programe o Timer para o tempo de preparo." id="timer" />
+                	
+                	<img src="caracteristicas/page1/vidro-duplo.png" width="264" height="132" alt="Vidro Duplo" title="Vidro Duplo" id="vidro" />
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

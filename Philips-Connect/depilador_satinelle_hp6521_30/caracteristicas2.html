@@ -1,0 +1,94 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#7b1e57; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+#faixa{ background:#83c2c5; width:100%; min-width:820px; height:178px; margin-left:-380px; top:275px;}
+.laminas{ left:-22px; top:0;}
+
+.depilador{ margin-left:90px; top:98px;}
+.selo{ margin-left:-380px; top:70px;}
+.titulo{ margin-left:-210px; top:70px;}
+.paragrafo{ margin-left:-210px; top:115px;}
+.cuidado{ margin-left:-140px; top:310px;}
+.discos{ margin-left:-140px; top:382px;}
+
+#call-to-action2{ margin-left:120px; bottom:40px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#faixa"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	
+	TweenMax.from($(".depilador"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".selo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".cuidado"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".discos"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+
+	//call to action
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.2, onComplete: function() {
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action2").hover(function(e) {
+				TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );	
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="faixa" class="absoluto">
+                	<img src="caracteristicas/page2/laminas.png" width="234px" height="200px" alt="Depilador Philips Satinelle HP6521/30" title="Depilador Philips Satinelle HP6521/30" class="absoluto laminas" />
+                </div>           
+                
+                <img src="caracteristicas/page2/depilador.png" width="365px" height="331px" alt="Depilador Philips Satinelle HP6521/30" title="Depilador Philips Satinelle HP6521/30" class="absoluto depilador" />
+                
+                <img src="caracteristicas/page2/selo-skincare.png" width="139px" height="139px" alt="Sistema Skincare evita puxões na pele!" title="Sistema Skincare evita puxões na pele!" class="absoluto selo" />
+                
+                <img src="caracteristicas/page2/title-uso-seco-e-no-banho.png" width="332px" height="22px" alt="Uso seco e no banho" title="Uso seco e no banho" class="absoluto titulo" />
+                <img src="caracteristicas/page2/paragrafo.png" width="319px" height="92px" alt="Na hora do banho a pele está mais relaxada, portanto, a depilação nesse momento já se torna mais confortável. O Depilador Philips Satinelle HP6521 pode ser utilizado durante o banho ou a seco, da maneira que você preferir." title="Na hora do banho a pele está mais relaxada, portanto, a depilação nesse momento já se torna mais confortável. O Depilador Philips Satinelle HP6521 pode ser utilizado durante o banho ou a seco, da maneira que você preferir." class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page2/mais-cuidado-com-a-sua-pele.png" width="180px" height="45px" alt="Mais cuidado com a sua pele" title="Mais cuidado com a sua pele" class="absoluto cuidado" />
+                <img src="caracteristicas/page2/os-discos-hipoalergicos-com-ions-de-prata-removem-os-pelos-sem-puxar-a-pele.png" width="290px" height="36px" alt="Os discos hipoalergênicos com íons de prata removem os pelos sem puxar a pele." title="Os discos hipoalergênicos com íons de prata removem os pelos sem puxar a pele." class="absoluto discos" />
+                
+                <a href="#"><img src="caracteristicas/page2/btn-conforto-e-exclusividade.png" width="261px" height="45px" alt="Conforto e exclusividade" title="Conforto e exclusividade" class="absoluto" id="call-to-action2" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

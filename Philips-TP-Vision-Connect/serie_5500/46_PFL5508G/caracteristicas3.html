@@ -1,0 +1,93 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#020416 url(caracteristicas/background.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+.titulo{ margin-left:-178px; top:30px;}
+.tela{ margin-left:-124px; top:225px;}
+.tela-j1{ margin-left:-380px; top:50px;}
+.tela-j2{ margin-left:-45px; top:70px;}
+.logo{ margin-left:-42px; top:100px;}
+.oculos-esq{ margin-left:-380px; top:290px;}
+.oculos-dir{ margin-left:160px; top:290px;}
+.selo{ margin-left:-380px; bottom:10px;}
+.paragrafo{ margin-left:-220px; bottom:40px;}
+
+
+#call-to-action3{ margin-left:120px; bottom:20px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".tela"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".tela-j1"), .5, {css:{top: "+=800px", left: "+=400px" , width:0, height:0, alpha: 0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".tela-j2"), .5, {css:{top: "+=300px", left: "+=50px" , width:0, height:0, alpha: 0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".logo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".oculos-esq"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".oculos-dir"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".selo"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action3").hover(function(e) {
+				TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );	
+	}});
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/title-mais-interacao-no-seu-jogo.png" width="355px" height="27px" alt="Mais interação no seu jogo" title="Mais interação no seu jogo" class="absoluto titulo" />
+                <img src="caracteristicas/page3/tela.png" width="248px" height="158px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto tela" />
+                <img src="caracteristicas/page3/tela-jogador1.png" width="431px" height="245px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto tela-j1" />
+                <img src="caracteristicas/page3/tela-jogador2.png" width="432px" height="312px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto tela-j2" />
+                <img src="caracteristicas/page3/logo-dual-view.png" width="84px" height="51px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto logo" />
+                <img src="caracteristicas/page3/oculos-esq.png" width="217px" height="64px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto oculos-esq" />
+                <img src="caracteristicas/page3/oculos-dir.png" width="216px" height="64px" alt="Dual View Gaming" title="Dual View Gaming" class="absoluto oculos-dir" />
+                <img src="caracteristicas/page3/acompanha-2-oculos-dual-view-gaming.png" width="140px" height="140px" alt="Acompanha 2 óculos Dual View Gaming" title="Acompanha 2 óculos Dual View Gaming" class="absoluto selo" />
+                <img src="caracteristicas/page3/paragrafo.png" width="312px" height="68px" alt="Agora jogar ficou ainda mais divertido! A tecnologia Dual View Gaming permite que cada participante veja sua tela cheia, sem precisar dividi-la com o adversário." title="Agora jogar ficou ainda mais divertido! A tecnologia Dual View Gaming permite que cada participante veja sua tela cheia, sem precisar dividi-la com o adversário." class="absoluto paragrafo" />
+                
+                <a href="#"><img src="caracteristicas/page3/btn-o-maximo-em-tecnologia.png" width="260px" height="66px" alt="O máximo em tecnologia" title="O máximo em tecnologia" class="absoluto" id="call-to-action3" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

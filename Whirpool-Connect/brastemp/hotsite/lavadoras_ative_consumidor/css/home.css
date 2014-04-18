@@ -1,0 +1,18 @@
+@charset "UTF-8";
+#content { background: url(../images/home/bg-home.jpg) center top; }
+.title h1 { background: url(../images/home/novas-lavadoras-ative.png); width: 475px; padding-top: 41px; margin-left: -226px; top: 30px; }
+.title h2 { font: 20px FoundryBold; color: #510b37; text-transform: uppercase; margin-left: -228px; top: 103px; }
+.lavadoras{position: relative; z-index: 100;}
+.lavadoras .bwg11-img { margin-left: -392px; top: 158px; }
+.lavadoras .bwu11-img { margin-left: -124px; top: 150px; z-index: 2; }
+.lavadoras .bwp11-img { margin-left: 123px; top: 143px; }
+.box { background: url(../images/home/bg-box.png) no-repeat; text-align: center; width: 722px; padding: 12px 0 0 38px; height: 76px; margin-left: -384px; top: 528px; z-index: 101; }
+.box h3 { font: 30px FoundryLight; color: #fff; width: 680px; }
+.bwg11-map{width: 269px; height: 378px; top: 150px; margin-left: -390px; z-index:50; cursor:pointer;}
+.bwu11-map{width: 252px; height: 378px; top: 150px; margin-left: -123px; z-index:50; cursor:pointer;}
+.bwp11-map{width: 252px; height: 382px; top: 146px; margin-left: 130px; z-index:50; cursor:pointer;}
+
+/*Resize*/
+.box.resize{-moz-transform: scale(0.8); -ms-transform: scale(0.8); -webkit-transform: scale(0.8); -o-transform: scale(0.8); top:440px !important;}
+.lavadoras.resize{-moz-transform: scale(0.8); -ms-transform: scale(0.8); -webkit-transform: scale(0.8); -o-transform: scale(0.8); padding-top:195px;}
+/*End of Resize*/

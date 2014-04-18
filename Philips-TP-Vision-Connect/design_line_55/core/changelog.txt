@@ -1,0 +1,24 @@
+########################################
+########################################
+
+
+## Titulo: iSee Connect v.3.0
+## Versão: 3.0
+## iSee Interactive Group
+## Todos os direitos reservados
+
+
+## Contole de versão para Connect 3.0
+
+
+## Versão: 3.0
+## Data: 02/10/2013
+- Criado: Framework inicial.
+- Criado: ScrollPage.
+- Criado: iFrame Hack.
+- Criado: Connect Insert.
+- Criado: Universal Analytics.
+- Criado: Youtube player.
+
+########################################
+########################################

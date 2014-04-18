@@ -1,0 +1,140 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page2/bg.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.absolute{position:absolute; left:50%}
+.item1, .item2, .item3, .item4, .item5 { background: url(caracteristicas/page2/hostpots.png); height: 40px; width: 40px; position: absolute; left: 50%; }
+.hotspots a:hover { cursor: pointer; }
+.hotspots .item1 { margin-left: -103px; top: 236px; }
+.hotspots .item2 { margin-left: -146px; top: 362px; }
+.hotspots .item3 { margin-left: 32px; top: 430px; }
+.hotspots .item4 { margin-left: 56px; top: 322px; }
+.hotspots .item5 { margin-left: 9px; top: 83px; }
+.hotspots .obra-arte { background: url(caracteristicas/page2/uma-obra-de-arte-na-sua-cozinha.png); text-indent: -9999px; height: 150px; width: 151px; margin-left: 208px; top: 62px; display: block; }
+.hotspots .seguranca { background: url(caracteristicas/page2/seguranca.png); text-indent: -9999px; height: 102px; width: 102px; margin-left: 222px; top: 289px; display: block; }
+.conteudos div { background: #A91F2A; padding: 15px; position: absolute; left: 50%; pointer-events:none; }
+.conteudos * {font-family: 'Humanist521BT-Roman'; }
+.conteudos h3{ font-size: 18px; color: #FFF; margin-bottom: 10px; }
+.conteudos p{font-size:16px; color:#e7cecf;}
+.conteudos .laminas { margin-left: -361px; top: 164px; display:none;}
+.conteudos .painel { margin-left: -386px; top: 273px; display:none;}
+.conteudos .painel div { position: relative; left: 0px; }
+.conteudos .painel div img { left: -15px; top: -125px; position: absolute; }
+.conteudos .base { margin-left: 56px; top: 356px; display:none;}
+.conteudos .fluxo-ar { margin-left: 78px; top: 250px; display:none;}
+.conteudos .jarra { margin-left: 31px; top: 107px;display:none; }
+.conteudos .obra-arte { margin-left: 74px; top: 170px; display:none;}
+.conteudos .seguranca { margin-left: -23px; top: 358px; display:none;}
+.call-to-action2 { background: url(caracteristicas/page2/5-velocidades.png); height: 26px; width: 219px; margin-left: 167px; bottom: 20px; text-indent: -9999px; }
+.connect-container .s8{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<div class="hotspots">
+                	<a class="item1"></a>
+                    <a class="item2"></a>
+                    <a class="item3"></a>
+                    <a class="item4"></a>
+                    <a class="item5"></a>
+                    <a class="obra-arte absolute">Uma obra de arte na sua cozinha</a>
+                    <a class="seguranca absolute">Segurança</a>
+                </div>
+                
+                <div class="conteudos">
+                	<div class="laminas">
+                    	<h3>Lâminas afiadas em aço inoxidável</h3>
+                        <p>Rápidas e eficientes, são capazes de <br />triturar gelo em poucos segundos.</p>
+                    </div>
+                    
+                    <div class="painel">
+                    	<div>
+                        	<img src="caracteristicas/page2/painel.png" width="297" height="151" alt="Painel frontal" title="Painel frontal" />
+                          <h3>Painel de controle Clean Touch</h3>
+                          <p>Seu design com curvas suaves traz <br />a combinação perfeita de beleza e <br />praticidade na hora da limpeza.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="base">
+                    	<h3>Base de metal</h3>
+                        <p>Design robusto, estável, resistente <br />e com alta durabilidade.</p>
+                    </div>
+                    
+                    <div class="fluxo-ar">
+                    	<h3>Sistema de fluxo de ar</h3>
+                        <p>Evita o aquecimento do motor, <br />mesmo com uso contínuo.</p>
+                    </div>
+                    
+                    <div class="jarra">
+                    	<h3>Jarra de policarbonato</h3>
+                        <p>Seu design direciona os ingredientes <br />para as lâminas, garantindo eficiência <br />e rapidez nos resultados. Com <br />capacidade para 1,6 litros.</p>
+                    </div>
+                    
+                  <div class="obra-arte">
+                    	<p>Há mais de 90 anos, KitchenAid é <br />referência na criação de produtos de <br />qualidade, precisão, alta performance <br />e design atemporal. E o Blender é o <br />exemplo disto.</p>
+                    </div>
+                    
+                  <div class="seguranca">
+                   	  <p>Sua tampa com firme vedação garante a <br />segurança no manuseio do produto.</p>
+                    </div>
+                </div>
+                
+                <a href="#" class="call-to-action2 absolute animated fadeInRightBig s8">5 velocidades</a>
+            	
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+
+	var connect_spots = [
+       { botao: $(".hotspots .item1"), conteudo: $(".conteudos .laminas"), analytics: "spot-laminas" },
+       { botao: $(".hotspots .item2"), conteudo: $(".conteudos .painel"), analytics: "spot-painel" },
+       { botao: $(".hotspots .item3"), conteudo: $(".conteudos .base"), analytics: "spot-base" },
+	   { botao: $(".hotspots .item4"), conteudo: $(".conteudos .fluxo-ar"), analytics: "spot-seguranca" },
+	   { botao: $(".hotspots .item5"), conteudo: $(".conteudos .jarra"), analytics: "spot-seguranca" },
+	   
+	   { botao: $(".hotspots .obra-arte"), conteudo: $(".conteudos .obra-arte"), analytics: "spot-seguranca" },
+	   { botao: $(".hotspots .seguranca"), conteudo: $(".conteudos .seguranca"), analytics: "spot-seguranca" }
+      ];
+      
+    var connect_tempoInicial;
+    
+    $.each( connect_spots, function( index, value ){
+  
+  value.botao.on({
+   mouseenter: function(e){
+    for( key in connect_spots ) if( connect_spots[key].botao.attr("id") != this.id ) connect_spots[key].botao.removeClass("fadeIn").stop(true, true).fadeTo("fast", .5);
+    value.conteudo.stop(true, true).fadeIn();
+    connect_tempoInicial = e.timeStamp;
+   },
+   mouseleave: function(e){
+    for( key in connect_spots ) if( connect_spots[key].botao.attr("id") != this.id ) connect_spots[key].botao.stop(true, true).fadeTo("fast", 1);
+    value.conteudo.stop(true, true).fadeOut();
+    if( ( e.timeStamp - connect_tempoInicial ) >= 1000 ) Connect.trackPageView( "caracteristicas5/" + value.analytics );
+   }
+  });
+   
+ } );
+	
+	connect_callToAction( $(".connect-container .call-to-action2"), "fadeInRightBig", "s8", "caracteristicas3.html", true );
+ 
+ function connect_callToAction( button, animation, delay, page, boolean ){
+  var connect_pageStart = setInterval( function(e){
+   button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+   .hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 ); } );
+   Connect.addCallToAction( button , page, boolean );
+   clearInterval( connect_pageStart );
+  }, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+ }
+
+	
+});
+</script>

@@ -1,0 +1,68 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page1/bg-caracteristicas1.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.obcecados { margin-left: -375px; top: 31px; }
+.titulo { margin-left: 22px; top: 57px; }
+.txt { margin-left: 25px; top: 134px; }
+.compativel { margin-left: 70px; top: 300px; }
+.retro { margin-left: -29px; top: 327px; }
+.nome { margin-left: -141px; bottom: 27px; }
+.call-to-action1 { margin-left: 197px; bottom: 48px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            	
+            	<img src="caracteristicas/page1/obcecados.png" alt="Obcecados por som - Philips" title="Obcecados por som - Philips" class="obcecados" />
+            	
+            	<img src="caracteristicas/page1/o-estilo-dos-anos-50-com-a-tecnologia-dos-dias-atuais.png" width="353" height="48" alt="O estilo dos anos 50 com a tecnologia dos dias atuais" title="O estilo dos anos 50 com a tecnologia dos dias atuais" class="titulo" />
+            	
+            	<img src="caracteristicas/page1/texto-vendedor.png" width="349" height="126" alt="Texto vendedor do Original Radio ORD7300" title="Texto vendedor do Original Radio ORD7300" class="txt" />
+            	
+            	<img src="caracteristicas/page1/dock-station-compativel-com-iphone-ipod.png" width="282" height="43" alt="Dock station compatível com iPhone/iPod" title="Dock station compatível com iPhone/iPod" class="compativel" />
+            	
+            	<img src="caracteristicas/page1/design-retro.png" width="94" height="94" alt="Design Retrô" title="Design Retrô" class="retro" />
+            	
+           	<img src="caracteristicas/page1/original-radio-ord7300.png" width="187" height="44" alt="Original Radio ORD7300" title="Original Radio ORD7300" class="nome" />
+            
+            <a href="#"><img src="caracteristicas/page1/design-e-estilo.png" width="172" height="56" alt="Design e estilo" title="Design e estilo" class="call-to-action1" /></a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".titulo") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:.5});
+	TweenMax.from( $(".txt") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:.7});
+	TweenMax.from( $(".compativel") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:.9});
+	TweenMax.from( $(".retro") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:1.1});
+	TweenMax.from( $(".nome") , .5, { css: { alpha: 0, bottom: "-=50px" } , ease: Strong.easeOut, delay:1.4});
+	TweenMax.from( $(".obcecados") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:1.7});
+	
+	
+	//call to action
+	TweenMax.from( $(".call-to-action1") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2, onComplete: function() {
+			
+		TweenMax.to( $(".call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".call-to-action1").hover(function(e) {
+            TweenMax.to( $(".call-to-action1") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".call-to-action1" , "caracteristicas2.html", true );
+	
+		
+});
+</script>

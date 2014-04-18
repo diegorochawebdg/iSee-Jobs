@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* Connect Custom */
+
+/**
+	CSS para o projeto específico
+**/
+
+#Connect-Container *{
+	font-family: 'Frutiger', Arial, sans-serif;
+    color:#FFF;
+    -webkit-font-smoothing:antialiased;
+}
+#Connect-Container strong{color:inherit;}
+
+#Connect-Container .absolute{
+	position:absolute !important;
+}
+#Connect-Container .link-padding{position:relative; overflow:hidden; height:0;}
+
+#Connect-Container p{color:#FFF; font-size:15px; line-height:1.5em;}
+
+#Connect-Container .left{
+	left:50%;
+}
+
+#Connect-Container #Connect-Navigate{z-index:0;}
+
+#Connect-Container .Connect-Section{
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+
+#Connect-Container #Connect-Section1{
+	background-image:url(../images/bg-section1.jpg);
+	height:600px;
+}
+
+#Connect-Container .proxima-pagina{background:url(../images/proxima-pagina.png) no-repeat; width:23px; height:23px; display:block; bottom:13px; left:365px; position:absolute; z-index:2;}
+
+#Connect-Container #Connect-Section1 .logo{left:0; top:13px;}
+#Connect-Container #Connect-Section1 .hgroup{background:url(../images/panelas-inox-tramontina-o-verdadeiro-fundo-triplo.png) no-repeat; width:595px; height:127px; top:44px; left:78px;}
+#Connect-Container #Connect-Section1 .garantia{right:10px; bottom:-10px; z-index:2;}
+#Connect-Container #Connect-Section1 p{left:17px; top:512px; width:600px;}
+
+
+#Connect-Container #Connect-Section2{
+	background-image:url(../images/bg-section2.jpg);
+	height:600px;
+    overflow:hidden;
+    position:relative;
+}
+#Connect-Container #Connect-Section2 .txts{top:416px; left:14px; width:300px;}
+#Connect-Container #Connect-Section2 .txts h3{font-size:20px; font-weight:bold;}
+#Connect-Container #Connect-Section2 .txts p{color:#686968; margin-bottom:15px;}
+#Connect-Container #Connect-Section2 .saida-vapor{font-size:22px; top:77px; left:90px;}
+#Connect-Container #Connect-Section2 .saida-vapor strong{display:block; font-weight:bold;}
+#Connect-Container #Connect-Section2 .vapor{background:url(../images/vapor.png) no-repeat; width:195px; height:296px; left: 353px; top: 80px; z-index: 2;}
+#Connect-Container #Connect-Section2 .linha-vapor{background:url(../images/saida-vapor.png) no-repeat; width:394px; height:264px; z-index:5; top: 110px; left: 188px;}
+#Connect-Container #Connect-Section2 img{position:absolute;}
+#Connect-Container #Connect-Section2 .tomate1{left:520px; top:232px;}
+#Connect-Container #Connect-Section2 .tomate2{left:562px; top:173px;}
+#Connect-Container #Connect-Section2 .tomate3{left:429px; top:160px;}
+#Connect-Container #Connect-Section2 .pimenta{left:500px; top:144px;}
+#Connect-Container #Connect-Section2 .cebola1{left:403px; top:261px;}
+#Connect-Container #Connect-Section2 .cebola2{left:641px; top:163px;}
+#Connect-Container #Connect-Section2 .tampa{left: 309px; top: 133px;}
+
+
+#Connect-Container #Connect-Section3{
+	background-image:url(../images/bg-section3.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section3 .hgroup{background:url(../images/seguranca-e-durabilidade.png) no-repeat; width:235px; height:237px; top:32px; left:18px;}
+#Connect-Container #Connect-Section3 p{top:427px; left:13px; width:340px;}
+#Connect-Container #Connect-Section3 .aluminio{right:140px; top:334px; width:81px; padding-top:60px; background:url(../images/2-aluminio.png) no-repeat; display:block;}
+#Connect-Container #Connect-Section3 .inox1{right:40px; top:302px; width:75px; padding-top:82px; background:url(../images/1-aco-inox.png) no-repeat; display:block;}
+#Connect-Container #Connect-Section3 .inox2{right:150px; top:434px; width:82px; padding-top:77px; background:url(../images/3-aco-inox.png) no-repeat; display:block;}
+
+
+#Connect-Container #Connect-Section4{
+	background-image:url(../images/bg-section4.jpg);
+	height:600px;
+}
+#Connect-Container #Connect-Section4 .design{background:url(../images/design-moderno.png) no-repeat; width:266px; padding-top:144px; top:155px; left:28px;}
+#Connect-Container #Connect-Section4 .txts{left:278px; bottom:43px;}
+#Connect-Container #Connect-Section4 .txts h3{font-weight:bold; font-size:20px; margin-bottom:5px;}
+#Connect-Container #Connect-Section4 .txts p{margin-bottom:10px;}
+
+
+#Connect-Container #Connect-Section5{
+	height:600px;
+    display:table;
+}
+#Connect-Container #Connect-Section5 object, #Connect-Container #Connect-Section5 object embed{width:100%; height:600px;}
+
+#Connect-Container #Connect-Section6{
+	background-image:url(../images/bg-section6.jpg);
+	height:552px;
+}
+#Connect-Container #Connect-Section6 h3{background:url(../images/no-jogo-de-panelas-solar-voce-encontra.png) no-repeat; width:609px; padding-top:60px; top:42px; left:75px;}
+#Connect-Container #Connect-Section6 .item1, #Connect-Container #Connect-Section6 .item2, #Connect-Container #Connect-Section6 .item3{bottom:244px}
+#Connect-Container #Connect-Section6 .item4, #Connect-Container #Connect-Section6 .item5, #Connect-Container #Connect-Section6 .item6{bottom:25px;}
+
+#Connect-Container #Connect-Section6 .item1, #Connect-Container #Connect-Section6 .item4{left:52px;}
+#Connect-Container #Connect-Section6 .item2, #Connect-Container #Connect-Section6 .item5{left:288px;}
+
+#Connect-Container #Connect-Section6 .item3, #Connect-Container #Connect-Section6 .item6{left:544px;}
+#Connect-Container #Connect-Section6 h4{font-size:16px; font-weight:bold;}
+#Connect-Container #Connect-Section6 img{margin-bottom:15px;}
+#Connect-Container #Connect-Section6 span{display:block;}
+#Connect-Container #Connect-Section6 .item2 img{margin-left:34px;}
+
+
+/**
+	Font-Face Connect
+**/
+@font-face {
+	font-family: 'Frutiger';
+	src: url('../fonts/FrutigerLTStd-Bold.eot');
+	src: url('../fonts/FrutigerLTStd-Bold?#Frutiger') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/FrutigerLTStd-Bold.woff') format('woff'), 
+         url('../fonts/FrutigerLTStd-Bold.svg') format('svg'),
+	     url('../fonts/FrutigerLTStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Frutiger';
+	src: url('../fonts/FrutigerLTStd-LightCn.eot');
+	src: url('../fonts/FrutigerLTStd-LightCn?#Frutiger') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/FrutigerLTStd-LightCn.woff') format('woff'), 
+         url('../fonts/FrutigerLTStd-LightCn.svg') format('svg'),
+	     url('../fonts/FrutigerLTStd-LightCn.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

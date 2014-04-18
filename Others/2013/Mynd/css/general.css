@@ -1,0 +1,861 @@
+/* 
+	@charset "UTF-8";
+	@ Title: Mynd website structure
+	@ Author: Gustavo Teider
+	@ Date: 20/08/2012
+	@ Version: 1.0	
+*/	
+
+/* ------------------------------------------------------------
+	Global Properties
+---------------------------------------------------------------- */
+/*@font-face {
+    font-family: 'Knockout-HTF47-Bantamweight';
+    src: url('../fonts/knockout-htf47-bantamweight.eot');
+    src: url('../fonts/knockout-htf47-bantamweight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/knockout-htf47-bantamweight.woff') format('woff'),
+         url('../fonts/knockout-htf47-bantamweight.ttf') format('truetype'),
+         url('../fonts/knockout-htf47-bantamweight.svg#knockout-htf47-bantamweight') format('svg');
+    font-weight: regular;
+    font-style: regular;
+}*/
+@font-face {
+			font-family: 'Knockout-HTF28-JuniorFeatherwt';
+			src: url('../fonts/knockout-htf28-juniorfeatherwt.eot');
+			src: url('../fonts/knockout-htf28-juniorfeatherwt.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/knockout-htf28-juniorfeatherwt.svg#knockout-htf28-juniorfeatherwt') format('svg'),
+					 url('../fonts/knockout-htf28-juniorfeatherwt.woff') format('woff'),
+					 url('../fonts/knockout-htf28-juniorfeatherwt.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+	}
+@font-face{    font-family:'gotham_boldregular';     src:url('../fonts/ufonts.com_gotham-bold-webfont.eot');     src:url('../fonts/ufonts.com_gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),         url('../fonts/ufonts.com_gotham-bold-webfont.woff') format('woff'),         url('../fonts/ufonts.com_gotham-bold-webfont.ttf') format('truetype'),         url('../fonts/ufonts.com_gotham-bold-webfont.svg#gotham_boldregular') format('svg');     font-weight:normal;     font-style:normal}
+@font-face{    font-family:'gotham_bookregular';     src:url('../fonts/ufonts.com_gotham-book-webfont.eot');     src:url('../fonts/ufonts.com_gotham-book-webfont.eot?#iefix') format('embedded-opentype'),         url('../fonts/ufonts.com_gotham-book-webfont.woff') format('woff'),         url('../fonts/ufonts.com_gotham-book-webfont.ttf') format('truetype'),         url('../fonts/ufonts.com_gotham-book-webfont.svg#gotham_bookregular') format('svg');  font-weight: normal;  font-style:normal}
+
+html { 
+	overflow:hidden;
+	/*overflow:-moz-scrollbars-vertical;*/
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+address {
+	font-style:normal;
+	font-size: 10pt;
+}
+a { text-decoration: none; }
+a.skip {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	position: absolute;
+}
+a:visited { }
+a:active {	}
+a:hover, a:focus { }
+acronym {
+	border-bottom: 1px #999999 dashed;
+	cursor: help;
+}
+form { margin: 0; }
+h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a {
+	font-weight: bold;
+	margin: 0;
+}
+h2 { }
+
+
+/* ------------------------------------------------------------
+	Content under Logo and Menu
+---------------------------------------------------------------- */
+
+.base { 
+	/*position: absolute;
+	margin: 0 auto;
+	left: -480px;
+	margin-left: 50%;
+	width: 960px;
+	height: 100%;
+	background-color: green;*/
+	background-color: #0e0e0e;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.home { 
+	background-color: #161718;
+}
+.contato {
+	background-color: #FF6C16;
+}
+.personalizacao {
+	background-color: #3C4144;
+}
+.atletas {
+	background-color: #FF6C16;
+}
+.tecnologia {
+	background-color: #FF6C16;
+}
+.sobre {
+	background-color: #3C4144;
+}
+.categorias {
+	background-color: #3c4143;
+}
+
+
+.holder { 
+	/*background-image:url(../images/homeBG.jpg);
+	background-repeat: no-repeat;
+	background-position:center;*/
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.content { 
+	position: relative;
+	height: 672px;
+	margin-left: -280px;
+}
+.margem-geral {
+	width: 960px;
+	margin:0 auto;
+}
+
+
+
+/* ------------------------------------------------------------
+	Logo and header properties
+---------------------------------------------------------------- */
+div.logo { 
+	position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	top: 0;
+	margin-left: -480px;
+	width:460px;
+	height: 130px;
+	z-index: 2;
+}
+div.logo h1 {
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	width:145px;
+	height:129px;
+}
+div.logo h1 a { 
+	display:block;
+	width: 145px;
+	height: 129px;
+}
+div.logo h1 a span { 
+	visibility: hidden;
+}
+
+
+/* ------------------------------------------------------------
+	RODAPE
+---------------------------------------------------------------- */
+div.rodape { 
+	position: absolute;
+	margin: 0 auto;
+	left: -480px;
+	margin-left: 50%;
+	/* bottom: 20px; */
+	width: 960px;
+	height: 46px;
+	z-index: 4;
+	background-image:url(../images/rodape-bg.png);
+	background-repeat: no-repeat;
+	bottom: 0;
+}	
+div.twitter_facebook { 
+	float: right;
+	height: 31px;
+	padding-top: 15px;
+}
+div.twitter_facebook span { 
+	font-size: 16px;
+	font-family: 'gotham_bookregular';
+}
+
+@-moz-document url-prefix() { div.twitter_facebook ul { margin: -5px 0px 0px 15px !important; } } 
+
+div.twitter_facebook ul { 
+	display: inline;
+	float: right;
+	margin: -3px 0px 0px 15px \0/ !important;
+	*margin: -3px 0px 0px 15px !important;
+	margin: -20px 0px 0px 15px;
+	padding: 0;
+	width: 190px;
+	height: 22px;
+}
+div.twitter_facebook ul li { 
+	margin-right: 15px;
+	padding-left: 28px;
+	padding-top: 3px;
+	display: block;
+	float: left;
+	height: 22px;
+	background-repeat: no-repeat;
+}
+div.twitter_facebook ul li a { 
+	font-size: 18px;
+	text-transform:uppercase;
+	outline: none;
+	font-family: "Knockout-HTF28-JuniorFeatherwt";
+}
+div.twitter_facebook ul li.blog { 
+	background-image:url(../images/rodape-icone-blog.png);
+}
+div.twitter_facebook ul li.twitter { 
+	background-image:url(../images/rodape-icone-twitter.png);
+}
+div.twitter_facebook ul li.facebook { 
+	background-image:url(../images/rodape-icone-facebook.png);
+}
+
+div.rodape ul.rodape_menu { 
+	float: left;
+	height: 33px;
+	padding-top: 13px;
+}
+ul.rodape_menu li { 
+	margin-left: 15px;
+	display: inline;
+	cursor: pointer;
+	font-family: "Knockout-HTF28-JuniorFeatherwt";
+	font-size: 22px;
+}
+.over_onde_comprar { 
+	position: relative;
+	width: 178px;
+	height: 120px;
+	overflow: auto;
+	top: -110px;
+	left: -236px;
+	overflow: hidden;
+	background-image:url(../images/arrow-down-over-rodape.png);
+	background-position: center 93px;
+	background-repeat: no-repeat;
+}
+.over_onde_comprar ul {  
+	top: 13px;
+	position: relative;
+}
+.over_onde_comprar ul li { 
+	display: block;
+	float: left;
+	width: 178px;
+	height: 40px;
+	padding-top: 0;
+	margin: 0;
+	background-image:url(../images/onde-comprar-rodape-bg.gif);
+	
+}
+.over_onde_comprar ul li a { 
+	font-family: "gotham_bookregular";
+	font-size: 14px;
+	background-image:none;
+	padding-left: 20px;
+	padding-right: 54px;
+	padding-top: 12px;
+	display: block;
+	padding-bottom: 14px;
+}
+.over_onde_comprar ul li a:hover { 
+	color:#F90;
+}
+
+.over_loja_oficial { 
+	position: absolute;
+	width: 177px;
+	height: 204px;
+	background-image:url(../images/loja-oficial-rodape-bg.png);
+	background-repeat: no-repeat;
+	top: -200px;
+	left: 110px;
+}
+.over_loja_oficial img { 
+	margin: 5px 5px 18px 5px;
+}
+
+.over_loja_oficial a { 
+	font-family: "gotham_bookregular";
+	font-size: 14px;
+	color: white;
+	margin-left: 20px;
+}
+.over_loja_oficial a:hover { 
+	color:#F90;
+}
+
+.loja_img{ margin-left: 0 !important; }
+/* ------------------------------------------------------------
+	MENU
+---------------------------------------------------------------- */
+div.menu {
+	position: absolute;
+	right: -500px;
+	top: 185px;
+	z-index: 3;	
+}
+div.menu div { 
+	width: 140px;
+	height: 160px;
+}
+div.menu div ul { 
+	float: right;
+}
+div.menu div ul li { 
+	list-style-type:none;
+	text-align: right;
+	background-image:url(../images/bullet-menu-white.png);
+	background-repeat: no-repeat;
+	background-position:top right;
+	padding-right: 20px;
+	width: 120px;
+	height: 27px;
+}
+div.menu div ul li.active { 
+	background-image:url(../images/bullet-menu-gray.png);
+	background-repeat: no-repeat;
+}
+
+div.menu div ul li a { 
+	font-family: "Knockout-HTF28-JuniorFeatherwt";
+	font-size: 20px;
+	text-transform:uppercase;
+	padding: 6px 12px 3px 7px;
+	outline: none;
+	background-repeat: no-repeat;
+	background-position: -550% 50%;
+
+}
+
+div.menu ul.setas { 
+	margin-top: 40px;
+	margin-left: 60px;
+	width: 75px;
+}
+div.menu ul.setas li { 
+	display: block;
+	margin-bottom: 1px;
+}
+
+.menu_btn_home_active { 
+	background-image: url(../images/menu-bg-home.png);
+}
+.menu_btn_sobre_active { 
+	background-image: url(../images/menu-bg-sobre.png);
+}
+.menu_btn_tecnologia_active { 
+	background-image: url(../images/menu-bg-tecnologia.png);
+}
+.menu_btn_categorias_active { 
+	background-image: url(../images/menu-bg-categorias.png);
+}
+.menu_btn_atletas_active { 
+	background-image: url(../images/menu-bg-atletas.png);
+}
+.menu_btn_personalizados_active { 
+	background-image: url(../images/menu-bg-personalizacao.png);
+}
+.menu_btn_contato_active { 
+	background-image: url(../images/menu-bg-contato.png);
+}
+
+
+/* ------------------------------------------------------------
+	CONTEÚDO SOBRE A MYND
+---------------------------------------------------------------- */
+.sobre_div
+{
+	position: absolute;
+	width: 670px;
+	left: 590px;
+	top: 134px;	
+	text-align: left;
+}
+.sobre_div h2 { 
+	font-family: "gotham_bookregular";
+	font-size: 24px;
+	color: white;
+	font-style: italic;
+	letter-spacing: -2px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.sobre_div h2 img { margin: 0; } 
+.sobre_div p { 
+	font-family: "gotham_bookregular";
+	font-size: 11px;
+	line-height: 24px;
+}
+.sobre .content img {
+	margin-top: 295px;
+	margin-left: -20px;
+}
+
+
+/* ------------------------------------------------------------
+	CONTEÚDO TECNOLOGIA
+---------------------------------------------------------------- */
+
+.tecnologia_divtop { 
+	position: absolute;
+	width: 680px;
+	height: 90px;
+	left: 674px;
+	top: 0;
+	margin-top: 70px;
+}
+.tecnologia_divtop h2 { float: left; }
+.tecnologia_divtop p { 
+	font-family: "gotham_bookregular";
+	font-size: 11px;
+	line-height: 18px;
+	width: 570px;
+}
+
+.tecnologia_items { 
+	width: 404px;
+	position: absolute;
+	left: 750px;
+	top: 0;
+	margin-top: 260px;
+}
+.tecnologia_items ul { margin-left: 25px; } 
+.tecnologia_items ul li { display: inline; margin: 10px; }
+
+.pdf_educa{ margin-top: 20px; color: #666 !important; font-weight: bold; display: block; font-size: 13px; }
+.pdf_educa:hover{ color: #fff !important; }
+
+/* ------------------------------------------------------------
+	CONTEÚDO CATEGORIAS
+---------------------------------------------------------------*/
+.categorias{ background: #3c4143 url(../images/bg-modalidades.gif) no-repeat center 150px; }
+
+#content-categorias{ background: #52585b; height: 1200px; width: 424px; position: absolute; left: 146px; top: -121px; position: relative;}
+
+/*Botões*/
+.voltar{ background: url(../images/seta-voltar.png) no-repeat; width: 49px; height: 77px; position: absolute; top: 43%; left: -45px; text-indent: -99999px; cursor: pointer }
+.avancar{ background: url(../images/seta-avancar.png) no-repeat; width: 49px; height: 77px; position: absolute; top: 37%; right: -45px; text-indent: -99999px; cursor: pointer; }
+
+#place-holder-triathlon, 
+#place-holder-ciclismo,
+#place-holder-corrida,
+#place-holder-natacao,
+#place-holder-fitness{ height: 1200px; padding: 45% 0; }
+
+#place-holder-triathlon h2, 
+#place-holder-ciclismo h2,
+#place-holder-corrida h2,
+#place-holder-natacao h2,
+#place-holder-fitness h2{ height: 28px; padding-top: 60px; width: 225px; padding-left: 25px; }
+
+#place-holder-triathlon h2 img, 
+#place-holder-ciclismo h2 img,
+#place-holder-corrida h2 img,
+#place-holder-fitness h2 img{ float: left; padding-left: 38px; padding-bottom: 15px; }
+
+#place-holder-triathlon h2 img{ padding-left: 64px; }
+
+#place-holder-triathlon p, 
+#place-holder-ciclismo p,
+#place-holder-corrida p,
+#place-holder-natacao p,
+#place-holder-fitness p{ float: left; text-align: right; font-family: 'gotham_bookregular', Arial; font-size: 12px; width: 225px; line-height: 17px; padding-left: 16px; }
+
+#place-holder-triathlon img, 
+#place-holder-ciclismo img,
+#place-holder-corrida img,
+#place-holder-natacao img,
+#place-holder-fitness img{ float: right; }
+
+#place-holder-natacao img, #place-holder-fitness img{ margin-right: 20px; }
+
+/**/
+#place-holder-natacao h2 img{ float: left; padding-left: 30px; padding-bottom: 10px; }
+#place-holder-fitness h2 img{ padding-left: 45px; }
+
+/*slider menu*/
+.slider-menu {
+	position: absolute;
+	top: -5px;
+	right: 110px;
+	width: 255px;
+}
+.slider-menu li {
+	display: block;
+	height: 66px;
+	width: 72px;
+	float: left;
+	margin-left: 7px;
+	cursor: pointer;
+}
+.slider-menu li a{ 
+	display: block;
+	height: 66px;
+	width: 72px;
+	float: left;
+	cursor: pointer;
+ }
+#triathlon-menu{
+	background: url(../images/triathlo-menu.gif);
+	margin-top:37px;
+}
+#triathlon-menu a:hover, #triathlon-menu  a.active { background: url(../images/triathlo-menu-hover.gif) }
+
+#ciclismo-menu {
+	background: url(../images/ciclismo-menu.gif);
+	margin-top: 20px;
+}
+#ciclismo-menu a:hover, #ciclismo-menu  a.active{ background: url(../images/ciclismo-menu-hover.gif) }
+
+#corrida-menu {
+	background: url(../images/corrida-menu.gif);
+	margin-top: 3px;
+}
+#corrida-menu a:hover, #corrida-menu  a.active{ background: url(../images/corrida-menu-hover.gif) }
+
+#natacao-menu {
+	background: url(../images/natacao-menu.png);
+}
+#natacao-menu a:hover, #natacao-menu  a.active{ background: url(../images/natacao-menu-hover.png) }
+
+#fitness-menu {
+	background: url(../images/fitness-menu.png);
+	position: absolute;
+	left: 78px;
+	top: -15px;
+}
+#fitness-menu a:hover, #fitness-menu  a.active{ background: url(../images/fitness-menu-hover.png) }
+
+.slider-bg {
+	background: #52585b;
+	width: 384px;
+	position: absolute;
+	left: 145px;
+	top: 0px;
+	height: 100%;
+}
+#slider {
+	margin-top: 100px;
+	padding:0 15px;
+}
+.conteudo-slider img:first-child {
+	margin-bottom: 30px;
+}
+.top-home {
+	margin-top: 139px;
+}
+/* ------------------------------------------------------------
+	CONTEÚDO ATLETAS
+---------------------------------------------------------------*/
+.atletas{ background: url(../images/bg-atletas.gif) no-repeat center 10px #FF6C16; }
+.atletas-box{
+	width: 770px;
+	position: absolute;
+	left: 504px;
+	top: 70px;
+	
+}
+.atletas img {
+	float: left;
+}
+.atleta-popup {
+	background: #3c4143;
+	position: absolute;
+	width: 770px;
+}
+.atleta-popup .bio-txt {
+	width: 566px;
+	text-align: right;
+}
+.atleta-popup .bio-txt h3, .atleta-popup .bio-txt span:first-child {
+	padding-top: 20px;
+	height: 52px;
+	color: #ff6c15;
+	display: block;
+	font: normal 53px "Knockout-HTF28-JuniorFeatherwt";
+	letter-spacing: -1px;
+}
+.atleta-popup .bio-txt span:first-child{
+	margin-top: -17px;
+	margin-bottom: 37px;
+}
+.atleta-popup .descricao{
+	font: 26px "Knockout-HTF28-JuniorFeatherwt";
+	text-transform: uppercase;
+	display:block;
+	margin-bottom: 20px;
+}
+.atleta-popup p{
+	font: 12px gotham_bookregular;
+	line-height: 23px;
+	padding-left: 5px;
+}
+.atleta-popup.flavia {
+	left: 0px;
+	top: 0px;
+}
+.atleta-popup.gilberto {
+	left: 0px;
+	top: 0px;
+}
+.atleta-popup.silvia {
+	right: 2px;
+	top: 0px;
+}
+.atleta-popup.susana {
+	right: 2px;
+	top: 0px;
+}
+
+.close{ position: absolute; text-decoration: underline; font-family: gotham_bookregular, Arial;  font-size: 12px; cursor: pointer; }
+.c-right{ bottom: 33px; right: 211px; }
+.c-left{ bottom: 33px; right: 21px; }
+
+
+/* ------------------------------------------------------------
+	CONTEÚDO PERSONALIZAÇÃO
+---------------------------------------------------------------*/
+.personalizacao{
+	background: #3c4143 url(../images/bg-cinza.gif) no-repeat center 150px;
+	
+}
+.personalizacao-itens {
+	width: 800px;
+	left: 480px;
+	top: 120px;
+	position: absolute;
+}
+.personalizacao-txt {
+	width: 280px;
+	margin-left: 40px;
+}
+.personalizacao-txt p {
+	font: 12px "gotham_bookregular", Arial, Helvetica, sans-serif;
+	line-height: 23px;
+	margin-bottom: 45px;
+}
+
+
+.float-right {
+	float: right;
+}
+.mbottom {
+	margin-bottom: 40px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+	CONTEÚDO CONTATO
+---------------------------------------------------------------*/
+
+
+.float-left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.contato-menu {
+	position: absolute;
+	left: 480px;
+	top: 150px;
+	width: 760px;
+}
+.contato-menu a:hover {
+	color: #597981;
+}
+
+.contato-menu .float-left {
+	width: 25%;
+}
+.contato-menu h3 {
+	margin-bottom: 25px;
+}
+.contato-menu li{
+	margin-bottom: 15px;
+	background: url(../images/bg-li.gif) no-repeat 0px 2px;
+	padding-left: 20px;
+}
+.contato-menu p, .contato-menu li, .contato-menu a {
+	font: 14px "gotham_bookregular", Arial, Helvetica, sans-serif;
+}
+.contato-menu ul.ondecomprar li { 
+	margin-bottom: 0;
+	background: none;
+	padding-left: 0;
+}
+
+
+.lojas-box { 
+	width: 750px;
+	background-color: #3c4143;
+	height: 465px;
+	position: absolute;
+	top: 78px;
+	left: 480px;
+	z-index: 9999;
+	padding: 20px;
+}	
+
+.lojas-box .link { 
+	width: 200px;
+	height: 300px;
+	float: left;
+	margin-top: 25px;
+}
+.link li { 
+	width: 155px;
+	height: 28px;
+	padding: 8px 0 0 15px;
+	background-image: url(../images/background-ondecomprar-link.png);
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	background-position: "0px 0px";
+}
+.link li.active { 
+	background-position: "0% 100%";
+}
+
+.link li a { 
+	font: 14px "gotham_bookregular", Arial, Helvetica, sans-serif;
+}
+
+.lojas-content { 
+	float: left;
+	margin: 25px 0 0 0;
+	width: 540px;
+}
+
+#content_lojasonline{ height: 380px; overflow-y: scroll; }
+
+#content_lojasonline a{ float: left; width :170px; }
+#content_lojasonline a img{ margin: 0 auto; display: block; }
+
+.fecha-lojas { 
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+
+.lojas_fisicas_estado { 
+	width: 66px;
+	font: 14px "gotham_bookregular", Arial, Helvetica, sans-serif;
+}
+
+.lojas_fisicas_estado a { 
+	font: 28px "gotham_bookregular", Arial, Helvetica, sans-serif;
+}
+.lojas_fisicas_estado a.active  , .lojas_fisicas_estado a:hover { 
+	color: #ff5d15;
+}
+
+.lojas_fisicas_estado_dados { 
+	width: 440px;
+	height: 350px;
+	position: absolute;
+	top: 70px;
+	left: 305px;
+	font: 12px "gotham_bookregular", Arial, Helvetica, sans-serif;
+	overflow-y: scroll;
+}
+
+.lojas_fisicas_estado_dados div { 
+	display: none;
+}
+
+/* form mensagem */
+#form-mensagem { margin-top: 25px; }
+#form-mensagem h2{ margin-bottom: 10px; }
+#form-mensagem .esquerda{ float: left; width: 391px; }
+#form-mensagem label{ width: 386px; height: 54px; float: left; margin-bottom: 12px; }
+#form-mensagem label span{ display: block; font-family: 'gotham_bookregular', Arial; font-size: 14px; margin-bottom: 5px; }
+#form-mensagem label span.campo{ background: url(../images/fundo-input.png) no-repeat; height: 35px; }
+#form-mensagem label span input{ width: 374px; height: 25px; margin: 4px; border: 0; color: #515454; font-size: 14px; background: #f6f6f6; }
+
+#form-mensagem .direita{ float: right; }
+#form-mensagem label.mensagem{ float: left; width: 366px; height: 190px; }
+#form-mensagem .direita span.campo{ background: url(../images/fundo-textarea.png) no-repeat; width: 366px; height: 171px; }
+#form-mensagem textarea{  margin: 4px; width: 352px; height: 157px; border: 0; background: #f6f6f6; color: #515454; font-size: 14px;  }
+.btn-enviar{ float: right; width: 95px; height: 34px; background: url(../images/btn-enviar.png) no-repeat left top; text-indent: -9999px; border: 0; cursor: pointer;}
+.btn-enviar:hover{background: url(../images/btn-enviar.png) no-repeat left bottom;  }
+
+/*  */
+#tooltip{
+	position:absolute;
+	width: 320px;
+	height: 137px;
+	padding: 10px 10px;
+	margin: -130px 0 0 -15px;
+	background-image:url(../images/tecnologia/tooltip-bg.png);
+	background-repeat: no-repeat;
+	color: white;
+	display:none;
+	z-index: 100;
+	font: 14px "gotham_bookregular", Arial, Helvetica, sans-serif;
+}	
+
+/* Scrollbar  */
+#scrollbar1 { width: 520px; clear: both; margin: 20px 0 10px; }
+#scrollbar1 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { background-color: #003D5D; }
+#scrollbar1 .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar1 .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar1 .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+
+/*Hover*/
+.hvr-laranja{ position: absolute; top: 11px; right: 11px; z-index: 6; display: none; }
+.contato-menu ul.ondecomprar li{ position: relative; }
+
+.tecnologia .content{ left: 0 !important; }
+.central{ width: 960px; margin: 0 auto; height: 2000px; position: relative; left: 140px !important; } 
+.box-esquerda{ width: 430px; position: relative; z-index: 1; height: 2000px; float: left; }
+.box-esquerda img{ position: absolute; left: -120px; top: 15px; }
+
+.box-direita{ float:left; position: relative; z-index: 88; width: 408px; }
+.box-direita p{ padding-top: 19px; font-family: 'gotham_bookregular', Arial; font-size: 12px; line-height: 16px; }
+#accordion{ padding-top: 30px; }
+#accordion h3{ background: url(../images/accordion-title.png) no-repeat; height: 21px; width:364px; border: none !important; font-family: 'gotham_bookregular', Arial; font-size: 12px; text-transform: uppercase; color: #fff; padding: 9px 0 0 16px; cursor: pointer; }
+#accordion .ui-accordion-content{ width: 380px; background:url(../images/content-accordion.png) no-repeat; height: 138px; border: none !important; }
+#accordion .ui-accordion-content p{ padding: 16px; }
+#accordion .ui-state-default .ui-icon { background-image: url(../images/setinha-down.png); background-repeat: no-repeat;}
+#accordion .ui-icon-triangle-1-s{ background-position: 4px 2px; position: absolute; right: 40px; }
+#accordion .ui-icon-triangle-1-e{ background-position: 4px -11px; position: absolute; right: 40px; }
+
+.rs_facebook{ background: url(../images/rs_facebook.png) no-repeat 0 0 !important; }
+.rs_twitter{ background: url(../images/rs_twitter.png) no-repeat 0 0 !important; }
+.rs_facebook a, .rs_twitter a, .link_email{ text-decoration: underline; }
+
+.sites{ }
+.lojas_fisicas_estado_dados p a{ text-decoration: underline; }
+.lojas_fisicas_estado_dados p a:hover{ color: #FF5D15 !important; }
+
+.lojas-fisicas2{ display:block; text-indent: -9999px; width: 192px; height: 35px; }
+.lojas-online2{ display:block; text-indent: -9999px; width: 192px; height: 35px; }
+.l_fisicas{ background: url(../images/contato-lojas-fisicas-botao.png) no-repeat; }
+.l_fisicas:hover{ background: url(../images/contato-lojas-fisicas-botao.png) no-repeat 0 -64px; }
+.l_online{ background: url(../images/contato-lojas-online-botao.png) no-repeat; }
+.l_online:hover{ background: url(../images/contato-lojas-online-botao.png) no-repeat 0 -64px; }

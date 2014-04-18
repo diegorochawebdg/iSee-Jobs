@@ -1,0 +1,114 @@
+
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg);
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+#background-magenta{ height:228px; width:100%; position:absolute; background:#b00f3a;}
+#background-brilho{ height:520px; width:979px; position:absolute; background:url(caracteristicas/page1/brilho.png) no-repeat; left:50%; margin-left:-320px; }
+
+.absoluto{ position:absolute; left:50%;}
+.panela{ margin-left:18px; top:34px;}
+.prato{ margin-left:175px; bottom:0;}
+.titulo{ margin-left:-370px; top:50px;}
+.linha{ margin-left:-360px; top:115px;}
+.subtitulo{ margin-left:-370px; top:146px;}
+.selo-dispositivos{ margin-left:-386px; top:242px;}
+.selo-cozimento{ margin-left:-252px; top:242px;}
+.selo-capacidade{ margin-left:-118px; top:242px;}
+.paragrafo{ margin-left:-370px; top:395px;}
+#call-to-action1{ margin-left:26px; bottom:20px; cursor:pointer;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#background-magenta"), .25, {css:{top:"-=40px", alpha:0}, ease:Linear.easeOut, delay:.2});
+	
+	TweenMax.from($(".panela"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($("#background-brilho"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".prato"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".linha"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".subtitulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	
+	TweenMax.from($(".selo-dispositivos"), 1, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".selo-cozimento"), 1, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".selo-capacidade"), 1, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".paragrafo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	
+	TweenMax.from( $("#call-to-action1") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.2, onComplete: function() {
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action1").hover(function(e) {
+            TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+		
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div id="background-magenta"></div>
+        <div id="background-brilho"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/panela.png" width="409px" height="459px" alt="" title="" class="absoluto panela" />
+                <img src="caracteristicas/page1/prato.png" width="293px" height="150px" alt="" title="" class="absoluto prato" />
+            	
+                <img src="caracteristicas/page1/title-panela-de-pressao-eletrica-chef-pcc-10.png" width="209px" height="40px" alt="Panela de pressão elétrica Chef PCC10" title="Panela de pressão elétrica Chef PCC10" class="absoluto titulo" />
+                <img src="caracteristicas/page1/linha.png" width="198px" height="1px" alt="" title="" class="absoluto linha" />
+                <img src="caracteristicas/page1/a-seguranca-que-voce-precisa-no-preparo-dos-alimentos.png" width="288px" height="46px" alt="A segurança que você precisa no preparo dos alimentos" title="A segurança que você precisa no preparo dos alimentos" class="absoluto subtitulo" />
+                
+                <img src="caracteristicas/page1/selo-9-dispositivos-de-seguranca.png" width="145px" height="145px" alt="9 dispositivos de segurança" title="9 dispositivos de segurança" class="absoluto selo-dispositivos" />
+                <img src="caracteristicas/page1/selo-6-funcoes-de-cozimento.png" width="146px" height="146px" alt="6 funções de cozimento" title="6 funções de cozimento" class="absoluto selo-cozimento" />
+                <img src="caracteristicas/page1/selo-capacidade-para-ate-6l.png" width="146px" height="146px" alt="Capacidade para até 6L" title="Capacidade para até 6L" class="absoluto selo-capacidade" />
+                
+                <img src="caracteristicas/page1/paragrafo-versatilidade-na.png" width="351px" height="92px" alt="Versatilidade na sua cozinha com apenas 1 panela! A Panela de Pressão Elétrica Chef tem 6 funções de cozimento para diversos tipos de receita: fritar, cozinhar, refogar, função molho, aquecer e pressão." title="Versatilidade na sua cozinha com apenas 1 panela! A Panela de Pressão Elétrica Chef tem 6 funções de cozimento para diversos tipos de receita: fritar, cozinhar, refogar, função molho, aquecer e pressão." class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page1/btn-saiba-mais.png" width="195px" height="86px" alt="Saiba mais" title="Saiba mais" class="absoluto" id="call-to-action1" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

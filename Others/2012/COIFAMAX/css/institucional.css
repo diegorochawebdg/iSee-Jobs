@@ -1,0 +1,49 @@
+@charset "utf-8"; 
+a{text-decoration:none}
+a:hover{text-decoration:underline; cursor:pointer}
+
+#conteudo .imagem-central{
+	background: #f1eedf url(../images/bg-radial2.jpg) no-repeat center top;
+	text-align: center;
+	border-bottom: 8px solid #549ABE;
+}
+#conteudo .imagem-central img{display:inline}
+#conteudo .sub {
+	float: left;
+	margin-right: 25px;
+}
+#conteudo .texto-mais {
+	background: url(../images/texto-mais.gif);
+	height: 44px;
+	width: 44px;
+	margin-top: 10px;
+}
+#conteudo .texto-menos {
+	background: url(../images/texto-menos.gif);
+	height: 44px;
+	width: 44px;
+	margin-top: 10px;
+}
+#conteudo .right {
+	margin: 25px 0 0 0;
+	float: right;
+}
+#conteudo a{
+	text-transform:uppercase;
+	color:#5399BE;
+	font-size:15px;
+}
+#conteudo .txt-institucional {
+	width: 540px;
+	float: left;
+	margin:50px 0;
+}
+#conteudo .txt-institucional p{
+	font-size: 18px;
+	margin: 0 0 25px 0;
+	line-height: 1em;
+}
+#container-geral .img-coifa {
+	float: right;
+	margin:50px 0;
+}

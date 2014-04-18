@@ -1,0 +1,115 @@
+<style type="text/css">
+
+.container_interna {
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+}	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: #7b1e57; }
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.bg-branco{ background: #FFF; height: 281px; position: absolute; bottom: 0px; width: 100%; }
+.discos-img { margin-left: -348px; top: 41px; }
+.cuidado { margin-left: -169px; top: 51px; }
+.skincare { margin-left: -414px; margin-top: 262px; }
+.levanta { top: 266px; margin-left: -90px; }
+.img-depilador { bottom: 0px; z-index: 0 !important; margin-left: 88px; }
+.iacd { margin-left: -41px; bottom: 0px; }
+.aprovados { margin-left: -394px; bottom: 28px; }
+.bg-verde { height: 52px; background: #83c2c5; width: 3000px; position: absolute; right: 50%; bottom: 12px; }
+
+#call-to-action3 { margin-left: 166px; bottom: 30px; z-index: 5 !important; }
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-branco"></div>
+        <div class="content-center">
+            <div class="div-content">
+                
+                <img src="caracteristicas/page3/discos-hipoalergenicos.jpg" width="164" height="164" alt="discos hipoalergênicos" title="discos hipoalergênicos" class="discos-img" />
+                
+                <img src="caracteristicas/page3/mais-cuidado-com-a-pele.png" width="299" height="147" alt="Mais cuidado com a pele" title="Mais cuidado com a pele" class="cuidado" />
+                
+                <img src="caracteristicas/page3/sistema-skincare.jpg" width="306" height="188" alt="Sistema Skincare - evita puxões na pele" title="Sistema Skincare - evita puxões na pele" class="skincare" />
+                
+                <img src="caracteristicas/page3/levanta-os-pelos-e-massageia.png" width="264" height="133" alt="Levanta os pelos e massageia" title="Levanta os pelos e massageia" class="levanta" />
+                
+                <img src="caracteristicas/page3/aprovados.png" width="341" height="23" alt="Os depiladores Philips Satinelle são aprovados pela Academia Internacional de Dermatologia Cosmética." title="Os depiladores Philips Satinelle são aprovados pela Academia Internacional de Dermatologia Cosmética." class="aprovados" />
+                
+                <img src="caracteristicas/page3/iacd.png" width="82" height="81" alt="IACD" title="IACD" class="iacd" />
+                
+              <div class="bg-verde"></div>
+                
+                <img src="caracteristicas/page3/frente-depilador.jpg" width="339" height="460" alt="Frente do depilador Philips" title="Frente do depilador Philips" class="img-depilador" />			            	 
+                
+                <a href="#"><img src="caracteristicas/page3/conforto-e-exclusividade.png" width="264" height="45" alt="Conforto e exclusividade" title="Conforto e exclusividade" id="call-to-action3" /></a>
+
+            
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//bg-branco
+	TweenMax.from( $(".bg-branco") , 1, { css: { width: "0" } , ease: Circ.easeInOut});	
+	
+	//img
+	TweenMax.from( $(".img-depilador") , 1, { css: { left: "+=150", opacity:0 } , ease: Strong.easeInOut, delay: 1});	
+	
+	//discos
+	TweenMax.from( $(".discos-img") , 1.5, { css: { left: "-=200", alpha:0, rotation:-180 } , ease: Strong.easeInOut, delay: 1.3});	
+	
+	//Cuidado
+	TweenMax.from( $(".cuidado") , 1.5, { css: { left: "+=200", alpha:0 } , ease: Strong.easeInOut, delay: 1.3});
+	
+	//Skincare
+	TweenMax.from( $(".skincare") , 1, { css: { top: "+=100", alpha:0 } , ease: Strong.easeInOut, delay: 2});
+	
+	//levanta
+	TweenMax.from( $(".levanta") , 1, { css: { top: "-=150", alpha:0 } , ease: Strong.easeInOut, delay: 2.3});
+	
+	//iacd
+	TweenMax.from( $(".iacd") , 1.5, { css: { left: "+=100", alpha:0, rotation:180 } , ease: Strong.easeInOut, delay: 2.8});
+	
+	//bg-verde
+	TweenMax.from( $(".bg-verde") , 1.5, { css: { width:0 } , ease: Circ.easeInOut, delay: 3.2});
+	
+	//aprovados
+	TweenMax.from( $(".aprovados") , 1, { css: { alpha:0 } , delay: 3.2});	
+	
+	//call to action
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:4.5, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+		
+});
+</script>

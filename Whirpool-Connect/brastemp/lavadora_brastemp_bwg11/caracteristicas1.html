@@ -1,0 +1,224 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	
+}	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/bg.jpg);
+	background-color: #59031B;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto 0 -35px;
+	width: 820px;
+	height: 520px;
+	position: relative;
+	
+}
+.div-content div { 
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+
+/* OBJETOS NA TELA */
+
+.header { 
+	top: 32px;
+	left: 232px;
+	width: 573px;
+	height: 106px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/header.png);
+}
+.header2 { 
+	top: 154px;
+	left: 420px;
+	width: 389px;
+	height: 91px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/lavadora-mais-rapida-do-brasil.png);
+}
+.capacidade-11kg { 
+	bottom: -38px;
+	left: 38px;
+	width: 130px;
+	height: 148px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/capacidade-para-11kg-roupa.png);
+}
+.lavadora-branca { top: 22px; left: 64px; width: 346px; height: 451px; background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/lavadora-bwg11-branca.png); position:relative; z-index:10; }
+.lavadora-inox { 
+	top: 22px;
+	left: 64px;
+	width: 346px;
+	height: 451px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/lavadora-bwg11-inox.png);
+}
+.descricao { 
+	top: 280px;
+	left: 419px;
+	width: 351px;
+	height: 71px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/descricao.png);
+}
+.disponivel2cores { 
+	top: 418px;
+	left: 389px;
+	width: 70px;
+	height: 24px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/disponivel-2cores.png);
+}
+.thumb-branca { 
+	top: 398px;
+	left: 470px;
+	width: 44px;
+	height: 65px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/thumb-lavadora-branca.png);
+	cursor: pointer;
+}
+.thumb-inox { 
+	top: 398px;
+	left: 520px;
+	width: 44px;
+	height: 65px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/thumb-lavadora-inox.png);
+	cursor: pointer;
+}
+.caveat { 
+	top: 495px;
+	left: 264px;
+	width: 531px;
+	height: 11px;
+	background-image: url(http://www.whirpoolspecialcontent.com/lavadora_brastemp_bwg11/caracteristicas/page1/caveat.png);
+}
+.saiba-mais { 
+	top: 405px;
+	left: 630px;
+	width: 162px;
+	height: 66px;
+	cursor: pointer;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+		
+		TweenMax.from( $(".header") , .8, { css: { width: "0px" } , ease: Circ.easeInOut });
+		TweenMax.from( $(".header2") , .8, { css: { width: "0px" } , ease: Circ.easeInOut });
+		TweenMax.from( $(".capacidade-11kg") , .8, { css: { bottom: "-148px" } , ease: Circ.easeInOut });
+		TweenMax.from( $(".lavadora-branca") , .8, { css: { left: "-400px" , alpha: 0 } , ease: Circ.easeInOut });
+		TweenMax.to( $(".lavadora-inox") , 0, { css: { alpha: 0 } , ease: Circ.easeInOut });
+		TweenMax.from( $(".descricao") , .8, { css: { width: "0px" , height: "0px" } , ease: Circ.easeInOut });
+		TweenMax.from( $(".disponivel2cores") , .8, { css: { width: "0px" , height: "0px" } , ease: Circ.easeInOut });
+		
+		TweenMax.from( $(".saiba-mais") , .5, { css: { left: "+=200px" , alpha: 0 } , ease: Strong.easeOut, onComplete: function() {
+			
+			TweenMax.to( $(".saiba-mais"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+			
+		}} );
+		
+		$("#call-to-action").on('click' , function( e ) { 
+			
+			$(this).die();
+			TweenMax.killAll();
+			Connect.changePageFromCallToAction("caracteristicas2.html" , true );
+		
+		});
+		
+		$(".saiba-mais").hover(function(e) {
+            TweenMax.to( $(".saiba-mais") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".saiba-mais") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		$(".thumb-inox").css("background-position" , "0 -67px");
+		
+		$(".thumb-branca").hover( function( e ) { 
+			
+			TweenMax.to( $(".lavadora-branca") , .5, { css: { alpha: 1 } , ease: Circ.easeOut });
+			TweenMax.to( $(".lavadora-inox") , .5, { css: { alpha: 0 } , ease: Circ.easeOut });
+			$(".thumb-inox").css("background-position" , "0px -67px");
+			$(".thumb-branca").css("background-position" , "0 0");
+			
+		});
+		$(".thumb-inox").hover( function( e ) { 
+			
+			TweenMax.to( $(".lavadora-branca") , .5, { css: { alpha: 0 } , ease: Circ.easeOut });
+			TweenMax.to( $(".lavadora-inox") , .5, { css: { alpha: 1 } , ease: Circ.easeOut });
+			$(".thumb-branca").css("background-position" , "0px -67px");
+			$(".thumb-inox").css("background-position" , "0 0");
+		});
+		
+		
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <div class="header">
+                	<img src="caracteristicas/page1/header.png" width="573" height="106" title="A Brastemp de sempre, mais rápida que nunca" />
+                </div>
+                
+                <div class="header2">
+                	<img src="caracteristicas/page1/lavadora-mais-rapida-do-brasil.png" width="389" height="91" title="A lavadora mais rápida do Brasil*" alt="A lavadora mais rápida do Brasil*" />
+                </div>
+                <div class="capacidade-11kg">
+                	<img src="caracteristicas/page1/capacidade-para-11kg-roupa.png" width="130" height="148" alt="Capacidade para 11KG de roupa" title="Capacidade para 11KG de roupa" />
+                </div>
+                
+                <div class="lavadora-branca">
+                	<img src="caracteristicas/page1/lavadora-bwg11-branca.png" width="346" height="451" title="Lavadora Brastemp BWG11 branca" alt="Lavadora Brastemp BWG11 branca" />
+                </div>
+                
+                <div class="lavadora-inox">
+                	<img src="caracteristicas/page1/lavadora-bwg11-inox.png" width="346" height="451" title="Lavadora Brastemp BWG11 Inox" alt="Lavadora Brastemp BWG11 Inox" />
+                </div>
+                
+                <div class="descricao">
+                	<img src="caracteristicas/page1/descricao.png" width="351" height="71" alt="A Lavadora Brastemp Ative! BWG11 é ideal para quem deseja ter roupas limpas rapidamente. Praticidade para lavar, qualidade e tecnologia para economizar o seu tempo." title="A Lavadora Brastemp Ative! BWG11 é ideal para quem deseja ter roupas limpas rapidamente. Praticidade para lavar, qualidade e tecnologia para economizar o seu tempo." />
+                </div>
+                
+                <div class="disponivel2cores">
+                	<img src="caracteristicas/page1/disponivel-2cores.png" width="70" height="24" alt="Disponível em 2 cores" title="Disponível em 2 cores" />
+                </div>
+                
+                <div class="thumb-branca"></div>
+                
+                <div class="thumb-inox"></div>
+                
+                <div class="caveat"></div>
+                
+                 <div class="saiba-mais" id="call-to-action">
+                	<img src="caracteristicas/page1/saiba-mais.png" width="162" height="66" alt="Saiba mais" title="Saiba mais" />
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+#barra-esq{ position:absolute; right:50%; margin-right:-30px; top:0; width:100%; min-width:410px; height:290px; background:#e14368;}
+#barra-dir{ position:absolute; left:50%; margin-left:30px; top:0; width:100%; min-width:410px; height:290px; background:#83c2c5;}
+
+.titulo1{ margin-left:-370px; top:45px;}
+.paragrafo1{ margin-left:-370px; top:90px;}
+.img1{ margin-left:-350px; top:160px;}
+.titulo2{ margin-left:60px; top:25px;}
+.paragrafo2{ margin-left:60px; top:90px;}
+.img2{ margin-left:60px; top:170px;}
+.acompanha{ margin-left:-380px; top:335px;}
+.depilador{ margin-left:-118px; bottom:0;}
+
+#call-to-action4{ margin-left:170px; bottom:90px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".titulo1"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".paragrafo1"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".img1"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".titulo2"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".paragrafo2"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".img2"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".acompanha"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".depilador"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+		
+	//call to action
+	TweenMax.from( $("#call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:.9, onComplete: function() {
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action4").hover(function(e) {
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action4" , "caracteristicas5.html", true );	
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page4/depilador.jpg" width="275px" height="230px" alt="Depilador Philips Satinelle HP6521/30" title="Depilador Philips Satinelle HP6521/30" class="absoluto depilador" />
+                
+                <div id="barra-esq"></div>
+                <div id="barra-dir"></div>
+                
+                <img src="caracteristicas/page4/massageia-enquanto-depila.png" width="358px" height="22px" alt="Massageia enquanto depila" title="Massageia enquanto depila" class="absoluto titulo1" />
+                <img src="caracteristicas/page4/paragrafo-1-o-depilador.png" width="382px" height="54px" alt="O Depilador Philips Satinelle HP6521 vem acompanhado de uma capa com massageador, que massageia enquanto depila, proporcionando ainda mais conforto durante o uso." title="O Depilador Philips Satinelle HP6521 vem acompanhado de uma capa com massageador, que massageia enquanto depila, proporcionando ainda mais conforto durante o uso." class="absoluto paragrafo1" />
+                <img src="caracteristicas/page4/img-massageia.jpg" width="300px" height="130px" alt="Massageia enquanto depila" title="Massageia enquanto depila" class="absoluto img1" />
+                
+                <img src="caracteristicas/page4/capa-exclusiva-para-as-areas-mais-sensiveis.png" width="278px" height="47px" alt="Capa exclusiva para as áreas mais sensíveis" title="Capa exclusiva para as áreas mais sensíveis" class="absoluto titulo2" />
+                <img src="caracteristicas/page4/paragrafo-2-seu-sistema.png" width="311px" height="55px" alt="Seu sistema de depilação eficiente remove pelos a partir de 0,5mm, proporcionando uma pele macia e depilada por semanas." title="Seu sistema de depilação eficiente remove pelos a partir de 0,5mm, proporcionando uma pele macia e depilada por semanas." class="absoluto paragrafo2" />
+                <img src="caracteristicas/page4/img-capa.jpg" width="300px" height="120px" alt="Capa exclusiva para as áreas mais sensíveis" title="Capa exclusiva para as áreas mais sensíveis" class="absoluto img2" />
+                
+                <img src="caracteristicas/page4/acompanha-uma-linda-necessaire-para-voce-levar-seu-depilador-em-suas-viagens.png" width="296px" height="109px" alt="Acompanha uma linda necessaire para você levar seu depilador em suas viagens!" title="Acompanha uma linda necessaire para você levar seu depilador em suas viagens!" class="absoluto acompanha" />            
+                
+                <a href="#"><img src="caracteristicas/page4/btn-tabela-comparativa.png" width="215px" height="45px" alt="Tabela comparativa" title="Tabela comparativa" class="absoluto" id="call-to-action4" /></a>
+                                
+            </div>
+        </div>
+    
+    </div>
+</div>

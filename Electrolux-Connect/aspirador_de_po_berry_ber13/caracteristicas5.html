@@ -1,0 +1,108 @@
+<style type="text/css">
+
+.connect-container .container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background:#FFF url(caracteristicas/page5/background.jpg);
+}
+	
+.connect-container .holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container #produto{ background:url(caracteristicas/page5/produto.png) 50% 50% no-repeat; width:100%; height:520px;}
+
+.connect-container .box{ position:absolute;}
+.connect-container .box h2{ font-family: "HelveticaNeueLTStd-Md"; font-size:21px; color:#FFF;}
+.connect-container .box p{ font-family: "HelveticaNeueLTStd-Lt"; font-size:21px; color:#FFF;}
+
+.connect-container #box1{ left:50%; margin-left:60px; top:20px; background:url(caracteristicas/page5/bg1.png) no-repeat; width:270px; height:86px; padding:30px 0 0 75px; }
+.connect-container #box2{ right:50%; margin-right:110px; top:244px; background:url(caracteristicas/page5/bg2.png) no-repeat; width:235px; height:94px; padding:15px 0 0 20px;}
+.connect-container #box3{ left:50%; margin-left:150px; top:295px; background:url(caracteristicas/page5/bg3.png) no-repeat; width:223px; height:88px; padding:15px 0 0 45px;}
+.connect-container #box4{ right:50%; margin-right:10px; top:446px; background:url(caracteristicas/page5/bg4.png) no-repeat; width:258px; height:65px; padding:35px 0 0 40px;}
+
+.connect-container #call-to-action5{ margin-left:230px; bottom:5px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action5"), "fadeInRight", "s10", "videos.html", false );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<div id="produto" class="animated fadeIn s05"></div>
+                
+                <div id="box1" class="box animated fadeInRight s06">
+                	<h2>Alça ergonômica</h2>
+                    <p>para transporte</p>
+                </div>
+                
+                <div id="box2" class="box animated fadeInLeft s07">
+                	<h2>Rodas macias:</h2>
+                    <p>não riscam o piso</p>
+                </div>
+                
+                <div id="box3" class="box animated fadeInRight s08">
+                	<h2>Enrolador de</h2>
+                    <p>cabo elétrico</p>
+                </div>
+                
+                <div id="box4" class="box animated fadeInLeft s09">
+                	<h2>Pedal liga/desliga</h2>
+                </div>
+                
+                <a href="#" id="call-to-action5" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page5/btn-video.png" width="154" height="76" alt="Vídeo" title="Vídeo" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

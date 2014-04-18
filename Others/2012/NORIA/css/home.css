@@ -1,0 +1,24 @@
+#home{background-color:#125A9C !important}
+.img-home{float:right; margin-right:5px; margin-bottom:20px}
+.txts{position:absolute; width:580px; left:0px; top:28px}
+.txts h2{text-transform:uppercase; color:#0C4A83 !important; font-size:37px !important; margin-bottom:70px !important}
+.txts h3{font-size:20px !important; color:#0096D8 !important; width:325px; font-weight:bold; margin-bottom:25px !important}
+.txts p{width:400px; font-size:20px; margin-bottom:30px}
+.txts .saiba-mais{background:#125A9C; padding:10px 5px; text-align:center; width:300px}
+.txts .saiba-mais a{color:#FFF; font-size:20px}
+.relative{position:relative}
+.treinamentos{float:left}
+.treinamentos, .servicos{width:375px}
+.treinamentos .titulo, .servicos .titulo{text-align:center; padding:20px}
+.treinamentos .titulo h3, .servicos .titulo h3{font-size:44px !important; color:#FFF !important; text-transform:uppercase; margin-bottom:0 !important; font-weight:normal !important}
+.treinamentos .titulo{background:#0096DA}
+.servicos .titulo{background:#125A9C}
+.treinamentos .txt, .servicos .txt{padding:20px 15px; border-right:1px solid #125A9C; border-bottom:1px solid #125A9C; border-left:1px solid #125A9C; border-top-style:none; height:195px}
+.treinamentos .txt li, .servicos .txt li{background:url(../images/bg-li-home.gif) no-repeat 0px 3px; margin-bottom:10px; padding-left:12px; font-size:15px}
+.treinamentos .txt li a, .servicos .txt li a{color:#333;}
+.servicos-container{position:absolute; left:400px; top:0px; background:url(../images/chave-back.jpg) no-repeat right bottom; width:511px; height:357px}
+.servicos{background:#FFF; position:relative}
+.chave-front{background:url(../images/chave-front.png) no-repeat; height:130px; width:205px; position:absolute; right:0px; bottom:0px; z-index:2}
+.calendario{float:right; text-align:center; width:165px; background:url(../images/bg-calendario.jpg) repeat-x; padding-top:20px; height:153px; position:relative}
+.calendario a{font-size:18px; font-weight:normal; color:#12599B}
+.calendario img{position:absolute; right:0px; bottom:-20px}

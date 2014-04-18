@@ -1,0 +1,56 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(caracteristicas/page5/bg-caracteristicas5.jpg) no-repeat center 0; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img, .glow{display:block; position:absolute; left:50%;}
+.glow { background: url(caracteristicas/page5/glow.png); height: 159px; width: 639px; top: 241px; margin-left: -353px; }
+.detalhe { bottom: 0px; margin-left: -382px; }
+.call-to-action5 { margin-left: 194px; bottom: 31px; }
+.auxiliar-txt { top: 131px; margin-left: -346px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+      <div class="content-center">
+            <div class="div-content">
+            	
+            	<img src="caracteristicas/page5/txt.png" width="285" height="107" alt="Entrada auxiliar para você ouvir suas músicas do celular, smartphone, tablets, MP3/MP4 ou do computador." title="Entrada auxiliar para você ouvir suas músicas do celular, smartphone, tablets, MP3/MP4 ou do computador." class="auxiliar-txt" />
+            	
+            	<div class="glow"></div>
+            	
+            	<img src="caracteristicas/page5/detalhe-traseira.png" width="530" height="155" alt="Detalhe da parte traseira do dock" title="Detalhe da parte traseira do dock" class="detalhe" />
+            	
+            	<a href="#"><img src="caracteristicas/page5/assista-o-video.png" width="172" height="57" alt="Assista o vídeo" title="Assista o vídeo" class="call-to-action5" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>  
+      
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".glow") , 2.5, { css: { height:0 } , ease: Strong.easeOut, delay:.3});
+	TweenMax.from( $(".detalhe") , 1, { css: { alpha:0 } , ease: Strong.easeOut, delay:1.2});
+	TweenMax.from( $(".auxiliar-txt") , 1, { css: { top:"-=80px", alpha:0 } , ease: Strong.easeOut, delay:1.5});
+	
+	//call to action
+	TweenMax.from( $(".call-to-action5") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.8, onComplete: function() {
+			
+		TweenMax.to( $(".call-to-action5"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".call-to-action5").hover(function(e) {
+            TweenMax.to( $(".call-to-action5") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".call-to-action5") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".call-to-action5" , "videos.html", false );
+	
+		
+});
+</script>

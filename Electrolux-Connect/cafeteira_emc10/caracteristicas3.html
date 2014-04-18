@@ -1,0 +1,95 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(http://www.electroluxwebcontent.com/cafeteira_emc10/caracteristicas/bg-body.jpg) repeat !important; } 
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; } 
+.div-content img { position: absolute; left: 50%; z-index: 1; } 
+.cafeteira-img { margin-left: -390px; top: 38px; z-index: 3 !important; } 
+.elipse { background: url(http://www.electroluxwebcontent.com/cafeteira_emc10/caracteristicas/page3/bg-elipse.png) !important; height: 314px; width: 776px; margin-left: -565px; position: absolute; bottom: 0px; left: 50%; z-index: 0 !important; } 
+.placa-txt { margin-left: -38px; top: 38px; }
+#call-to-action3 { margin-left: 166px; bottom: 30px; z-index: 5 !important; }
+.facilidade-txt { margin-left: -138px; top: 229px; background: url(http://www.electroluxwebcontent.com/cafeteira_emc10/caracteristicas/page3/facilidade-limpeza.png) !important; height: 111px; width: 433px; position: absolute; left: 50%; z-index: 1; }
+.bico { margin-left: -210px; top: 310px; z-index: 4 !important; } 
+.fade { background: url(http://www.electroluxwebcontent.com/cafeteira_emc10/caracteristicas/fade-branco.png) !important; height: 520px; width: 1169px; z-index: 1 !important; left: 50%; top: 0px; position: absolute; margin-left: -830px; opacity:0.6; } 
+.bandeja { margin-left: 243px; top: 207px; }
+#smoke { width: 55px; height: 121px; position: absolute; left: 50%; top: 300px; margin-left: -167px; z-index: 5 !important; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/frente-cafeteira-emc10.png" width="284" height="454" alt="frente da cafeteira Electrolux com 2 xícaras de café" title="frente da cafeteira CHEF EMC10" class="cafeteira-img" />
+                
+                <img src="caracteristicas/page3/detalhe-bico-vapor.png" width="166" height="197" alt="detalhe do bico de vapor" title="Bico de vapor" class="bico" />
+                
+                <img src="caracteristicas/page3/placa-de-aquecimento-para-xicaras.png" width="328" height="167" alt="Placa de aquecimento para xícaras" title="Placa de aquecimento para xícaras" class="placa-txt" />
+                
+                <div class="facilidade-txt"></div>
+                
+                <img src="caracteristicas/page3/detalhe-bandeja.png" width="161" height="162" alt="Detalhe da bandeja de gotejamento" title="Detalhe da bandeja de gotejamento" class="bandeja" />
+                
+                <a href="#"><img src="caracteristicas/page3/assista-ao-video.png" width="236" height="89" alt="Assista ao vídeo" title="Assista ao vídeo" id="call-to-action3" /></a>
+                
+                <div id="smoke">
+                    <object width="60" height="131">
+                        <param name="movie" value="smoke.swf">
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="transparent" />
+                        <embed src="smoke.swf" width="60" height="131" movie="smoke.swf" quality="high" wmode="transparent"></embed>
+                    </object>
+                </div>
+                <div class="elipse"></div>
+              
+                <div class="fade"></div>
+            
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<!--<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	//cafeteira img
+	TweenMax.from( $(".cafeteira-img") , 1, { css: { left: "-=100px" , alpha: 0 } , ease: Strong.easeOut, delay:0.2});
+	
+	//fumaça
+	TweenMax.from( $("#smoke") , 1, { css: { alpha: 0 } , ease: Strong.easeOut, delay:2});
+	
+	//elipse
+	TweenMax.from( $(".elipse") , 1, { css: { left: "+=100px" , alpha: 0 } , ease: Strong.easeOut, delay:0.2});
+	
+	//detalhe
+	TweenMax.from( $(".bico") , 2.5, { css: { width:0, height:0 , alpha: 0 } , ease: Strong.easeOut, delay:0.7});
+	
+	//txt
+	TweenMax.from( $(".placa-txt") , 1, { css: { top:"-=100px" , alpha: 0 } , ease: Strong.easeOut, delay:1.7});
+	
+	//facilidade
+	TweenMax.from( $(".facilidade-txt") , 1, { css: { width:0 , alpha: 0 } , ease: Strong.easeOut, delay:2});
+	
+	//txt
+	TweenMax.from( $(".bandeja") , 1, { css: { left:"+=250px" , alpha: 0 } , ease: Strong.easeOut, delay:2});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action3") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2.5, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action3" , "videos.html", false );
+		
+});
+</script>-->

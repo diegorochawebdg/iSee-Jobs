@@ -1,0 +1,82 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page3/bg.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.absolute{position:absolute; left:50%;}
+.div-content h2 strong { font: 22px 'Humanist521BT-Bold'; color: #a71420; display:block; }
+.div-content h2 { font: 17px 'Humanist521BT-Roman'; color: #2d2d2d; margin-left: -74px; top: 22px; }
+.div-content div h3 { font: 18px 'Humanist521BT-Bold'; color: #666666; margin:0; }
+.div-content div p { font-size: 14px; color: #2d2d2d; }
+.stir { margin-left: 28px; top: 95px; }
+.chop { margin-left: 44px; top: 168px; }
+.mix { margin-left: 68px; top: 244px; }
+.puree { margin-left: 92px; top: 315px; }
+.liquefy { margin-left: 117px; top: 405px; }
+.call-to-action3 { background: url(caracteristicas/page3/funcoes-pre-programadas.png); height: 31px; width: 392px; text-indent: -9999px; bottom: 10px; }
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s11{ -webkit-animation-delay:1.1s; -moz-animation-delay:1.1s; -o-animation-delay:1.1s; animation-delay:1.1s;}
+.connect-container .s13{ -webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+.connect-container .s15{ -webkit-animation-delay:1.5s; -moz-animation-delay:1.5s; -o-animation-delay:1.5s; animation-delay:1.5s;}
+.connect-container .s19{ -webkit-animation-delay:1.9s; -moz-animation-delay:1.9s; -o-animation-delay:1.9s; animation-delay:1.9s;}
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<h2 class="absolute animated fadeInDown s05"><strong>O Liquidificador KitchenAid<br />possui 5 velocidades,</strong><!-- performance ideal para diversos tipos de receitas:--></h2>
+                
+                <div class="stir absolute animated fadeInDown s07">
+                	<h3>Stir:</h3>
+                    <p>Mexe diversos alimentos como sopas, <br />molhos e pastas.</p>
+                </div>
+                
+                <div class="chop absolute animated fadeInDown s09">
+                	<h3>Chop</h3>
+                    <p>Pica hortaliças. Ideal para um molho <br />Pesto super saboroso.</p>
+                </div>
+                
+                <div class="mix absolute animated fadeInDown s11">
+                	<h3>Mix:</h3>
+                    <p>Mistura massas para panquecas e waffles, <br />além de preparar sucos de frutas concentrados.</p>
+                </div>
+                
+                <div class="puree absolute animated fadeInDown s13">
+                	<h3>Puree:</h3>
+                    <p>Para alimentos na consistência pastosa, <br />como papinha de bebê, purê de legumes <br />e frutas e farinha de aveia.</p>
+                </div>
+                
+                <div class="liquefy absolute animated fadeInDown s15">
+                	<h3>Liquefy:</h3>
+                    <p>Liquidifica cheesecakes, bebidas, <br />gelatinas, entre outros.</p>
+                </div>
+                
+                <a href="#" class="call-to-action3 absolute animated fadeInRightBig s19">Funções pré-programadas</a>
+            	
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	connect_callToAction( $(".connect-container .call-to-action3"), "fadeInRightBig", "s19", "caracteristicas4.html", true );
+ 
+ function connect_callToAction( button, animation, delay, page, boolean ){
+  var connect_pageStart = setInterval( function(e){
+   button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+   .hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 ); } );
+   Connect.addCallToAction( button , page, boolean );
+   clearInterval( connect_pageStart );
+  }, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+ }
+	
+});
+</script>

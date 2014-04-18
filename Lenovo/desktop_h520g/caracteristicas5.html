@@ -1,0 +1,145 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/page5/background.jpg) 50% 50% no-repeat;
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna .pc-desktop{ margin-left:-310px; bottom:0px;}
+.container_interna .titulo{ margin-left:-380px; top:96px;}
+.container_interna .gabinete{ margin-left:-380px; top:142px;}
+.container_interna .aco-glossy{ margin-left:164px; top:156px;}
+.container_interna .acabamento{ margin-left:248px; top:164px;}
+.container_interna #conectores{ margin-left:-24px; top:168px; cursor:pointer;}
+.container_interna .frontais{ margin-left:-312px; top:216px;}
+
+.container_interna #call-to-action5{ margin-left:222px; bottom:30px; cursor:pointer;}
+
+.container_interna #conectores-frontais{ background:url(caracteristicas/page5/bg-painel.png); width:100%; height:520px; position:absolute; z-index:4; display:none;}
+.container_interna #conectores-frontais .pc-painel{ margin-left:-275px; top:70px;}
+.container_interna #conectores-frontais .fones{ margin-left:-212px; top:68px;}
+.container_interna #conectores-frontais .microfone{ margin-left:-58px; top:68px;}
+.container_interna #conectores-frontais .leitor{ margin-left:88px; top:44px;}
+.container_interna #conectores-frontais .usb{ margin-left:-180px; top:318px;}
+.container_interna #conectores-frontais .cartoes{ margin-left:77px; top:314px;}
+.container_interna #conectores-frontais #fechar{ margin-left:228px; top:82px; cursor:pointer;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	TweenMax.from($(".pc-desktop"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".gabinete"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".aco-glossy"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".acabamento"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($("#conectores"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".frontais"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2});
+		
+	TweenMax.from( $("#call-to-action5") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action5"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action5").hover(function(e) {
+            TweenMax.to( $("#call-to-action5") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action5") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action5" , "videos.html", false );
+	}} );
+	
+	function animaBox(){
+	
+		TweenMax.from($(".pc-painel"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+		TweenMax.from($(".fones"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+		TweenMax.from($(".microfone"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+		TweenMax.from($(".leitor"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+		TweenMax.from($(".usb"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:.9});
+		TweenMax.from($(".cartoes"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1});
+		TweenMax.from($("#fechar"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	}
+	
+	$( "#conectores" ).on("click", function(e){
+		
+		animaBox();
+		
+		$( "#conectores-frontais" ).fadeIn();
+		
+		Connect.trackPageView( "caracteristicas5/conectores-frontais.html" );
+		
+	});
+	
+	$( "#fechar" ).on("click", function(e){
+		
+		$( "#conectores-frontais" ).fadeOut();
+		
+	});
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page5/pc-desktop.png" width="582px" height="491px" alt="" title="" class="absoluto pc-desktop" />
+                <img src="caracteristicas/page5/titulo-visual-clean.png" width="215px" height="21px" alt="Visual Clean" title="Visual Clean" class="absoluto titulo" />
+                <img src="caracteristicas/page5/gabinete-com-design-clean-e-elegante.png" width="137px" height="30px" alt="Gabinete com design clean e elegante." title="Gabinete com design clean e elegante." class="absoluto gabinete" />
+                <img src="caracteristicas/page5/aco-glossy.png" width="77px" height="112px" alt="" title="" class="absoluto aco-glossy" />
+                <img src="caracteristicas/page5/acabamento-em-aco-escovado-e-detalhes-em-preto-glossy.png" width="134px" height="81px" alt="Acabamento em aço escovado e detalhes em preto glossy" title="Acabamento em aço escovado e detalhes em preto glossy" class="absoluto acabamento" />
+                
+                <img src="caracteristicas/page5/btn-spot.png" width="49px" height="49px" alt="" title="" class="absoluto" id="conectores" />
+                <img src="caracteristicas/page5/conectores-frontais.png" width="314px" height="104px" alt="Conectores frontais" title="Conectores frontais" class="absoluto frontais" />
+                
+                <img src="caracteristicas/page5/btn-assista-ao-video.png" width="171px" height="64px" alt="Assista ao vídeo" title="Assista ao vídeo" class="absoluto" id="call-to-action5" />
+                
+                <div id="conectores-frontais">
+                	<img src="caracteristicas/page5/pc-painel.png" width="560px" height="345px" alt="" title="" class="absoluto pc-painel" />
+                    <img src="caracteristicas/page5/entrada-para-fones-de-ouvido.png" width="111px" height="185px" alt="Entrada para fones de ouvido" title="Entrada para fones de ouvido" class="absoluto fones" />
+                    <img src="caracteristicas/page5/entrada-para-microfone.png" width="92px" height="185px" alt="Entrada para microfone" title="Entrada para microfone" class="absoluto microfone" />
+                    <img src="caracteristicas/page5/leitor-gravador-de-dvd-cd.png" width="185px" height="166px" alt="Leitor/Gravador de DVD/CD" title="Leitor/Gravador de DVD/CD" class="absoluto leitor" />
+                    <img src="caracteristicas/page5/portas-usb-20.png" width="199px" height="111px" alt="Portas USB 2.0" title="Portas USB 2.0" class="absoluto usb" />
+                    <img src="caracteristicas/page5/leitor-de-cartoes-de-memoria-7-em-1.png" width="122px" height="128px" alt="Leitor de cartões de memória 7 em 1" title="Leitor de cartões de memória 7 em 1" class="absoluto cartoes" />
+                    
+                    <img src="caracteristicas/page5/btn-fechar.png" width="96px" height="29px" alt="Fechar" title="Fechar" class="absoluto" id="fechar" />
+                    
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

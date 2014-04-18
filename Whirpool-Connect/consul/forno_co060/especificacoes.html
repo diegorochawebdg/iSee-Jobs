@@ -1,0 +1,70 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(cliente/bg-especificacoes.png) repeat-y; } .holder_interna { width: 100%; height: 520px; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; }
+.div-content img{position:absolute; left:50%;}
+.instalacao { margin-left: 66px; top: 61px; }
+.assista { margin-left: 73px; top: 244px; }
+.mais-informacoes { margin-left: 66px; top: 273px; }
+.informacoes { margin-left: -370px; bottom: 15px; }
+.bivolt { margin-left: 162px; top: 325px; }
+.instalacao-facil { margin-left: 260px; top: 325px; }
+.dimensoes { margin-left: -370px; top: 61px; }
+.dimensoes-img { margin-left: -377px; top: 113px; }
+.garantia { margin-left: 66px; top: 325px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <img src="cliente/instalacao.png" width="261" height="177" alt="Instalação" title="Instalação" class="instalacao" />
+                
+                <a href="#" title="" class="saibamais"><img src="cliente/mais-informacoes.png" width="180" height="38" alt="Mais informações" title="Mais informações" class="mais-informacoes" /></a>
+                
+                <img src="cliente/garantia-12-meses.png" width="87" height="87" alt="Garantia de 12 meses" title="Garantia de 12 meses" class="garantia" />
+                
+                <img src="cliente/bivolt.png" width="87" height="87" alt="Bivolt" title="Bivolt" class="bivolt" />
+                
+                <img src="cliente/instalacao-facil.png" width="83" height="86" alt="Instalação Fácil" title="Instalação Fácil" class="instalacao-facil" />
+                
+                <img src="cliente/dimensoes-e-peso.png" alt="Dimensões e Peso" width="295" height="31" class="dimensoes" title="Dimensões e Peso" />
+                
+                <img src="cliente/dimensoes-img.jpg" width="396" height="305" alt="Dimensões e peso" title="Dimensões e Peso" class="dimensoes-img" />
+                
+                <img src="cliente/informacoes.png" width="714" height="29" alt="Informações" title="Informações" class="informacoes" />
+                
+          </div>
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {	
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });
+	
+	$(".mais-informacoes, .assista").hover(function(e) {
+            TweenMax.to( $(this) , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".assista" , "videos.html", false );	
+	Shadowbox.init();
+	
+	$(".saibamais").click( function( event ) {
+		//Connect.trackEvent('Botao', 'MaisInformacoes', $NOME_FOLDER + "especificacoes.html" );
+		Connect.trackPageView(  $NOME_FOLDER + Connect.currentPage + "/saiba-mais.html" );
+		Shadowbox.open({
+			content:   	String( Connect.getHostedURL() + "saiba-mais.html"),
+			player:     "iframe",
+			height:     500,
+			width:      870
+		});
+		event.preventDefault();
+	});
+});
+</script>

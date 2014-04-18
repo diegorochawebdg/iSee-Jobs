@@ -1,0 +1,114 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #fff; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.bg-branco{ height: 162px; background: #fff; width: 4000px; }
+.bg-azul{ height: 232px; background: #83c2c5; width: 100%; }
+.bg-branco-2{ height: 126px; background: #fff; }
+.div-content img { position: absolute; left: 51%; z-index: 1; }
+.titulo { margin-left: -380px; top: 25px; }
+.bivolt{ top: 40px; margin-left: 124px; }
+.garantia{ top: 40px; margin-left: 185px; }
+.selo{ top: 15px; margin-left: 249px; }
+.modelo{ top: 122px; margin-left: -826px;  }
+.depilador{ top: 137px; margin-left: -132px; }
+.gota{ top: 333px; margin-left: -167px; }
+.skincare{ top: 173px; margin-left: 112px; }
+.seco-molhado{ top: 282px; margin-left: 76px; }
+.txt { margin-left: -380px; top: 209px; }
+.thermoblock, .xicaras, .vapor { top: 345px; z-index: 2 !important; }
+.thermoblock { margin-left: -400px; }
+.xicaras { margin-left: -295px; }
+.vapor { margin-left: -191px; }
+.cafeteira-img { margin-left: -210px; bottom: 0px; }
+#call-to-action { margin-left: 160px; bottom: 18px; z-index:2 !important; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-branco"></div>
+      <div class="bg-azul"></div>
+      <div class="bg-branco-2"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/viver-a-vontade.png" alt="Depiladores Wet&Dry HP6579/30 | Philips" width="365" height="96" class="titulo" title="Depiladores Wet&Dry HP6579/30 | Philips" />
+                
+                <img src="caracteristicas/page1/img-bivolt.png" width="50" height="50" class="bivolt" alt="Bivolt" title="Bivolt" />
+                
+                <img src="caracteristicas/page1/img-garantia.png" width="50" height="50" class="garantia" alt="2 anos de garantia" title="2 anos de garantia" />
+                
+                <img src="caracteristicas/page1/img-selo-90-dias.jpg" width="100" height="100" class="selo" alt="Experimente por 90 dias" title="Experimente por 90 dias" />
+                
+             		<img src="caracteristicas/page1/modelo-foto.jpg" width="672" height="398" class="modelo" alt="Modelo" title="Modelo" />
+                
+                <img src="caracteristicas/page1/depilador-6579.jpg" width="264" height="431" class="depilador" alt="Depilador Philips Satinelle HP6579/30" title="Depilador Philips Satinelle HP6579/30" />
+                
+                <img src="caracteristicas/page1/gota-wet-dry-use.png" width="72" height="113" class="gota" alt="Wet&Dry Use" title="Wet&Dry Use" />
+                
+                <img src="caracteristicas/page1/selo-skincare.jpg" width="252" height="104" class="skincare" alt="Sistema SkinCare - Evita puxões na pele!" title="Sistema SkinCare - Evita puxões na pele!" />
+                
+                <img src="caracteristicas/page1/uso-seco-molhado.jpg" width="238" height="95" class="seco-molhado" alt="Uso seco ou molhado" title="Uso seco ou molhado" />
+                
+                <a href="#"><img src="caracteristicas/page1/saiba-mais.jpg" alt="Saiba mais" width="219" height="45" id="call-to-action" title="Saiba mais" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".bg-azul") , 1, { css: { width: "0"} , ease: Circ.easeInOut, delay:.9});
+	
+	TweenMax.from( $(".titulo") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2});
+	
+	TweenMax.from( $(".bivolt") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2.3});
+	
+	TweenMax.from( $(".garantia") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay:2.6});
+	
+	TweenMax.from( $(".selo") , 5, { css: { width: "0", height: "0" } , ease: Elastic.easeOut, delay: 3});
+	
+	TweenMax.from( $(".modelo") , 1, { css: { alpha: 0, left: "+=100px;" } , ease: Strong.easeOut, delay: 3.5});
+	
+	TweenMax.from( $(".depilador") , 3, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay:3.5});
+	
+	TweenMax.from( $(".gota") , 3, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:3.8});
+	
+	TweenMax.from( $(".skincare") , 5, { css: { alpha: 0, top: "+=30px" } , ease: Elastic.easeOut, delay:4.1});
+	
+	TweenMax.from( $(".seco-molhado") , 5, { css: { alpha: 0, top: "-=30px" } , ease: Elastic.easeOut, delay:4.5});	
+	
+	
+	TweenMax.from( $("#call-to-action") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:4.7, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action").hover(function(e) {
+            TweenMax.to( $("#call-to-action") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	$("#call-to-action").on("click" , function( e ) { 
+		$(this).die();
+		TweenMax.killAll();
+		Connect.changePageFromCallToAction("caracteristicas2.html" , true );
+	
+	});
+});
+</script>

@@ -1,0 +1,101 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#000 url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+#background{ background:url(caracteristicas/page1/background.jpg) no-repeat; width:1024px; height:520px; margin-left:-512px; top:0;}
+.titulo{ margin-left:-385px; top:35px;}
+.selo{ margin-left:-380px; top:75px;}
+.subtitulo{ margin-left:2px; top:30px;}
+.paragrafo{ margin-left:38px; top:125px;}
+.linha{ margin-left:95px; top:274px;}
+.lista-01{ margin-left:36px; top:310px;}
+.lista-02{ margin-left:36px; top:340px;}
+.lista-03{ margin-left:36px; top:370px;}
+.lista-04{ margin-left:36px; top:400px;}
+.lista-05{ margin-left:36px; top:430px;}
+
+#call-to-action1{ margin-left:-325px; bottom:22px; cursor:pointer;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#background"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".selo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	
+	TweenMax.from($(".subtitulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".linha"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".lista-01"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".lista-02"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($(".lista-03"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($(".lista-04"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.3});
+	TweenMax.from($(".lista-05"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	
+	
+	//call to action
+	TweenMax.from( $("#call-to-action1") , 1, { css: { left: "-=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.6, onComplete: function() {
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action1").hover(function(e) {
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+    	<div id="background" class="absoluto"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+                
+                <img src="caracteristicas/page1/title-caixa-de-som-philips-shoqbox-sb7220.png" width="309px" height="19px" alt="Caixa de Som Philips Shoqbox SB7220" title="Caixa de Som Philips Shoqbox SB7220" class="absoluto titulo" />
+                <img src="caracteristicas/page1/selo-obsecados-por-som-philips.png" width="163px" height="171px" alt="Obsecados por som | Philips" title="Obsecados por som | Philips" class="absoluto selo" />
+                <img src="caracteristicas/page1/som-de-qualidade-e-resistente-a-altas-aventuras.png" width="334px" height="53px" alt="Som de qualidade e resistente a altas aventuras" title="Som de qualidade e resistente a altas aventuras" class="absoluto subtitulo" />
+                <img src="caracteristicas/page1/paragrafo-a-shoqbox.png" width="308px" height="98px" alt="A Shoqbox SB7220 da Philips está preparada para o que vier! Resistente a respingos d’água e a quedas, você pode transportá-la para qualquer lugar e desfrutar das suas músicas favoritas enquanto curte suas viagens!" title="A Shoqbox SB7220 da Philips está preparada para o que vier! Resistente a respingos d’água e a quedas, você pode transportá-la para qualquer lugar e desfrutar das suas músicas favoritas enquanto curte suas viagens!" class="absoluto paragrafo" />
+                <img src="caracteristicas/page1/linha.png" width="176px" height="1px" alt="Linha" title="" class="absoluto linha" />
+                <img src="caracteristicas/page1/lista-01.png" width="279px" height="15px" alt="Resistente a respingos d'água e a quedas" title="Resistente a respingos d'água e a quedas" class="absoluto lista-01" />
+                <img src="caracteristicas/page1/lista-02.png" width="67px" height="12px" alt="Portátil" title="Portátil" class="absoluto lista-02" />
+                <img src="caracteristicas/page1/lista-03.png" width="161px" height="13px" alt="Sensor de movimento" title="Sensor de movimento" class="absoluto lista-03" />
+                <img src="caracteristicas/page1/lista-04.png" width="183px" height="13px" alt="Conexão via Bluetooth&reg;" title="Conexão via Bluetooth&reg;" class="absoluto lista-04" />
+                <img src="caracteristicas/page1/lista-05.png" width="265px" height="16px" alt="Sensor inteligente para parear 2 caixas" title="Sensor inteligente para parear 2 caixas" class="absoluto lista-05" />
+                
+                <img src="caracteristicas/page1/btn-resistente-e-portatil.png" width="209px" height="58px" alt="Resistente e portátil" title="Resistente e portátil" class="absoluto" id="call-to-action1" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

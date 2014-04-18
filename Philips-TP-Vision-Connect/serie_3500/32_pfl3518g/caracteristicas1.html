@@ -1,0 +1,154 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #020517 url(caracteristicas/page1/bg-caracteristicas1.jpg) no-repeat center top; }	
+#connect .holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; }
+.content-center .div-content img{ position: absolute; left: 50%; }
+.titulo { margin-left: -374px; top: 48px; }
+.tv-img { margin-left: -92px; top: 80px; }
+.dtvi { margin-left: -360px; top: 233px; z-index: 2; display:none }
+.usb { top: 229px; margin-left: -374px; z-index: 2; display:none }
+.smarttv { top: 213px; margin-left: -372px; z-index: 2; }
+.full-hd { margin-left: -379px; top: 214px; z-index: 2; display:none }
+.passe-mouse { margin-left: -372px; bottom: 104px; }
+.smarttv-btn, .full-hd-btn, .dtvi-btn, .usb-btn{bottom:32px;}
+.divisao { background: url(caracteristicas/page1/divisao.png); height: 70px; width: 157px; margin-left: -298px; position: absolute; left: 50%; bottom: 20px; }
+.smarttv-btn { margin-left: -371px; }
+.full-hd-btn { margin-left: -290px; }
+.dtvi-btn { margin-left: -213px; }
+.usb-btn { margin-left: -137px; }
+.oculos { bottom: 25px; margin-left: -34px; }
+.polegadas { margin-left: -21px; bottom: 43px; }
+#call-to-action1 { margin-left: 137px; bottom: 25px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/serie-3500.png" width="241" height="96" alt="Série 3500 | Sua primeira Smart TV LED de alta definição" title="Série 3500 | Sua primeira Smart TV LED de alta definição" class="titulo" />
+                
+                <!--IMAGENS GRANDES-->
+                <img src="caracteristicas/page1/smarttv.png" width="289" height="162" alt="SmartTV" class="smarttv" title="SmartTV" />
+                <img src="caracteristicas/page1/full-hd.png" alt="Full HD LED" width="221" height="123" class="full-hd" title="Full HD LED" />
+                <img src="caracteristicas/page1/dtvi.png" width="252" height="116" alt="DTVi - Conversor integrado" title="DTVi - Conversor integrado" class="dtvi" />
+                <img src="caracteristicas/page1/usb.png" width="245" height="115" alt="USB" title="USB" class="usb" /> 
+                
+              <!--IMAGEM DA TV-->
+                <img src="caracteristicas/page1/frente-lateral-tv-phillips.png" width="531" height="286" alt="Frente e lateral da SmartTV Led Philips" class="tv-img" title="SmartTV Led Philips" />
+                
+                <img src="caracteristicas/page1/passe-o-mouse-e-conheca-as-outras-tecnologias.png" alt="Passe o mouse e conheça as outras tecnologias" title="Passe o mouse e conheça as outras tecnologias" class="passe-mouse" />
+                
+                <!--MINIATURAS-->
+              <div class="divisao"></div>
+                <a href="#"><img src="caracteristicas/page1/smarttv-btn.png" width="65" height="44" alt="SmartTV" class="smarttv-btn" title="SmartTV" /></a>
+                <a href="#"><img src="caracteristicas/page1/full-hd-btn.png" width="62" height="53" alt="Full HD LED" class="full-hd-btn" title="Full HD LED" /></a>
+                <a href="#"><img src="caracteristicas/page1/dtvi-btn.png" width="64" height="53" alt="DTVi - Conversor integrado" title="DTVi - Conversor integrado" class="dtvi-btn" /></a>
+                <a href="#"><img src="caracteristicas/page1/usb-btn.png" width="60" height="53" alt="USB" title="USB" class="usb-btn" /></a>
+                
+                <img src="caracteristicas/page1/32-polegadas.png" width="121" height="37" alt="32 polegadas" class="polegadas" title="32 polegadas" />
+                
+                <a href="#"><img src="caracteristicas/page1/o-maximo-em-tecnologia.png" width="256" height="66" alt="O máximo em tecnologia" id="call-to-action1" title="O máximo em tecnologia" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//Título
+	TweenMax.from( $(".titulo") , .5, { css: { alpha: 0, left: "-=150px" } , ease: Strong.easeOut, delay:.2});
+	
+	//TV
+	TweenMax.from( $(".tv-img") , .5, { css: { alpha: 0, left: "+=150px" } , ease: Strong.easeOut, delay:.5});
+	
+	//Polegaddas
+	TweenMax.from( $(".polegadas") , .5, { css: { alpha: 0, bottom: "-=50px" } , ease: Strong.easeOut, delay:.7});
+
+	//Mouse
+	TweenMax.from( $(".passe-mouse") , .5, { css: { alpha: 0, bottom: "-=50px" } , ease: Strong.easeOut, delay:1.1});
+	
+	//Divisão
+	TweenMax.from( $(".divisao") , 1, { css: { alpha:0 } , ease: Strong.easeOut, delay:1.3});
+	
+	//SmartTV
+	TweenMax.from( $(".smarttv-btn") , .5, { css: { bottom: "-=100px" } , ease: Strong.easeOut, delay:1.1});
+	
+	//Ambilight
+	TweenMax.from( $(".full-hd-btn") , .5, { css: { bottom: "-=100px" } , ease: Strong.easeOut, delay:1.3});
+	
+	//2D 3D
+	TweenMax.from( $(".dtvi-btn") , .5, { css: { bottom: "-=100px" } , ease: Strong.easeOut, delay:1.5});
+	
+	//Full HD Led
+	TweenMax.from( $(".usb-btn") , .5, { css: { bottom: "-=100px" } , ease: Strong.easeOut, delay:1.7});
+	
+	//alpha dos botões do menu
+	TweenMax.to( $(".smarttv-btn, .dtvi-btn, .full-hd-btn, .usb-btn") , 0, { css: { alpha: .5 }});
+	
+	// Função Hover
+	var _arr = {".smarttv-btn": ".smarttv", ".full-hd-btn": ".full-hd", ".dtvi-btn": ".dtvi", ".usb-btn": ".usb"};
+	var _divAnt = null;
+	
+	$.each(_arr, function(ind, val){
+	  $(ind).css({"opacity": 0.5});
+	  var _posIni = null;
+	  if(_posIni == null){
+	   _posIni = $(val).css("top");
+	  }
+	  if(_divAnt == null){
+	   $(ind).css({"opacity": 1});
+	   $(val).css({"display": "block"});
+	   TweenMax.from($(val), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2, onComplete: function(e){
+	    $(val).css("top", _posIni);
+	   }});
+	   _divAnt = [ind, val];
+	  }
+	  $(ind).on("mouseenter", function(e){
+	   _esconde(_divAnt);
+	   _ativo = true;
+	   $(ind).css({"opacity": 1});
+	   $(val).css({"display": "block",
+	      "opacity": 1});
+	   TweenMax.from($(val), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, onComplete: function(e){
+	    $(val).css("top", _posIni);
+	   }}); 
+	  });
+	  $(ind).on("mouseleave", function(e){
+	   _divAnt = [ind, val];
+	  });
+	 });
+	
+	function _esconde(div){
+		$(div[0]).css({"opacity": 0.5});
+		$(div[1]).css({"opacity": 0});
+		TweenMax.from($(div[1]), .5, {css:{alpha:1}, ease:Back.easeOut, onComplete: function(e){
+			$(div[1]).css("display", "none");
+		}});		
+	}
+	// Fim Função Hover
+	
+	//call to action
+	TweenMax.from( $("#call-to-action1") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action1").hover(function(e) {
+            TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+	
+		
+});
+</script>

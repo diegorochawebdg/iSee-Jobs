@@ -1,0 +1,141 @@
+@charset "utf-8";
+.width-conteudo {
+	border: 1px solid #b3e0ff;
+	height: 287px;
+	background: #F6FBF4 !important;
+}
+#acessorios {
+	background: url(../images/acessorios-bg.jpg) no-repeat;
+	height: 287px;
+}
+.box-conteudo {
+	width: 332px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.box-conteudo h3 {
+	font-size: 43px;
+	font-family: 'GillSansMT';
+	text-transform:uppercase;
+}
+.box-conteudo p {
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+.box-titulo {
+	padding: 8px 0 7px 15px;
+}
+
+.box-txt {
+	background: #9fc8e4;
+	padding: 10px 15px;
+}
+.compre1 {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.compre2 {
+	position: absolute;
+	bottom: 20px;
+	left: 353px;
+}
+.compre3 {
+	position: absolute;
+	bottom: 20px;
+	left: 320px;
+}
+
+#acessorios h3 , #esterilizador h3{
+	color: #9fc8e4;
+}
+#acessorios .box-titulo , #esterilizador .box-titulo{
+	background: #ffff99;
+}
+#acessorios .box-txt {
+	height: 123px;
+}
+#alimentacao {
+	background: url(../images/bg-alimentacao-infantil.jpg) no-repeat;
+	height: 287px;
+}
+#alimentacao h3 {
+	font-size: 28px;
+	color: #FFF;
+}
+#alimentacao .box-titulo , #cuidados .box-titulo{
+	background: #cae6b3;
+}
+#alimentacao .box-conteudo {
+	width: 370px;
+}
+#babas {
+	background: url(../images/bg-babas-eletronicas.jpg) no-repeat;
+	height: 287px;
+}
+#babas h3 , #cuidados h3{
+	font-size: 28px;
+	color: #FFF;
+}
+#babas .box-titulo , #bolsa .box-titulo, #copos .box-titulo{
+	background: #f59fa5;
+}
+#bolsa {
+	background: url(../images/bg-bolsa-termica.jpg) no-repeat;
+	height: 287px;
+}
+#bolsa h3 , #copos h3{
+	font-size: 40px;
+	color: #FFF;
+}
+#bolsa .box-txt {
+	height: 107px;
+	padding-top: 25px;
+}
+#copos {
+	background: url(../images/bg-copos.jpg) no-repeat;
+	height: 287px;
+}
+
+#copos .box-conteudo {
+	width: 420px;
+}
+#cuidados {
+	background: url(../images/bg-cuidados-seios.jpg) no-repeat;
+	height: 287px;
+}
+
+#cuidados .box-conteudo {
+	width: 385px;
+}
+#cuidados .box-txt {
+	padding: 30px 15px;
+}
+#esterilizador {
+	background: url(../images/bg-esterilizador.jpg) no-repeat;
+	height: 287px;
+}
+#extratores {
+	background: url(../images/bg-extratores.jpg) no-repeat;
+	height: 287px;
+}
+#extratores h3 {
+	font-size: 28px;
+	color: #f59fa5;
+}
+#extratores .box-titulo{
+	background: #ffff99;
+	padding-bottom: 15px;
+}
+#extratores .box-txt {
+	background: #f59fa5;
+	padding: 18px 15px;
+}
+
+#extratores .box-conteudo {
+	width: 385px;
+}
+#container-produtos div {
+	display: none;
+}

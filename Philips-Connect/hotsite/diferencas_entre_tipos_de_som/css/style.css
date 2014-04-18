@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@font-face{ 
+			font-family: 'GillSans';
+			src: url('../fonts/gillsans.eot');
+			src: url('../fonts/gillsans.eot') format('embedded-opentype'),
+				 url('../fonts/gillsans.woff') format('woff'),
+				 url('../fonts/gillsans.ttf') format('truetype'),
+				 url('../fonts/gillsans.svg#GillSansRegular') format('svg');  
+			font-weight:normal; 
+			font-style:normal;
+}
+
+/* DEFAULT */
+
+*{ margin:0; padding:0; border:0; line-height:1px;}
+
+.relativo{ position:relative;}
+.absoluto{ position:absolute; left:50%;}
+.left{ float:left;}
+.right{ float:right;}
+.botao{ z-index:4; cursor:pointer;}
+
+/* WRAP */
+
+#wrap{ background:#010101 url(../images/background.jpg) 50% 50% no-repeat; width:100%; height:632px; font-family:'GillSans'; overflow:hidden;}
+
+/* CONTENT */
+
+#content{ width:1000px; height:632px; margin:0 auto;}
+#content .logo{ left:0; top:0; z-index:4;}
+#content .selo{ margin-left:360px; top:20px; z-index:4;}
+
+/* HOME */
+
+#home{ width:100%; height:100%;}
+#home h1{ line-height:100%; font-size:25px; font-weight:normal; color:#1F89C9; text-transform:uppercase; left:165px; top:20px;}
+#home p{ line-height:150%; font-size:14px; font-weight:normal; color:#FFF; text-transform:uppercase; left:165px; top:100px;}
+#home .box{ left:-20px;; top:186px; }
+
+/* MENU */
+
+#menu{ width:680px; height:680px; left:380px; top:-20px;}
+#menu .absoluto{ left:0; top:0;}
+#menu .background{ background:url(../images/home/menu/sombra-circulo.png) 50% 50% no-repeat; width:790px; height:680px; left:-55px; top:0;}
+
+#menu .efeito, #menu .pessoas, #menu .brilho{ width:680px; height:680px; background-repeat:no-repeat;}
+
+#menu .efeito{ background-image:url(../images/home/menu/bg-efeitos.png);}
+#menu .pessoas{ background-image:url(../images/home/menu/bg-pessoas.png);}
+#menu .brilho{ background-image:url(../images/home/menu/bg-brilhos.png);}
+
+#menu .efeito.default{ background-position:0 0;}
+#menu .pessoas.default{ background-position:0 0;}
+#menu .brilho.default{ background-position:0 0;}
+
+#menu .efeito.mini{ background-position:-680px 0;}
+#menu .pessoas.mini{ background-position:-680px 0;}
+#menu .brilho.mini{ background-position:-680px 0;}
+
+#menu .efeito.micro{ background-position:-1360px 0;}
+#menu .pessoas.micro{ background-position:-1360px 0;}
+#menu .brilho.micro{ background-position:-1360px 0;}
+
+#menu .efeito.home{ background-position:-2040px 0;}
+#menu .pessoas.home{ background-position:-2040px 0;}
+#menu .brilho.home{ background-position:-2040px 0;}
+
+#menu .efeito.dock{ background-position:-2720px 0;}
+#menu .pessoas.dock{ background-position:-2720px 0;}
+#menu .brilho.dock{ background-position:-2720px 0;}
+
+#menu .efeito.radio{ background-position:-3400px 0;}
+#menu .pessoas.radio{ background-position:-3400px 0;}
+#menu .brilho.radio{ background-position:-3400px 0;}
+
+
+/* PAGES */
+
+.content{ width:835px; height:578px; left:165px; top:20px; }
+
+.content .lateral{ width:195px; height:100%; }
+.content .lateral .top{ width:100%; height:180px;}
+.content .lateral .middle{ width:100%; height:60px;}
+.content .lateral .middle h2{ width:100%; line-height:60px; color:#FFF; font-size:22px; font-weight:normal; text-align:left; text-transform:uppercase;}
+.content .lateral .bottom{ width:100%; height:338px; background:#FFFFFF; text-align:center;}
+.content .lateral .bottom p{ margin:20px 15px 20px 15px; color:#666666; font-size:14px; line-height:100%; text-align:left;}
+.content .lateral .bottom a{ float:left; font-size:12px; line-height:100%; text-align:center; color:#1F88C9; margin-top:15px;}
+
+.content .ambiente{ width:640px; height:100%;}
+.content .observacao{ font-size:12px; color:#969696; width:100%; position:absolute; bottom:-15px;}
+
+.nav{ width:43px; height:145px; left:110px; bottom:28px;}
+.nav .btn-fechar{ background:url(../images/pages/btn-fechar.png) no-repeat; width:43px; height:43px; margin:2px 0;}
+.nav .btn-prev{ background:url(../images/pages/btn-prev.png) no-repeat; width:43px; height:43px; margin:2px 0;}
+.nav .btn-next{ background:url(../images/pages/btn-next.png) no-repeat; width:43px; height:43px; margin:2px 0;}
+
+.nav .btn-fechar:hover, .nav .btn-prev:hover, .nav .btn-next:hover{ opacity:.8;}
+
+.clique-aqui{ left:800px; bottom:20px;}
+
+#page1, #page2, #page3, #page4, #page5{ width:100%; height:100%; margin:0 auto; display:none;}
+
+#page1 .bottom img{ margin-top:40px;}
+#page3 .bottom img{ margin-top:20px;}
+#page4 .bottom p{ margin-right:10px;}

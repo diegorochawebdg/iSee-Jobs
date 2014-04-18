@@ -1,0 +1,130 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px; 
+	padding: 0; 
+	position: relative;
+	overflow:hidden;
+	background: #b00f3a; 
+}
+	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+#background-brilho{ background:url(caracteristicas/page2/brilho.png) no-repeat; width:889px; height:520px; position:absolute; left:50%; margin-left:-700px; opacity:0.2; }
+#background-mesa{ background:url(caracteristicas/page2/mesa.png) 100% 100% no-repeat; width:100%; height:520px; overflow:hidden; position:absolute; right:50%; margin-right:-95px;}
+#background-utensilios{ background:url(caracteristicas/page2/utensilios.png) 100% 100% no-repeat; width:100%; height:449px; overflow:hidden; position:absolute; right:50%; margin-right:100px; top:35px; z-index:2;}
+#background-rodape{ background:#c95d7a; width:100%; height:60px; position:absolute; bottom:0; z-index:3;}
+
+.absoluto{ position:absolute; left:50%;}
+.panela{ margin-left:-385px; top:5px; z-index:1;}
+.circulo{ margin-left:-69px; top:359px; z-index:1;}
+.titulo{ margin-left:5px; top:30px;}
+.paragrafo-titulo{ margin-left:5px; top:80px;}
+.lista1, .lista2, .lista3, .lista4, .lista5, .lista6, .lista7{ margin-left:-40px;}
+.lista1{ top:149px;}
+.lista2{ top:180px;}
+.lista3{ top:211px;}
+.lista4{ top:242px;}
+.lista5{ top:273px;}
+.lista6{ top:304px;}
+.lista7{ top:335px;}
+#call-to-action2{ margin-left:140px; bottom:55px; }
+.rodape{ margin-left:-374px; bottom:22px; z-index:3;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $("#background-brilho") , .5, { css: { alpha: 0 } , ease: Back.easeOut, delay:.2});
+	TweenMax.from( $("#background-mesa") , .5, { css: { right: "+=40px", alpha: 0 } , ease: Back.easeOut, delay:.2});
+	TweenMax.from( $("#background-utensilios") , .5, { css: { right: "+=40px", alpha: 0 } , ease: Back.easeOut, delay:.5});
+	TweenMax.from( $("#background-rodape") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:.2});
+	
+	TweenMax.from( $(".panela") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:.2});
+	TweenMax.from( $(".circulo") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:.8});
+	
+	TweenMax.from( $(".titulo") , .5, { css: { top: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:.5});
+	TweenMax.from( $(".paragrafo-titulo") , .5, { css: { top: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:.75});
+	
+	TweenMax.from( $(".lista1") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1});
+	TweenMax.from( $(".lista2") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.1});
+	TweenMax.from( $(".lista3") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.2});
+	TweenMax.from( $(".lista4") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.3});
+	TweenMax.from( $(".lista5") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.4});
+	TweenMax.from( $(".lista6") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.5});
+	TweenMax.from( $(".lista7") , .5, { css: { left: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.6});
+	
+	TweenMax.from( $(".rodape") , .5, { css: { bottom: "-=40px", alpha: 0 } , ease: Back.easeOut, delay:1.75});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action2") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:2, onComplete: function() {
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action2").hover(function(e) {
+            TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+		
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div id="background-brilho"></div>
+    	<div id="background-mesa"></div>
+        <div id="background-utensilios"></div>
+        <div id="background-rodape"></div>
+        
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/panela.png" width="402px" height="476px" alt="Panela de Pressão Elétrica Cuisine PCC10" title="Panela de Pressão Elétrica Cuisine PCC10" class="absoluto panela" />
+                <img src="caracteristicas/page2/cabo-eletrico-removivel.png" width="87px" height="87px" alt="Cabo elétrico removível" title="Cabo elétrico removível" class="absoluto circulo" />
+                
+                <img src="caracteristicas/page2/seguranca-maxima.png" width="271px" height="29px" alt="Segurança máxima!" title="Segurança máxima!" class="absoluto titulo" />
+                <img src="caracteristicas/page2/paragrafo-seguranca-maxima.png" width="385px" height="35px" alt="Cozinhe sem se preocupar! A Panela de Pressão Elétrica da Electrolux tem 7 dispositivos de segurança:" title="Cozinhe sem se preocupar! A Panela de Pressão Elétrica da Electrolux tem 7 dispositivos de segurança:" class="absoluto paragrafo-titulo" />
+                
+                <img src="caracteristicas/page2/lista1-trava-na-tampa.png" width="400px" height="30px" alt="Trava na tampa" title="Trava na tampa" class="absoluto lista1" />
+                <img src="caracteristicas/page2/lista2-estabilizador-de-pressao.png" width="400px" height="30px" alt="Estabilizador de pressão" title="Estabilizador de pressão" class="absoluto lista2" />
+                <img src="caracteristicas/page2/lista3-valvula-de-limite-de-pressao.png" width="400px" height="30px" alt="Válvula de limite de pressão" title="Válvula de limite de pressão" class="absoluto lista3" />
+                <img src="caracteristicas/page2/lista4-cobertura-anti-bloqueio-de-vapor.png" width="400px" height="30px" alt="Cobertura anti-bloqueio de vapor" title="Cobertura anti-bloqueio de vapor" class="absoluto lista4" />
+                <img src="caracteristicas/page2/lista5-dispositivo-de-alivio-de-pressao.png" width="400px" height="30px" alt="Dispositivo de alívio de pressão" title="Dispositivo de alívio de pressão" class="absoluto lista5" />
+                <img src="caracteristicas/page2/lista6-termostato.png" width="400px" height="30px" alt="Termostato" title="Termostato" class="absoluto lista6" />
+                <img src="caracteristicas/page2/lista7-fusivel-termico.png" width="400px" height="30px" alt="Fusível térmico" title="Fusível térmico" class="absoluto lista7" />
+                
+                <a href="#"><img src="caracteristicas/page2/btn-6-modos-de-cozimento.png" width="238px" height="96px" alt="6 modos de cozimento" title="6 modos de cozimento" class="absoluto" id="call-to-action2" /></a>
+                
+                <img src="caracteristicas/page2/parte-interna-removivel-com-revestimento-antiaderente-facilita-sua-vida-na-cozinha.png" width="748px" height="15px" alt="Parte interna removível com revestimento antiaderente: facilita sua vida na cozinha!" title="Parte interna removível com revestimento antiaderente: facilita sua vida na cozinha!" class="absoluto rodape" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

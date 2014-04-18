@@ -1,0 +1,50 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#020416 url(caracteristicas/background.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+
+.dimensoes{ position:absolute; left:50%; margin-left:-500px; top:0px;}
+.conteudo{ position:absolute; left:50%; margin-left:-375px; top:80px;}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <img src="cliente/especificacoes.jpg" width="1000px" height="520px" alt="Dimensões e Peso: | Largura x Altura x Profundidade: 89,1cm x 53,9cm x 4,7cm | Peso: 12,1kg" title="Dimensões e Peso: | Largura x Altura x Profundidade: 89,1cm x 53,9cm x 4,7cm | Peso: 12,1kg" class="dimensoes" />
+                <img src="cliente/conteudo-da-embalagem.png" width="267px" height="124px" alt="Conteúdo da embalagem: | TV SÉRIE 4500 39PFL4508G/78 | Controle Remoto | Manual de Instruções" title="Conteúdo da embalagem: | TV SÉRIE 4500 39PFL4508G/78 | Controle Remoto | Manual de Instruções" class="conteudo" />
+                
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

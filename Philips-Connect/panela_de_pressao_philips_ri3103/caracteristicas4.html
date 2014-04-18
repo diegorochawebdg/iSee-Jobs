@@ -1,0 +1,91 @@
+<style type="text/css">
+
+.connect-container .container_interna { 
+	height: 520px;
+	padding: 0;
+	background:#fde9d1;
+	position: relative;
+}	
+.connect-container .holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+	background:url(caracteristicas/background.jpg) repeat-x;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 830px;
+	height: 520px;
+	position: relative;
+}
+
+
+.connect-container #background{ width:100%; height:520px; overflow:auto; position:absolute; background:url(caracteristicas/page4/img-background.jpg) 100% 100% no-repeat; right:50%; margin-right:-30px; }
+.connect-container #shape-vermelho{ width:100%; height:100px; position:absolute; background:#ec1e26; left:50%; margin-left:0; top:220px; }
+.connect-container #shape-azul{ width:100%; height:200px; position:absolute; background:#b5e0e4; left:50%; margin-left:0; top:320px; }
+
+.connect-container .absoluto{ position:absolute; left:50%; }
+.connect-container .titulo{ margin-left:60px; top:80px;}
+.connect-container .paragrafo{ margin-left:60px; top:140px; }
+.connect-container .gratis{ margin-left:60px; top:245px; }
+.connect-container .paragrafo-gratis{ margin-left:60px; top:285px; }
+.connect-container .img-gratis{ margin-left:250px; top:210px;}
+.connect-container .acompanha{ margin-left:60px; bottom:100px; }
+.connect-container #call-to-action4{ margin-left:210px; bottom:-2px; cursor:pointer; }
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+		TweenMax.from($(".connect-container #background"), .5, {css:{right:"+=40px", opacity:0}, ease:Back.easeOut, delay:.5});
+		TweenMax.from($(".connect-container #shape-vermelho"), .5, {css:{left:"-=40px", opacity:0, width:0}, ease:Back.easeOut, delay:1});
+		TweenMax.from($(".connect-container #shape-azul"), .5, {css:{left:"-=40px", opacity:0}, ease:Back.easeOut, delay:1.5});
+		
+		TweenMax.from($(".connect-container .titulo"), .5, {css:{top:"-=40px", opacity:0}, ease:Elastic.easeOut, delay:.5});
+		TweenMax.from($(".connect-container .paragrafo"), .5, {css:{top:"-=40px", opacity:0}, ease:Back.easeOut, delay:1});
+		
+		TweenMax.from($(".connect-container .gratis"), .5, {css:{top:"-=20px", opacity:0}, ease:Back.easeOut, delay:1.5});
+		TweenMax.from($(".connect-container .paragrafo-gratis"), .5, {css:{top:"-=20px", opacity:0}, ease:Back.easeOut, delay:2});
+		TweenMax.from($(".connect-container .img-gratis"), .5, {css:{left:"+=20px", opacity:0}, ease:Back.easeOut, delay:2.5});
+		
+		TweenMax.from($(".connect-container .acompanha"), .5, {css:{left:"-=20px", opacity:0}, ease:Back.easeOut, delay:2.5});
+		
+		
+		TweenMax.from( $(".connect-container #call-to-action4") , .5, { css: { width: "0px", alpha: 0 } , ease: Strong.easeOut, delay: 3,  onComplete: function() {	
+			TweenMax.to( $(".connect-container #call-to-action4"), .3, { css: { left: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+			
+			Connect.addCallToAction( ".connect-container #call-to-action4" , "fotos.html", false );		 
+		}} );
+		
+});
+
+</script>
+
+<div class="container_interna">
+    <div id="shape-vermelho"></div>
+    <div id="shape-azul"></div>
+    <div id="background"></div>
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	<img src="caracteristicas/page4/facil-de-limpar.png" width="137px" height="32px" alt="Fácil de limpar"  title="Fácil de limpar" class="absoluto titulo" />
+                <img src="caracteristicas/page4/paragrafo-facil-de-limpar.png" width="350px" height="51px" alt="A Panela de Pressão Philips Walita Daily possui revestimento interno antiaderente e acabamento externo em aço inoxidável, facilitando sua limpeza e manutenção."  title="A Panela de Pressão Philips Walita Daily possui revestimento interno antiaderente e acabamento externo em aço inoxidável, facilitando sua limpeza e manutenção." class="absoluto paragrafo" /> 
+                
+                <img src="caracteristicas/page4/gratis.png" width="53px" height="32px" alt="Grátis"  title="Grátis" class="absoluto gratis" /> 
+                <img src="caracteristicas/page4/livro-com-deliciosas-receitas.png" width="176px" height="12px" alt="Livro com deliciosas receitas!"  title="Livro com deliciosas receitas!" class="absoluto paragrafo-gratis" /> 
+                <img src="caracteristicas/page4/img-gratis.png" width="189px" height="147px" alt="Grátis | Livro com deliciosas receitas!"  title="Grátis | Livro com deliciosas receitas!" class="absoluto img-gratis" /> 
+                
+                <img src="caracteristicas/page4/acompanha-concha-copo-medidor-e-espatula.png" width="222px" height="66px" alt="Acompanha concha, copo medidor e espátula!"  title="Acompanha concha, copo medidor e espátula!" class="absoluto acompanha" /> 
+                
+                <img src="caracteristicas/page4/btn-galeria-de-fotos.png" width="190px" height="76px" alt="Galeria de fotos"  title="Galeria de fotos" class="absoluto" id="call-to-action4" /> 
+                          
+            </div>
+        </div>
+        
+    </div>
+</div>

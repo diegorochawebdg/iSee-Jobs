@@ -1,0 +1,1 @@
+<iframe src="http://www.philipsconsumerlifestyle.com/mini_system_nx7/index.html?method=iFrame" width="100%" height="3900" name="Connect_iFrame" id="Connect_iFrame" frameborder="0" scrolling="no"></iframe>

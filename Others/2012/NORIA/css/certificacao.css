@@ -1,0 +1,8 @@
+#certificacao{background-color:#125A9C !important}
+#conteudo h2{color:#0C4A83; margin-bottom:20px; text-transform:uppercase}
+.certificacao-img{float:left; padding-top:30px; margin-right:40px}
+.certificacao-txt{float:left; width:520px}
+.certificacao-txt h3{font-size:20px; color:#0096D8; margin-bottom:25px; font-weight:bold}
+.certificacao-txt p{line-height:21px; margin-bottom:20px}
+.certificacao-txt a{color:#1366B7; text-decoration:underline}
+body{background:#0a345c url(../images/bg-body.png) repeat-x center top !important}

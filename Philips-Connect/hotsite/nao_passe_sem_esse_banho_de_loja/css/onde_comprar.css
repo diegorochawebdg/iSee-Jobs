@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#menu_comprar{background-color:#009a9f;}
+#content{background-color:#f1eeee;}
+.lojas { margin-left: -393px; top: 340px; left: 50%; width:930px; }
+.lojas .item { background-color: #FFF; float: left; height: 116px; width: 226px; margin: 0 80px 30px 0; }
+.lojas .item .relative{display: table-cell; text-align: center; vertical-align: middle; height: 116px; width: 226px;}
+.lojas .item img{ vertical-align: middle; text-align: center;}
+

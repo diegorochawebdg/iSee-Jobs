@@ -1,0 +1,1088 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	:: Gugateider Framework - Make it better, keep it simple.   ::
+	:: created by Gustavo Teider http://www.gugateider.com      ::
+	:: XML Content File											::
+	:: The content of your website will be placed in this file	::
+-->
+
+<data>
+	
+	<!-- Produtos  -->
+	<LoaderMax name="produtos" prependURLs="" load="true">
+		
+		<!-- barbeadores -->
+		<ImageLoader url="images/produtos/barbeadores/hq6927_mini.png" name="hq6927_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/hq6927.png" name="hq6927" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/at610_mini.png" name="at610_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/at610.png" name="at610" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/at751_mini.png" name="at751_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/at751.png" name="at751" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/at891_mini.png" name="at891_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/at891.png" name="at891" width="250" height="600" dispose="false" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/rq1145_mini.png" name="rq1145_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/rq1145.png" name="rq1145" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/rq1175_mini.png" name="rq1175_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/rq1175.png" name="rq1175" width="350" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/barbeadores/rq1285_mini.png" name="rq1285_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/barbeadores/rq1285.png" name="rq1285" width="350" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<!-- groomings -->
+		<ImageLoader url="images/produtos/groomings/nt9110_mini.png" name="nt9110_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/nt9110.png" name="nt9110" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qt4015_mini.png" name="qt4015_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qt4015.png" name="qt4015" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qt4070_mini.png" name="qt4070_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qt4070.png" name="qt4070" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qg3340_mini.png" name="qg3340_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qg3340.png" name="qg3340" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qg3380_mini.png" name="qg3380_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qg3380.png" name="qg3380" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/bg2024_mini.png" name="bg2024_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/bg2024.png" name="bg2024" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/bg2036_mini.png" name="bg2036_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/bg2036.png" name="bg2036" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/tt2040_mini.png" name="tt2040_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/tt2040.png" name="tt2040" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qc5115_mini.png" name="qc5115_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qc5115.png" name="qc5115" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qc5130_mini.png" name="qc5130_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qc5130.png" name="qc5130" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/groomings/qc5580_mini.png" name="qc5580_mini" width="72" height="110" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/groomings/qc5580.png" name="qc5580" width="250" height="600" scaleMode="proportionalInside" alpha="1" />
+		
+		<!-- features aparadores -->
+		<ImageLoader url="images/produtos/features/barbear_rapido_e_rente.png" name="barbear_rapido_e_rente" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/barbear_uniforme.png" name="barbear_uniforme" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/bateria_recarregavel.png" name="bateria_recarregavel" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/praticidade.png" name="praticidade" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/sistema_aquatec.png" name="sistema_aquatec" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/barbear_rapido_e_rente2.png" name="barbear_rapido_e_rente2" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/cabo_ergonomico.png" name="cabo_ergonomico" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/praticidade2.png" name="praticidade2" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/sistema_quickrinse.png" name="sistema_quickrinse" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/luz_de_led.png" name="luz_de_led" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_aquatec2.png" name="sistema_aquatec2" width="136" height="135" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_levanta_e_corta.png" name="sistema_levanta_e_corta" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/dualprecision.png" name="dualprecision" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/aparador_retratil.png" name="aparador_retratil" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/carregamento_rapido.png" name="carregamento_rapido" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/dualprecision2.png" name="dualprecision2" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/tecnologia_levanta_e_corta.png" name="tecnologia_levanta_e_corta" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/barbear_suave.png" name="barbear_suave" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/gyroflex_2d.png" name="gyroflex_2d" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/gyroflex_2d.png" name="gyroflex_2d_menor" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/dualprecision2.png" name="dualprecision2_menor" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/tecnologia_levanta_e_corta.png" name="tecnologia_levanta_e_corta_menor" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/barbear_suave.png" name="barbear_suave_menor" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_aquatec3.png" name="sistema_aquatec3" width="109" height="109" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/modelador_de_barba.png" name="modelador_de_barba" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/sistema_gyroflex_3d.png" name="sistema_gyroflex_3d" width="98" height="98" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/modelador_de_barba2.png" name="modelador_de_barba2" width="97" height="97" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_aquatec4.png" name="sistema_aquatec4" width="100" height="99" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/barbear_suave2.png" name="barbear_suave2" width="99" height="99" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/aparador_de_precisao.png" name="aparador_de_precisao" width="102" height="101" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/cabecas_de_corte_ultratrack.png" name="cabecas_de_corte_ultratrack" width="98" height="98" scaleMode="proportionalInside" alpha="1" />
+		
+		<!-- features groomings -->
+		<ImageLoader url="images/produtos/features/microaparador.png" name="microaparador" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_de_aparador.png" name="sistema_de_aparador" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/100_a_prova_dagua.png" name="100_a_prova_dagua" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/20_ajustes_de_altura.png" name="20_ajustes_de_altura" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/laminas_de_titanio.png" name="laminas_de_titanio" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pente_ajustavel.png" name="pente_ajustavel" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/com_ou_sem_fio.png" name="com_ou_sem_fio" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/display_multifuncional.png" name="display_multifuncional" width="108" height="108" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sistema_a_vacuo.png" name="sistema_a_vacuo" width="109" height="109" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/crie_o_visual_que_desejar.png" name="crie_o_visual_que_desejar" width="109" height="108" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/uso_com_ou_sem_fio.png" name="uso_com_ou_sem_fio" width="105" height="105" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/botao_turbo.png" name="botao_turbo" width="107" height="107" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/sempre_pronto_para_uso.png" name="sempre_pronto_para_uso" width="108" height="108" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/precisao_e_qualidade.png" name="precisao_e_qualidade" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/6_acessorios.png" name="6_acessorios" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/uso_sem_fio.png" name="uso_sem_fio" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/suporte_para_acessorios.png" name="suporte_para_acessorios" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/pente_para_barba_e_bigode.png" name="pente_para_barba_e_bigode" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/aparador_de_alto_desempenho.png" name="aparador_de_alto_desempenho" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pente_para_cortar_cabelo.png" name="pente_para_cortar_cabelo" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/lamina_raspadora_para_detalhes.png" name="lamina_raspadora_para_detalhes" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/a_prova_dagua.png" name="a_prova_dagua" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/50_minutos_de_uso_sem_fio.png" name="50_minutos_de_uso_sem_fio" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pente_incluso.png" name="pente_incluso" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/suporte_para_carregamento.png" name="suporte_para_carregamento" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/mais_conforto.png" name="mais_conforto" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/apare_os_pelos_das_costas.png" name="apare_os_pelos_das_costas" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/3_pentes_inclusos.png" name="3_pentes_inclusos" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/a_prova_dagua_apare_e_raspe.png" name="a_prova_dagua_apare_e_raspe" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/basta_recarregar_por_1_hora.png" name="basta_recarregar_por_1_hora" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/5_ajustes_de_altura.png" name="5_ajustes_de_altura" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/a_prova_dagua2.png" name="a_prova_dagua2" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/cabeca_giratoria_3d.png" name="cabeca_giratoria_3d" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/pente_ajustavel2.png" name="pente_ajustavel2" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/laminas_e_pentes_arredondados.png" name="laminas_e_pentes_arredondados" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/10_ajustes_de_altura.png" name="10_ajustes_de_altura" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pronto_para_usar.png" name="pronto_para_usar" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/pontas_arredondadas.png" name="pontas_arredondadas" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/mais_versatilidade.png" name="mais_versatilidade" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/10_ajustes_de_altura2.png" name="10_ajustes_de_altura2" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pronto_para_usar2.png" name="pronto_para_usar2" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		<ImageLoader url="images/produtos/features/cabeca_com_giro_de_180.png" name="cabeca_com_giro_de_180" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/14_ajustes_de_comprimento.png" name="14_ajustes_de_comprimento" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/pente_de_precisao.png" name="pente_de_precisao" width="118" height="118" scaleMode="proportionalInside" alpha="1" />
+		<ImageLoader url="images/produtos/features/laminas_auto_afiadoras.png" name="laminas_auto_afiadoras" width="117" height="117" scaleMode="proportionalInside" alpha="1" />
+		
+		
+	</LoaderMax>
+	
+	
+	<!-- SWF's -->
+	<LoaderMax name="swfs" prependURLs="" load="true">
+		<SWFLoader url="pt-BR/swf/fonts.swf" 		     name="fonts"   autoPlay="false" />
+		<SWFLoader url="pt-BR/swf/library.swf" 		     name="library" autoPlay="false" />
+		<SWFLoader url="pt-BR/swf/anderson_caralimpa.swf"    name="destaque1" autoPlay="false" />
+		<SWFLoader url="pt-BR/swf/anderson_liso.swf"   name="destaque2" autoPlay="false" />
+		<SWFLoader url="pt-BR/swf/anderson_lenhador.swf"      name="destaque3" autoPlay="false" />
+		<SWFLoader url="pt-BR/swf/anderson_cavanhaque.swf" name="destaque4" autoPlay="false" />
+	</LoaderMax>
+	
+	<!-- CSS's -->
+	<LoaderMax name="css" prependURLs="" load="true">
+		<CSSLoader url="pt-BR/css/general.css" name="generalCSS" load="true" />
+	</LoaderMax>
+	
+	
+	<analytics>
+		
+		<enabled>true</enabled>
+		<id>UA-33659757-1</id>
+		<debug>false</debug>
+		
+		
+		
+	</analytics>
+	
+	<intro_destaques isRandom="false">
+		<item>
+			<id>destaque1</id>
+			<tempo>5</tempo>
+		</item>
+		<item>
+			<id>destaque2</id>
+			<tempo>5</tempo>
+		</item>
+		<item>
+			<id>destaque3</id>
+			<tempo>5</tempo>
+		</item>
+		<item>
+			<id>destaque4</id>
+			<tempo>5</tempo>
+		</item>
+	</intro_destaques>
+	
+	<content>
+			<barbeadores>
+				<menu_title><![CDATA[<span class="menu_titulo">BARBEADORES</span>]]></menu_title>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">HQ6927</span>]]></menu_title>
+					<id>hq6927</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS</span><br /><span class="museo23lightblue">HQ6927</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Rente e fácil</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque1">
+						
+						<item>
+							<id>barbear_rapido_e_rente</id>
+							<text><![CDATA[<span class="museo14bold">Barbear rápido e rente</span><br /><span class="museo12">Lâminas Closecut: precisas<br />para um barbear rápido e<br />rente a cada uso</span>]]></text>
+							<position x="15" y="142"></position>
+						</item>
+						
+						<item>
+							<id>barbear_uniforme</id>
+							<text><![CDATA[<span class="museo14bold">Barbear uniforme</span><br /><span class="museo12">Cabeças de corte<br />individuais</span>]]></text>
+							<position x="342" y="148"></position>
+						</item>
+						
+						<item>
+							<id>bateria_recarregavel</id>
+							<text><![CDATA[<span class="museo14bold">Bateria recarregável</span><br /><span class="museo12">1 hora de carga garante até 8 horas<br />de uso</span>]]></text>
+							<position x="202" y="257"></position>
+						</item>
+						
+						<item>
+							<id>praticidade</id>
+							<text><![CDATA[<span class="museo14bold">Praticidade</span><br /><span class="museo12">Uso com ou sem fio</span>]]></text>
+							<position x="342" y="350"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">AT610</span>]]></menu_title>
+					<id>at610</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> AQUATOUCH</span><br /><span class="museo23lightblue">AT610</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Prático, preciso e <br /> confiável</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>sistema_aquatec</id>
+							<text><![CDATA[<span class="museo14bold">Sistema Aquatec,</span><br /><span class="museo12">permite barbear a seco ou <br />molhado, usando espuma <br />ou gel de barbear</span>]]></text>
+							<position x="15" y="142"></position>
+						</item>
+						
+						<item>
+							<id>barbear_rapido_e_rente2</id>
+							<text><![CDATA[<span class="museo14bold">Barbear rápido e rente</span><br /><span class="museo12">Lâminas Closecut: precisas<br />para um barbear rápido e<br />rente a cada uso</span>]]></text>
+							<position x="342" y="148"></position>
+						</item>
+						
+						<item>
+							<id>cabo_ergonomico</id>
+							<text><![CDATA[<span class="museo14bold">Cabo ergonômico:</span><br /><span class="museo12">mais conforto ao usar</span>]]></text>
+							<position x="202" y="257"></position>
+						</item>
+						
+						<item>
+							<id>praticidade2</id>
+							<text><![CDATA[<span class="museo14bold">Praticidade</span><br /><span class="museo12">Uso sem fio</span>]]></text>
+							<position x="342" y="347"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">AT751</span>]]></menu_title>
+					<id>at751</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> AQUATOUCH</span><br /><span class="museo23lightblue">AT751</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Excelente proteção<br />para a pele,<br />barbear suave</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>sistema_quickrinse</id>
+							<text><![CDATA[<span class="museo14bold">Sistema QuickRinse,</span><br /><span class="museo12">permite utilizar o<br />aparelho durante o<br />banho e enxaguá-lo</span>]]></text>
+							<position x="15" y="142"></position>
+						</item>
+						
+						<item>
+							<id>luz_de_led</id>
+							<text><![CDATA[<span class="museo12">Contém indicador de <br /> bateria com </span><span class="museo14bold"> luz de LED</span>]]></text>
+							<position x="342" y="148"></position>
+						</item>
+						
+						<item>
+							<id>sistema_aquatec2</id>
+							<text><![CDATA[<span class="museo14bold">Sistema Aquatec, </span><span class="museo12">permite o barbear<br />a seco ou molhado, usando espuma<br />ou gel de barbear</span>]]></text>
+							<position x="176" y="248"></position>
+						</item>
+						
+						<item>
+							<id>sistema_levanta_e_corta</id>
+							<text><![CDATA[<span class="museo14bold">Sistema Levanta e Corta,</span><br /><span class="museo12">lâminas integradas que realiza<br />o corte de pelos de maneira<br />confortável e precisa</span>]]></text>
+							<position x="342" y="347"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">AT891</span>]]></menu_title>
+					<id>at891</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> AQUATOUCH</span><br /><span class="museo23lightblue">AT891</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Excelente proteção<br />para a pele, barbear<br />suave</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>dualprecision</id>
+							<text><![CDATA[<span class="museo14bold">DualPrecision, </span><span class="museo12">que através<br />de fendas atingem pelos<br />normais  e microfuros para<br />orelha e nariz</span>]]></text>
+							<position x="15" y="142"></position>
+						</item>
+						
+						<item>
+							<id>aparador_retratil</id>
+							<text><![CDATA[<span class="museo14bold">Aparador retrátil </span><br /><span class="museo12">integrado para bigode<br />e costeletas</span>]]></text>
+							<position x="342" y="148"></position>
+						</item>
+						
+						<item>
+							<id>sistema_aquatec2</id>
+							<text><![CDATA[<span class="museo14bold">Sistema Aquatec, </span><span class="museo12">permite o barbear<br />a seco ou molhado, usando espuma<br />ou gel de barbear</span>]]></text>
+							<position x="176" y="248"></position>
+						</item>
+						
+						<item>
+							<id>carregamento_rapido</id>
+							<text><![CDATA[<span class="museo14bold">Carregamento rápido, </span><span class="museo12">em<br />3 minutos fornece energia<br />suficiente para utilizá-lo</span>]]></text>
+							<position x="342" y="347"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">RQ1145</span>]]></menu_title>
+					<id>rq1145</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> SENSOTOUCH 2D</span><br /><span class="museo23lightblue">RQ1145</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Toque suave,<br />barbear confortável</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque1">
+						
+						<item>
+							<id>dualprecision2</id>
+							<text><![CDATA[<span class="museo14bold">DualPrecision</span><br /><span class="museo12">Cabeças que raspam até os <br />pelos mais curtos para um <br />barbear mais rente</span>]]></text>
+							<position x="15" y="142"></position>
+						</item>
+						
+						<item>
+							<id>tecnologia_levanta_e_corta</id>
+							<text><![CDATA[<span class="museo14bold">Tecnologia Levanta e Corta,</span><br /><span class="museo12">lâminas integradas que realizam<br />o corte de pelos de maneira<br />confortável e precisa</span>]]></text>
+							<position x="342" y="148"></position>
+						</item>
+						
+						<item>
+							<id>barbear_suave</id>
+							<text><![CDATA[<span class="museo14bold">Barbear suave</span><br /><span class="museo12">com Skinglide, desliza<br />suave pela pele</span>]]></text>
+							<position x="176" y="248"></position>
+						</item>
+						
+						<item>
+							<id>gyroflex_2d</id>
+							<text><![CDATA[<span class="museo14bold">GyroFlex 2D</span><br /><span class="museo12">Se adapta aos contornos do<br />rosto, minimizando a pressão<br />e irritações na pele</span>]]></text>
+							<position x="342" y="347"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">RQ1175</span>]]></menu_title>
+					<id>rq1175</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> SENSOTOUCH 2D</span><br /><span class="museo23lightblue">RQ1175</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Toque suave,<br />barbear confortável</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque1">
+						
+						<item>
+							<id>gyroflex_2d_menor</id>
+							<text><![CDATA[<span class="museo12bold">GyroFlex 2D</span><br /><span class="museo12">Se adapta aos contornos do<br />rosto, minimizando a pressão<br />e irritações na pele</span>]]></text>
+							<position x="32" y="135"></position>
+						</item>
+						
+						<item>
+							<id>dualprecision2_menor</id>
+							<text><![CDATA[<span class="museo12bold">DualPrecision</span><br /><span class="museo12">Cabeças que raspam até<br />os pelos mais curtos para<br />um barbear mais rente</span>]]></text>
+							<position x="316" y="126"></position>
+						</item>
+						
+						<item>
+							<id>tecnologia_levanta_e_corta_menor</id>
+							<text><![CDATA[<span class="museo12bold">Tecnologia Levanta e Corta,</span><br /><span class="museo12">lâminas integradas que<br />realizam o corte de pelos de<br />maneira confortável e precisa</span>]]></text>
+							<position x="90" y="224"></position>
+						</item>
+						
+						<item>
+							<id>barbear_suave_menor</id>
+							<text><![CDATA[<span class="museo12bold">Barbear suave</span><br /><span class="museo12">com Skinglide, desliza<br />suave pela pele</span>]]></text>
+							<position x="386" y="222"></position>
+						</item>
+						
+						<item>
+							<id>sistema_aquatec3</id>
+							<text><![CDATA[<span class="museo12bold">Sistema Aquatec, </span><span class="museo12">permite barbear<br />a seco ou molhado, usando espuma<br />ou gel de barbear</span>]]></text>
+							<position x="302" y="315"></position>
+						</item>
+						
+						<item>
+							<id>modelador_de_barba</id>
+							<text><![CDATA[<span class="museo12bold">Modelador de barba</span><br /><span class="museo12">para você escolher qual<br />estilo quer usar. São 5<br />opções diferentes</span>]]></text>
+							<position x="420" y="386"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">RQ1285</span>]]></menu_title>
+					<id>rq1285</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS <br /> SENSOTOUCH 3D</span><br /><span class="museo23lightblue">RQ1285</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Barbear<br />incomparável</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque1">
+						
+						<item>
+							<id>sistema_gyroflex_3d</id>
+							<text><![CDATA[<span class="museo12bold">Sistema GyroFlex 3D</span><br /><span class="museo12">que se ajusta facilmente<br />ao contorno do rosto</span>]]></text>
+							<position x="32" y="135"></position>
+						</item>
+						
+						<item>
+							<id>modelador_de_barba2</id>
+							<text><![CDATA[<span class="museo12bold">Modelador de barba</span><br /><span class="museo12">para você escolher qual<br />estilo quer usar. São 5<br />opções diferentes</span>]]></text>
+							<position x="316" y="126"></position>
+						</item>
+						
+						<item>
+							<id>sistema_aquatec4</id>
+							<text><![CDATA[<span class="museo12bold">Sistema Aquatec,</span><br /><span class="museo12">permite barbear a seco ou<br />molhado, usando espuma<br />ou gel de barbear</span>]]></text>
+							<position x="90" y="224"></position>
+						</item>
+						
+						<item>
+							<id>barbear_suave2</id>
+							<text><![CDATA[<span class="museo12bold">Barbear suave </span><span class="museo12">com <br />Skinglide, desliza suave<br />pela pele</span>]]></text>
+							<position x="386" y="222"></position>
+						</item>
+						
+						<item>
+							<id>aparador_de_precisao</id>
+							<text><![CDATA[<span class="museo12bold"></span><span class="museo12">Aparador de precisão para <br /> bigode e costeleta</span>]]></text>
+							<position x="220" y="310"></position>
+						</item>
+						
+						<item>
+							<id>cabecas_de_corte_ultratrack</id>
+							<text><![CDATA[<span class="museo12bold">Cabeças de corte UltraTrack</span><br /><span class="museo12">Ajudam a remover a barba<br />rapidamente com poucas<br />passadas</span>]]></text>
+							<position x="340" y="386"></position>
+						</item>
+						
+					</features>
+					
+				</item>
+				
+			</barbeadores>
+			
+			<groomings>
+				<menu_title><![CDATA[<span class="menu_titulo">GROOMING</span>]]></menu_title>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">NT9110</span>]]></menu_title>
+					<id>nt9110</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS APARADOR</span><br /><span class="museo23lightblue">NT9110</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Seguro, rápido e<br />simples</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque3">
+						
+						<item>
+							<id>microaparador</id>
+							<text><![CDATA[<span class="museo14bold"></span><span class="museo12">Possui microaparador<br />de alta precisão</span>]]></text>
+							<position x="46" y="143"></position>
+						</item>
+						
+						<item>
+							<id>sistema_de_aparador</id>
+							<text><![CDATA[<span class="museo14bold">Sistema de aparador<br /></span><span class="museo12">que impede cortes e<br />arranhões</span>]]></text>
+							<position x="370" y="148"></position>
+						</item>
+						
+						<item>
+							<id>100_a_prova_dagua</id> 
+							<text><![CDATA[<span class="museo14bold">100% à prova d'água<br /></span><span class="museo12">para fácil utilização e<br />limpeza</span>]]></text>
+							<position x="261" y="267"></position>
+						</item>
+						
+					</features>
+	
+				</item>		
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QT4015</span>]]></menu_title>
+					<id>qt4015</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS APARADORES<br />DE BARBA</span><br /><span class="museo23lightblue">QT4015</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Lâminas de titânio<br />para maior poder<br />de corte</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque4">
+						
+						<item>
+							<id>20_ajustes_de_altura</id>
+							<text><![CDATA[<span class="museo14bold">20 ajustes de altura<br /></span><span class="museo12">Você pode escolher de 0,5mm<br />a 10mm para deixar sua barba<br />com seu estilo!</span>]]></text>
+							<position x="15" y="150"></position>
+						</item>
+						
+						<item>
+							<id>laminas_de_titanio</id>
+							<text><![CDATA[<span class="museo14bold">Lâminas de titânio<br /></span><span class="museo12">Auto-afiadoras e com formato<br />ondulado que direcionam o pelo,<br />garantindo resultados precisos</span>]]></text>
+							<position x="340" y="148"></position>
+						</item>
+						
+						<item>
+							<id>pente_ajustavel</id> 
+							<text><![CDATA[<span class="museo14bold">Pente ajustável<br /></span><span class="museo12">Se adequa aos contornos de seu<br />rosto, tornando o barbear mais<br />rápido e confortável</span>]]></text>
+							<position x="168" y="240"></position>
+						</item>
+						
+						<item>
+							<id>com_ou_sem_fio</id> 
+							<text><![CDATA[<span class="museo14bold">Com ou sem fio<br /></span><span class="museo12">Com a carga completa você<br />pode usar seu aparador por<br />até 60 minutos!</span>]]></text>
+							<position x="340" y="341"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QT4070</span>]]></menu_title>
+					<id>qt4070</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />APARADOR DE BARBA</span><br /><span class="museo23lightblue">QT4070</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Sistema a vácuo<br />que aspira os pelos</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque4">
+						
+						<item>
+							<id>display_multifuncional</id>
+							<text><![CDATA[<span class="museo14bold">Display multifuncional,<br /></span><span class="museo12">mostra o status da bateria e<br />o ajuste da altura dos pelos</span>]]></text>
+							<position x="25" y="134"></position>
+						</item>
+						
+						<item>
+							<id>sistema_a_vacuo</id>
+							<text><![CDATA[<span class="museo14bold">Sistema a vácuo<br /></span><span class="museo12">Absorve os pelos cortados<br />para deixar a bancada limpa<br />após o uso</span>]]></text>
+							<position x="306" y="127"></position>
+						</item>
+						
+						<item>
+							<id>crie_o_visual_que_desejar</id> 
+							<text><![CDATA[<span class="museo14bold">Crie o visual que desejar<br /></span><span class="museo12">com os 18 ajustes integrados:<br />de 1 a 18mm</span>]]></text>
+							<position x="120" y="224"></position>
+						</item>
+						
+						<item>
+							<id>uso_com_ou_sem_fio</id> 
+							<text><![CDATA[<span class="museo14bold">Uso com ou sem fio<br /></span><span class="museo12">para máxima potência<br />e liberdade</span>]]></text>
+							<position x="428" y="216"></position>
+						</item>
+						
+						<item>
+							<id>botao_turbo</id> 
+							<text><![CDATA[<span class="museo14bold">Botão turbo<br /></span><span class="museo12">Basta apertar para obter um<br />maior poder de sucção</span>]]></text>
+							<position x="260" y="304"></position>
+						</item>
+						
+						<item>
+							<id>sempre_pronto_para_uso</id> 
+							<text><![CDATA[<span class="museo14bold">Sempre pronto para uso<br /></span><span class="museo12">As lâminas não precisam<br />de manutenção</span>]]></text>
+							<position x="405" y="380"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QG3340</span>]]></menu_title>
+					<id>qg3340</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />MULTIGROOM</span><br /><span class="museo23lightblue">QG3340</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Seu rosto, seu<br />estilo</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque4">
+						
+						<item>
+							<id>precisao_e_qualidade</id>
+							<text><![CDATA[<span class="museo14bold">Precisão e qualidade<br /></span><span class="museo12">Lâminas de aço que garantem maior<br />segurança e precisão na hora de<br />aparar os pelos das sobrancelhas,<br />barba, nariz ou orelhas</span>]]></text>
+							<position x="15" y="135"></position>
+						</item>
+						
+						<item>
+							<id>6_acessorios</id>
+							<text><![CDATA[<span class="museo14bold">6 acessórios<br /></span><span class="museo12">Conta com acessórios que<br />barbeiam, aparam e eliminam<br />os pelos, garantindo resultados<br />incríveis!</span>]]></text>
+							<position x="340" y="139"></position>
+						</item>
+						
+						<item>
+							<id>uso_sem_fio</id> 
+							<text><![CDATA[<span class="museo14bold">Uso sem fio<br /></span><span class="museo12">O aparelho é recarregado pela base e<br />pode ser usado durante 35 minutos<br />sem fio</span>]]></text>
+							<position x="196" y="241"></position>
+						</item>
+						
+						<item>
+							<id>suporte_para_acessorios</id> 
+							<text><![CDATA[<span class="museo14bold">Suporte para acessórios<br /></span><span class="museo12">Muito mais praticidade na<br />hora de organizar</span>]]></text>
+							<position x="384" y="332"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QG3380</span>]]></menu_title>
+					<id>qg3380</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />MULTIGROOM</span><br /><span class="museo23lightblue">QG3380</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Solução completa<br/>para qualquer<br />estilo</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque4">
+						
+						<item>
+							<id>pente_para_barba_e_bigode</id>
+							<text><![CDATA[<span class="museo14bold">Pente para barba e bigode<br /></span><span class="museo12">Com ajuste de altura de 1mm<br />a 18mm, mantenha sua barba<br />no tamanho que preferir!</span>]]></text>
+							<position x="15" y="135"></position>
+						</item>
+						
+						<item>
+							<id>aparador_de_alto_desempenho</id>
+							<text><![CDATA[<span class="museo14bold">Aparador de alto desempenho<br /></span><span class="museo12">Com protetor de metal, você faz o<br />contorno de sua barba com a<br />precisão de um barbear profissional</span>]]></text>
+							<position x="340" y="139"></position>
+						</item>
+						
+						<item>
+							<id>pente_para_cortar_cabelo</id> 
+							<text><![CDATA[<span class="museo14bold">Pente para cortar cabelo<br /></span><span class="museo12">Cabelo bonito e estiloso na altura<br />que você preferir!</span>]]></text>
+							<position x="196" y="241"></position>
+						</item>
+						
+						<item>
+							<id>lamina_raspadora_para_detalhes</id> 
+							<text><![CDATA[<span class="museo14bold">Lâmina raspadora para<br />detalhes<br /></span><span class="museo12">Dê um acabamento final<br />perfeito em seu visual!</span>]]></text>
+							<position x="360" y="332"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">BG2024</span>]]></menu_title>
+					<id>bg2024</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />BODYGROOM</span><br /><span class="museo23lightblue">BG2024</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo16">Segurança e conforto<br />para qualquer área<br />do corpo</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>a_prova_dagua</id>
+							<text><![CDATA[<span class="museo14bold">À prova d'água<br /></span><span class="museo12">Apare e raspe<br />confortavelmente com a pele<br />seca ou no banho</span>]]></text>
+							<position x="15" y="135"></position>
+						</item>
+						
+						<item>
+							<id>50_minutos_de_uso_sem_fio</id>
+							<text><![CDATA[<span class="museo14bold">50 minutos de uso sem fio<br /></span><span class="museo12"></span>]]></text>
+							<position x="340" y="139"></position>
+						</item>
+						
+						<item>
+							<id>pente_incluso</id> 
+							<text><![CDATA[<span class="museo14bold">Pente incluso<br /></span><span class="museo12">Com ajuste de comprimento<br />para até 5mm</span>]]></text>
+							<position x="196" y="241"></position>
+						</item>
+						
+						<item>
+							<id>suporte_para_carregamento</id> 
+							<text><![CDATA[<span class="museo14bold">Suporte para carregamento<br /></span><span class="museo12">Prático e fácil de levar em<br />viagens</span>]]></text>
+							<position x="360" y="332"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">BG2036</span>]]></menu_title>
+					<id>bg2036</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />BODYGROOM</span><br /><span class="museo23lightblue">BG2036</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo16">Segurança e conforto<br />para qualquer área<br />do corpo</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>mais_conforto</id>
+							<text><![CDATA[<span class="museo14bold">Mais conforto<br /></span><span class="museo12">Hipoalergênico e com as<br />pontas arredondadas, evita<br />irritações na pele</span>]]></text>
+							<position x="15" y="135"></position>
+						</item>
+						
+						<item>
+							<id>apare_os_pelos_das_costas</id>
+							<text><![CDATA[<span class="museo14bold">Apare os pelos das costas<br /></span><span class="museo12">Cabo resistente que facilita a<br />aparagem dos pelos das costas</span>]]></text>
+							<position x="340" y="139"></position>
+						</item>
+						
+						<item>
+							<id>3_pentes_inclusos</id> 
+							<text><![CDATA[<span class="museo14bold">3 pentes inclusos<br /></span><span class="museo12">Ajuste seu aparador em 3, 5 ou 7mm</span>]]></text>
+							<position x="196" y="241"></position>
+						</item>
+						
+						<item>
+							<id>a_prova_dagua_apare_e_raspe</id> 
+							<text><![CDATA[<span class="museo14bold">À prova d'água<br />Apare e raspe<br /></span><span class="museo12">confortavelmente com a<br />pele seca ou no banho</span>]]></text>
+							<position x="360" y="332"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">TT2040</span>]]></menu_title>
+					<id>tt2040</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS<br />BODYGROOM</span><br /><span class="museo23lightblue">TT2040</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo16">Máximo conforto e<br />precisão para<br />qualquer área do<br />corpo</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque2">
+						
+						<item>
+							<id>basta_recarregar_por_1_hora</id>
+							<text><![CDATA[<span class="museo12">Basta carregar por </span><span class="museo14bold">1 hora<br /></span><span class="museo12">para ter até 50 minutos<br />sem fio</span>]]></text>
+							<position x="15" y="135"></position>
+						</item>
+						
+						<item>
+							<id>5_ajustes_de_altura</id>
+							<text><![CDATA[<span class="museo14bold">5 ajustes de altura<br /></span><span class="museo12">Para diferentes tamanhos<br />de pelo</span>]]></text>
+							<position x="340" y="139"></position>
+						</item>
+						
+						<item>
+							<id>a_prova_dagua2</id> 
+							<text><![CDATA[<span class="museo14bold">À prova d’água<br /></span><span class="museo12">Apare e raspe<br />confortavelmente com a<br />pele seca ou no banho</span>]]></text>
+							<position x="178" y="247"></position>
+						</item>
+						
+						<item>
+							<id>cabeca_giratoria_3d</id> 
+							<text><![CDATA[<span class="museo14bold">Cabeça giratória 3D<br /></span><span class="museo12">Se ajustam às curvas do<br />corpo </span>]]></text>
+							<position x="342" y="350"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QC5115</span>]]></menu_title>
+					<id>qc5115</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS CORTADOR<br />DE CABELOS</span><br /><span class="museo23lightblue">QC5115</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Prático, preciso<br />e confiável</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque3">
+						
+						<item>
+							<id>pente_ajustavel2</id>
+							<text><![CDATA[<span class="museo14bold">Pente ajustável</span><span class="museo12"> a todos os<br />comprimentos de forma<br />prática e rápida</span>]]></text>
+							<position x="15" y="144"></position>
+						</item>
+						
+						<item>
+							<id>laminas_e_pentes_arredondados</id>
+							<text><![CDATA[<span class="museo14bold">Lâminas e pentes<br />arredondados</span><span class="museo12"> que <br />evitam arranhões na pele</span>]]></text>
+							<position x="340" y="148"></position>
+						</item>
+						
+						<item>
+							<id>10_ajustes_de_altura</id> 
+							<text><![CDATA[<span class="museo14bold">10 ajustes de altura</span><span class="museo12"></span>]]></text>
+							<position x="197" y="248"></position>
+						</item>
+						
+						<item>
+							<id>pronto_para_usar</id> 
+							<text><![CDATA[<span class="museo14bold">Pronto para usar:<br /></span><span class="museo12">dispensa lubrificação e<br />manutenção</span>]]></text>
+							<position x="342" y="348"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QC5130</span>]]></menu_title>
+					<id>qc5130</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS CORTADOR<br />DE CABELOS</span><br /><span class="museo23lightblue">QC5130</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Prático, preciso<br />e sem fios</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque3">
+						
+						<item>
+							<id>pontas_arredondadas</id>
+							<text><![CDATA[<span class="museo14bold">Pontas arredondadas<br /></span><span class="museo12">que evitam cortes e<br />arranhões</span>]]></text>
+							<position x="15" y="144"></position>
+						</item>
+						
+						<item>
+							<id>mais_versatilidade</id>
+							<text><![CDATA[<span class="museo14bold">Mais versatilidade<br /></span><span class="museo12">uso com ou sem fio</span>]]></text>
+							<position x="340" y="148"></position>
+						</item>
+						
+						<item>
+							<id>10_ajustes_de_altura2</id> 
+							<text><![CDATA[<span class="museo14bold">10 ajustes de altura</span><span class="museo12"></span>]]></text>
+							<position x="197" y="248"></position>
+						</item>
+						
+						<item>
+							<id>pronto_para_usar2</id> 
+							<text><![CDATA[<span class="museo14bold">Pronto para usar:<br /></span><span class="museo12">dispensa lubrificação<br />e manutenção</span>]]></text>
+							<position x="342" y="348"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+				<item>
+				
+					<menu_title><![CDATA[<span class="botao_menu">QC5580</span>]]></menu_title>
+					<id>qc5580</id>
+					<visible>true</visible>
+					<showLogo>true</showLogo>
+					<product_title><![CDATA[<span class="museo30lightblue">PHILIPS CORTADOR<br />DE CABELOS</span><br /><span class="museo23lightblue">QC5580</span>]]></product_title>
+					<product_description><![CDATA[<span class="museo18">Raspe sua própria<br />cabeça</span>]]></product_description>
+					<comprar_link target="_self">#</comprar_link>
+					
+					<features itemDestaque="destaque3">
+						
+						<item>
+							<id>cabeca_com_giro_de_180</id>
+							<text><![CDATA[<span class="museo14bold">Cabeça com giro de 180º<br /></span><span class="museo12">Total controle do aparador!<br />Alcança as áreas mais difíceis<br />com facilidade</span>]]></text>
+							<position x="15" y="144"></position>
+						</item>
+						
+						<item>
+							<id>14_ajustes_de_comprimento</id>
+							<text><![CDATA[<span class="museo14bold">14 ajustes de<br />comprimento<br /></span><span class="museo12">Seu cabelo do seu jeito!<br />Com ajuste de altura de<br />1mm a 15mm</span>]]></text>
+							<position x="340" y="148"></position>
+						</item>
+						
+						<item>
+							<id>pente_de_precisao</id> 
+							<text><![CDATA[<span class="museo14bold">Pente de precisão</span><br /><span class="museo12">Ajuste de altura de 0,5mm a 3mm<br />para penteados mais curtos</span>]]></text>
+							<position x="197" y="248"></position>
+						</item>
+						
+						<item>
+							<id>laminas_auto_afiadoras</id> 
+							<text><![CDATA[<span class="museo14bold">Lâminas auto-afiadoras<br /></span><span class="museo12">Feitas em aço inoxidável, permanecem<br />afiadas por mais tempo e garantem um<br />excelente desempenho de corte!</span>]]></text>
+							<position x="342" y="348"></position>
+						</item>
+						
+					</features>
+	
+				</item>
+				
+			</groomings>
+			
+			
+			<carousel startAt="1">
+				
+				<item>
+					<id>hq6927</id>
+					<feature><![CDATA[<span class="museo14">Rente e fácil</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>HQ6927</span>]]></feature>
+				</item>
+				
+				<item>
+					<id>at610</id>
+					<feature><![CDATA[<span class="museo14">Prático, preciso<br />e confiável</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>Aquatouch<br />AT610</span>]]></feature>
+				</item>
+				<item>
+					<id>at751</id>
+					<feature><![CDATA[<span class="museo14">Excelente proteção <br />para a pele, barbear <br />suave</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>Aquatouch<br/>AT751</span>]]></feature>
+				</item>
+				<item>
+					<id>at891</id>
+					<feature><![CDATA[<span class="museo14">Excelente proteção <br />para a pele, barbear <br />suave</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>Aquatouch<br/>AT891</span>]]></feature>
+				</item>
+				<item>
+					<id>rq1145</id>
+					<feature><![CDATA[<span class="museo14">Toque suave, <br />barbear confortável</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>Sensotouch 2D<br/>RQ1145</span>]]></feature>
+				</item>
+				<item>
+					<id>rq1175</id>
+					<feature><![CDATA[<span class="museo14">Toque mais suave, <br />barbear confortável</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador Philips<br/>Sensotouch 2D<br/>RQ1175</span>]]></feature>
+				</item>
+				<item>
+					<id>rq1285</id>
+					<feature><![CDATA[<span class="museo14">Barbear incomparável</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Barbeador<br/>Sensotouch 3D<br/>RQ1285</span>]]></feature>
+				</item>
+				
+				<!-- groomings below -->
+				<item>
+					<id>nt9110</id>
+					<feature><![CDATA[<span class="museo14">Seguro, rápido e<br />simples</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador Philips<br/>NT9110</span>]]></feature>
+				</item>
+				<item>
+					<id>qt4015</id>
+					<feature><![CDATA[<span class="museo14">Lâminas de titânio<br />com maior poder de<br />corte</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de Barba<br />Philips<br />QT4015</span>]]></feature>
+				</item>
+				<item>
+					<id>qt4070</id>
+					<feature><![CDATA[<span class="museo14">Sistema a vácuo que<br />aspira os pelos</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de Barba<br />Philips<br />QT4070</span>]]></feature>
+				</item>
+				<item>
+					<id>qg3340</id>
+					<feature><![CDATA[<span class="museo14">Seu rosto, seu estilo</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de Barba<br />Multigroom<br />QG3340</span>]]></feature>
+				</item>
+				<item>
+					<id>qg3380</id>
+					<feature><![CDATA[<span class="museo14">Solução completa<br />para qualquer estilo</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de pelos e<br />barba Philips<br />QG3380</span>]]></feature>
+				</item>
+				<item>
+					<id>bg2024</id>
+					<feature><![CDATA[<span class="museo14">Segurança e conforto<br />para qualquer área do<br />corpo</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de pelos<br />Bodygroom<br />BG2024</span>]]></feature>
+				</item>
+				<item>
+					<id>bg2036</id>
+					<feature><![CDATA[<span class="museo14">Segurança e conforto<br />para qualquer área<br />do corpo</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de pelos<br />Bodygroom<br />BG2036</span>]]></feature>
+				</item>
+				<item>
+					<id>tt2040</id>
+					<feature><![CDATA[<span class="museo14">Máximo conforto e<br />precisão para<br />qualquer área do<br />corpo</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Aparador de pelos<br />Bodygroom<br />TT2040</span>]]></feature>
+				</item>
+				<item>
+					<id>qc5115</id>
+					<feature><![CDATA[<span class="museo14">Prático, preciso<br />e confiável</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Cortador de Cabelos<br />Philips<br />QC5115</span>]]></feature>
+				</item>
+				<item>
+					<id>qc5130</id>
+					<feature><![CDATA[<span class="museo14">Prático, preciso e<br />sem fios</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Cortador de cabelos<br />Philips<br />QC5130</span>]]></feature>
+				</item>
+				<item>
+					<id>qc5580</id>
+					<feature><![CDATA[<span class="museo14">Raspe sua própria<br />cabeça</span>]]></feature>
+					<feature><![CDATA[<span class="museo14">Cortador de Cabelos<br />Philips<br />QC5580</span>]]></feature>
+				</item>
+				
+			</carousel>
+			
+			
+			
+		
+		
+	</content>
+	
+	
+	
+	
+	
+	
+	
+	
+</data>

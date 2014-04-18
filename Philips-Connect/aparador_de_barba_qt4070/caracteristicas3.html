@@ -1,0 +1,105 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .produto{ margin-left:-360px; bottom:0px;}
+.connect-container .cadeado{ margin-left:-294px; top:300px;}
+.connect-container .circulo{ margin-left:-208px; top:78px;}
+
+.connect-container .box{ font-family: "Museo-500"; color:#f8f6f7;}
+.connect-container .box div{ background:#32a9d2; width:100%; height:44px; position:absolute; left:0; top:0;}
+.connect-container .box h2{ font-size:22px; margin-bottom:20px;}
+.connect-container .box div h2{ margin-left:90px; line-height:50px;}
+.connect-container .box p{ font-size:16px; line-height:18px;}
+
+.connect-container #box1{ margin-left:-100px; top:95px; background:#3d3d3d; padding:15px 20px 20px 90px;}
+.connect-container #box1 p{ margin-top:45px;}
+
+.connect-container #box2{ margin-left:-50px; top:308px;}
+.connect-container #box2 h2{ color:#58d4ff;}
+
+.connect-container #call-to-action3{ margin-left:216px; bottom:30px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action3"), "fadeInRight", "s10", "caracteristicas4.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="box1" class="absoluto box animated fadeInLeft s08">
+                	<div><h2>Dispensa manutenção</h2></div>                    
+                    <p>
+                    	Suas lâminas permanecem afiadas e<br />
+                        dispensam lubrificação permitindo que seu<br />
+                        Aparador esteja sempre pronto para o uso!
+                    </p>
+                </div>
+                
+                <img src="caracteristicas/page3/cadeado.png" width="437" height="138" alt="" title="" class="absoluto cadeado animated fadeInLeft s06" />
+                <img src="caracteristicas/page3/produto.png" width="108" height="380" alt="" title="" class="absoluto produto animated fadeInLeft s05" />
+                <img src="caracteristicas/page3/circulo.png" width="171" height="170" alt="" title="" class="absoluto circulo animated fadeInLeft s07" />
+                
+                <div id="box2" class="absoluto box animated fadeInLeft s09">
+                    <h2>Trava para viagem</h2>
+                    <p>
+                    	Você pode colocar seu aparador dentro da mala<br />
+                        ou mochila sem se preocupar que ele ligue<br />
+                        sozinho, basta acionar a trava de segurança.
+                    </p>
+                </div>
+                
+                <a href="#" id="call-to-action3" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page3/btn-crie-o-visual-que-quiser.png" width="225" height="49" alt="Crie o visual que quiser" title="Crie o visual que quiser" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

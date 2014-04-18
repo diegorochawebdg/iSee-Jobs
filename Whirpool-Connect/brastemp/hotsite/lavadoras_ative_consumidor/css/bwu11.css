@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#menu .menu-selected { margin-left: -107px; }
+
+#lavadora .hotspots .video2 { margin-left: -211px; top: 80px; }
+#lavadora .hotspots .item1 { margin-left: -263px; top: 159px; }
+#lavadora .hotspots .item2 { margin-left: -340px; top: 197px; }
+#lavadora .hotspots .item3 { margin-left: -231px; top: 236px; }
+#lavadora .hotspots .item4 { margin-left: -390px; top: 267px; }
+#lavadora .hotspots .item5 { margin-left: -167px; top: 277px; }
+#lavadora .hotspots .item6 { margin-left: -345px; top: 372px; }
+
+.sub .item1, .sub .item2, .sub .item3, .sub .item4, .sub .item5, .sub .item6{position:absolute; left:50%; z-index:3; display:none;}
+.sub .item1{top:184px; margin-left:-219px;}
+.sub .item2{top:196px; margin-left:-293px;}
+.sub .item3{top:224px; margin-left:-187px;}
+.sub .item4{top:291px; margin-left:-345px;}
+.sub .item5{top:185px; margin-left:-121px;}
+.sub .item6{top:207px; margin-left:-300px;}
+
+#lavadora .cores .cores-select .branca{background:url(../images/internas/bwu11/cor-lavadora2.jpg) no-repeat;}
+#lavadora .cores .cores-select .inox{background:url(../images/internas/bwu11/cor-lavadora1.jpg) no-repeat;}
+
+#especificacoes .especificacoes-img .material{ right: 32px; bottom: 25px; width: 365px; }
+#especificacoes .especificacoes-img .dimensoes{ right: 32px; top: 75px; width: 365px; }
+#especificacoes .especificacoes-img .cor1{left: 32px; top: 75px; background-image: url(../images/internas/bwu11/especificacoes-cor1.jpg); padding-left: 126px; height: 150px;}
+#especificacoes .especificacoes-img .cor2{ left: 32px; bottom: 25px; background-image: url(../images/internas/bwu11/especificacoes-cor2.jpg); padding-left: 126px; height: 150px; }

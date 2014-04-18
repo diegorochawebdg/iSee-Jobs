@@ -1,0 +1,90 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(caracteristicas/bg-body.jpg) repeat; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: #FFF url(caracteristicas/page1/bg-body.png) repeat-x; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.content-center .div-content  img{display:block; position:absolute; left:50%;}
+.content-center .div-content .titulo { margin-left: -374px; top: 39px; }
+.content-center .div-content .subtitulo { margin-left: -374px; top: 92px; }
+.content-center .div-content .txt { margin-left: -374px; top: 198px; }
+.content-center .div-content .dupla-rotacao, .content-center .div-content .velocidades, .content-center .div-content .capacidade, .content-center .div-content .potencia{bottom:47px}
+.content-center .div-content .dupla-rotacao { margin-left: -369px; }
+.content-center .div-content .velocidades { margin-left: -269px; }
+.content-center .div-content .capacidade { margin-left: -167px; }
+.content-center .div-content .potencia { margin-left: -66px; }
+.content-center .div-content .img { margin-left: 25px; top: 39px; }
+.content-center .div-content .garantia { margin-left: 17px; top: 287px; z-index: 2; }
+.content-center .div-content #call-to-action { margin-left: 167px; bottom: 23px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/batedeira-profissional-philips-walita-viva-ri7915.png" width="362" height="22" alt="Batedeira Profissional Philips Walita Viva RI7915" title="Batedeira Profissional Philips Walita Viva RI7915" class="titulo" />
+                
+                <img src="caracteristicas/page1/receitas-profissionais-com-resultados-muito-mais-homogeneos.png" width="340" height="76" alt="Receitas profissionais com resultados muito mais homogêneos" title="Receitas profissionais com resultados muito mais homogêneos" class="subtitulo" />
+                
+                <img src="caracteristicas/page1/txt-vendedor.png" alt="Com design compacto e inteligente, a Batedeira Profissional Philips Walita Viva RI7915 vai deixar sua cozinha muito mais bonita e moderna! Com 300W de potência e Sistema Giratório 2D, faz até 6 massas de pizza em apenas 5 minutos!" width="340" height="93" class="txt" title="Com design compacto e inteligente, a Batedeira Profissional Philips Walita Viva RI7915 vai deixar sua cozinha muito mais bonita e moderna! Com 300W de potência e Sistema Giratório 2D, faz até 6 massas de pizza em apenas 5 minutos!" />
+                
+                <img src="caracteristicas/page1/dupla-rotacao.png" alt="Dupla rotação" width="98" height="97" class="dupla-rotacao" title="Dupla rotação" />
+                
+                <img src="caracteristicas/page1/7-velocidades.png" alt="7velocidades" width="98" height="97" class="velocidades" title="7velocidades" />
+                
+                <img src="caracteristicas/page1/4l-de-capacidade.png" alt="4Lde capacidade" width="98" height="97" class="capacidade" title="4Lde capacidade" />
+                
+                <img src="caracteristicas/page1/300w-de-potencia.png" alt="300W de potência" width="98" height="97" class="potencia" title="300W de potência" />
+                
+                <img src="caracteristicas/page1/frente-batedeira-philips-walita.png" alt="Frente da batedeira" width="368" height="467" class="img" title="Frente da batedeira" />
+                
+                <img src="caracteristicas/page1/2-anos-de-garantia.png" alt="2 anos de garantia" width="80" height="78" class="garantia" title="2 anos de garantia" />
+                
+                <a href="#"><img src="caracteristicas/page1/bate-ate-as-massas-mais-pesadas.png" alt="Bate até as massas mais pesadas" width="219" height="83" id="call-to-action" title="Bate até as massas mais pesadas" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".content-center .div-content .titulo") , 1, { css: { alpha: 0, top: "-=150px" } , ease: Strong.easeOut, delay:.3});
+	
+	TweenMax.from( $(".content-center .div-content .subtitulo") , 1, { css: { alpha: 0, top: "-=150px" } , ease: Strong.easeOut, delay:.6});
+	
+	TweenMax.from( $(".content-center .div-content .txt") , 1, { css: { alpha: 0, top: "-=150px" } , ease: Strong.easeOut, delay:.8});
+	
+	TweenMax.from( $(".content-center .div-content .img") , 1, { css: { alpha: 0, left: "+=150px" } , ease: Strong.easeOut, delay:.8});
+	
+	TweenMax.from( $(".content-center .div-content .garantia") , 1, { css: { alpha: 0, left: "-=150px" } , ease: Strong.easeOut, delay:1});
+	
+	TweenMax.from( $(".content-center .div-content .dupla-rotacao") , 1, { css: { alpha: 0, left: "+=150px", rotation:180 } , ease: Strong.easeOut, delay:1.5});
+	
+	TweenMax.from( $(".content-center .div-content .velocidades") , 1, { css: { alpha: 0, left: "+=150px", rotation:180 } , ease: Strong.easeOut, delay:1.7});
+	
+	TweenMax.from( $(".content-center .div-content .capacidade") , 1, { css: { alpha: 0, left: "+=150px", rotation:180 } , ease: Strong.easeOut, delay:1.9});
+	
+	TweenMax.from( $(".content-center .div-content .potencia") , 1, { css: { alpha: 0, left: "+=150px", rotation:180 } , ease: Strong.easeOut, delay:2.1});
+	
+	TweenMax.from( $(".content-center .div-content #call-to-action") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2.7, onComplete: function() {
+			
+		TweenMax.to( $(".content-center .div-content #call-to-action"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".content-center .div-content #call-to-action").hover(function(e) {
+            TweenMax.to( $(".content-center .div-content #call-to-action") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".content-center .div-content #call-to-action") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".content-center .div-content #call-to-action" , "caracteristicas2.html", true );
+	
+		
+});
+</script>

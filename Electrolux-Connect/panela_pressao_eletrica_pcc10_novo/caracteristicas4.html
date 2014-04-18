@@ -1,0 +1,135 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg);
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+#background{ background:url(caracteristicas/page4/background.jpg) 50% 50% no-repeat; width:100%; height:130px; position:absolute; bottom:0;}
+#background-brilho{ background:url(caracteristicas/page4/brilho.png) no-repeat; width:1920px; height:520px; margin-left:-960px; top:0;}
+
+.absoluto{ position:absolute; left:50%;}
+
+.panela{ margin-left:15px; bottom:0px;}
+.sombra{ margin-left:5px; top:192px;}
+.painel{ margin-left:-115px; top:192px;}
+.prato{ margin-left:-450px; bottom:0;}
+
+.titulo{ margin-left:-370px; top:48px;}
+.paragrafo{ margin-left:-370px; top:94px;}
+.selo1{ margin-left:-370px; top:192px;}
+.selo2{ margin-left:-250px; top:192px;}
+.selo3{ margin-left:306px; top:425px;}
+
+#conteudo-spot{ margin-left:90px; top:252px; display:none;}
+#spot{ margin-left:318px; top:240px; cursor:pointer;}
+#call-to-action4{ margin-left:210px; top:20px; cursor:pointer;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	TweenMax.from($("#background"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Linear.easeOut, delay:.2});
+	TweenMax.from($("#background-brilho"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.4});
+	
+	TweenMax.from($(".panela"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".painel"), .2, {css:{left:"+=278px", top:"+=58px", width:"80px", height:"206px", alpha:0}, ease:Linear.easeOut, delay:.8});
+	TweenMax.from($(".sombra"), .2, {css:{left:"+=230px", width:"1px", alpha:.1}, ease:Linear.easeOut, delay:.8});
+	TweenMax.from($(".prato"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	TweenMax.from($(".selo1"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($(".selo2"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.3});
+	TweenMax.from($(".selo3"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:1.4});
+		
+	TweenMax.from( $("#call-to-action4") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.6, onComplete: function() {
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action4").hover(function(e) {
+            TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action4" , "videos.html", false );
+	}} );
+	
+	var tempoInicial;
+	
+	TweenMax.from( $("#spot") , .5, { css: { left: "+=80px", alpha: 0 } , ease: Strong.easeOut, delay:1.5, onComplete: function() {
+		var pisca = TweenMax.to( $("#spot"), 1, { css: { alpha: 0 }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#spot").on("mouseenter", function(e){
+			$("#conteudo-spot").stop(true, true).fadeIn();
+			pisca.pause(0);
+			tempoInicial = e.timeStamp;
+		}).on("mouseleave", function(e){
+			$("#conteudo-spot").stop(true, true).fadeOut();
+			pisca.play();
+			if((e.timeStamp - tempoInicial) >= 1000) Connect.trackPageView( "caracteristicas4/spot.html" );
+		});
+		
+	}});
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div id="background-brilho" class="absoluto"></div>
+    	<div id="background"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page4/panela.png" width="379px" height="407px" alt="" title="" class="absoluto panela" />
+                <img src="caracteristicas/page4/sombra-painel.png" width="238px" height="314px" alt="" title="" class="absoluto sombra" />
+                <img src="caracteristicas/page4/painel.png" width="120px" height="315px" alt="" title="" class="absoluto painel" />
+                <img src="caracteristicas/page4/prato.png" width="324px" height="151px" alt="" title="" class="absoluto prato" />
+                
+                <img src="caracteristicas/page4/title-design-especial.png" width="216px" height="28px" alt="Design especial" title="Design especial" class="absoluto titulo" />
+                <img src="caracteristicas/page4/paragrafo.png" width="342px" height="54px" alt="Um toque de requinte para sua cozinha! A Panela de Pressão Elétrica tem seu acabamento em aço escovado, que também facilita a limpeza." title="Um toque de requinte para sua cozinha! A Panela de Pressão Elétrica tem seu acabamento em aço escovado, que também facilita a limpeza." class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page4/timer-de-99-minutos.png" width="126px" height="126px" alt="Timer de 99 minutos!" title="Timer de 99 minutos!" class="absoluto selo1" />
+                <img src="caracteristicas/page4/selo-painel-digital-em-led.png" width="126px" height="126px" alt="Painel digital em LED" title="Painel digital em LED" class="absoluto selo2" />
+                <img src="caracteristicas/page4/selo-cabo-eletrico-removivel.png" width="104px" height="104px" alt="Cabo elétrico removível" title="Cabo elétrico removível" class="absoluto selo3" />
+                
+                <img src="caracteristicas/page4/conteudo-spot.jpg" width="241px" height="69px" alt="Parte interna removível com revestimento antiaderente: facilidade na limpeza!" title="Parte interna removível com revestimento antiaderente: facilidade na limpeza!" class="absoluto" id="conteudo-spot" />
+                <img src="caracteristicas/page4/spot.png" width="24px" height="24px" alt="" title="" class="absoluto" id="spot" />
+                
+                <img src="caracteristicas/page4/btn-assista-ao-video.png" width="190px" height="76px" alt="Assista ao vídeo" title="Assista ao vídeo" class="absoluto" id="call-to-action4" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

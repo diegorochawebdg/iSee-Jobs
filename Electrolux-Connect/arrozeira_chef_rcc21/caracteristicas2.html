@@ -1,0 +1,93 @@
+
+<style type="text/css">
+
+.container_interna {  	height: 520px; 	padding: 0; 	position: relative; 	overflow:hidden; 	background: url(caracteristicas/page2/bg.jpg) 50% 50% no-repeat; }
+.holder_interna {  	width: 100%; 	height: 520px; 	position: absolute; }
+.content-center { 	margin: 0 auto; 	width: 956px; 	height: 520px; }
+.content-center .div-content {  	margin: 0 auto; 	width: 820px; 	height: 520px; 	position: relative; }
+
+
+.connect-container .container_interna .absolute{ position:absolute; left:50%;}
+.connect-container .link-padding{height:0; position: relative; overflow: hidden; display: block;}
+.sopas{background: url(caracteristicas/page2/preparo-de-sopas.jpg) no-repeat 26px center #b00f3a; padding: 31px 92px; width: 1000px; top: 38px; margin-left: 114px;}
+.sopas h2{font: bold 15px Helvetica; color: #e5e5e8;}
+.txts{margin-left: -397px; top: 57px;}
+.txts .clear{clear: both; margin-bottom: 38px;}
+.txts img, .txts .txt{float: left;}
+.txts img{margin-right: 13px;}
+.txts .txt{max-width: 284px;}
+.txts .txt h3{font: bold 20px Helvetica; color: #b00f3a; margin-bottom: 5px;}
+.txts .txt p{font: lighter 14px Helvetica !important; color: #40454c;}
+.txts .preocupacao p{width:250px;}
+.txts .aquecimento p{width:277px;}
+.call-to-action{bottom: 33px; margin-left: 228px; background: url(caracteristicas/page2/versatilidade-na-cozinha.png) no-repeat; width: 162px; padding-top: 58px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s11{ -webkit-animation-delay:1.1s; -moz-animation-delay:1.1s; -o-animation-delay:1.1s; animation-delay:1.1s;}
+.connect-container .s16{ -webkit-animation-delay:1.6s; -moz-animation-delay:1.6s; -o-animation-delay:1.6s; animation-delay:1.6s;}
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div class="txts absolute">
+                	<img src="caracteristicas/page2/funcao-cozinhar.png" width="82" height="80" alt="Função cozinhar" title="Função cozinhar" class="animated s07 fadeInUp">
+                	<div class="txt cozinhar animated s07 fadeInUp">
+                		<h3>Função Cozinhar</h3>
+                		<p>Com apenas um toque a Arrozeira inicia o cozimento e, em apenas 20 minutos, seu arroz está pronto e soltinho!</p>
+                	</div>
+                	<div class="clear"></div>
+                	
+                	<img src="caracteristicas/page2/cozinhe-sem-preocupacao.png" width="81" height="81" alt="Cozinhe sem preocupação" title="Cozinhe sem preocupação" class="animated s09 fadeInUp">
+                	<div class="txt preocupacao animated s09 fadeInUp">
+                		<h3>Cozinhe sem preocupação</h3>
+                		<p>A Arrozeira Chef desliga automaticamente após o término do preparo do arroz, garantindo tranquilidade na hora de cozinhar.</p>
+                	</div>
+                	<div class="clear"></div>
+                	
+                	<img src="caracteristicas/page2/funcao-aquecimento.png" width="82" height="80" alt="Função Aquecimento" title="Função Aquecimento" class="animated s11 fadeInUp">
+                	<div class="txt aquecimento animated s11 fadeInUp">
+                		<h3>Função Aquecimento</h3>
+                		<p>Após o término do preparo, a panela alterna automaticamente para o Modo Aquecimento, mantendo o arroz quentinho por até 8 horas depois de pronto.</p>
+                	</div>
+                	<div class="clear"></div>
+                	
+                </div>
+                
+                <div class="sopas absolute animated s05 fadeInRight">
+                	<h2>Pode ser utilizada <br>no preparo de sopas!</h2>
+                </div>
+                
+                <a href="#" class="call-to-action link-padding absolute animated s16 fadeInRight">Versatilidade na cozinha</a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	
+	connect_callToAction( $(".connect-container .call-to-action"), "fadeInRight", "s16", "caracteristicas3.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+		
+});
+
+</script>

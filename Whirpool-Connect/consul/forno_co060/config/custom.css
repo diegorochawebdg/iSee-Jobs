@@ -1,0 +1,13 @@
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p { 
+	font-size: 15px;
+	font-family: "Arial";
+	color: #FFFFFF;
+	padding: 175px 0 0 40px;
+	width: 378px;
+	height: 112px;
+	line-height: 14px;
+}
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 

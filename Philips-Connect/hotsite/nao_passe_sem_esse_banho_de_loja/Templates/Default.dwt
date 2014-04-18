@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Promoção - Não passe sem esse banho de loja | Philips Walita</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../css/main.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+    <div class="faixa"></div>
+    <a href="/" id="logo" class="link-padding absolute">Philips Walita</a>
+    <div id="main-menu" class="absolute">
+        <img src="../images/bg-main-menu.png" width="32" height="33">
+        <ul>
+            <li id="menu_participe"><a href="/participe/">Participe</a></li>
+            <li id="menu_produtos"><a href="/produtos/">Produtos</a></li>
+            <li id="menu_comprar"><a href="/onde_comprar/">Onde Comprar</a></li>
+            <li id="menu_regulamento"><a href="#">Regulamento</a></li>
+            <li id="menu_fale_conosco"><a href="/fale_conosco/">Fale Conosco</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="menu-extend"></div>
+</div>
+<!--End of Header-->
+
+<!--Content-->
+<div id="content">
+	<img src="../images/promocao-nao-passe-sem-esse-banho-de-loja.png" width="280" height="174" alt="Promoção - Não passe sem esse banho de loja" title="Promoção - Não passe sem esse banho de loja" class="titulo-promocao">
+	<!-- TemplateBeginEditable name="content" -->
+    
+	<!-- TemplateEndEditable -->
+</div>
+<!--End of Content-->
+
+<!--Footer-->
+<div id="footer">
+	<div class="faixa"></div>
+    <small>Certificado de Autorização Caixa nº. 1-1649/2013 - &copy; Koninklijke Philips N.V., 2013. Todos os direitos reservados.</small>
+</div>
+<!--End of Footer-->
+
+<!--Scripts - Yes, on the end-->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/shadowbox.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<!-- TemplateBeginEditable name="scripts" -->
+<!-- TemplateEndEditable -->
+<!--End of Scripts - Yes, on the end-->
+
+</body>
+</html>

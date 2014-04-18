@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@font-face{ font-family:'GillSansStdLightRegular';     src:url('../fonts/gillsansstd-light-webfont.eot');     src:url('../fonts/gillsansstd-light-webfont.eot?#iefix') format('embedded-opentype'),      url('../fonts/gillsansstd-light-webfont.woff') format('woff'),      url('../fonts/gillsansstd-light-webfont.ttf') format('truetype'),      url('../fonts/gillsansstd-light-webfont.svg#GillSansStdLightRegular') format('svg');     font-weight:normal;     font-style:normal}
+@font-face {
+	font-family: 'Conv_GillSansStd';
+	src: url('../fonts/GillSansStd.eot');
+	src: local('☺'), url('../fonts/GillSansStd.woff') format('woff'), url('../fonts/GillSansStd.ttf') format('truetype'), url('../fonts/GillSansStd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	@font-face{ font-family:'GillSansStdLightRegular';     src:url('../fonts/gillsansstd-light-webfont.svg#GillSansStdLightRegular') format('svg');}
+	@font-face{font-family:'Conv_GillSansStd'; src:url('../fonts/GillSansStd.svg') format('svg');}
+}
+*{ font-family: 'GillSansStdLightRegular'; font-weight: normal; margin: 0px; padding: 0px; border: none; background-repeat: no-repeat; line-height: 1; z-index: 1; }
+body { background: #000; }
+.margin { margin: 0 auto; width: 960px; height: 800px; position: relative; }
+/*Header*/
+#header * { position: absolute; }
+#header #obcecados { left: 22px; top: 0px; }
+#header h1 { color: #FFF; left: 236px; top: 58px; font-size: 44px; }
+#header h2 { color: #56c8ed; left: 236px; top: 108px; font-size: 26px; }
+#header #logo { top: 0px; right: 0px; }
+#home { height: 800px; position: relative; display:block; }
+/*BG'S*/
+#home .bgs-home div { height: 800px; width: 100%; background: no-repeat; position: absolute; z-index: 0 !important; left: 0px; top: 0px; display:none; }
+#home .bgs-home .bg1 { background: url(../images/bg1.jpg) no-repeat center top !important; }
+#home .bgs-home .bg2 { background: url(../images/bg2.jpg) no-repeat center top !important; }
+#home .bgs-home .bg3 { background: url(../images/bg3.jpg) no-repeat center top !important; }
+#home .bgs-home .bg4 { background: url(../images/bg4.jpg) no-repeat center top !important; }
+#home .bgs-home .bg5 { background: url(../images/bg5.jpg) no-repeat center top !important; }
+#home .bgs-home .bg6 { background: url(../images/bg6.jpg) no-repeat center top !important; }
+/* CSS Plugin Carrossel */
+#wrap-carrossel{ width:100%; height:497px; position:relative; margin:0 auto; top:176px;}
+.item{ position:absolute; left:50%; top:0; width:499px; height:497px;}
+.desativado{ display:none;}
+.ativo{ margin-left:-250px; z-index:4;}
+.proximo{ margin-left:180px; z-index:2;}
+.anterior{ margin-left:-480px; z-index:2;}
+/*Menu*/
+#menu{ position: absolute; height: 53px; top: 700px; width: 100%; z-index: 10; }
+#menu .menu-center { margin: 0 auto; }
+.clear { clear: both; }
+#menu li{ float: left; height: 53px; width: 153px; list-style-type: none; background: url(../images/bg-menu-normal.png) no-repeat center; display: table; text-align: center; vertical-align: middle }
+#menu li div { display: block; width: 499px; }
+#menu li a { display: table-cell; vertical-align: middle; color: #333; font-size: 18px; text-decoration: none; padding-top: 7px; }
+#menu li a:hover{text-decoration:underline;}
+/*Fones *** */
+#wrap-carrossel div * { position: absolute; }
+#wrap-carrossel div a { height: 49px; width: 246px; left: 50%; bottom: 0px; margin-left: -123px; }
+#wrap-carrossel div span , #wrap-carrossel div a{ text-indent: -9999px; display: block; z-index: 2; }
+#wrap-carrossel div.bgTransparent { background:transparent;}
+/*Fone1*/
+#wrap-carrossel .fone1 { background:url(../images/fone-1.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone1 img { left: 93px; top: 6px; }
+#wrap-carrossel .fone1 span { background: url(../images/bluetooth-txt.png); height: 138px; width: 270px; top: 117px; left: 141px; }
+#wrap-carrossel .fone1 a { background: url(../images/conheca-a-linha-bluetooth.png); }
+/*Fone2*/
+#wrap-carrossel .fone2 { background:url(../images/fone-2.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone2 img { left: 2px; top: 6px; }
+#wrap-carrossel .fone2 span { background: url(../images/games-txt.png); height: 155px; width: 406px; top: 104px; left: -55px; }
+#wrap-carrossel .fone2 a { background: url(../images/conheca-a-linha-games.png); }
+/*Fone3*/
+#wrap-carrossel .fone3 { background:url(../images/fone-3.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone3 img { left: 95px; top: 3px; }
+#wrap-carrossel .fone3 span { background: url(../images/dj-txt.png); height: 155px; width: 367px; top: 104px; left: -16px; }
+#wrap-carrossel .fone3 a { background: url(../images/conheca-a-linha-dj.png); }
+/*Fone4*/
+#wrap-carrossel .fone4 { background:url(../images/fone-4.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone4 img { left: 95px; top: 3px; }
+#wrap-carrossel .fone4 span { background: url(../images/todos-os-estilos-txt.png); height: 150px; width: 330px; top: 117px; left: 170px; }
+#wrap-carrossel .fone4 a { background: url(../images/conheca-a-linha-todos-os-estilos.png); }
+/*Fone5*/
+#wrap-carrossel .fone5 { background:url(../images/fone-5.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone5 img { left: 0px; top: 57px; }
+#wrap-carrossel .fone5 span { background: url(../images/actionfit-txt.png); height: 158px; width: 413px; top: 105px; left: 17px; }
+#wrap-carrossel .fone5 a { background: url(../images/conheca-a-linha-actionfit.png); }
+/*Fone6*/
+#wrap-carrossel .fone6 { background:url(../images/fone-6.png) 50% 50% no-repeat; background-size: auto 100%; }
+#wrap-carrossel .fone6 img { left: 98px; top: 0px; }
+#wrap-carrossel .fone6 span { background: url(../images/citiscape-txt.png); height: 155px; width: 314px; top: 104px; left: 16px; }
+#wrap-carrossel .fone6 a { background: url(../images/conheca-a-linha-citiscape.png); }
+#btn-proximo, #btn-anterior { display: block; position: absolute; top: 380px; cursor: pointer; height: 70px; width: 42px; z-index: 2; }
+#btn-anterior { background: url(../images/seta-left.png); left: 20px; }
+#btn-proximo { background: url(../images/seta-right.png); right: 20px; }
+
+/*----------------------------------------------------------------------*/
+
+/*Internas*/
+.voltar, .produto-titulo, .call-to-action, .img-produto, .txt1, .txt2{position:absolute;}
+.voltar{left:21px; background:url(../images/seta-voltar.png) no-repeat; width:10px; height:17px; text-transform:uppercase; padding: 4px 0 0 20px; color:#FFF; top:28px; left:25px; text-decoration:none;}
+.produto-titulo{left:21px; top:61px; text-align:center; display:table;}
+.produto-titulo h2{display:table-cell; color:#FFF; vertical-align:middle; padding-top:10px;}
+.call-to-action{bottom:120px; right:130px; width:347px; height:96px; text-indent:-9999px;}
+#fone1, #fone2, #fone3, #fone4, #fone5, #fone6{position:relative; top:0; width:100%; height:800px; display:none}
+#internas h3{margin-bottom:20px;}
+#internas h3, #internas h3 strong{font-size:24px;}
+#internas h3, #internas p, #internas li{color:#FFF;}
+#internas h3 strong{font-family:'Conv_GillSansStd';}
+#internas h3 strong.block{display:block;}
+#internas p{line-height:21px;}
+#internas li{list-style-position:inside; list-style-type:disc; font-size:15px;}
+#internas .txt2 h3{font-size:20px; margin-bottom:13px;}
+/*Interna Bluetooth*/
+#fone1{background:url(../images/bg-interna1.jpg) no-repeat center 0;}
+#fone1 .produto-titulo{background:url(../images/titulo-interna-bluetooth.png); width:281px; height:86px;}
+#fone1 .produto-titulo h2{font-size:32px;}
+#fone1 .img-produto{top:203px; left:96px;}
+#fone1 .call-to-action{background:url(../images/clique-aqui-interna-bluetooth.png);}
+#fone1 .txt1{ left: 538px; top: 138px; width: 271px; }
+#fone1 .txt2{ left: 500px; top: 405px; width: 365px; }
+#fone1 .txt2 h3{color:#71edff;}
+#fone1 .txt2 li{margin-bottom:20px;}
+/*Interna Games*/
+#fone2{background:url(../images/bg-interna2.jpg) no-repeat center 0;}
+#fone2 .produto-titulo{background:url(../images/titulo-interna-games.png); width:281px; height:86px;}
+#fone2 .produto-titulo h2{font-size:32px;}
+#fone2 .img-produto{ top: 195px; left: 4px; }
+#fone2 .call-to-action{background:url(../images/clique-aqui-interna-games.png);}
+#fone2 .txt1{ left: 527px; top: 128px; width: 371px; }
+#fone2 .txt1 p{ width: 330px; }
+#fone2 .txt1 h3, #fone2 .txt1 h3 strong{font-size:21px;}
+#fone2 .txt2{ left: 484px; top: 405px; width: 365px; }
+#fone2 .txt2 h3{ color: #ff8a90; }
+#fone2 .txt2 li{ margin-bottom: 14px; }
+/*Interna Dj*/
+#fone3{background:url(../images/bg-interna3.jpg) no-repeat center 0;}
+#fone3 .produto-titulo{background:url(../images/titulo-interna-dj.png); width:281px; height:86px;}
+#fone3 .produto-titulo h2{font-size:32px;}
+#fone3 .img-produto{ top: 189px; left: 69px; }
+#fone3 .call-to-action{background:url(../images/clique-aqui-interna-dj.png);}
+#fone3 .txt1{ left: 545px; top: 125px; width: 385px; }
+#fone3 .txt1 h3{font-size:24px;}
+#fone3 .txt1 h3 strong{font-size:26px;}
+#fone3 .txt2{ left: 514px; top: 374px; width: 400px; }
+#fone3 .txt2 h3{ color: #ffcc52; }
+#fone3 .txt2 li{ margin-bottom: 14px; font-size:14px !important; }
+/*Interna Todos os estilos*/
+#fone4{background:url(../images/bg-interna4.jpg) no-repeat center 0;}
+#fone4 .produto-titulo{background:url(../images/titulo-interna-todos-os-estilos.png); width:281px; height:86px;}
+#fone4 .produto-titulo h2{font-size:32px;}
+#fone4 .img-produto{ top: 189px; left: 104px; }
+#fone4 .call-to-action{background:url(../images/clique-aqui-interna-todos-os-estilos.png);}
+#fone4 .txt1{ left: 536px; top: 129px; width: 385px; }
+#fone4 .txt1 h3{font-size:24px;}
+#fone4 .txt1 h3 strong{font-size:26px;}
+#fone4 .txt1 p{ width: 285px; }
+#fone4 .txt2{ left: 494px; top: 407px; width: 366px; }
+#fone4 .txt2 h3{ color: #e5e5e5; }
+#fone4 .txt2 li{ margin-bottom: 14px; font-size:14px !important; }
+/*Interna ActionFit*/
+#fone5{background:url(../images/bg-interna5.jpg) no-repeat center 0;}
+#fone5 .produto-titulo{background:url(../images/titulo-interna-actionfit.png); width:281px; height:86px;}
+#fone5 .produto-titulo h2{font-size:32px;}
+#fone5 .img-produto{ top: 259px; left: 13px; }
+#fone5 .call-to-action{background:url(../images/clique-aqui-interna-actionfit.png);}
+#fone5 .txt1{ left: 536px; top: 129px; width: 385px; }
+#fone5 .txt1 h3{font-size:24px;}
+#fone5 .txt1 h3 strong{font-size:26px;}
+#fone5 .txt1 p{ width: 285px; }
+#fone5 .txt2{ left: 494px; top: 407px; width: 366px; }
+#fone5 .txt2 h3{ color: #9ef19e; }
+#fone5 .txt2 li{ margin-bottom: 14px; font-size:14px !important; }
+/*Interna CitiScape*/
+#fone6{background:url(../images/bg-interna6.jpg) no-repeat center 0;}
+#fone6 .produto-titulo{background:url(../images/titulo-interna-citiscape.png); width:281px; height:86px;}
+#fone6 .produto-titulo h2{font-size:32px;}
+#fone6 .img-produto{ top: 208px; left: 80px; }
+#fone6 .call-to-action{background:url(../images/clique-aqui-interna-citiscape.png);}
+#fone6 .txt1{ left: 536px; top: 129px; width: 385px; }
+#fone6 .txt1 h3{font-size:24px;}
+#fone6 .txt1 h3 strong{font-size:26px;}
+#fone6 .txt1 p{ width: 324px; }
+#fone6 .txt2{ left: 494px; top: 407px; width: 366px; }
+#fone6 .txt2 h3{ color: #efa8eb; }
+#fone6 .txt2 li{ margin-bottom: 14px; font-size:14px !important; }

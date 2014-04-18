@@ -1,0 +1,256 @@
+/*
+	@charset "UTF-8";
+	@ Title: CSS Reset File
+	@ Author: Gustavo Teider
+	@ Date: 22/03/2013
+	@ Version: 1.0	
+*/
+
+
+/** DEFAULT DESKTOP VIEW !!! **/
+
+/** GENERAL **/
+body { margin: 0 auto; background: url(../images/estrutura/bg-header.jpg) repeat; }
+
+/** HEADER **/
+header { 
+	width: 100%;
+	background:url(../images/estrutura/bg-header.jpg) repeat #FFF;
+	position: fixed;
+	top: 0;
+	z-index: 30;
+}
+header .content { 
+
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	
+    -webkit-transition: all 500ms cubic-bezier(0.760, 0, 0.155, 0.930); /* older webkit */
+	-webkit-transition: all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); 
+    -moz-transition: all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); 
+    -ms-transition: all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); 
+    -o-transition: all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); 
+    transition: all 500ms cubic-bezier(0.760, -0.080, 0.155, 0.930); /* custom */
+
+}
+.logo { width: 118px; height: 100px; display: table; }
+.logo a { vertical-align: middle; display: table-cell; }
+.logo img { opacity:1; }
+.logo img:hover { opacity:0.7; }
+header nav ul , header nav ul li { 
+	display: inline-block;
+}
+
+header nav ul , header nav ul li { 
+	margin-left: 34px;
+}
+header nav ul li a { 
+	font-family: "oxygenlight";
+	font-size: 18px;
+	color: #7d6a55;
+	letter-spacing: -1px;
+}
+header nav ul li a:hover { 
+	color: #f26532;
+}
+
+.languageNav { 
+	position: absolute;
+	top: 0; 
+	right: 0;
+}
+.menuNav { 
+	margin-top: 44px;
+	float: right;
+}
+#isee_2_go{margin-right:1px;}
+
+/** Content structure **/
+.content { 
+	width: 960px;
+	margin: 0 auto;
+}
+
+/** Contato **/
+#box_contato { 
+	height: 400px;
+	padding:0 20px 25px 0;
+}
+.contactBoxHeight { 
+	height: 720px !important;
+}
+/* Contato - menu */
+#box_contato .atendimento, #box_contato .oportunidades{float:inherit; position:relative; padding:12px 0 5px 0; text-align:center; border-radius:10px 10px 0 0; background:#897865; display:inline-block;}
+#box_contato .atendimento a, #box_contato .oportunidades a{ font: 28px 'Conv_TheMix-9-Black'; }
+#box_contato .atendimento{ width:197px; z-index:2;}
+#box_contato .atendimento a{color:#FFF;}
+#box_contato .oportunidades{background:url(../images/estrutura/bg-oportunidades.png) repeat; width:234px; margin-left:-14px;}
+#box_contato .oportunidades a{color:#b4a696;}
+#box_contato .fechar{float:right; text-decoration:underline; background:url(../images/estrutura/fechar_contato.png) right center no-repeat; width:22px; height:27px; padding:0 70px 0 0; font:18px 'oxygenregular'; color:#897865; opacity:1; transition:opacity 0.1s linear;}
+#box_contato .fechar:hover{opacity:0.7;}
+
+/* Contato - Form */
+#box_contato form .form-left{float:left; width:452px;}
+#box_contato form .form-right{float:right; width:452px;}
+#box_contato form input, #box_contato form textarea{border:solid 1px #897865; margin:0; font:18px 'oxygenregular'; color:#897865; width:410px; height:20px; padding:20px; display:block; margin-bottom:15px; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
+#box_contato form select{ height: 62px; width: 254px; float: left; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-appearance: none; -moz-appearance: none !important; appearance: none; background: url(../images/estrutura/seta-select-contato.png) no-repeat 173px center #FFF; border: none; font: 18px 'oxygenregular'; color: #897865; padding: 20px; }
+#box_contato form .pais{ width: 204px; height: 60px; overflow: hidden; float: left; border: solid 1px #897865; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+#box_contato form .tel{float:right; width:192px;}
+#box_contato form textarea{overflow:auto; height:97px; resize:none;}
+#box_contato form .obs{float:left; padding-top:20px; font:16px 'oxygenregular'; color:#897865;}
+#box_contato form .enviar{float:right; width:212px; text-align:center; background-color:#f26532; color:#FFF; padding:15px 0; font:22px 'oxygenregular'; border:none; height:58px; opacity:1; transition:opacity 0.1s linear;}
+#box_contato form .enviar:hover{opacity:0.7;}
+#box_contato form select:hover, #box_contato form .enviar:hover{cursor:pointer;}
+#box_contato .linha{ opacity:0.5; border-bottom: 1px solid #897865; margin:30px 0; }
+
+/*Endereços*/
+#enderecos .contact_address{float:left; width:460px;}
+#enderecos figure{float:left; margin-right:15px; opacity:1; transition:opacity 0.2s linear;}
+#enderecos figure:hover{opacity:0.6;}
+#enderecos span{font:34px 'Conv_TheMix-8-XBold'; color:#897865; display:block; margin-bottom:15px; padding-top:8px;}
+#enderecos a{font:26px 'oxygenregular'; color:#f26532; margin-bottom:17px; display:block;}
+#enderecos p{font:16px 'oxygenregular'; color:#897865; margin-bottom:7px;}
+#close_contact{width:215px; display: none; height:65px; background:url(../images/estrutura/seta_close_contact.png) #FFF no-repeat center; position:absolute; left:50%; top: -25px; margin-left:-107px; z-index:10; border-radius:0 0 10px 10px; opacity:0; transition:opacity 0.5s linear;}
+
+/*Container*/
+#content-container{padding-top:100px;}
+
+/** Footer **/
+footer { 
+	padding-top: 36px;
+	height: 184px;
+	width: 100%;
+	background: url(../images/estrutura/bg-footer.jpg) repeat #915656;
+}
+footer .content { 
+	height: 100%;
+	position: relative;
+}
+
+footer .content  small { 
+	font-size: 16px;
+	color: #FFF;
+	font-family: "oxygenlight";
+}
+
+footer .content div { 
+	margin-top: 20px;
+	height: 120px;
+}
+footer .content div ul { float: left; }
+footer .content div ul li { 
+	width: 88px;
+	height: 120px;
+	margin-right: 4px;
+	float: left;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+footer .content div ul li figure { 
+	width: 88px;
+	opacity:1; 
+	transition:opacity 0.1s linear;
+}
+footer .content div ul li a { 
+	width: 88px;
+	height: 120px;
+	font-family: "oxygenlight";
+	font-size: 12px;
+	color: #FFF;
+	opacity:1; 
+	transition:opacity 0.1s linear;
+}
+footer .content div ul li a:hover, footer .content div ul li figure:hover{opacity:0.7;}
+
+footer .content .address { 
+	top: 0;
+	right: 0;
+	position: absolute;
+	width: 420px;
+	text-align: right;
+}
+
+footer .content .address address { 
+	float: left;
+	width: 50%;
+	font-size: 16px;
+	color: #FFF;
+	line-height: 20px;
+}
+footer .content .address address p { 
+	font-family: "oxygenlight";
+}
+footer .content .address address p strong { 
+	font-family: "oxygenbold";
+}
+footer .content .address address p a { 
+	text-decoration: underline;
+	color: #FFF;
+}
+footer .content .address address p a:hover { 
+	text-decoration: none;
+}
+
+#content-container {
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+
+/**
+	Continue reading
+**/
+.keep-reading { 
+	font-family: "oxygenbold";
+	font-size: 16px;
+	color: #355c7c;
+	padding-right: 28px;
+	height: 28px;
+	background-image: url(../images/estrutura/arrow-button-keep-reading.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	text-decoration: none;
+}
+.keep-reading:hover { 
+	text-decoration: underline;
+}
+.alignRight { 
+	text-align: right;
+}
+
+.dotted-bg { 
+	position: absolute;
+	top: -12px;
+	background-image: url(../images/estrutura/dotted-bg.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 25px;
+	z-index: 0;
+}
+
+.clearboth { clear: both; margin: 0; padding: 0; } 
+
+/** Background image pattern **/
+.bg-pattern-fundoclaro { 
+	background-image: url(../images/estrutura/bg-pattern-fundoclaro.png );
+}
+.bg-pattern-fundoescuro { 
+	background-image: url(../images/estrutura/bg-pattern-fundoescuro.png );
+}
+
+
+/** SMALL TABLET VIEW **/
+@media only screen and (min-width:651px ) and (max-width:979px) {
+
+	
+
+}
+
+
+/** SMARTPHONE VIEW **/
+@media only screen and (max-width:480px) {
+	
+	
+	
+}

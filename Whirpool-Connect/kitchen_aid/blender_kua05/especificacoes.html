@@ -1,0 +1,45 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; } .holder_interna { width: 100%; height: 520px; background: url(cliente/bg.jpg) no-repeat center top; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; }
+.absolute{position:absolute; left:50%;}
+.content-center h2 { font: 28px 'Humanist521BT-Bold'; color: #a71420; margin-bottom: 16px; }
+.dimensoes { margin-left: -370px; top: 65px; }
+.conteudo { top: 65px; }
+.conteudo a { background: url(cliente/bg-manual.png) no-repeat; text-align: center; height: 76px; width: 301px; text-transform: uppercase; color: #FFF; text-decoration: none; padding-top: 25px; font-family: "Humanist521BT-Roman"; display: block; margin-left: 47px; }
+.conteudo img { margin: 26px 0 87px 25px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<div class="dimensoes absolute">
+                	<h2>Dimensões e peso:</h2>
+                    <img src="cliente/dimensoes-peso.jpg" alt="dimensões e peso do Liquidificador KitchenAid" width="338" height="329" title="dimensões e peso do Liquidificador KitchenAid" />
+                </div>
+                
+                <div class="conteudo absolute">
+                	<h2>Conteúdo da embalagem:</h2>
+                    <img src="cliente/blender-manual.png" alt="Liquidificador KUA05AVANA e seu manual de instruções" width="287" height="142" />
+                    <a href="cliente/manual.pdf">Manual do produto</a>
+                </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });
+	$(".conteudo a").click(function(e) {
+       pageTracker._trackPageview( "blender_kua05/especificacoes/manual_do_produto" ); 
+    });
+});
+</script>

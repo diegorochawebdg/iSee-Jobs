@@ -1,0 +1,165 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	
+}	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+	background: #76033d;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+	/*background-image: url(images/caracteristicas/page1/page1.png);*/
+}
+
+.content-center .div-content { 
+	margin: 0 auto 0 -21px;
+	width: 820px;
+	height: 520px;
+	position: relative;
+	/* background-image: url(caracteristicas/page1/bg-content-temp.jpg); */
+	
+}
+.div-content div { 
+	position: absolute;
+	background-repeat: no-repeat;
+}
+.dispenser-img {
+	left: -167px;
+	top: 0px;
+}
+.dispenser {
+	left: 255px;
+	top: 72px;
+}
+.cesto-img {
+	left: -62px;
+	top: 222px;
+}
+.cesto {
+	left: 255px;
+	top: 249px;
+}
+.botao-painel {
+	left: 328px;
+	bottom: 54px;
+}
+.img-lavadora {
+	right: -69px;
+	bottom: -2px;
+}
+.botao-recursos {
+	right: -15px;
+	bottom: 14px;
+}
+.img-giratoria {
+	left: -9px;
+	top: 91px;
+}
+.gotas-agua-cesto {
+	left: -1px;
+	top: 275px;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+		
+	//dispenser-img
+	TweenMax.from( $(".dispenser-img") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:0.7});
+	
+	//img-giratoria
+	TweenMax.from( $(".img-giratoria") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:0.9});
+	
+	//dispenser txt
+	TweenMax.from( $(".dispenser") , 1, { css: { left: "-=300px" , alpha: 0, delay:0.7 } , ease: Strong.easeOut});
+	
+	//cesto-img
+	TweenMax.from( $(".cesto-img") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:0.9});
+	
+	//gotas
+	TweenMax.from( $(".gotas-agua-cesto") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:1.1});
+	
+	//cesto-txt
+	TweenMax.from( $(".cesto") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:0.15});
+	
+	//botão painel smart touch
+	TweenMax.from( $(".botao-painel") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:1.3, onComplete: function() {
+	
+		TweenMax.to( $(".botao-painel"), .3, { css: { left: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+	}} );
+	$(".botao-painel").hover(function(e) {
+		TweenMax.to( $(".botao-painel") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+	}, function(){
+		TweenMax.to( $(".botao-painel") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	
+	//img da máquina de lavar
+	TweenMax.from( $(".img-lavadora") , 1, { css: { right: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	$("#call-to-action").on('click' , function( e ) { 
+	
+		$(this).die();
+		TweenMax.killAll();
+		Connect.changePageFromCallToAction("caracteristicas4.html" , true );
+	
+	});
+	
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <div class="dispenser-img">
+                	<img src="caracteristicas/page3/dispenser-img.jpg" alt="Dispenser autolimpante" width="400" height="182" title="Dispenser autolimpante" />
+                </div>
+                
+              <div class="img-giratoria">
+                	<img src="caracteristicas/page3/giro.png" alt="" width="88" height="88" />
+                </div>
+                
+              <div class="dispenser">
+                	<img src="caracteristicas/page3/dispenser-txt.png" alt="O dispenser da Lavadora Ative! é autolimpante e permite colocar sabão líquido ou em pó sem precisar limpá-lo manualmente." width="281" height="114" title="O dispenser da Lavadora Ative! é autolimpante e permite colocar sabão líquido ou em pó sem precisar limpá-lo manualmente." />
+                </div>
+                
+              <div class="cesto-img">
+                	<img src="caracteristicas/page3/cesto-img.jpg" alt="Cesto em aço inox" width="295" height="146" title="Cesto em aço inox" />
+                </div>
+                
+              <div class="gotas-agua-cesto">
+                	<img src="caracteristicas/page3/gotas.png" alt="" width="88" height="88" />
+              </div>
+                
+              <div class="cesto">
+                	<img src="caracteristicas/page3/cesto-txt.png" alt="Cesto Smart Wave em inox com design arrojado que garante maior durabilidade." width="223" height="86" title="Cesto Smart Wave em inox com design arrojado que garante maior durabilidade." />
+                </div>
+                
+              <div class="botao-painel" id="call-to-action"> <a href="#"><img src="caracteristicas/page3/painel-smart-touch.jpg" alt="Painel Smart Touch" width="178" height="47" title="Painel Smart Touch" /></a>
+                </div>
+                
+              <div class="img-lavadora">
+                	<img src="caracteristicas/page3/img-lavadora.jpg" alt="frente da lavadora com a sua tampa aberta" width="354" height="485" title="frente da lavadora com a sua tampa aberta" />
+                </div>
+                
+                
+          </div>
+        </div>
+        
+    </div>
+</div>

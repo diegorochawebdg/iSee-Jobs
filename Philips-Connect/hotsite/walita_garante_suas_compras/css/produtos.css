@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#menu_produtos{background-color:#009a9f;}
+#content{background-color:#f1eeee;}
+
+/*Produtos Home*/
+/*.produtos-home{display:none;}*/
+.produtos-home .vaporizador-img{ margin-left: -500px; top: 320px; left: 50%; }.produtos-home .produtos-txt { margin-left: -111px; top: 320px; width: 573px; left: 50%; z-index: 3; }
+.produtos-home .produtos-txt p { font-size: 18px; color: #59595b; }
+.produtos-home .produtos-txt p strong { font-weight: bold; }
+.produtos-home #ri515 { margin-left: -81px; top: 500px; left: 50%; z-index: 1; }
+.produtos-home #ri551 { margin-left: 148px; top: 420px; left: 50%; z-index: 1; }
+
+/* RI515 */
+.produtos-ri515{display:none;}
+.produtos-ri515 .txts { margin-left: -408px; top: 324px; left: 50%; }
+.produtos-ri515 .txts h2 { background: url(../produtos/images/vaporizadores.png); width: 233px; padding-top: 61px; }
+.produtos-ri515 .txts h3 { margin: 20px 0 20px 5px; font-size: 16px; color: #ca1a22; }
+.produtos-ri515 .txts h4 { margin: 0 0 20px 27px; font-size: 14px; color: #FFFFFF; font-weight: bold; background: #E9562B; text-align: center; width: 260px; padding:10px 0; border-radius:15px; }
+.produtos-ri515 .txts ul{margin-left:40px;}
+.produtos-ri515 .txts li { background: url(../produtos/images/bg-lista.png) no-repeat 0 5px; padding-left: 20px; margin-bottom: 20px; }
+.produtos-ri515 .txts li a{ color: #ea562c; text-decoration: none; }
+.produtos-ri515 .txts li a:hover{text-decoration:underline;}
+.produtos-ri515 .txts li p { max-width: 280px; color: #414042; display: none; }
+.produtos-ri515 .img-grande{ top: 266px; left: 50%; margin-left: -70px; width: 335px; height: 440px; }
+.produtos-ri515 .img-grande .relative{width:335px; height: 440px; display:table-cell; vertical-align:middle; text-align:center;}
+.produtos-ri515 .item1, .produtos-ri515 .item2, .produtos-ri515 .item3{opacity:0.6;}
+.produtos-ri515 .item1, .produtos-ri515 .item3{margin-left:303px;}
+.produtos-ri515 .item1{top:361px; left:50%;}
+.produtos-ri515 .item2{top:447px; margin-left:323px; left:50%;}
+.produtos-ri515 .item3{top:530px; left:50%;}
+
+/* RI551 */
+.produtos-ri551{display:none;}
+.produtos-ri551 .txts { margin-left: -408px; top: 324px; left: 50%; }
+.produtos-ri551 .txts h2 { background: url(../produtos/images/vaporizadores.png); width: 233px; padding-top: 61px; }
+.produtos-ri551 .txts h3 { margin: 20px 0 20px 5px; font-size: 16px; color: #ca1a22; }
+.produtos-ri551 .txts h4 { margin: 0 0 20px 27px; font-size: 14px; color: #FFFFFF; font-weight: bold; background: #E9562B; text-align: center; width: 260px; padding:10px 0; border-radius:15px; }
+.produtos-ri551 .txts ul{margin-left:40px;}
+.produtos-ri551 .txts li { background: url(../produtos/images/bg-lista.png) no-repeat 0 5px; padding-left: 20px; margin-bottom: 20px; }
+.produtos-ri551 .txts li a{ color: #ea562c; text-decoration: none; }
+.produtos-ri551 .txts li a:hover{text-decoration:underline;}
+.produtos-ri551 .txts li p { max-width: 280px; color: #414042; display: none; }
+.produtos-ri551 .img-grande{ top: 266px; left: 50%; margin-left: -70px; width: 335px; height: 440px; }
+.produtos-ri551 .img-grande .relative{width:335px; height: 440px; display:table-cell; vertical-align:middle; text-align:center;}
+.produtos-ri551 .item1, .produtos-ri551 .item2, .produtos-ri551 .item3{opacity:0.6;}
+.produtos-ri551 .item1, .produtos-ri551 .item3{margin-left:303px;}
+.produtos-ri551 .item1{top:361px; left:50%;}
+.produtos-ri551 .item2{top:447px; margin-left:323px; left:50%;}
+.produtos-ri551 .item3{top:530px; left:50%;}
+
+/*Buttons*/
+.buttons { margin-left: -100px; top: 726px; left: 50%; }
+.buttons a{width: 89px; padding-top: 118px; float:left; margin-right:5px; transform:scale(0.7); -webkit-transform:scale(0.7); opacity:
+0.6;}
+.buttons a.selected{-webkit-transform:none; opacity:1;}
+.buttons .ri551-btn { background: url(../produtos/images/ri551-icon.jpg); }
+.buttons .ri515-btn { background: url(../produtos/images/ri515-icon.jpg); }
+
+/*Selected*/
+.selectors .selected{opacity:1 !important;}

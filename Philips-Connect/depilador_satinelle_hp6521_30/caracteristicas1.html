@@ -1,0 +1,105 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/page1/background.jpg) repeat-x; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+.depilador{ margin-left:-400px; bottom:0;}
+.modelo{ margin-left:135px; bottom:0;}
+.titulo{ margin-left:-380px; top:30px;}
+.sub-titulo{ margin-left:-380px; top:70px;}
+.confortavel{ margin-left:-380px; top:115px;}
+.bivolt{ margin-left:-100px; top:150px;}
+.garantia{ margin-left:-35px; top:150px;}
+.experimente{ margin-left:30px; top:110px;}
+.paragrafo{ margin-left:-135px; top:240px;}
+.alcanca{ margin-left:-90px; top:385px;}
+.uso{ margin-left:-90px; top:445px;}
+
+#call-to-action1{ margin-left:140px; bottom:95px;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".depilador"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".modelo"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".sub-titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".confortavel"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	
+	TweenMax.from($(".bivolt"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".garantia"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".experimente"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	
+	TweenMax.from($(".alcanca"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	TweenMax.from($(".uso"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.5});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action1") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.6, onComplete: function() {
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action1").hover(function(e) {
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+                
+                <img src="caracteristicas/page1/depilador.jpg" width="320px" height="380px" alt="Depilador Philips Satinelle | HP6521/30" title="Depilador Philips Satinelle | HP6521/30" class="absoluto depilador" />
+                <img src="caracteristicas/page1/modelo.png" width="344px" height="514px" alt="Depilador Philips Satinelle | HP6521/30" title="Depilador Philips Satinelle | HP6521/30" class="absoluto modelo" />
+                
+                <img src="caracteristicas/page1/title-nova-linha-de-depiladores-philips-satinelle-hp6521-30.png" width="360px" height="16px" alt="Nova linha de Depiladores Philips Satinelle | HP6521/30" title="Nova linha de Depiladores Philips Satinelle | HP6521/30" class="absoluto titulo" />
+                <img src="caracteristicas/page1/depilacao-no-banho.png" width="338px" height="43px" alt="Depilação no banho" title="Depilação no banho" class="absoluto sub-titulo" />
+                <img src="caracteristicas/page1/confortavel-como-voce-nunca-sentiu.png" width="333px" height="15px" alt="Confortável como você nunca sentiu" title="Confortável como você nunca sentiu" class="absoluto confortavel" />
+                
+                <img src="caracteristicas/page1/selo-bivolt.png" width="55px" height="53px" alt="100 - 240v" title="100 - 240v" class="absoluto bivolt" />
+                <img src="caracteristicas/page1/selo-garantia.png" width="54px" height="53px" alt="2 anos de garantia" title="2 anos de garantia" class="absoluto garantia" />
+                <img src="caracteristicas/page1/selo-experimente.png" width="100px" height="100px" alt="Experimente por 90 dias ou seu dinheiro de volta" title="Experimente por 90 dias ou seu dinheiro de volta" class="absoluto experimente" />
+                
+                <img src="caracteristicas/page1/paragrafo.png" width="256px" height="93px" alt="Versatilidade na hora da depilação. Perfeito para você, o Depilador Wet&Dry Philips Satinelle HP6521 é completo e pode ser utilizado no banho ou a seco." title="Versatilidade na hora da depilação. Perfeito para você, o Depilador Wet&Dry Philips Satinelle HP6521 é completo e pode ser utilizado no banho ou a seco." class="absoluto paragrafo" />
+                
+                <a href="#"><img src="caracteristicas/page1/btn-se-seco-e-no-banho.png" width="257px" height="45px" alt="Uso seco e no banho" title="Uso seco e no banho" class="absoluto" id="call-to-action1" /></a>
+                
+                <img src="caracteristicas/page1/selo-alcanca.png" width="176px" height="47px" alt="Alcança pelos a partir de 0,5 mm" title="Alcança pelos a partir de 0,5 mm" class="absoluto alcanca" />
+                <img src="caracteristicas/page1/selo-uso.png" width="189px" height="46px" alt="1 hora de carga para 30 minutos de uso" title="1 hora de carga para 30 minutos de uso" class="absoluto uso" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

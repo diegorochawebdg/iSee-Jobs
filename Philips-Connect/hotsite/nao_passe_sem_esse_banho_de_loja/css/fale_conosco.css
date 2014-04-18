@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#menu_fale_conosco{background-color:#009a9f;}
+#content{ background-color: #f1eeee; min-width: 100% !important; }
+
+.container { margin-left: -484px; left: 50%; padding-top: 35px; width: 1013px; }
+.container .lists { float: left; width: 595px; margin-top: 40px; }
+.container .lists li { margin-bottom: 3px; }
+.container .lists li .link { padding:5px 25px; background:url(../fale_conosco/images/list-down.png) no-repeat 570px center #e1e0e0; }
+.container .lists li .link.selected { padding:5px 25px; background:url(../fale_conosco/images/list-up.png) no-repeat 570px center #e1e0e0; }
+.container .lists li .link a { font-size: 18px; color: #5c5c5c; text-decoration: none; display: block; }
+.container .lists li .txt { padding: 10px 25px;  display:none; }
+.container .lists li .txt p { color:#939598; font-size:18px; max-width:420px; }
+.container .lists li .txt p strong{color:#00b7be; font: bold 18px GillSans;}
+.container .form { float: right; width: 386px; border-left: 1px solid #e6ddd3; padding-left: 15px; height: 530px; }
+.container .form p { font-size: 14px; color: #5c5c5c; margin-bottom: 38px; }
+.container .form label { font-size: 14px; color: #835b34; display: block; margin-bottom: 3px; }
+.container .form input { font-size: 16px; display: block; padding: 0 5px; width: 100%; height: 31px; border: none; margin-bottom: 20px; box-shadow: #e7d1b5 3px 3px 0; color: #5c5c5c; }
+.container .form textarea { font-size: 16px; display: block; padding: 5px; width: 100%; height: 210px; border: none; box-shadow: #e7d1b5 3px 3px 0; color: #5c5c5c; outline: none; resize: none; overflow: auto; margin-bottom:20px; }
+.container .form button { background: url(../fale_conosco/images/enviar.png); display: block; float: right; height: 44px; width: 146px; cursor:pointer; margin-right:-13px; border:none; outline:none; }

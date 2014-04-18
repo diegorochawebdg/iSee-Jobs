@@ -1,0 +1,94 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #b2123c; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.cafeteira-img { margin-left: -626px; top: 0px; }
+.thermoblock-detalhe { margin-left: -155px; top: 5px; z-index: 3; }
+.thermoblock-txt { margin-left: 50px; top: 45px; }
+.reservatorio { margin-left: -98px; top: 205px; position: absolute; height: 67px; width: 504px; background: url(http://www.electroluxwebcontent.com/cafeteira_emc10/caracteristicas/page2/reservatorio.png); left: 50%; z-index:1 !important; }
+.diversidade-txt { margin-left: -72px; bottom: 18px; }
+.xicara { margin-left: 180px; top: 225px; }
+#call-to-action2 { margin-left: 177px; bottom: 11px; }
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//img
+	TweenMax.from( $(".cafeteira-img") , 1, { css: { alpha:0, left:"-=100px" } , ease: Strong.easeOut, delay:.3 } );
+	
+	//detalhe
+	TweenMax.from( $(".thermoblock-detalhe") , 1, { css: { alpha:0, left:"+=100px" } , ease: Strong.easeOut, delay:.7 } );
+	
+	//reservatorio
+	TweenMax.from( $(".reservatorio") , 1, { css: { alpha:0, width:0 } , ease: Strong.easeOut, delay:1 } );
+	
+	//txt thermoblock
+	TweenMax.from( $(".thermoblock-txt") , 1, { css: { alpha:0, top:"-=100px" } , ease: Strong.easeOut, delay:1.6 } );
+	
+	//xicara
+	TweenMax.from( $(".xicara") , 1, { css: { alpha:0, top:"-=100px" } , ease: Strong.easeOut, delay:1.8 } );
+	
+	//Diversidade de bebidas
+	TweenMax.from( $(".diversidade-txt") , 1, { css: { alpha:0, bottom:"+=100px" } , ease: Strong.easeOut, delay:2 } );
+	
+	//call to action
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2.5, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action2, .google-play-qr-code, .app-store-qr-code").hover(function(e) {
+            TweenMax.to( $(this) , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/frente-cafeteira-graos-cafe.jpg" alt="frente da cafeteira Electrolux e alguns grãos de café" width="672" height="520" class="cafeteira-img" title="frente da cafeteira CHEF EMC10" />
+                
+                <img src="caracteristicas/page2/detalhe-thermoblock.png" alt="detalhe do sistema thermoblock" width="194" height="194" class="thermoblock-detalhe" title="detalhe do sistema thermoblock" />
+                
+                <img src="caracteristicas/page2/sistema-termoblock-txt.png" alt="Sistema Thermoblock" width="316" height="132" class="thermoblock-txt" title="Sistema Thermoblock" />
+                
+                <div class="reservatorio"></div>
+                
+                <img src="caracteristicas/page2/xicara.png" alt="Xícara de café" width="247" height="201" class="xicara" title="Xícara de café" />
+                
+                <img src="caracteristicas/page2/mais-diversidade-nas-suas-bebidas.png" alt="Mais diversidade nas suas bebidas" width="244" height="195" class="diversidade-txt" title="Mais diversidade nas suas bebidas" />
+                
+                <a href="#"><img src="caracteristicas/page2/placa-de-aquecimento.png" alt="Placa de aquecimento" width="238" height="96" id="call-to-action2" title="Placa de aquecimento"/></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

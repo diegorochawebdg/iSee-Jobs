@@ -1,0 +1,87 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#020416 url(caracteristicas/background.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+.celular{ margin-left:-465px; bottom:0;}
+.selo{ margin-left:-185px; top:135px;}
+.titulo{ margin-left:-80px; top:80px;}
+.paragrafo{ margin-left:-80px; top:115px;}
+.disponivel{ margin-left:-80px; top:220px;}
+.qrandroid{ margin-left:-80px; top:270px;}
+.qritunes{ margin-left:40px; top:270px;}
+.transforme{ margin-left:185px; top:270px;}
+
+#call-to-action5{ margin-left:165px; bottom:20px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".celular"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".selo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".paragrafo"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".disponivel"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".qrandroid"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($(".qritunes"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	TweenMax.from($(".transforme"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:1.6});
+		
+	//call to action
+	TweenMax.from( $("#call-to-action5") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.8, onComplete: function() {
+		TweenMax.to( $("#call-to-action5"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action5").hover(function(e) {
+				TweenMax.to( $("#call-to-action5") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action5") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action5" , "fotos.html", false );
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page5/celular.png" width="402px" height="520px" alt="Você no comando" title="Você no comando" class="absoluto celular" />
+                <img src="caracteristicas/page5/selo-philips.png" width="73px" height="71px" alt="Você no comando" title="Você no comando" class="absoluto selo" />
+                
+                <img src="caracteristicas/page5/title-voce-no-comando.png" width="202px" height="19px" alt="Você no comando" title="Você no comando" class="absoluto titulo" />
+                <img src="caracteristicas/page5/paragrafo.png" width="406px" height="84px" alt="Com o App MyRemote&reg; Philips* você pode controlar a sua TV com seu smartphone ou tablet, usando o teclado de seu aparelho para digitar. Além disso, pode compartilhar fotos e vídeos com a tela da TV." title="Com o App MyRemote&reg; Philips* você pode controlar a sua TV com seu smartphone ou tablet, usando o teclado de seu aparelho para digitar. Além disso, pode compartilhar fotos e vídeos com a tela da TV." class="absoluto paragrafo" />
+                <img src="caracteristicas/page5/disponivel-no-itunes-app-store-e-google-play.png" width="202px" height="27px" alt="*Disponível no  iTunes App Store&reg; e Google Play&reg;." title="*Disponível no  iTunes App Store&reg; e Google Play&reg;." class="absoluto disponivel" />
+                <a href="https://play.google.com/store/apps/details?id=philips.oneremote&amp;feature=nav_result#?t=W251bGwsMSwyLDNd" target="_blank"><img src="caracteristicas/page5/qr-android.png" width="103px" height="147px" alt="QRCode Google Android" title="QRCode Google Android" class="absoluto qrandroid" /></a>
+                <a href="https://itunes.apple.com/br/app/philips-myremote/id426883783?mt=8" target="_blank"><img src="caracteristicas/page5/qr-itunes.png" width="104px" height="146px" alt="QRCode Apple iTunes" title="QRCode Apple iTunes" class="absoluto qritunes" /></a>
+                <img src="caracteristicas/page5/transforme-seu-smartphone-ou-tablet-no-controle-remoto-de-sua-tv-philips.png" width="177px" height="100px" alt="Transforme seu smartphone ou tablet no controle remoto de sua TV Philips." title="Transforme seu smartphone ou tablet no controle remoto de sua TV Philips." class="absoluto transforme" />
+                
+                <a href="#"><img src="caracteristicas/page5/btn-fotos.png" width="122px" height="66px" alt="Fotos" title="Fotos" class="absoluto" id="call-to-action5" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

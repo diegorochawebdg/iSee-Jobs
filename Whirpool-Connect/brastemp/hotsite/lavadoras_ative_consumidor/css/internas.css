@@ -1,0 +1,74 @@
+@charset "UTF-8";
+#content { background: url(../images/internas/bg-lavadoras.jpg) center; }
+#menu { margin-left: -35px; top: 0px; background: url(../images/internas/bg-menu.png); height: 75px; width: 515px; }
+#menu .menu-selected { background: url(../images/internas/menu-ativo.png); height: 88px; width: 92px; top: 0px; z-index: 1; }
+#menu .img, #menu .linha { float: left; }
+#menu .menu-itens { margin: 8px 0 0 56px; position: relative; z-index: 2; }
+#menu .linha { background: #d8aa95; height: 61px; width: 1px; margin: 0 7px; }
+
+#lavadora .lavadora-img { margin-left: -466px; top: 96px; z-index: 2; pointer-events:none; }
+#lavadora .lavadora-img2 { margin-left: -466px; top: 96px; z-index: 2; display: none; pointer-events:none; }
+
+#title h1 { font: 36px FoundryBold; text-transform: uppercase; color: #FFF; margin-left: -35px; top: 115px; }
+#title h2 { font: 20px FoundryBold; text-transform: uppercase; color: #510b37; margin-left: -35px; top: 159px; }
+.hotspots a { background: url(../images/internas/hotspot.png); display: block; height: 51px; width: 51px; position: absolute; left: 50%; z-index: 5; }
+.hotspots .video2 { background: url(../images/internas/hotspot2.png) !important; height: 53px !important; width: 53px !important; }
+#lavadora .cores { margin-left: -158px; top: 344px; width:125px; }
+#lavadora .cores h3{ color: #510b37; font: 18px FoundryLight; text-transform: uppercase; float: right; margin-right:19px; }
+#lavadora .cores .cores-select { background: #510b37; padding: 9px; border-radius:10px; }
+#lavadora .cores .cores-select a { float: right; margin-left: 7px; width:35px; padding-top:35px; position:relative; z-index:2; opacity:0.7; }
+#lavadora .cores .cores-select a.selected{opacity:1;}
+#lavadora .mais-imagens{ background: #510A37 url(../images/internas/mais-imagens.png) no-repeat 44px 14px; padding: 10px 15px 6px 83px; top: 447px; margin-left: -194px; border-radius:10px; color:#FFF; font:15px FoundryLight; text-decoration:none; text-transform:uppercase; }
+#lavadora .video { /* background: #F47920 url(../images/internas/assista-video.png) no-repeat 10px 15px; */ padding: 10px 15px 8px 101px; width: 157px; margin-left: -502px; top: 525px; font: 18px FoundryBold; text-transform: uppercase; color: #FFF; text-decoration: none; border-radius: 10px; z-index: 3; display: block; }
+#lavadora .especificacoes { background: #F47920; text-align: center; vertical-align: middle; display: table; border-radius: 10px; padding: 17px 15px; color: #FFF; text-transform: uppercase; text-decoration: none; top: 532px; margin-left: -189px; font-family: FoundryLight; z-index: 3; }
+#weight { background: url(../images/internas/quantidade-roupa.png); height: 86px; width: 265px; margin-left: 163px; top: 277px; padding: 20px 13px; }
+#weight .the-weight , #weight .txt{ float: left; }
+#weight .txt p { font: 12px FoundryBold; color: #510b37; width: 140px; margin-left: 15px; padding-top: 5px; }
+#weight .the-weight span { color: #510b37; font: 48px FoundryBold; }
+#weight .quantidade { text-align: center; }
+#weight .quantidade a { text-transform: uppercase; color: #FFF; font-size: 13px; background: #510A37; text-decoration: none; padding: 10px 25px; border-radius: 10px; display: inline-block; }
+.comprar { background: #510A37 url(../images/internas/comprar.png) no-repeat 168px 14px; text-transform: uppercase; color: #FFF; font: 24px FoundryBold; display: block; padding: 10px 45px; top: 527px; margin-left: 163px; text-decoration: none; border-radius: 10px; width: 136px; }
+.fechar { background: url(../images/internas/fechar-lightbox.png); height: 0px; width: 70px; padding-top: 26px; overflow: hidden; position: absolute; left: 50%; z-index: 11; }
+.lightbox { background: url(../images/internas/bg-lightbox.png) repeat; height: 638px; width: 100%; position: absolute; left: 0px; top: 62px; z-index: 9; display: none; }
+#weight-lightbox .quantidade-roupa-img , #comparativo .comparativo-img{ margin-left: -461px; top: 74px; }
+#weight-lightbox .fechar, #comparativo .fechar { margin-left: 391px; top: 48px; }
+#video-lightbox #player { height: 509px; width: 903px; margin-left: -451px; position: absolute; left: 50%; top: 74px; border: 10px solid #000; background: #FFF url(../images/internas/loading.gif) center no-repeat; }
+#video-lightbox .fechar{margin-left: 401px; top: 48px;}
+
+
+#especificacoes .especificacoes-img{ margin-left: -385px; top: 74px; background: #fac029 url("../images/internas/bg-especificacoes.png") repeat-x; height: 470px; width: 770px; }
+#especificacoes .relative { position: relative; height: 446px; width: 770px; padding-top: 24px; }
+#especificacoes .relative div{background-color:#FFF; background-repeat:no-repeat; position:absolute;padding:12px;}
+#especificacoes .relative *{color: #661347; font-family:FoundryBold; background-position:13px center;}
+#especificacoes h2{ font-size: 28px; text-transform: uppercase; text-align: center; }
+#especificacoes h3{ font-size: 18px; margin-bottom:12px; }
+#especificacoes li{ font-size: 12px; margin-bottom:12px; }
+#especificacoes .fechar { margin-left: 315px; top: 48px; }
+
+
+#gallery-lightbox #gallery { height: 509px; width: 902px; border: 10px solid #000; margin-left: -451px; top: 74px; background: #FFF; }
+#gallery-lightbox .fechar{margin-left: 400px; top: 48px;}
+#gallery-lightbox #gallery .arrow-left, #gallery-lightbox #gallery .arrow-right{position:absolute; top:215px; width:60px; padding-top:77px;}
+#gallery-lightbox #gallery .arrow-left{background:url(../images/internas/arow-left.png) no-repeat; left:0; display:none;}
+#gallery-lightbox #gallery .arrow-right{background:url(../images/internas/arow-right.png) no-repeat; right:0;}
+#gallery-lightbox #gallery #thumbs{position:absolute; bottom:-40px; left:250px; z-index:15;}
+#gallery-lightbox #gallery #thumbs li{float:left; margin-right:10px; border:solid #000 5px; background-color:#FFF;}
+#gallery-lightbox #gallery #thumbs li a{display:block; position:relative; z-index:20;}
+
+/*Resize*/
+/*
+#menu.resize{-moz-transform: scale(0.9); -ms-transform: scale(0.9); -webkit-transform: scale(0.9); -o-transform: scale(0.9); top: 65px; margin-left: -10px;}
+#title h1.resize{-moz-transform: scale(0.9); -ms-transform: scale(0.9); -webkit-transform: scale(0.9); -o-transform: scale(0.9); top: 155px; margin-left:-5px}
+#title h2.resize{-moz-transform: scale(0.9); -ms-transform: scale(0.9); -webkit-transform: scale(0.9); -o-transform: scale(0.9); top: 199px; margin-left:8px;}
+.comprar.resize{top:447px !important;}
+#weight{top:277px;}
+#lavadora.resize{margin-top:-70px;}
+
+#especificacoes .especificacoes-img.resize{ margin-left: -366px; top: 62px; -moz-transform: scale(0.95); -ms-transform: scale(0.95); -webkit-transform: scale(0.95); -o-transform: scale(0.95); }
+#gallery-lightbox #gallery.resize { top: 22px; -moz-transform: scale(0.8); -ms-transform: scale(0.8); -webkit-transform: scale(0.8); -o-transform: scale(0.8); }
+#gallery-lightbox .fechar.resize{margin-left: 307px;}
+#weight-lightbox .quantidade-roupa-img.resize , #comparativo .comparativo-img.resize{-moz-transform: scale(0.9); -ms-transform: scale(0.9); -webkit-transform: scale(0.9); -o-transform: scale(0.9); margin-left: -415px; top: 48px;}
+#video-lightbox #player.resize{-moz-transform: scale(0.8); -ms-transform: scale(0.8); -webkit-transform: scale(0.8); -o-transform: scale(0.8); margin-left: -415px; top: 22px;}
+#video-lightbox .fechar.resize{margin-left:345px}
+*/
+/*End of Resize*/

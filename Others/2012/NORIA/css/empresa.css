@@ -1,0 +1,23 @@
+#empresa{background-color:#125A9C !important}
+#conteudo h2{color:#0C4A83; margin-bottom:20px}
+#conteudo strong{font-size:16px; font-weight:bold; color:#1366B7}
+.coluna-esquerda{width:47%; float:left}
+.coluna-direita{width:47%; float:right; margin-right:10px}
+.coluna-direita img, .coluna-esquerda img{max-width:100%; height:auto}
+.coluna-esquerda p, .coluna-direita p{margin-bottom:20px; line-height:21px}
+.coluna-esquerda a, .coluna-direita a{color:#1366B7; text-decoration:underline}
+.coluna-esquerda h3, .coluna-direita h3{font-size:20px; color:#0096D8; margin-bottom:15px; font-weight:bold}
+.coluna-esquerda{margin-right:40px}
+.coluna-direita img{margin-bottom:20px}
+#conteudo li{background:url(../images/bg-li-home.gif) no-repeat 0px 5px; padding-left:15px; margin-bottom:7px}
+.instrutores{background:#F5F6F8; border-top:1px solid #1368B7; position:relative; padding:0px 30px; margin-top:35px}
+.instrutores img{margin:0 20px 0 0}
+.instrutores .titulo{background:#125A9C; text-align:center; width:250px; height:29px; padding-top:7px; margin-left:-125px; position:absolute; left:50%; top:-19px}
+.instrutores .titulo h2{font-size:20px !important; text-transform:uppercase; color:#FFF !important}
+.instrutores h3{font-size:30px; color:#0C4A83; margin-bottom:25px}
+.marcello, .alejandro{width:45%; float:left; padding:35px 0 20px 0; height:100%}
+.marcello p, .alejandro p{margin-bottom:20px}
+.marcello{padding-right:40px}
+.marcello ul{margin-bottom:20px}
+.alejandro{border-left:4px solid #FFF; padding-left:30px}
+h2{text-transform:uppercase}

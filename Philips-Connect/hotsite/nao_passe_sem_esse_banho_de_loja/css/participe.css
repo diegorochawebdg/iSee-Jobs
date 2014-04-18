@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#menu_participe{background-color:#009a9f;}
+#content{background-color:#f1eeee;}
+#cadastrar { background: url(../participe/images/cadastrar-sua-nova.png); width: 271px; padding-top: 43px; margin-left: 223px; top: 260px; left: 50%; }
+
+.participar-txt{top:324px; left:50%; margin-left:-456px;}
+.participar-txt h2{ color: #00b7be; font: 42px PeachMilk; margin-bottom: 25px; }
+.participar-txt ul { margin-left: 70px; }
+.participar-txt li { display: block; float: left; margin-right: 125px; text-align: center; }
+.participar-txt span { display: block; font-size: 14px; text-transform: uppercase; color: #5a5a5a; }
+.participar-txt span.guardar { text-transform: uppercase; text-align: center; color: #00b7be; font: 30px PeachMilk; margin: 30px; }
+.linha { background: #939598; height: 1px; width: 100%; margin:470px 0 25px 0; }
+.veja-seus-numeros { margin-left: -473px; position: relative; left: 50%; width:870px; }
+.veja-seus-numeros h3 { font-size: 14px; text-transform: uppercase; color: #4c4c4c; margin-bottom: 14px; }
+.veja-seus-numeros #form { margin-left: 110px; }
+.veja-seus-numeros #form label { color: #939598; margin-right: 13px; font-size: 15px; }
+.veja-seus-numeros #form input { padding: 0 10px; width: 210px; border: none; height: 36px; font-size: 15px; box-shadow: #939598 2px 2px 0px; margin-right: 15px; color: #939598; }
+.veja-seus-numeros #form #bt-login{ background: url(../participe/images/acessar.png) no-repeat; width: 134px; height: 34px; border: none; cursor: pointer; display: table-cell; vertical-align: middle; text-indent: -9999px; box-shadow:none !important; }
+.veja-seus-numeros #form .links { margin: 10px 0 0 44px; }
+.veja-seus-numeros #form .links a{ font-size: 14px; color: #00b7be; margin-right: 160px; text-decoration: none; }
+.veja-seus-numeros #form .links a:hover{text-decoration:underline;}

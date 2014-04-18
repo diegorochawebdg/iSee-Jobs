@@ -1,0 +1,66 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(caracteristicas/bg-body.jpg) repeat !important; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center { margin: 0 auto; width: 956px; height: 520px; }
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px; }
+.bg-magenta { background: #b2123c; height: 175px; width: 100%; }
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+.aspire { margin-left: -369px; top: 49px; }
+.bocal-estofados { margin-left: 22px; top: 81px; }
+.bocal-pisos { top: 218px; margin-left: -400px; }
+.tubos { top: 251px; margin-left: -23px; }
+.bocal-dois-em-um { margin-left: -400px; bottom: 0px; }
+#call-to-action4 { margin-left: 158px; bottom: 23px; z-index: 2 !important; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page4/aspire-ate-os-cantos-mais-dificeis.png" width="298" height="137" alt="Aspire até os cantos mais difíceis" title="Aspire até os cantos mais difíceis" class="aspire" />
+                
+                <img src="caracteristicas/page4/bocal-para-estofados.png" width="379" height="142" alt="Bocal para estofados: aspira com facilidade os estofamentos até nos vincos formados pelos tecidos." title="Bocal para estofados: aspira com facilidade os estofamentos até nos vincos formados pelos tecidos." class="bocal-estofados" />
+                
+                <img src="caracteristicas/page4/bocal-para-pisos.png" width="373" height="133" alt="Bocal para pisos: ideal para utilizar em carpetes, tapetes e pisos frios." title="Bocal para pisos: ideal para utilizar em carpetes, tapetes e pisos frios." class="bocal-pisos" />
+                
+                <img src="caracteristicas/page4/tubos-prolongadores-plasticos.png" width="423" height="157" alt="Tubos prolongadores plásticos: aumentam o alcance do aspirador em pisos, tetos e cortinas. Devem ser conectados aos bocais." title="Tubos prolongadores plásticos: aumentam o alcance do aspirador em pisos, tetos e cortinas. Devem ser conectados aos bocais." class="tubos" />
+                
+                <img src="caracteristicas/page4/bocal-2-em-1.png" width="344" height="145" alt="Bocal 2 em 1: para os locais de difícil acesso, como cantos de sofás e frestas." title="Bocal 2 em 1: para os locais de difícil acesso, como cantos de sofás e frestas." class="bocal-dois-em-um" />
+                
+                <a href="#"><img src="caracteristicas/page4/assista-o-video.png" width="223" height="76" alt="Assista o vídeo" id="call-to-action4" title="Assista o vídeo" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".aspire") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.3});
+	
+	TweenMax.from( $(".bocal-estofados") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.5});
+	
+	TweenMax.from( $(".bocal-pisos") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.7});
+	
+	TweenMax.from( $(".tubos") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.9});
+	
+	TweenMax.from( $(".bocal-dois-em-um") , 1, { css: { alpha: 0, bottom: "+=100px" } , ease: Strong.easeOut, delay:1.1});
+	
+	TweenMax.from( $("#call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.7, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action4").hover(function(e) {
+            TweenMax.to( $(this) , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action4" , "videos.html", false );
+});
+</script>

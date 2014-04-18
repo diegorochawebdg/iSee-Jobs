@@ -1,0 +1,124 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .barbeador{ margin-left:-390px; top:42px;}
+
+.connect-container .container_interna h2{ font-family: "Museo-700"; color:#FFF;}
+.connect-container .container_interna p{ font-family: "Museo-300"; color:#FFF; }
+
+.connect-container #bloco{ width:340px; height:375px; background:#252224; margin-left:-395px; top:94px;}
+.connect-container #bloco img.linha{ position:absolute; bottom:102px;}
+.connect-container #bloco div{ width:340px; height:104px; position:absolute; bottom:0; background:url(caracteristicas/page2/bg.jpg); text-align:right;}
+.connect-container #bloco div h2{ font-size:20px; text-align:center; width:164px; margin-top:30px; float:left;}
+.connect-container #bloco div img{ float:left;}
+
+.connect-container .features{ background-color:#32afcd; width:545px; margin-left:-228px;}
+.connect-container .features div{ background-color:#555555; line-height:38px;}
+.connect-container .features div h2{ font-size:24px; margin-left:120px;}
+.connect-container .features p{ font-size:14px; line-height:16px; margin:10px 0 10px 120px;}
+.connect-container .features img{ position:absolute; right:-50px; top:-20px;}
+
+.connect-container #feature1{ top:72px;}
+.connect-container #feature1 h2, .connect-container #feature1 p{ margin-left:140px;}
+.connect-container #feature2{ top:215px;}
+.connect-container #feature2 img{ top:-15px;}
+
+.connect-container #call-to-action2{ margin-left:30px; bottom:72px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action2"), "fadeInRight", "s09", "caracteristicas3.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="bloco" class="absoluto animated fadeIn s05">
+                    <div>
+                    	<h2>Lâminas de<br />
+                        longa duração!</h2>
+                        <img src="caracteristicas/page2/laminas.jpg" width="176" height="104" alt="" title="" />
+                    </div>
+                    <img src="caracteristicas/page2/linha-tracejada.png" width="338" height="4" alt="" title="" class="linha" />
+                </div>
+                
+                <div id="feature1" class="absoluto features animated fadeInLeft s07">
+                	<div>
+                    	<h2>Aquatec</h2>
+                    </div>
+                    <p>
+                    	Você pode escolher entre fazer a barba<br />
+                        com uso seco ou molhado com espuma<br />
+                        ou gel de barbear.
+                    </p>
+                    <img src="caracteristicas/page2/feature1.png" width="147" height="147" alt="" title="" />
+                </div>
+                
+                <div id="feature2" class="absoluto features animated fadeInLeft s08">
+                	<div>
+                    	<h2>Barbear rente e suave</h2>
+                    </div>
+                    <p>
+                    	Com pontas arredondadas, as lâminas CloseCut<br />
+                        foram desenvolvidas especialmente para deslizar<br />
+                        facilmente na pele, proporcionando um barbear<br />
+                        mais rente e confortável.
+                    </p>
+                    <img src="caracteristicas/page2/feature2.png" width="147" height="147" alt="" title="" />
+                </div>
+                
+                <img src="caracteristicas/page2/barbeador.png" width="287" height="341" alt="" title="" class="absoluto barbeador animated fadeInLeft s06" />
+                
+                <a href="#" id="call-to-action2" class="absoluto animated fadeInRight s09"><img src="caracteristicas/page2/btn-pratico-e-facil.png" width="226" height="49" alt="Prático e fácil" title="Prático e fácil" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

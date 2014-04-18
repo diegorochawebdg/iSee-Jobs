@@ -1,0 +1,52 @@
+@font-face{font-family:'FuturaStd-Condensed'; src:url('../fonts/futurastd-condensed.eot'); src:url('../fonts/futurastd-condensed.eot?#iefix') format('embedded-opentype'), url('../fonts/futurastd-condensed.woff') format('woff'), url('../fonts/futurastd-condensed.ttf') format('truetype'), url('../fonts/futurastd-condensed.svg#futurastd-condensed') format('svg'); font-weight:normal; font-style:normal}
+*{font-family:'FuturaStd-Condensed'; color:#FFF; font-weight:normal; margin:0px; padding:0px; border:none; background-repeat:no-repeat; font-size:20px; line-height:1.2em; background-position:center top}
+a{color:#FFF; text-decoration:none}
+a:hover{text-decoration:underline; cursor:pointer}
+img{display:block; border:none}
+.relative{position:relative}
+.absolute{position:absolute}
+.clear{clear:both !important; float:none !important}
+.margem-geral{width:960px; margin:0 auto}
+#header{background-image:url(../images/bg-topo.jpg); background-position:top; height:682px}
+#header .topo-txt{width:483px; left:49%; top:286px}
+#header .topo-txt h1{background-image:url(../images/experimente-o-jeito-senseo-de-tomar-cafe.png); height:171px; width:448px; text-indent:-9999px; margin-bottom:40px}
+.cafe-brasileiro{background-image:url(../images/bg-cafe-brasileiro.jpg); height:559px}
+.cafe-brasileiro .cafe-brasileiro-txt{left:50%; top:70px; margin-left:-160px}
+.cafe-brasileiro .cafe-brasileiro-txt h2{margin-bottom:35px; background-image:url(../images/cafe-que-o-brasileiro-gosta-de-um-jeito-novo.png); text-indent:-9999px; height:126px; width:472px}
+.cafe-brasileiro .cafe-brasileiro-txt li{list-style-position:inside; list-style-type:disc; font-size:24px; text-shadow:#747474 1px 1px 2px}
+.imperdivel{background-image:url(../images/bg-vermelho.jpg); background-repeat:repeat-y; background-position:center}
+.imperdivel h2{padding:50px 0 10px 0}
+.imperdivel h3{margin-bottom:30px}
+.imperdivel .imperdivel-txt img{margin:0 auto}
+.cafeteiras div{float:left; text-align:center}
+.cafeteiras div:first-child{margin-left:25px}
+.cafeteiras div a{background-image:url(../images/botao-comprar.jpg); text-indent:-9999px; height:68px; width:234px; display:block; margin-top:10px}
+.cafeteiras img{margin:0 auto}
+.cafeteiras .divisao{background-image:url(../images/divisao.jpg); height:675px; width:2px; margin:0 25px}
+.cafeteiras .preco{padding-top:10px}
+.cafeteiras .preco img{margin:20px auto}
+.cafeteiras .preco span, .cafeteiras .preco sup{color:#ff8f71}
+.cafeteiras .preco .sup{font-size:14px !important}
+.cafeteiras .preco span:first-child{font-size:24px !important}
+.cafeteiras .preco span{font-size:16px}
+.cafeteiras .preco .sup2{font-size:16px; color:#ff8f71; font-weight:bold !important}
+.sabores, .mais{background-image:url(../images/bg-marrom.jpg); background-repeat:repeat-y}
+.sabores-bg .sabores-titulo{left:50%; top:100px; margin-left:-240px}
+.sabores .sabores-titulo h2{background-image:url(../images/sabores-de-cafe.png); height:148px; width:480px; text-indent:-9999px}
+.sabores .sabores-bg{background-image:url(../images/saches-cafe-pilao-senseo.jpg); height:643px}
+.sabores span{text-transform:uppercase; display:block; padding-left:45px; height:36px; text-shadow:#777 -1px 1px 0; position:absolute; top:480px; font-size:30px; background-position:left 3px !important; left:50%}
+.sabores .leveza{color:#ffc12e; margin-left:-440px; background-image:url(../images/sabor-e-leveza.png)}
+.sabores .classico{color:#e92d44; background-image:url(../images/pilao-classico.png); margin-left:-95px; top:560px}
+.sabores .intenso{background-image:url(../images/pilao-intenso.png); margin-left:184px; color:#6b39ac; background-position:1px !important}
+.mais{height:200px}
+.mais img{margin:0 auto}
+.clube{height:356px; background-image:url(../images/bg-clube.jpg); background-repeat:repeat-y}
+.clube .clube-bg{background-image:url(../images/bg-clube-senseo.jpg); height:356px}
+.clube .clube-txt{left:50%; margin-left:56px; top:72px}
+.clube .clube-txt sup{font-size:20px !important}
+.clube .clube-txt h3, .clube .clube-txt sup{font-size:48px; color:#9f8872; margin-bottom:15px}
+.clube .clube-txt .clube-senseo{font-size:24px; color:#9f8872; width:375px; margin-bottom:30px}
+.clube .clube-txt .acesse, .clube .clube-txt a{color:#d60025 !important; font-size:29px}
+#footer{background-color:#d60025; height:111px}
+#footer .regulamento{left:0px; font-family:Arial,Helvetica,sans-serif; font-size:11px; top:80px}
+#footer .senseo-slogan{top:20px; right:0px}

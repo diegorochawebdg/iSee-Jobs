@@ -1,0 +1,61 @@
+body{background:#3B0D32 url(../images/mulheres-philips-hair-care.jpg) no-repeat center top; min-width:1013px}
+#container{min-width:1013px}
+.font{font-family:'gill_sans_std_lightregular'}
+.branco{color:#FFF !important}
+#header h1{width:345px; position:absolute; left:50%; top:265px; margin-left:200px; font-size:26.5px}
+#header h2{color:#6C183F; margin-left:-312px; position:absolute; left:50%; top:461px; font-size:60px}
+#header h2 strong {color: #6C183F;}
+#header h2 *{font-size:60px}
+#header h2 span{margin-left:20px}
+#content{position:absolute; margin-left:-510px; left:50%; top:571px; width:1013px}
+.color{color:#F8D7AE}
+.produto-lilas-esquerda, .produto-amarelo-esquerda, .produto-lilas-direita, .produto-amarelo-direita{float:left; position:relative}
+.clear{clear:both}
+.produto-lilas-esquerda h3, .produto-amarelo-esquerda h3, .produto-lilas-direita h3, .produto-amarelo-direita h3, .hp8260 h3, .hp8618 h3{position:absolute; font:23px 'gill_sans_std_lightregular'; top:26px}
+.produto-lilas-esquerda h3 span, .produto-amarelo-esquerda h3 span, .produto-lilas-direita h3 span, .produto-amarelo-direita h3 span, .hp8260 h3 span, .hp8618 h3 span{display:block; font:24px 'gill_sans_stdregular'}
+.produto-lilas-esquerda h3 *, .produto-amarelo-esquerda h3 *, .hp8618 h3{color:#f8d7ae}
+.produto-lilas-esquerda h3, .produto-amarelo-esquerda h3, .hp8260 h3{text-align:right; right:77px; color:#f8d7ae}
+.produto-lilas-direita h3, .produto-amarelo-direita h3{left:79px; color:#f8d7ae}
+.produto-lilas-direita h3 *, .produto-lilas-esquerda h3 *{color:#f8d7ae}
+.produto-amarelo-direita h3 *, .produto-amarelo-esquerda h3 *, .produto-amarelo-direita h3, .produto-amarelo-esquerda h3{color:#67173d}
+.produto-lilas-esquerda, .produto-amarelo-esquerda{width:506px}
+.produto-lilas-direita, .produto-amarelo-direita{width:507px}
+.comprar{background:url(../images/bg-comprar.png); text-align:center; height:48px; width:164px; padding-top:7px; position:absolute; bottom:10px}
+.comprar a{font:27.5px 'gill_sans_std_lightregular'; color:#FFF; text-decoration:none}
+.comprar a:hover{text-decoration:underline}
+.produto-lilas-esquerda .comprar, .produto-amarelo-esquerda .comprar{left:40px}
+.produto-lilas-direita .comprar, .produto-amarelo-direita .comprar{right:25px}
+li{list-style:inside; list-style-type:none; margin-bottom:10px; display:table; clear:both}
+li img{float:left; margin-right:10px}
+li span{vertical-align:middle; display:table-cell; *margin-top:expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0":(parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2)+'px')}
+.caracteristicas{position:absolute; *display:block}
+.hp8103{background:url(../images/hp8103.jpg); height:386px}
+.hp8103 .caracteristicas{left:203px; top:160px}
+.hp4940{background:url(../images/hp4940.jpg); height:386px}
+.hp4940 .caracteristicas{left:4px; top:160px}
+.hp8180{background:url(../images/hp8180.jpg); height:386px}
+.hp8180 .caracteristicas{left:255px; top:175px}
+.hp8180 .comprar{left:88px; top:300px}
+.hp8182{background:url(../images/hp8182.jpg); height:386px}
+.hp8182 .caracteristicas{left:-15px; top:150px}
+.hp8182 .comprar{left:264px; top:300px}
+.hp8260{background:url(../images/hp8260.jpg); height:393px; position:relative}
+.hp8260 h3{right:586px}
+.hp8260 .caracteristicas{left:320px; bottom:13px}
+.hp8260 .comprar{left:115px; bottom:15px}
+.hp8300{background:url(../images/hp8300.jpg); height:383px}
+.hp8300 .caracteristicas{left:175px; bottom:65px}
+.hp8309{background:url(../images/hp8309.jpg); height:383px}
+.hp8309 .caracteristicas{left:7px; bottom:65px}
+.hp8310{background:url(../images/hp8310.jpg); height:385px}
+.hp8310 .caracteristicas{left:175px; bottom:18px}
+.hp8333{background:url(../images/hp8333.jpg); height:385px}
+.hp8333 .caracteristicas{left:7px; bottom:18px}
+.hp8339{background:url(../images/hp8339.jpg); height:390px}
+.hp8339 .caracteristicas{left:175px; bottom:50px}
+.hp8362{background:url(../images/hp8362.jpg); height:390px}
+.hp8362 .caracteristicas{left:7px; bottom:40px}
+.hp8618{background:url(../images/hp8618.jpg); height:458px; position:relative}
+.hp8618 .caracteristicas{left:530px; bottom:80px}
+.hp8618 .comprar{right:18px; bottom:80px}
+.hp8618 h3{left:585px; top:26px}

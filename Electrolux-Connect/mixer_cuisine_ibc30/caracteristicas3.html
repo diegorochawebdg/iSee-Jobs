@@ -1,0 +1,107 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg);
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+#background{ background:#b00f3a url(caracteristicas/page3/background.jpg) no-repeat; width:100%; height:520px; margin-left:-15px; top:0;}
+
+.absoluto{ position:absolute; left:50%;}
+
+.mixer-jarra{ margin-left:-495px; bottom:0;}
+.prato{ margin-left:-270px; bottom:0;}
+.mixer-ovos{ margin-left:180px; top:0;}
+.jarra{ margin-left:-110px; bottom:0;}
+.circulo{ margin-left:-135px; top:290px;}
+.titulo-mini{ margin-left:-325px; top:45px;}
+.paragrafo-moer{ margin-left:-325px; top:94px;}
+.titulo-batedor{ margin-left:16px; top:96px;}
+.paragrafo-bater{ margin-left:16px; top:146px;}
+
+#call-to-action3{ margin-left:145px; bottom:0px; cursor:pointer;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+
+	TweenMax.from($("#background"), .5, {css:{alpha:0}, ease:Linear.easeOut, delay:.2});
+	
+	TweenMax.from($(".mixer-jarra"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".prato"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".mixer-ovos"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".jarra"), .5, {css:{bottom:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".circulo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from($(".titulo-mini"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".paragrafo-moer"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".titulo-batedor"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".paragrafo-bater"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	
+	TweenMax.from( $("#call-to-action3") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1, onComplete: function() {
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div id="background" class="absoluto"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+				<img src="caracteristicas/page3/mixer-jarra.png" width="361px" height="369px" alt="Mixer" title="" class="absoluto mixer-jarra" />
+                <img src="caracteristicas/page3/prato.png" width="200px" height="112px" alt="Mixer" title="" class="absoluto prato" />
+                <img src="caracteristicas/page3/mixer-ovos.png" width="272px" height="400px" alt="Mixer" title="" class="absoluto mixer-ovos" />
+                <img src="caracteristicas/page3/jarra.png" width="266px" height="276px" alt="Mixer" title="" class="absoluto jarra" />
+                
+                <img src="caracteristicas/page3/circulo-acompanha-jarra-de-600-ml-com-tampa.png" width="144px" height="144px" alt="Acompanha jarra de 600ml com tampa" title="Acompanha jarra de 600ml com tampa" class="absoluto circulo" />
+                
+                <img src="caracteristicas/page3/mini-processador.png" width="241px" height="28px" alt="Mini processador" title="Mini processador" class="absoluto titulo-mini" />
+                <img src="caracteristicas/page3/paragrafo-para-moer.png" width="258px" height="54px" alt="Para moer carne, triturar e picar alimentos como castanhas, temperos e queijos com muito mais facilidade." title="Para moer carne, triturar e picar alimentos como castanhas, temperos e queijos com muito mais facilidade." class="absoluto paragrafo-moer" />
+                <img src="caracteristicas/page3/batedor-de-claras.png" width="244px" height="22px" alt="Batedor de claras" title="Batedor de claras" class="absoluto titulo-batedor" />
+                <img src="caracteristicas/page3/paragrafo-para-bater.png" width="251px" height="51px" alt="Para bater massas leves e claras em neve para receitas como bolos, mousses e cremes." title="Para bater massas leves e claras em neve para receitas como bolos, mousses e cremes." class="absoluto paragrafo-bater" />
+                
+                <img src="caracteristicas/page3/btn-seu-dia-a-dia-muito-mais-pratico.png" width="235px" height="90px" alt="Seu dia a dia muito mais prático" title="Seu dia a dia muito mais prático" class="absoluto" id="call-to-action3" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

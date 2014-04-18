@@ -1,0 +1,114 @@
+
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg) 50% 50% no-repeat;
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna .triangulos{ margin-left:0px; top:120px;}
+.container_interna .notebook{ margin-left:-120px; top:68px;}
+.container_interna .intel{ margin-left:310px; top:22px;}
+.container_interna .processador{ margin-left:295px; top:88px;}
+.container_interna .titulo{ margin-left:-382px; top:50px;}
+.container_interna .mobilidade{ margin-left:-755px; bottom:0px;}
+.container_interna .paragrafo1{ margin-left:-382px; top:220px;}
+.container_interna .geracao{ margin-left:-382px; top:310px;}
+.container_interna .paragrafo2{ margin-left:-382px; top:348px;}
+.container_interna .promocao{ margin-left:-48px; top:28px;}
+
+.container_interna #call-to-action1{ margin-left:98px; bottom:20px; cursor:pointer;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".triangulos"), .5, {css:{left: "+=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".notebook"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".intel"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".processador"), .5, {css:{left: "+=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".titulo"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	TweenMax.from($(".promocao"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".mobilidade"), .5, {css:{left: "-=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".paragrafo1"), .5, {css:{left: "-=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".geracao"), .5, {css:{top: "-=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($(".paragrafo2"), .5, {css:{left: "-=80px", alpha:0}, ease:Back.easeOut, delay:1.2});
+
+		
+	TweenMax.from( $("#call-to-action1") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.4, onComplete: function() {
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action1").hover(function(e) {
+            TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+		
+	}} );
+	
+	$( ".connect-container .promocao" ).parent("a").click( function(){ Connect.trackPageView( "caracteristicas1/regulamento.pdf" ); });
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<img src="caracteristicas/page1/triangulos.png" width="963px" height="368px" alt="" title="" class="absoluto triangulos" />
+                <img src="caracteristicas/page1/notebook.png" width="516px" height="372px" alt="" title="" class="absoluto notebook" />
+                
+                <img src="caracteristicas/page1/logo-intel.png" width="71px" height="53px" alt="Intel" title="Intel" class="absoluto intel" />
+                <img src="caracteristicas/page1/com-processador-intel-core-i3.png" width="104px" height="20px" alt="Com processador Intel® Core™ i3." title="Com processador Intel® Core™ i3." class="absoluto processador"  />
+                
+                <img src="caracteristicas/page1/titulo-notebook-lenovo-ideapad-s400.png" width="297px" height="36px" alt="Notebook Lenovo Ideapad S400" title="Notebook Lenovo Ideapad S400" class="absoluto titulo" />
+                
+                <a href="cliente/regulamento.pdf" target="_blank"><img src="caracteristicas/page1/promocao.png" width="237px" height="307px" alt="Promoção dia dos pais Lenovo seu pai conectado com você." title="Promoção dia dos pais Lenovo seu pai conectado com você." class="absoluto promocao" /></a>
+                
+                <img src="caracteristicas/page1/mobilidade-e-conectividade-para-o-dia-a-dia.png" width="668px" height="403px" alt="Mobilidade e conectividade para o dia a dia" title="Mobilidade e conectividade para o dia a dia" class="absoluto mobilidade" />
+                
+                <img src="caracteristicas/page1/paragrafo-leve-ultrafino.png" width="273px" height="69px" alt="Leve, ultrafino e com design moderno, o IdeaPad S400 é o notebook é ideal para acompanhar você onde quiser e com toda a performance que você precisa!" title="Leve, ultrafino e com design moderno, o IdeaPad S400 é o notebook é ideal para acompanhar você onde quiser e com toda a performance que você precisa!" class="absoluto paragrafo1" />
+                <img src="caracteristicas/page1/3-geracao-do-processador-intel-core.png" width="189px" height="30px" alt="3ª geração do Processador Intel® Core™." title="3ª geração do Processador Intel® Core™." class="absoluto geracao" />
+                <img src="caracteristicas/page1/paragrafo-otima-performance.png" width="283px" height="54px" alt="Ótima performance e máximo desempenho. Realize diversas tarefas simultaneamente com rapidez." title="Ótima performance e máximo desempenho. Realize diversas tarefas simultaneamente com rapidez." class="absoluto paragrafo2" />
+                
+                <img src="caracteristicas/page1/btn-mais-leve-mais-fino-mais-estiloso.png" width="295px" height="60px" alt="Mais leve, mais fino, mais estiloso" title="Mais leve, mais fino, mais estiloso" class="absoluto" id="call-to-action1" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

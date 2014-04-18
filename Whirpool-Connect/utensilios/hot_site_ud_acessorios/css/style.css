@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FONTES */
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/gotham-light.eot');
+    src: url('../fonts/gotham-light.eot') format('embedded-opentype'), url('../fonts/gotham-light.woff') format('woff'), url('../fonts/gotham-light.ttf') format('truetype'), url('../fonts/gotham-light.svg#GothamLight') format('svg');
+	font-weight:normal; font-style: normal;
+}
+@font-face {
+    font-family: 'GothamLightItalic';
+    src: url('../fonts/gotham-lightita.eot');
+    src: url('../fonts/gotham-lightita.eot') format('embedded-opentype'), url('../fonts/gotham-lightita.woff') format('woff'), url('../fonts/gotham-lightita.ttf') format('truetype'), url('../fonts/gotham-lightita.svg#GothamLightItalic') format('svg');
+	font-weight:normal; font-style: normal;
+}
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/gotham-medium.eot');
+    src: url('../fonts/gotham-medium.eot') format('embedded-opentype'), url('../fonts/gotham-medium.woff') format('woff'), url('../fonts/gotham-medium.ttf') format('truetype'), url('../fonts/gotham-medium.svg#GothamMedium') format('svg');
+	font-weight:normal; font-style: normal;
+}
+
+/* RESET */
+*{ margin:0; padding:0; line-height:1px;}
+
+/* DEFAULTS */
+#wrap{ background:#FFF url(../images/background.jpg); width:100%; height:750px;}
+#header{ background:url(../images/header/background.png) repeat-x; width:100%; height:96px; z-index:10;}
+#content{ background:url(../images/bg-transparencia.png); width:960px; height:680px; margin:0 auto; padding:0 10px; padding-top:70px;}
+
+.relativo{ position:relative;}
+.absoluto{ position:absolute;}
+.absolutoLeft{ position:absolute; left:50%;}
+
+.left{ float:left;}
+.botao{ cursor:pointer; z-index:4;}
+
+h1, h2, strong{ font-family:GothamMedium; line-height:normal;}
+p, h3, ul li{ font-family:GothamLight; line-height:normal;}
+a{ text-decoration:none; border:none;}
+img{ border:none;}
+
+/* HEADER */
+#header .logo{ background:url(../images/header/bg-logo.png) no-repeat; width:200px; height:150px; margin-left:-100px; top:0;}
+#header .marcas{ margin-left:-47px; top:40px;}
+#header h1{ font-size:21px; color:#616161; width:380px; margin-left:100px; top:22px;}
+#header h2{ font-family:GothamLightItalic; font-size:17px; color:#616161; width:400px; margin-left:-455px; top:24px;}
+
+/* TOP MENU */
+#top-menu{ width:244px; margin-left:236px; top:70px; z-index:2; display:none;}
+#top-menu #btn-cozinha, #top-menu #btn-alimentos, #top-menu #btn-lavanderia{ display:none;}
+
+/* CONTENT */
+
+/* HOME */
+/* HOME-COZINHA */
+#home-cozinha{ width:320px; height:680px; margin-left:-480px; top:70px; background:#f47920 url(../images/cozinha/bg-home.jpg) no-repeat; display:block;}
+#home-cozinha p{ font-size:22px; color:#FFF; margin-left:-95px; top:475px;}
+#home-cozinha h2{ font-size:44px; color:#FFF; margin-left:-95px; top:500px;}
+#home-cozinha #btn-home-cozinha{ margin-left:-114px; top:585px; }
+
+/* HOME-ALIMENTOS */
+#home-alimentos{ width:320px; height:680px; margin-left:-160px; top:70px; background:#9aca3c url(../images/alimentos/bg-home.jpg) no-repeat; display:block;}
+#home-alimentos p{ font-size:22px; color:#FFF; margin-left:-120px; top:475px;}
+#home-alimentos h2{ font-size:44px; color:#FFF; margin-left:-120px; top:500px;}
+#home-alimentos #btn-home-alimentos{ margin-left:-114px; top:585px;}
+
+/* HOME-LAVADERIA */
+#home-lavanderia{ width:320px; height:680px; margin-left:160px; top:70px; background:#006ea9 url(../images/lavanderia/bg-home.jpg) no-repeat; display:block;}
+#home-lavanderia p{ font-size:22px; color:#FFF; margin-left:-128px; top:475px;}
+#home-lavanderia h2{ font-size:44px; color:#FFF; margin-left:-128px; top:500px;}
+#home-lavanderia #btn-home-lavanderia{ margin-left:-114px; top:585px;}
+#home-lavanderia .texto{ font-size:16px; color:#FFF; width:300px; margin-left:-135px; top:580px;}
+
+/* CONTEUDO */
+.submenu{ background:url(../images/bg-submenus.png); width:60px; height:615px; padding-top:65px;}
+#btn-seta{ display:none;}
+.logo-substituido{ margin-left:170px; top:450px; z-index:6;}
+
+/* CONTEUDO COZINHA */
+#cozinha{ background:url(../images/background-conteudo.jpg) repeat-x; width:640px; height:680px; margin-left:-160px; top:70px; display:none;}
+#cozinha .btn-voltar-home{ margin-left:-640px; top:28px;}
+#cozinha .texto-home{ font-size:16px; color:#FFF; width:300px; margin-left:-620px; top:570px;}
+#cozinha .logo{ margin-left:190px; top:450px;}
+#cozinha #btn-comprar-cozinha{ margin-left:146px; top:600px;}
+
+#cozinha .submenu #btn-01, #cozinha .submenu #btn-01-hover{ left:14px; margin:10px 0;}
+#cozinha .submenu #btn-02, #cozinha .submenu #btn-02-hover{ left:5px; margin:10px 0;}
+#cozinha .submenu #btn-03, #cozinha .submenu #btn-03-hover{ left:11px; margin:10px 0;}
+#cozinha .submenu #btn-04, #cozinha .submenu #btn-04-hover{ left:8px; margin:10px 0;}
+#cozinha .submenu #btn-05, #cozinha .submenu #btn-05-hover{ left:6px; margin:10px 0;}
+#cozinha .submenu #btn-06, #cozinha .submenu #btn-06-hover{ left:6px; margin:10px 0;}
+#cozinha .submenu #btn-07, #cozinha .submenu #btn-07-hover{ left:12px; margin:10px 0;}
+#cozinha .submenu #btn-01-hover, #cozinha .submenu #btn-02-hover,
+#cozinha .submenu #btn-03-hover, #cozinha .submenu #btn-04-hover,
+#cozinha .submenu #btn-05-hover, #cozinha .submenu #btn-06-hover,
+#cozinha .submenu #btn-07-hover{ display:none;}
+#cozinha .submenu #btn-label{ background:url(../images/cozinha/btn-label.png) no-repeat; width:270px; height:33px; z-index:4; margin-left:30px; overflow:hidden; display:none;}
+#cozinha .submenu #btn-label p{ font-size:14px; color:#FFF; line-height:34px; margin-left:18px;}
+#cozinha .submenu #btn-seta{ margin-left:30px; top:95px; z-index:4;}
+
+#cozinha #conteudo-01{ background:url(../images/cozinha/bg-conteudo-01.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-01 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-01 ul{ margin-left:-240px; top:520px; width:360px;}
+#cozinha #conteudo-01 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#cozinha #conteudo-01 #spot-01{ margin-left:-162px; top:210px;}
+#cozinha #conteudo-01 #spot-02{ margin-left:-104px; top:166px;}
+#cozinha #conteudo-01 #spot-03{ margin-left:-20px; top:56px;}
+#cozinha #conteudo-01 #spot-04{ margin-left:80px; top:118px;}
+#cozinha #conteudo-01 #spot-05{ margin-left:125px; top:220px;}
+#cozinha #conteudo-01 #conteudo-spot-01{ margin-left:-152px; top:224px; display:none;}
+#cozinha #conteudo-01 #conteudo-spot-02{ margin-left:-94px; top:178px; display:none;}
+#cozinha #conteudo-01 #conteudo-spot-03{ margin-left:-10px; top:70px; display:none;}
+#cozinha #conteudo-01 #conteudo-spot-04{ margin-left:90px; top:130px; display:none;}
+#cozinha #conteudo-01 #conteudo-spot-05{ margin-left:136px; top:229px; display:none;}
+
+#cozinha #conteudo-02{ background:url(../images/cozinha/bg-conteudo-02.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-02 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-02 ul{ margin-left:-240px; top:520px; width:320px;}
+#cozinha #conteudo-02 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#cozinha #conteudo-02 #spot-01{ margin-left:-16px; top:128px;}
+#cozinha #conteudo-02 #spot-02{ margin-left:-146px; top:230px;}
+#cozinha #conteudo-02 #spot-03{ margin-left:-190px; top:320px;}
+#cozinha #conteudo-02 #spot-05{ margin-left:114px; top:154px;}
+#cozinha #conteudo-02 #spot-04{ margin-left:194px; top:328px;}
+#cozinha #conteudo-02 #conteudo-spot-01{ margin-left:-6px; top:80px; display:none;}
+#cozinha #conteudo-02 #conteudo-spot-02{ margin-left:-204px; top:200px; display:none;}
+#cozinha #conteudo-02 #conteudo-spot-03{ margin-left:-262px; top:290px; display:none;}
+#cozinha #conteudo-02 #conteudo-spot-04{ margin-left:147px; top:340px; display:none;}
+#cozinha #conteudo-02 #conteudo-spot-05{ margin-left:124px; top:124px; display:none;}
+
+#cozinha #conteudo-03{ background:url(../images/cozinha/bg-conteudo-03.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-03 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-03 ul{ margin-left:-240px; top:520px; width:360px;}
+#cozinha #conteudo-03 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#cozinha #conteudo-03 #spot-01{ margin-left:-126px; top:90px;}
+#cozinha #conteudo-03 #spot-02{ margin-left:58px; top:366px;}
+#cozinha #conteudo-03 #spot-03{ margin-left:84px; top:166px;}
+#cozinha #conteudo-03 #conteudo-spot-01{ margin-left:-115px; top:60px; display:none;}
+#cozinha #conteudo-03 #conteudo-spot-02{ margin-left:68px; top:378px; display:none;}
+#cozinha #conteudo-03 #conteudo-spot-03{ margin-left:94px; top:136px; display:none;}
+
+#cozinha #conteudo-04{ background:url(../images/cozinha/bg-conteudo-04.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-04 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-04 ul{ margin-left:-240px; top:520px; width:500px;}
+#cozinha #conteudo-04 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#cozinha #conteudo-05{ background:url(../images/cozinha/bg-conteudo-05.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-05 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-05 ul{ margin-left:-240px; top:520px; width:520px;}
+#cozinha #conteudo-05 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#cozinha #conteudo-06{ background:url(../images/cozinha/bg-conteudo-06.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-06 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-06 ul{ margin-left:-240px; top:520px; width:400px;}
+#cozinha #conteudo-06 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#cozinha #conteudo-07{ background:url(../images/cozinha/bg-conteudo-07.jpg) no-repeat; width:580px; height:680px; display:none;}
+#cozinha #conteudo-07 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#cozinha #conteudo-07 ul{ margin-left:-240px; top:520px; width:460px;}
+#cozinha #conteudo-07 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#cozinha #conteudo-07 #spot-01{ margin-left:-2px; top:104px;}
+#cozinha #conteudo-07 #spot-02{ margin-left:-164px; top:188px;}
+#cozinha #conteudo-07 #spot-03{ margin-left:-92px; top:370px;}
+#cozinha #conteudo-07 #spot-04{ margin-left:102px; top:374px;}
+#cozinha #conteudo-07 #spot-05{ margin-left:192px; top:121px;}
+#cozinha #conteudo-07 #conteudo-spot-01{ margin-left:10px; top:74px; display:none;}
+#cozinha #conteudo-07 #conteudo-spot-02{ margin-left:-280px; top:158px; display:none;}
+#cozinha #conteudo-07 #conteudo-spot-03{ margin-left:-192px; top:382px; display:none;}
+#cozinha #conteudo-07 #conteudo-spot-04{ margin-left:112px; top:386px; display:none;}
+#cozinha #conteudo-07 #conteudo-spot-05{ margin-left:55px; top:132px; display:none;}
+
+
+/* CONTEUDO ALIMENTOS */
+#alimentos{ background:url(../images/background-conteudo.jpg) repeat-x; width:640px; height:680px; margin-left:-160px; top:70px; display:none;}
+#alimentos .btn-voltar-home{ margin-left:-640px; top:28px;}
+#alimentos .texto-home{ font-size:16px; color:#FFF; width:300px; margin-left:-620px; top:555px;}
+#alimentos .logo{ margin-left:190px; top:450px;}
+#alimentos #btn-comprar-alimentos{ margin-left:146px; top:600px;}
+
+#alimentos .submenu #btn-01, #alimentos .submenu #btn-01-hover{ left:14px; margin:10px 0;}
+#alimentos .submenu #btn-02, #alimentos .submenu #btn-02-hover{ left:6px; margin:10px 0;}
+#alimentos .submenu #btn-03, #alimentos .submenu #btn-03-hover{ left:14px; margin:10px 0;}
+#alimentos .submenu #btn-04, #alimentos .submenu #btn-04-hover{ left:12px; margin:10px 0;}
+#alimentos .submenu #btn-05, #alimentos .submenu #btn-05-hover{ left:10px; margin:10px 0;}
+#alimentos .submenu #btn-01-hover, #alimentos .submenu #btn-02-hover,
+#alimentos .submenu #btn-03-hover, #alimentos .submenu #btn-04-hover,
+#alimentos .submenu #btn-05-hover{ display:none;}
+#alimentos .submenu #btn-label{ background:url(../images/alimentos/btn-label.png) no-repeat; width:270px; height:33px; z-index:4; margin-left:30px; display:none; overflow:hidden;}
+#alimentos .submenu #btn-label p{ font-size:14px; color:#FFF; line-height:34px; margin-left:18px;}
+#alimentos .submenu #btn-seta{ margin-left:30px; top:95px; z-index:4;}
+
+#alimentos #conteudo-01{ background:url(../images/alimentos/bg-conteudo-01.jpg) no-repeat; width:580px; height:680px; display:none;}
+#alimentos #conteudo-01 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#alimentos #conteudo-01 ul{ margin-left:-240px; top:520px; width:360px;}
+#alimentos #conteudo-01 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#alimentos #conteudo-01 #spot-01{ margin-left:-220px; top:174px;}
+#alimentos #conteudo-01 #spot-02{ margin-left:8px; top:326px;}
+#alimentos #conteudo-01 #spot-03{ margin-left:200px; top:185px;}
+#alimentos #conteudo-01 #conteudo-spot-01{ margin-left:-208px; top:185px; display:none;}
+#alimentos #conteudo-01 #conteudo-spot-02{ margin-left:-282px; top:178px; display:none;}
+#alimentos #conteudo-01 #conteudo-spot-03{ margin-left:-92px; top:198px; display:none;}
+
+#alimentos #conteudo-02{ background:url(../images/alimentos/bg-conteudo-02.jpg) no-repeat; width:580px; height:680px; display:none;}
+#alimentos #conteudo-02 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#alimentos #conteudo-02 ul{ margin-left:-240px; top:520px; width:340px;}
+#alimentos #conteudo-02 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#alimentos #conteudo-03{ background:url(../images/alimentos/bg-conteudo-03.jpg) no-repeat; width:580px; height:680px; display:none;}
+#alimentos #conteudo-03 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#alimentos #conteudo-03 ul{ margin-left:-240px; top:515px; width:360px;}
+#alimentos #conteudo-03 ul li{ font-size:15px; color:#333333; margin:8px 0;}
+#alimentos #conteudo-03 #spot-01{ margin-left:-218px; top:264px;}
+#alimentos #conteudo-03 #spot-02{ margin-left:162px; top:234px;}
+#alimentos #conteudo-03 #spot-03{ margin-left:90px; top:130px;}
+#alimentos #conteudo-03 #conteudo-spot-01{ margin-left:-208px; top:228px; display:none;}
+#alimentos #conteudo-03 #conteudo-spot-02{ margin-left:-2px; top:245px; display:none;}
+#alimentos #conteudo-03 #conteudo-spot-03{ margin-left:98px; top:96px; display:none;}
+
+#alimentos #conteudo-04{ background:url(../images/alimentos/bg-conteudo-04.jpg) no-repeat; width:580px; height:680px; display:none;}
+#alimentos #conteudo-04 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#alimentos #conteudo-04 ul{ margin-left:-240px; top:520px; width:550px;}
+#alimentos #conteudo-04 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#alimentos #conteudo-04 #spot-01{ margin-left:36px; top:100px;}
+#alimentos #conteudo-04 #spot-02{ margin-left:-76px; top:300px;}
+#alimentos #conteudo-04 #spot-03{ margin-left:50px; top:380px;}
+#alimentos #conteudo-04 #spot-04{ margin-left:66px; top:278px;}
+#alimentos #conteudo-04 #conteudo-spot-01{ margin-left:48px; top:108px; display:none;}
+#alimentos #conteudo-04 #conteudo-spot-02{ margin-left:-270px; top:252px; display:none;}
+#alimentos #conteudo-04 #conteudo-spot-03{ margin-left:-146px; top:392px; display:none;}
+#alimentos #conteudo-04 #conteudo-spot-04{ margin-left:76px; top:292px; display:none;}
+
+#alimentos #conteudo-05{ background:url(../images/alimentos/bg-conteudo-05.jpg) no-repeat; width:580px; height:680px; display:none;}
+#alimentos #conteudo-05 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#alimentos #conteudo-05 ul{ margin-left:-240px; top:520px; width:380px;}
+#alimentos #conteudo-05 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+
+/* CONTEUDO LAVANDERIA */
+#lavanderia{ background:url(../images/background-conteudo.jpg) repeat-x; width:640px; height:680px; margin-left:-160px; top:70px; display:none;}
+#lavanderia .btn-voltar-home{ margin-left:-640px; top:28px;}
+#lavanderia .texto-home{ font-size:16px; color:#FFF; width:300px; margin-left:-615px; top:570px;}
+#lavanderia .logo{ margin-left:190px; top:450px;}
+#lavanderia #btn-comprar-lavanderia{ margin-left:146px; top:600px;}
+
+#lavanderia .submenu #btn-01, #lavanderia .submenu #btn-01-hover{ left:8px; margin:10px 0;}
+#lavanderia .submenu #btn-02, #lavanderia .submenu #btn-02-hover{ left:12px; margin:10px 0;}
+#lavanderia .submenu #btn-03, #lavanderia .submenu #btn-03-hover{ left:6px; margin:10px 0;}
+#lavanderia .submenu #btn-04, #lavanderia .submenu #btn-04-hover{ left:7px; margin:10px 0;}
+#lavanderia .submenu #btn-05, #lavanderia .submenu #btn-05-hover{ left:8px; margin:10px 0; display:none;}
+#lavanderia .submenu #btn-01-hover, #lavanderia .submenu #btn-02-hover,
+#lavanderia .submenu #btn-03-hover, #lavanderia .submenu #btn-04-hover,
+#lavanderia .submenu #btn-05-hover{ display:none;}
+#lavanderia .submenu #btn-label{ background:url(../images/lavanderia/btn-label.png) no-repeat; width:270px; height:33px; z-index:4; margin-left:30px; display:none; overflow:hidden;}
+#lavanderia .submenu #btn-label p{ font-size:14px; color:#FFF; line-height:34px; margin-left:18px;}
+#lavanderia .submenu #btn-seta{ margin-left:30px; top:95px; z-index:4;}
+
+#lavanderia #conteudo-01{ background:url(../images/lavanderia/bg-conteudo-01.jpg) no-repeat; width:580px; height:680px; display:none;}
+#lavanderia #conteudo-01 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#lavanderia #conteudo-01 ul{ margin-left:-240px; top:510px; width:360px;}
+#lavanderia #conteudo-01 ul li{ font-size:15px; color:#333333; margin:5px 0;}
+
+#lavanderia #conteudo-02{ background:url(../images/lavanderia/bg-conteudo-02.jpg) no-repeat; width:580px; height:680px; display:none;}
+#lavanderia #conteudo-02 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#lavanderia #conteudo-02 ul{ margin-left:-240px; top:520px; width:500px;}
+#lavanderia #conteudo-02 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+#lavanderia #conteudo-02 #spot-01{ margin-left:0px; top:84px;}
+#lavanderia #conteudo-02 #spot-02{ margin-left:-74px; top:360px;}
+#lavanderia #conteudo-02 #spot-03{ margin-left:209px; top:174px;}
+#lavanderia #conteudo-02 #conteudo-spot-01{ margin-left:-170px; top:94px; display:none;}
+#lavanderia #conteudo-02 #conteudo-spot-02{ margin-left:-278px; top:372px; display:none;}
+#lavanderia #conteudo-02 #conteudo-spot-03{ margin-left:146px; top:186px; display:none;}
+
+#lavanderia #conteudo-03{ background:url(../images/lavanderia/bg-conteudo-03.jpg) no-repeat; width:580px; height:680px; display:none;}
+#lavanderia #conteudo-03 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#lavanderia #conteudo-03 ul{ margin-left:-240px; top:520px; width:360px;}
+#lavanderia #conteudo-03 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#lavanderia #conteudo-04{ background:url(../images/lavanderia/bg-conteudo-04.jpg) no-repeat; width:580px; height:680px; display:none;}
+#lavanderia #conteudo-04 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#lavanderia #conteudo-04 ul{ margin-left:-240px; top:520px; width:500px;}
+#lavanderia #conteudo-04 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+
+#lavanderia #conteudo-05{ background:url(../images/lavanderia/bg-conteudo-05.jpg) no-repeat; width:580px; height:680px; display:none;}
+#lavanderia #conteudo-05 h3{ font-size:22px; color:#333333; margin-left:-260px; top:464px;}
+#lavanderia #conteudo-05 ul{ margin-left:-240px; top:520px; width:500px;}
+#lavanderia #conteudo-05 ul li{ font-size:16px; color:#333333; margin:8px 0;}
+

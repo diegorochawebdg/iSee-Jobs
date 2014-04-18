@@ -1,0 +1,28 @@
+@charset "UTF-8";
+#menu .menu-selected { margin-left: -10px; }
+
+#lavadora .hotspots .video2 { margin-left: -211px; top: 80px; }
+#lavadora .hotspots .item1{top:170px; margin-left:-274px;}
+#lavadora .hotspots .item2{top:278px; margin-left:-166px;}
+#lavadora .hotspots .item3{top:107px; margin-left:-294px;}
+#lavadora .hotspots .item4{top:373px; margin-left:-345px;}
+#lavadora .hotspots .item5{top:395px; margin-left:-225px;}
+#lavadora .hotspots .item6{top:188px; margin-left:-342px;}
+#lavadora .hotspots .item7{top:236px; margin-left:-231px;}
+#lavadora .hotspots .item8{top:266px; margin-left:-390px;}
+
+.sub .item1, .sub .item2, .sub .item3, .sub .item4, .sub .item5, .sub .item6, .sub .item7, .sub .item8{position:absolute; left:50%; z-index:3; display:none;}
+.sub .item1{top:194px; margin-left:-234px;}
+.sub .item2{top:187px; margin-left:-126px;}
+.sub .item3{top:131px; margin-left:-255px;}
+.sub .item4{top:209px; margin-left:-306px;}
+.sub .item5{top:306px; margin-left:-185px;}
+.sub .item6{top:200px; margin-left:-308px;}
+.sub .item7{top:223px; margin-left:-191px;}
+.sub .item8{top:290px; margin-left:-350px;}
+
+#especificacoes .especificacoes-img .material{ right: 32px; top: 75px; width: 360px; }
+#especificacoes .especificacoes-img .dimensoes{ left: 32px; bottom: 25px; width: 287px; }
+#especificacoes .especificacoes-img .cor1{left: 32px; top: 75px; background-image: url(../images/internas/bwp11/especificacoes-cor1.jpg); padding-left: 126px; height: 150px;}
+#especificacoes .relative{height:406px;}
+#especificacoes .especificacoes-img{height:430px;}

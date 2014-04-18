@@ -1,0 +1,224 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.container_interna *{font-family:'ConsulCoHeadline_Std_Lt';}
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page3/bg-page3.jpg) no-repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.absolute{position:absolute; left:50%;}
+#abrir { background: url(caracteristicas/page3/abrir-painel.png); height: 0px; width: 47px; padding-top: 47px; overflow: hidden; display: block; margin-left: 66px; top: 135px; }
+#fotos { background: url(caracteristicas/page3/fotos.png); height: 29px; width: 115px; padding: 12px 0 0 12px; display: block; margin-left: -340px; bottom: 61px; color: #FFF; text-decoration: none; font-size: 18px; }
+#lightbox { background: url(caracteristicas/page3/bg-lightbox.png) repeat; height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; opacity:0; z-index:-1; }
+#lightbox #fechar { margin-left: 259px; top: 17px; }
+#lightbox #painel-img { border: 10px solid #707070; margin-left: -332px; top: 42px; }
+#lightbox .hotsposts a { background: url(caracteristicas/page3/hotspot.png); display: block; height: 23px; width: 23px; position: absolute; left: 50%; z-index: 7; }
+#lightbox .hotsposts .item1 { margin-left: -107px; top: 104px; }
+#lightbox .hotsposts .item2 { margin-left: -140px; top: 160px; }
+#lightbox .hotsposts .item3 { margin-left: -101px; top: 196px; }
+#lightbox .hotsposts .item4 { margin-left: -145px; top: 261px; }
+#lightbox .hotsposts .item5 { margin-left: -90px; top: 311px; }
+#lightbox .hotsposts .item6 { margin-left: -90px; top: 355px; }
+
+#lightbox .txt { position: absolute; background: #90be38; padding: 15px 20px; z-index: 2; }
+#lightbox .txt h2{ font: 15px "ConsulCoHeadline_Std_Rg"; color: #FFF; margin-bottom: 10px; }
+#lightbox .txt p{font-size:15px; color:#FFF; line-height:17px;}
+#lightbox .linha { position: absolute; z-index: 1; border-top: 2px solid #6f2c90; }
+
+#temperatura{ top: 102px; width: 280px; }
+#temperatura img{ bottom: -65px; right: 20px; }
+#temperatura .linha { margin-left: -63px; top: 12px; width: 90px; }
+
+#destravar{ top: 155px; width: 350px; }
+#destravar img{ right: 10px; top: -35px; }
+#destravar .linha { margin-left: -103px; top: 16px; width: 120px; }
+
+#filtro{ top: 193px; width: 320px; }
+#filtro img{ right: 30px; top: -25px; }
+#filtro .linha { margin-left: -73px; top: 14px; width: 120px; }
+
+#porta{ top: 258px; width: 252px; }
+#porta img{ right: 30px; top: -45px; }
+#porta .linha { margin-left: -113px; top: 14px; width: 120px; }
+
+#compras{ top: 258px; width: 322px; }
+#compras img{ right: 30px; top: -35px; }
+#compras .linha { margin-left: -53px; top: 65px; width: 120px; }
+
+#timer{ top: 320px; width: 302px; }
+#timer img{ right: 30px; top: -35px; }
+#timer .linha { margin-left: -53px; top: 48px; width: 120px; }
+#timer span { font-size: 10px; margin-top: 10px; color: #FFF; }
+
+
+#temperatura, #destravar, #filtro, #porta, #compras, #timer{/*opacity:0; z-index:-1;*/display:none;}
+#temperatura, #destravar, #filtro, #porta, #compras, #timer{ position:absolute; left:50%; margin-left:-22px;}
+#temperatura img, #destravar img, #filtro img, #porta img, #compras img, #timer img{ position:absolute;}
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <a href="#" class="absolute" id="abrir" title="Conheça o painel Touchscreen">Conheça o painel Touchscreen</a>
+                
+                <a href="#" class="absolute" id="fotos">Fotos</a>
+                
+                <div id="lightbox" class="animated">
+               	  <a href="#" id="fechar" class="absolute"><img src="caracteristicas/page1/fechar.png" width="92" height="25" alt="fechar" /></a>
+           	      <img src="caracteristicas/page3/painel-img.jpg" width="663" height="440" class="absolute" id="painel-img" alt="Painel do refrigerador" title="Painel do refrigerador" />
+                    <div class="hotsposts">
+                        <a href="#" class="item1"></a>
+                        <a href="#" class="item2"></a>
+                        <a href="#" class="item3"></a>
+                        <a href="#" class="item4"></a>
+                        <a href="#" class="item5"></a>
+                        <a href="#" class="item6"></a>
+                    </div>
+                    
+                    <div class="conteudos">
+                    	<div id="temperatura" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                               	  <h2>Controle da temperatura</h2>
+                                  <p>Você pode ajustar a temperatura de sua Consul em até 5 níveis! Se a geladeira não estiver muito cheia, por exemplo, use o nível mínimo para economizar energia. <br />Bem pensado, né?</p>
+                                  <img src="caracteristicas/page3/controle-temperatura.png" width="63" height="93" alt="Controle da temperatura" />
+                                </div>
+                              <div class="linha"></div>
+                            </div>
+                        </div>
+                        
+                      <div id="destravar" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                                	<h2>Destravar Painel</h2>
+                                    <p>O painel trava automaticamente após 30 segundos, assim você pode, por exemplo, limpar a sua geladeira sem acionar nenhuma função sem querer. Para destravar, é só acionar o botão. Bem pensado, né?</p>
+                                    <img src="caracteristicas/page3/destravar-painel.png" width="60" height="67" alt="Destravar Painel" />
+                                </div>
+                                <div class="linha"></div>
+                            </div>
+                        </div>
+                        
+                      <div id="filtro" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                                	<h2>Trocar filtro</h2>
+                                    <p>Quem é que anota no calendário a data que o filtro da geladeira precisa ser trocado? Ninguém, né! Olha a nossa ideia para te ajudar a lembrar disso: a função Trocar Filtro acende no painel, te avisando que chegou a hora!</p>
+                                    <img src="caracteristicas/page3/trocar-filtro.png" width="57" height="56" alt="Trocar filtro" />
+                                </div>
+                                <div class="linha"></div>
+                            </div>
+                        </div>
+                        
+                      <div id="porta" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                                	<h2>Porta Aberta</h2>
+                                    <p>A gente sabe que, na pressa, nem a geladeira escapa. Por isso, a função Porta Aberta fica acesa e apita pra avisar que você esqueceu de fechar a porta. Para desligar o aviso, é só clicar no mesmo botão.</p>
+                                    <img src="caracteristicas/page3/porta-aberta.png" width="45" height="79" alt="Porta Aberta" />
+                                </div>
+                                <div class="linha"></div>
+                            </div>
+                        </div>
+                        
+                      <div id="compras" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                                	<h2>Compras</h2>
+                                    <p>O modo Compras ajuda a deixar aqueles alimentos que acabaram de entrar na geladeira prontos para o consumo. Isso porque, quando acionado, a geladeira acelera seu resfriamento para gelar tudo mais rápido.</p>
+                                    <img src="caracteristicas/page3/compras.png" width="72" height="71" alt="Compras" />
+                                </div>
+                                <div class="linha"></div>
+                            </div>
+                        </div>
+                        
+                      <div id="timer" class="animated">
+                        	<div class="relative">
+                            	<div class="txt">
+                                	<h2>Timer Latas*</h2>
+                                    <p>Com o Timer Latas, você nunca mais vai esquentar a cabeça para gelar as suas bebidas no freezer sem que elas congelem! Ele avisa que sua cerveja está no ponto certo para você beber.</p>
+                                    <span>*Válido para latas de 350ml.</span>
+                                  <img src="caracteristicas/page3/timer-latas.png" width="56" height="64" alt="Timer Latas" />
+                                </div>
+                                <div class="linha"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            	
+          </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	$(".caracteristica-seta-esquerda, .caracteristica-seta-direita").stop(true, true).fadeOut(0);
+	
+	connect_callToAction( $(".connect-container #fotos"), "fadeInLeftBig", "s07", "fotos.html", false );
+ 
+	 function connect_callToAction( button, animation, delay, page, boolean ){
+	  var connect_pageStart = setInterval( function(e){
+	   button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+	   .hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 ); } );
+	   Connect.addCallToAction( button , page, boolean );
+	   clearInterval( connect_pageStart );
+	  }, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	 }
+	 
+	 $("#abrir").click(function(e) {
+        $("#lightbox").css("z-index","3").removeClass("fadeOut").addClass("fadeIn");
+    });
+	
+	$("#lightbox, #fechar").click(function(e) {
+        $("#lightbox").removeClass("fadeIn").addClass("fadeOut");
+		setTimeout(function(){
+			$("#lightbox").css("z-index","")
+		}, 800);
+    });
+	
+	$(".item1").hover(function(e) {
+        //$("#temperatura").css("z-index","4").removeClass("fadeOut").addClass("fadeIn");
+		$("#temperatura").stop().fadeIn(150);
+    }, function(){
+		$("#temperatura").stop().fadeOut(150);
+		//$("#temperatura").removeClass("fadeIn").addClass("fadeOut");
+		//setTimeout(function(){
+			//$("#temperatura").css("z-index","")
+		//}, 800);
+	});
+	
+	$(".item2").hover(function(e) {
+        $("#destravar").stop().fadeIn(150);
+    }, function(){
+		$("#destravar").stop().fadeOut(150);
+	});
+	
+	$(".item3").hover(function(e) {
+        $("#filtro").stop().fadeIn(150);
+    }, function(){
+		$("#filtro").stop().fadeOut(150);
+	});
+	
+	$(".item4").hover(function(e) {
+        $("#porta").stop().fadeIn(150);
+    }, function(){
+		$("#porta").stop().fadeOut(150);
+	});
+	
+	$(".item5").hover(function(e) {
+        $("#compras").stop().fadeIn(150);
+    }, function(){
+		$("#compras").stop().fadeOut(150);
+	});
+	
+	$(".item6").hover(function(e) {
+        $("#timer").stop().fadeIn(150);
+    }, function(){
+		$("#timer").stop().fadeOut(150);
+	});
+			
+});
+</script>

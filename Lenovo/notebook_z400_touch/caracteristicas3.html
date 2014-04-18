@@ -1,0 +1,119 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg) 50% 50% no-repeat;
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+/* CSS */
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna #background{ background:url(caracteristicas/page3/background.png) 50% 50% no-repeat; width:100%; height:276px; position:absolute; left:0; bottom:0;}
+
+.container_interna .notebook{ margin-left:-130px; top:185px;}
+.container_interna .placa{ margin-left:32px; top:88px;}
+.container_interna .comuniquese{ margin-left:-371px; top:233px;}
+.container_interna .geforce{ margin-left:296px; top:45px;}
+.container_interna .linha1{ margin-left:-350px; top:64px;}
+.container_interna .titulo1{ margin-left:-332px; top:90px;}
+.container_interna .paragrafo1{ margin-left:-332px; top:110px;}
+.container_interna .linha2{ margin-left:-355px; top:350px;}
+.container_interna .dolby{ margin-left:-350px; top:382px;}
+.container_interna .titulo2{ margin-left:-255px; top:382px;}
+.container_interna .paragrafo2{ margin-left:-255px; top:404px;}
+
+.container_interna #call-to-action3{ margin-left:110px; bottom:20px; cursor:pointer;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	
+	TweenMax.from($("#background"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.2});
+
+	TweenMax.from($(".notebook"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.5});
+	
+	TweenMax.from($(".placa"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".comuniquese"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".geforce"), .5, {css:{top: "-=40", alpha:0}, ease:Back.easeOut, delay:.8});
+	
+	TweenMax.from($(".linha1"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".titulo1"), .5, {css:{top: "-=40", alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".paragrafo1"), .5, {css:{left: "-=80", alpha:0}, ease:Back.easeOut, delay:1.1});
+	
+	TweenMax.from($(".linha2"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($(".dolby"), .5, {css:{left: "-=80", alpha:0}, ease:Back.easeOut, delay:1.3});
+	TweenMax.from($(".titulo2"), .5, {css:{top: "-=40", alpha:0}, ease:Back.easeOut, delay:1.4});
+	TweenMax.from($(".paragrafo2"), .5, {css:{left: "-=80", alpha:0}, ease:Back.easeOut, delay:1.5});
+		
+	TweenMax.from( $("#call-to-action3") , .5, { css: { left: "+=40px", alpha: 0 } , ease: Strong.easeOut, delay:1.6, onComplete: function() {
+		TweenMax.to( $("#call-to-action3"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action3").hover(function(e) {
+            TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action3") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		
+		Connect.addCallToAction( "#call-to-action3" , "caracteristicas4.html", true );
+	}} );
+
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+    	<div id="background"></div>
+    
+    	<div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/notebook.jpg" width="538px" height="263px" alt="" title="" class="absoluto notebook" />
+                
+                <img src="caracteristicas/page3/placa-de-video-nvidia-geforce-gt-635m-com-2db-dedicados.png" width="289px" height="133px" alt="Placa de vídeo Nvidia GeForce GT 635M com 2 GB dedicados." title="Placa de vídeo Nvidia GeForce GT 635M com 2 GB dedicados." class="absoluto placa" />
+                <img src="caracteristicas/page3/comunique-se-em-alta-definicao-webcam-hd.png" width="325px" height="68px" alt="Comunique-se em alta definição: webcam HD" title="Comunique-se em alta definição: webcam HD" class="absoluto comuniquese" />
+                
+                <img src="caracteristicas/page3/geforce-logo.png" width="70px" height="67px" alt="Nvidia GeForce" title="Nvidia GeForce" class="absoluto geforce" />
+                
+                <img src="caracteristicas/page3/linha1.png" width="364px" height="202px" alt="" title="" class="absoluto linha1" />
+                <img src="caracteristicas/page3/titulo1.png" width="289px" height="17px" alt="Mais desempenho e produtividade" title="Mais desempenho e produtividade" class="absoluto titulo1" />
+                <img src="caracteristicas/page3/paragrafo1.png" width="312px" height="69px" alt="Com a 3ª geração do Processador Intel® Core™ i5, você realiza multitarefas sem comprometer a velocidade de seu notebook!" title="Com a 3ª geração do Processador Intel® Core™ i5, você realiza multitarefas sem comprometer a velocidade de seu notebook!" class="absoluto paragrafo1" />
+                
+                <img src="caracteristicas/page3/linha2.png" width="369px" height="24px" alt="" title="" class="absoluto linha2" />
+                <img src="caracteristicas/page3/dolby-logo.png" width="88px" height="52px" alt="Dolby" title="Dolby" class="absoluto dolby" />
+                <img src="caracteristicas/page3/titulo2.png" width="214px" height="17px" alt="Dolby® Home Theater® v4" title="Dolby® Home Theater® v4" class="absoluto titulo2" />
+                <img src="caracteristicas/page3/paragrafo2.png" width="339px" height="50px" alt="Aumente o volume sem distorções e experimente um áudio de cinema conectando seu notebook a um sistema de Home Theater!" title="Aumente o volume sem distorções e experimente um áudio de cinema conectando seu notebook a um sistema de Home Theater!" class="absoluto paragrafo2" />
+                
+                <img src="caracteristicas/page3/btn-teclado-retroiluminado.png" width="274px" height="64px" alt="Teclado retroiluminado" title="Teclado retroiluminado" class="absoluto" id="call-to-action3" />
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

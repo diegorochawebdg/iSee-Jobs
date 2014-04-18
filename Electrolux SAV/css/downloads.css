@@ -1,0 +1,61 @@
+.icons{background-image:url(../images/downloads/icons.png); background-repeat:no-repeat;}
+
+/*Title*/
+h1{color:#626059; font-size:36px; margin:15px 0 0 -20px; font-weight:normal; padding:7px 0 0 111px; height:41px; float:left;}
+
+/*Side Buttons*/
+.side-buttons{float:right; text-align:right;}
+.side-buttons span{color:#764777; font-size:11px; text-transform:uppercase; font-weight:bold; margin:0 0 5px 5px;}
+.side-buttons span pre{color:#FFF; display:inline; background-color:#764777; padding:5px 10px; font-size:14px;}
+.side-buttons .baixar-itens{width: 230px; padding-top: 31px; background-position: 0 -74px; margin-top:10px;}
+
+/*Linha*/
+.linha{width:1033px; margin:8px 0 8px -20px; border-bottom:solid 1px #d7d5d3;}
+
+/*Tables*/
+.tables{position:relative;}
+.tables .general-buttons{right:0; top:0; position:absolute; display:table;}
+.tables .general-buttons2{float:right; display:table;}
+.tables .general-buttons a, .tables .general-buttons2 a{background-color:#bbbbba; display:table-cell; vertical-align:middle; padding-left:38px; border-radius:5px; color:#FFF; font-weight:bold; font-size:9px; text-transform:uppercase; height:31px; width:66px; border-spacing:5px;}
+.tables .general-buttons div, .tables .general-buttons2 div{width:10px;}
+.tables .general-buttons .limpar, .tables .general-buttons2 .limpar{background-position:6px -145px}
+.tables .general-buttons .email, .tables .general-buttons2 .email{background-position:6px -220px;}
+
+.tables .image-table{float:left;}
+.tables .title-number{background-color:#764777; text-align:center; float:left; width:86px; height:63px; position:relative; background-position:31px -280px;}
+.tables .videos-table .title-number{background-position:31px -356px;}
+.tables .title-number h2{color:#FFF; text-transform:uppercase; font-size:10px; position:relative; top:47px;}
+.tables .title-number span{background-color:#FFF; color:#626059; font-size:11px; position:absolute; right:2px; top:2px; padding:3px; border-radius:7px;}
+
+.tables .the-table{float:right; margin:45px 0 20px 0;}
+.tables .the-table thead tr{height:19px;}
+.tables .the-table thead h3{ padding-left: 33px; font: bold 11px Arial, Helvetica, sans-serif; color:#FFF; text-transform:uppercase; }
+.tables .the-table thead td{background-image:url(../images/downloads/icons.png); background-repeat:no-repeat; background-color:#626059; width:130px; padding:0 5px; text-align:left !important;}
+.tables .the-table thead td:first-child{width:auto;}
+.tables .the-table thead td:last-child{width:100px;}
+.tables .the-table thead td.preview{background-position:5px -445px}
+.tables .the-table thead td.arquivo{background-position:5px -523px; width:240px;}
+.tables .the-table thead td.formato{background-position:5px -599px}
+.tables .the-table thead td.dimensoes{background-position:5px -673px}
+.tables .the-table thead td.peso{background-position:5px -748px}
+.tables .the-table thead td.remover{background-position:5px -822px}
+
+.tables .the-table td{text-align:center; font:normal 14px Arial, Helvetica, sans-serif; color:#626059; border-bottom:solid 1px #9c9a96; border-right:solid 1px #d1d1d1;}
+.tables .the-table td:first-child, .tables .the-table tbody td:last-child{border-right:none;}
+.tables .the-table tbody td img{border:solid 1px #CCC !important; display:inline; max-height:79px; max-width:101px;}
+.tables .the-table tbody td a{width: 32px; padding-top: 26px; background-position: 0 -900px; margin:0 auto;}
+.tables .the-table tbody td:first-child{width:101px; height:79px; vertical-align:middle; text-align:center;}
+
+p.vazio{display:none; margin:50px auto; font-size:30px; color:#626059;}
+
+/*Lightbox Files Download*/
+#contpopup{padding:25px; background-color:#FFF !important;}
+#contpopup #bar_title{color:#626059; font-size:16px; margin-bottom:15px; text-transform:uppercase;}
+#contpopup #progressbar{border:solid 1px #ececec; box-shadow:inset #CCC 5px 5px 5px; background:url(../images/downloads/bg-no-fill.png) repeat; position:relative;}
+#contpopup #dados_bar{font:bold 24px Arial, Helvetica, sans-serif; color:#FFF; text-align:center; margin:5px 0; z-index:2; position:relative;}
+#contpopup #bar{width: 140px; height: 38px; background:url(../images/downloads/bg-filled.png) repeat; position: absolute; top: 0; left: 0;
+-webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);}
+#contpopup #nome_file{text-align: center; padding-top: 20px; font-size: 15px; color: #626059;}

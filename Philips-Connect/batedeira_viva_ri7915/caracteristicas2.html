@@ -1,0 +1,70 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: url(caracteristicas/bg-body.jpg) repeat; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: #FFF url(caracteristicas/page2/bg-body.png) repeat-x; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.content-center .div-content img{display:block; position:absolute; left:50%;}
+.content-center .div-content .img { margin-left: -435px; top: 55px; }
+.content-center .div-content .txt { margin-left: -63px; top: 66px; }
+.content-center .div-content .manusear { top: 284px; }
+.content-center .div-content .img2 { top: 76px; margin-left: 216px; }
+.content-center .div-content .profissional { margin-left: -384px; bottom: 59px; }
+.content-center .div-content .pizza { margin-left: -31px; bottom: 0px; }
+.content-center .div-content #call-to-action2 { margin-left: 186px; bottom: 37px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            
+            		<img src="caracteristicas/page2/lateral-batedeira-philips-walita.png" alt="Vista lateral da batedeira Philips Walita" width="346" height="336" class="img" title="Vista lateral da batedeira Philips Walita" />
+                    
+                    <img src="caracteristicas/page2/bate-ate-as-massas-mais-pesadas.png" alt="Bate até as massas mais pesadas" width="258" height="165" class="txt" title="Bate até as massas mais pesadas" />
+                    
+                    <img src="caracteristicas/page2/facil-de-manusear.png" alt="Fácil de manusear" width="164" height="34" class="manusear" title="Fácil de manusear" />
+                    
+                    <img src="caracteristicas/page2/batedeira-bancada.png" alt="Batedeira Philips Walita sobre uma bancada com outros utensílios" width="233" height="233" class="img2" title="Batedeira Philips Walita sobre uma bancada" />
+                    
+                    <img src="caracteristicas/page2/batedeira-profissional-que-garante-resultados-mais-homogeneos.png" alt="Batedeira profissional que garante resultados mais homogêneos." width="334" height="63" class="profissional" title="Batedeira profissional que garante resultados mais homogêneos." />
+                    
+                    <img src="caracteristicas/page2/prato-pizza.jpg" alt="Pedaço de pizza sobre um prato" width="274" height="157" class="pizza" title="" />
+                    
+                    <a href="#"><img src="caracteristicas/page2/sistema-de-dupla-rotacao.png" alt="Sistema de dupla rotação" width="211" height="81" id="call-to-action2" title="Sistema de dupla rotação" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".content-center .div-content .img") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay:.3});
+	TweenMax.from( $(".content-center .div-content .txt") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay:.6});
+	TweenMax.from( $(".content-center .div-content .manusear") , 1, { css: { alpha: 0, left: "-=100px" } , ease: Strong.easeOut, delay:.8});
+	TweenMax.from( $(".content-center .div-content .img2") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay:1});
+	TweenMax.from( $(".content-center .div-content .profissional") , 1, { css: { alpha: 0, left: "-=100px" } , ease: Strong.easeOut, delay:1.5});
+	TweenMax.from( $(".content-center .div-content .pizza") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay:1.5});
+	
+	
+	TweenMax.from( $(".content-center .div-content #call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2, onComplete: function() {
+			
+		TweenMax.to( $(".content-center .div-content #call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".content-center .div-content #call-to-action2").hover(function(e) {
+            TweenMax.to( $(".content-center .div-content #call-to-action2") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".content-center .div-content #call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".content-center .div-content #call-to-action2" , "caracteristicas3.html", true );
+	
+		
+});
+</script>

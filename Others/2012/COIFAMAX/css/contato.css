@@ -1,0 +1,103 @@
+@charset "utf-8"; 
+a{text-decoration:none}
+a:hover{text-decoration:underline; cursor:pointer}
+
+#conteudo .imagem-central{
+	background: #f1eedf url(../images/bg-radial2.jpg) no-repeat center top;
+	text-align: center;
+	border-bottom: 8px solid #549ABE;
+}
+#conteudo .imagem-central img{display:inline}
+#conteudo .sub {
+	float: left;
+	margin-right: 25px;
+}
+#conteudo .texto-mais {
+	background: url(../images/texto-mais.gif);
+	height: 44px;
+	width: 44px;
+	margin-top: 10px;
+}
+#conteudo .texto-menos {
+	background: url(../images/texto-menos.gif);
+	height: 44px;
+	width: 44px;
+	margin-top: 10px;
+}
+#conteudo .right {
+	margin: 25px 0 0 0;
+	float: right;
+}#conteudo .float-left {
+	float: left;
+}
+#conteudo .float-right {
+	float: right;
+}
+#conteudo .mtop-bottom {
+	margin: 30px 0;
+}
+#conteudo .formulario {
+	width: 530px;
+	position: relative;
+}
+#conteudo p , #conteudo address{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+#formulario-contato input , #formulario-contato textarea{
+	width: 490px;
+	height: 58px;
+	margin-bottom: 10px;
+	background: url(../images/bg-field.jpg) no-repeat;
+	padding: 3px 20px 0 20px !important;
+	line-height: 55px;
+	color: #45648C;
+	border: none;
+}
+#conteudo .azul {
+	color: #5399BE !important;
+}
+
+#formulario-contato .traco {
+	background: url(../images/traco.jpg);
+	margin: 30px 8px 0 8px;
+	height: 2px;
+	width: 5px;
+}
+#formulario-contato .ddd-size {
+	width: 39px !important;
+}
+#formulario-contato .tel-size {
+	width: 389px !important;
+}
+#formulario-contato #ddd {
+	background: url(../images/bg-ddd.jpg) no-repeat;
+}
+#formulario-contato #telefone {
+	background: url(../images/bg-tel.jpg) no-repeat;
+}
+#formulario-contato #mensagem {
+	height: 168px;
+	background: url(../images/bg-msg.jpg) no-repeat;
+	border: none;
+	line-height: 1em;
+	padding: 25px 20px !important;
+}
+#formulario-contato #envia {
+	background: url(../images/botao-enviar.jpg) no-repeat;
+	height: 50px;
+	width: 128px;
+	position: absolute;
+	right: -23px;
+	bottom: -8px;
+	display: block;
+}
+
+
+
+#conteudo .mapa {
+	background: url(../images/bg-mapa.jpg) no-repeat;
+	height: 501px;
+	width: 371px;
+	padding:19px 0 0 15px;
+}

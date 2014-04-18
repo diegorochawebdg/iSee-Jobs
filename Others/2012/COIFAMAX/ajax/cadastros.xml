@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><cadastros>
+ <cadastro>  
+<nome>OEDER CALIXTO</nome>  
+<endereco>ALAMEDA ARAGUIA</endereco>  
+<numero>762</numero>  
+<ddd>11</ddd>  
+<telefone>76552653</telefone>  
+<marcabicicleta>CALOI</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>sabado/20</noturno>
+<diurno>domingo/10</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>alessandro Brufato</nome>  
+<endereco>Rua Carmo caracho</endereco>  
+<numero>126</numero>  
+<ddd>011</ddd>  
+<telefone>8486-3484</telefone>  
+<marcabicicleta>trek</marcabicicleta>  
+<modelobicicleta>1.2</modelobicicleta>  
+<tipopedal>ROAD</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>quinta-feira</noturno>
+<diurno>ter/qui/sab ou domingo</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome></nome>  
+<endereco></endereco>  
+<numero></numero>  
+<ddd></ddd>  
+<telefone></telefone>  
+<marcabicicleta></marcabicicleta>  
+<modelobicicleta></modelobicicleta>  
+<tipopedal></tipopedal>  
+<frequenciapedal></frequenciapedal>  
+<noturno></noturno>
+<diurno></diurno>
+<favlang></favlang>
+</cadastro>
+ <cadastro>  
+<nome>Oswaldo  Tobal</nome>  
+<endereco>Av. Corifeu de Azevedo Marques,</endereco>  
+<numero>5590</numero>  
+<ddd>11</ddd>  
+<telefone>79966573</telefone>  
+<marcabicicleta>caloi</marcabicicleta>  
+<modelobicicleta>500</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>Mais que 3 vezes por semana</frequenciapedal>  
+<noturno>Terças  as sextas</noturno>
+<diurno>sabados/domingos</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>ANDERSON DE OLIVEIRA PRATES</nome>  
+<endereco>ANTAO DE SOUZA MOURA</endereco>  
+<numero>136</numero>  
+<ddd>11</ddd>  
+<telefone>71673028</telefone>  
+<marcabicicleta>GTS</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>QUINTA AS 20 HORAS</noturno>
+<diurno>DOMINGO AS 8 </diurno>
+<favlang>sim</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Marcelo Tobo</nome>  
+<endereco>AV VICTOR CIVITA</endereco>  
+<numero>235</numero>  
+<ddd>11</ddd>  
+<telefone>94822520</telefone>  
+<marcabicicleta>Caloi</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>21</noturno>
+<diurno>07</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>gilce de abreu santos</nome>  
+<endereco>ALAMEDA NHAMBIQUARAS 129 RES 10 ALPHAVILLE SP</endereco>  
+<numero>129</numero>  
+<ddd>11</ddd>  
+<telefone>91277787</telefone>  
+<marcabicicleta>Marca Bicicleta:</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>Mais que 3 vezes por semana</frequenciapedal>  
+<noturno>20HS</noturno>
+<diurno>15</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>ana carolina</nome>  
+<endereco>al. das dalias</endereco>  
+<numero>181</numero>  
+<ddd>11</ddd>  
+<telefone>97508411</telefone>  
+<marcabicicleta>nishiki</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>nao</noturno>
+<diurno>tarde</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Marco Otavio Baruffaldi</nome>  
+<endereco>Rua Grauna,</endereco>  
+<numero>419  apto 77</numero>  
+<ddd>11</ddd>  
+<telefone>86151932</telefone>  
+<marcabicicleta>trek gary Fisher</marcabicicleta>  
+<modelobicicleta>mtb</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>20 as 24</noturno>
+<diurno>sabado</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>denise souza</nome>  
+<endereco>rua silvio rizzardo</endereco>  
+<numero>1200</numero>  
+<ddd>19</ddd>  
+<telefone>32685517</telefone>  
+<marcabicicleta>Marca Bicicleta:</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>20:00</noturno>
+<diurno>6:00</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Antonio carlos de camargo prado</nome>  
+<endereco>av.nova independencia</endereco>  
+<numero>321</numero>  
+<ddd>11</ddd>  
+<telefone>99016850</telefone>  
+<marcabicicleta>CALOI</marcabicicleta>  
+<modelobicicleta>SPORT CONFORT</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>21 HS</noturno>
+<diurno>10HS</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>BEATRIZ DE CAROLI TONSO</nome>  
+<endereco>RUA FREI DUARTE JORGE DE MENDONÇA</endereco>  
+<numero>100 / AP 42</numero>  
+<ddd>11</ddd>  
+<telefone>25010133</telefone>  
+<marcabicicleta>CALOI</marcabicicleta>  
+<modelobicicleta>TRS</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>QUARTA/QUINTA</noturno>
+<diurno>SABADO/DOMINGO</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>RIcardo briene palhas</nome>  
+<endereco>rua almeida </endereco>  
+<numero>284</numero>  
+<ddd>11</ddd>  
+<telefone>96015597</telefone>  
+<marcabicicleta>não tenho</marcabicicleta>  
+<modelobicicleta>não tenho</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>após 20h00</noturno>
+<diurno>apenas final de semana</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Enriqueta  Esperanza Font y Parraga</nome>  
+<endereco>Rua Getulio Soares da Rocha, </endereco>  
+<numero>198</numero>  
+<ddd>11</ddd>  
+<telefone>2211-5679</telefone>  
+<marcabicicleta>Marca Bicicleta:</marcabicicleta>  
+<modelobicicleta>Modelo Bicicleta:</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>quarta Feira - 21 hrs</noturno>
+<diurno>Domingos - 9:00 hrs </diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>paulo correa meyer</nome>  
+<endereco>al. alegrete</endereco>  
+<numero>333</numero>  
+<ddd>11</ddd>  
+<telefone>97484668</telefone>  
+<marcabicicleta>indoor</marcabicicleta>  
+<modelobicicleta>indoor</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>terca e quinta</noturno>
+<diurno>sextas</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Marco Otavio Baruffaldi</nome>  
+<endereco>Rua Grauna,</endereco>  
+<numero>419,  apto. 77</numero>  
+<ddd>11</ddd>  
+<telefone>86151932</telefone>  
+<marcabicicleta>trek Gary Fisher collection</marcabicicleta>  
+<modelobicicleta>mtb</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>20  as 24</noturno>
+<diurno>7  as 12</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Vinicius lima Barbosa</nome>  
+<endereco>Rua chicaGo 100 casa 104 cotia sp</endereco>  
+<numero>100</numero>  
+<ddd>11</ddd>  
+<telefone>76010035</telefone>  
+<marcabicicleta>Cannondale</marcabicicleta>  
+<modelobicicleta>Caad 4</modelobicicleta>  
+<tipopedal>ROAD</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>Sexta e sábado</noturno>
+<diurno>Sabado e domingo</diurno>
+<favlang>sim</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Vinicius lima Barbosa</nome>  
+<endereco>Rua Chicago, 100 casa 104 cotia sp</endereco>  
+<numero>100</numero>  
+<ddd>11</ddd>  
+<telefone>7601-0035</telefone>  
+<marcabicicleta>Cannondale </marcabicicleta>  
+<modelobicicleta>Caad 4</modelobicicleta>  
+<tipopedal>ROAD</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>Sexta e sábado</noturno>
+<diurno>SÁBADO e domingo</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Lucia Duarte diniz</nome>  
+<endereco>alameda argentina</endereco>  
+<numero>685</numero>  
+<ddd>11</ddd>  
+<telefone>84489726</telefone>  
+<marcabicicleta>caloi</marcabicicleta>  
+<modelobicicleta>t type</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>2a. a 5a. /18 hs</noturno>
+<diurno>final de semana/manha cedo</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Beatriz De Caroli Tonso</nome>  
+<endereco>rua Frei duarte jorge de mendonça</endereco>  
+<numero>100 ap 42</numero>  
+<ddd>11</ddd>  
+<telefone>94647886</telefone>  
+<marcabicicleta>caloi</marcabicicleta>  
+<modelobicicleta>trs</modelobicicleta>  
+<tipopedal>PASSEIO</tipopedal>  
+<frequenciapedal>1 vez por semana</frequenciapedal>  
+<noturno>quarta/quinta - 20h30</noturno>
+<diurno>sabado/domingo - 9hs</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>FERNANDO MALUF</nome>  
+<endereco>ALAMEDA GENOVA TAMBORÉ 4</endereco>  
+<numero>185</numero>  
+<ddd>11</ddd>  
+<telefone>84041200</telefone>  
+<marcabicicleta>pinarello</marcabicicleta>  
+<modelobicicleta>f 4:13</modelobicicleta>  
+<tipopedal>ROAD</tipopedal>  
+<frequenciapedal>Mais que 3 vezes por semana</frequenciapedal>  
+<noturno>quarta</noturno>
+<diurno>sábado</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>caio</nome>  
+<endereco>teste teste</endereco>  
+<numero>234</numero>  
+<ddd>111</ddd>  
+<telefone>11111111</telefone>  
+<marcabicicleta>2131321</marcabicicleta>  
+<modelobicicleta>121231</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>2 vezes por semana</frequenciapedal>  
+<noturno>wuqyeqwuy</noturno>
+<diurno>wquiyewquiyeuqy</diurno>
+<favlang>nao</favlang>
+</cadastro>
+ <cadastro>  
+<nome>gustavo2</nome>  
+<endereco>asdiajda</endereco>  
+<numero>asdasd</numero>  
+<ddd>11</ddd>  
+<telefone>5120 8235</telefone>  
+<marcabicicleta>asda</marcabicicleta>  
+<modelobicicleta>21312</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>asdasda</noturno>
+<diurno>asdasda</diurno>
+<favlang>sim</favlang>
+</cadastro>
+ <cadastro>  
+<nome>Gustavo</nome>  
+<endereco>asdasdasd</endereco>  
+<numero>asd</numero>  
+<ddd>11</ddd>  
+<telefone>5120 8235</telefone>  
+<marcabicicleta>caaa</marcabicicleta>  
+<modelobicicleta>aaaa</modelobicicleta>  
+<tipopedal>MTB</tipopedal>  
+<frequenciapedal>3 vezes por semana</frequenciapedal>  
+<noturno>1231231</noturno>
+<diurno>1231231</diurno>
+<favlang>sim</favlang>
+</cadastro>
+</cadastros>

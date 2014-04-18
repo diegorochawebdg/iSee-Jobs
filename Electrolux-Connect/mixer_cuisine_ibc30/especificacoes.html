@@ -1,0 +1,65 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+	background: url(caracteristicas/background.jpg);
+}
+	
+.holder_interna { 
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position: relative;
+}
+
+ /* CSS */
+
+.absoluto{ position:absolute; left:50%;}
+.conteudo{ margin-left:-365px; top:70px;}
+.dimensoes{ margin-left:0px; top:70px;}
+#brilho{ background:url(cliente/brilho.png) no-repeat; width:1077px; height:520px; margin-left:-300px; top:px;}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	TweenMax.from( $(".conteudo"), 1, { css: { alpha: 0 }, ease: Back.easeInOut });	
+	TweenMax.from( $(".dimensoes"), 1, { css: { alpha: 0 }, ease: Back.easeInOut });	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+    	<div id="brilho" class="absoluto"></div>
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <img src="cliente/conteudo-da-embalagem.png" width="307px" height="259px" alt="Conteúdo da Embalagem" title="Conteúdo da Embalagem" class="absoluto conteudo" />
+                <img src="cliente/dimensoes.png" width="360px" height="358px" alt="Dimensões e Peso" title="Dimensões e Peso" class="absoluto dimensoes" />
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

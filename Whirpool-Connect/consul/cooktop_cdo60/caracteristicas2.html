@@ -1,0 +1,73 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page2/bg-caracteristicas2.jpg) repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.porta1 { background: url(caracteristicas/page2/porta1.png); height: 520px; width: 487px; position: absolute; top: 0px; left: 50%; margin-left: -432px; z-index: 3; }
+.porta2 { background: url(caracteristicas/page2/porta2.png); height: 520px; width: 487px; position: absolute; top: 0px; margin-left: -8px; left: 50%; z-index: 3; }
+.forno { margin-left: -239px; top: 179px; }
+.coifa { margin-left: 52px; top: 73px; }
+.cooktop { margin-left: 103px; top: 284px; }
+.txt { margin-left: -364px; bottom: 23px; }
+#call-to-action2 { margin-left: 298px; top: 16px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div class="porta1"></div>
+                <div class="porta2"></div>
+                
+              <img src="caracteristicas/page2/forno.png" width="278" height="33" alt="Forno de embutir CO060" title="Forno de embutir CO060" class="forno" />
+                
+              <img src="caracteristicas/page2/coifa.png" width="169" height="63" alt="Coifa CA060 ou Coifa CA090" title="Coifa CA060 ou Coifa CA090" class="coifa" />
+                
+              <img src="caracteristicas/page2/cooktop.png" width="211" height="62" alt="Cooktop CD060 ou Cooktop CD075" title="Cooktop CD060 ou Cooktop CD075" class="cooktop" />
+                
+              <img src="caracteristicas/page2/txt.png" width="344" height="121" alt="Deixe sua cozinha mais completa com os produtos da linha de embutir Consul Facilite!" title="Deixe sua cozinha mais completa com os produtos da linha de embutir Consul Facilite!" class="txt" />
+                
+                <a href="#"><img src="caracteristicas/page2/fechar.png" width="89" height="24" alt="Fechar" title="Fechar" id="call-to-action2" /></a>
+                
+          </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+var $LINK_OPEN = "";
+$(document).ready(function(e) {
+	
+	TweenMax.to( $(".porta1") , 2.5, { css: { left: "-=400px" } , ease: Strong.easeOut, delay:.8} );
+	TweenMax.to( $(".porta2") , 2.5, { css: { left: "+=380px" } , ease: Strong.easeOut, delay:.8} );
+	
+	TweenMax.from( $(".forno") , 1, { css: { alpha: "0" } , ease: Strong.easeOut, delay:2.3} );
+	TweenMax.from( $(".coifa") , 1, { css: { alpha: "0" } , ease: Strong.easeOut, delay:2.6} );
+	TweenMax.from( $(".cooktop") , 1, { css: { alpha: "0" } , ease: Strong.easeOut, delay:2.9} );
+	TweenMax.from( $(".txt") , 1, { css: { alpha: "0" } , ease: Strong.easeOut, delay:3.2} );
+	
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:3.6, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$("#call-to-action2").click(function(e) {
+        $LINK_OPEN = ["Botão", "caracteristicas1", $NOME_FOLDER + "caracteristicas2.html"];
+    });
+	$("#call-to-action2").hover(function(e) {
+            TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $("#call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( "#call-to-action2" , "caracteristicas1.html", true );
+	
+		
+});
+</script>

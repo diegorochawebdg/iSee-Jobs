@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#content{background:url(../images/bg-home.jpg) no-repeat center top;}
+.info { margin-left: -461px; left: 50%; top: 310px; width:550px; }
+.info img , .info .info-txt{ float: left; }
+.info img { margin-right: 5px; }
+.info .info-txt  { padding-top: 15px; }
+.info .info-txt p { font-size: 18px; color: #fefefe; width: 370px; }
+.info .info-txt p strong { font-weight: bold; }
+.participar { margin-left: -445px; left: 50%; top: 340px; width: 380px; }
+.participar * { color: #FFF; text-transform: uppercase; }
+.participar h2 { font: 48px PeachMilk; margin-bottom: 20px; }
+.participar p { margin-bottom: 25px; font-size: 14px; }
+.participar .ganhador{margin-bottom:25px; padding-left:46px; background:url(../images/vencedor.png) no-repeat left center; min-height:37px;}
+.participar .ganhador strong{color:#fbe27d; font-size:25px; text-transform:uppercase;}
+.participar .ganhador span{color:#fbe27d; display:block; font-size:13px; text-transform:uppercase;}
+.participar #cadastrar { background: url(../images/consulte-regulamento.png); width: 288px; padding-top: 49px; }

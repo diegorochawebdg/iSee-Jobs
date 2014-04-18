@@ -1,0 +1,100 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #7b1e57; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.div-content img { position: absolute; left: 50%; z-index: 1; }
+
+.faixa-branca{ width: 1400px; height: 341px; position: absolute; left: 50%; margin-left: -394px; background: #FFF url(caracteristicas/page2/bg-body.png) repeat-x; bottom: 0px; }
+.img-depilador { margin-left: -515px; bottom: 0px; }
+.titulo { top: 47px; margin-left: -250px; }
+.praticidade { margin-left: -275px; top: 211px; }
+.cabeca { margin-left: -275px; top: 280px; }
+.visibilidade { margin-left: 23px; top: 204px; }
+.opti-light { margin-left: 23px; top: 279px; }
+#call-to-action2 { margin-left: 83px; bottom: 24px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	
+      <div class="faixa-branca"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page2/frente-depilador-philips.png" width="244" height="491" class="img-depilador" alt="frente do depilador Philips" title="Frente do depilador SatinPerfect" />
+                
+                <div class="faixa-branca"></div>
+                
+                <img src="caracteristicas/page2/uso-seco-ou-molhado.png" width="495" height="100" class="titulo" alt="Uso seco ou molhado" title="Uso seco ou molhado" />
+                
+                <img src="caracteristicas/page2/praticidade-e-rapidez-na-sua-depilacao.png" width="277" height="51" class="praticidade" alt="Praticidade e rapidez na sua depilação" title="Praticidade e rapidez na sua depilação" />
+                
+                <img src="caracteristicas/page2/cabeca-extralarga.jpg" width="277" height="195" class="cabeca" alt="Cabeça extralarga: remove mais pelos por passada, tornando a depilação mais rápida." title="Cabeça extralarga: remove mais pelos por passada, tornando a depilação mais rápida." />
+                
+                <img src="caracteristicas/page2/visibilidade-máxima-do-local-a-ser-depilado.png" width="305" height="52" class="visibilidade" alt="Visibilidade máxima do local a ser depilado" title="Visibilidade máxima do local a ser depilado" />
+                
+                <img src="caracteristicas/page2/opti-light.jpg" width="338" height="146" class="opti-light" alt="Facilidade na sua depilação! O sistema Opti-light proporciona uma luz direcionada que oferece visibilidade máxima do local que será depilado." title="Facilidade na sua depilação! O sistema Opti-light proporciona uma luz direcionada que oferece visibilidade máxima do local que será depilado.
+" />
+                
+                <a href="#"><img src="caracteristicas/page2/mais-cuidado-com-a-pele.jpg" width="246" height="45" alt="Mais cuidado com a pele" id="call-to-action2" title="Mais cuidado com a pele"/></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//depilador
+	TweenMax.from( $(".img-depilador") , 1, { css: { alpha: 0, left: "-=150px" } , ease: Strong.easeInOut, delay: 0.5});
+	
+	//faixa-branca
+	TweenMax.from( $(".faixa-branca") , 1.5, { css: { width: "0" } , ease: Circ.easeInOut, delay: 1.2});
+	
+	//titulo
+	TweenMax.from( $(".titulo") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeInOut, delay: 2.1});
+	
+	//praticidade titulo
+	TweenMax.from( $(".praticidade") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeInOut, delay: 2.4});
+	
+	//praticidade img
+	TweenMax.from( $(".cabeca") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeInOut, delay: 2.7});
+	
+	//visibilidade título
+	TweenMax.from( $(".visibilidade") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeInOut, delay: 3});
+	
+	//visibilidade img
+	TweenMax.from( $(".opti-light") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeInOut, delay: 3.3});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:4, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action2").hover(function(e) {
+				TweenMax.to( $(this) , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action2" , "caracteristicas3.html", true );
+		
+	}} );
+		
+});
+</script>

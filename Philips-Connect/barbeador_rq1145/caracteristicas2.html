@@ -1,0 +1,105 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container #bg-brilho{ background:url(caracteristicas/page2/brilho.png) no-repeat; width:1127px; height:520px; margin-left:-865px; top:0;}
+
+.connect-container .anderson{ margin-left:-32px; bottom:0;}
+
+.connect-container .box{ background:url(caracteristicas/page2/bg-transparente.png); width:640px;}
+.connect-container .box img{ float:left;}
+.connect-container .box .conteudo{ float:left;}
+.connect-container .box .conteudo h2{ font-family: "Museo-700"; font-size:20px; color:#FFF; margin-bottom:15px;}
+.connect-container .box .conteudo p{ font-family: "Museo-300"; font-size:15px; color:#FFF; line-height:18px;}
+
+.connect-container #box1{ margin-left:-430px; top:78px;}
+.connect-container #box1 .conteudo{ margin-left:30px; margin-top:35px;}
+.connect-container #box2{ margin-left:-430px; top:240px;}
+.connect-container #box2 .conteudo{ margin-left:20px; margin-top:25px;}
+
+.connect-container #call-to-action2{ margin-left:-210px; bottom:40px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action2"), "fadeInRight", "s08", "caracteristicas3.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            
+            	<div id="bg-brilho" class="absoluto"></div>
+                
+                <div id="box1" class="absoluto box animated fadeInLeft s06">
+                	<img src="caracteristicas/page2/feature1.png" width="197px" height="156px" alt="" title=""  />
+                    <div class="conteudo">
+                    	<h2>Sistema levanta e corta</h2>
+                        <p>Levanta os pelos para cortá-los no nível<br />
+                        da pele através de um sistema duplo de<br />
+                        lâminas integrado ao barbeador.</p>
+                    </div>
+                </div>
+                
+                <div id="box2" class="absoluto box animated fadeInLeft s07">
+                	<img src="caracteristicas/page2/feature2.png" width="207px" height="156px" alt="" title=""  />
+                    <div class="conteudo">
+                    	<h2>DualPrecision</h2>
+                        <p>Com um sistema de corte preciso, as<br />
+                        cabeças DualPrecision possuem<br />
+                        ranhuras que raspam os pelos normais<br />
+                        e removem até os pelos mais curtos.</p>
+                    </div>
+                </div>
+            	
+                <img src="caracteristicas/page2/anderson.png" width="601px" height="452px" alt="" title="" class="absoluto anderson animated fadeInRight s05" />
+               
+                <a href="#" id="call-to-action2" class="absoluto animated fadeInRight s08"><img src="caracteristicas/page2/btn-mais-conforto.png" width="215px" height="36px" alt="Mais conforto" title="Mais conforto" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

@@ -1,0 +1,149 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.container_interna .absoluto{ position:absolute; left:50%;}
+
+.container_interna .ar-condicionado{ margin-left:-138px; top:80px;}
+.container_interna #bg-transparente{ background:url(caracteristicas/page3/bg-transparente.png) repeat; width:100%; height:520px; position:absolute; left:0; top:0;}
+.container_interna #bg-bottom{ background:url(caracteristicas/page3/bg-bottom.png) 50% bottom no-repeat; width:100%; height:520px; position:absolute; left:0; top:0;}
+.container_interna #call-to-action4{ margin-left:305px; top:14px; cursor:pointer;}
+.container_interna .controle{ margin-left:51px; bottom:0;}
+.container_interna .paragrafo{ margin-left:-350px; top:246px;}
+.container_interna .icones{ margin-left:114px; top:233px;}
+.container_interna .botao{ cursor:pointer; opacity:1;}
+.container_interna #botao1{ margin-left:154px; top:232px;}
+.container_interna #botao2{ margin-left:106px; top:305px;}
+.container_interna #botao3{ margin-left:154px; top:305px;}
+.container_interna #botao4{ margin-left:106px; top:342px;}
+.container_interna #botao5{ margin-left:154px; top:342px;}
+.container_interna #botao6{ margin-left:203px; top:342px;}
+.container_interna #conteudo1{ margin-left:-332px; top:38px; display:none;}
+.container_interna #conteudo2{ margin-left:-364px; top:126px; display:none;}
+.container_interna #conteudo3{ margin-left:-364px; top:108px; display:none;}
+.container_interna #conteudo4{ margin-left:-368px; top:172px; display:none;}
+.container_interna #conteudo5{ margin-left:-365px; top:173px; display:none;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".container_interna #call-to-action4"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	TweenMax.from($(".container_interna .controle"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".container_interna .icones"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1});
+	TweenMax.from($(".container_interna .paragrafo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".container_interna .botao"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1});
+	
+	$(".container_interna #call-to-action4").hover(function(){ TweenMax.to( $(this) , .4, { css: { alpha: .7 } , ease: Strong.easeOut}); }, function(){ TweenMax.to( $(this) , .4, { css: { alpha: 1 } , ease: Strong.easeOut}); });
+	Connect.addCallToAction( ".container_interna #call-to-action4" , "caracteristicas1.html", true );
+	
+	var tweenControl = TweenMax.to( $(".container_interna .botao"), 1, {css:{alpha: .2}, ease:Linear.easeOut, delay: 1.1, repeat: -1, yoyo: true}); 
+	
+	var elementoHide = $(".container_interna .paragrafo");
+	var _itens 		= [ 
+						{ botao: $(".container_interna #botao1"), conteudo: $(".container_interna #conteudo1"), analytics: "funcao-siga-me" },
+						{ botao: $(".container_interna #botao2"), conteudo: $(".container_interna #conteudo2"), analytics: "timer-on-off" },
+						{ botao: $(".container_interna #botao3"), conteudo: $(".container_interna #conteudo2"), analytics: "timer-on-off" },
+						{ botao: $(".container_interna #botao4"), conteudo: $(".container_interna #conteudo3"), analytics: "memoria" },
+						{ botao: $(".container_interna #botao5"), conteudo: $(".container_interna #conteudo4"), analytics: "sono-bom" },
+						{ botao: $(".container_interna #botao6"), conteudo: $(".container_interna #conteudo5"), analytics: "apagar-visor" }
+					  ];
+	var tempoTotal	 = 1;
+	var tempoInicial = 0;
+	
+	$.each( _itens, function( index, value ){
+		
+		value.botao.hover(
+		
+			function(e){
+				
+				tweenControl.pause(0);
+				elementoHide.stop(true, true).fadeOut();
+				for( key in _itens ){
+					if( _itens[key].botao.attr("id") != this.id ){
+						 if( this.id == "botao2" || this.id == "botao3" ){
+							 if( _itens[key].botao.attr("id") != "botao2" && _itens[key].botao.attr("id") != "botao3" ) _itens[key].botao.stop(true, true).fadeOut();
+						 }else{
+							  _itens[key].botao.stop(true, true).fadeOut();
+						 }
+					}
+				}
+				value.conteudo.stop(true, true).fadeIn();
+				tempoInicial = e.timeStamp;
+				
+			},
+			function(e){
+				
+				tweenControl.play();
+				elementoHide.stop(true, true).fadeIn();
+				for( key in _itens ) _itens[key].botao.stop(true, true).fadeIn();
+				value.conteudo.stop(true, true).fadeOut();
+				if( ( e.timeStamp - tempoInicial ) >= ( tempoTotal * 1000 ) ) Connect.trackPageView( "caracteristicas2/" + value.analytics );;
+				
+			}
+		
+		);
+		
+	} );
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/ar-condicionado.png" width="580px" height="230px" alt="" title="" class="absoluto ar-condicionado" />
+                
+                <div id="bg-transparente"></div>
+                <div id="bg-bottom"></div>
+                
+                <img src="caracteristicas/page3/btn-fechar.png" width="90px" height="21px" alt="Fechar" title="Fechar" class="absoluto" id="call-to-action4" />
+                
+                <img src="caracteristicas/page3/controle.png" width="229px" height="514px" alt="" title="" class="absoluto controle" />
+                
+                <img src="caracteristicas/page3/paragrafo-passe-o.png" width="401px" height="70px" alt="Passe o mouse e veja tudo que o Split Inverter oferece a você ao toque de um botão do controle remoto!" title="Passe o mouse e veja tudo que o Split Inverter oferece a você ao toque de um botão do controle remoto!" class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page3/conteudo1.png" width="488px" height="329px" alt="Função Siga-me | O clima certo onde você estiver. Garante que a temperatura escolhida seja mantida onde está localizado o controle remoto.* | *Até 7 metros de distância da unidade interna.distância da unidade interna." title="Função Siga-me | O clima certo onde você estiver. Garante que a temperatura escolhida seja mantida onde está localizado o controle remoto.* | *Até 7 metros de distância da unidade interna.distância da unidade interna." class="absoluto" id="conteudo1" />
+                <img src="caracteristicas/page3/conteudo2.png" width="521px" height="288px" alt="Timer On/Off | Temperatura agradável na hora certa. Permite que você programe a hora de ligar ou desligar o aparelho." title="Timer On/Off | Temperatura agradável na hora certa. Permite que você programe a hora de ligar ou desligar o aparelho." class="absoluto" id="conteudo2" />
+                <img src="caracteristicas/page3/conteudo3.png" width="472px" height="334px" alt="Memória | Praticidade para deixar o ambiente sempre em uma temperatura agradável. O Split memoriza temperatura, velocidade e direção preferida. Para acionar, basta apenas um toque no controle remoto." title="Memória | Praticidade para deixar o ambiente sempre em uma temperatura agradável. O Split memoriza temperatura, velocidade e direção preferida. Para acionar, basta apenas um toque no controle remoto." class="absoluto" id="conteudo3" />
+                <img src="caracteristicas/page3/conteudo4.png" width="541px" height="307px" alt="Sono bom | Para um sono tranquilo e agradável, a função regula a temperatura do ar ao longo da noite, para que o ambiente sempre fique confortável enquanto você descansa." title="Sono bom | Para um sono tranquilo e agradável, a função regula a temperatura do ar ao longo da noite, para que o ambiente sempre fique confortável enquanto você descansa." class="absoluto" id="conteudo4" />
+                <img src="caracteristicas/page3/conteudo5.png" width="588px" height="307px" alt="Apagar visor | Para uma boa noite de sono, você pode acionar essa função que desliga totalmente a luz do painel, garantindo tranquilidade para relaxar." title="Apagar visor | Para uma boa noite de sono, você pode acionar essa função que desliga totalmente a luz do painel, garantindo tranquilidade para relaxar." class="absoluto" id="conteudo5" />
+                
+                <img src="caracteristicas/page3/icones-botoes.png" width="112px" height="124px" alt="" title="" class="absoluto icones" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao" id="botao1" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao botao2" id="botao2" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao botao2" id="botao3" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao" id="botao4" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao" id="botao5" />
+                <img src="caracteristicas/page3/botao.png" width="40px" height="18px" alt="" title="" class="absoluto botao" id="botao6" />
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

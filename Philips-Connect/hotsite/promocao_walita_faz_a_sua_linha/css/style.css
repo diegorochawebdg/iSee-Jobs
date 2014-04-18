@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'AdBuchSBRegular'; src: url('../fonts/adbsbc__.eot'); src: url('../fonts/adbsbc__.eot') format('embedded-opentype'), url('../fonts/adbsbc__.woff') format('woff'), url('../fonts/adbsbc__.ttf') format('truetype'), url('../fonts/adbsbc__.svg#AdBuchSBRegular') format('svg'); font-weight:normal; font-variant:normal;}
+@font-face {
+    font-family: 'AdBuchSBBold'; src: url('../fonts/adbsbbc_.eot'); src: url('../fonts/adbsbbc_.eot') format('embedded-opentype'), url('../fonts/adbsbbc_.woff') format('woff'), url('../fonts/adbsbbc_.ttf') format('truetype'), url('../fonts/adbsbbc_.svg#AdBuchSBBold') format('svg'); font-weight:normal; font-variant:normal;}
+
+
+*{ margin:0 auto;}
+body{ font-family:AdBuchSBRegular; font-size:18px; color:#333333;}
+
+.relativo{ position:relative;}
+.absoluto{ position:absolute; left:50%;}
+strong{ font-family:AdBuchSBBold; font-weight:normal;}
+b{ color:#ed1c24; font-weight:normal;}
+
+#wrap{ width:100%; background:#e1e1e1;}
+#content{ width:100%; background:url(../images/background.png) 50% 0 repeat-y;}
+#header{ width:100%; height:306px;}
+#infinito-header-esq{ width:50%; height:26px; margin-left:-50%; top:0; background:url(../images/infinito-header-esq.jpg) repeat-x;}
+#infinito-header-dir{ width:50%; height:26px; margin-left:0; top:0; background:url(../images/infinito-header-dir.jpg) repeat-x;}
+#header .background{ margin-left:-576px; top:0;}
+#header-img{ width:900px; height:300px; background:url(../images/foto-header.jpg) no-repeat; margin-left:-450px; margin-top:14px;}
+#header-img img{ margin-left:50px; top:55px;}
+#promocao{ width:100%; height:253px; background:url(../images/infinito-promocao.jpg) 0 9px repeat-x;}
+#promocao .background{ margin-left:-576px;}
+#promocao p{ font-size:22px; color:#FFFFFF; margin-left:-405px; top:32px; min-width:900px;}
+#promocao .compre{ margin-left:-360px; top:101px;}
+#promocao .concorra{ margin-left:-90px; top:100px;}
+#promocao .acesse{ margin-left:170px; top:100px;}
+#conteudo{ width:100%; height:1145px;}
+#conteudo p{ margin-left:-410px; top:40px; }
+#conteudo-saber{ width:753px; height:110px; background:url(../images/liquidificador-background.png) no-repeat; margin-left:-376px; top:130px;}
+#conteudo-saber p{ margin-left:-26%; top:22px; }
+#conteudo .chances{ margin-left:-311px; top:290px;}
+#conteudo .divisoria{ margin-left:-244px; top:440px;}
+#conteudo-quallinha{ background: url(../images/qual-e-a-sua-linha.png) no-repeat; width:266px; height:59px; margin-left:-425px; top:490px;}
+#conteudo-quallinha h2{ font-size:32px; color:#FFF; margin-left:-45%; top:5px;}
+#conteudo-quadro{ margin-left:-443px; top:548px; width:885px;}
+#conteudo-quadro p{ margin:0 10px; padding:0; font-size:17px; color:#FFF; text-align:left; line-height:20px;}
+#conteudo-quadro .divisoria-quadro{ margin:20px 10px;}
+#conteudo-quadro .img-philips{ margin-left:10px;}
+#conteudo-quadro .quadro{ width:145px; margin-left:5px; margin-top:35px;}
+#conteudo-quadro-daily{ width:445px; height:260px; background:#50b7be url(../images/linha01.jpg) no-repeat; float:left;}
+#conteudo-quadro-daily .daily{ margin-left:-84px; top:18px;}
+#conteudo-quadro-black{ width:440px; height:260px; background:#4c4d4f url(../images/linha02.jpg) no-repeat; float:left;}
+#conteudo-quadro-black .black{ margin-left:-82px; top:18px;}
+#conteudo-quadro-viva{ width:445px; height:275px; background:#854337 url(../images/linha03.jpg) no-repeat; float:left;}
+#conteudo-quadro-viva .viva{ margin-left:-86px; top:22px;}
+#conteudo-quadro-avance{ width:440px; height:275px; background:#a7375d url(../images/linha04.jpg) no-repeat; float:left;}
+#conteudo-quadro-avance .avance{ margin-left:-82px; top:22px;}
+#footer{ width:100%; height:117px; background:url(../images/infinito-footer.jpg) 0 5px repeat-x;}
+#footer .background{ margin-left:-576px;}
+#footer .regulamento{ margin-left:260px; top:-25px;}
+#footer .philips{ margin-left:-400px; top:80px;}
+#footer .isee{ margin-left:365px; top:80px;}
+#footer .copyright{ margin-left:-153px; top:80px;}

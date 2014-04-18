@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<link rel=”shortcut icon” href="http://www.mynd.com.br/favicon.ico" type=”image/x-icon” />
+<title>Mynd Sports Wear - Você em movimento</title>
+<style type="text/css">
+	@import url("css/reset.css");
+	@import url("css/general.css");
+	@import url("css/general.css");
+	@import url("css/demos.css");
+	@import url("css/jquery.ui.all.css");
+</style>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script language="javascript" type='text/javascript' src='js/effects.core.js'></script>
+<script language="javascript" type="text/javascript" src="js/tooltip.js"></script>
+<script language="javascript" type="text/javascript" src="js/mynd.js"></script>
+<script language="javascript" type="text/javascript" src="js/modal.js"></script>
+
+	<script src="js/jquery.ui.core.js"></script>
+	<script src="js/jquery.ui.widget.js"></script>
+	<script src="js/jquery.ui.accordion.js"></script>
+  
+    <!-- Analytics -->
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37206602-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+ $(function() { 
+	$('._link').click(
+		function(){			
+			//var pag = $(this).attr('href'); 						
+			//$('#conteudo').load(pag);		
+			parent.location.hash = $(this).attr('href');
+			return false;
+		}
+	);	
+});
+</script>
+</head>
+<body>
+
+	
+    <div class="logo">
+			<h1><a href="#" tabindex="1" title="Mynd" id="btn_logo"><span> Mynd</span></a></h1>
+            
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li> 
+                            <a class="_link" href="#home" id="btn_home"  title="Home" tabindex="2">Home</a>
+                        </li>
+                        <li>
+                            <a class="_link" href="#sobre-a-mynd" title="Sobre a Mynd" id="btn_sobre" tabindex="3">Sobre a Mynd</a>
+                        </li>
+                        <li>
+                            <a class="_link" href="#tecnologia" title="Tecnologia" id="btn_tecnologia" tabindex="4">Tecnologia</a>
+                        </li>
+                        <li>
+                           <a class="_link" href="#modalidades" title="Modalidades" id="btn_categorias" tabindex="5">Modalidades</a>
+                        </li>
+                        <li>
+                           <a class="_link" href="#atletas" title="Atletas" id="btn_atletas" tabindex="6">Atletas</a>
+                        </li>
+                        <li>
+                            <a class="_link" href="#personalizados" title="Personalizados" id="btn_personalizados" tabindex="7">Personalizados</a>
+                        </li>
+                        <li>
+                            <a class="_link" href="#contato" title="Contato" id="btn_contato" class="disable" tabindex="8">Contato</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <ul class="setas">
+                	<li><a href="#" id="menu_moveUP" title="Anterior"><img src="images/menu-arrow-up.png" title="Anterior" alt="Anterior" width="72" height="36" /></a></li>
+                    <li><a href="#" id="menu_moveDOWN" title="Próximo"><img src="images/menu-arrow-down.png" title="Próximo" alt="Próximo" width="72" height="36" /></a></li>
+                </ul>
+                
+            </div>
+            
+	</div>
+    
+	<div class="base">
+    	
+        <div class="holder home">
+        	<div class="content">
+            	<div class="top-home"><img src="images/homeBG.jpg" alt="Aspire asfalto. Respire esporte. Transpire paixão." width="1386" height="393" title="Aspire asfalto. Respire esporte. Transpire paixão." align="middle" /></div>
+            </div>
+        </div> 
+        
+        <div class="holder sobre">
+        	<div class="content">
+            	 <div class="sobre_div">
+                	<h2 title="Sobre a Mynd"><img src="images/titulo-sessao-sobre-mynd.gif" title="Sobre a Mynd" alt="Sobre a Mynd" width="182" height="18" border="0" style="margin: 0;" /></h2>
+                    <p>Unir a tecnologia, qualidade e funcionalidade dos artigos esportivos internacionais à facilidade de compras e preços dos brasileiros, foram alguns dos motivos que impulsionaram Claudio Cordiolli na criação da Mynd Sportswear. A marca de vestuário e acessórios multiesportivos oferece em seus produtos modelagem diferenciada, uso de matérias-primas específicas para cada modalidade e realiza testes de qualidade dos artigos com os atletas de sua equipe.</p>
+                </div>
+                <img src="images/voce-em-movimento-sobre.jpg" alt="Você em movimento" width="1920" height="308" title="Você em movimento" align="middle" />
+            </div>
+        </div>
+        
+        <div class="holder tecnologia">
+        	<div class="content">
+          	<div class="central">
+							<div class="box-esquerda">
+            		<img src="images/bg-tecnologias.jpg" width="621" height="539" alt="" title="" />
+            	</div>
+              <div class="box-direita">
+              	<h2><img src="images/titulo-sessao-tecnologia.gif" width="210" height="27" alt="Tecnologia" title="Tecnologia"  /></h2>
+                <p>A Mynd se preocupa com seu desempenho. Para conseguir<br />alcançar os melhores resultados, nossos produtos são<br />confeccionados com os melhores materiais, tecidos e<br />aviamentos para que você se sinta confortável em qualquer<br />modalidade esportiva.<br />Cada modelo é confeccionado especialmente para a<br />modalidade, levando em conta as posições que os atletas ficam,<br />o tecido e o corte mais confortáveis para executar as atividades.<br />Tudo para que a roupa que você usa durante sua atividade física<br />seja um item a mais para seu bom desempenho.</p>
+                <a class="pdf_educa" href="eit_educational.pdf" title="Clique e saiba mais!" target="_blank">Saiba mais sobre a tecnologia ELASTIC INTERFACE® (pdf)</a>
+                <div id="accordion">
+                  <h3 id="bacteriostatica"><span>Ação bacteriostática</span></h3>
+                  <div>
+                    <p>Sua função é inibir o desenvolvimento de bactérias causadoras do mau odor provenientes da transpiração. Encontramos o tratamento bacteriostático nos tecidos que compõem também os forros das bermudas e macaquinhos que utilizamos.</p>
+                  </div>
+                  <h3 id="hidrofilidade"><span>Hidrofilidade</span></h3>
+                  <div>
+                    <p>É a capacidade de transportar a umidade para a camada externa do tecido, favorecendo a evaporação e propiciando maior conforto térmico ao praticante.</p>
+                  </div>
+                  <h3 id="compressao"><span>Compressão</span></h3>
+                  <div>
+                    <p>Presente em vários tecidos, e em diferentes níveis, tem como objetivo minimizar a vibração muscular e retardar a fadiga muscular. Característica ideal para esportes de alto desempenho proporciona um maior ajuste ao corpo devido à sua aderência, o que resulta em uma melhor precisão e execução dos movimentos. </p>
+                  </div>
+                  <h3 id="raiosuv"><span>Proteção contra os raios UV</span></h3>
+                  <div>
+                    <p>As roupas Mynd protegem o corpo dos raios UV, nocivos à saúde.</p>
+                  </div>
+                  <h3 id="nado"><span>Melhor deslize durante o nado</span></h3>
+                  <div>
+                    <p>Para quem pratica natação ou triatlo, utilizamos tecidos capazes de <strong>repelir a água</strong>, possibilitando melhor deslize durante o nado. Além disso, as roupas são <strong>resistentes ao cloro</strong> e se ajustam ao corpo, evitando a formação de "bolsas e bolha d´água". </p>
+                  </div>
+                  <h3 id="manutencao"><span>Fácil manutenção</span></h3>
+                  <div>
+                    <p>Todos os tecidos utilizados dispensam o uso do ferro de passar e secam rapidamente, o que os torna práticos para viagens.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="holder categorias">
+        	<div class="content">
+                <div style="width: 960px; height: 100%; margin:0 auto; position: absolute; left: 480px;">
+                
+                <!--Menu do Slider-->
+                <div class="slider-menu">
+                    <ul>
+                        <li id="triathlon-menu"><a class="active" href="#"></a></li>
+                        <li id="ciclismo-menu"><a href="#"></a></li>
+                        <li id="corrida-menu"><a href="#"></a></li>
+                    </ul>
+                    <ul style="margin-left: 50px; position: absolute; top: 88px;">
+                        <li id="natacao-menu"><a href="#"></a></li>
+                        <li id="fitness-menu"><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div id="content-categorias">
+                	<a class="voltar" title="Voltar">voltar</a>
+                    <a class="avancar" title="Avançar">avançar</a>
+                	<div id="place-holder-triathlon">
+                    	<h2><img src="images/title-triatlo.png" width="153" height="28" alt="Triatlo" title="Triatlo" /></h2>
+                        <p>Uma coleção feita para o esportista que necessita de roupas com qualidade, conforto e elegância. Confira a linha de Triatlo composta de macaquinhos para curta e longa distância, tops, bermudas, viseiras e mochila. Desenvolvidas especialmente para os atletas que exigem o que há de melhor, nossas roupas possuem modelagem atraente e uso de materiais diferenciados e inovadores, como os forros (chamois) específicos para a modalidade. Preocupada com seus clientes, a Mynd sempre realiza testes de qualidade dos artigos com os atletas de sua equipe, uma forma de manter sua visão de marca inovadora sempre à frente.</p>
+                        <img src="images/img-triathlon.png" width="164" height="378" alt="Triathlo" title="Triathlo"  />
+                    </div>
+                    <div id="place-holder-ciclismo">
+                    	<h2><img src="images/title-ciclismo.png" width="210" height="28" title="Ciclismo" alt="Ciclismo" /></h2>
+                        <p>As roupas produzidas pela Mynd possuem características que vão te surpreender. Produtos como camisas, regatas, bermudas, manguitos, bretelles, calças e outros são parte dessa coleção. Confira o bretelle feminino, com modelagem diferenciada e exclusiva para elas que agora poderão usar uma peça genuína e não uma adaptação de modelos masculinos. Forros multielásticos que acompanham o movimento do ciclista, e tecidos que proporcionam excelente aderência ao corpo, altíssima absorção do suor, projetado para acelerar a secagem e manter o seu corpo seco e temperatura estável são algumas características. Tudo criado para oferecer conforto e elegância durante treinos de média e longa duração. Vista bermudas, bretelles e calças com os melhores forros do mundo e garanta um desempenho privilegiado durante seus <br />treinos e provas.</p>
+                        <img src="images/img-ciclismo.jpg" width="182" height="351" alt="Ciclismo" title="Ciclismo"  />
+                    </div>
+                    <div id="place-holder-corrida">
+                    	<h2><img src="images/title-corrida.png" width="210" height="28" alt="Corrida" title="Corrida" /></h2>
+                        <p>Desenvolvida para atender tanto o público feminino quanto masculino, a linha para Corrida da Mynd possui bermudas e regatas confeccionadas com tecidos tecnológicos de primeira linha. Os produtos foram desenvolvidos para que os atletas se sintam à vontade durante corridas e maratonas. As roupas proporcionam benefícios comprovados cientificamente, tais como: compressão, respirabilidade, conforto térmico, proteção contra os raios UV e inibidores de odores provenientes do suor.</p>
+                        <img src="images/img-corrida.jpg" width="164" height="378"  />
+                    </div>
+                    <div id="place-holder-natacao">
+                    	<h2><img src="images/title-natacao.png" width="210" height="38" alt="Natação" title="Natação" /></h2>
+                        <p>A linha de artigos para Natação da Mynd está sendo desenvolvida com materiais de alta qualidade que propiciam ao atleta mais resultado com menos esforço, além de oferecer segurança e conforto durante a atividade física. Em breve à disposição. Aguarde!</p>
+                        <img src="images/img-em-breve-modalidades.png" width="136" height="345" alt="Natação" title="Natação"  />
+                    </div>
+                    <div id="place-holder-fitness">
+                    	<h2><img src="images/title-fitness.png" width="210" height="28" alt="Fitness" title="Fitness" /></h2>
+                        <p>Pratique atividades físicas usando a coleção da Mynd desenvolvida especialmente para Fitness. Peças bem elaboradas, com design atraente e cores fortes que auxiliam no bem-estar psicológico do atleta, fazendo com que ele tenha um desempenho muito mais produtivo durante suas séries de exercícios.</p>
+                        <img src="images/img-em-breve-modalidades.png" width="136" height="345" alt="Fitness" title="Fitness"  />
+                    </div>
+                </div>
+                
+               
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        
+         <div class="holder atletas">
+        	<div class="content">
+            	<div class="atletas-box">
+					<!--<img id="flavia-img" src="images/flavia-fernandes-mini.jpg" alt="Flávia Fernandes" width="192" height="192" title="Flávia Fernandes" />-->                    
+					<img id="gilberto-img" src="images/gilberto-sampaio-mini.jpg" alt="Gilberto Sampaio" width="192" height="192" title="Gilberto Sampaio" />
+                    <img id="silvia-img" src="images/silvia-fusco-mini.jpg" alt="Silvia Fusco" width="192" height="192" title="Silvia Fusco" />
+                    <img id="susana-img" src="images/susana-festner-mini.jpg" alt="Susana Festner" width="192" height="192" title="Susana Festner" />
+                    <img id="thaty-img" src="images/thaty-porto-mini.jpg" alt="Thaty Porto" width="192" height="192" title="Thaty Porto" />
+                    
+                    <img id="artur-img" src="images/artur-lago-mini.jpg" alt="Thaty Porto" width="192" height="192" title="Artur Lago" />
+                    <img id="william-img" src="images/william-barbosa-mini.jpg" alt="Thaty Porto" width="192" height="192" title="William Barbosa" />
+                    <img id="licia-img" src="images/licia-alves-mini.jpg" alt="Thaty Porto" width="192" height="192" title="Licia Alves" />
+                    <img id="kleber-img" src="images/kleber-correa-mini.jpg" alt="Thaty Porto" width="192" height="192" title="Kleber Correa" />
+                    
+                   
+                   
+                   <div class="atleta-popup flavia" id="atleta_flavia" style="display: none;">
+                    	<div class="float-left">
+                        	<img src="images/flavia-bio.jpg" alt="Flávia Fernandes" width="192" height="384" title="Flávia Fernandes" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>FLÁVIA FERNANDES</h3>
+                            <span class="descricao">Triatlon / 31 anos / Goiás</span>
+                            <p>Apelidada carinhosamente de Flavinha, a triatleta Flávia Fernandes começou sua atuação no meio esportivo em 2008. Especialista na modalidade Olímpica, sua meta é participar das Olimpíadas no Rio de Janeiro em 2016 e, para que isso aconteça, treina todos os dias de segunda à domingo. Conquistou títulos como GP Damha, várias etapas do Troféu Brasil e SESC Triathlon, dentre outros que compõem seu extenso currículo.</p>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- -->
+                    <div class="atleta-popup gilberto" id="atleta_gilberto" style="display: none;">
+                    	<div class="float-left">
+                        	<img src="images/beto-bio.jpg" alt="Gilberto Sampaio" width="192" height="384" title="Gilberto Sampaio" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>GILBERTO SAMPAIO</h3>
+                            <span class="descricao">Triatlon / 35 anos / Rio de Janeiro</span>
+                            <p>Natural do RJ, Beto, como é conhecido o triatleta Gilberto Sampaio, começou a praticar o esporte com 32 anos. Estreou nas provas de Ironman em 2011 e, neste mesmo ano, atingiu a 15ª posição no Ironman 70.3 do Brasil, o que lhe garantiu a vaga para o Mundial em Las Vegas, vaga essa ratificada em 2012 com o 7º lugar na categoria no Ironman 70.3 de Pucón, no Chile. Seu treino diário lhe garantiu também o título de Campeão Brasileiro de Longa Distância na categoria, em 2012.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>                                
+                   
+                    <!-- -->
+                    <div class="atleta-popup silvia" id="atleta_silvia" style="display: none;">
+                    	<div class="float-right">
+                        	<img src="images/silvia-bio.jpg" alt="Silvia Fusco" width="192" height="384" title="Silvia Fusco" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>SILVIA FUSCO</h3>
+                            <span class="descricao">Triatlon / 35 anos / São Paulo</span>
+                            <p>A triatleta Silvinha possui um currículo extenso quando se trata de bons resultados. Especialista em provas de longa distância e resistência, a paulistana já foi campeã do Long Distance/Cia de Eventos em Caiobá (2011) e ficou em 2º lugar no brasileiro de Longa Distância, no Ceará (2012). Também obteve 3º lugar no GP Extreme Dahma em São Carlos, entre outras provas. </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- -->
+                    <div class="atleta-popup susana" id="atleta_susana" style="display: none;">
+                    	<div class="float-right">
+                        	<img src="images/susana-bio.jpg" alt="Susana Festner" width="192" height="384" title="Susana Festner" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>SUSANA FESTNER</h3>
+                            <span class="descricao">Triatlon / 30 anos / Rio Grande do Sul</span>
+                            <p>Especialista na categoria Longa Distância – Meio Ironman, Susana iniciou sua carreira esportiva em 2006, quando ainda cursava Direito na UFRGS. A triatleta conquistou o vice-campeonato no Ironman 70.3 Brasil em 2012, após tê-lo vencido em 2011 com uma brilhante corrida. Participou do Campeonato Brasileiro de Triathlon de Longa Distância em 2012, em Fortaleza, obtendo o 3º lugar.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+                    
+                    <!-- -->
+                    <div class="atleta-popup thaty" id="atleta_thaty" style="display: none;">
+                    	<div class="float-left">
+                        	<img src="images/thaty-bio.jpg" alt="Thaty Porto" width="192" height="384" title="Thaty Porto" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>THATY PORTO</h3>
+                            <span class="descricao">Triatlon / 25 anos / Brasília</span>
+                            <p>Thaty Porto começou sua carreira esportiva em 2003, competindo no amador. Triatleta profissional desde 2010, é especialista nas modalidades Sprint e Standard. Dentre suas conquistas, foi duas vezes Campeã Brasileira de Sprint Triathlon, uma na prova Sub-23 e a outra na Elite. Também conquistou o 1º lugar no Campeonato Brasiliense por dois anos consecutivos, 2010 e 2011 e, nestes mesmos anos foi campeã na prova Elite da Copa Centro-Oeste de Triathlon.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+                    
+                    <!-- -->
+                    <div class="atleta-popup artur" id="atleta_artur" style="display: none;">
+                    	<div class="float-left">
+                        	<img src="images/artur-bio.jpg" alt="Gilberto Sampaio" width="192" height="384" title="Artur Lago" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>ARTUR LAGO</h3>
+                            <span class="descricao">Triatlon / 18 anos / Florianópolis</span>
+                            <p>Natural de Santa Catarina, o triatleta Artur do Lago conquistou seu primeiro título de campeão com apenas 13 anos, no Duatlo Noturno Bike Dream. Entre suas conquistas, foi 1º colocado na categoria 15-19 anos na 5° Corrida da A.C.R.A e na 1ª Corrida Big Florianópolis atingiu o 1º lugar na categoria 16-19 anos e foi 1º colocado geral. Apaixonado pela modalidade, Artur treina 11 vezes por semana e sonha em conquistar uma medalha olímpica.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                    
+                    <!-- -->
+                    <div class="atleta-popup william" id="atleta_william" style="display: none;">
+                    	<div class="float-right">
+                        	<img src="images/william-bio.jpg" alt="William Barbosa" width="192" height="384" title="William Barbosa" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>WILLIAM BARBOSA</h3>
+                            <span class="descricao">Triathlon / 29anos / São Paulo</span>
+                            <p>O triatleta William treina sete vezes por semana e suas especialidades são as provas de Ironman e Meio Ironman. Entre seus títulos que merecem destaque no ano de 2012, estão a 1ª colocação no MetLife Ironman 70.3, categoria 25-29, em Cozumel (México) e o 4º lugar na categoria 22º do Troféu Brasil de Triathlon Olímpico (1ª etapa). Conquistou o 1º lugar nos campeonatos Long Distance Caiobá (2010), Circuito 2008 Long Distance (2010) e foi campeão brasileiro de Triathlon na categoria 20-24, em 2007.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                    
+                    <!-- -->
+                    <div class="atleta-popup licia" id="atleta_licia" style="display: none;">
+                    	<div class="float-right">
+                        	<img src="images/licia-bio.jpg" alt="Licia Alves" width="192" height="384" title="Licia Alves" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>LICIA ALVES</h3>
+                            <span class="descricao">Triatlon / 34 anos / São Paulo</span>
+                            <p>Lí, como Lícia Elias é conhecida entre os amigos, pratica triatlo desde 2002. Especialista nas provas de Ironman, treina de duas a três horas por dia, seis vezes por semana. Foi 1ª colocada no Campeonato de Short do Troféu Brasil de Triatlon, em 2006 e em 2007, conquistou o 1º lugar na categoria Ironman Brasil, garantindo sua classificação para o Ironman no Havaí. No ano seguinte, atingiu o 2º lugar na mesma competição.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                    
+                    <!-- -->
+                    <div class="atleta-popup kleber" id="atleta_kleber" style="display: none;">
+                    	<div class="float-left">
+                        	<img src="images/kleber-bio.jpg" alt="Kleber Correa" width="192" height="384" title="Kleber Correa" />
+                        </div>
+                        <div class="float-left bio-txt">
+                        	<h3>KLEBER CORREA</h3>
+                            <span class="descricao">Triatlon / 34 anos / São Paulo</span>
+                            <p>O triatleta Kleber iniciou sua carreira esportiva no ano de 2008. Especialista nas provas de Ironman, diz que seu maior sonho é disputar o Mundial em Kona, no Estado do Havaí e, para atingir seu objetivo, treina de 12 a 15 vezes por semana. Participou do campeonato Ironman Brasil, em 2010, onde conseguiu o tempo de 9:46:31, atingindo o 73º lugar na classificação geral</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                </div>
+            </div>
+        </div> 
+        
+         <div class="holder personalizacao">
+        	<div class="content">
+            	<div class="personalizacao-itens">
+                    <div class="float-left">
+                        <div class="float-right mbottom">
+                            <h3><img src="images/vista-sua-equipe-com-mynd.gif" alt="vista sua equipe com Mynd" width="218" height="103" title="vista sua equipe com Mynd" /></h3>
+                        </div>
+                        <div class="clear"></div>
+                        <img src="images/ciclistas.png" alt="Ciclistas" width="423" height="288" title="Ciclistas" style="margin-left: 30px;" />
+                    </div>
+                    <div class="float-left personalizacao-txt">
+                         <p>A Mynd realiza o serviço de personalização de uniformes com as cores e logotipos conforme a necessidade das equipes ou assessorias que desejam desenvolver uma confecção moderna com tecidos e impressões de qualidade. </p>
+                        <img src="images/logotipo-mynd.png" alt="Logotipo Mynd" width="280" height="177" title="Mynd" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div> 
+        
+         <div class="holder contato">
+        	<div class="content">
+            
+            	<div class="lojas-box">
+                
+                	<h3><img src="images/titulo-sessao-ondecomprar.gif" width="266" height="24" alt="Onde Comprar" title="Onde Comprar" /></h3>
+                    <ul class="link">
+                        <li><a href="#" title="Lojas Físicas" class="lojas-fisicas1">Lojas Físicas</a></li>
+                        <li><a href="#" title="Lojas Online" class="lojas-online1">Lojas Online</a></li>
+                    </ul>
+                    
+                    <a href="#contato" class="fecha-lojas"><img src="images/btn-close.png" width="31" height="30" title="Fechar" /></a>
+                    
+                    <div class="lojas-content">
+                    	
+                        <div id="content_lojasonline">
+                        	
+                            <a href="http://www.renatoestrella.com.br/produtos.asp" target="_blank" title="Renato Estrella"><img src="images/logo-renatoestrela.gif" title="Renato Estrella" width="144" height="84" /></a>
+                            <a href="http://www.espacodociclista.com/index.php?route=product/search&keyword=mynd" target="_blank" title="Espaço Ciclista"><img src="images/logo-espccicli.gif" title="Espaço Ciclista" width="143" height="84" /></a>
+                            
+                            
+                            <a href="http://www.pedalpower.com.br/pedalpower/interface/findresults.asp?spec=mynd&x=0&y=0&tipo=1&template_id=63&tu=" target="_blank" title="Pedal Power"><img src="images/ondecomprar-pedalpower.gif" title="Pedal Power" width="168" height="119" /></a>
+                            
+                            <a href="http://www.urionperformance.com.br/" target="_blank" title="Urion Performance In Sport"><img src="images/ondecomprar-urion.jpg" width="168px" height="119px" alt="Urion Performance In Sport" title="Urion Performance In Sport" /></a>
+                            
+                        </div>
+                        
+                        <div id="content_lojasfisicas">
+                        	
+                           <div class="lojas_fisicas_estado">
+                           	
+                            	<p>Estado</p>
+                                <a href="#" id="btn_lojas_fisicas_sp" title="São Paulo" class="active">SP</a><br />
+                                <a href="#" id="btn_lojas_fisicas_rj" title="Rio de Janeiro">RJ</a><br />
+                                <a href="#" id="btn_lojas_fisicas_mg" title="Minas Gerais">MG</a><br />
+                                <a href="#" id="btn_lojas_fisicas_pr" title="Paraná">PR</a><br />
+                                <a href="#" id="btn_lojas_fisicas_rs" title="Rio Grande do Sul">RS</a><br />
+                                <a href="#" id="btn_lojas_fisicas_sc" title="Santa Catarina">SC</a><br />
+                                <a href="#" id="btn_lojas_fisicas_df" title="Brasília">DF</a><br />
+                                <a href="#" id="btn_lojas_fisicas_es" title="Espirito Santo">ES</a><br />
+                                <a href="#" id="btn_lojas_fisicas_pb" title="Maranhão">PB</a><br />
+                                
+                           </div>
+                           
+                           <div class="lojas_fisicas_estado_dados">
+                                
+                                
+                                <div id="lojas_fisicas_sp" style="display: block;">
+                                	
+                                  	<!--São Paulo -->
+                                    <p>
+                                    	Cabral Bike Shop - Lorena<br />Rua Duque de Caxias, 34<br />Centro - 12 3152-1784<br />
+                                    </p>
+									<br />
+                                    
+                                    <p>
+                                    	Elite Bike - Campinas<br />Rua Dona Luisa de Gusmão, 545<br />Vila Nogueira - 19 3251-1670<br />
+                                    </p>
+									<br />
+                                    
+                                    <p>
+                                    	Sunny Bike - São Paulo<br />Avenida Morumbi, 7884<br />Santo Amaro - 11 5533-5771<br />
+                                    </p>
+									<br />
+                                    
+                                    <p>
+                                    	Sunbikes - Rio Claro<br />Avenida 8, 1782<br />Jardim Claret - 19 3533-3818<br />
+                                    </p>
+									<br />
+                                    
+                                    <p>
+                                    	F3 Esportes - Sorocaba<br />Rua Barão de cotegipe, 409<br />Vila Leão - 15 3346-4990<br />
+                                    </p>
+									<br />
+                                    
+                                    <p>
+                                    	Kepps Sport Bike - Sorocaba<br />Avenida Benedito Castilho de Andrade, 1330<br />Parque residencial - 11 4492-2376<br />
+                                    </p>
+									<br />
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <p>
+                                    	All Distances - São Paulo<br />Avenida Ibijau, 234<br />Indianópolis - 11 2532-3230<br />
+                                    	<a href="www.alldistances.com.br" target="_blank"><span class="sites">www.alldistances.com.br</span></a>
+                                    </p>
+									<br />
+                                    <p>
+                                    	Anderson Bikes - São Paulo<br />Avenida Vereador Joé Diniz, 1200<br />Brooklin - 11 5687-2099<br />
+                                    	<a href="www.andersonbicicletas.com.br" target="_blank"><span class="sites">www.andersonbicicletas.com.br</span></a>
+                                    </p>
+									<br />
+                                    <p>Bike Elpidio - São Paulo<br />Rua Tito, 1641<br />Vila Romana - 11 3641-9566</p>
+									<br />
+                                    <p>
+                                    	Ciclo Caravelle - São Paulo<br />Rua Pirajussara, 472<br />Butanta - 16 3031-8331<br />
+                                      <a href="http://www.ciclocaravelle.com.br/" target="_blank"><span class="sites">http://www.ciclocaravelle.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                    <p>
+                                    	Pedal Power - São Paulo<br />Rua Baluarte, 672<br />Vila Olimpia - 11 3040-4826<br />
+                                      <a href="http://www.pedalpower.com.br/pedalpower/interface/findresults.asp?spec=mynd" target="_blank"><span class="sites">http://www.pedalpower.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                    <p>
+                                    	Tutto Bike - São Paulo<br />Avenida Pompéia, 787<br />Vl. Pompéia - 11 3872-5505<br />
+                                    	<a href="www.tuttobike.com.br" target="_blank"><span class="sites">www.tuttobike.com.br</span></a>
+                                    </p>
+                                    <br />
+                                    
+                                    <!--Ribeirão Preto -->
+                                    <p>
+                                    	Multibike - Ribeirão Preto<br />Rua Mariano Pedroso de Almeida, 311<br />Alto da Boa Vista - 16 3913-4505<br />
+                                      <a href="http://www.multibike.com.br/busca.ecm?p=0&b=mynd" target="_blank"><span class="sites">http://www.multibike.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                    
+                                    <!-- Santos -->
+                                    <p>
+                                    	Bike Shop Santos - Santos<br />Rua Machado de Assis, 40<br />Boqueirão - 13 2202-8123<br />
+                                      <a href="http://bikeshopsantos.blogspot.com.br/" target="_blank"><span class="sites">http://bikeshopsantos.blogspot.com.br/</span></a>
+                                    </p>
+									<br />
+                                    
+                                    <!-- Araçatuba -->
+                                    <p>
+                                    	Roda Livre - Araçatuba<br />Rua Cussy de Almeida Junior, 525<br />Centro - 18 3624-5536<br />
+                                      <a href="http://www.rodalivrebicicletas.com.br" target="_blank"><span class="sites">http://www.rodalivrebicicletas.com.br</span></a>
+                                    </p>
+                                     <br />
+                                     
+                                     <!-- Santo André -->
+                                     
+                                     <!-- São Carlos -->
+                                     <p>
+                                    	Ultra Bike - São Carlos<br />Rua José de Alencar, 1019<br />São Carlos - 16 3411-1627<br />
+                                      	<a href="http://www.ultrabike.com.br/" target="_blank"><span class="sites">http://www.ultrabike.com.br/</span></a>
+                                     </p>
+                                     <br />
+                                     
+                                     <!-- Piracicaba -->
+                                     <p>
+                                    	Open Bike - Piracicaba<br />Rua Saldanha Marinho, 941<br />Cidade Jardim - 19 2533-2200<br />
+                                      	<a href="https://www.facebook.com/openbikepiracicaba" target="_blank"><span class="sites">https://www.facebook.com/openbikepiracicaba</span></a>
+                                     </p>
+                                     <br />
+                                    
+                                </div>
+                                
+                                <div id="lojas_fisicas_rj">
+                                	
+                                    <p>
+                                    	3SHOP - Rio de Janeiro<br />Rua Avenida Atlantica, 4240 - Loja H<br />Copacabana - 21 2247-1443<br />
+                                      <a href="http://www.3shopbr.com/Default.aspx?np=mynd" target="_blank"><span class="sites">http://www.3shopbr.com/</span></a>
+                                    </p>
+																		<br />
+                                    <p>
+                                    	D-Vitaminas - Rio de Janeiro<br />Rua Conde Bernadotte, 26 - Loja 122<br />Leblon - 21 2529-8000<br />
+                                      <a href="http://www.dvitaminas.com.br" target="_blank"><span class="sites">http://www.dvitaminas.com.br</span></a>
+                                    </p>
+                                    <br />
+                                    <p>
+                                    	Renato Estrella - Rio de Janeiro<br />Estrada do Joa, 3962 - Lojas A/B<br />Joa - 21 2491-5692<br />
+                                      <a href="http://www.renatoestrella.com.br/produtos.asp" target="_blank"><span class="sites">http://www.renatoestrella.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                </div>
+                                
+                                <div id="lojas_fisicas_mg">
+                                  <p>
+                                  	Bike e Cia - Itabira<br />Avenida Carlos de Paula Andrade, 134<br />Vila Santa Izabel - 11 4193-1756
+                                	</p>
+                                  <br />
+								                                
+                                </div>
+                               
+                               <div id="lojas_fisicas_ms">
+                                  <p>
+                                  	Bela Atleta - Campo Grande<br />Rua José Antonio Pereira, 21<br />Vila Rosa Pires - 67 9208-6643
+                                	</p>
+                                  <br />
+								                                
+                                </div>
+                                
+                                <div id="lojas_fisicas_pr">
+                                	
+                                    <p>
+                                        Kona Bikes - Curitiba<br />Av. Candido Hartmann, 1377<br />Bigorrilho - 41 3022-8324<br />
+                                        <a href="http://www.konatrishop.com.br/"><span class="sites">http://www.konatrishop.com.br/</span></a>
+                                	</p>
+                                  	<br />
+                                
+                                </div>
+                                
+                                <div id="lojas_fisicas_rs">
+                                	
+                                    <p>
+                                    	Espaço do Ciclista - Porto Alegre<br />Avenida Icarai, 782 - Loja 04<br />Cristal - 51 3085-5522
+                                    </p>
+																		<br />
+                                    <p>
+                                    	Espaço do Ciclista - Porto Alegre<br />Rua Dom Pedro II, 390 - Loja 108<br />São João - 51 3084-5545<br />
+                                      <a href="http://www.espacodociclista.com/index.php?route=product/search&keyword=mynd" target="_blank"><span class="sites">http://www.espacodociclista.com/</span></a>
+                                    </p>
+                                	<br />
+                                    
+                                </div>
+                                
+                                <div id="lojas_fisicas_sc">
+                                    <p>
+                                    	Hardt Korrer - Balneário Camboriu<br />Rua 3300, 3290<br />Centro - 47 3367-1562
+                                    </p>
+                                    <br />
+                                    
+                                    <p>
+                                    	Pedra Branca Bikes - Palhoca<br />Rua da Universidade, S/N<br />Cid. Universitária PE - 48 3241-0909
+                                    </p>
+                                    <br />
+                                    
+                                    
+                                    
+                                    <p>
+                                    	Della Bikes - Florianópolis<br />Rua Juvêncio Costa, 269<br />Trindade - 48 3234-5000<br />
+                                      <a href="http://www.dellabikes.com/" target="_blank"><span class="sites">www.rodociclo.com.br</span></a>
+                                    </p>
+                                    <br />
+                                    
+                                    <p>
+                                    	Pedalli Bike Store - Itajaí<br />Praça Felix Busso Asseburg, 84<br />Centro - 47 3241-4223<br />
+                                    	<a href="http://pedalli.com.br/" target="_blank"><span class="sites">http://pedalli.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                    
+                                    <p>
+                                    	Joel Bikes - Joinville<br />Rua Quinze de Novembro, 2339<br />Gloria - 47 3433-0076<br />
+                                    	<a href="http://www.joelbikes.com.br/index.php" target="_blank"><span class="sites">www.joelbikes.com.br</span></a>
+                                    </p>
+                                    <br />
+                                    
+                                    <p>
+                                    	360 Bike Store - Blumenau<br />Rua Sete de Setembro, 1921<br />Centro - 47 3041-4686<br />
+                                    	<a href="http://www.360shop.com.br/produtos.asp" target="_blank"><span class="sites">www.360shop.com.br</span></a>
+                                    </p>
+                                    <br />
+                                
+                                </div>
+                                
+                                <div id="lojas_fisicas_df">
+                                	
+                                    <p>Hidrosport - Brasília<br />Quadra CLN 110 Bloco D, Loja 18<br />Asa Norte - 61 3274-0591</p>
+																		<br />
+                                    <p>JC Bikes - Brasília<br />Rua 4B Chácara 01 Lote 06 - Loja 01<br />Col. Agrícola Vincente - 61 3522-7622</p>
+                                    <br />
+                                    <p>
+                                    	Super Bike 101 - Brasília<br />Quadra CLSW 101 Bloco C, Loja 30/32<br />Setor Sudoeste  - 61 3344-8042<br />
+                                      <a href="http://www.superbike101.com.br/" target="_blank"><span class="sites">http://www.superbike101.com.br/</span></a>
+                                    </p>
+                                    <br />
+                                    <p>
+                                    	Cycling Bike Shop - Brasília<br />SCLN 110 Bloco D, Loja 18<br />61 3274-0591 | 61 3349-2242<br />
+                                      <a href="http://www.cycling.com.br/" target="_blank"><span class="sites">http://www.cycling.com.br/</span></a>
+                                    </p>
+                                	<br />
+                                    <p>
+                                    	Bike’n Fix - Brasília<br />SCLN 403 - Bloco B - Lj 33<br />61 3327-1146 | 61 3327-1604<br />
+                                      <a href="http://www.urionperformance.com.br/" target="_blank"><span class="sites">http://www.urionperformance.com.br/</span></a>
+                                    </p>
+                                    <br>
+                                    
+                                    <p>
+                                    	Bike Brothers - Brasília<br />Quadra Cln, 101 - Bloco B - Asa Norte<br />61 3326-9170<br />
+                                    </p>
+                                    <br>
+                                    
+                                    <p>
+                                    	Eurorace - Brasília<br />Quadra Cln, 404 - Bloco B - Asa Norte<br />61 3327-1290<br />
+                                    </p>
+                                    <br>
+                                    
+                                </div>
+                                
+                                <div id="lojas_fisicas_es">
+                                	
+                                    <p>
+                                    	Quick Sports - Vila Velha<br />Avenida Henrique Moscoso, 1560<br />Centro - 27 3534-4204
+                                    </p>
+                                    <br />
+                                
+                                </div>
+                                
+                                <div id="lojas_fisicas_pb">
+                                	
+                                    <p>
+                                        Sport Point - João Pessoa<br />Av. Presidente Epitácio Pessoa, 5088<br />Cabo Branco - 83 3227-0102<br />
+                                        <a href="http://www.sportpoint.com.br/" target="_blank">http://www.sportpoint.com.br/</a>
+                                    </p>
+                                    <br />
+                                
+                                </div>
+                                    
+							                                
+                           </div>
+                           
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    
+                   
+                
+                </div>
+            
+            	<div class="contato-menu">
+                    <div class="float-left">
+                        <h3><img src="images/telefone.gif" alt="Telefone" width="111" height="16" title="Telefone" /></h3>
+                        <p>11 4193-1756</p>
+                    </div>
+                    <div class="float-left">
+                        <h3><img src="images/e-mail.gif" alt="E-Mail" width="75" height="15" title="E-Mail" /></h3>
+                        <a class="link_email" href="mailto:mynd@mynd.com.br" title="mynd@mynd.com.br">mynd@mynd.com.br</a>
+                    </div>
+                    <div class="float-left">
+                        <h3><img src="images/redes-sociais.gif" alt="Redes Sociais" width="162" height="16" title="Redes Sociais" /></h3>
+                        <ul>
+                            <!--<li><a href="#">Blog</a></li>-->
+                            <li class="rs_facebook"><a href="https://www.facebook.com/pages/Mynd-Sportswear/112500395483993?ref=hl" target="_blank" title="Facebook">Facebook</a></li>
+                            <li class="rs_twitter"><a href="https://twitter.com/MyndSportswear" target="_blank" title="Twitter">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="float-left">
+                        <h3><img src="images/onde-comprar.gif" alt="Onde comprar" width="174" height="16" title="Onde comprar" /></h3>
+                        <ul class="ondecomprar">
+                            <!--<li>
+                            	<a href="#" title="Lojas Físicas" class="lojas-fisicas2"><img src="images/contato-lojas-fisicas-botao.png" title="Lojas Físicas" alt="Lojas Físicas" width="191" height="37" /></a>
+                            </li>
+                            <li>
+                            	<a href="#" title="Lojas OnLine" class="lojas-fisicas2"><img src="images/contato-lojas-online-botao.png" title="Lojas OnLine" alt="Lojas OnLine" width="191" height="37" /></a>
+                            </li>-->
+                            <li><a href="#" title="Lojas Físicas" class="lojas-fisicas2 l_fisicas">Lojas Físicas</a></li>
+                            <li><a href="#" title="Lojas OnLine" class="lojas-online2 l_online">Lojas Online</a></li>
+                        </ul>
+                    </div>
+                     <div class="clear"></div>
+                    <div id="form-mensagem">
+                    	<h2><img src="images/title-form.png" width="145" height="18"  /></h2>
+                      <form action="enviar_formulario.php" method="post">
+                            <fieldset>
+                                <div class="esquerda">
+                                    <label>
+                                        <span>Nome</span>
+                                        <span class="campo">
+                                            <input type="text" name="nome"/>
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <span>E-mail</span>
+                                        <span class="campo">
+                                            <input type="text" name="email"/>
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <span>Telefone</span>
+                                        <span class="campo">
+                                            <input type="text" name="telefone" />
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="direita">
+                                    <label class="mensagem">
+                                        <span>Mensagem</span>
+                                        <span class="campo">
+                                            <textarea name="mensagem"></textarea>
+                                        </span>
+                                    </label>
+                                     <div class="clear"></div>
+                                    <input type="submit" class="btn-enviar" href="" title="Enviar"></a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+    </div>
+
+	<div class="rodape">
+    
+    	<div class="twitter_facebook">
+        
+        	
+        	<span>11 4193-1756</span>
+        	<ul>
+            	<!--<li class="blog"><a href="#" title="Confira nosso Blog">BLOG</a></li>-->
+                <li class="twitter"><a href="https://twitter.com/MyndSportswear" title="Nos siga no Twitter">TWITTER</a></li>
+            	<li class="facebook"><a href="https://www.facebook.com/pages/Mynd-Sportswear/112500395483993?ref=hl" title="Curta nossa página no Facebook">FACEBOOK</a></li>
+            </ul>
+
+            <!--<a href="#" title="Confira nosso Blog" class="blog">BLOG</a> <a href="#" title="Nos siga no Twitter" id="twitter_btn">TWITTER</a> <a href="#" id="facebook_btn" title="Curta nossa página no Facebook">FACEBOOK</a>-->
+            
+        </div>
+        
+        <ul class="rodape_menu">
+        	<li id="btn_ondecomprar"><span>ONDE COMPRAR </span><img src="images/arrow-up.png" width="11" height="14" alt="Onde comprar" title="Onde comprar" /></li>
+            <li id="btn_lojaoficial"><span>LOJA OFICIAL </span><img src="images/arrow-up.png" width="11" height="14" alt="Loja Oficial" title="Loja Oficial" /></li>
+        </ul>
+        
+       <div class="over_onde_comprar">
+        	<ul>
+                <li><a href="#" title="Lojas Físicas" id="rodape_lojasfisicas">Lojas Físicas</a></li>
+                <li><a href="#" title="Lojas Online Power" id="rodape_lojasonline">Lojas OnLine</a></li>
+            </ul>
+       </div>
+       
+       
+       <div class="over_loja_oficial">
+        	<a class="loja_img" href="http://www.mynd.com.br/loja" title="Loja Oficial">
+          	<img src="images/loja-oficial-rodape.jpg" width="167" height="131" title="Loja Oficial" alt="Loja Oficial" />
+          </a> 
+            <a href="http://www.mynd.com.br/loja" title="Acessar loja">Acessar loja</a>
+       </div>
+       
+       
+            
+    </div>
+
+</body>
+</html>

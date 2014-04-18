@@ -1,0 +1,105 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background: #fff; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; }
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+.bg-azul{ height: 226px; background: #83c2c5; width: 100%; position: absolute; left: 0%; bottom: 64px; }
+.div-content img { position: absolute; left: 51%; z-index: 1; }
+.titulo { margin-left: -380px; top: 25px; }
+.vendedor { margin-left: -380px; top: 158px; }
+.alcanca { margin-left: -375px; top: 262px; }
+.carga { margin-left: -342px; top: 345px; z-index:3 !important; }
+.mulher-img { margin-left: 110px; bottom: 0px; z-index: 3; }
+.depilador-img { margin-left: -103px; bottom: 0px; }
+.garantia { margin-left: 312px; top: 86px; }
+.selo-voltagem { margin-left: 312px; top: 22px; }
+
+#call-to-action { margin-left: -368px; bottom: 38px; z-index: 2 !important; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="bg-azul"></div>
+        
+      <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/viver-a-vontade.png" width="472" height="90" alt="Viver a vontade" title="Viver a Vontade" class="titulo" />
+                
+                <img src="caracteristicas/page1/versatilidade-na-hora-da-depilacao.png" width="273" height="53" alt="Versatilidade na hora da depilação. No banho ou a seco, o depilador perfeito para você." title="Versatilidade na hora da depilação. No banho ou a seco, o depilador perfeito para você." class="vendedor" />
+                
+                <img src="caracteristicas/page1/alcance.png" width="203" height="56" alt="Alcança pelos a partir de 0,5 mm" title="Alcança pelos a partir de 0,5 mm" class="alcanca" />
+                
+                <img src="caracteristicas/page1/tempo-de-carga.png" width="244" height="56" alt="1 hora de carga equivale a 40 minutos de uso!" title="1 hora de carga equivale a 40 minutos de uso!" class="carga" />
+                
+                <img src="caracteristicas/page1/frente-depilador-Philips-SatinPerfect.jpg" alt="frente do depilador Satinelle HP6575" title="Wet &amp; Dry use" class="depilador-img" />
+                
+                <img src="caracteristicas/page1/mulher-depilador-philips.png" width="345" height="493" alt="mulher segurando o depilador Philips" title="" class="mulher-img" />
+                
+                <img src="caracteristicas/page1/100-240v.png" width="54" height="53" alt="110-240V" title="110-240V" class="selo-voltagem" />
+                
+                <img src="caracteristicas/page1/2-anos-de-garantia.png" width="54" height="53" alt="2 anos de garantia" title="2 anos de garantia" class="garantia" />
+                
+                <a href="#"><img src="caracteristicas/page1/perfeito-para-voce.png" width="224" height="61" alt="Perfeito para você" id="call-to-action" title="Perfeito para você" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//bg-azul
+	TweenMax.from( $(".bg-azul") , 1, { css: { width: "0"} , ease: Circ.easeInOut, delay:.9});
+	
+	//Título
+	TweenMax.from( $(".titulo") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2});
+	
+	//txt
+	TweenMax.from( $(".vendedor") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2.3});
+	
+	//alcança
+	TweenMax.from( $(".alcanca") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2.6});
+	
+	//carga
+	TweenMax.from( $(".carga") , 1, { css: { alpha: 0, top: "-=100px" } , ease: Strong.easeOut, delay: 2.9});
+	
+	//depilador
+	TweenMax.from( $(".depilador-img") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay: 3.2});
+	
+	//mulher
+	TweenMax.from( $(".mulher-img") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay: 3.5});
+	
+	//voltagem
+	TweenMax.from( $(".selo-voltagem") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay: 3.9});
+	
+	//garantia
+	TweenMax.from( $(".garantia") , 1, { css: { alpha: 0, left: "+=100px" } , ease: Strong.easeOut, delay: 4.2});
+	
+	
+	//call to action
+	TweenMax.from( $("#call-to-action") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:4.7, onComplete: function() {
+			
+		TweenMax.to( $("#call-to-action"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+		$("#call-to-action").hover(function(e) {
+				TweenMax.to( $("#call-to-action") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action" , "caracteristicas2.html", true );
+		
+	}});
+});
+</script>

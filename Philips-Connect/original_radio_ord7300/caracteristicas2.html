@@ -1,0 +1,69 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/page2/bg-caracteristicas2.jpg) repeat center 0; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.design { background: url(caracteristicas/page2/bg-radios.png) repeat; text-align: right; position: absolute; right: 50%; width: 1377px; height: 130px; top: 25px; margin-right: -417px; }
+.design img { text-align: right; position: static; display: inline; }
+.design-comemorativo { margin-left: -377px; top: 49px; }
+.radio-img { margin-left: -397px; top: 236px; }
+.acabamento-txt { margin-left: 151px; top: 225px; }
+.detalhe { margin-left: -75px; bottom: 76px; }
+.call-to-action2 { bottom: 27px; margin-left: 103px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    	<div class="bg-magenta"></div>
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+            	<div class="design">
+            		<img src="caracteristicas/page2/radios-antigos.jpg" width="451" height="130" alt="Rádios antigos" title="rádios antigos" />
+            	</div>
+            	
+            	<img src="caracteristicas/page2/design-comemorativo.png" width="319" height="79" alt="Design comemorativo, inspirado no modelo original do Philetta, um dos rádios da Philips de maior sucesso na década de 50!" title="Design comemorativo, inspirado no modelo original do Philetta, um dos rádios da Philips de maior sucesso na década de 50!" class="design-comemorativo" />
+                
+                <img src="caracteristicas/page2/frente-radio.png" width="403" height="250" alt="Frente do Original Radio Philips" title="Frente do Original Radio Philips" class="radio-img" />
+                
+                <img src="caracteristicas/page2/detalhe-botao.png" width="219" height="288" alt="Detalhe do acabamento do Original Radio Philips" title="Detalhe do acabamento do Original Radio Philips" class="detalhe" />
+                
+                <img src="caracteristicas/page2/acabamento-especial-em-madeira-e-aco-escovado.png" width="233" height="43" alt="Acabamento especial em madeira e aço escovado" title="Acabamento especial em madeira e aço escovado" class="acabamento-txt" />
+                
+                <a href="#"><img src="caracteristicas/page2/dock-para-ipod-iphone.png" width="269" height="57" alt="Dock para iPod/iPad" title="Dock para iPod/iPad" class="call-to-action2" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".detalhe") , 1.5, { css: { width:0, height:0 } , ease: Strong.easeOut, delay:.3});
+	TweenMax.from( $(".design") , 2, { css: { width:0 } , ease: Strong.easeOut, delay:1});
+	TweenMax.from( $(".design img") , 1, { css: { alpha:0 } , ease: Strong.easeOut, delay:2.6});
+	TweenMax.from( $(".design-comemorativo") , .5, { css: { top:"-=50px", alpha:0 } , ease: Strong.easeOut, delay:2.8});
+	TweenMax.from( $(".acabamento-txt") , .5, { css: { top:"-=50px", alpha:0 } , ease: Strong.easeOut, delay:3.2});
+	
+	//call to action
+	TweenMax.from( $(".call-to-action2") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:3.5, onComplete: function() {
+			
+		TweenMax.to( $(".call-to-action2"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+		
+	}} );
+	
+	$(".call-to-action2").hover(function(e) {
+            TweenMax.to( $(".call-to-action2") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".call-to-action2") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".call-to-action2" , "caracteristicas3.html", true );
+	
+		
+});
+</script>

@@ -1,0 +1,190 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#01020b url(caracteristicas/background.jpg) no-repeat 50% 0; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+#background-circulo{ background:url(caracteristicas/page4/background-circulo.jpg) no-repeat; width:140px; height:230px; margin-left:0; top:0;}
+
+.tv-frontal{ margin-left:-720px; top:0;}
+
+.mouse{ margin-left:80px; top:280px;}
+#menu{ width:400px; height:68px; margin-left:11px; top:305px; z-index:2;}
+#menu img{ margin:0; padding:0; border:none; float:left; cursor:pointer;}
+
+.features{ width:400px; height:200px; margin-left:15px; top:100px;}
+#full{ display:none;}
+#full .logo{ margin-left:-185px; top:20px;}
+#full .titulo{ margin-left:-85px; top:20px;}
+#full .paragrafo{ margin-left:-85px; top:60px;}
+#perfect{ display:none;}
+#perfect .logo{ margin-left:-190px; top:30px;}
+#perfect .titulo{ margin-left:-85px; top:20px;}
+#perfect .paragrafo{ margin-left:-85px; top:85px;}
+#dtvi{ display:none;}
+#dtvi .logo{ margin-left:-195px; top:40px;}
+#dtvi .titulo{ margin-left:-85px; top:20px;}
+#dtvi .paragrafo{ margin-left:-85px; top:60px;}
+#skype{ display:none;}
+#skype .logo{ margin-left:-200px; top:40px;}
+#skype .titulo{ margin-left:-85px; top:20px;}
+#skype .paragrafo{ margin-left:-85px; top:60px;}
+#espelhamento{ display:none;}
+#espelhamento .logo{ margin-left:-195px; top:20px;}
+#espelhamento .titulo{ margin-left:-85px; top:-15px;}
+#espelhamento .paragrafo{ margin-left:-85px; top:50px;}
+#program{ display:none;}
+#program .logo{ margin-left:-180px; top:20px;}
+#program .titulo{ margin-left:-85px; top:20px;}
+#program .paragrafo{ margin-left:-85px; top:60px;}
+
+#call-to-action4{ margin-left:160px; bottom:20px;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($("#background-circulo"), .5, {css:{alpha:0}, ease:Back.easeOut, delay:.2});
+	
+	TweenMax.from($(".tv-frontal"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($("#menu"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".mouse"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	
+	// Função Hover
+	var _arr = {"#btn-full": "#full", "#btn-perfect": "#perfect", "#btn-dtvi": "#dtvi", "#btn-skype": "#skype", "#btn-espelhamento": "#espelhamento", "#btn-program": "#program"};
+	var _divAnt = null;
+	
+	$.each(_arr, function(ind, val){
+		$(ind).css({"opacity": 0.5});
+		var _posIni = null;
+		if(_posIni == null){
+			_posIni = $(val).css("top");
+		}
+		if(_divAnt == null){
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block"});
+			TweenMax.from($(val), .5, {css:{alpha:0}, ease:Back.easeOut, delay:1, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});
+			_divAnt = [ind, val];
+		}
+		$(ind).on("mouseenter", function(e){
+			_esconde(_divAnt);
+			$(ind).css({"opacity": 1});
+			$(val).css({"display": "block",
+						"opacity": 1});
+			TweenMax.from($(val), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, onComplete: function(e){
+				$(val).css("top", _posIni);
+			}});	
+		});
+		$(ind).on("mouseleave", function(e){
+			_divAnt = [ind, val];
+		});
+	});
+	
+	function _esconde(div){
+		$(div[0]).css({"opacity": 0.5});
+		$(div[1]).css({"opacity": 0});
+		TweenMax.from($(div[1]), .5, {css:{alpha:1}, ease:Back.easeOut, onComplete: function(e){
+			$(div[1]).css("display", "none");
+		}});		
+	}
+	// Fim Função Hover
+	
+	//call to action
+	TweenMax.from( $("#call-to-action4") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.2, onComplete: function() {
+		TweenMax.to( $("#call-to-action4"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action4").hover(function(e) {
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action4") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action4" , "caracteristicas5.html", true );	
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <div id="background-circulo" class="absoluto"></div>
+                <img src="caracteristicas/page4/tv-frontal.png" width="853px" height="520px" alt="SmartTV" title="SmartTV" class="absoluto tv-frontal" />
+                
+                <img src="caracteristicas/page4/passe-o-mouse-e-conheca-as-outras-tecnologias.png" width="270px" height="14px" class="absoluto mouse" />
+                <div id="menu" class="absoluto">
+                	<img src="caracteristicas/page4/btn-full-hd-led.jpg" width="70px" height="68px" alt="Full HD LED" title="Full HD LED" id="btn-full" />
+                    <img src="caracteristicas/page4/btn-360hz.jpg" width="65px" height="68px" alt="360Hz Perfect Motion Rate" title="360Hz Perfect Motion Rate" id="btn-perfect" />
+                    <img src="caracteristicas/page4/btn-dtvi.jpg" width="64px" height="68px" alt="DTVi" title="DTVi" id="btn-dtvi" />
+                    <img src="caracteristicas/page4/btn-skype.jpg" width="65px" height="68px" alt="Skype" title="Skype" id="btn-skype" />
+                    <img src="caracteristicas/page4/btn-miracast.jpg" width="69px" height="68px" alt="Espelhamento de Conteúdo" title="Espelhamento de Conteúdo" id="btn-espelhamento" />
+                    <img src="caracteristicas/page4/btn-program.jpg" width="67px" height="68px" alt="Program" title="Program" id="btn-program" />
+                </div>
+                
+                <a href="#"><img src="caracteristicas/page4/btn-voce-no-comando.png" width="246px" height="66px" alt="Você no comando" title="Você no comando" class="absoluto" id="call-to-action4" /></a>
+                
+                <div id="full" class="absoluto features">
+                	<img src="caracteristicas/page4/full-hd-led-logo.png" width="77px" height="99px" alt="Full HD LED" title="Full HD LED" class="absoluto logo" />
+                    <img src="caracteristicas/page4/full-hd-led-titulo.png" width="152px" height="19px" alt="Full HD LED" title="Full HD LED" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/full-hd-led-paragrafo.png" width="228px" height="36px" alt="Alta definição de imagem, mais detalhes e cores mais nítidas." title="Alta definição de imagem, mais detalhes e cores mais nítidas." class="absoluto paragrafo" />
+                </div>
+                
+                <div id="perfect" class="absoluto features">
+                	<img src="caracteristicas/page4/360hz-logo.png" width="95px" height="53px" alt="360Hz Perfect Motion Rate" title="360Hz Perfect Motion Rate" class="absoluto logo" />
+                    <img src="caracteristicas/page4/360hz-titulo.png" width="167px" height="44px" alt="360Hz Perfect Motion Rate" title="360Hz Perfect Motion Rate" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/360hz-paragrafo.png" width="218px" height="39px" alt="Maior nitidez e definição para imagens em movimento." title="Maior nitidez e definição para imagens em movimento." class="absoluto paragrafo" />
+                </div>
+                
+                <div id="dtvi" class="absoluto features">
+                	<img src="caracteristicas/page4/dtvi-logo.png" width="95px" height="46px" alt="DTVi" title="DTVi" class="absoluto logo" />
+                    <img src="caracteristicas/page4/dtvi-titulo.png" width="55px" height="18px" alt="DTVi" title="DTVi" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/dtvi-paragrafo.png" width="203px" height="60px" alt="Conversor integrado e interativo para recepção de sinal digital na sua TV." title="Conversor integrado e interativo para recepção de sinal digital na sua TV." class="absoluto paragrafo" />
+                </div>
+                
+                <div id="skype" class="absoluto features">
+                	<img src="caracteristicas/page4/skype-logo.png" width="100px" height="43px" alt="Skype" title="Skype" class="absoluto logo" />
+                    <img src="caracteristicas/page4/skype-titulo.png" width="82px" height="21px" alt="Skype" title="Skype" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/skype-paragrafo.png" width="243px" height="61px" alt="Faça chamadas de voz e vídeo com o Skype&reg;*.*Câmera PTA317 para TV vendida separadamente." title="Faça chamadas de voz e vídeo com o Skype&reg;*.*Câmera PTA317 para TV vendida separadamente." class="absoluto paragrafo" />
+                </div>
+                
+                <div id="espelhamento" class="absoluto features">
+                	<img src="caracteristicas/page4/miracast-logo.png" width="101px" height="67px" alt="Espelhamento de Conteúdo" title="Espelhamento de Conteúdo" class="absoluto logo" />
+                    <img src="caracteristicas/page4/miracast-titulo.png" width="188px" height="45px" alt="Espelhamento de Conteúdo" title="Espelhamento de Conteúdo" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/miracast-paragrafo.png" width="247px" height="114px" alt="Com o Miracast* você espelha a tela de seu smartphone, tablet ou laptop com a tela da TV em qualidade Full HD. *Compatível com Android 4.2 ou Laptops com Wi-Fi Direct 3.5/4.0." title="Com o Miracast* você espelha a tela de seu smartphone, tablet ou laptop com a tela da TV em qualidade Full HD. *Compatível com Android 4.2 ou Laptops com Wi-Fi Direct 3.5/4.0." class="absoluto paragrafo" />
+                </div>
+                
+                <div id="program" class="absoluto features">
+                	<img src="caracteristicas/page4/program-logo.png" width="73px" height="85px" alt="Program" title="Program" class="absoluto logo" />
+                    <img src="caracteristicas/page4/program-titulo.png" width="120px" height="19px" alt="Program" title="Program" class="absoluto titulo" />
+                    <img src="caracteristicas/page4/program-paragrafo.png" width="247px" height="77px" alt="Programa e pausa* o conteúdo na hora que você quiser.*É necessário um dispositivo de memória externa." title="Programa e pausa* o conteúdo na hora que você quiser.*É necessário um dispositivo de memória externa." class="absoluto paragrafo" />
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

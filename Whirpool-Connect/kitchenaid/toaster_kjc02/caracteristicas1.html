@@ -1,0 +1,99 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/page1/background.jpg) 50% 50% no-repeat; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .toaster{ margin-left:-410px; bottom:0px;}
+.connect-container .circulo{ margin-left:-22px; bottom:0px;}
+
+.connect-container h2{ font-family: 'Humanist521BT-Light'; font-size:35px; line-height:35px; color:#1d1d1d; margin-left:-2px; top:22px;}
+.connect-container h2 strong{ font-family: 'Humanist521BT-Roman'; }
+
+.connect-container .conteudo{ margin-left:48px; top:144px; color:#FFF;}
+.connect-container .conteudo h3{ font-family: 'Humanist521BT-Light'; font-size:27px; line-height:22px; margin-bottom:15px;}
+.connect-container .conteudo h3 strong{ font-family: 'Humanist521BT-Roman'; font-size:20px; line-height:20px;}
+.connect-container .conteudo p{ font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#f1f1f1; opacity:.8}
+
+.connect-container #call-to-action1{ margin-left:20px; bottom:20px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action1"), "fadeInRight", "s10", "caracteristicas2.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page1/toaster.png" width="395px" height="412px" alt="" title="" class="absoluto toaster animated fadeInLeft s05" />
+                <img src="caracteristicas/page1/circulo.png" width="427px" height="471px" alt="" title="" class="absoluto circulo animated fadeInRight s06" />
+                
+                <h2 class="absoluto animated fadeInDown s07"><strong>KitchenAid.</strong>Culinária é arte.</h2>
+                
+                <div class="absoluto conteudo">
+                	<h3 class="animated fadeInLeft s08">Um toque de sofisticação <br />
+                    <strong>e design para a sua cozinha.<strong></h3>
+                    <p class="animated fadeInLeft s09">Sabemos que, muito mais que cozinhar, é na<br />
+                    cozinha que você se expressa, cria e<br />
+                    transforma o cotidiano em algo especial. Com<br />
+                    a Torradeira KitchenAid, você terá as<br />
+                    ferramentas necessárias para se expressar da<br />
+                    melhor maneira. Sua versatilidade, design e<br />
+                    performance aguçam a sua criatividade,<br />
+                    permitindo que seus pães fiquem ainda mais<br />
+                    deliciosos e saborosos.</p>
+                </div>
+                
+         		
+                <img src="caracteristicas/page1/btn-potencia-e-elegancia.png" width="347px" height="37px" alt="Potência e elegância" title="Potência e elegância" class="absoluto animated fadeInRight s10" id="call-to-action1" />
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

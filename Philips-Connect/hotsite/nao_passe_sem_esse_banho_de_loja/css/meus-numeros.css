@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#content{ background-color: #f1eeee; }
+
+.container{ left: 50%; margin-left: -456px; padding: 86px 0 15px 0; width: 925px; }.container .dados-cliente { float: left; }
+.container .dados-cliente h2 { font-size: 18px; color: #474343; margin-bottom: 15px; }
+.container .dados-cliente li { font-size: 14px; color: #474343; margin-bottom: 5px; }
+.container .dados-cliente a { background: url(../meus_numeros/images/alterar.png); width: 92px; padding-top: 25px; }
+.container .numeros { float: right; border-left: 1px solid #ca8e8f; width: 626px; padding-left: 27px; }
+.container .numeros #meus-numeros span { font-size: 25px; color: #FFF; background: #ed1c24; text-align: center; height: 38px; width: 165px; box-shadow: #9d1c1e 3px 3px 0; margin: 0 25px 25px 0; float: left; padding-top: 7px; display: block; }
+.container .numeros .cadastrar-mais { margin-top: 300px; }
+.container .numeros .cadastrar-mais label { font-size: 16px; color: #565757; margin: 0 10px 10px 0; float: left; }
+.container .numeros .cadastrar-mais .duvida { background: url(../meus_numeros/images/duvida.png) center no-repeat; width: 15px; padding-top: 23px; }
+.container .numeros .cadastrar-mais input { padding: 0 10px; width: 327px; border: none; height: 31px; box-shadow: #e7d1b5 3px 3px 0; font-size: 16px; color: #565757; float: left; margin-right:10px; }
+.container .numeros .cadastrar-mais button{ float: left; background: url(../meus_numeros/images/cadastrar-mais-notas-fiscais.png) no-repeat; display: block; height: 32px; width: 268px; border:none; cursor:pointer; }

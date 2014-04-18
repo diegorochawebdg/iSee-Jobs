@@ -1,0 +1,69 @@
+<style type="text/css">
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; }	
+.holder_interna { width: 100%; height: 520px; position: absolute; background: url(caracteristicas/bg-body.jpg) repeat-x; }
+.content-center {margin: 0 auto; width: 956px; height: 520px;}
+.content-center .div-content { margin: 0 auto; width: 820px; height: 520px;}
+.container_interna img{display:block; position:absolute; left:50%;}
+.titulo { margin-left: -5px; top: 63px; }
+.barbeador-img { margin-left: -272px; bottom: 0px; z-index: 2; }
+.resultado { margin-left: -402px; top: 171px; }
+.lista1, .lista2, .lista3, .lista4{ margin-left:-105px;}
+.lista1{top:158px;}
+.lista2{top:214px;}
+.lista3{top:267px;}
+.lista4{top:320px;}
+.call-to-action1 { margin-left: 106px; bottom: 34px; }
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        <div class="content-center">
+            <div class="div-content">
+            	
+            	<img src="caracteristicas/page1/aparador-de-barba-qt4015.png" width="329" height="52" alt="Aparador de Barba QT4015" title="Aparador de Barba QT4015"  class="titulo" />
+                
+                <img src="caracteristicas/page1/frente-barbeador.png" width="363" height="474" alt="Frente do barbeador" title="Frente do barbeador" class="barbeador-img" />
+                
+                <img src="caracteristicas/page1/resultado-preciso-e-suave.png" width="221" height="138" alt="Resultado preciso e suave" title="Resultado preciso e suave" class="resultado" />
+                
+                <img src="caracteristicas/page1/formato-ergonomico.png" width="506" height="56" alt="Formato ergonômico" title="Formato ergonômico" class="lista1" />
+                
+                <img src="caracteristicas/page1/20-ajustes-de-altura.png" width="506" height="53" alt="20 ajustes de altura" title="20 ajustes de altura" class="lista2" />
+                
+                <img src="caracteristicas/page1/laminas-de-titanio.png" width="506" height="53" alt="Lâminas de titânio" title="Lâminas de titânio" class="lista3" />
+                
+                <img src="caracteristicas/page1/use-com-ou-sem-fio.png" width="505" height="52" alt="Use com ou sem fio" title="Use com ou sem fio" class="lista4" />
+                
+                <a href="#" title="Sua barba do seu jeito"><img src="caracteristicas/page1/sua-barba-do-seu-jeito.png" width="288" height="74" alt="Sua barba do seu jeito" title="Sua barba do seu jeito" class="call-to-action1" /></a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from( $(".barbeador-img") , .5, { css: { alpha: 0, bottom: "-=50px" } , ease: Strong.easeOut, delay:.5});
+	TweenMax.from( $(".titulo") , .5, { css: { alpha: 0, top: "-=50px" } , ease: Strong.easeOut, delay:.5});
+	TweenMax.from( $(".resultado") , .5, { css: { alpha: 0, left: "-=50px" } , ease: Strong.easeOut, delay:.8});
+	TweenMax.from( $(".lista1") , 1, { css: { alpha: 0, left: "-=50px" } , ease: Strong.easeOut, delay:1});
+	TweenMax.from( $(".lista2") , 1, { css: { alpha: 0, left: "-=50px" } , ease: Strong.easeOut, delay:1.2});
+	TweenMax.from( $(".lista3") , 1, { css: { alpha: 0, left: "-=50px" } , ease: Strong.easeOut, delay:1.4});
+	TweenMax.from( $(".lista4") , 1, { css: { alpha: 0, left: "-=50px" } , ease: Strong.easeOut, delay:1.6});
+	
+	TweenMax.from( $(".call-to-action1") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:2, onComplete: function() {
+		TweenMax.to( $(".call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	}} );
+	
+	$(".call-to-action1").hover(function(e) {
+            TweenMax.to( $(".call-to-action1") , .4, { css: { alpha: .8 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	Connect.addCallToAction( ".call-to-action1" , "caracteristicas2.html", true );
+	
+		
+});
+</script>

@@ -1,0 +1,71 @@
+<style type="text/css">
+
+.connect-container .container_interna {  	height: 520px; 	padding: 0; 	position: relative; 	overflow:hidden; 	background: url(caracteristicas/page1/bg.jpg) 50% 50% no-repeat; }
+.connect-container .holder_interna {  	width: 100%; 	height: 520px; 	position: absolute; }
+.connect-container .content-center { 	margin: 0 auto; 	width: 956px; 	height: 520px; }
+.connect-container .content-center .div-content {  	margin: 0 auto; 	width: 820px; 	height: 520px; 	position: relative; }
+.connect-container .content-center .div-content *{font-family:GillSans, Arial, sans-serif;}
+
+/* CSS */
+
+.connect-container .container_interna .absolute{ position:absolute; left:50%;}
+.connect-container .link-padding{height:0; position: relative; overflow: hidden; display: block;}
+    
+.connect-container h2{top:23px; margin-left:-397px; font-size:19px; color:#ed1c24;}
+.connect-container .txt-vendedor{top:68px; margin-left:-397px; width:340px;}
+.connect-container .txt-vendedor h3{font-size:39px; color:#ed1c24; margin-bottom:10px;}
+.connect-container .txt-vendedor p{font-size:15px; color:#333; line-height:1.2em;}
+.connect-container .txt-vendedor p strong{font-weight:bold;}
+.connect-container .garantia{top:232px; margin-left:-397px;}
+.connect-container .call-to-action{background:url(caracteristicas/page1/velocidade-e-praticidade.png) no-repeat; width:293px; padding-top:59px; bottom:12px; margin-left:73px;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s11{ -webkit-animation-delay:1.1s; -moz-animation-delay:1.1s; -o-animation-delay:1.1s; animation-delay:1.1s;}
+.connect-container .s15{ -webkit-animation-delay:1.5s; -moz-animation-delay:1.5s; -o-animation-delay:1.5s; animation-delay:1.5s;}
+
+</style>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+            	<h2 class="absolute animated s05 fadeInDown">Batedeira Philips Walita Daily RI7000/9</h2>
+                
+                <div class="txt-vendedor absolute">
+                    <h3 class="amarelinha animated s07 fadeInDown">Seu dia a dia mais prático</h3>
+                    <p class="animated s09 fadeInDown">Você vai preparar diversas receitas todos os dias com a <strong>Batedeira Daily RI7000!</strong> Com 3 velocidades, tigela resistente de 3,9 litros e 250W de potência, ela vai ajudar você a fazer sucesso na cozinha!</p>
+                </div>
+                
+                <img src="caracteristicas/page1/2-anos-de-garantia.png" width="78" height="78" alt="2 anos de garantia" title="2 anos de garantia" class="absolute garantia animated s11 fadeInDown">
+                
+                <a href="#" class="call-to-action absolute link-padding animated fadeInRight s15">Velocidade e praticidade</a>
+                
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container .call-to-action"), "fadeInRight", "s15", "caracteristicas2.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+		
+});
+
+</script>

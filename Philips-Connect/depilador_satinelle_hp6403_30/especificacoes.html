@@ -1,0 +1,49 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+
+.conteudo{ position:absolute; left:50%; margin-left:-330px; top:64px;}
+.depilador{ position:absolute; left:50%; margin-left:58px; top:50px;}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                <img src="cliente/conteudo-da-embalagem.png" width="306px" height="336px" alt="Conteúdo da Embalagem | Depilador Philips Satinelle HP6403/30 | Capa de Otimização | Capa de Eficiência com Massageador | Capa Aparadora com Pente | Necessaire | Garantia | Manual de instruções" title="Conteúdo da Embalagem | Depilador Philips Satinelle HP6403/30 | Capa de Otimização | Capa de Eficiência com Massageador | Capa Aparadora com Pente | Necessaire | Garantia | Manual de instruções" class="conteudo" />
+                <img src="cliente/depilador.png" width="277px" height="470px" alt="Nova linha de Depiladores Philips Satinelle | HP 6403/30" title="Nova linha de Depiladores Philips Satinelle | HP 6403/30" class="depilador" />         
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,115 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/page1/background.jpg) repeat-x; }	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+	position:relative;
+}
+
+.absoluto{ position:absolute; left:50%;}
+
+.modelo{ margin-left:-456px; bottom:0;}
+.depilador{ margin-left:170px; top:98px;}
+.titulo{ margin-left:-175px; top:25px;}
+.viver{ margin-left:-180px; top:52px;}
+.subtitulo{ margin-left:-172px; top:102px;}
+.bivolt{ margin-left:34px; top:134px;}
+.garantia{ margin-left:100px; top:134px;}
+.tenha-a-mao{ margin-left:-275px; top:226px;}
+.paragrafo{ margin-left:-275px; top:274px; opacity:.7;}
+.experimente{ margin-left:115px; top:294px;}
+.capa-redutora{ margin-left:-285px; top:375px;}
+.cabeca{ margin-left:-65px; top:390px;}
+.acompanha{ margin-left:-285px; top:448px;}
+.capa-que{ margin-left:-110px; top:435px;}
+
+#call-to-action1{ margin-left:134px; bottom:18px;}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	TweenMax.from($(".modelo"), .5, {css:{left:"-=80px", alpha:0}, ease:Back.easeOut, delay:.4});
+	TweenMax.from($(".depilador"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.5});
+	
+	TweenMax.from($(".titulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.6});
+	TweenMax.from($(".viver"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.7});
+	TweenMax.from($(".subtitulo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:.8});
+	
+	TweenMax.from($(".bivolt"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:.9});
+	TweenMax.from($(".garantia"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:1});
+	
+	TweenMax.from($(".tenha-a-mao"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.1});
+	TweenMax.from($(".paragrafo"), .5, {css:{top:"-=40px", alpha:0}, ease:Back.easeOut, delay:1.2});
+	TweenMax.from($(".experimente"), .5, {css:{left:"+=80px", alpha:0}, ease:Back.easeOut, delay:1.3});
+	
+	TweenMax.from($(".capa-redutora"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.4});
+	TweenMax.from($(".cabeca"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.5});
+	TweenMax.from($(".acompanha"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.6});
+	TweenMax.from($(".capa-que"), .5, {css:{top:"+=40px", alpha:0}, ease:Back.easeOut, delay:1.7});
+	
+	//call to action
+	TweenMax.from( $("#call-to-action1") , 1, { css: { left: "+=400px", width: "0" , alpha: 0 } , ease: Strong.easeOut, delay:1.8, onComplete: function() {
+		TweenMax.to( $("#call-to-action1"), .3, { css: { left: "+=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+		$("#call-to-action1").hover(function(e) {
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+			}, function(){
+				TweenMax.to( $("#call-to-action1") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+		});
+		Connect.addCallToAction( "#call-to-action1" , "caracteristicas2.html", true );
+	}} );
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+                
+                <img src="caracteristicas/page1/modelo.png" width="292px" height="515px" alt="Nova linha de Depiladores Philips Satinelle | HP 6403/30" title="Nova linha de Depiladores Philips Satinelle | HP 6403/30" class="absoluto modelo" />
+                <img src="caracteristicas/page1/depilador.png" width="220px" height="423px" alt="Nova linha de Depiladores Philips Satinelle | HP 6403/30" title="Nova linha de Depiladores Philips Satinelle | HP 6403/30" class="absoluto depilador" />
+                
+                <img src="caracteristicas/page1/title-nova-linha-de-depiladores-philips-satinelle-hp6403-30.png" width="360px" height="16px" alt="Nova linha de Depiladores Philips Satinelle | HP 6403/30" title="Nova linha de Depiladores Philips Satinelle | HP 6403/30" class="absoluto titulo" />
+                <img src="caracteristicas/page1/viver-a-vontade.png" width="354px" height="42px" alt="Viver a vontade" title="Viver a vontade" class="absoluto viver" />
+                <img src="caracteristicas/page1/depilador-rapido-e-pratico.png" width="172px" height="15px" alt="Depilador rápido e prático" title="Depilador rápido e prático" class="absoluto subtitulo" />
+                
+                <img src="caracteristicas/page1/selo-bivolt.png" width="54px" height="53px" alt="100 - 240v" title="100 - 240v" class="absoluto bivolt" />
+                <img src="caracteristicas/page1/selo-garantia.png" width="53px" height="53px" alt="2 anos de garantia" title="2 anos de garantia" class="absoluto garantia" />
+                
+                <img src="caracteristicas/page1/tenha-a-mao-um-depilador-com-sistema-exclusivo-e-um-kit-de-acessorios-completo.png" width="366px" height="32px" alt="Tenha à mão um depilador com sistema exclusivo e um kit de acessórios completo." title="Tenha à mão um depilador com sistema exclusivo e um kit de acessórios completo." class="absoluto tenha-a-mao" />
+                <img src="caracteristicas/page1/paragrafo.png" width="338px" height="63px" alt="Remova os pelos da pele com mais conforto e com melhores resultados do que uma depilação comum. O depilador feminino da Philips remove os pelos pela raiz e deixa sua pele macia e lisa por mais tempo." title="Remova os pelos da pele com mais conforto e com melhores resultados do que uma depilação comum. O depilador feminino da Philips remove os pelos pela raiz e deixa sua pele macia e lisa por mais tempo." class="absoluto paragrafo" />
+                
+                <img src="caracteristicas/page1/selo-experimente.png" width="100px" height="100px" alt="Experimente por 90 dias ou seu dinheiro de volta" title="Experimente por 90 dias ou seu dinheiro de volta" class="absoluto experimente" />
+                
+                <img src="caracteristicas/page1/feature-capa-redutora.png" width="207px" height="61px" alt="Capa redutora - diminui a área de atuação" title="Capa redutora - diminui a área de atuação" class="absoluto capa-redutora" />
+                <img src="caracteristicas/page1/feature-cabeca.png" width="173px" height="48px" alt="Cabeça aparadora com pente" title="Cabeça aparadora com pente" class="absoluto cabeca" />
+                <img src="caracteristicas/page1/feature-acompanha.png" width="140px" height="61px" alt="Acompanha necessaire" title="Acompanha necessaire" class="absoluto acompanha" />
+                <img src="caracteristicas/page1/feature-capa-que.png" width="222px" height="67px" alt="Capa que levanta os pelos mais rentes enquanto massageia a pele" title="Capa que levanta os pelos mais rentes enquanto massageia a pele" class="absoluto capa-que" />
+                
+                <a href="#"><img src="caracteristicas/page1/btn-conforto-e-exclusividade.png" width="258px" height="42px" alt="Conforto e exclusividade" title="Conforto e exclusividade" class="absoluto" id="call-to-action1" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

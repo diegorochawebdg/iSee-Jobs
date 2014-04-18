@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Google Analytics Instructions</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link type="text/css" href="documentation files/jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="documentation files/jquery/js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="documentation files/jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// Accordion
+				$(".accordion").accordion({ header: "h3",collapsible: true,active: false,clearStyle: true, autoHeight: false });
+
+				// Tabs
+				$('#tabs').tabs();
+  
+  				$('.troubleshooting').click(function(event) {
+    				$('#tabs').tabs('select', 5);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+  				$('.faqs').click(function(event) {
+    				$('#tabs').tabs('select', 4);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+				$('.cookie').click(function(event) {
+    				$('#tabs').tabs('select', 1);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+  				$('.custom').click(function(event) {
+    				$('#tabs').tabs('select', 3);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+  				$('.event').click(function(event) {
+    				$('#tabs').tabs('select', 2);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+				$('.default').click(function(event) {
+    				$('#tabs').tabs('select', 0);
+    				$('html,body').scrollTop(0);
+  				})
+  				
+				$('.other').click(function(event) {
+    				$('#tabs').tabs('select', 1);
+    				$('html,body').scrollTop(0);
+  				})			
+			});
+		</script>
+		<style type="text/css">
+			body {font-size: 12px; font-family: 'Open Sans', sans-serif; font-weight: 400; margin: 10px 50px 10px 50px;}
+			.header {margin: 1.5em 0 1.5em 0; font-size: 20px; font-weight: 700;}
+			.subheader {margin-top: 1.5em; font-size: 16px; font-weight: 700;}
+			.notice {margin-top: 1.5em; font-weight: 700;}
+			.tab {font-size: 11px; font-weight: 700;}
+			.style1 {border: 1px solid #CCCCCC;}
+			.list-item {margin-bottom:1em}
+			.tcell {background-color:#FFFFFF; border: 1px solid #CCCCCC;}
+			.highlight {background-color:#FFFFFF; border: 1px solid #CCCCCC; padding:4px; line-height:35px;}
+			.faqs,.troubleshooting,.cookie,.default,.other,.event,.custom {color:#EB8F00;cursor:pointer;text-decoration:underline;}
+		</style>
+	</head>
+	<body>
+		<!-- Tabs -->
+		<div id="tabs">
+			<ul style="height:42px">
+				<li><a class="tab" href="#tabs-1">Google Analytics</a></li>
+			</ul>
+			<div id="tabs-1">
+            <ol>
+                <li class=list-item>Make sure that you have &quot;E-commerce tracking&quot; turned on in your 
+                Google Analytics account.<br />To do this, follow these steps:<br /><strong>a.</strong> 
+                Log in to analytics and 
+                click your property id/site name<br />
+                <strong>b.</strong> Click the orange &#39;Admin&#39; button in the top right of the page<br />
+                <strong>c.</strong> Select your profile<br />
+                <strong>d.</strong> Select &#39;Profile Settings&#39;<br />
+                <strong>e.</strong> Make sure &#39;Yes, an E-commerce Site&#39; is selected<br />
+                <strong>f.</strong> Also, if you want to track site search&nbsp;make sure &#39;Do 
+                Track Site Search&#39; is selected. In the &#39;Query Parameter&#39; text box, enter <span class="highlight">filter_name</span> and also make sure &quot;Strip query parameters out 
+                of URL &quot; is NOT checked. (You might need to edit this if SEO URLs are NOT turned on in OpenCart)<br /><br />
+                It should now look like the image below. Click Apply to save the settings:<br /><br />
+                <img alt="" class="style1" src="documentation files\Image9.jpg" />
+                </li>
+                <li class=list-item>Now click the &#39;Goals&#39; tab then click CREATE A GOAL.<br /></li>
+                                    <li class=list-item>Select the &#39;Place an order&#39; option 
+                                    under <strong>REVENUE</strong> and click the &#39;Next step&#39; 
+                                    button.</li>
+                                    <li class=list-item>Make sure the <strong>Type</strong> is set to 
+                                    &#39;Destination&#39; and click the &#39;Next step&#39; button.</li>
+                <li class=list-item>You then need to copy the settings on the image below (scroll down 
+                below the image to copy and paste the settings &amp; go to step 18 to copy and paste the funnel steps you see here):<br />
+                <span class="notice">Note: </span>If using an extension which changes 
+                checkout functionality, your goal funnel steps will be different to the image - scroll down to step 18 to see the steps for popular checkout extensions)<br /><br />
+                <img alt="" class="style1" src="documentation files\Image8.jpg" /><br /><br />
+                For the goal destination, select Regular expression and enter this:<br />
+                <span class="highlight">/index\.php\?route=*checkout/success*</span><br /><br />
+                Make sure Value is <strong>OFF</strong> &amp; Turn Funnel <strong>ON</strong>.</li>
+                <li class=list-item>Setting up the goal funnel:<br />
+                Set Required to <strong>NO</strong>.<br />
+                <br />
+                
+                Select which type of checkout you are using, then copy and paste the info into the relevant fields:<br />
+                <div class="accordion">
+                <h3><a href="#">Default/Standard Checkout</a></h3>
+                    <div>
+                    <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout/billingaddress</td>
+                        <td style="width: 797px">Billing Address</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 2</strong></td>
+                        <td style="width: 356px">/checkout/shippingaddress</td>
+                        <td style="width: 797px">Delivery Address</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 3</strong></td>
+                        <td style="width: 356px">/checkout/shippingmethod</td>
+                        <td style="width: 797px">Delivery Method</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 4</strong></td>
+                        <td style="width: 356px">/checkout/payment</td>
+                        <td style="width: 797px">Payment Method</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 5</strong></td>
+                        <td style="width: 356px">/checkout/confirm</td>
+                        <td style="width: 797px">Confirm Order</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="accordion">
+                <h3><a href="#">One Step / One Page Checkout by Bingo</a></h3>
+                    <div>
+                <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout</td>
+                        <td style="width: 797px">Checkout</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="accordion">
+                <h3><a href="#">Simple Checkout by deeman</a></h3>
+                    <div>
+                <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout</td>
+                        <td style="width: 797px">Checkout</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="accordion">
+                <h3><a href="#">Uber Checkout by Qphoria</a></h3>
+                    <div>
+                <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout-one</td>
+                        <td style="width: 797px">Checkout</td>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 2</strong></td>
+                        <td style="width: 356px">/checkout-two</td>
+                        <td style="width: 797px">Checkout Confirmation</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="accordion">
+                <h3><a href="#">Quick Checkout by MarketInSG</a></h3>
+                    <div>
+                <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout</td>
+                        <td style="width: 797px">Checkout</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="accordion">
+                <h3><a href="#">Quick Checkout by Dreamvention</a></h3>
+                    <div>
+                <table class="tcell" style="width: 600px">
+                    <tr>
+                        <td style="width: 147px"><strong></strong></td>
+                        <td style="width: 356px"><strong>URL</strong></td>
+                        <td style="width: 797px"><strong>Name</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 147px"><strong>Step 1</strong></td>
+                        <td style="width: 356px">/checkout</td>
+                        <td style="width: 797px">Checkout</td>
+                    </tr>
+                </table>
+                </div>
+                <li class=list-item>Save Goal to complete.</li>
+                
+                <li class=list-item>That is it! Your site is now all set up with complete analytics tracking.</li>
+            </ol>
+
+</div>
+
+</div>
+</body>
+</html>
+
+

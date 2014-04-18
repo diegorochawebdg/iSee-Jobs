@@ -1,0 +1,58 @@
+<style type="text/css">
+
+.container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(cliente/bg.jpg) repeat-x; }	
+.holder_interna {
+	background:url(cliente/background.jpg) 50% 50% no-repeat;
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.content-center {
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+}
+
+.content-center .div-content { 
+	margin: 0 auto;
+	width: 820px;
+	height: 520px;
+}
+
+.absoluto{ position:absolute; left:50%;}
+.dimensoes{ margin-left:-370px; top:70px;}
+.conteudo{ margin-left:10px; top:70px;}
+.manual{ margin-left:110px; top:395px;}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	//TweenMax.from( $(".div-content"), 1, { css: { alpha: 0 }, ease: Expo.easeInOut });	
+	
+	$(".manual").on("click", function(e){
+		Connect.trackPageView(  $NOME_FOLDER + Connect.currentPage + "/manual.pdf" );
+	});
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+        
+        <div class="content-center">
+        	<div class="div-content">
+            	
+                  <img src="cliente/dimensoes.png" width="402px" height="391px" alt="Dimensões e peso" title="Dimensões e peso" class="absoluto dimensoes" />
+                  <img src="cliente/conteudo-da-embalagem.png" width="280px" height="180px" alt="Conteúdo da embalagem: | Lava-Louças Ative! BLF12 | Manual de instruções" class="absoluto conteudo" />
+                  
+                  <a href="cliente/manual.pdf" target="_blank"><img src="cliente/btn-baixe-o-manual-do-produto.png" width="221px" height="55px" alt="Baixe o manual do produto" title="Baixe o manual do produto" class="absoluto manual" /></a>      
+               
+            </div>
+        </div>
+        
+    </div>
+</div>

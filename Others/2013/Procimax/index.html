@@ -1,0 +1,802 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Procimax | O antidepressivo da vida moderna</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/transitions.css" />
+<script src="js/tweenmax/minified/plugins/CSSPlugin.min.js" ></script>
+<script src="js/tweenmax/minified/plugins/BezierPlugin.min.js"></script>
+<script src="js/tweenmax/minified/TweenLite.min.js" ></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.ios-shake.js"></script>
+<script type="text/javascript" src="js/shake-procimax.js"></script>
+<!-- Arquivos carousel -->
+<link rel="stylesheet" href="stylesheet/touchcarousel.css" />
+<script src="js/jquery.touchcarousel-1.1.min.js"></script>
+
+<!-- Arquivos swipe -->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/prettify.js"></script>
+
+<!-- Arquivos libbs -->
+<link href="stylesheet/libbs_template.min.css" rel="stylesheet" type="text/css"/> 
+<script type="text/javascript" src="js/libbs_template.min.js"></script>
+
+<script type="text/javascript" src="js/libbs_procimax.js"></script>
+
+</head>
+<body onLoad="init()">
+	<div id="container-geral">
+    <!--DIV QUE FICARÁ POR CIMA DO MENU-->
+    <div class="detalhe-bg">
+     <img src="images/detalhe-bg-inferior.png" width="1024" height="112" alt="" title="" />
+    </div>
+    <div class="relative-menu">
+        <div id="container-menu">
+            <a class="btn_menu" href="#"><img src="images/btn-menu.png" width="76" height="57"/></a>
+            <div id="menu">
+                <div class="box-menu">
+                    <a class="btn_fechar_menu" id="" href="#"><img src="images/title-menu.png" width="34" height="7" alt="" title="" /></a>
+                    <ul>
+                        <li id="btn_conceito"></li>
+                        <li id="btn_perfil"></li>
+                        <li id="btn_dados"></li>
+                        <li id="btn_sertralina"></li>
+                        <li id="btn_interacao"></li>
+                        <li id="btn_blister"></li>
+                        <li id="btn_preco"></li>
+                        <li id="btn_anuncio"></li>
+                        <li id="btn_bula"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo-float">
+  	<div class="conteudo">
+<section id="libbs_content" class="libbs_content">    	 
+      <!-- Slide Conceito -->
+    	<section id="slide01">
+        <div id="slide-conceito" class="active">
+          <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+          <h2><img src="images/logo-procimax-grande.png" width="644" height="155" alt="" title="" /></h2>
+          <h3>O antidepressivo da vida moderna</h3>
+          <img class="bonecos" src="images/bonecos.png" width="430" height="408" alt="" title=""  />
+        </div>
+      </section>
+      
+      
+      <!-- Slide Perfil do médico - Quizz -->
+      <section id="slide02" hidden="false">
+        <div id="slide-quizz" >
+          <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+          <div class="box-opcoes">
+            <ul>
+              <li class="nao-trata"><a href="#" id="nao-trata-1">Não trata depressão</a></li>
+              <li class="nao-sabe"><a href="#" id="nao-sabe-1">Não sabe diagnosticar</a></li>
+              <li class="nao-usa last-item"><a href="#" id="nao-usa-1">Não uma Procimax</a></li>
+              <!--<li class="sertralina"><a href="#" id="sertralina">Sertralina</a></li>
+              <li class="fluoxetina"><a href="#">Fluoxetina</a></li>
+              <li class="paroxetina last-item"><a href="#">Paroxetina</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      
+      <!-- Slide - Não trata -->
+      <section id="slide03" >
+        <div id="slide-nao-trata-1" class="slide-nao-trata">
+          <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+          <div class="box-nao-trata">
+           <h2>Depressão e risco CV: impacto da<br />desmotivação na mortalidade de coronarianos<span>1</span></h2>
+           <div class="grafico">
+             <a class="abre-explosao" href="#" id="abre-explosão-nao-trata-1">
+               <img src="images/box-grafico.png" width="646" height="321" alt="" title="" />
+               <img src="images/grafico-nao-trata.png" width="646" height="321" alt="" title=""  />
+               <div class="efeito">
+          <img src="images/grafico-animado.png" width="570" height="251" alt="" title="" />
+               </div>
+             </a>
+            </div>
+          </div>
+            <div class="detalhes">
+             <img src="images/boneco-laranja.png" width="188" height="239" alt="" title="" />
+            </div>
+          	<span><img src="images/fonte-texto.png" width="144" height="9" alt="" title="" /></span>
+         </div>
+      </section>    
+        
+        
+        <!-- Slide Explosão não trata -->
+        <section id="slide04" >
+          <div id="explosao-nao-trata-1" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Depressão e risco CV:<br />impacto da desmotivação na mortalidade de coronarianos<span>1</span></h1>
+              <a href="#" id="fecha-explosao-nao-trata-1">
+               <img src="images/grafico-explosao-nao-trata.png" width="871" height="401" alt="" title=""  />
+              <h2>Mortalidade em função do otimismo sobre recuperação de DAC<br />em 15 anos. Quartis (1: mais otimista, 4: mais pessimista).</h2>
+               <span><img src="images/fonte-texto-cinza.png" width="197" height="13" alt="" title="" /></span>
+             </a>
+            </div>
+          </div>   
+        </section>      
+        
+        
+        <!-- Slide Não trata 2 -->
+        <section id="slide05" >
+          <div id="slide-nao-trata-2" class="slide-nao-trata">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Desmotivação aumenta a mortalidade de coronarianos<span class="dois">2</span></h2>
+              <div class="grafico-2">
+                <a class="abre-explosao" href="#" id="abre-explosão-nao-trata-2">
+                  <img src="images/grafico-nao-trata-2.png" width="757" height="381" alt="" title="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          </section>
+  
+        
+        <!-- Slide Explosão não trata 2 -->
+        <section id="slide06" >
+          <div id="explosao-nao-trata-2" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Desmotivação aumenta a mortalidade de coronarianos<span>2</span></h1>
+              <a href="#" id="fecha-explosao-nao-trata-2">
+                <img src="images/grafico-explosao-nao-trata-2.png" width="874" height="368" alt="" title=""  />
+                <h2>Anedonia (desmotivação): perda do interesse e do prazer.<br />A simples tristeza não parece aumentar a mortalidade (A),<br />mas a anedonia (desmotivação) sim.</h2>
+                <span><img src="images/fonte-texto-nao-trata-2.png" width="236" height="13" alt="" title="" /></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Não trata 3 -->
+        <section id="slide07" >
+          <div id="slide-nao-trata-3" class="slide-nao-trata">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Efeito da depressão na mortalidade do diabético<span class="dois">3</span></h2>
+              <div class="grafico-3">
+                <a class="abre-explosao" href="#"  id="abre-explosão-nao-trata-3">
+                  <img src="images/grafico-nao-trata-3.png" width="675" height="426" alt="" title=""  />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-laranja.png" width="188" height="239" alt="" title="" />
+            </div>
+            <span><img src="images/fonte-texto-nao-trata-3.png" width="162" height="11" alt="" title="" /></span>
+          </div>
+        </section>
+        
+        <!-- Slide Explosao Não trata 3 -->
+        <section id="slide08" >
+          <div id="explosao-nao-trata-3" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Efeito da depressão na mortalidade do diabético<span>3</span></h1>
+              <a href="#" id="fecha-explosao-nao-trata-3">
+                <img src="images/grafico-explosao-nao-trata-3.png" width="853" height="542" alt="" title="" />
+                <span><img src="images/fonte-texto-nao-trata-3.png" width="190" height="13" /></span>
+              </a>
+            </div>
+          </div>
+       </section>
+        
+        
+        <!-- Slide Não trata 4 -->
+        <section id="slide09" >
+          <div id="slide-nao-trata-4" class="slide-nao-trata">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Causas potenciais de não adesão ao tratamento da hipertensão<span class="dois">4</span></h2>
+              <div class="grafico-4">
+                <a class="abre-explosao" href="#"  id="abre-explosão-nao-trata-4">
+                  <img src="images/grafico-nao-trata-4.png" width="662" height="417" alt="" title="" />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-prata.png" width="124" height="255" alt="" title="" />
+            </div>
+            <span><img src="images/fonte-texto-nao-trata-4.png" width="202" height="12" alt="" title="" /></span>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Explosao Não trata 4 -->
+        <section id="slide10" >
+        <div id="explosao-nao-trata-4" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Causas potenciais de não adesão ao tratamento da hipertensão<span>4</span></h1>
+              <a href="#" id="fecha-explosao-nao-trata-4">
+                <img src="images/grafico-explosao-nao-trata-4.png" width="851" height="530" alt="" title="" />
+                <span><img src="images/fonte-texto-explosao-nao-trata-4.png" width="242" height="13" alt="" title="" /></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Não trata 5 -->
+        <section id="slide11" >
+          <div id="slide-nao-trata-5" class="slide-nao-trata">
+             <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Metanálise: correlação entre Depressão e risco de AVC<span class="dois">5</span></h2>
+              <h3>Seguimento: 2 a 29 anos; 28 estudos (N=317540 e 8478 casos de AVC)<span class="tres">5</span></h3>
+              <div class="grafico-5">
+                <a class="abre-explosao" href="#"  id="abre-explosão-nao-trata-5">
+                  <img src="images/grafico-nao-trata-5.png" width="883" height="361" alt="" title="" />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-laranja.png" width="188" height="239" alt="" title="" />
+            </div>
+            <span><img src="images/fonte-texto-nao-trata-5.png" width="186" height="11" alt="" title="" /></span>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Explosao Não trata 5 -->
+        <section id="slide12" >
+          <div id="explosao-nao-trata-5" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Metanálise: correlação entre Depressão e risco de AVC<span>5</span></h1>
+              <h2>Seguimento: 2 a 29 anos; 28 estudos (N=317540 e 8478 casos de AVC)<span>5</span></h2>
+              <a href="#" id="fecha-explosao-nao-trata-5">
+                <img src="images/grafico-explosao-nao-trata-5.png" width="706" height="483" alt="" title=""  />
+                <img class="tabela" src="images/box-grafico-explosao-nao-trata-5.png" width="378" height="71" alt="" title="" />
+                <span class="texto-fonte-explosao-5"><img src="images/fonte-texto-explosao-nao-trata-5.png" width="202" height="12" alt="" title="" /></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+    
+        <!-- Slide Não trata 6 -->
+        <section id="slide13" >
+          <div id="slide-nao-trata-6" class="slide-nao-trata">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Olmsted County Study: (Pós infarto do miocárdio ou insuficiência cardíaca)<span class="dois">6</span></h2>
+              <h3>N= 799; Depressão: 35%; Ansiedade: 26% e seguimento médio: 6,2 anos</h3>
+              <div class="grafico-6">
+                <a class="abre-explosao" href="#"  id="abre-explosão-nao-trata-6">
+                  <img src="images/grafico-nao-trata-6.png" width="615" height="344" alt="" title="" />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-prata-2.png" width="189" height="239" alt="" title=""  />
+            </div>
+            <span><img src="images/fonte-texto-nao-trata-6.png" width="219" height="12" alt="" title=""  /></span>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Explosao Não trata 6 -->
+        <section id="slide14" >
+          <div id="explosao-nao-trata-6" class="explosao-nao-trata">
+            <div class="box-explosao">
+              <h1>Olmsted County Study:<br />(Pós infarto do miocárdio ou insuficiência cardíaca)<span>6</span></h1>
+              <h2>N= 799; Depressão: 35%; Ansiedade: 26% e seguimento médio: 6,2 anos</h2>
+              <a href="#" id="fecha-explosao-nao-trata-6">
+                <img src="images/grafico-explosao-nao-trata-6.png" width="780" height="426" alt="" title=""  />
+                <span><img src="images/fonte-texto-explosao-6.png" width="258" height="13" alt="" title="" /></span>
+              </a>
+            </div>
+          </div>
+        </section>        
+        
+        <!-- Slide Não sabe -->
+        <section id="slide15" >
+          <div id="slide-nao-sabe">
+            <div class="box-nao-sabe">
+              <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+              <h2>Critérios Diagnósticos de Depressão – DSM-IV-TR<span>7</span></h2>
+              <div class="box1">
+                <h3>Maiores</h3>
+                <ul>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Tristeza (humor deprimido na maior parte do tempo)</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Anedonia (perda do interesse ou prazer)</li>
+                </ul>
+              </div>
+              <div class="box2">
+                <h3>Menores</h3>
+                <ul>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Ganho ou perda inexplicada de peso em 30 dias (±5%)</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Agitação ou retardo psicomotor</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Insônia ou sono excessivo</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Sentimento desproporcional de culpa ou inutilidade</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Dificuldade de concentração ou para tomar decisões</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Fatigabilidade desproporcional ou excessiva</li>
+                  <li><span><img src="images/bullet-amarelo.png" width="6" height="6" alt="" title="" /></span>Pensamento recorrente de morte</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+        <!-- Slide Não sabe 2 -->
+        <section id="slide16" >
+          <div id="slide-nao-sabe-2">
+            <div class="box-nao-sabe">
+              <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+              <h2>Critérios Diagnósticos de Depressão – DSM-IV-TR<span>7</span></h2>
+              <div class="box1">
+                <h3>Depressão maior</h3>
+                <p>Persistência de cinco critérios, sendo<br />obrigatoriamente um deles maior, na maioria<br />dos dias, pelo menos nos últimos 15 dias.</p>
+              </div>
+              <div class="box2">
+                <h3>Depressão menor</h3>
+                <p>Persistência de dois a quatro critérios,<br />na maioria dos dias, pelo menos<br />nos últimos 15 dias.</p>
+              </div>
+            </div>
+          </div>   
+        </section>    
+        
+
+				<!-- Slide Não usa -->
+        <section id="slide17" >
+          <div id="slide-nao-usa" class="slide-nao-usa">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Estudo STAR D*: segunda modulação<span class="dois">8-10</span></h2>
+              <div class="grafico-1">
+                <a class="abre-explosao" href="#" id="abre-explosao-nao-usa-1">
+                  <img src="images/grafico-nao-usa.png" width="615" height="312" alt="" title=""  />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-prata-grande.png" width="322" height="433" alt="" title="" />
+            </div>
+            <span><img src="images/fonte-texto-nao-usa.png" width="567" height="20" alt=""  title="" /></span>
+          </div>  
+        </section>          
+        
+        
+        <!-- Slide Explosao Não trata 1 -->
+        <section id="slide18" >
+          <div id="explosao-nao-usa" class="explosao-nao-usa">
+            <div class="box-explosao">
+              <h1>Estudo STAR D*: segunda modulação<span>8-10</span></h1>
+              <a href="#" id="fecha-explosao-nao-usa-1">
+                <img src="images/grafico-explosao-nao-usa.png" width="805" height="477" alt="" title="" />
+                <span><img src="images/fonte-texto-explosao-nao-usa.png" width="816" height="12" alt="" title="" /></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Não usa 2 -->
+        <section id="slide19" >
+          <div id="slide-nao-usa-2" class="slide-nao-usa">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Estudo STAR D*: resposta à segunda modulação<span class="dois">8-10</span></h2>
+              <div class="grafico-1">
+                <a class="abre-explosao" href="#" id="abre-explosao-nao-usa-2">
+                  <img src="images/grafico-nao-usa-2.png" width="605" height="322" alt="" title="" />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-laranja-grande.png" width="267" height="379" alt="" title=""  />
+            </div>
+            <span><img src="images/fonte-texto-nao-usa.png" width="567" height="20" alt=""  title="" /></span>
+          </div>
+        </section>
+        
+        
+        <!-- Slide Explosao Não usa 2 -->
+        <section id="slide20" >
+          <div id="explosao-nao-usa-2" class="explosao-nao-usa">
+            <!--<div class="box-explosao">
+                <img src="images/explosao-nao-usa-2.jpg" width="1024" height="768" />
+            </div>-->
+          </div> 
+        </section>
+        
+
+        <!-- Slide Não usa 3 -->
+        <section id="slide21" >
+          <div id="slide-nao-usa-3" class="slide-nao-usa">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Estudo CREATE<span class="dois">11</span></h2>
+              <div class="grafico-1">
+                <a class="abre-explosao" href="#" id="abre-explosao-nao-usa-3">
+                  <img src="images/grafico-nao-usa-3.png" width="640" height="351" alt="" title="" />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-prata-medio.png" width="228" height="280" title="" alt=""  />
+            </div>
+            <span><img src="images/fonte-texto-nao-usa.png" width="567" height="20" alt=""  title="" /></span>
+          </div>  
+        </section>
+        
+
+        <!-- Slide Explosao Não usa 3 -->
+        <section id="slide22" >
+          <div id="explosao-nao-usa-3" class="explosao-nao-usa"></div> 
+        </section>
+        
+        
+        <!-- Slide Não usa 4 -->
+        <section id="slide23" >
+          <div id="slide-nao-usa-4" class="slide-nao-usa">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-nao-trata">
+              <h2>Efeito do tratamento da depressão pós-AVC com Procimax<span class="dois">12</span></h2>
+              <div class="grafico-1">
+                <a class="abre-explosao" href="#" id="abre-explosao-nao-usa-4">
+                  <img src="images/grafico-nao-usa-4.png" width="606" height="336" alt="" title=""  />
+                </a>
+              </div>
+            </div>
+            <div class="detalhes">
+              <img src="images/boneco-laranja-grande-2.png" width="277" height="378" alt="" title=""  />
+            </div>
+            <span><img src="images/fonte-texto-nao-usa-4.png" width="138" height="9" alt="" title="" /></span>
+          </div>
+        </section>                            
+                
+				
+        <!-- Slide Explosao Não usa 4 -->
+        <section id="slide24" >
+          <div id="explosao-nao-usa-4" class="explosao-nao-usa"></div>    
+        </section>     
+                
+             
+        <!-- Slide Não usa 5 -->
+        <section id="slide25" >
+        <div id="slide-nao-usa-5" class="slide-nao-usa">
+        	<h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+        	<div class="box-nao-trata">
+        		<h2>Resposta clínica ao tratamento com Procimax:<br>
+Metanálise com 1.541 pacientes<span>13</span></h2>
+        		<div class="grafico-1">
+          		<a class="abre-explosao" href="#" id="abre-explosao-nao-usa-5">
+            		<img src="images/grafico-nao-usa-5.png" width="918" height="322" alt="" title=""  />
+            	</a>
+          	</div>
+          </div>
+          <div class="detalhes">
+          	<img src="images/boneco-prata-grande-2.png" width="263" height="362" alt="" title=""  />
+          </div>
+          <span><img src="images/fonte-texto-nao-usa-4.png" width="93" height="10" alt="" title="" /></span>
+      	</div>   
+        </section>         
+             
+        <!-- Slide Explosao Não usa 5 -->
+        <section id="slide26">
+          <div id="explosao-nao-usa-5" class="explosao-nao-usa"></div>
+        </section>
+        
+        <!-- *****************************************-->
+        
+        <!-- Sertralina 1 -->
+        <section id="slide40">
+            <div id="sertralina1">
+            	<img src="images/setralina-txt1.png" width="558" height="104" class="txt">
+                
+                <img src="images/setralina-quadro-1.png" width="610" height="179" class="quadro">
+                
+                <img src="images/setralina-faixa1.jpg" width="610" height="39" class="faixa-procimax">
+                
+                <img src="images/setralina-boneco.png" width="302" height="354" class="boneco">
+                
+                <img src="images/setralina-fonte1.png" width="158" height="9" class="fonte">
+            </div>
+            <div class="slider-telas">
+                <ul>
+                    <li><a href="#" class="selecionado">sertralina1</a></li>
+                    <li><a href="#" class="sertralina2">sertralina2</a></li>
+                    <li><a href="#" class="sertralina3">sertralina3</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Sertralina Explosão -->
+        <section id="slide41">
+            <div id="sertralina1-explosao">
+            	<img src="images/sertralina-explosao.jpg">
+            </div>
+        </section>
+        
+        <!-- Sertralina 2 -->
+        <section id="slide42">
+            <div id="sertralina2">
+            	<img src="images/sertralina-txt2.png" width="417" height="25" class="txt">
+                
+                <img src="images/sertralina-tabela2.png" width="812" height="161" class="quadro">
+                
+                <img src="images/sertralina-faixa2.jpg" width="812" height="56" class="faixa-procimax">
+                
+                <img src="images/sertralina-boneco2.png" width="151" height="231" class="boneco">
+                
+                <img src="images/sertralina-fonte2.png" width="298" height="12" class="fonte">
+                <img src="images/sertralina-fonte2.png" width="100" height="9" class="fonte">
+                <div class="slider-telas">
+                	<ul>
+                    	<li><a href="#" class="sertralina1">sertralina1</a></li>
+                        <li><a href="#" class="selecionado">sertralina2</a></li>
+                        <li><a href="#" class="sertralina3">sertralina3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sertralina 3 -->
+        <section id="slide43">
+            <div id="sertralina3">
+            	<img src="images/sertralina-txt3.png" width="435" height="30" class="txt">
+                
+                <img src="images/sertralina-tabela3.png" width="870" height="286" class="quadro">
+                
+                <img src="images/sertralina-fonte3.png" width="298" height="12" class="fonte">
+                <img src="images/sertralina-fonte3.png" class="fonte">
+                
+                <div class="slider-telas">
+                	<ul>
+                    	<li><a href="#" class="sertralina1">sertralina1</a></li>
+                        <li><a href="#" class="sertralina2">sertralina2</a></li>
+                        <li><a href="#" class="selecionado">sertralina3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- *****************************************-->
+
+        <!-- Blister Calendário -->
+        <section id="slide27" >
+          <div id="blister-calendario">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <h2>Balance a tela e veja como o blister calendário<br />facilita a rotina do paciente com depressão</h2>
+            <div class="cartela">
+              <img src="images/blister.png" width="405" height="506" alt="" title=""  />
+              <!--  divs para cada pastilha -->
+              <div id="pastilha-1"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-2"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-3"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-4"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-5"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-6"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-7"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-8"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-9"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-10"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-11"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-12"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-13"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+              <div id="pastilha-14"><img src="images/pastilha.png" width="80" height="80" alt="" title=""  /></div>
+            </div>
+            <div class="bandeja">
+              <img src="images/bandeja.png" width="464" height="371" alt="" title=""  />
+              <!-- pastilhas separadas -->
+              <img id="pastilha-cai-1" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-2" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-3" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-4" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-5" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-6" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-7" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-8" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-9" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-10" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-11" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-12" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-13" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+              <img id="pastilha-cai-14" src="images/pastilha.png" width="80" height="80" alt="" title=""  />
+            </div>
+            <a href="#" title="Jogar novamente" id="jogar-novamente" class="jogar-novamente">Jogar novamente</a>
+          </div>
+        </section>
+            
+        <div id="supported" style="top: 0; left: 0; position: absolute;"></div>
+    	<div id="output" style="top: 30px; left: 0; position: absolute;"></div>
+    	<div id="debug" style="top: 90px; left: 0; position: absolute;"></div>
+        
+        <!--DADOS FÁRMACOS   -->       
+      <section id="slide28" >
+        <div id="slide-dados-farmacos">
+          <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="img-senhora">
+                <img src="images/senhora-dados-farmacos.png" width="357" height="530" alt="" title="" />
+              </div>
+              
+              <div class="dados-farmacos-1">
+                  <div class="dados-lista">
+                      <ul>
+                        <li class="margin-botton-15"><img src="images/lista-dados-farmacos-01.png" width="367" height="24" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-02.png" width="481" height="34" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-03.png" width="482" height="34" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-04.png" width="482" height="33" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-05.png" width="482" height="33" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-06.png" width="482" height="33" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-07.png" width="482" height="33" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-08.png" width="482" height="34" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-09.png" width="482" height="62" alt="" title="" /></li>
+                      </ul>
+                  </div>
+                  <div class="boneco">
+                      <img src="images/boneco-dados-farmacos.png" alt="" width="233" height="297" title="" />
+                  </div>
+              </div>
+          </div>
+          </section>
+          
+          <!--DADOS FÁRMACOS2   --> 
+          <section id="slide29" >
+          <div id="slide-dados-farmacos2">
+          <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="img-senhora">
+                <img src="images/senhora-dados-farmacos.png" width="357" height="530" alt="" title="" />
+              </div>
+              
+              <div class="dados-farmacos-2">
+                <div class="dados-lista width-lista">
+                      <ul>
+                          <li><img src="images/lista-dados-farmacos-10.png" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-11.png" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-12.png" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-13.png" alt="" title="" /></li>
+                          <li><img src="images/lista-dados-farmacos-14.png" alt="" title="" /></li>
+                      </ul>
+                  </div>
+                  <div class="boneco">
+                      <img src="images/boneco-dados-farmacos-2.png" alt="" width="129" height="196" title="" />
+                  </div>
+                  
+              </div>
+          </div>
+        </section>
+        
+        <!--INTERAÇÕES MEDICAMENTOSAS-->
+        <section id="slide30" >
+          <div class="slide-interacoes-medicamentosas">
+                <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+              <div class="slide1">
+                    <div class="tabela">
+                      <div class="relative">
+                            <h3><img src="images/tabela-de-interacoes-medicamentosas-16.png" alt="" width="535" height="29" title="" /></h3>
+                            <a href="#" class="interacoes-link"><img src="images/faixa-interacoes-medicamentos.jpg" alt="" width="647" height="30" class="faixa" title="" /></a>
+                          <a href="#" class="interacoes-link"><img src="images/tabela-interacoes-medicamentosas.png" alt="" width="647" height="296" title="" /></a>
+                      </div>
+                    </div>
+                    <div class="txt">
+                      <img src="images/txt-interacoes-medicamentosas.png" alt="Procimax apresenta baixo risco de interações medicamentosas em comparação com outros antidepressivos.16-18" width="202" height="171" />
+                    </div>
+                    <div class="boneco">
+                      <img src="images/boneco-interacoes-medicamentosas.png" width="186" height="263" alt="" title="" />
+                    </div>
+                    <div class="fonte">
+                      <img src="images/fonte-interacoes-medicamentosas-1.png" width="209" height="12" alt="" title="" />
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="slide31">
+            	<div class="slide-interacoes-medicamentosas">
+                  <div class="explosao">
+                      <img src="images/slide31.jpg" width="1024" height="772" />           
+                  </div>
+               </div>
+            </section>
+            <section id="slide32">
+            <div class="slide-interacoes-medicamentosas2">
+                <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+              <div class="slide2">
+                  <div class="senhor">
+                      <h3><img src="images/inibidores-cyp.png" alt="" width="316" height="23" title="" /></h3>
+                    <img src="images/senhor-interacoes-medicamentosas.png" alt="" width="288" height="496" />
+                  </div>
+                  <div class="boxes">
+                    <img src="images/inibidores-box-1.png" alt="" width="265" height="190" class="inibidores-1" title="" />	
+                    <img src="images/inibidores-box-2.png" alt="" width="188" height="120" class="inibidores-2" title="" />	
+                    <img src="images/inibidores-box-3.png" alt="" width="188" height="120" class="inibidores-3" title="" />	
+                    <img src="images/inibidores-box-4.png" width="188" height="120" alt="" title="" class="inibidores-4" />	
+                    <img src="images/inibidores-box-5.png" width="188" height="121" alt="" title="" class="inibidores-5" />
+                   </div>	
+                    
+                    <div class="fonte">
+                        <img src="images/fonte-interacoes-medicamentosas.png" alt="" width="190" height="11" title="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--ANÚNCIOS-->
+        <section id="slide33" >
+          <div id="slide-anuncios">
+                <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+                <div class="content">
+                    <img src="images/anuncios-titulo.png" width="488" height="145" alt="SEGURANÇA e EFICÁCIA no tratamento de pacientes cardiopatas.11,20,21" class="titulo" />
+                    <img src="images/anuncios-txt.jpg" alt="" width="294" height="190" class="txt" />
+                    <img src="images/seta-anuncios.png" alt="" width="64" height="42" class="seta1" />
+                    <img src="images/blisters-anuncios.png" width="600" height="313" alt="" class="embalagem-remedio" />
+                    <img src="images/bonecos-anuncios.png" width="320" height="309" alt="" class="bonecos" />
+               </div>
+           </div>
+       </section>
+       
+      
+      <!-- Slide Preços genéricos-->
+      <section id="slide34" >
+        <div id="slide-preco-genericos" class="slide-preco">
+              <img src="images/grafico-preco-genericos.png" width="686" height="378" alt="" title="" class="grafico-1"  />
+              <img class="tarja-laranja" src="images/traja-laranja-genericos.jpg" width="658" height="31" alt="" title="" />
+          <div class="detalhes">
+           <img src="images/boneco-prata-preco.png" width="244" alt="" title=""  />
+          </div>
+          <span><img src="images/fonte-texto-preco.png" width="627" height="43" alt="" title="" /></span>
+       </div>  
+     </section>
+        
+        
+        <!-- Slide Preços outras marcas-->
+        <section id="slide35" >
+          <div id="slide-preco-outras-marcas" class="slide-preco">
+           <div class="box-nao-trata">
+            <div class="grafico-1">
+              <a class="abre-explosao" href="#" id="abre-exp-preco">
+                  <img class="grafico-estatico" src="images/grafico-preco-outras-marcas.png" width="660" height="265" alt="" title=""  />
+                  <img class="tarja-laranja" src="images/tarja-laranja-preco.jpg" width="659" height="37" alt="" title="" />
+              </a>
+              
+             </div>
+            </div>
+            <div class="detalhes">
+             <img src="images/boneco-prata-preco.png" width="244" alt="" title=""  />
+            </div>
+            <span><img src="images/fonte-texto-preco-outras.png" width="654" height="43" alt="" title="" /></span>
+         </div>
+       </section>
+        
+      <!-- Slide Bulas -->
+      	<section id="slide38" >
+          <div id="slide-bulas" class="slide-bulas">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-bulas">
+        <img src="images/texto-bulas.png" width="936" height="518" alt="" title=""  />
+            </div>
+          </div>        
+        </section>
+        
+        <!-- Slide Referências -->
+        <section id="slide39" >
+          <div id="slide-referencias" class="slide-referencias">
+            <h1><img src="images/logo-procimax-pequeno.png" width="284" height="64" alt="" title="" /></h1>
+            <div class="box-bulas">
+        <img src="images/texto-referencias.png" width="927" height="445" alt="" title=""  />
+            </div>
+          </div>
+        </section>            
+      </section>      
+   	</div>
+  </div>
+  	</div>
+    <!-- Menu navegação  -->
+    <div class="navigation-menu">
+        <section id="libbs_nav_menu" class="libbs_nav_menu_collapsed" onClick="show_menu()">
+            <img class="libbs_menu_trigger" src="images/up.png" />
+            <div id="libbs_menu_slider" class="touchcarousel">
+                <ul class="touchcarousel-container">
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

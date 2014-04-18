@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+	<item>
+		<thumb>thumb-01.jpg</thumb>
+		<section>'slide01'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-02.jpg</thumb>
+		<section>'slide02'</section>
+	</item>
+
+	<item>
+		<thumb>thumb-03.jpg</thumb>
+		<section>'slide03'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-04.jpg</thumb>
+		<section>'slide04'</section>
+	</item>
+
+	<item>
+		<thumb>thumb-05.jpg</thumb>
+		<section>'slide05'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-06.jpg</thumb>
+		<section>'slide06'</section>
+	</item>
+
+	<item>
+		<thumb>thumb-07.jpg</thumb>
+		<section>'slide07'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-08.jpg</thumb>
+		<section>'slide08'</section>
+	</item>
+
+	<item>
+		<thumb>thumb-09.jpg</thumb>
+		<section>'slide09'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-10.jpg</thumb>
+		<section>'slide10'</section>
+	</item>
+
+	<item>
+		<thumb>thumb-11.jpg</thumb>
+		<section>'slide11'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-12.jpg</thumb>
+		<section>'slide12'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-13.jpg</thumb>
+		<section>'slide13'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-14.jpg</thumb>
+		<section>'slide14'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-15.jpg</thumb>
+		<section>'slide15'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-16.jpg</thumb>
+		<section>'slide16'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-17.jpg</thumb>
+		<section>'slide17'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-18.jpg</thumb>
+		<section>'slide18'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-19.jpg</thumb>
+		<section>'slide19'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-20.jpg</thumb>
+		<section>'slide20'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-21.jpg</thumb>
+		<section>'slide21'</section>
+	</item>	
+
+	<item>
+		<thumb>thumb-22.jpg</thumb>
+		<section>'slide22'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-23.jpg</thumb>
+		<section>'slide23'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-24.jpg</thumb>
+		<section>'slide24'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-25.jpg</thumb>
+		<section>'slide25'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-26.jpg</thumb>
+		<section>'slide26'</section>
+	</item>
+	
+	<!--********************************************-->
+	
+	<item>
+		<thumb>thumb-401.jpg</thumb>
+		<section>'slide40'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-41.jpg</thumb>
+		<section>'slide41'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-42.jpg</thumb>
+		<section>'slide42'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-43.jpg</thumb>
+		<section>'slide43'</section>
+	</item>
+	
+	<!--********************************************-->												
+	
+	<item>
+		<thumb>thumb-27.jpg</thumb>
+		<section>'slide27'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-28.jpg</thumb>
+		<section>'slide28'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-29.jpg</thumb>
+		<section>'slide29'</section>
+	</item>
+	
+	<item>
+		<thumb>thumb-30.jpg</thumb>
+		<section>'slide30'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-40.jpg</thumb>
+		<section>'slide31'</section>
+	</item>	
+	<item>
+		<thumb>thumb-31.jpg</thumb>
+		<section>'slide32'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-32.jpg</thumb>
+		<section>'slide33'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-33.jpg</thumb>
+		<section>'slide34'</section>
+	</item>	
+	
+	<item>
+		<thumb>thumb-34.jpg</thumb>
+		<section>'slide35'</section>
+	</item>
+		
+	<item>
+		<thumb>thumb-37.jpg</thumb>
+		<section>'slide38'</section>
+	</item>
+	<item>
+		<thumb>thumb-38.jpg</thumb>
+		<section>'slide39'</section>
+	</item>
+	
+	
+</menu>

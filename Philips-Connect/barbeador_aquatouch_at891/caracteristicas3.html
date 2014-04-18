@@ -1,0 +1,121 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) 50% 50% no-repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .barbeador{ margin-left:-535px; bottom:0px;}
+.connect-container .anderson{ margin-left:170px; bottom:0px;}
+
+.connect-container .features{ background:url(caracteristicas/page3/bg-transparencia.png); width:310px; height:175px; padding-left:160px;}
+.connect-container .features h2{ font-family: "Museo-700"; font-size:24px; color:#FFF; text-transform:uppercase;}
+.connect-container .features h2 span{ color:#51ceec;}
+.connect-container .features p{ font-family: "Museo-300"; font-size:15px; color:#FFF; line-height:17px;}
+.connect-container .features img{ position:absolute; right:-100px; top:-8px;}
+
+.connect-container #feature1{ margin-left:-310px; top:80px;}
+.connect-container #feature1 h2{ margin:30px 0;}
+.connect-container #feature2{ margin-left:-310px; top:265px;}
+.connect-container #feature2 h2{ margin:12px 0;}
+
+.connect-container #aparador{ background:url(caracteristicas/page3/bg-linhas.png) bottom left no-repeat; width:495px; height:205px; padding-left:160px; margin-left:-315px; top:16px;}
+.connect-container #aparador h2{ padding-left:35px; margin-bottom:10px;}
+
+.connect-container #call-to-action3{ margin-left:145px; bottom:10px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action3"), "fadeInRight", "s10", "caracteristicas4.html", true );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            	
+                <img src="caracteristicas/page3/anderson.png" width="447px" height="407px" alt="" title="" class="absoluto anderson animated fadeInRight s06" />
+                
+                <div id="feature1" class="absoluto features animated fadeInLeft s08">
+                	<h2>
+                    	Totalmente à<br />
+                    	<span>prova d’água</span>
+                    </h2>
+                    <p>
+                    	É possível utilizar o aparelho<br />
+                        durante o banho com espuma.
+                    </p>
+                    <img src="caracteristicas/page3/feature1.png" width="205px" height="207px" alt="" title="" />
+                </div>
+                
+                <div id="feature2" class="absoluto features animated fadeInLeft s09">
+                	<h2>
+                    	<span>Dual precision</span>
+                    </h2>
+                    <p>
+                    	O barbeador possui um sistema<br />
+                        de corte preciso. Apresenta<br />
+                        ranhuras que removem pelos<br />
+                        médios e microfuros que<br />
+                        removem pelos mais curtos,<br />
+                        permitindo um barbear mais<br />
+                        rápido.
+                    </p>
+                    <img src="caracteristicas/page3/feature2.png" width="204px" height="204px" alt="" title="" />
+                </div>
+                
+                <img src="caracteristicas/page3/barbeador.png" width="376px" height="455px" alt="" title="" class="absoluto barbeador animated fadeInLeft s05" />
+                
+                <div id="aparador" class="absoluto features animated fadeInLeft s07">
+                	<h2><span>Aparador retrátil</span></h2>
+                    <p>Largo e perfeito para modelar costeletas e bigode.</p>
+                </div>
+                
+                <a href="#" id="call-to-action3" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page3/btn-pratico-e-facil.png" width="244px" height="45px" alt="Prático e fácil" title="Prático e fácil" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

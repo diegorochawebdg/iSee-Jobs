@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#content{background:url(../images/bg-home.jpg) no-repeat center top;}
+.selo{top:105px;}
+.hgroup{top:510px; left:130px; text-align:center;}
+.hgroup h1{font-size:52px; color:#00b7be; text-transform:uppercase;} 
+.hgroup h2{font-size:14px; color:#ed1c24; text-transform:uppercase; font-weight:bold;} 
+.regulamento{background:url(../images/clique-aqui-e-consulte-o-regulamento.png) no-repeat; width:262px; padding-top:40px; top:604px; right:79px;}

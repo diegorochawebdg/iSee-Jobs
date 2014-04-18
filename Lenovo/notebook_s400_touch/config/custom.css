@@ -1,0 +1,60 @@
+.connect-container .content .area { background-image: url(../cliente/page-noscript.jpg); }
+.connect-container .connect-seo-index p {  	font-size: 16px; font-family: "Arial"; color: #373738;	padding: 320px 0 0 20px; 	width: 225px; 	height: 140px; 	line-height: normal; 	opacity:0; }
+.logo-space { 
+	background-image: url( ../cliente/logo.png);
+} 
+
+@font-face {
+    font-family: 'FoundryRegular';
+    src: url('../fonts/FoundryGridnikRegular.eot');
+    src: url('../fonts/FoundryGridnikRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FoundryGridnikRegular.woff') format('woff'),
+         url('../fonts/FoundryGridnikRegular.ttf') format('truetype'),
+         url('../fonts/FoundryGridnikRegular.svg#FoundryRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FoundryLight';
+    src: url('../fonts/FoundryGridnikLight.eot');
+    src: url('../fonts/FoundryGridnikLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FoundryGridnikLight.woff') format('woff'),
+         url('../fonts/FoundryGridnikLight.ttf') format('truetype'),
+         url('../fonts/FoundryGridnikLight.svg#FoundryLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FoundryBold';
+    src: url('../fonts/FoundryGridnikBold.eot');
+    src: url('../fonts/FoundryGridnikBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FoundryGridnikBold.woff') format('woff'),
+         url('../fonts/FoundryGridnikBold.ttf') format('truetype'),
+         url('../fonts/FoundryGridnikBold.svg#FoundryBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'FoundryRegular';
+		url('../fonts/FoundryGridnikRegular.svg#FoundryRegular') format('svg');
+	
+	}
+	@font-face {
+		font-family: 'FoundryMedium';
+		url('../fonts/FoundryGridnikMedium.svg#FoundryMedium') format('svg');
+	
+	}
+	@font-face {
+		font-family: 'FoundryLight';
+		url('../fonts/FoundryGridnikLight.svg#FoundryLight') format('svg');
+	
+	}
+	@font-face {
+		font-family: 'FoundryBold';
+		url('../fonts/FoundryGridnikBold.svg#FoundryBold') format('svg');
+	
+	}
+	
+
+}

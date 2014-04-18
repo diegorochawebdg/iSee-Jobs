@@ -1,0 +1,132 @@
+<style type="text/css">
+
+.container_interna { 
+	height: 520px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	
+}	
+.holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+	background: #7E1442;
+}
+
+.content-center { 
+	margin: 0 auto;
+	width: 956px;
+	height: 520px;
+	/*background-image: url(images/caracteristicas/page1/page1.png);*/
+}
+
+.content-center .div-content { 
+	margin: 0 auto 0 -19px;
+	width: 820px;
+	height: 520px;
+	position: relative;
+	/* background-image: url(caracteristicas/page1/bg-content-temp.jpg); */
+	
+}
+.div-content div { 
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+/*ELEMENTOS*/
+
+
+.programe {
+	top: 70px;
+	right: 70px;
+}
+.programe-btn {
+	top: 90px;
+	right: 428px;
+}
+.assista {
+	top: 179px;
+	right: 38px;
+	z-index: 2;
+}
+.lavadora {
+	left: 70px;
+	bottom: -2px;
+}
+.lavadora-detalhe {
+	left: 20px;
+	bottom: 59px;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	//botão painel smart touch
+	TweenMax.from( $(".assista") , 1, { css: { right: "-=300px" , alpha: 0 } , ease: Strong.easeOut, delay:1.3, onComplete: function() {
+	
+		TweenMax.to( $(".assista"), .3, { css: { right: "-=10px" }, ease: Linear.easeNone , repeat: -1, yoyo: true });
+	
+	}} );
+	
+	$(".assista").hover(function(e) {
+            TweenMax.to( $(".assista") , .4, { css: { alpha: .7 } , ease: Strong.easeOut});
+        }, function(){
+			TweenMax.to( $(".assista") , .4, { css: { alpha: 1 } , ease: Strong.easeOut});
+	});
+	
+	//programe-txt
+	TweenMax.from( $(".programe") , 1, { css: { right: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	//programe-btn
+	TweenMax.from( $(".programe-btn") , 1, { css: { right: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	//lavadora
+	TweenMax.from( $(".lavadora") , 1, { css: { left: "-=300px" , alpha: 0 } , ease: Strong.easeOut});
+	
+	//lavadora-detalhe
+	TweenMax.from( $(".lavadora-detalhe") , .7, {css:{ bottom: "-=30px" , alpha: 0}, ease: Strong.easeOut, delay:.7});
+	
+	$("#call-to-action").on('click' , function( e ) { 
+	
+		$(this).die();
+		TweenMax.killAll();
+		Connect.changePageFromCallToAction("videos.html" , false );
+	
+	});
+		
+});
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+          <div class="div-content">
+            
+            	<div class="programe">
+                	<img src="caracteristicas/page4/programe-txt.png" alt="Programe cada lavagem com facilidade: o painel da Lavadora Ative! BWG11 é intuitivo, resistente e moderno." width="461" height="133" title="Programe cada lavagem com facilidade: o painel da Lavadora Ative! BWG11 é intuitivo, resistente e moderno." />
+              </div>
+                
+            <div class="programe-btn">
+                	<img src="caracteristicas/page4/programe-cada-lavagem.png" alt="" width="84" height="84" title="" />
+                </div>
+                
+            <div class="assista" id="call-to-action"> <a href="#"><img src="caracteristicas/page4/assista-ao-video.png" alt="Assista ao vídeo" title="Assista ao vídeo" /></a>
+                </div>
+                
+            <div class="lavadora">
+                	<img src="caracteristicas/page4/lavadora.jpg" alt="Parte superior da lavadora" title="Parte superior da lavadora" />
+                </div>
+                
+                <div class="lavadora-detalhe">
+               	  <img src="caracteristicas/page4/detalhe-painel.png" alt="Detalhe da parte superior da lavadora" width="709" height="265" title="Detalhe da parte superior da lavadora" />
+                </div>
+            
+          </div>
+        </div> 
+    
+    </div>
+</div>

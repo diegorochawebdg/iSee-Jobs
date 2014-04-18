@@ -1,0 +1,142 @@
+﻿/**
+	:: Gugateider Framework - Make it better, keep it simple.   ::
+	:: created by Gustavo Teider http://www.gugateider.com      ::
+	:: CSS File to manage Flash Text Styles. Such as font-size, ::
+	:: family, weight and every other css properties			::
+
+	
+	Flash Player supports a subset of properties in the original CSS1 specification (www.w3.org/TR/REC-CSS1). 
+	The following table shows the supported Cascading Style Sheet (CSS) properties and values, as well as their 
+	corresponding ActionScript property names. (Each ActionScript property name is derived from the corresponding 
+	CSS property name; if the name contains a hyphen, the hyphen is omitted and the subsequent character is capitalized.)
+
+	CSS property		ActionScript property		Usage and supported values
+	color				color						Only hexadecimal color values are supported. Named colors (such as 
+													blue) are not supported. Colors are written in the following 
+													format: #FF0000.
+	display				display						Supported values are inline, block, and none.
+	font-family			fontFamily					A comma-separated list of fonts to use, in descending order of 
+													desirability. Any font family name can be used. If you specify a 
+													generic font name, it is converted to an appropriate device font. The 
+													following font conversions are available: mono is converted to 
+													_typewriter, sans-serif is converted to _sans, and serif is 
+													converted to _serif.
+	font-size			fontSize					Only the numeric part of the value is used. Units (px, pt) are not 
+													parsed; pixels and points are equivalent.
+	font-style			fontStyle					Recognized values are normal and italic.
+	font-weight			fontWeight					Recognized values are normal and bold.
+	kerning				kerning						Recognized values are true and false. Kerning is supported for 
+													embedded fonts only. Certain fonts, such as Courier New, do not 
+													support kerning. The kerning property is only supported in SWF files 
+													created in Windows, not in SWF files created on the Macintosh. 
+													However, these SWF files can be played in non-Windows versions of 
+													Flash Player and the kerning still applies.
+	leading				leading						The amount of space that is uniformly distributed between lines. The 
+													value specifies the number of pixels that are added after each line. 
+													A negative value condenses the space between lines. Only the numeric 
+													part of the value is used. Units (px, pt) are not parsed; pixels and 
+													points are equivalent.
+	letter-spacing		letterSpacing				The amount of space that is uniformly distributed between characters. 
+													The value specifies the number of pixels that are added after each 
+													character. A negative value condenses the space between characters. 
+													Only the numeric part of the value is used. Units (px, pt) are not 
+													parsed; pixels and points are equivalent.
+	margin-left			marginLeft					Only the numeric part of the value is used. Units (px, pt) are not 
+													parsed; pixels and points are equivalent.
+	margin-right		marginRight					Only the numeric part of the value is used. Units (px, pt) are not 
+													parsed; pixels and points are equivalent.
+	text-align			textAlign					Recognized values are left, center, right, and justify.
+	text-decoration		textDecoration				Recognized values are none and underline.
+	text-indent			textIndent					Only the numeric part of the value is used. Units (px, pt) are not 
+													parsed; pixels and points are equivalent.
+**/
+
+
+.menu_titulo { 
+	font-family: Museo 300;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.menu_titulo_blue { 
+	color: #57d3f1;	
+	font-family: Museo 300;
+	font-size: 12px;
+}
+
+.botao_menu { 
+	font-family: Museo 300;
+	font-size: 9px;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.museo14 { 
+	font-family: Museo 300;
+	font-size: 14px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo13 { 
+	font-family: Museo 300;
+	font-size: 13px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo12 { 
+	font-family: Museo 300;
+	font-size: 12px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo12bold { 
+	font-family: Museo 700;
+	font-size: 12px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo14bold { 
+	font-family: Museo 700;
+	font-size: 14px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo16 { 
+	font-family: Museo 700;
+	font-size: 16px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo18 { 
+	font-family: Museo 700;
+	font-size: 18px;
+	text-align: left;
+	color: #FFFFFF;	
+	line-height: 5px;
+}
+.museo30lightblue { 
+	
+	font-family: Museo 700;
+	font-size: 30px;
+	text-align: right;
+	color: #57d3f1;
+	letter-spacing: 1px;
+	line-height: 5px;
+	
+}
+.museo23lightblue { 
+	
+	font-family: Museo 300;
+	font-size: 23px;
+	text-align: right;
+	color: #57d3f1;	
+	line-height: 5px;
+	letter-spacing: 1px;
+	
+}

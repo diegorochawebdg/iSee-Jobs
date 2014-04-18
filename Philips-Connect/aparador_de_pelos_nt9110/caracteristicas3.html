@@ -1,0 +1,119 @@
+<style type="text/css">
+
+.connect-container .container_interna { height: 520px; padding: 0; position: relative; overflow: hidden; background:#FFF url(caracteristicas/background.jpg) repeat; }	
+.connect-container .holder_interna {
+	width: 100%;
+	height: 520px;
+	position: absolute;
+}
+
+.connect-container .content-center {
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+}
+
+.connect-container .content-center .div-content { 
+	margin: 0 auto;
+	width: 100%;
+	height: 520px;
+	position:relative;
+}
+
+.connect-container .absoluto{ position:absolute; left:50%;}
+
+.connect-container .anderson{ margin-left:-316px; bottom:0}
+.connect-container .aparador{ margin-left:-8px; bottom:0}
+
+.connect-container #box1{ background:#33a9d3; width:100%; height:120px; position:absolute; right:50%; margin-right:-190px; top:54px;}
+.connect-container #box1 #shape-cinza{ background:#363636; width:100%; height:80px; position:absolute; bottom:0;}
+.connect-container #box1 #box-conteudo{ float:right; width:460px; margin-top:-40px; font-family: "Museo-500"; color:#FFF;}
+.connect-container #box1 img{ position:absolute; right:-130px; top:-80px;}
+.connect-container #box1 h2{ font-size:24px; margin-top:10px; margin-bottom:25px;}
+.connect-container #box1 p{ font-size:18px; line-height:22px;}
+
+.connect-container #box2{ background:#32aad4; width:190px; height:110px; font-family: "Museo-500"; color:#FFF; text-align:center; margin-left:-376px; top:225px;}
+.connect-container #box2 #shape-cinza{ background:#363636; width:100%; height:32px; position:absolute; bottom:0;}
+.connect-container #box2 h2{ font-size:35px; margin-top:-60px;}
+.connect-container #box2 h3{ font-size:18px;}
+.connect-container #box2 p{ font-size:14px; margin-top:18px;}
+
+.connect-container #box3{ background:#363636; width:100%; height:112px; margin-left:-146px; top:285px; padding:30px 0 0 240px;}
+.connect-container #box3 h2{ font-size:20px; color:#58d3ff; margin-bottom:20px;}
+.connect-container #box3 p{ font-size:14px; color:#FFF; line-height:20px;}
+
+.connect-container #call-to-action3{ margin-left:240px; bottom:20px; cursor:pointer;}
+
+.connect-container .s05{ -webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s;}
+.connect-container .s06{ -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s;}
+.connect-container .s07{ -webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.connect-container .s08{ -webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s;}
+.connect-container .s09{ -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s;}
+.connect-container .s10{ -webkit-animation-delay:1s; -moz-animation-delay:1s; -o-animation-delay:1s; animation-delay:1s;}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {	
+	
+	connect_callToAction( $(".connect-container #call-to-action3"), "fadeInRight", "s10", "fotos.html", false );
+	
+	function connect_callToAction( button, animation, delay, page, boolean ){
+		var connect_pageStart = setInterval( function(e){
+			button.removeClass( animation ).removeClass( delay ).addClass( "callToAction" )
+			.hover( function(e){ $(this).fadeTo( "fast", 0.8 ); }, function(e){ $(this).fadeTo( "fast", 1 );	} );
+			Connect.addCallToAction( button , page, boolean );
+			clearInterval( connect_pageStart );
+		}, ( ( parseFloat($(".connect-container ." + delay).css("animation-delay")) + 1 ) * 1000 ) );
+	}
+	
+});
+
+</script>
+
+<div class="container_interna">
+    <div class="holder_interna">
+    
+        <div class="content-center">
+            <div class="div-content">
+            
+           		<div id="box1" class="animated fadeInLeft s07">
+                	<div id="shape-cinza">
+                        <div id="box-conteudo">
+                            <img src="caracteristicas/page3/feature.png" width="177px" height="171px" alt="" title="" />
+                            <h2>Rápido e preciso</h2>
+                            <p>
+                                Seu microaparador de alta precisão possui um<br />
+                                ângulo perfeito para fácil alcance dos pelos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="box2" class="absoluto animated fadeInLeft s08">
+                	<div id="shape-cinza">
+                        <h2>100%</h2>
+                        <h3>à prova d’água</h3>
+                        <p>Fácil de usar e limpar.</p>
+                    </div>
+                </div>
+                
+                <div id="box3" class="absoluto animated fadeInRight s09">
+                	<h2>Aderente e confortável</h2>
+                    <p>
+                    	O cabo com revestimento macio permite<br />
+                        o máximo de controle durante o uso.
+                    </p>
+                </div>
+            	
+                <img src="caracteristicas/page3/anderson.png" width="355px" height="323px" alt="" title="" class="absoluto anderson animated fadeInLeft s05" />
+                <img src="caracteristicas/page3/aparador.png" width="64px" height="336px" alt="" title="" class="absoluto aparador animated fadeInLeft s06" />
+                
+                <a href="#" id="call-to-action3" class="absoluto animated fadeInRight s10"><img src="caracteristicas/page3/btn-fotos.png" width="155px" height="48px" alt="Fotos" title="Fotos" /></a>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

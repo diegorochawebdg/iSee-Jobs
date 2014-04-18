@@ -1,0 +1,27 @@
+@charset "utf-8"; 
+.conteudo{background:#000; height:740px}
+.ptop2{padding-top:10px}
+.size1{font-size:48px}
+.size2{font-size:21px}
+.tv-img{left:0px; top:30px}
+.home-txt{width:400px; top:15px; left:623px}
+.azul{color:#00aeef}
+#second{left:14px; top:83px; position:absolute; width:370px; height:500px}
+#first strong, #first span, #second strong, #second span, h1, h2{text-shadow:#171717 1px 1px 0px}
+#first strong, #second strong{text-transform:uppercase; color:#00aeef; font-style:italic}
+#first strong, #first span, #second strong, #second span{font-family:'GillSansMT'; font-size:16px}
+.left{margin-left:4px}
+.left2{margin-left:25px}
+.compre{color:#ff0301; background:#ff0301; text-align:center; width:182px; padding:5px 0; right:130px; bottom:15px}
+.overflow{height:368px; padding-top:80px}
+.overflow li{width:100%}
+.width-60{width:50%; margin-left:10px}
+.compartilhe-home{margin-top:14px; margin-left:9px}
+.seta-baixo, .seta-baixo2{background:url(../images/seta-cima-home.png); height:71px; width:73px; right:105px; bottom:55px}
+#item1{left:42px; top:53px}
+#item2{left:0px; top:142px}
+#item3{left:91px; top:239px}
+#item4{left:34px; top:-35px}
+#item5{left:0px; top:77px}
+#item6{left:72px; top:154px}
+#first a:hover, #second a:hover{text-decoration:none}

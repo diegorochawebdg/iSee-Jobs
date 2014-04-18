@@ -1,0 +1,16 @@
+
+.box-galeria { 
+	width: 328px;
+	height: 348px;
+	margin-left: 20px;
+	margin-top: -10px;
+}
+.conteudo_da_embalagem ul li { 
+	margin: 0;
+	padding: 6px 0px 6px 30px;
+	font-size: 13px;
+	margin-bottom: 2px;
+	background-image:url(../images/conteudo-bullet.png);
+	background-repeat: no-repeat;
+	list-style-type: none;
+}
